@@ -1,11 +1,14 @@
 import { EventList } from '@/components/EventList';
 import { useEvents } from '@/lib/data';
+import { isPractice } from '@/lib/format';
 
 export default function UpcomingScreen() {
   const { events, loading, error, refreshing, refresh } = useEvents();
 
-  // Tutto il resto della stagione, dal più vicino.
-  const upcoming = events?.filter((e) => e.status === 'scheduled' || e.status === 'live');
+  // Tutto il resto della stagione, dal più vicino, senza prove libere.
+  const upcoming = events?.filter(
+    (e) => (e.status === 'scheduled' || e.status === 'live') && !isPractice(e.session),
+  );
 
   return (
     <EventList

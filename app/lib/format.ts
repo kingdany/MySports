@@ -19,6 +19,9 @@ const COMPETITION_LABELS: Record<string, string> = {
 
 export const sessionLabel = (session: string) => SESSION_LABELS[session] ?? session;
 
+// Prove libere: presenti nei dati ma non mostrate nell'app.
+export const isPractice = (session: string) => session === 'fp1' || session === 'fp2' || session === 'fp3';
+
 export const competitionLabel = (competition: string) => COMPETITION_LABELS[competition] ?? competition;
 
 export const formatTime = (iso: string) =>
