@@ -14,6 +14,10 @@ GitHub Actions (cron) → MySports.Importer (C#) → JSON → branch gh-pages �
 ## Struttura
 
 ```
+app/                 app mobile Expo (React Native + TypeScript)
+  app/               schermate (Expo Router): (tabs)/index = Prossimi, (tabs)/results = Risultati, event/[id] = dettaglio
+  components/        liste e righe evento
+  lib/               tipi, formattazione, caricamento dei JSON
 src/MySports.Importer/
   Models/        formato comune degli eventi (SportEvent, Competition)
   Sources/       una classe per fonte dati (JolpicaF1Source, ...)
@@ -41,6 +45,13 @@ Richiede .NET 10 SDK.
 dotnet run --project src/MySports.Importer -- --out out
 ```
 
+## Provare l'app sul telefono
+
+1. Installa **Expo Go** dallo store (Android/iOS).
+2. `cd app`, `npm install` (solo la prima volta), poi `npx expo start`.
+3. Inquadra il QR code con Expo Go (Android) o con la fotocamera (iOS).
+   Telefono e PC devono essere sulla stessa rete Wi-Fi; in alternativa `npx expo start --tunnel`.
+
 ## Pubblicazione su GitHub
 
 1. Crea un repository **pubblico** `MySports` su GitHub e carica il codice.
@@ -55,5 +66,5 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 - [ ] Serie A (football-data.org, serve la chiave API)
 - [ ] Highlights YouTube dai canali ufficiali (feed RSS)
-- [ ] App Expo: liste "Prossimi" e "Risultati"
+- [x] App Expo: liste "Prossimi" e "Risultati", dettaglio evento
 - [ ] MotoGP

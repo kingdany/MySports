@@ -134,9 +134,9 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
             Driver = DriverName(r["Driver"]!),
             Code = Str(r["Driver"]!["code"]),
             Team = Str(r["Constructor"]!["name"])!,
-            Q1 = Str(r["Q1"]),
-            Q2 = Str(r["Q2"]),
-            Q3 = Str(r["Q3"]),
+            Q1 = NullIfEmpty(Str(r["Q1"])),
+            Q2 = NullIfEmpty(Str(r["Q2"])),
+            Q3 = NullIfEmpty(Str(r["Q3"])),
         }).ToList();
 
     private static string DriverName(JsonNode d) => $"{Str(d["givenName"])} {Str(d["familyName"])}";
@@ -159,4 +159,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
     }
 
     private static string? Str(JsonNode? node) => node?.GetValue<string>();
+
+    // Jolpica a volte usa "" invece di omettere il campo (es. tempo di Q1 mancante).
+    private static string? NullIfEmpty(string? value) => string.IsNullOrEmpty(value) ? null : value;
 }
