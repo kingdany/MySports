@@ -1,5 +1,6 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
 import { ScrollView, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors } from '@/constants/Colors';
@@ -11,6 +12,7 @@ export default function EventScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const event = useEvents().getEvent(id);
   const muted = useThemeColor({}, 'muted');
+  const insets = useSafeAreaInsets();
 
   if (!event) {
     return (
@@ -23,8 +25,9 @@ export default function EventScreen() {
 
   const place = [event.venue, event.city, event.country].filter(Boolean).join(', ');
 
+  // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
   return (
-    <ScrollView>
+    <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
       <Stack.Screen options={{ title: sessionLabel(event.session) }} />
       <View style={styles.header}>
         <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
