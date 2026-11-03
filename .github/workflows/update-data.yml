@@ -1,0 +1,50 @@
+# Aggiorna i dati ogni 3 ore e li pubblica sul branch gh-pages (servito da GitHub Pages).
+name: Aggiorna dati
+
+on:
+  schedule:
+    - cron: "15 */3 * * *"   # minuto 15 per evitare il picco di inizio ora di GitHub
+  workflow_dispatch:          # avvio manuale dalla scheda Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      # I dati precedenti servono all'importatore (video già trovati, ripiego se una fonte è giù).
+      - name: Recupera i dati pubblicati
+        run: |
+          if git fetch --depth 1 origin gh-pages; then
+            git worktree add site FETCH_HEAD
+            git -C site checkout -B gh-pages
+          else
+            git worktree add --detach site
+            git -C site checkout --orphan gh-pages
+            git -C site rm -rf --quiet .
+          fi
+
+      - name: Esegui l'importatore
+        run: dotnet run --project src/MySports.Importer -c Release -- --out site
+
+      - name: Pubblica
+        working-directory: site
+        run: |
+          touch .nojekyll
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit --quiet -m "Aggiornamento dati $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push origin gh-pages
