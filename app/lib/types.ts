@@ -40,7 +40,25 @@ export type SportEvent = {
   videos: Video[];
 };
 
-export type SeasonFile = { competition: string; season: string; generatedAt: string; events: SportEvent[] };
+export type StandingRow = {
+  pos?: number; // assente se non classificato (es. squalifica dal campionato)
+  posText: string; // "1", "2", ... oppure "D" (squalificato)
+  name: string;
+  code?: string;
+  team?: string;
+  points: number;
+  wins?: number;
+};
+
+export type StandingsTable = { id: string; title: string; rows: StandingRow[] };
+
+export type SeasonFile = {
+  competition: string;
+  season: string;
+  generatedAt: string;
+  events: SportEvent[];
+  standings?: StandingsTable[];
+};
 
 export type CompetitionInfo = {
   id: string;

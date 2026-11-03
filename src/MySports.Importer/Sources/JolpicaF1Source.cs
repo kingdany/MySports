@@ -99,6 +99,57 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         return events;
     }
 
+    public async Task<IReadOnlyList<StandingsTable>> FetchStandingsAsync(string season, CancellationToken ct)
+    {
+        var drivers = await FetchStandingsRowsAsync($"{season}/driverStandings", "DriverStandings", ct);
+        var constructors = await FetchStandingsRowsAsync($"{season}/constructorStandings", "ConstructorStandings", ct);
+
+        var tables = new List<StandingsTable>();
+        if (drivers.Count > 0)
+        {
+            tables.Add(new StandingsTable("drivers", "Piloti", drivers.Select(r => StandingRow(r) with
+            {
+                Name = DriverName(r["Driver"]!),
+                Code = Str(r["Driver"]!["code"]),
+                Team = string.Join(" / ", r["Constructors"]!.AsArray().Select(c => Str(c!["name"])).Distinct()),
+            }).ToList()));
+        }
+        // Il campionato costruttori esiste dal 1958: prima la lista è vuota.
+        if (constructors.Count > 0)
+        {
+            tables.Add(new StandingsTable("constructors", "Costruttori", constructors.Select(r => StandingRow(r) with
+            {
+                Name = Str(r["Constructor"]!["name"])!,
+            }).ToList()));
+        }
+        return tables;
+    }
+
+    // Campi comuni a piloti e costruttori; il nome viene completato dal chiamante.
+    private static StandingRow StandingRow(JsonNode r) => new()
+    {
+        Pos = int.TryParse(Str(r["position"]), CultureInfo.InvariantCulture, out var pos) ? pos : null,
+        PosText = Str(r["positionText"]) ?? "-",
+        Name = "",
+        Points = double.Parse(Str(r["points"]) ?? "0", CultureInfo.InvariantCulture),
+        Wins = int.TryParse(Str(r["wins"]), CultureInfo.InvariantCulture, out var wins) ? wins : null,
+    };
+
+    private async Task<List<JsonNode>> FetchStandingsRowsAsync(string path, string listKey, CancellationToken ct)
+    {
+        var rows = new List<JsonNode>();
+        for (int offset = 0, total = int.MaxValue; offset < total; offset += PageSize)
+        {
+            var data = await GetJsonAsync($"{BaseUrl}/{path}.json?limit={PageSize}&offset={offset}", ct);
+            total = int.Parse(Str(data["MRData"]!["total"])!, CultureInfo.InvariantCulture);
+            var lists = data["MRData"]!["StandingsTable"]!["StandingsLists"]!.AsArray();
+            var page = lists.Count > 0 ? lists[0]![listKey]?.AsArray().Select(r => r!).ToList() ?? [] : [];
+            if (page.Count == 0) break;
+            rows.AddRange(page);
+        }
+        return rows;
+    }
+
     // Jolpica non ha i risultati delle qualifiche sprint: li prendiamo da OpenF1, abbinando la sessione per orario.
     // Nomi e scuderie vengono dai dati Jolpica dello stesso GP, così restano scritti come nelle altre sessioni.
     // Se OpenF1 non risponde la sessione resta senza risultati, senza bloccare il resto dell'importazione.

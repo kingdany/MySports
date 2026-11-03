@@ -20,22 +20,27 @@ public sealed class JsonPublisher(string outputDir)
         Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) },
     };
 
-    private sealed record SeasonFile(string Competition, string Season, DateTimeOffset GeneratedAt, IReadOnlyList<SportEvent> Events);
+    // Contenuto di una stagione: eventi e classifiche (assenti nei file generati prima delle classifiche).
+    public sealed record SeasonData(IReadOnlyList<SportEvent> Events, IReadOnlyList<StandingsTable>? Standings);
+
+    private sealed record SeasonFile(
+        string Competition, string Season, DateTimeOffset GeneratedAt,
+        IReadOnlyList<SportEvent> Events, IReadOnlyList<StandingsTable>? Standings);
     private sealed record EventsFile(DateTimeOffset GeneratedAt, IReadOnlyList<SportEvent> Events);
     private sealed record MetaFile(DateTimeOffset GeneratedAt, IReadOnlyList<CompetitionInfo> Competitions);
     private sealed record CompetitionInfo(string Id, string Sport, string Name, string ShortName, string CurrentSeason, IReadOnlyList<string> Seasons);
 
-    public async Task<IReadOnlyList<SportEvent>?> LoadSeasonAsync(string competition, string season, CancellationToken ct)
+    public async Task<SeasonData?> LoadSeasonAsync(string competition, string season, CancellationToken ct)
     {
         var path = SeasonPath(competition, season);
         if (!File.Exists(path)) return null;
         await using var stream = File.OpenRead(path);
         var file = await JsonSerializer.DeserializeAsync<SeasonFile>(stream, Options, ct);
-        return file?.Events;
+        return file is null ? null : new SeasonData(file.Events, file.Standings);
     }
 
-    public Task WriteSeasonAsync(string competition, string season, IReadOnlyList<SportEvent> events, DateTimeOffset now, CancellationToken ct) =>
-        WriteAsync(SeasonPath(competition, season), new SeasonFile(competition, season, now, events), ct);
+    public Task WriteSeasonAsync(string competition, string season, SeasonData data, DateTimeOffset now, CancellationToken ct) =>
+        WriteAsync(SeasonPath(competition, season), new SeasonFile(competition, season, now, data.Events, data.Standings), ct);
 
     public async Task WriteFeedsAsync(IReadOnlyList<SportEvent> events, DateTimeOffset now, TimeSpan window, CancellationToken ct)
     {

@@ -32,7 +32,7 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa, es. `f1/2026.json`; anche le stagioni passate (F1 dal 1950) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`; anche le stagioni passate (F1 dal 1950) |
 
 Ogni evento ha un campo `videos` (per ora vuoto) che verrà riempito con gli highlights YouTube.
 I video già trovati vengono conservati tra un'esecuzione e l'altra.
@@ -54,6 +54,8 @@ In locale:
 ```
 dotnet run --project src/MySports.Importer -- --competition f1 --seasons 1950-2025 --out out
 ```
+
+Per aggiungere solo le classifiche a stagioni già importate: opzione "Solo classifiche" nel workflow, oppure `--standings-only`.
 
 Jolpica consente ~500 richieste l'ora: con molte stagioni l'importatore attende da solo lo sblocco.
 Per le stagioni vecchie mancano orari (`dateOnly`) e, prima del 1994 circa, le qualifiche.

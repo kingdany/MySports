@@ -42,6 +42,19 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="standings"
+        options={{
+          title: 'Classifiche',
+          tabBarIcon: ({ color }) => (
+            <SymbolView
+              name={{ ios: 'list.number', android: 'leaderboard', web: 'leaderboard' }}
+              tintColor={color}
+              size={28}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

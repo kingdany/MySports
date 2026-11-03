@@ -4,6 +4,8 @@
 //       aggiorna la stagione corrente di ogni competizione, upcoming.json, results.json e meta.json
 //   dotnet run --project src/MySports.Importer -- --competition f1 --seasons 1950-2025 [--out <cartella>]
 //       importa stagioni passate (una tantum: non cambiano più) e aggiorna meta.json
+//   ... --competition f1 --seasons 1950-2025 --standings-only
+//       aggiunge solo le classifiche a stagioni già importate, senza riscaricare gli eventi
 using System.Globalization;
 using MySports.Importer.Models;
 using MySports.Importer.Output;
@@ -14,6 +16,7 @@ string? Arg(string name) => args.SkipWhile(a => a != name).Skip(1).FirstOrDefaul
 var outputDir = Arg("--out") ?? "out";
 var seasonsArg = Arg("--seasons");
 var competitionArg = Arg("--competition");
+var standingsOnly = args.Contains("--standings-only");
 var window = TimeSpan.FromDays(14); // orizzonte di upcoming.json e results.json
 
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
@@ -51,7 +54,7 @@ else
         {
             failures++;
             // Fonte non raggiungibile o formato cambiato: si tengono i dati dell'esecuzione precedente, se ci sono.
-            events = await publisher.LoadSeasonAsync(source.Competition.Id, source.CurrentSeason(now), ct);
+            events = (await publisher.LoadSeasonAsync(source.Competition.Id, source.CurrentSeason(now), ct))?.Events;
         }
         allEvents.AddRange(events ?? []);
     }
@@ -69,28 +72,50 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
     try
     {
         var previous = await publisher.LoadSeasonAsync(competition.Id, season, ct);
-        var events = await source.FetchSeasonAsync(season, ct);
-        if (events.Count == 0)
+
+        IReadOnlyList<SportEvent> events;
+        if (standingsOnly && previous is not null)
         {
-            Console.WriteLine($"{competition.Name} {season}: nessun evento, file non scritto");
-            return events;
+            events = previous.Events;
+        }
+        else
+        {
+            events = await source.FetchSeasonAsync(season, ct);
+            if (events.Count == 0)
+            {
+                Console.WriteLine($"{competition.Name} {season}: nessun evento, file non scritto");
+                return events;
+            }
+
+            // Dalle esecuzioni precedenti si conservano i video (le fonti non li forniscono) e i risultati
+            // che questa volta mancano (es. una fonte secondaria come OpenF1 temporaneamente giù).
+            var previousById = (previous?.Events ?? []).ToDictionary(e => e.Id);
+            events = events
+                .Select(e =>
+                {
+                    if (!previousById.TryGetValue(e.Id, out var old)) return e;
+                    if (old.Videos.Count > 0) e = e with { Videos = old.Videos };
+                    if (e.Result is null && old.Result is not null) e = e with { Result = old.Result, Status = old.Status };
+                    return e;
+                })
+                .ToList();
         }
 
-        // Dalle esecuzioni precedenti si conservano i video (le fonti non li forniscono) e i risultati
-        // che questa volta mancano (es. una fonte secondaria come OpenF1 temporaneamente giù).
-        var previousById = (previous ?? []).ToDictionary(e => e.Id);
-        events = events
-            .Select(e =>
-            {
-                if (!previousById.TryGetValue(e.Id, out var old)) return e;
-                if (old.Videos.Count > 0) e = e with { Videos = old.Videos };
-                if (e.Result is null && old.Result is not null) e = e with { Result = old.Result, Status = old.Status };
-                return e;
-            })
-            .ToList();
+        // Se le classifiche non arrivano si tengono quelle dell'esecuzione precedente.
+        IReadOnlyList<StandingsTable>? standings;
+        try
+        {
+            standings = await source.FetchStandingsAsync(season, ct);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"AVVISO classifiche {competition.Name} {season}: {ex.Message}");
+            standings = previous?.Standings;
+        }
 
-        await publisher.WriteSeasonAsync(competition.Id, season, events, now, ct);
-        Console.WriteLine($"{competition.Name} {season}: {events.Count} eventi");
+        await publisher.WriteSeasonAsync(competition.Id, season, new JsonPublisher.SeasonData(events, standings), now, ct);
+        var standingsInfo = standings is null ? "nessuna classifica" : string.Join(", ", standings.Select(t => $"{t.Title} {t.Rows.Count}"));
+        Console.WriteLine($"{competition.Name} {season}: {events.Count} eventi, {standingsInfo}");
         return events;
     }
     catch (Exception ex)

@@ -10,4 +10,7 @@ public interface IEventSource
     string CurrentSeason(DateTimeOffset now);
 
     Task<IReadOnlyList<SportEvent>> FetchSeasonAsync(string season, CancellationToken ct);
+
+    // Classifiche aggiornate all'ultimo evento disputato della stagione.
+    Task<IReadOnlyList<StandingsTable>> FetchStandingsAsync(string season, CancellationToken ct);
 }
