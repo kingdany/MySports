@@ -19,7 +19,7 @@ export function EventRow({ event }: { event: SportEvent }) {
               {event.status === 'live' ? (
                 <Text style={[styles.live, { backgroundColor: LiveColor }]}>LIVE</Text>
               ) : (
-                <Text style={styles.time}>{formatTime(event.startsAt)}</Text>
+                <Text style={styles.time}>{event.dateOnly ? '–' : formatTime(event.startsAt)}</Text>
               )}
               <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
                 {competitionLabel(event.competition)}

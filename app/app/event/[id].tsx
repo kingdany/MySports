@@ -4,7 +4,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
-import { competitionLabel, formatDateTime, sessionLabel } from '@/lib/format';
+import { competitionLabel, formatEventDate, sessionLabel } from '@/lib/format';
 import type { ClassificationRow, SportEvent } from '@/lib/types';
 
 export default function EventScreen() {
@@ -31,7 +31,7 @@ export default function EventScreen() {
           {competitionLabel(event.competition)}{event.round ? ` · Round ${event.round}` : ''}
         </Text>
         <Text style={styles.title}>{event.title}</Text>
-        <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatDateTime(event.startsAt)}</Text>
+        <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
         {place ? <Text style={[styles.info, { color: muted }]}>{place}</Text> : null}
         {event.homeScore != null && event.awayScore != null && (
           <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>

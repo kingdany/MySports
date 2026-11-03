@@ -32,7 +32,7 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa, es. `f1/2026.json` |
+| `{competizione}/{stagione}.json` | stagione completa, es. `f1/2026.json`; anche le stagioni passate (F1 dal 1950) |
 
 Ogni evento ha un campo `videos` (per ora vuoto) che verrà riempito con gli highlights YouTube.
 I video già trovati vengono conservati tra un'esecuzione e l'altra.
@@ -44,6 +44,19 @@ Richiede .NET 10 SDK.
 ```
 dotnet run --project src/MySports.Importer -- --out out
 ```
+
+## Importare le stagioni passate
+
+Le stagioni concluse non cambiano: si importano una volta sola.
+Da GitHub: **Actions → Aggiorna dati → Run workflow**, campo "Stagioni passate" (es. `1950-2025`).
+In locale:
+
+```
+dotnet run --project src/MySports.Importer -- --competition f1 --seasons 1950-2025 --out out
+```
+
+Jolpica consente ~500 richieste l'ora: con molte stagioni l'importatore attende da solo lo sblocco.
+Per le stagioni vecchie mancano orari (`dateOnly`) e, prima del 1994 circa, le qualifiche.
 
 ## Provare l'app sul telefono
 

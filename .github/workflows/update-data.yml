@@ -5,6 +5,15 @@ on:
   schedule:
     - cron: "15 */3 * * *"   # minuto 15 per evitare il picco di inizio ora di GitHub
   workflow_dispatch:          # avvio manuale dalla scheda Actions
+    inputs:
+      seasons:
+        description: "Stagioni passate da importare (es. 1950-2025 oppure 2019,2021). Vuoto = aggiornamento normale"
+        required: false
+        default: ""
+      competition:
+        description: "Competizione delle stagioni passate"
+        required: false
+        default: "f1"
 
 permissions:
   contents: write
@@ -16,6 +25,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 180   # l'importazione dello storico può attendere a lungo il limite di Jolpica
     steps:
       - uses: actions/checkout@v4
 
@@ -36,9 +46,19 @@ jobs:
           fi
 
       - name: Esegui l'importatore
-        run: dotnet run --project src/MySports.Importer -c Release -- --out site
+        env:
+          SEASONS: ${{ inputs.seasons }}
+          COMPETITION: ${{ inputs.competition }}
+        run: |
+          if [ -n "$SEASONS" ]; then
+            dotnet run --project src/MySports.Importer -c Release -- --out site --competition "$COMPETITION" --seasons "$SEASONS"
+          else
+            dotnet run --project src/MySports.Importer -c Release -- --out site
+          fi
 
+      # Si pubblica anche se una fonte o una stagione ha dato errore: le altre sono state salvate.
       - name: Pubblica
+        if: success() || failure()
         working-directory: site
         run: |
           touch .nojekyll

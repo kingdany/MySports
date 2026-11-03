@@ -10,6 +10,7 @@ public sealed record SportEvent
     public required string Title { get; init; }           // "Mexico City Grand Prix", "Inter - Milan"
     public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"
     public required DateTimeOffset StartsAt { get; init; }
+    public bool? DateOnly { get; init; }                  // true se la fonte non ha l'orario (stagioni vecchie)
     public string? Venue { get; init; }
     public string? City { get; init; }
     public string? Country { get; init; }

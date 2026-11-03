@@ -23,7 +23,7 @@ public sealed class JsonPublisher(string outputDir)
     private sealed record SeasonFile(string Competition, string Season, DateTimeOffset GeneratedAt, IReadOnlyList<SportEvent> Events);
     private sealed record EventsFile(DateTimeOffset GeneratedAt, IReadOnlyList<SportEvent> Events);
     private sealed record MetaFile(DateTimeOffset GeneratedAt, IReadOnlyList<CompetitionInfo> Competitions);
-    private sealed record CompetitionInfo(string Id, string Sport, string Name, string ShortName, string CurrentSeason);
+    private sealed record CompetitionInfo(string Id, string Sport, string Name, string ShortName, string CurrentSeason, IReadOnlyList<string> Seasons);
 
     public async Task<IReadOnlyList<SportEvent>?> LoadSeasonAsync(string competition, string season, CancellationToken ct)
     {
@@ -37,12 +37,7 @@ public sealed class JsonPublisher(string outputDir)
     public Task WriteSeasonAsync(string competition, string season, IReadOnlyList<SportEvent> events, DateTimeOffset now, CancellationToken ct) =>
         WriteAsync(SeasonPath(competition, season), new SeasonFile(competition, season, now, events), ct);
 
-    public async Task WriteIndexesAsync(
-        IReadOnlyList<(Competition Competition, string Season)> competitions,
-        IReadOnlyList<SportEvent> events,
-        DateTimeOffset now,
-        TimeSpan window,
-        CancellationToken ct)
+    public async Task WriteFeedsAsync(IReadOnlyList<SportEvent> events, DateTimeOffset now, TimeSpan window, CancellationToken ct)
     {
         var upcoming = events
             .Where(e => e.Status is EventStatus.Scheduled or EventStatus.Live && e.StartsAt <= now + window)
@@ -52,12 +47,25 @@ public sealed class JsonPublisher(string outputDir)
             .Where(e => e.Status == EventStatus.Finished && e.StartsAt >= now - window)
             .OrderByDescending(e => e.StartsAt)
             .ToList();
-        var meta = competitions
-            .Select(c => new CompetitionInfo(c.Competition.Id, c.Competition.Sport, c.Competition.Name, c.Competition.ShortName, c.Season))
-            .ToList();
 
         await WriteAsync(Path.Combine(outputDir, "upcoming.json"), new EventsFile(now, upcoming), ct);
         await WriteAsync(Path.Combine(outputDir, "results.json"), new EventsFile(now, results), ct);
+    }
+
+    // Le stagioni disponibili sono i file presenti nella cartella di ogni competizione (correnti e storiche).
+    public async Task WriteMetaAsync(IReadOnlyList<(Competition Competition, string CurrentSeason)> competitions, DateTimeOffset now, CancellationToken ct)
+    {
+        var meta = new List<CompetitionInfo>();
+        foreach (var (c, currentSeason) in competitions)
+        {
+            var dir = Path.Combine(outputDir, c.Id);
+            var seasons = Directory.Exists(dir)
+                ? Directory.GetFiles(dir, "*.json").Select(Path.GetFileNameWithoutExtension).OfType<string>()
+                    .OrderDescending(StringComparer.Ordinal).ToList()
+                : [];
+            if (seasons.Contains(currentSeason))
+                meta.Add(new CompetitionInfo(c.Id, c.Sport, c.Name, c.ShortName, currentSeason, seasons));
+        }
         await WriteAsync(Path.Combine(outputDir, "meta.json"), new MetaFile(now, meta), ct);
     }
 

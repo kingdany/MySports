@@ -27,10 +27,19 @@ export const competitionLabel = (competition: string) => COMPETITION_LABELS[comp
 export const formatTime = (iso: string) =>
   new Date(iso).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
 
-export const formatDateTime = (iso: string) =>
-  new Date(iso).toLocaleString('it-IT', {
-    weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit',
+const isThisYear = (date: Date) => date.getFullYear() === new Date().getFullYear();
+
+// Data e ora complete per il dettaglio; anno solo se diverso dal corrente, ora solo se la fonte la conosce.
+export function formatEventDate(event: SportEvent): string {
+  const date = new Date(event.startsAt);
+  return date.toLocaleString('it-IT', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    ...(isThisYear(date) ? {} : { year: 'numeric' }),
+    ...(event.dateOnly ? {} : { hour: '2-digit', minute: '2-digit' }),
   });
+}
 
 // Chiave del giorno nel fuso orario del telefono, es. "2026-11-06".
 const dayKey = (date: Date) =>
@@ -43,7 +52,9 @@ function dayTitle(date: Date): string {
   if (key === offset(0)) return 'Oggi';
   if (key === offset(1)) return 'Domani';
   if (key === offset(-1)) return 'Ieri';
-  const label = date.toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
+  const label = date.toLocaleDateString('it-IT', {
+    weekday: 'long', day: 'numeric', month: 'long', ...(isThisYear(date) ? {} : { year: 'numeric' }),
+  });
   return label.charAt(0).toUpperCase() + label.slice(1);
 }
 

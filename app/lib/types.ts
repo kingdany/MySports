@@ -27,6 +27,7 @@ export type SportEvent = {
   title: string;
   session: string;
   startsAt: string;
+  dateOnly?: boolean; // la fonte non ha l'orario (stagioni vecchie)
   venue?: string;
   city?: string;
   country?: string;
@@ -41,6 +42,13 @@ export type SportEvent = {
 
 export type SeasonFile = { competition: string; season: string; generatedAt: string; events: SportEvent[] };
 
-export type CompetitionInfo = { id: string; sport: string; name: string; shortName: string; currentSeason: string };
+export type CompetitionInfo = {
+  id: string;
+  sport: string;
+  name: string;
+  shortName: string;
+  currentSeason: string;
+  seasons: string[]; // tutte le stagioni disponibili, dalla più recente
+};
 
 export type MetaFile = { generatedAt: string; competitions: CompetitionInfo[] };
