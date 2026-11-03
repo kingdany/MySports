@@ -7,6 +7,8 @@ namespace MySports.Importer.Sources;
 // Formula 1 da Jolpica-F1 (https://github.com/jolpica/jolpica-f1), erede di Ergast. Gratuita, senza chiave.
 public sealed class JolpicaF1Source(HttpClient http) : IEventSource
 {
+    private readonly OpenF1Client openF1 = new(http);
+
     private const string BaseUrl = "https://api.jolpi.ca/ergast/f1";
     private const int PageSize = 100;                                  // massimo consentito da Jolpica
     private static readonly TimeSpan Pause = TimeSpan.FromMilliseconds(300); // limite ~4 richieste/secondo
@@ -43,6 +45,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         var qualiResults = await FetchByRoundAsync($"{season}/qualifying", "QualifyingResults", ct);
 
         var now = DateTimeOffset.UtcNow;
+        var sprintQualiResults = await FetchSprintQualifyingAsync(season, races, sprintResults, qualiResults, now, ct);
         var events = new List<SportEvent>();
 
         foreach (var race in races)
@@ -73,6 +76,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
                 {
                     "sprint" when sprintResults.TryGetValue(round, out var rows) => RaceClassification(rows),
                     "qualifying" when qualiResults.TryGetValue(round, out var rows) => QualifyingClassification(rows),
+                    "sprint_qualifying" when sprintQualiResults.TryGetValue(round, out var rows) => rows,
                     _ => null,
                 };
                 events.Add(Create(session, ParseStart(s), result));
@@ -84,6 +88,78 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
 
         return events;
     }
+
+    // Jolpica non ha i risultati delle qualifiche sprint: li prendiamo da OpenF1, abbinando la sessione per orario.
+    // Nomi e scuderie vengono dai dati Jolpica dello stesso GP, così restano scritti come nelle altre sessioni.
+    // Se OpenF1 non risponde la sessione resta senza risultati, senza bloccare il resto dell'importazione.
+    private async Task<Dictionary<string, List<ClassificationRow>>> FetchSprintQualifyingAsync(
+        string season,
+        JsonArray races,
+        Dictionary<string, List<JsonNode>> sprintResults,
+        Dictionary<string, List<JsonNode>> qualiResults,
+        DateTimeOffset now,
+        CancellationToken ct)
+    {
+        var byRound = new Dictionary<string, List<ClassificationRow>>();
+        var finished = races
+            .Select(r => (Round: Str(r!["round"])!, Node: r["SprintQualifying"] ?? r["SprintShootout"]))
+            .Where(x => x.Node is not null)
+            .Select(x => (x.Round, Start: ParseStart(x.Node!)))
+            .Where(x => x.Start + TimeSpan.FromHours(DurationHours["sprint_qualifying"]) < now)
+            .ToList();
+        if (finished.Count == 0) return byRound;
+
+        try
+        {
+            var sessions = await openF1.GetSessionsAsync(season, "Sprint Qualifying", ct);
+            foreach (var (round, start) in finished)
+            {
+                var session = sessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromHours(2));
+                if (session is null) continue;
+
+                var rows = await openF1.GetSessionResultAsync(session.SessionKey, ct);
+                if (rows.Count == 0) continue;
+
+                var openF1Drivers = (await openF1.GetDriversAsync(session.SessionKey, ct))
+                    .DistinctBy(d => d.Number)
+                    .ToDictionary(d => d.Number);
+                var jolpicaDrivers = (sprintResults.GetValueOrDefault(round) ?? [])
+                    .Concat(qualiResults.GetValueOrDefault(round) ?? [])
+                    .DistinctBy(r => Str(r["number"]))
+                    .ToDictionary(r => Str(r["number"])!);
+
+                byRound[round] = rows
+                    .OrderBy(r => r.Position ?? int.MaxValue)
+                    .Select((r, i) =>
+                    {
+                        var number = r.DriverNumber.ToString(CultureInfo.InvariantCulture);
+                        var j = jolpicaDrivers.GetValueOrDefault(number);
+                        var o = openF1Drivers.GetValueOrDefault(r.DriverNumber);
+                        return new ClassificationRow
+                        {
+                            Pos = r.Position ?? i + 1,
+                            Number = number,
+                            Driver = j is not null ? DriverName(j["Driver"]!) : o?.FullName ?? $"#{number}",
+                            Code = j is not null ? Str(j["Driver"]!["code"]) : o?.Acronym,
+                            Team = j is not null ? Str(j["Constructor"]!["name"])! : o?.Team ?? "",
+                            Q1 = FormatLap(r.Duration.ElementAtOrDefault(0)),
+                            Q2 = FormatLap(r.Duration.ElementAtOrDefault(1)),
+                            Q3 = FormatLap(r.Duration.ElementAtOrDefault(2)),
+                        };
+                    })
+                    .ToList();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"AVVISO qualifiche sprint da OpenF1: {ex.Message}");
+        }
+        return byRound;
+    }
+
+    // 91.52 secondi -> "1:31.520", come i tempi di qualifica di Jolpica.
+    private static string? FormatLap(double? seconds) =>
+        seconds is { } s ? $"{(int)(s / 60)}:{(s % 60).ToString("00.000", CultureInfo.InvariantCulture)}" : null;
 
     private async Task<JsonNode> GetJsonAsync(string url, CancellationToken ct)
     {

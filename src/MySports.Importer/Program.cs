@@ -28,10 +28,17 @@ foreach (var source in sources)
     {
         var events = await source.FetchSeasonAsync(season, ct);
 
-        // I video trovati nelle esecuzioni precedenti non vanno persi: le fonti non li forniscono.
-        var previousVideos = (previous ?? []).ToDictionary(e => e.Id, e => e.Videos);
+        // Dalle esecuzioni precedenti si conservano i video (le fonti non li forniscono) e i risultati
+        // che questa volta mancano (es. una fonte secondaria come OpenF1 temporaneamente giù).
+        var previousById = (previous ?? []).ToDictionary(e => e.Id);
         events = events
-            .Select(e => previousVideos.TryGetValue(e.Id, out var videos) && videos.Count > 0 ? e with { Videos = videos } : e)
+            .Select(e =>
+            {
+                if (!previousById.TryGetValue(e.Id, out var old)) return e;
+                if (old.Videos.Count > 0) e = e with { Videos = old.Videos };
+                if (e.Result is null && old.Result is not null) e = e with { Result = old.Result, Status = old.Status };
+                return e;
+            })
             .ToList();
 
         await publisher.WriteSeasonAsync(competition.Id, season, events, now, ct);
