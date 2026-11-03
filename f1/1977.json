@@ -1,0 +1,3536 @@
+{
+  "competition": "f1",
+  "season": "1977",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1977-1-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 1,
+      "title": "Argentine Grand Prix",
+      "session": "race",
+      "startsAt": "1977-01-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Juan y Oscar Gálvez",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "1:40:11.190",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Carlos Pace",
+          "team": "Brabham",
+          "time": "+43.240",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+46.020",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+55.480",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Wheel bearing",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Tom Pryce",
+          "team": "Shadow",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "29",
+          "driver": "Ingo Hoffmann",
+          "team": "Fittipaldi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "17",
+          "driver": "Renzo Zorzi",
+          "team": "Shadow",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-2-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 2,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-01-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "1:45:07.720",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+10.710",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+1:47.510",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "17",
+          "driver": "Renzo Zorzi",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "29",
+          "driver": "Ingo Hoffmann",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "8",
+          "driver": "Carlos Pace",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Tom Pryce",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "14",
+          "driver": "Larry Perkins",
+          "team": "BRM",
+          "time": "Overheating",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-3-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 3,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1977-03-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "1:42:21.600",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+5.200",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+5.700",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+9.500",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+19.900",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "+20.200",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+23.600",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+26.700",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+46.200",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1:11.700",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Carlos Pace",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "Larry Perkins",
+          "team": "BRM",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "10",
+          "driver": "Hans-Joachim Stuck",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "33",
+          "driver": "Boy Hayje",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "16",
+          "driver": "Tom Pryce",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "17",
+          "driver": "Renzo Zorzi",
+          "team": "Shadow",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Fuel system",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-4-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 4,
+      "title": "United States Grand Prix West",
+      "session": "race",
+      "startsAt": "1977-04-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Long Beach",
+      "city": "California",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "1:51:35.470",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+0.773",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+4.857",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+1:14.487",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1:20.908",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Brian Henton",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "16",
+          "driver": "Renzo Zorzi",
+          "team": "Shadow",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-5-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 5,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Jarama",
+      "city": "Madrid",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "1:42:52.220",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+15.850",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+24.510",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+24.870",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+1:05.830",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "36",
+          "driver": "Emilio de Villota",
+          "team": "McLaren",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "25",
+          "driver": "Harald Ertl",
+          "team": "Hesketh",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "Renzo Zorzi",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "37",
+          "driver": "Arturo Merzario",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "Injured",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-6-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "1:57:52.770",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+0.889",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+32.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+34.600",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+35.550",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+36.610",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1:04.440",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+1:08.640",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Jacky Ickx",
+          "team": "Ensign",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-7-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 7,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-06-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Zolder",
+      "city": "Heusden-Zolder",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "1:55:05.710",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+14.190",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+19.950",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+24.980",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+1:15.470",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Harald Ertl",
+          "team": "Hesketh",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "18",
+          "driver": "Larry Perkins",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "31",
+          "driver": "David Purley",
+          "team": "LEC",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "37",
+          "driver": "Arturo Merzario",
+          "team": "March",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "33",
+          "driver": "Boy Hayje",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-8-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 8,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1977-06-19T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Scandinavian Raceway",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "1:46:56.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+8.449",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+14.369",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+16.308",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "+18.735",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+25.277",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+31.266",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+1:04.567",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+1:22.479",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "31",
+          "driver": "David Purley",
+          "team": "LEC",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "25",
+          "driver": "Harald Ertl",
+          "team": "Hesketh",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Fuel pressure",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Ignition",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-9-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 9,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Dijon-Prenois",
+      "city": "Dijon",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "1:39:40.130",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "+1.550",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "+33.870",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+1:11.080",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+1:14.150",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "37",
+          "driver": "Arturo Merzario",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "31",
+          "driver": "David Purley",
+          "team": "LEC",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-10-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 10,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-16T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "Silverstone",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "1:31:46.060",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+18.310",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "+19.570",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+47.760",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+1:11.730",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "40",
+          "driver": "Gilles Villeneuve",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "18",
+          "driver": "Vern Schuppan",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "37",
+          "driver": "Arturo Merzario",
+          "team": "March",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Fuel pressure",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-11-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 11,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "1:31:49.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+14.330",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+20.900",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+1:00.270",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+1:27.370",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "+1:29.810",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "18",
+          "driver": "Vern Schuppan",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "25",
+          "driver": "Hector Rebaque",
+          "team": "Hesketh",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-12-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 12,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-08-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "1:37:16.490",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+20.130",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+34.500",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+34.750",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+1:12.090",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "33",
+          "driver": "Hans Binder",
+          "team": "Penske",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "18",
+          "driver": "Vern Schuppan",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "36",
+          "driver": "Emilio de Villota",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "16",
+          "driver": "Arturo Merzario",
+          "team": "Shadow",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-13-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 13,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1977-08-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "1:41:45.930",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1.890",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "Out of fuel",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "35",
+          "driver": "Hans Binder",
+          "team": "Penske",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "38",
+          "driver": "Brian Henton",
+          "team": "Boro",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-14-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 14,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-09-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "1:27:50.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+16.960",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+23.630",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+28.480",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+30.110",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+1:19.220",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "14",
+          "driver": "Bruno Giacomelli",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "34",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Penske",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-15-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 15,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1977-10-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "1:58:23.267",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+2.026",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+1:18.879",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Niki Lauda",
+          "team": "Ferrari",
+          "time": "+1:40.615",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+1:48.138",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "25",
+          "driver": "Ian Ashley",
+          "team": "Hesketh",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Alternator",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "14",
+          "driver": "Danny Ongais",
+          "team": "Penske",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-16-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 16,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-10-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Mosport International Raceway",
+      "city": "Ontario",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "1:40",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+6.770",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "+15.760",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+46.690",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "+1:03.260",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Danny Ongais",
+          "team": "Penske",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "30",
+          "driver": "Brett Lunger",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "27",
+          "driver": "Patrick Nève",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "24",
+          "driver": "Rupert Keegan",
+          "team": "Hesketh",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Ian Scheckter",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "25",
+          "driver": "Ian Ashley",
+          "team": "Hesketh",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1977-17-race",
+      "competition": "f1",
+      "season": "1977",
+      "round": 17,
+      "title": "Japanese Grand Prix",
+      "session": "race",
+      "startsAt": "1977-10-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Fuji Speedway",
+      "city": "Oyama",
+      "country": "Japan",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "James Hunt",
+          "team": "McLaren",
+          "time": "1:31:51.680",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Carlos Reutemann",
+          "team": "Ferrari",
+          "time": "+1:02.450",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Patrick Depailler",
+          "team": "Tyrrell",
+          "time": "+1:06.390",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "17",
+          "driver": "Alan Jones",
+          "team": "Shadow",
+          "time": "+1:06.610",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Out of fuel",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "16",
+          "driver": "Riccardo Patrese",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Hans-Joachim Stuck",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Vittorio Brambilla",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "50",
+          "driver": "Kunimitsu Takahashi",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "20",
+          "driver": "Jody Scheckter",
+          "team": "Wolf",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "52",
+          "driver": "Kazuyoshi Hoshino",
+          "team": "Kojima",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Alex Ribeiro",
+          "team": "March",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "6",
+          "driver": "Gunnar Nilsson",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "22",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Jochen Mass",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Patrick Tambay",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "3",
+          "driver": "Ronnie Peterson",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "11",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "27",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "51",
+          "driver": "Noritake Takahara",
+          "team": "Kojima",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "18",
+          "driver": "Hans Binder",
+          "team": "Surtees",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

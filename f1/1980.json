@@ -1,0 +1,2933 @@
+{
+  "competition": "f1",
+  "season": "1980",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1980-1-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 1,
+      "title": "Argentine Grand Prix",
+      "session": "race",
+      "startsAt": "1980-01-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Juan y Oscar Gálvez",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "1:43:24.380",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+24.590",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+1:18.640",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+1:23.480",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "Heat shield fire",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-2-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 2,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "1980-01-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "1:40:01.330",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+21.860",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+1:06.110",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+1:40.130",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:45.410",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "Halfshaft",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-3-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 3,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1980-03-01T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "1:36:52.540",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+34.070",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+52.490",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1:01.020",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Geoff Lees",
+          "team": "Shadow",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Puncture",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Puncture",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-4-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 4,
+      "title": "United States Grand Prix West",
+      "session": "race",
+      "startsAt": "1980-03-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Long Beach",
+      "city": "California",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "1:50:19.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+49.212",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1:18.563",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "+9 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Puncture",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "9",
+          "driver": "Jan Lammers",
+          "team": "ATS",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-5-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 5,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1980-05-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Zolder",
+      "city": "Heusden-Zolder",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "1:38:47.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+47.370",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+1:24.120",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Jan Lammers",
+          "team": "ATS",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Exhaust",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "14",
+          "driver": "Tiff Needell",
+          "team": "Ensign",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-6-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1980-05-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "1:55:34.365",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1:13.629",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1:17.726",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Jan Lammers",
+          "team": "ATS",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-7-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 7,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1980-06-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Paul Ricard",
+      "city": "Le Castellet",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "1:32:43.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+4.520",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+30.260",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1:14.880",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+1:16.150",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+1:16.740",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "6",
+          "driver": "Ricardo Zunino",
+          "team": "Brabham",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-8-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 8,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1980-07-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Brands Hatch",
+      "city": "Kent",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "1:34:49.228",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+11.007",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+13.285",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "50",
+          "driver": "Rupert Keegan",
+          "team": "Williams",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "22",
+          "driver": "Patrick Depailler",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-9-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 9,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1980-08-10T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "1:23:59.730",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+3.190",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+43.530",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+44.480",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "+1:16.490",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1:28.720",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+1:33.010",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+1:47.750",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "14",
+          "driver": "Jan Lammers",
+          "team": "Ensign",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-10-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 10,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1980-08-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "1:26:15.730",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+0.820",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+19.360",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+42.020",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1:02.810",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1:02.810",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:33.410",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "50",
+          "driver": "Rupert Keegan",
+          "team": "Williams",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "43",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-11-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 11,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1980-08-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "1:38:13.830",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+12.930",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+13.430",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+15.290",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1:00.020",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:22.620",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Vittorio Brambilla",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "41",
+          "driver": "Geoff Lees",
+          "team": "Ensign",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "43",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-12-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 12,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1980-09-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "1:38:07.520",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "+28.930",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+1:13.670",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "50",
+          "driver": "Rupert Keegan",
+          "team": "Williams",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Puncture",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Puncture",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "22",
+          "driver": "Vittorio Brambilla",
+          "team": "Alfa Romeo",
+          "time": "Spun off",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-13-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 13,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1980-09-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Gilles Villeneuve",
+      "city": "Montreal",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "1:46:45.530",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+15.540",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+19.070",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+30.980",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "+55.230",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Jan Lammers",
+          "team": "Ensign",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Jean-Pierre Jabouille",
+          "team": "Renault",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Andrea de Cesaris",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Chassis",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "43",
+          "driver": "Mike Thackwell",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1980-14-race",
+      "competition": "f1",
+      "season": "1980",
+      "round": 14,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1980-10-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Alan Jones",
+          "team": "Williams",
+          "time": "1:34:36.050",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "28",
+          "driver": "Carlos Reutemann",
+          "team": "Williams",
+          "time": "+4.210",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Didier Pironi",
+          "team": "Ligier",
+          "time": "+12.570",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+29.690",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Jacques Laffite",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "16",
+          "driver": "René Arnoux",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Marc Surer",
+          "team": "ATS",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "50",
+          "driver": "Rupert Keegan",
+          "team": "Williams",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "21",
+          "driver": "Keke Rosberg",
+          "team": "Fittipaldi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "1",
+          "driver": "Jody Scheckter",
+          "team": "Ferrari",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "John Watson",
+          "team": "McLaren",
+          "time": "+9 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "Jean-Pierre Jarier",
+          "team": "Tyrrell",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Arrows",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "5",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "6",
+          "driver": "Hector Rebaque",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "31",
+          "driver": "Eddie Cheever",
+          "team": "Osella",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "29",
+          "driver": "Riccardo Patrese",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "14",
+          "driver": "Jan Lammers",
+          "team": "Ensign",
+          "time": "Steering",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "20",
+          "driver": "Emerson Fittipaldi",
+          "team": "Fittipaldi",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "4",
+          "driver": "Derek Daly",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "22",
+          "driver": "Andrea de Cesaris",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "8",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

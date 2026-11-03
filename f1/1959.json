@@ -1,0 +1,1608 @@
+{
+  "competition": "f1",
+  "season": "1959",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1959-1-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 1,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1959-05-10T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "24",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "2:55:51.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "50",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "+20.400",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "32",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "48",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+3 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "22",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+4 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "38",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Maserati",
+          "time": "+17 Laps",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "30",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "20",
+          "driver": "Ron Flockhart",
+          "team": "BRM",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "18",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "46",
+          "driver": "Jean Behra",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "40",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Heat shield fire",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "26",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "6",
+          "driver": "Wolfgang von Trips",
+          "team": "Porsche",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "52",
+          "driver": "Cliff Allison",
+          "team": "Ferrari",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "44",
+          "driver": "Bruce Halford",
+          "team": "Team Lotus",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-2-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 2,
+      "title": "Indianapolis 500",
+      "session": "race",
+      "startsAt": "1959-05-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Indianapolis Motor Speedway",
+      "city": "Indianapolis",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Rodger Ward",
+          "team": "Watson",
+          "time": "3:40:49.200",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "16",
+          "driver": "Jim Rathmann",
+          "team": "Watson",
+          "time": "+23.280",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "Johnny Thomson",
+          "team": "Lesovsky",
+          "time": "+50.640",
+          "points": 5
+        },
+        {
+          "pos": 4,
+          "number": "1",
+          "driver": "Tony Bettenhausen",
+          "team": "Epperly",
+          "time": "+1:47.090",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "99",
+          "driver": "Paul Goldsmith",
+          "team": "Epperly",
+          "time": "+2:06.440",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "33",
+          "driver": "Johnny Boyd",
+          "team": "Epperly",
+          "time": "+3:16.980",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "37",
+          "driver": "Duane Carter",
+          "team": "Kurtis Kraft",
+          "time": "+4:09.920",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Eddie Johnson",
+          "team": "Kurtis Kraft",
+          "time": "+4:10.530",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "45",
+          "driver": "Paul Russo",
+          "team": "Kurtis Kraft",
+          "time": "+4:11.040",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Anthony Foyt",
+          "team": "Kuzma",
+          "time": "+4:14.480",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "88",
+          "driver": "Gene Hartley",
+          "team": "Kuzma",
+          "time": "+5:42.480",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "74",
+          "driver": "Bob Veith",
+          "team": "Moore",
+          "time": "+6:09.730",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "89",
+          "driver": "Al Herman",
+          "team": "Dunn",
+          "time": "+6:40.400",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "66",
+          "driver": "Jimmy Daywalt",
+          "team": "Kurtis Kraft",
+          "time": "+6:41.540",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "71",
+          "driver": "Chuck Arnold",
+          "team": "Kurtis Kraft",
+          "time": "+8:19.860",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "58",
+          "driver": "Jim McWithey",
+          "team": "Kurtis Kraft",
+          "time": "+11:41.690",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "44",
+          "driver": "Eddie Sachs",
+          "team": "Kuzma",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "57",
+          "driver": "Al Keller",
+          "team": "Kuzma",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "64",
+          "driver": "Pat Flaherty",
+          "team": "Watson",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "73",
+          "driver": "Dick Rathmann",
+          "team": "Watson",
+          "time": "Heat shield fire",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "53",
+          "driver": "Bill Cheesbourg",
+          "team": "Kuzma",
+          "time": "Magneto",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "15",
+          "driver": "Don Freeland",
+          "team": "Kurtis Kraft",
+          "time": "Magneto",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "49",
+          "driver": "Ray Crawford",
+          "team": "Elder",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "9",
+          "driver": "Don Branson",
+          "team": "Phillips",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "65",
+          "driver": "Bob Christie",
+          "team": "Kurtis Kraft",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "48",
+          "driver": "Bobby Grim",
+          "team": "Kurtis Kraft",
+          "time": "Magneto",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "24",
+          "driver": "Jack Turner",
+          "team": "Christensen",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "47",
+          "driver": "Chuck Weyant",
+          "team": "Kurtis Kraft",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "7",
+          "driver": "Jud Larson",
+          "team": "Kurtis Kraft",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 30,
+          "number": "77",
+          "driver": "Mike Magill",
+          "team": "Sutton",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 31,
+          "number": "87",
+          "driver": "Red Amick",
+          "team": "Kurtis Kraft",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 32,
+          "number": "8",
+          "driver": "Len Sutton",
+          "team": "Lesovsky",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 33,
+          "number": "6",
+          "driver": "Jimmy Bryan",
+          "team": "Epperly",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-3-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 3,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1959-05-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "2:05:26.800",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+14.200",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "9",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+1:23.000",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "1",
+          "driver": "Jean Behra",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "10",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Cliff Allison",
+          "team": "Ferrari",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "15",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "Gearbox",
+          "points": 1
+        },
+        {
+          "pos": 12,
+          "number": "6",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "5",
+          "driver": "Carroll Shelby",
+          "team": "Aston Martin",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Roy Salvadori",
+          "team": "Aston Martin",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-4-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 4,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1959-07-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Reims-Gueux",
+      "city": "Reims",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "24",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "2:01:26.500",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "26",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+27.500",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+1:37.700",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "22",
+          "driver": "Olivier Gendebien",
+          "team": "Ferrari",
+          "time": "+1:47.500",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+1:47.700",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "44",
+          "driver": "Ron Flockhart",
+          "team": "BRM",
+          "time": "+2:05.700",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "6",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "40",
+          "driver": "Giorgio Scarlatti",
+          "team": "Maserati",
+          "time": "+9 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "42",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Maserati",
+          "time": "+10 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "38",
+          "driver": "Fritz d'Orey",
+          "team": "Maserati",
+          "time": "+10 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+14 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Stirling Moss",
+          "team": "BRM",
+          "time": "Disqualified",
+          "points": 1
+        },
+        {
+          "pos": 13,
+          "number": "30",
+          "driver": "Jean Behra",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "28",
+          "driver": "Dan Gurney",
+          "team": "Ferrari",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "34",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "18",
+          "driver": "Ian Burgess",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "Physical",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "32",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Colin Davis",
+          "team": "Cooper-Maserati",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "4",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "36",
+          "driver": "Azdrubal Fontes",
+          "team": "Maserati",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-5-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 5,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1959-07-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Aintree",
+      "city": "Liverpool",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "2:30:11.600",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Stirling Moss",
+          "team": "BRM",
+          "time": "+22.200",
+          "points": 6.5
+        },
+        {
+          "pos": 3,
+          "number": "16",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+22.400",
+          "points": 4.5
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "18",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Roy Salvadori",
+          "team": "Aston Martin",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Alan Stacey",
+          "team": "Team Lotus",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "28",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "48",
+          "driver": "Chris Bristow",
+          "team": "Cooper-Borgward",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "58",
+          "driver": "Henry Taylor",
+          "team": "Cooper-Climax",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "52",
+          "driver": "Peter Ashdown",
+          "team": "Cooper-Climax",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "46",
+          "driver": "Ivor Bueb",
+          "team": "Cooper-Borgward",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Carroll Shelby",
+          "team": "Aston Martin",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "40",
+          "driver": "Fritz d'Orey",
+          "team": "Maserati",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "42",
+          "driver": "Ron Flockhart",
+          "team": "BRM",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "38",
+          "driver": "Jack Fairman",
+          "team": "Cooper-Climax",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Ian Burgess",
+          "team": "Cooper-Maserati",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "24",
+          "driver": "Hans Herrmann",
+          "team": "Cooper-Maserati",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "64",
+          "driver": "David Piper",
+          "team": "Team Lotus",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "36",
+          "driver": "Brian Naylor",
+          "team": "JBW",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "50",
+          "driver": "Mike Taylor",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "20",
+          "driver": "Tony Brooks",
+          "team": "Vanwall",
+          "time": "Ignition",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-6-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 6,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1959-08-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "AVUS",
+      "city": "Berlin",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "4",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "2:09:31.600",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Dan Gurney",
+          "team": "Ferrari",
+          "time": "+2.900",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+1:04.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "18",
+          "driver": "Ian Burgess",
+          "team": "Cooper-Maserati",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "+11 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "2",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "11",
+          "driver": "Hans Herrmann",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "3",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "1",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "17",
+          "driver": "Cliff Allison",
+          "team": "Ferrari",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-7-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 7,
+      "title": "Portuguese Grand Prix",
+      "session": "race",
+      "startsAt": "1959-08-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monsanto Park Circuit",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "4",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "2:11:55.410",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "16",
+          "driver": "Dan Gurney",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "10",
+          "driver": "Roy Salvadori",
+          "team": "Aston Martin",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Ron Flockhart",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Carroll Shelby",
+          "team": "Aston Martin",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "18",
+          "driver": "Mário de Araújo Cabral",
+          "team": "Cooper-Maserati",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "3",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "1",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "7",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "15",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-8-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 8,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1959-09-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "14",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "2:04:05.400",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "32",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+46.700",
+          "points": 7
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+1:12.500",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "36",
+          "driver": "Dan Gurney",
+          "team": "Ferrari",
+          "time": "+1:19.600",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "34",
+          "driver": "Cliff Allison",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "38",
+          "driver": "Olivier Gendebien",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "Harry Schell",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Jo Bonnier",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "26",
+          "driver": "Carroll Shelby",
+          "team": "Aston Martin",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "40",
+          "driver": "Colin Davis",
+          "team": "Cooper-Maserati",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "10",
+          "driver": "Giorgio Scarlatti",
+          "team": "Cooper-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Ron Flockhart",
+          "team": "BRM",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "42",
+          "driver": "Ian Burgess",
+          "team": "Cooper-Maserati",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "28",
+          "driver": "Giulio Cabianca",
+          "team": "Maserati",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "24",
+          "driver": "Roy Salvadori",
+          "team": "Aston Martin",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Jack Fairman",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "20",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "18",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "30",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1959-9-race",
+      "competition": "f1",
+      "season": "1959",
+      "round": 9,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1959-12-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sebring International Raceway",
+      "city": "Florida",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "9",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "2:12:35.700",
+          "points": 8
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Climax",
+          "time": "+0.600",
+          "points": 7
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Tony Brooks",
+          "team": "Ferrari",
+          "time": "+3:00.900",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+4:57.300",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "10",
+          "driver": "Innes Ireland",
+          "team": "Team Lotus",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "4",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "17",
+          "driver": "Harry Blanchard",
+          "team": "Porsche",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "3",
+          "driver": "Cliff Allison",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "12",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Maserati",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "1",
+          "driver": "Rodger Ward",
+          "team": "Kurtis Kraft",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Alessandro de Tomaso",
+          "team": "Cooper-OSCA",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "5",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Fritz d'Orey",
+          "team": "Tec-Mec",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "7",
+          "driver": "Stirling Moss",
+          "team": "Cooper-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "19",
+          "driver": "Harry Schell",
+          "team": "Cooper-Climax",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "16",
+          "driver": "George Constantine",
+          "team": "Cooper-Borgward",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Alan Stacey",
+          "team": "Team Lotus",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "18",
+          "driver": "Bob Said",
+          "team": "Connaught",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Phil Cade",
+          "team": "Maserati",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

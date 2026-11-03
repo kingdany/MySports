@@ -1,0 +1,3591 @@
+{
+  "competition": "f1",
+  "season": "1984",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1984-1-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 1,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "1984-03-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Internacional Nelson Piquet",
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:42:34.492",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "+40.514",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+59.128",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Out of fuel",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "Battery",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Battery",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "Distributor",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Disqualified",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-2-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 2,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1984-04-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "1:29:23.430",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:05.950",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+3 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "Injection",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-3-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 3,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1984-04-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Zolder",
+      "city": "Heusden-Zolder",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "1:36:32.048",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "+42.386",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1:09.803",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Out of fuel",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Exhaust",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Water pump",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Distributor",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-4-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 4,
+      "title": "San Marino Grand Prix",
+      "session": "race",
+      "startsAt": "1984-05-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:36:53.679",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+13.416",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Out of fuel",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Out of fuel",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Exhaust",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-5-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 5,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1984-05-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Dijon-Prenois",
+      "city": "Dijon",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "1:31:11.951",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "+7.154",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "+23.969",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+43.706",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1:06.125",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Electrical",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-6-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1984-06-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:01:07.740",
+          "points": 4.5
+        },
+        {
+          "pos": 2,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+7.446",
+          "points": 3
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+29.077",
+          "points": 2
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "+35.246",
+          "points": 1.5
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+44.439",
+          "points": 1
+        },
+        {
+          "pos": 6,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0.5
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Steering",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Corrado Fabi",
+          "team": "Brabham",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-7-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 7,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1984-06-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Gilles Villeneuve",
+      "city": "Montreal",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "1:46:23.748",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "+2.612",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:28.032",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Chassis",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "2",
+          "driver": "Corrado Fabi",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Mike Thackwell",
+          "team": "RAM",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Turbo",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-8-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 8,
+      "title": "Detroit Grand Prix",
+      "session": "race",
+      "startsAt": "1984-06-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Detroit Street Circuit",
+      "city": "Detroit",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "1:55:41.842",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+32.638",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "+1:26.528",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "+1:55.258",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "Martin Brundle",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-9-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 9,
+      "title": "Dallas Grand Prix",
+      "session": "race",
+      "startsAt": "1984-07-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Fair Park",
+      "city": "Dallas",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "2:01:22.617",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+22.464",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "Corrado Fabi",
+          "team": "Brabham",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Johnny Cecotto",
+          "team": "Toleman",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-10-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 10,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1984-07-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Brands Hatch",
+      "city": "Kent",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "1:29:28.532",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "+42.123",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+1:03.328",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Water pump",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Stefan Johansson",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-11-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 11,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1984-08-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:24:43.210",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "+3.149",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "+36.423",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "+51.663",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "+1:11.949",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "3",
+          "driver": "Stefan Johansson",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Turbo",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-12-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 12,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1984-08-19T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "1:21:12.851",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+23.525",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+48.998",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "+56.312",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "31",
+          "driver": "Gerhard Berger",
+          "team": "ATS",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Injection",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-13-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 13,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1984-08-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:37:21.468",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "+10.283",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "+1:19.544",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Stefan Bellof",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "3",
+          "driver": "Stefan Johansson",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-14-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 14,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1984-09-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "1:20:29.065",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+24.249",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "19",
+          "driver": "Stefan Johansson",
+          "team": "Toleman",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 6,
+          "number": "31",
+          "driver": "Gerhard Berger",
+          "team": "ATS",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "21",
+          "driver": "Huub Rothengatter",
+          "team": "Spirit",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "14",
+          "driver": "Manfred Winkelhock",
+          "team": "ATS",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-15-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 15,
+      "title": "European Grand Prix",
+      "session": "race",
+      "startsAt": "1984-10-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nürburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:35:13.284",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+23.911",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+24.922",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "+43.086",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1:01.430",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Teo Fabi",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "Turbo",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "20",
+          "driver": "Stefan Johansson",
+          "team": "Toleman",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "31",
+          "driver": "Gerhard Berger",
+          "team": "ATS",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1984-16-race",
+      "competition": "f1",
+      "season": "1984",
+      "round": 16,
+      "title": "Portuguese Grand Prix",
+      "session": "race",
+      "startsAt": "1984-10-21T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo do Estoril",
+      "city": "Estoril",
+      "country": "Portugal",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "time": "1:41:11.753",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "time": "+13.425",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "19",
+          "driver": "Ayrton Senna",
+          "team": "Toleman",
+          "time": "+20.042",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "27",
+          "driver": "Michele Alboreto",
+          "team": "Ferrari",
+          "time": "+20.317",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Elio de Angelis",
+          "team": "Team Lotus",
+          "time": "+1:32.169",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "1",
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "15",
+          "driver": "Patrick Tambay",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "22",
+          "driver": "Riccardo Patrese",
+          "team": "Alfa Romeo",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "28",
+          "driver": "René Arnoux",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "2",
+          "driver": "Manfred Winkelhock",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Stefan Johansson",
+          "team": "Toleman",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "26",
+          "driver": "Andrea de Cesaris",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "14",
+          "driver": "Gerhard Berger",
+          "team": "ATS",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "5",
+          "driver": "Jacques Laffite",
+          "team": "Williams",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Mauro Baldi",
+          "team": "Spirit",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "30",
+          "driver": "Jo Gartner",
+          "team": "Osella",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Eddie Cheever",
+          "team": "Alfa Romeo",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "24",
+          "driver": "Piercarlo Ghinzani",
+          "team": "Osella",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Nigel Mansell",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "16",
+          "driver": "Derek Warwick",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "33",
+          "driver": "Philippe Streiff",
+          "team": "Renault",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "6",
+          "driver": "Keke Rosberg",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "25",
+          "driver": "François Hesnault",
+          "team": "Ligier",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "18",
+          "driver": "Thierry Boutsen",
+          "team": "Arrows",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "10",
+          "driver": "Jonathan Palmer",
+          "team": "RAM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "17",
+          "driver": "Marc Surer",
+          "team": "Arrows",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "9",
+          "driver": "Philippe Alliot",
+          "team": "RAM",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

@@ -1,0 +1,1472 @@
+{
+  "competition": "f1",
+  "season": "1966",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1966-1-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 1,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1966-05-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "2:33:10.500",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "16",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "+40.200",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "19",
+          "driver": "Bob Bondurant",
+          "team": "BRM",
+          "time": "+5 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Richie Ginther",
+          "team": "Cooper-Maserati",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 6,
+          "number": "21",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "18",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "4",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Jo Siffert",
+          "team": "Brabham-BRM",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "6",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "John Surtees",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "15",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-2-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 2,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1966-06-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Spa-Francorchamps",
+      "city": "Spa",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "6",
+          "driver": "John Surtees",
+          "team": "Ferrari",
+          "time": "2:09:11.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "19",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "+42.100",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "3",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "18",
+          "driver": "Richie Ginther",
+          "team": "Cooper-Maserati",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "27",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "15",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "10",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Bob Bondurant",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "24",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Serenissima",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "8",
+          "driver": "Vic Wilson",
+          "team": "BRM",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-3-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 3,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Reims-Gueux",
+      "city": "Reims",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "1:48:31.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "22",
+          "driver": "Mike Parkes",
+          "team": "Ferrari",
+          "time": "+9.500",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "14",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "+2 Laps",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "44",
+          "driver": "John Taylor",
+          "team": "Brabham-BRM",
+          "time": "+3 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "36",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "8",
+          "driver": "Chris Amon",
+          "team": "Cooper-Maserati",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "42",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "2",
+          "driver": "Pedro Rodríguez",
+          "team": "Lotus-Climax",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "30",
+          "driver": "Jo Bonnier",
+          "team": "Brabham-Climax",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "38",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "32",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "4",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-4-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 4,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-16T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Brands Hatch",
+      "city": "Kent",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "2:13:13.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "+9.600",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "1",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "14",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Serenissima",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Chris Irwin",
+          "team": "Brabham-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "22",
+          "driver": "John Taylor",
+          "team": "Brabham-BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Bob Bondurant",
+          "team": "BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "19",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Chris Lawrence",
+          "team": "Cooper-Ferrari",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "18",
+          "driver": "Jo Bonnier",
+          "team": "Brabham-Climax",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "4",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "17",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Trevor Taylor",
+          "team": "Shannon",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-5-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 5,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "16",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "2:20:32.500",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+2 Laps",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "32",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "+3 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "30",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "38",
+          "driver": "John Taylor",
+          "team": "Brabham-BRM",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "36",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "28",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "34",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "24",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "18",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Mike Parkes",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-6-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 6,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1966-08-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nürburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "2:27",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "7",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "+44.400",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "+2:32.600",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+6:41.400",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "+8:28.900",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "9",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "+10:56.400",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "12",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "2",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "15",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Alternator",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "1",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Chris Lawrence",
+          "team": "Cooper-Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Ludovico Scarfiotti",
+          "team": "Ferrari",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Mike Parkes",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "17",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "14",
+          "driver": "Bob Bondurant",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "19",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "16",
+          "driver": "John Taylor",
+          "team": "Brabham-BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "time": "Injury",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-7-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 7,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1966-09-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "6",
+          "driver": "Ludovico Scarfiotti",
+          "team": "Ferrari",
+          "time": "1:47:14.800",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "4",
+          "driver": "Mike Parkes",
+          "team": "Ferrari",
+          "time": "+5.800",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "+6.100",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "16",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "42",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "40",
+          "driver": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "48",
+          "driver": "Bob Bondurant",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Giacomo Russo",
+          "team": "Lotus-Climax",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "44",
+          "driver": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "22",
+          "driver": "Jim Clark",
+          "team": "Lotus-BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "36",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "14",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "18",
+          "driver": "Richie Ginther",
+          "team": "Honda",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "30",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Weslake",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "38",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "26",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-8-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 8,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1966-10-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Jim Clark",
+          "team": "Lotus-BRM",
+          "time": "2:09:40.110",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "Out of fuel",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "19",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "+3 Laps",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "17",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "+3 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Peter Arundell",
+          "team": "Lotus-Climax",
+          "time": "+7 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Innes Ireland",
+          "team": "BRM",
+          "time": "Alternator",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Richie Ginther",
+          "team": "Honda",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "18",
+          "driver": "Mike Spence",
+          "team": "Lotus-BRM",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Ronnie Bucknum",
+          "team": "Honda",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "22",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "5",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Pedro Rodríguez",
+          "team": "Lotus-BRM",
+          "time": "Retired",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Weslake",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "Bob Bondurant",
+          "team": "Eagle-Climax",
+          "time": "Disqualified",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1966-9-race",
+      "competition": "f1",
+      "season": "1966",
+      "round": 9,
+      "title": "Mexican Grand Prix",
+      "session": "race",
+      "startsAt": "1966-10-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Hermanos Rodríguez",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "John Surtees",
+          "team": "Cooper-Maserati",
+          "time": "2:06:35.340",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "time": "+7.880",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Denny Hulme",
+          "team": "Brabham-Repco",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Richie Ginther",
+          "team": "Honda",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Dan Gurney",
+          "team": "Eagle-Climax",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Jo Bonnier",
+          "team": "Cooper-Maserati",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "Peter Arundell",
+          "team": "Lotus-BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Ronnie Bucknum",
+          "team": "Honda",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "11",
+          "driver": "Pedro Rodríguez",
+          "team": "Lotus-BRM",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "19",
+          "driver": "Jo Siffert",
+          "team": "Cooper-Maserati",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "8",
+          "driver": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Innes Ireland",
+          "team": "BRM",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Jackie Stewart",
+          "team": "BRM",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "16",
+          "driver": "Bob Bondurant",
+          "team": "Eagle-Weslake",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "3",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "1",
+          "driver": "Jim Clark",
+          "team": "Lotus-BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "9",
+          "driver": "Moisés Solana",
+          "team": "Cooper-Maserati",
+          "time": "Overheating",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

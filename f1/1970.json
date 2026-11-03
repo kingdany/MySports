@@ -1,0 +1,2364 @@
+{
+  "competition": "f1",
+  "season": "1970",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1970-1-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 1,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1970-03-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "1:49:35.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+8.100",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "+17.100",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "3",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+1:13.100",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "10",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "11",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "4",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "John Love",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Peter de Klerk",
+          "team": "Brabham",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "25",
+          "driver": "Dave Charlton",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "17",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "John Surtees",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "2",
+          "driver": "Johnny Servoz-Gavin",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "5",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Piers Courage",
+          "team": "De Tomaso",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "8",
+          "driver": "Mario Andretti",
+          "team": "March",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "14",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "19",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "15",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "Overheating",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-2-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 2,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1970-04-19T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Jarama",
+      "city": "Madrid",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "2:10:58.200",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "11",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "+1 Lap",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "18",
+          "driver": "Mario Andretti",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "16",
+          "driver": "Johnny Servoz-Gavin",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "John Surtees",
+          "team": "McLaren-Ford",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "22",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "5",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "3",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "15",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "12",
+          "driver": "Piers Courage",
+          "team": "De Tomaso",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-3-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 3,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1970-05-10T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "1:54:37.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+23.100",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "9",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+51.400",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+1:28.300",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "1",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "17",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "23",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "28",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "24",
+          "driver": "Piers Courage",
+          "team": "De Tomaso",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Bruce McLaren",
+          "team": "McLaren-Ford",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "John Surtees",
+          "team": "McLaren-Ford",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "26",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Halfshaft",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-4-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 4,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1970-06-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Spa-Francorchamps",
+      "city": "Spa",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "1:38:10.100",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "10",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+1.100",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+1:43.700",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Ignazio Giunti",
+          "team": "Ferrari",
+          "time": "+2:38.500",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "19",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+3:31.800",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "26",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "Electrical",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Fuel pressure",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "27",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "18",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "21",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "20",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "7",
+          "driver": "Piers Courage",
+          "team": "De Tomaso",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Derek Bell",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-5-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 5,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1970-06-21T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "10",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "1:50:43.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "+30.000",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "26",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "16",
+          "driver": "John Surtees",
+          "team": "McLaren-Ford",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "12",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "22",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "1",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "15",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Piers Courage",
+          "team": "De Tomaso",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "32",
+          "driver": "Dan Gurney",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "8",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-6-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 6,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1970-07-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Charade Circuit",
+      "city": "Clermont-Ferrand",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "6",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "1:55",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "14",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+7.610",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "23",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+44.830",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "19",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+45.660",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "20",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+1:19.420",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "32",
+          "driver": "Dan Gurney",
+          "team": "McLaren-Ford",
+          "time": "+1:19.650",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "22",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+2:20.160",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "+2:47.170",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "+3:09.610",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "8",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "4",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "21",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "11",
+          "driver": "Ignazio Giunti",
+          "team": "Ferrari",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "16",
+          "driver": "Andrea de Adamich",
+          "team": "McLaren-Alfa Romeo",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "18",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-7-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 7,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1970-07-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Brands Hatch",
+      "city": "Kent",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "1:57",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "17",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+32.900",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "9",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+54.400",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+54.800",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "16",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "14",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "28",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "29",
+          "driver": "Pete Lovely",
+          "team": "Team Lotus",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "32",
+          "driver": "Dan Gurney",
+          "team": "McLaren-Ford",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "22",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "23",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "20",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "8",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "7",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "26",
+          "driver": "Mario Andretti",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "15",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "11",
+          "driver": "Andrea de Adamich",
+          "team": "McLaren-Alfa Romeo",
+          "time": "Fuel leak",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-8-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 8,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1970-08-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "1:42:00.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "10",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+0.700",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+1:21.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "17",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+1:55.100",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "21",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "14",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "23",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "7",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "5",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "15",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Mario Andretti",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "22",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "6",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "18",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "8",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "Throttle",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-9-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 9,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1970-08-16T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "1:42:17.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+0.610",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "11",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+1:27.880",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "17",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "16",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Ignazio Giunti",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "4",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "3",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "23",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "22",
+          "driver": "Andrea de Adamich",
+          "team": "McLaren-Alfa Romeo",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "20",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "8",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "15",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "26",
+          "driver": "Tim Schenken",
+          "team": "De Tomaso",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "6",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Mario Andretti",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Silvio Moser",
+          "team": "Bellasi",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "Fuel pipe",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "7",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-10-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 10,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1970-09-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "4",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "1:39:07.100",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "18",
+          "driver": "Jackie Stewart",
+          "team": "March",
+          "time": "+5.730",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "40",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+5.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "30",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+6.150",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "46",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+6.410",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "+1:03.460",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "48",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "34",
+          "driver": "Andrea de Adamich",
+          "team": "McLaren-Alfa Romeo",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "32",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "8",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "52",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "44",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "2",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "54",
+          "driver": "Tim Schenken",
+          "team": "De Tomaso",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Ignazio Giunti",
+          "team": "Ferrari",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "42",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "50",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "14",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "28",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "John Miles",
+          "team": "Team Lotus",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "22",
+          "driver": "Jochen Rindt",
+          "team": "Team Lotus",
+          "time": "Fatal accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "26",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-11-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 11,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1970-09-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Mont-Tremblant",
+      "city": "Quebec",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "18",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "1:21:18.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+14.800",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+57.900",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "4",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "6",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "10",
+          "driver": "Tim Schenken",
+          "team": "De Tomaso",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Andrea de Adamich",
+          "team": "McLaren-Alfa Romeo",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "26",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "5",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "15",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "3",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "Axle",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "21",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-12-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 12,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1970-10-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "24",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "1:57:32.790",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "19",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+36.390",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "23",
+          "driver": "Reine Wisell",
+          "team": "Team Lotus",
+          "time": "+45.170",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "18",
+          "driver": "Derek Bell",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "11",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "15",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "29",
+          "driver": "Ronnie Peterson",
+          "team": "March",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "9",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "14",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "30",
+          "driver": "Tim Schenken",
+          "team": "De Tomaso",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "27",
+          "driver": "Jo Bonnier",
+          "team": "McLaren-Ford",
+          "time": "Water pipe",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "31",
+          "driver": "Gus Hutchison",
+          "team": "Brabham",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "20",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "21",
+          "driver": "George Eaton",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "17",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1970-13-race",
+      "competition": "f1",
+      "season": "1970",
+      "round": 13,
+      "title": "Mexican Grand Prix",
+      "session": "race",
+      "startsAt": "1970-10-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Hermanos Rodríguez",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "1:53:28.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "4",
+          "driver": "Clay Regazzoni",
+          "team": "Ferrari",
+          "time": "+24.640",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Denny Hulme",
+          "team": "McLaren-Ford",
+          "time": "+45.970",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Chris Amon",
+          "team": "March",
+          "time": "+47.050",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "Matra",
+          "time": "+50.110",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Pedro Rodríguez",
+          "team": "BRM",
+          "time": "+1:24.760",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "20",
+          "driver": "Jackie Oliver",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "17",
+          "driver": "John Surtees",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "7",
+          "driver": "Henri Pescarolo",
+          "team": "Matra",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "23",
+          "driver": "Reine Wisell",
+          "team": "Team Lotus",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Jack Brabham",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "1",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Peter Gethin",
+          "team": "McLaren-Ford",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "François Cevert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "14",
+          "driver": "Graham Hill",
+          "team": "Team Lotus",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Jo Siffert",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "24",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

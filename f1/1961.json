@@ -1,0 +1,1863 @@
+{
+  "competition": "f1",
+  "season": "1961",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1961-1-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 1,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1961-05-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "20",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "2:45:50.100",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "36",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "+3.600",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "38",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+41.300",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "40",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "4",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "26",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+5 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "42",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "32",
+          "driver": "Cliff Allison",
+          "team": "Lotus-Climax",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "6",
+          "driver": "Hans Herrmann",
+          "team": "Porsche",
+          "time": "+9 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "28",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+11 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "22",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "Injection",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Michael May",
+          "team": "Lotus-Climax",
+          "time": "Oil pipe",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "24",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "18",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "30",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-2-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 2,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1961-05-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "2:01:52.100",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+0.900",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "15",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+13.100",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "+22.200",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "2",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "+22.300",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "10",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+1:20.100",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "12",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "+1:26.700",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "4",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1:29.800",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "5",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "6",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "Trevor Taylor",
+          "team": "Lotus-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Hans Herrmann",
+          "team": "Porsche",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "17",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "18",
+          "driver": "Ian Burgess",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-3-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 3,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1961-06-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Spa-Francorchamps",
+      "city": "Spa",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "4",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "2:03:03.800",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "+0.700",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "+19.500",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Olivier Gendebien",
+          "team": "Ferrari",
+          "time": "+45.600",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "24",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "+1:26.800",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+1:31.000",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "18",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "+2:47.100",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "+3:55.600",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "40",
+          "driver": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "44",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "22",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "34",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "38",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "36",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "26",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "46",
+          "driver": "Lorenzo Bandini",
+          "team": "Cooper-Maserati",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "28",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "30",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "32",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "12",
+          "driver": "Lucien Bianchi",
+          "team": "Lotus-Climax",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "10",
+          "driver": "Willy Mairesse",
+          "team": "Lotus-Climax",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "42",
+          "driver": "Tony Marsh",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "48",
+          "driver": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "50",
+          "driver": "Ian Burgess",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "16",
+          "driver": "Cliff Allison",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "16",
+          "driver": "Henry Taylor",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-4-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 4,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1961-07-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Reims-Gueux",
+      "city": "Reims",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "50",
+          "driver": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "time": "2:14:17.500",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+0.100",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+1:01.000",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "+1:10.300",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "4",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+1:41.800",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1:41.900",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "+3:15.400",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "42",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "30",
+          "driver": "Henry Taylor",
+          "team": "Lotus-Climax",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "46",
+          "driver": "Michael May",
+          "team": "Lotus-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "36",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+9 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "32",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "time": "+10 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "38",
+          "driver": "Ian Burgess",
+          "team": "Lotus-Climax",
+          "time": "+10 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "18",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "26",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "48",
+          "driver": "Willy Mairesse",
+          "team": "Lotus-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "14",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "28",
+          "driver": "Lucien Bianchi",
+          "team": "Lotus-Climax",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "34",
+          "driver": "Giorgio Scarlatti",
+          "team": "De Tomaso-Osca",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "2",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "52",
+          "driver": "Bernard Collomb",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "40",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "24",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "44",
+          "driver": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "46",
+          "driver": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "None",
+          "driver": "Juan Manuel Bordeu",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "14",
+          "driver": "Hans Herrmann",
+          "team": "Porsche",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 30,
+          "number": "46",
+          "driver": "Olivier Gendebien",
+          "team": "Emeryson",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 31,
+          "number": "54",
+          "driver": "Brian Naylor",
+          "team": "JBW",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-5-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 5,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1961-07-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Aintree",
+      "city": "Liverpool",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "4",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "2:40:53.600",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+46.000",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "+46.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "+1:08.600",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "+1:16.200",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "36",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "time": "+1:26.200",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "22",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "42",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "60",
+          "driver": "Lorenzo Bandini",
+          "team": "Cooper-Maserati",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "50",
+          "driver": "Tony Maggs",
+          "team": "Lotus-Climax",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "44",
+          "driver": "Ian Burgess",
+          "team": "Lotus-Climax",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "54",
+          "driver": "Keith Greene",
+          "team": "Gilby",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "56",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "52",
+          "driver": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "time": "+17 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "18",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Stirling Moss",
+          "team": "Ferguson",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Jack Fairman",
+          "team": "Ferguson",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "32",
+          "driver": "Lucien Bianchi",
+          "team": "Lotus-Climax",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "28",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "20",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "58",
+          "driver": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "48",
+          "driver": "Tony Marsh",
+          "team": "Lotus-Climax",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "34",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "38",
+          "driver": "Tim Parnell",
+          "team": "Lotus-Climax",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "46",
+          "driver": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "40",
+          "driver": "Gerry Ashmore",
+          "team": "Lotus-Climax",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "30",
+          "driver": "Henry Taylor",
+          "team": "Lotus-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 30,
+          "number": "62",
+          "driver": "Massimo Natili",
+          "team": "Cooper-Maserati",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 31,
+          "number": "24",
+          "driver": "Olivier Gendebien",
+          "team": "Emeryson",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-6-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 6,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1961-08-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nürburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "2:18:12.400",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "+21.400",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "+22.500",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+1:17.100",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "18",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "+1:53.100",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "2",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+2:41.400",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+3:23.100",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "5",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "+5:23.100",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "28",
+          "driver": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "time": "+5:23.700",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "19",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "time": "+12:11.500",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "33",
+          "driver": "Tony Maggs",
+          "team": "Lotus-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "30",
+          "driver": "Ian Burgess",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "11",
+          "driver": "Hans Herrmann",
+          "team": "Porsche",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "31",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "37",
+          "driver": "Tony Marsh",
+          "team": "Lotus-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "27",
+          "driver": "Gerry Ashmore",
+          "team": "Lotus-Climax",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "6",
+          "driver": "Willy Mairesse",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "38",
+          "driver": "Bernard Collomb",
+          "team": "Cooper-Climax",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "32",
+          "driver": "Lorenzo Bandini",
+          "team": "Cooper-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "16",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "8",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "26",
+          "driver": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "17",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "15",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "Heat shield fire",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "1",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "10",
+          "driver": "Edgar Barth",
+          "team": "Porsche",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "12",
+          "driver": "Masten Gregory",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "25",
+          "driver": "Michael May",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 30,
+          "number": "29",
+          "driver": "Peter Monteverdi",
+          "team": "MBM",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 31,
+          "number": "34",
+          "driver": "Renato Pirocchi",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 32,
+          "number": "35",
+          "driver": "Geoff Duke",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 33,
+          "number": "39",
+          "driver": "John Campbell-Jones",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-7-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 7,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1961-09-10T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Phil Hill",
+          "team": "Ferrari",
+          "time": "2:03",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "46",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+31.200",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "12",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+2:28.400",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "60",
+          "driver": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "time": "+2:40.400",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "+2:40.500",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "40",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "74",
+          "driver": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "62",
+          "driver": "Lorenzo Bandini",
+          "team": "Cooper-Maserati",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "48",
+          "driver": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Tim Parnell",
+          "team": "Lotus-Climax",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Henry Taylor",
+          "team": "Lotus-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "58",
+          "driver": "Renato Pirocchi",
+          "team": "Cooper-Maserati",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "28",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "6",
+          "driver": "Richie Ginther",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "72",
+          "driver": "Gaetano Starrabba",
+          "team": "Lotus-Maserati",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "44",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Ricardo Rodríguez",
+          "team": "Ferrari",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "32",
+          "driver": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "50",
+          "driver": "Nino Vaccarella",
+          "team": "De Tomaso-Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Masten Gregory",
+          "team": "Lotus-Climax",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "10",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "14",
+          "driver": "Brian Naylor",
+          "team": "JBW",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "38",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "Chassis",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "30",
+          "driver": "Jack Fairman",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "42",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "4",
+          "driver": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "36",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "54",
+          "driver": "Roberto Bussinello",
+          "team": "De Tomaso-Alfa Romeo",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 30,
+          "number": "56",
+          "driver": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 31,
+          "number": "52",
+          "driver": "Roberto Lippi",
+          "team": "De Tomaso-Osca",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 32,
+          "number": "18",
+          "driver": "Gerry Ashmore",
+          "team": "Lotus-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 34,
+          "number": "46",
+          "driver": "Edgar Barth",
+          "team": "Porsche",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 35,
+          "number": "58",
+          "driver": "Massimo Natili",
+          "team": "Cooper-Maserati",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 36,
+          "number": "34",
+          "driver": "Alfonso Thiele",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 37,
+          "number": "64",
+          "driver": "Ernesto Prinoth",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 38,
+          "number": "66",
+          "driver": "Menato Boffa",
+          "team": "Cooper-Climax",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 39,
+          "number": "70",
+          "driver": "Michael May",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1961-8-race",
+      "competition": "f1",
+      "season": "1961",
+      "round": 8,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1961-10-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "15",
+          "driver": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "time": "2:13:45.800",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "12",
+          "driver": "Dan Gurney",
+          "team": "Porsche",
+          "time": "+4.300",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Tony Brooks",
+          "team": "BRM",
+          "time": "+49.000",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "time": "+58.000",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "4",
+          "driver": "Graham Hill",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "11",
+          "driver": "Jo Bonnier",
+          "team": "Porsche",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Jim Clark",
+          "team": "Lotus-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Roger Penske",
+          "team": "Cooper-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Peter Ryan",
+          "team": "Lotus-Climax",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "3",
+          "driver": "Hap Sharp",
+          "team": "Cooper-Climax",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Masten Gregory",
+          "team": "Lotus-Climax",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Olivier Gendebien",
+          "team": "Lotus-Climax",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Jim Hall",
+          "team": "Lotus-Climax",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "26",
+          "driver": "Lloyd Ruby",
+          "team": "Lotus-Climax",
+          "time": "Magneto",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "Stirling Moss",
+          "team": "Lotus-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "1",
+          "driver": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Masten Gregory",
+          "team": "Lotus-Climax",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "60",
+          "driver": "Walt Hansgen",
+          "team": "Cooper-Climax",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "John Surtees",
+          "team": "Cooper-Climax",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Ken Miles",
+          "team": "Lotus-Climax",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

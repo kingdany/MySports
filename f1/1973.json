@@ -1,0 +1,3118 @@
+{
+  "competition": "f1",
+  "season": "1973",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1973-1-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 1,
+      "title": "Argentine Grand Prix",
+      "session": "race",
+      "startsAt": "1973-01-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Juan y Oscar Gálvez",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "1:56:18.220",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+4.690",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+33.190",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "18",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+42.570",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "14",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "32",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "16",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Radiator",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "30",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "38",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "34",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "36",
+          "driver": "Nanni Galli",
+          "team": "Iso Marlboro",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-2-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 2,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "1973-02-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "1:43:55.600",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+13.500",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+1:46.400",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "10",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "16",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Nanni Galli",
+          "team": "Iso Marlboro",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "17",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "23",
+          "driver": "Luiz Bueno",
+          "team": "Surtees",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "6",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-3-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 3,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1973-03-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "1:43:11.070",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+24.550",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+25.060",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "9",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "23",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "18",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Andrea de Adamich",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "7",
+          "driver": "Jody Scheckter",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "21",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "26",
+          "driver": "Eddie Keizan",
+          "team": "Tyrrell",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "14",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "24",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "19",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Jackie Pretorius",
+          "team": "Iso Marlboro",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "17",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "16",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "25",
+          "driver": "Dave Charlton",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "15",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "8",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "10",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-4-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 4,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1973-04-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Montjuïc",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "1:48:18.700",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "4",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+42.700",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "20",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+1:13.100",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "5",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "12",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "11",
+          "driver": "Henri Pescarolo",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Nanni Galli",
+          "team": "Iso Marlboro",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "18",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "23",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Out of fuel",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "3",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "16",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "25",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "9",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "19",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Andrea de Adamich",
+          "team": "Brabham",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "10",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Halfshaft",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-5-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 5,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1973-05-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Zolder",
+      "city": "Heusden-Zolder",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "1:42:13.430",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+31.840",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+2:02.790",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "9",
+          "driver": "Andrea de Adamich",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "22",
+          "driver": "Chris Amon",
+          "team": "Tecno",
+          "time": "+3 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Oil pump",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "26",
+          "driver": "Nanni Galli",
+          "team": "Iso Marlboro",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-6-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1973-06-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "1:57:44.300",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+1.300",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Andrea de Adamich",
+          "team": "Brabham",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "18",
+          "driver": "David Purley",
+          "team": "March",
+          "time": "Fuel leak",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "26",
+          "driver": "Nanni Galli",
+          "team": "Iso Marlboro",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "22",
+          "driver": "Chris Amon",
+          "team": "Tecno",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-7-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 7,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1973-06-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Scandinavian Raceway",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "1:56:46.049",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "+4.039",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+14.667",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+18.068",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+25.998",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "14",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "27",
+          "driver": "Reine Wisell",
+          "team": "March",
+          "time": "Suspension",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-8-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 8,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1973-07-01T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Paul Ricard",
+      "city": "Le Castellet",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "1:41:36.520",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+40.920",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+46.480",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+46.930",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+48.900",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "+1:22.540",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+1:29.190",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+1:29.530",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "+1:45.760",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "29",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Jody Scheckter",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "9",
+          "driver": "Andrea de Adamich",
+          "team": "Brabham",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "15",
+          "driver": "Reine Wisell",
+          "team": "March",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "26",
+          "driver": "Henri Pescarolo",
+          "team": "Iso Marlboro",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "14",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-9-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 9,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1973-07-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "Silverstone",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "1:29:18.500",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "+2.800",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+3.000",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "+3.400",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+36.600",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+44.700",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+1:11.700",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1:17.400",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Oil leak",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "29",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Chassis",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Chris Amon",
+          "team": "Tecno",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "30",
+          "driver": "Jody Scheckter",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "31",
+          "driver": "Jochen Mass",
+          "team": "Surtees",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "9",
+          "driver": "Andrea de Adamich",
+          "team": "Brabham",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "14",
+          "driver": "Roger Williamson",
+          "team": "March",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "26",
+          "driver": "Graham McRae",
+          "team": "Iso Marlboro",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 29,
+          "number": "18",
+          "driver": "David Purley",
+          "team": "March",
+          "time": "Spun off",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-10-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 10,
+      "title": "Dutch Grand Prix",
+      "session": "race",
+      "startsAt": "1973-07-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "1:39:12.450",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+15.830",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "+1:03.010",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+1:09.130",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1:13.370",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "26",
+          "driver": "Gijs van Lennep",
+          "team": "Iso Marlboro",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Chris Amon",
+          "team": "Tecno",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "David Purley",
+          "team": "March",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "14",
+          "driver": "Roger Williamson",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Physical",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "Withdrew",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-11-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 11,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1973-08-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nürburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "1:42",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+1.600",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "30",
+          "driver": "Jacky Ickx",
+          "team": "McLaren",
+          "time": "+41.200",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+53.800",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "+1:19.900",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+1:24.300",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "31",
+          "driver": "Jochen Mass",
+          "team": "Surtees",
+          "time": "+1:25.200",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+1:25.700",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+2:11.800",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "26",
+          "driver": "Henri Pescarolo",
+          "team": "Iso Marlboro",
+          "time": "+2:22.500",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "9",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+3:27.300",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+3:38.700",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+3:49.000",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "18",
+          "driver": "David Purley",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Ignition",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-12-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 12,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1973-08-19T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "1:28:48.780",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+9.010",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+46.640",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+47.910",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1:21.300",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+1:38.400",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "26",
+          "driver": "Gijs van Lennep",
+          "team": "Iso Marlboro",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "18",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "Differential",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "9",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "Injection",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-13-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 13,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1973-09-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "1:29",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+0.800",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+28.800",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+33.200",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "+46.200",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+59.800",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "+1:28.700",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "3",
+          "driver": "Jacky Ickx",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "29",
+          "driver": "David Purley",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "26",
+          "driver": "Gijs van Lennep",
+          "team": "Iso Marlboro",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-14-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 14,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1973-09-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Mosport International Raceway",
+      "city": "Ontario",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "1:59:04.083",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+32.734",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+34.505",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+36.514",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "29",
+          "driver": "Chris Amon",
+          "team": "Tyrrell",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Rolf Stommelen",
+          "team": "Brabham",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "26",
+          "driver": "Tim Schenken",
+          "team": "Iso Marlboro",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "+8 Laps",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "18",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "0",
+          "driver": "Jody Scheckter",
+          "team": "McLaren",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "19",
+          "driver": "Peter Gethin",
+          "team": "BRM",
+          "time": "Oil pump",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1973-15-race",
+      "competition": "f1",
+      "season": "1973",
+      "round": 15,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "1973-10-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Watkins Glen",
+      "city": "New York State",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Ronnie Peterson",
+          "team": "Team Lotus",
+          "time": "1:41:15.779",
+          "points": 9
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "James Hunt",
+          "team": "March",
+          "time": "+0.668",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "10",
+          "driver": "Carlos Reutemann",
+          "team": "Brabham",
+          "time": "+22.930",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "7",
+          "driver": "Denny Hulme",
+          "team": "McLaren",
+          "time": "+50.226",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Peter Revson",
+          "team": "McLaren",
+          "time": "+1:20.367",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "1",
+          "driver": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "time": "+1:47.945",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Jacky Ickx",
+          "team": "Iso Marlboro",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Clay Regazzoni",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "15",
+          "driver": "Mike Beuttler",
+          "team": "March",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "18",
+          "driver": "Jean-Pierre Jarier",
+          "team": "March",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "25",
+          "driver": "Howden Ganley",
+          "team": "Iso Marlboro",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Graham Hill",
+          "team": "Shadow",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "George Follmer",
+          "team": "Shadow",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "17",
+          "driver": "Jackie Oliver",
+          "team": "Shadow",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Arturo Merzario",
+          "team": "Ferrari",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "0",
+          "driver": "Jody Scheckter",
+          "team": "McLaren",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "30",
+          "driver": "Jochen Mass",
+          "team": "Surtees",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "21",
+          "driver": "Niki Lauda",
+          "team": "BRM",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "23",
+          "driver": "Mike Hailwood",
+          "team": "Surtees",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "24",
+          "driver": "Carlos Pace",
+          "team": "Surtees",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "9",
+          "driver": "John Watson",
+          "team": "Brabham",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "31",
+          "driver": "Brian Redman",
+          "team": "Shadow",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "28",
+          "driver": "Rikky von Opel",
+          "team": "Ensign",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "5",
+          "driver": "Jackie Stewart",
+          "team": "Tyrrell",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 27,
+          "number": "29",
+          "driver": "Chris Amon",
+          "team": "Tyrrell",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 28,
+          "number": "6",
+          "driver": "François Cevert",
+          "team": "Tyrrell",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

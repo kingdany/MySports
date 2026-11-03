@@ -1,0 +1,3782 @@
+{
+  "competition": "f1",
+  "season": "2002",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-2002-1-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 1,
+      "title": "Australian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-03-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Albert Park Grand Prix Circuit",
+      "city": "Melbourne",
+      "country": "Australia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:35:36.792",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+18.628",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+25.067",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Broken wing",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-2-qualifying",
+      "competition": "f1",
+      "season": "2002",
+      "round": 2,
+      "title": "Malaysian Grand Prix",
+      "session": "qualifying",
+      "startsAt": "2002-03-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sepang International Circuit",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "q1": "1:35.266"
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "q1": "1:35.497"
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "q1": "1:35.891"
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "q1": "1:36.028"
+        },
+        {
+          "pos": 5,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "q1": "1:36.468"
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "q1": "1:36.477"
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "q1": "1:37.199"
+        },
+        {
+          "pos": 8,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "q1": "1:37.245"
+        },
+        {
+          "pos": 9,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "q1": "1:37.536"
+        },
+        {
+          "pos": 10,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "q1": "1:37.694"
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "q1": "1:37.919"
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "q1": "1:37.920"
+        },
+        {
+          "pos": 13,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "q1": "1:38.039"
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "q1": "1:38.057"
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "q1": "1:38.141"
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "q1": "1:38.284"
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "q1": "1:38.374"
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "q1": "1:38.390"
+        },
+        {
+          "pos": 19,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "q1": "1:38.959"
+        },
+        {
+          "pos": 20,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "q1": "1:39.121"
+        },
+        {
+          "pos": 21,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "q1": "1:39.454"
+        },
+        {
+          "pos": 22,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "q1": "1:40.158"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-2-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 2,
+      "title": "Malaysian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-03-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sepang International Circuit",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "1:34:12.912",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+39.700",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+1:01.795",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1:09.767",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Fuel",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Overheating",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-3-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 3,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-03-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:31:43.662",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+0.588",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+59.109",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1:06.883",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+1:07.563",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Wheel rim",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-4-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 4,
+      "title": "San Marino Grand Prix",
+      "session": "race",
+      "startsAt": "2002-04-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:29:10.789",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+17.907",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+19.755",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+44.725",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1:23.395",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Power loss",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Driveshaft",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Exhaust",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Driveshaft",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "Power loss",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Electrical",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-5-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 5,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "2002-04-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Barcelona-Catalunya",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:30:29.981",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+35.630",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+42.623",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1:06.697",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1:18.973",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+1:20.430",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Exhaust",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Rear wing",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "22",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Safety",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "23",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Safety",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-6-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 6,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-05-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:33:51.562",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+0.182",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+17.730",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+18.448",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+49.965",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+50.672",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+51.229",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1:09.425",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+1:09.718",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Fuel pressure",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Throttle",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-7-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 7,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "2002-05-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "1:45:39.055",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+1.050",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+1:07.450",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Mechanical",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-8-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 8,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-06-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Gilles Villeneuve",
+      "city": "Montreal",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:33:36.111",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+1.132",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+7.082",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+37.563",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+42.812",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+48.947",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Oil pressure",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-9-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 9,
+      "title": "European Grand Prix",
+      "session": "race",
+      "startsAt": "2002-06-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nürburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "1:35:07.426",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+0.294",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+46.435",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+1:06.963",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1:16.944",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-10-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 10,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "2002-07-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "Silverstone",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:31:45.015",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+14.578",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+31.661",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Wheel",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Electronics",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Driveshaft",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Drivetrain",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Clutch",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-11-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 11,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "2002-07-21T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Nevers Magny-Cours",
+      "city": "Magny Cours",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:32:09.837",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+1.104",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+31.975",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+40.675",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+41.772",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Rear wing",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Mechanical",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "Ignition",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Injury",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-12-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 12,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "2002-07-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:27:52.078",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+10.503",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+14.466",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+23.195",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "21",
+          "driver": "Enrique Bernoldi",
+          "team": "Arrows",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Arrows",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Transmission",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-13-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 13,
+      "title": "Hungarian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-08-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hungaroring",
+      "city": "Budapest",
+      "country": "Hungary",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "1:41:49.001",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+0.434",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+13.356",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+29.479",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+37.800",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+1:08.804",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "+1:13.612",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "22",
+          "driver": "Anthony Davidson",
+          "code": "DAV",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Transmission",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-14-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 14,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-09-01T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Spa-Francorchamps",
+      "city": "Spa",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:21:20.634",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+1.977",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+18.445",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+19.357",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+56.440",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+1:17.370",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1:17.809",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1:19.855",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Anthony Davidson",
+          "code": "DAV",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-15-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 15,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "2002-09-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "1:16:19.982",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+0.255",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+52.579",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+58.219",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1:07.770",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1:08.491",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+1:09.047",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+1:10.891",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+1:21.068",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1:22.046",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "Chassis",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-16-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 16,
+      "title": "United States Grand Prix",
+      "session": "race",
+      "startsAt": "2002-09-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Indianapolis Motor Speedway",
+      "city": "Indianapolis",
+      "country": "USA",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "1:31",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "+0.011",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "+7.799",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+9.911",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "+56.847",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "+58.211",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "8",
+          "driver": "Heinz-Harald Frentzen",
+          "team": "Sauber",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "Steering",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Transmission",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-17-qualifying",
+      "competition": "f1",
+      "season": "2002",
+      "round": 17,
+      "title": "Japanese Grand Prix",
+      "session": "qualifying",
+      "startsAt": "2002-10-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Suzuka Circuit",
+      "city": "Suzuka",
+      "country": "Japan",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "q1": "1:31.317"
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "q1": "1:31.749"
+        },
+        {
+          "pos": 3,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "q1": "1:32.088"
+        },
+        {
+          "pos": 4,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "q1": "1:32.197"
+        },
+        {
+          "pos": 5,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "q1": "1:32.444"
+        },
+        {
+          "pos": 6,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "q1": "1:32.507"
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "q1": "1:33.090"
+        },
+        {
+          "pos": 8,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "q1": "1:33.276"
+        },
+        {
+          "pos": 9,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "q1": "1:33.349"
+        },
+        {
+          "pos": 10,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "q1": "1:33.429"
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "q1": "1:33.547"
+        },
+        {
+          "pos": 12,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "q1": "1:33.553"
+        },
+        {
+          "pos": 13,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "q1": "1:33.742"
+        },
+        {
+          "pos": 14,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "q1": "1:33.915"
+        },
+        {
+          "pos": 15,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "q1": "1:33.979"
+        },
+        {
+          "pos": 16,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "q1": "1:34.192"
+        },
+        {
+          "pos": 17,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "q1": "1:34.227"
+        },
+        {
+          "pos": 18,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "q1": "1:35.191"
+        },
+        {
+          "pos": 19,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "q1": "1:35.958"
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "q1": "1:36.267"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-2002-17-race",
+      "competition": "f1",
+      "season": "2002",
+      "round": 17,
+      "title": "Japanese Grand Prix",
+      "session": "race",
+      "startsAt": "2002-10-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Suzuka Circuit",
+      "city": "Suzuka",
+      "country": "Japan",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "time": "1:26:59.698",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "time": "+0.506",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "4",
+          "driver": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "time": "+23.292",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "time": "+36.275",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "10",
+          "driver": "Takuma Sato",
+          "code": "SAT",
+          "team": "Jordan",
+          "time": "+1:22.694",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "15",
+          "driver": "Jenson Button",
+          "code": "BUT",
+          "team": "Renault",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "7",
+          "driver": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Mika Salo",
+          "team": "Toyota",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "16",
+          "driver": "Eddie Irvine",
+          "team": "Jaguar",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "23",
+          "driver": "Mark Webber",
+          "code": "WEB",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "5",
+          "driver": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "17",
+          "driver": "Pedro de la Rosa",
+          "code": "DLR",
+          "team": "Jaguar",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "14",
+          "driver": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "time": "Mechanical",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "22",
+          "driver": "Alex Yoong",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "12",
+          "driver": "Olivier Panis",
+          "team": "BAR",
+          "time": "Mechanical",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "3",
+          "driver": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "8",
+          "driver": "Felipe Massa",
+          "code": "MAS",
+          "team": "Sauber",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "25",
+          "driver": "Allan McNish",
+          "team": "Toyota",
+          "time": "Injured",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

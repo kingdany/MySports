@@ -1,0 +1,3555 @@
+{
+  "competition": "f1",
+  "season": "1993",
+  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "events": [
+    {
+      "id": "f1-1993-1-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 1,
+      "title": "South African Grand Prix",
+      "session": "race",
+      "startsAt": "1993-03-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kyalami",
+      "city": "Midrand",
+      "country": "South Africa",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:38:45.082",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "+1:19.824",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "15",
+          "driver": "Ivan Capelli",
+          "team": "Jordan",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Transmission",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-2-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 2,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-03-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "1:51:15.485",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+16.625",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+45.436",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+46.557",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+52.127",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-3-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 3,
+      "title": "European Grand Prix",
+      "session": "race",
+      "startsAt": "1993-04-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Donington Park",
+      "city": "Castle Donington",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "1:50:46.570",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+1:23.199",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Handling",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-4-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 4,
+      "title": "San Marino Grand Prix",
+      "session": "race",
+      "startsAt": "1993-04-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:33:20.413",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+32.410",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Clutch",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "Steering",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Spun off",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-5-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 5,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1993-05-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Barcelona-Catalunya",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:32:27.685",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "+16.873",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+27.125",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Disqualified",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "Transmission",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-6-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "session": "race",
+      "startsAt": "1993-05-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "1:52:10.947",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+52.118",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1:03.362",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Hydraulics",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-7-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 7,
+      "title": "Canadian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-06-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit Gilles Villeneuve",
+      "city": "Montreal",
+      "country": "Canada",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:36:41.822",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+14.527",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+52.685",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Physical",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-8-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 8,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1993-07-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Nevers Magny-Cours",
+      "city": "Magny Cours",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:38:35.241",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+0.342",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+21.209",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "+32.405",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+33.795",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "24",
+          "driver": "Fabrizio Barbazza",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-9-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 9,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1993-07-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "Silverstone",
+      "country": "UK",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:25:38.189",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+7.660",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1:17.482",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+1:18.407",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Out of fuel",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Not classified",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "Physical",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Halfshaft",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-10-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 10,
+      "title": "German Grand Prix",
+      "session": "race",
+      "startsAt": "1993-07-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheimring",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "1:18:40.885",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+16.664",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+59.349",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "+1:08.229",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1:31.516",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+1:34.754",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1:35.841",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "Tyre",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Halfshaft",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Gearbox",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-11-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 11,
+      "title": "Hungarian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-08-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hungaroring",
+      "city": "Budapest",
+      "country": "Hungary",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "1:47:39.098",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1:11.915",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+1:18.042",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+7 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "Overheating",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "Throttle",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-12-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 12,
+      "title": "Belgian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-08-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Circuit de Spa-Francorchamps",
+      "city": "Spa",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "1:24:32.124",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "+3.668",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+14.988",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "+1:39.763",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Fuel pump",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Wheel bearing",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "15",
+          "driver": "Thierry Boutsen",
+          "team": "Jordan",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "11",
+          "driver": "Alessandro Zanardi",
+          "team": "Team Lotus",
+          "time": "Injury",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-13-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 13,
+      "title": "Italian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-09-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Nazionale di Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "1:17:07.509",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+40.012",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Michael Andretti",
+          "team": "McLaren",
+          "time": "+1 Lap",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Pedro Lamy",
+          "team": "Team Lotus",
+          "time": "Electrical",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Oil pressure",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "+6 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "15",
+          "driver": "Marco Apicella",
+          "team": "Jordan",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-14-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 14,
+      "title": "Portuguese Grand Prix",
+      "session": "race",
+      "startsAt": "1993-09-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo do Estoril",
+      "city": "Estoril",
+      "country": "Portugal",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "1:32:46.309",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+0.982",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+8.206",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1:07.605",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "23",
+          "driver": "Christian Fittipaldi",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "19",
+          "driver": "Philippe Alliot",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "22",
+          "driver": "Luca Badoer",
+          "code": "BAD",
+          "team": "Lola",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "11",
+          "driver": "Pedro Lamy",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "21",
+          "driver": "Michele Alboreto",
+          "team": "Lola",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "7",
+          "driver": "Mika Häkkinen",
+          "team": "McLaren",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 25,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 26,
+          "number": "15",
+          "driver": "Emanuele Naspetti",
+          "team": "Jordan",
+          "time": "Engine",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-15-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 15,
+      "title": "Japanese Grand Prix",
+      "session": "race",
+      "startsAt": "1993-10-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Suzuka Circuit",
+      "city": "Suzuka",
+      "country": "Japan",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "1:40:27.912",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+11.435",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "7",
+          "driver": "Mika Häkkinen",
+          "team": "McLaren",
+          "time": "+26.129",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+1:23.538",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+1:35.101",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "15",
+          "driver": "Eddie Irvine",
+          "team": "Jordan",
+          "time": "+1:46.421",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "19",
+          "driver": "Toshio Suzuki",
+          "team": "Larrousse",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "11",
+          "driver": "Pedro Lamy",
+          "team": "Team Lotus",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "23",
+          "driver": "Jean-Marc Gounon",
+          "team": "Minardi",
+          "time": "Withdrew",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Collision",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "Collision",
+          "points": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "f1-1993-16-race",
+      "competition": "f1",
+      "season": "1993",
+      "round": 16,
+      "title": "Australian Grand Prix",
+      "session": "race",
+      "startsAt": "1993-11-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Adelaide Street Circuit",
+      "city": "Adelaide",
+      "country": "Australia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "8",
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "time": "1:43:27.476",
+          "points": 10
+        },
+        {
+          "pos": 2,
+          "number": "2",
+          "driver": "Alain Prost",
+          "team": "Williams",
+          "time": "+9.259",
+          "points": 6
+        },
+        {
+          "pos": 3,
+          "number": "0",
+          "driver": "Damon Hill",
+          "team": "Williams",
+          "time": "+33.902",
+          "points": 4
+        },
+        {
+          "pos": 4,
+          "number": "27",
+          "driver": "Jean Alesi",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 3
+        },
+        {
+          "pos": 5,
+          "number": "28",
+          "driver": "Gerhard Berger",
+          "team": "Ferrari",
+          "time": "+1 Lap",
+          "points": 2
+        },
+        {
+          "pos": 6,
+          "number": "25",
+          "driver": "Martin Brundle",
+          "team": "Ligier",
+          "time": "+1 Lap",
+          "points": 1
+        },
+        {
+          "pos": 7,
+          "number": "10",
+          "driver": "Aguri Suzuki",
+          "team": "Footwork",
+          "time": "+1 Lap",
+          "points": 0
+        },
+        {
+          "pos": 8,
+          "number": "6",
+          "driver": "Riccardo Patrese",
+          "team": "Benetton",
+          "time": "Fuel system",
+          "points": 0
+        },
+        {
+          "pos": 9,
+          "number": "26",
+          "driver": "Mark Blundell",
+          "team": "Ligier",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 10,
+          "number": "9",
+          "driver": "Derek Warwick",
+          "team": "Footwork",
+          "time": "+2 Laps",
+          "points": 0
+        },
+        {
+          "pos": 11,
+          "number": "14",
+          "driver": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Jordan",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "20",
+          "driver": "Érik Comas",
+          "team": "Larrousse",
+          "time": "+3 Laps",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "4",
+          "driver": "Andrea de Cesaris",
+          "team": "Tyrrell",
+          "time": "+4 Laps",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "19",
+          "driver": "Toshio Suzuki",
+          "team": "Larrousse",
+          "time": "+5 Laps",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "29",
+          "driver": "Karl Wendlinger",
+          "team": "Sauber",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "30",
+          "driver": "Jyrki Järvilehto",
+          "team": "Sauber",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "23",
+          "driver": "Jean-Marc Gounon",
+          "team": "Minardi",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "7",
+          "driver": "Mika Häkkinen",
+          "team": "McLaren",
+          "time": "Brakes",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "5",
+          "driver": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Benetton",
+          "time": "Engine",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "3",
+          "driver": "Ukyo Katayama",
+          "team": "Tyrrell",
+          "time": "Spun off",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "15",
+          "driver": "Eddie Irvine",
+          "team": "Jordan",
+          "time": "Accident",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "12",
+          "driver": "Johnny Herbert",
+          "team": "Team Lotus",
+          "time": "Suspension",
+          "points": 0
+        },
+        {
+          "pos": 23,
+          "number": "24",
+          "driver": "Pierluigi Martini",
+          "team": "Minardi",
+          "time": "Gearbox",
+          "points": 0
+        },
+        {
+          "pos": 24,
+          "number": "11",
+          "driver": "Pedro Lamy",
+          "team": "Team Lotus",
+          "time": "Accident",
+          "points": 0
+        }
+      ],
+      "videos": []
+    }
+  ]
+}
