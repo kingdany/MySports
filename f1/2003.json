@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2003",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-2003-1-qualifying",
@@ -5771,6 +5771,297 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Michael Schumacher",
+          "code": "MSC",
+          "team": "Ferrari",
+          "points": 93,
+          "wins": 6
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "McLaren",
+          "points": 91,
+          "wins": 1
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Juan Pablo Montoya",
+          "code": "MON",
+          "team": "Williams",
+          "points": 82,
+          "wins": 2
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Rubens Barrichello",
+          "code": "BAR",
+          "team": "Ferrari",
+          "points": 65,
+          "wins": 2
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Ralf Schumacher",
+          "code": "SCH",
+          "team": "Williams",
+          "points": 58,
+          "wins": 2
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Renault",
+          "points": 55,
+          "wins": 1
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "David Coulthard",
+          "code": "COU",
+          "team": "McLaren",
+          "points": 51,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Jarno Trulli",
+          "code": "TRU",
+          "team": "Renault",
+          "points": 33,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Jenson Button",
+          "code": "BUT",
+          "team": "BAR",
+          "points": 17,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Mark Webber",
+          "code": "WEB",
+          "team": "Jaguar",
+          "points": 17,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Heinz-Harald Frentzen",
+          "team": "Sauber",
+          "points": 13,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Giancarlo Fisichella",
+          "code": "FIS",
+          "team": "Jordan",
+          "points": 12,
+          "wins": 1
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Cristiano da Matta",
+          "team": "Toyota",
+          "points": 10,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Nick Heidfeld",
+          "code": "HEI",
+          "team": "Sauber",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Olivier Panis",
+          "team": "Toyota",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jacques Villeneuve",
+          "code": "VIL",
+          "team": "BAR",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Marc Gené",
+          "team": "Williams",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Takuma Sato",
+          "code": "SAT",
+          "team": "BAR",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Ralph Firman",
+          "team": "Jordan",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Justin Wilson",
+          "team": "Minardi / Jaguar",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Antônio Pizzonia",
+          "code": "PIZ",
+          "team": "Jaguar",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Jos Verstappen",
+          "team": "Minardi",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Nicolas Kiesa",
+          "team": "Minardi",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Zsolt Baumgartner",
+          "team": "Jordan",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Ferrari",
+          "points": 158,
+          "wins": 8
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Williams",
+          "points": 144,
+          "wins": 4
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "McLaren",
+          "points": 142,
+          "wins": 2
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Renault",
+          "points": 88,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "BAR",
+          "points": 26,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Sauber",
+          "points": 19,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Jaguar",
+          "points": 18,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Toyota",
+          "points": 16,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Jordan",
+          "points": 13,
+          "wins": 1
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Minardi",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

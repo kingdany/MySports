@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "1972",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-1972-1-race",
@@ -2646,6 +2646,416 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Emerson Fittipaldi",
+          "team": "Team Lotus",
+          "points": 61,
+          "wins": 5
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Jackie Stewart",
+          "team": "Tyrrell",
+          "points": 45,
+          "wins": 4
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Denny Hulme",
+          "team": "McLaren",
+          "points": 39,
+          "wins": 1
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Jacky Ickx",
+          "team": "Ferrari",
+          "points": 27,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Peter Revson",
+          "team": "McLaren",
+          "points": 23,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "François Cevert",
+          "team": "Tyrrell",
+          "points": 15,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Clay Regazzoni",
+          "team": "Ferrari",
+          "points": 15,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Mike Hailwood",
+          "team": "Surtees",
+          "points": 13,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Ronnie Peterson",
+          "team": "March",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Chris Amon",
+          "team": "Matra",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Jean-Pierre Beltoise",
+          "team": "BRM",
+          "points": 9,
+          "wins": 1
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Mario Andretti",
+          "team": "Ferrari",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Howden Ganley",
+          "team": "BRM",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Brian Redman",
+          "team": "McLaren / BRM",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Graham Hill",
+          "team": "Brabham",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Carlos Reutemann",
+          "team": "Brabham",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Andrea de Adamich",
+          "team": "Surtees",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Carlos Pace",
+          "team": "March",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Tim Schenken",
+          "team": "Surtees",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Arturo Merzario",
+          "team": "Ferrari",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Peter Gethin",
+          "team": "BRM",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Wilson Fittipaldi",
+          "team": "Brabham",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Niki Lauda",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Patrick Depailler",
+          "team": "Tyrrell",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Helmut Marko",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Mike Beuttler",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Henri Pescarolo",
+          "team": "March / Politoys",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "David Walker",
+          "team": "Team Lotus",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jody Scheckter",
+          "team": "McLaren",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Rolf Stommelen",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Reine Wisell",
+          "team": "BRM / Team Lotus",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Sam Posey",
+          "team": "Surtees",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Nanni Galli",
+          "team": "Tecno / Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Skip Barber",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "John Love",
+          "team": "Surtees",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "John Surtees",
+          "team": "Surtees",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jackie Oliver",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Alex Soler-Roig",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "François Migault",
+          "team": "Connew",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Dave Charlton",
+          "team": "Team Lotus",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bill Brack",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Derek Bell",
+          "team": "Tecno",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Team Lotus",
+          "points": 61,
+          "wins": 5
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Tyrrell",
+          "points": 51,
+          "wins": 4
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "McLaren",
+          "points": 49,
+          "wins": 1
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Ferrari",
+          "points": 33,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Surtees",
+          "points": 18,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "March",
+          "points": 15,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "BRM",
+          "points": 14,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Matra",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Brabham",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tecno",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Connew",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Politoys",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

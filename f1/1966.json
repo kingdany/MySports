@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "1966",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-1966-1-race",
@@ -1467,6 +1467,366 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Jack Brabham",
+          "team": "Brabham-Repco",
+          "points": 42,
+          "wins": 4
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "John Surtees",
+          "team": "Ferrari / Cooper-Maserati",
+          "points": 28,
+          "wins": 2
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Jochen Rindt",
+          "team": "Cooper-Maserati",
+          "points": 22,
+          "wins": 0
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Denny Hulme",
+          "team": "Brabham-Climax / Brabham-Repco",
+          "points": 18,
+          "wins": 0
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Graham Hill",
+          "team": "BRM",
+          "points": 17,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Jim Clark",
+          "team": "Lotus-Climax / Lotus-BRM",
+          "points": 16,
+          "wins": 1
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Jackie Stewart",
+          "team": "BRM",
+          "points": 14,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Mike Parkes",
+          "team": "Ferrari",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Lorenzo Bandini",
+          "team": "Ferrari",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Ludovico Scarfiotti",
+          "team": "Ferrari",
+          "points": 9,
+          "wins": 1
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Richie Ginther",
+          "team": "Cooper-Maserati / Honda",
+          "points": 5,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Dan Gurney",
+          "team": "Eagle-Climax / Eagle-Weslake",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Mike Spence",
+          "team": "Lotus-BRM",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Bob Bondurant",
+          "team": "BRM / Eagle-Climax / Eagle-Weslake",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Jo Siffert",
+          "team": "Brabham-BRM / Cooper-Maserati",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Bruce McLaren",
+          "team": "McLaren-Ford / McLaren-Serenissima",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Peter Arundell",
+          "team": "Lotus-BRM / Lotus-Climax",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Jo Bonnier",
+          "team": "Cooper-Maserati / Brabham-Climax",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Bob Anderson",
+          "team": "Brabham-Climax",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "John Taylor",
+          "team": "Brabham-BRM",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Chris Irwin",
+          "team": "Brabham-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ronnie Bucknum",
+          "team": "Honda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Chris Amon",
+          "team": "Cooper-Maserati / Brabham-BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Guy Ligier",
+          "team": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Giacomo Russo",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Chris Lawrence",
+          "team": "Cooper-Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Innes Ireland",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Pedro Rodríguez",
+          "team": "Lotus-Climax / Lotus-BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Vic Wilson",
+          "team": "BRM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Moisés Solana",
+          "team": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Trevor Taylor",
+          "team": "Shannon",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Brabham-Repco",
+          "points": 42,
+          "wins": 4
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Ferrari",
+          "points": 31,
+          "wins": 2
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Cooper-Maserati",
+          "points": 30,
+          "wins": 1
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "BRM",
+          "points": 22,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Lotus-BRM",
+          "points": 13,
+          "wins": 1
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Lotus-Climax",
+          "points": 8,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Eagle-Climax",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Honda",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "McLaren-Ford",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Brabham-Climax",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Brabham-BRM",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "McLaren-Serenissima",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Cooper-Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Eagle-Weslake",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Shannon",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

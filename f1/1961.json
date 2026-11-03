@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "1961",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-1961-1-race",
@@ -1858,6 +1858,553 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Phil Hill",
+          "team": "Ferrari",
+          "points": 34,
+          "wins": 2
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Wolfgang von Trips",
+          "team": "Ferrari",
+          "points": 33,
+          "wins": 2
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Stirling Moss",
+          "team": "Lotus-Climax / Ferguson",
+          "points": 21,
+          "wins": 2
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Dan Gurney",
+          "team": "Porsche",
+          "points": 21,
+          "wins": 0
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Richie Ginther",
+          "team": "Ferrari",
+          "points": 16,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Innes Ireland",
+          "team": "Lotus-Climax",
+          "points": 12,
+          "wins": 1
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Jim Clark",
+          "team": "Lotus-Climax",
+          "points": 11,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Bruce McLaren",
+          "team": "Cooper-Climax",
+          "points": 11,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Giancarlo Baghetti",
+          "team": "Ferrari",
+          "points": 9,
+          "wins": 1
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Tony Brooks",
+          "team": "BRM",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Jack Brabham",
+          "team": "Cooper-Climax",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "John Surtees",
+          "team": "Cooper-Climax",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Jackie Lewis",
+          "team": "Cooper-Climax",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Olivier Gendebien",
+          "team": "Emeryson / Ferrari / Lotus-Climax",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Jo Bonnier",
+          "team": "Porsche",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Graham Hill",
+          "team": "BRM",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Roy Salvadori",
+          "team": "Cooper-Climax",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Maurice Trintignant",
+          "team": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Carel Godin de Beaufort",
+          "team": "Porsche",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Lorenzo Bandini",
+          "team": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Cliff Allison",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roger Penske",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Hans Herrmann",
+          "team": "Porsche",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Peter Ryan",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Masten Gregory",
+          "team": "Cooper-Climax / Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Henry Taylor",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tim Parnell",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Hap Sharp",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tony Maggs",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Michael May",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ian Burgess",
+          "team": "Lotus-Climax / Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Renato Pirocchi",
+          "team": "Cooper-Climax / Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Trevor Taylor",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tony Marsh",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Keith Greene",
+          "team": "Gilby",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Gerry Ashmore",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Wolfgang Seidel",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jim Hall",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Lloyd Ruby",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Gaetano Starrabba",
+          "team": "Lotus-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Willy Mairesse",
+          "team": "Lotus-Climax / Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ricardo Rodríguez",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Walt Hansgen",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Lucien Bianchi",
+          "team": "Emeryson / Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bernard Collomb",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jack Fairman",
+          "team": "Ferguson / Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Nino Vaccarella",
+          "team": "De Tomaso-Alfa Romeo",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ken Miles",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Giorgio Scarlatti",
+          "team": "De Tomaso-Osca",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Brian Naylor",
+          "team": "JBW",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Edgar Barth",
+          "team": "Porsche",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Juan Manuel Bordeu",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roberto Bussinello",
+          "team": "De Tomaso-Alfa Romeo",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Massimo Natili",
+          "team": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Peter Monteverdi",
+          "team": "MBM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roberto Lippi",
+          "team": "De Tomaso-Osca",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Geoff Duke",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "John Campbell-Jones",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Alfonso Thiele",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ernesto Prinoth",
+          "team": "Lotus-Climax",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Menato Boffa",
+          "team": "Cooper-Climax",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Ferrari",
+          "points": 45,
+          "wins": 5
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Lotus-Climax",
+          "points": 35,
+          "wins": 3
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Porsche",
+          "points": 22,
+          "wins": 0
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Cooper-Climax",
+          "points": 14,
+          "wins": 0
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "BRM",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Cooper-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Gilby",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Lotus-Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ferguson",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "De Tomaso-Alfa Romeo",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "De Tomaso-Osca",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "JBW",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Emeryson",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "MBM",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

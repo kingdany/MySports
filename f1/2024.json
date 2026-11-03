@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2024",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-2024-1-fp1",
@@ -12716,6 +12716,306 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Max Verstappen",
+          "code": "VER",
+          "team": "Red Bull",
+          "points": 437,
+          "wins": 9
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Lando Norris",
+          "code": "NOR",
+          "team": "McLaren",
+          "points": 374,
+          "wins": 4
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "points": 356,
+          "wins": 3
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Oscar Piastri",
+          "code": "PIA",
+          "team": "McLaren",
+          "points": 292,
+          "wins": 2
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Ferrari",
+          "points": 290,
+          "wins": 2
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "points": 245,
+          "wins": 2
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Mercedes",
+          "points": 223,
+          "wins": 2
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Sergio Pérez",
+          "code": "PER",
+          "team": "Red Bull",
+          "points": 152,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Aston Martin",
+          "points": 70,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Pierre Gasly",
+          "code": "GAS",
+          "team": "Alpine F1 Team",
+          "points": 42,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "points": 41,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Yuki Tsunoda",
+          "code": "TSU",
+          "team": "RB F1 Team",
+          "points": 30,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Lance Stroll",
+          "code": "STR",
+          "team": "Aston Martin",
+          "points": 24,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Esteban Ocon",
+          "code": "OCO",
+          "team": "Alpine F1 Team",
+          "points": 23,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Kevin Magnussen",
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "points": 16,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Alexander Albon",
+          "code": "ALB",
+          "team": "Williams",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Daniel Ricciardo",
+          "code": "RIC",
+          "team": "RB F1 Team",
+          "points": 12,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Oliver Bearman",
+          "code": "BEA",
+          "team": "Ferrari / Haas F1 Team",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Franco Colapinto",
+          "code": "COL",
+          "team": "Williams",
+          "points": 5,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Guanyu Zhou",
+          "code": "ZHO",
+          "team": "Sauber",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Liam Lawson",
+          "code": "LAW",
+          "team": "RB F1 Team",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Sauber",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Logan Sargeant",
+          "code": "SAR",
+          "team": "Williams",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Jack Doohan",
+          "code": "DOO",
+          "team": "Alpine F1 Team",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "McLaren",
+          "points": 666,
+          "wins": 6
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Ferrari",
+          "points": 652,
+          "wins": 5
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Red Bull",
+          "points": 589,
+          "wins": 9
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Mercedes",
+          "points": 468,
+          "wins": 4
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Aston Martin",
+          "points": 94,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Alpine F1 Team",
+          "points": 65,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Haas F1 Team",
+          "points": 58,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "RB F1 Team",
+          "points": 46,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Williams",
+          "points": 17,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Sauber",
+          "points": 4,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "1953",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-1953-1-race",
@@ -2123,6 +2123,789 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Alberto Ascari",
+          "team": "Ferrari",
+          "points": 34.5,
+          "wins": 5
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Juan Fangio",
+          "team": "Maserati",
+          "points": 28,
+          "wins": 1
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Nino Farina",
+          "team": "Ferrari",
+          "points": 26,
+          "wins": 1
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Mike Hawthorn",
+          "team": "Ferrari",
+          "points": 19,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Luigi Villoresi",
+          "team": "Ferrari",
+          "points": 17,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "José Froilán González",
+          "team": "Maserati",
+          "points": 13.5,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Bill Vukovich",
+          "team": "Kurtis Kraft",
+          "points": 9,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Toulo de Graffenried",
+          "team": "Maserati",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Felice Bonetto",
+          "team": "Maserati",
+          "points": 6.5,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Art Cross",
+          "team": "Kurtis Kraft",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Onofre Marimón",
+          "team": "Maserati",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Maurice Trintignant",
+          "team": "Gordini",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Duane Carter",
+          "team": "Kurtis Kraft / Lesovsky",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Sam Hanks",
+          "team": "Kurtis Kraft",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Oscar Gálvez",
+          "team": "Maserati",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jack McGrath",
+          "team": "Kurtis Kraft",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Hermann Lang",
+          "team": "Maserati",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Paul Russo",
+          "team": "Kurtis Kraft",
+          "points": 1.5,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Fred Agabashian",
+          "team": "Kurtis Kraft",
+          "points": 1.5,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Stirling Moss",
+          "team": "Connaught / Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jean Behra",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roberto Mieres",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jimmy Daywalt",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Harry Schell",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Louis Rosier",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ken Wharton",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Prince Bira",
+          "team": "Connaught / Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jacques Swaters",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Eddie Johnson",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jim Rathmann",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Luigi Musso",
+          "team": "Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Sergio Mantovani",
+          "team": "Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Peter Collins",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "John Barber",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ernie McCoy",
+          "team": "Stevens",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Max de Terra",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Umberto Maglioli",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Alan Brown",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tony Bettenhausen",
+          "team": "Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Gene Hartley",
+          "team": "Kurtis Kraft / Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Chuck Stevenson",
+          "team": "Kurtis Kraft / Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Fred Wacker",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Peter Whitehead",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Hans Herrmann",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Albert Scherrer",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Louis Chiron",
+          "team": "OSCA",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Paul Frère",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jimmy Davies",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Duke Nalon",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "André Pilette",
+          "team": "Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bob Gerard",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Rodney Nuckey",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Johnny Claes",
+          "team": "Connaught / Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bob Scott",
+          "team": "Kurtis Kraft / Bromme",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Carl Scarborough",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Theo Helfrich",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Kenneth McAlpine",
+          "team": "Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Manny Ayulo",
+          "team": "Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Yves Cabantous",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Hans von Stuck",
+          "team": "AFM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jimmy Bryan",
+          "team": "Schroeder",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Rudolf Krause",
+          "team": "BMW",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bill Holland",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ernst Klodwig",
+          "team": "BMW",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Duke Dinsmore",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Andy Linden",
+          "team": "Kurtis Kraft / Stevens",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Rodger Ward",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Wolfgang Seidel",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Walt Faulkner",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Johnny Mantz",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Chico Landi",
+          "team": "Maserati",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Robert Manzon",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jimmy Stewart",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tony Rolt",
+          "team": "Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Lance Macklin",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Carlos Menditeguy",
+          "team": "Gordini",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Pablo Birger",
+          "team": "Simca",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Adolfo Cruz",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jack Fairman",
+          "team": "HWM / Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Peter Hirt",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roy Salvadori",
+          "team": "Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Marshall Teague",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Élie Bayol",
+          "team": "OSCA",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Johnny Thomson",
+          "team": "Kurtis Kraft / Del Roy",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Travis Webb",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jackie Holmes",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Georges Berger",
+          "team": "Simca",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Bob Sweikert",
+          "team": "Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Arthur Legat",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Edgar Barth",
+          "team": "EMW",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Mike Nazaruk",
+          "team": "Turner",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Pat Flaherty",
+          "team": "Kuzma",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ian Stewart",
+          "team": "Connaught",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Oswald Karch",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jerry Hoyt",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Willi Heeks",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Duncan Hamilton",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Piero Carini",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Johnnie Parsons",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Don Freeland",
+          "team": "Watson",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tony Crook",
+          "team": "Cooper",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Theo Fitzau",
+          "team": "AFM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Kurt Adolff",
+          "team": "Ferrari",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "John Fitch",
+          "team": "HWM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Günther Bechem",
+          "team": "AFM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Cal Niday",
+          "team": "Kurtis Kraft",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Erwin Bauer",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ernst Loof",
+          "team": "Veritas",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

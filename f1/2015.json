@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2015",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-2015-1-fp1",
@@ -8331,6 +8331,287 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Mercedes",
+          "points": 381,
+          "wins": 10
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Nico Rosberg",
+          "code": "ROS",
+          "team": "Mercedes",
+          "points": 322,
+          "wins": 6
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Sebastian Vettel",
+          "code": "VET",
+          "team": "Ferrari",
+          "points": 278,
+          "wins": 3
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Kimi Räikkönen",
+          "code": "RAI",
+          "team": "Ferrari",
+          "points": 150,
+          "wins": 0
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Williams",
+          "points": 136,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Felipe Massa",
+          "code": "MAS",
+          "team": "Williams",
+          "points": 121,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Daniil Kvyat",
+          "code": "KVY",
+          "team": "Red Bull",
+          "points": 95,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Daniel Ricciardo",
+          "code": "RIC",
+          "team": "Red Bull",
+          "points": 92,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Sergio Pérez",
+          "code": "PER",
+          "team": "Force India",
+          "points": 78,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Force India",
+          "points": 58,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Romain Grosjean",
+          "code": "GRO",
+          "team": "Lotus F1",
+          "points": 51,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Max Verstappen",
+          "code": "VER",
+          "team": "Toro Rosso",
+          "points": 49,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Felipe Nasr",
+          "code": "NAS",
+          "team": "Sauber",
+          "points": 27,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Pastor Maldonado",
+          "code": "MAL",
+          "team": "Lotus F1",
+          "points": 27,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Toro Rosso",
+          "points": 18,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jenson Button",
+          "code": "BUT",
+          "team": "McLaren",
+          "points": 16,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Fernando Alonso",
+          "code": "ALO",
+          "team": "McLaren",
+          "points": 11,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Marcus Ericsson",
+          "code": "ERI",
+          "team": "Sauber",
+          "points": 9,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Roberto Merhi",
+          "code": "MER",
+          "team": "Manor Marussia",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Alexander Rossi",
+          "code": "RSS",
+          "team": "Manor Marussia",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Will Stevens",
+          "code": "STE",
+          "team": "Manor Marussia",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Kevin Magnussen",
+          "code": "MAG",
+          "team": "McLaren",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Mercedes",
+          "points": 703,
+          "wins": 16
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Ferrari",
+          "points": 428,
+          "wins": 3
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Williams",
+          "points": 257,
+          "wins": 0
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Red Bull",
+          "points": 187,
+          "wins": 0
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Force India",
+          "points": 136,
+          "wins": 0
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Lotus F1",
+          "points": 78,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Toro Rosso",
+          "points": 67,
+          "wins": 0
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Sauber",
+          "points": 36,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "McLaren",
+          "points": 27,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Manor Marussia",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }

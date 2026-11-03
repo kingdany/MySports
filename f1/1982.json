@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "1982",
-  "generatedAt": "2026-11-03T14:18:34.7926141+00:00",
+  "generatedAt": "2026-11-03T15:08:46.2365035+00:00",
   "events": [
     {
       "id": "f1-1982-1-race",
@@ -3482,6 +3482,427 @@
         }
       ],
       "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Keke Rosberg",
+          "team": "Williams",
+          "points": 44,
+          "wins": 1
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Didier Pironi",
+          "team": "Ferrari",
+          "points": 39,
+          "wins": 2
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "John Watson",
+          "team": "McLaren",
+          "points": 39,
+          "wins": 2
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Alain Prost",
+          "team": "Renault",
+          "points": 34,
+          "wins": 2
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Niki Lauda",
+          "team": "McLaren",
+          "points": 30,
+          "wins": 2
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "René Arnoux",
+          "team": "Renault",
+          "points": 28,
+          "wins": 2
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Patrick Tambay",
+          "team": "Ferrari",
+          "points": 25,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Michele Alboreto",
+          "team": "Tyrrell",
+          "points": 25,
+          "wins": 1
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Elio de Angelis",
+          "team": "Team Lotus",
+          "points": 23,
+          "wins": 1
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Riccardo Patrese",
+          "team": "Brabham",
+          "points": 21,
+          "wins": 1
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Nelson Piquet",
+          "team": "Brabham",
+          "points": 20,
+          "wins": 1
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Eddie Cheever",
+          "team": "Ligier",
+          "points": 15,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Derek Daly",
+          "team": "Theodore / Williams",
+          "points": 8,
+          "wins": 0
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Nigel Mansell",
+          "team": "Team Lotus",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Gilles Villeneuve",
+          "team": "Ferrari",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Carlos Reutemann",
+          "team": "Williams",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Andrea de Cesaris",
+          "team": "Alfa Romeo",
+          "points": 5,
+          "wins": 0
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Jacques Laffite",
+          "team": "Ligier",
+          "points": 5,
+          "wins": 0
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Mario Andretti",
+          "team": "Williams / Ferrari",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Jean-Pierre Jarier",
+          "team": "Osella",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Marc Surer",
+          "team": "Arrows",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Bruno Giacomelli",
+          "team": "Alfa Romeo",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Eliseo Salazar",
+          "team": "ATS",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Manfred Winkelhock",
+          "team": "ATS",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Mauro Baldi",
+          "team": "Arrows",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Chico Serra",
+          "team": "Fittipaldi",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Brian Henton",
+          "team": "Arrows / Tyrrell",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jochen Mass",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Slim Borgudd",
+          "team": "Tyrrell",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Raul Boesel",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Roberto Guerrero",
+          "team": "Ensign",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Derek Warwick",
+          "team": "Toleman",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Rupert Keegan",
+          "team": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Geoff Lees",
+          "team": "Theodore / Team Lotus",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Teo Fabi",
+          "team": "Toleman",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Riccardo Paletti",
+          "team": "Osella",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Tommy Byrne",
+          "team": "Theodore",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Jan Lammers",
+          "team": "Theodore",
+          "points": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "id": "constructors",
+      "title": "Costruttori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Ferrari",
+          "points": 74,
+          "wins": 3
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "McLaren",
+          "points": 69,
+          "wins": 4
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Renault",
+          "points": 62,
+          "wins": 4
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Williams",
+          "points": 58,
+          "wins": 1
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Brabham",
+          "points": 41,
+          "wins": 2
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Team Lotus",
+          "points": 30,
+          "wins": 1
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Tyrrell",
+          "points": 25,
+          "wins": 1
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Ligier",
+          "points": 20,
+          "wins": 0
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Alfa Romeo",
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Arrows",
+          "points": 5,
+          "wins": 0
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "ATS",
+          "points": 4,
+          "wins": 0
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Osella",
+          "points": 3,
+          "wins": 0
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Fittipaldi",
+          "points": 1,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "March",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Ensign",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Toleman",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "posText": "-",
+          "name": "Theodore",
+          "points": 0,
+          "wins": 0
+        }
+      ]
     }
   ]
 }
