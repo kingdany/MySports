@@ -24,6 +24,14 @@ http.DefaultRequestHeaders.UserAgent.ParseAdd("MySports/0.1");
 
 IEventSource[] sources = [new JolpicaF1Source(http)];
 
+// Highlights YouTube per competizione; senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
+var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
+var videoSources = new Dictionary<string, YouTubeHighlights>();
+if (!string.IsNullOrWhiteSpace(youtubeKey))
+    videoSources[Competition.F1.Id] = new YouTubeHighlights(http, youtubeKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1");
+else
+    Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");
+
 var publisher = new JsonPublisher(outputDir);
 var now = DateTimeOffset.UtcNow;
 var ct = CancellationToken.None;
@@ -101,6 +109,19 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 .ToList();
         }
 
+        // Highlights solo per la stagione corrente: lo storico dei video si valuterà a parte.
+        if (seasonsArg is null && videoSources.TryGetValue(competition.Id, out var videos))
+        {
+            try
+            {
+                events = await videos.AttachAsync(events, ct);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"AVVISO video {competition.Name} {season}: {ex.Message}");
+            }
+        }
+
         // Se le classifiche non arrivano si tengono quelle dell'esecuzione precedente.
         IReadOnlyList<StandingsTable>? standings;
         try
@@ -124,6 +145,16 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
         return null;
     }
 }
+
+// Per le prove in locale le chiavi stanno nel file .env (escluso da Git); su GitHub arrivano dai Secrets.
+static string? ReadDotEnv(string name) =>
+    File.Exists(".env")
+        ? File.ReadLines(".env")
+            .Select(line => line.Split('=', 2))
+            .Where(parts => parts.Length == 2 && parts[0].Trim() == name)
+            .Select(parts => parts[1].Trim())
+            .FirstOrDefault()
+        : null;
 
 // "1950-2025" oppure "2019,2021,2023".
 static IEnumerable<string> ParseSeasons(string value) =>

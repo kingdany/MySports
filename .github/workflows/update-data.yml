@@ -55,6 +55,7 @@ jobs:
           SEASONS: ${{ inputs.seasons }}
           COMPETITION: ${{ inputs.competition }}
           STANDINGS_ONLY: ${{ inputs.standings_only && '--standings-only' || '' }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           if [ -n "$SEASONS" ]; then
             dotnet run --project src/MySports.Importer -c Release -- --out site --competition "$COMPETITION" --seasons "$SEASONS" $STANDINGS_ONLY

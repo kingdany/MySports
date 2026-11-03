@@ -17,7 +17,14 @@ export type ClassificationRow = {
   q3?: string;
 };
 
-export type Video = { videoId: string; title: string; thumbnailUrl: string; publishedAt: string };
+export type Video = {
+  videoId: string;
+  title: string;
+  thumbnailUrl: string;
+  publishedAt: string;
+  source?: string; // canale, es. "Formula 1"
+  duration?: string; // "8:08"
+};
 
 export type SportEvent = {
   id: string;

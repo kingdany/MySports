@@ -32,6 +32,7 @@ export function EventRow({ event }: { event: SportEvent }) {
               </Text>
               <Outcome event={event} />
             </View>
+            {event.videos.length > 0 && <Text style={[styles.videoMark, { color: muted }]}>▶</Text>}
           </View>
         )}
       </Pressable>
@@ -76,4 +77,5 @@ const styles = StyleSheet.create({
   title: { fontSize: 16, fontWeight: '600' },
   subtitle: { fontSize: 14 },
   outcome: { fontSize: 14, fontWeight: '600', marginTop: 2, fontVariant: ['tabular-nums'] },
+  videoMark: { alignSelf: 'center', fontSize: 16 }, // l'evento ha un video
 });

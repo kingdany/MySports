@@ -41,4 +41,5 @@ public sealed record ClassificationRow
     public string? Q3 { get; init; }
 }
 
-public sealed record Video(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt);
+// Source: nome del canale (es. "Formula 1"); Duration: "8:08". Entrambi assenti nei video salvati prima di averli.
+public sealed record Video(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt, string? Source = null, string? Duration = null);

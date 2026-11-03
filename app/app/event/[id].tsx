@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
+import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
 import { competitionLabel, formatEventDate, sessionLabel } from '@/lib/format';
@@ -40,6 +41,11 @@ export default function EventScreen() {
           <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>
         )}
       </View>
+      {event.videos.length > 0 && (
+        <View style={styles.videos}>
+          {event.videos.map((v) => <VideoCard key={v.videoId} video={v} />)}
+        </View>
+      )}
       {event.result?.length ? <Classification event={event} /> : null}
     </ScrollView>
   );
@@ -84,6 +90,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: '700' },
   info: { fontSize: 15 },
   score: { fontSize: 32, fontWeight: '700', marginTop: 8 },
+  videos: { paddingHorizontal: 16, paddingBottom: 16, gap: 16 },
   sectionTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', paddingHorizontal: 16, paddingTop: 8, paddingBottom: 4 },
   resultRow: {
     flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 10,

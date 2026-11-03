@@ -1,5 +1,6 @@
 using System.Net;
 using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
 
 namespace MySports.Importer.Sources;
 
@@ -45,11 +46,14 @@ public static class HttpJson
                     continue;
                 }
                 if (!res.IsSuccessStatusCode)
-                    throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {url}");
+                    throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {HideKey(url)}");
                 return JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
             }
         }
     }
+
+    // Le chiavi API passate nell'indirizzo non devono finire nei log.
+    private static string HideKey(string url) => Regex.Replace(url, "([?&]key=)[^&]+", "$1***");
 
     private static Task WaitAsync(string reason, TimeSpan wait, CancellationToken ct)
     {
