@@ -6,22 +6,44 @@ using MySports.Importer.Models;
 namespace MySports.Importer.Sources;
 
 // Aggiunge agli eventi gli highlights pubblicati da un canale YouTube ufficiale (YouTube Data API v3).
-// I video si abbinano per tipo di sessione (dal titolo) e data di pubblicazione, perché i nomi dei GP
-// nei titoli non sono sempre regolari (es. "Bahrain Grand Prix in Malaysia", anno mancante).
-public sealed partial class YouTubeHighlights(HttpClient http, string apiKey, string channelId, string sourceName)
+// I video si abbinano per tipo di sessione (dal titolo, con una regola diversa per ogni canale) e per data
+// di pubblicazione, perché i nomi dei GP nei titoli non sono regolari (es. "Bahrain Grand Prix in Malaysia").
+// classify: titolo -> sessione ("race", "qualifying", "sprint", "sprint_qualifying") oppure null se il video non interessa.
+public sealed partial class YouTubeHighlights(
+    HttpClient http, string apiKey, string channelId, string sourceName, Func<string, string?> classify)
 {
     private const string BaseUrl = "https://www.googleapis.com/youtube/v3";
     private const int MaxPages = 40;                              // 50 video per pagina, 1 unità di quota ciascuna
     private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
+    private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying"];
 
-    // "Race Highlights | 2026 Mexico City Grand Prix" -> race. FP ed "Extended Highlights" (gare storiche) esclusi.
-    private static readonly (string Prefix, string Session)[] Titles =
-    [
-        ("Sprint Qualifying Highlights", "sprint_qualifying"),
-        ("Sprint Highlights", "sprint"),
-        ("Qualifying Highlights", "qualifying"),
-        ("Race Highlights", "race"),
-    ];
+    public string SourceName => sourceName;
+
+    // Canale ufficiale Formula 1, in inglese: "Race Highlights | 2026 Mexico City Grand Prix" -> race.
+    // Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
+    public static YouTubeHighlights FormulaOne(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", title =>
+            title.StartsWith("Sprint Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint_qualifying"
+            : title.StartsWith("Sprint Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint"
+            : title.StartsWith("Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "qualifying"
+            : title.StartsWith("Race Highlights", StringComparison.OrdinalIgnoreCase) ? "race"
+            : null);
+
+    // Sky Sport F1 (Italia), in italiano. I titoli variano molto ("gli highlights della gara",
+    // "gli highlights del GP di Singapore", "qualifica Sprint", "qualifiche shootout per la Sprint"):
+    // si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre categorie (F1 Academy, F2, F3).
+    public static YouTubeHighlights SkySportF1(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", title =>
+            !Contains(title, "highlights") || SkyExcluded().IsMatch(title) ? null
+            : Contains(title, "qualific") && Contains(title, "sprint") ? "sprint_qualifying"
+            : Contains(title, "sprint") ? "sprint"
+            : Contains(title, "qualific") ? "qualifying"
+            : "race");
+
+    [GeneratedRegex(@"sintesi|libere|\bFP\d|academy|\bF2\b|\bF3\b", RegexOptions.IgnoreCase)]
+    private static partial Regex SkyExcluded();
+
+    private static bool Contains(string text, string value) => text.Contains(value, StringComparison.OrdinalIgnoreCase);
 
     [GeneratedRegex(@"\b(19|20)\d{2}\b")]
     private static partial Regex YearPattern();
@@ -30,8 +52,9 @@ public sealed partial class YouTubeHighlights(HttpClient http, string apiKey, st
 
     public async Task<IReadOnlyList<SportEvent>> AttachAsync(IReadOnlyList<SportEvent> events, CancellationToken ct)
     {
-        var sessions = Titles.Select(t => t.Session).ToHashSet();
-        bool Needs(SportEvent e) => e.Status == EventStatus.Finished && e.Videos.Count == 0 && sessions.Contains(e.Session);
+        // Ogni canale aggiunge al massimo un video per sessione, accanto a quelli degli altri canali.
+        bool Needs(SportEvent e) =>
+            e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && e.Videos.All(v => v.Source != sourceName);
 
         var waiting = events.Where(Needs).ToList();
         if (waiting.Count == 0) return events;
@@ -43,7 +66,7 @@ public sealed partial class YouTubeHighlights(HttpClient http, string apiKey, st
         var found = new Dictionary<string, Upload>();
         foreach (var upload in uploads.OrderBy(u => u.PublishedAt))
         {
-            var session = Titles.FirstOrDefault(t => upload.Title.StartsWith(t.Prefix, StringComparison.OrdinalIgnoreCase)).Session;
+            var session = classify(upload.Title);
             if (session is null) continue;
 
             var match = waiting
@@ -61,7 +84,7 @@ public sealed partial class YouTubeHighlights(HttpClient http, string apiKey, st
         {
             if (!found.TryGetValue(e.Id, out var u) || !details.TryGetValue(u.VideoId, out var d) || d.BlockedInItaly) return e;
             attached++;
-            return e with { Videos = [new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration)] };
+            return e with { Videos = [.. e.Videos, new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration)] };
         }).ToList();
 
         Console.WriteLine($"Video {sourceName}: {attached} highlights abbinati");

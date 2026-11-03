@@ -11,20 +11,23 @@ public sealed class OpenF1Client(HttpClient http)
     private static readonly TimeSpan Pause = TimeSpan.FromSeconds(2.1); // limite ~30 richieste al minuto
     private const int MaxRateLimitRetries = 10;
 
-    public sealed record Session(int SessionKey, DateTimeOffset Start);
+    // Name: "Practice 1", "Qualifying", "Sprint Qualifying", "Sprint", "Race", ...
+    public sealed record Session(int SessionKey, string Name, DateTimeOffset Start);
 
     // Duration contiene i tempi delle singole fasi (es. SQ1, SQ2, SQ3); null se il pilota non vi ha preso parte.
     public sealed record ResultRow(int? Position, int DriverNumber, double?[] Duration);
 
     public sealed record Driver(int Number, string FullName, string Acronym, string Team);
 
-    public async Task<List<Session>> GetSessionsAsync(string year, string sessionName, CancellationToken ct)
+    // Tutte le sessioni dell'anno (non cancellate), con l'orario del cronometraggio ufficiale.
+    public async Task<List<Session>> GetSessionsAsync(string year, CancellationToken ct)
     {
-        var data = await GetJsonAsync($"sessions?year={year}&session_name={Uri.EscapeDataString(sessionName)}", ct);
+        var data = await GetJsonAsync($"sessions?year={year}", ct);
         return data.AsArray()
             .Where(s => s!["is_cancelled"]?.GetValue<bool>() != true)
             .Select(s => new Session(
                 s!["session_key"]!.GetValue<int>(),
+                s["session_name"]?.GetValue<string>() ?? "",
                 DateTimeOffset.Parse(s["date_start"]!.GetValue<string>(), CultureInfo.InvariantCulture)))
             .ToList();
     }

@@ -24,11 +24,12 @@ http.DefaultRequestHeaders.UserAgent.ParseAdd("MySports/0.1");
 
 IEventSource[] sources = [new JolpicaF1Source(http)];
 
-// Highlights YouTube per competizione; senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
+// Highlights YouTube per competizione, nell'ordine in cui l'app li mostra (italiano per primo).
+// Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
-var videoSources = new Dictionary<string, YouTubeHighlights>();
+var videoSources = new Dictionary<string, YouTubeHighlights[]>();
 if (!string.IsNullOrWhiteSpace(youtubeKey))
-    videoSources[Competition.F1.Id] = new YouTubeHighlights(http, youtubeKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1");
+    videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");
 
@@ -110,16 +111,25 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
         }
 
         // Highlights solo per la stagione corrente: lo storico dei video si valuterà a parte.
-        if (seasonsArg is null && videoSources.TryGetValue(competition.Id, out var videos))
+        if (seasonsArg is null && videoSources.TryGetValue(competition.Id, out var channels))
         {
-            try
+            foreach (var channel in channels)
             {
-                events = await videos.AttachAsync(events, ct);
+                try
+                {
+                    events = await channel.AttachAsync(events, ct);
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"AVVISO video {channel.SourceName} {season}: {ex.Message}");
+                }
             }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"AVVISO video {competition.Name} {season}: {ex.Message}");
-            }
+
+            // Ordine fisso dei video in ogni evento, anche quando un canale li pubblica dopo l'altro.
+            var order = channels.Select(c => c.SourceName).ToList();
+            events = events
+                .Select(e => e.Videos.Count < 2 ? e : e with { Videos = e.Videos.OrderBy(v => order.IndexOf(v.Source ?? "")).ToList() })
+                .ToList();
         }
 
         // Se le classifiche non arrivano si tengono quelle dell'esecuzione precedente.

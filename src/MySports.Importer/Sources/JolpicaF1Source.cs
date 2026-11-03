@@ -46,8 +46,20 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         var qualiResults = await FetchByRoundAsync($"{season}/qualifying", "QualifyingResults", ct);
 
         var now = DateTimeOffset.UtcNow;
-        var sprintQualiResults = await FetchSprintQualifyingAsync(season, races, sprintResults, qualiResults, now, ct);
+        var officialSessions = await FetchOfficialSessionsAsync(season, ct);
+        var sprintQualiResults = await FetchSprintQualifyingAsync(season, races, sprintResults, qualiResults, officialSessions, now, ct);
         var events = new List<SportEvent>();
+
+        // Orario di una sessione: quello del cronometraggio ufficiale (OpenF1) se diverso da Jolpica,
+        // che a volte non registra le sessioni spostate (es. gara di Miami 2026 anticipata di 3 ore).
+        (DateTimeOffset At, bool HasTime) Start(string session, JsonNode node)
+        {
+            var start = ParseStart(node);
+            if (!start.HasTime) return start;
+            var official = officialSessions.FirstOrDefault(s =>
+                OpenF1Names.GetValueOrDefault(s.Name) == session && (s.Start - start.At).Duration() < TimeSpan.FromDays(2));
+            return official is null ? start : (official.Start, true);
+        }
 
         foreach (var race in races)
         {
@@ -81,7 +93,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
                     "sprint_qualifying" when sprintQualiResults.TryGetValue(round, out var rows) => rows,
                     _ => null,
                 };
-                events.Add(Create(session, ParseStart(s), result));
+                events.Add(Create(session, Start(session, s), result));
             }
 
             // Nelle stagioni vecchie il calendario non riporta la qualifica, ma la classifica esiste:
@@ -92,11 +104,36 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
                 events.Add(Create("qualifying", raceDay, QualifyingClassification(oldQuali)));
             }
 
-            events.Add(Create("race", ParseStart(race),
+            events.Add(Create("race", Start("race", race),
                 raceResults.TryGetValue(round, out var raceRows) ? RaceClassification(raceRows) : null));
         }
 
         return events;
+    }
+
+    // Nomi delle sessioni OpenF1 -> nostri.
+    private static readonly Dictionary<string, string> OpenF1Names = new()
+    {
+        ["Practice 1"] = "fp1", ["Practice 2"] = "fp2", ["Practice 3"] = "fp3",
+        ["Sprint Qualifying"] = "sprint_qualifying", ["Sprint Shootout"] = "sprint_qualifying",
+        ["Sprint"] = "sprint", ["Qualifying"] = "qualifying", ["Race"] = "race",
+    };
+
+    private const int FirstOpenF1Season = 2023;
+
+    // Sessioni della stagione secondo OpenF1 (dal 2023). Se OpenF1 non risponde si usa solo Jolpica.
+    private async Task<List<OpenF1Client.Session>> FetchOfficialSessionsAsync(string season, CancellationToken ct)
+    {
+        if (int.Parse(season, CultureInfo.InvariantCulture) < FirstOpenF1Season) return [];
+        try
+        {
+            return await openF1.GetSessionsAsync(season, ct);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"AVVISO sessioni {season} da OpenF1: {ex.Message}");
+            return [];
+        }
     }
 
     public async Task<IReadOnlyList<StandingsTable>> FetchStandingsAsync(string season, CancellationToken ct)
@@ -158,34 +195,26 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         JsonArray races,
         Dictionary<string, List<JsonNode>> sprintResults,
         Dictionary<string, List<JsonNode>> qualiResults,
+        List<OpenF1Client.Session> officialSessions,
         DateTimeOffset now,
         CancellationToken ct)
     {
         var byRound = new Dictionary<string, List<ClassificationRow>>();
+        var sessions = officialSessions.Where(s => OpenF1Names.GetValueOrDefault(s.Name) == "sprint_qualifying").ToList();
         var finished = races
             .Select(r => (Round: Str(r!["round"])!, Node: r["SprintQualifying"] ?? r["SprintShootout"]))
             .Where(x => x.Node is not null)
-            .Select(x => (x.Round, Start: ParseStart(x.Node!).At))
-            .Where(x => x.Start + TimeSpan.FromHours(DurationHours["sprint_qualifying"]) < now)
+            // Una sola qualifica sprint per weekend: basta la stessa data, anche se l'orario Jolpica è sbagliato.
+            .Select(x => (x.Round, Session: sessions.FirstOrDefault(s =>
+                (s.Start - ParseStart(x.Node!).At).Duration() < TimeSpan.FromDays(2))))
+            .Where(x => x.Session is not null
+                        && x.Session.Start + TimeSpan.FromHours(DurationHours["sprint_qualifying"]) < now)
+            .Select(x => (x.Round, Session: x.Session!))
             .ToList();
-        if (finished.Count == 0) return byRound;
-
-        List<OpenF1Client.Session> sessions;
-        try
-        {
-            sessions = await openF1.GetSessionsAsync(season, "Sprint Qualifying", ct);
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"AVVISO qualifiche sprint {season} da OpenF1: {ex.Message}");
-            return byRound;
-        }
 
         // Ogni sessione è indipendente: un errore su una non deve far perdere le altre.
-        foreach (var (round, start) in finished)
+        foreach (var (round, session) in finished)
         {
-            var session = sessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromHours(2));
-            if (session is null) continue;
             try
             {
                 var rows = await openF1.GetSessionResultAsync(session.SessionKey, ct);
