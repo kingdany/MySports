@@ -1,5 +1,4 @@
 using System.Globalization;
-using System.Net;
 using System.Text.Json.Nodes;
 using MySports.Importer.Models;
 
@@ -120,14 +119,24 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
             .ToList();
         if (finished.Count == 0) return byRound;
 
+        List<OpenF1Client.Session> sessions;
         try
         {
-            var sessions = await openF1.GetSessionsAsync(season, "Sprint Qualifying", ct);
-            foreach (var (round, start) in finished)
-            {
-                var session = sessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromHours(2));
-                if (session is null) continue;
+            sessions = await openF1.GetSessionsAsync(season, "Sprint Qualifying", ct);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"AVVISO qualifiche sprint {season} da OpenF1: {ex.Message}");
+            return byRound;
+        }
 
+        // Ogni sessione è indipendente: un errore su una non deve far perdere le altre.
+        foreach (var (round, start) in finished)
+        {
+            var session = sessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromHours(2));
+            if (session is null) continue;
+            try
+            {
                 var rows = await openF1.GetSessionResultAsync(session.SessionKey, ct);
                 if (rows.Count == 0) continue;
 
@@ -160,10 +169,10 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
                     })
                     .ToList();
             }
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"AVVISO qualifiche sprint da OpenF1: {ex.Message}");
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"AVVISO qualifiche sprint {season} round {round} da OpenF1: {ex.Message}");
+            }
         }
         return byRound;
     }
@@ -172,25 +181,12 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
     private static string? FormatLap(double? seconds) =>
         seconds is { } s ? $"{(int)(s / 60)}:{(s % 60).ToString("00.000", CultureInfo.InvariantCulture)}" : null;
 
+    // Oltre ~500 richieste l'ora Jolpica risponde 429: si aspetta e si riprova (serve per importare lo storico).
     private async Task<JsonNode> GetJsonAsync(string url, CancellationToken ct)
     {
-        for (var attempt = 1; ; attempt++)
-        {
-            using var res = await http.GetAsync(url, ct);
-            // Oltre ~500 richieste l'ora Jolpica risponde 429: si aspetta e si riprova (serve per importare lo storico).
-            if (res.StatusCode == HttpStatusCode.TooManyRequests && attempt <= MaxRateLimitRetries)
-            {
-                var wait = res.Headers.RetryAfter?.Delta ?? TimeSpan.FromMinutes(1);
-                Console.WriteLine($"Limite richieste Jolpica raggiunto, attendo {wait.TotalSeconds:0} s...");
-                await Task.Delay(wait, ct);
-                continue;
-            }
-            if (!res.IsSuccessStatusCode)
-                throw new HttpRequestException($"Jolpica ha risposto {(int)res.StatusCode} su {url}");
-            var json = JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
-            await Task.Delay(Pause, ct);
-            return json;
-        }
+        var json = await HttpJson.GetAsync(http, url, "Jolpica", MaxRateLimitRetries, ct);
+        await Task.Delay(Pause, ct);
+        return json;
     }
 
     // Le API paginano per riga di risultato, quindi un GP può essere diviso tra due pagine:

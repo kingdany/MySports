@@ -8,7 +8,8 @@ namespace MySports.Importer.Sources;
 public sealed class OpenF1Client(HttpClient http)
 {
     private const string BaseUrl = "https://api.openf1.org/v1";
-    private static readonly TimeSpan Pause = TimeSpan.FromMilliseconds(500); // limite ~3 richieste/secondo
+    private static readonly TimeSpan Pause = TimeSpan.FromSeconds(2.1); // limite ~30 richieste al minuto
+    private const int MaxRateLimitRetries = 10;
 
     public sealed record Session(int SessionKey, DateTimeOffset Start);
 
@@ -53,11 +54,7 @@ public sealed class OpenF1Client(HttpClient http)
 
     private async Task<JsonNode> GetJsonAsync(string path, CancellationToken ct)
     {
-        var url = $"{BaseUrl}/{path}";
-        using var res = await http.GetAsync(url, ct);
-        if (!res.IsSuccessStatusCode)
-            throw new HttpRequestException($"OpenF1 ha risposto {(int)res.StatusCode} su {url}");
-        var json = JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
+        var json = await HttpJson.GetAsync(http, $"{BaseUrl}/{path}", "OpenF1", MaxRateLimitRetries, ct);
         await Task.Delay(Pause, ct);
         return json;
     }
