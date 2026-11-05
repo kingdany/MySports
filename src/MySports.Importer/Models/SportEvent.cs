@@ -3,14 +3,14 @@ namespace MySports.Importer.Models;
 // Evento nel formato comune a tutti gli sport: è ciò che l'app legge dai file JSON.
 public sealed record SportEvent
 {
-    public required string Id { get; init; }              // es. "f1-2026-19-race"
+    public required string Id { get; init; }              // es. "f1-2026-19-race", "serie-a-2026-27-558629"
     public required string Competition { get; init; }     // "serie-a" | "f1" | "motogp"
     public required string Season { get; init; }          // "2026" oppure "2026-27" per il calcio
     public int? Round { get; init; }                      // giornata / numero del GP
     public required string Title { get; init; }           // "Mexico City Grand Prix", "Inter - Milan"
     public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"
     public required DateTimeOffset StartsAt { get; init; }
-    public bool? DateOnly { get; init; }                  // true se la fonte non ha l'orario (stagioni vecchie)
+    public bool? DateOnly { get; init; }                  // true se la fonte non ha l'orario (stagioni vecchie, partite ancora da fissare)
     public string? Venue { get; init; }
     public string? City { get; init; }
     public string? Country { get; init; }

@@ -34,7 +34,7 @@ export type SportEvent = {
   title: string;
   session: string;
   startsAt: string;
-  dateOnly?: boolean; // la fonte non ha l'orario (stagioni vecchie)
+  dateOnly?: boolean; // la fonte non ha l'orario (stagioni vecchie, partite ancora da fissare)
   venue?: string;
   city?: string;
   country?: string;
@@ -55,6 +55,10 @@ export type StandingRow = {
   team?: string;
   points: number;
   wins?: number;
+  played?: number; // questi ultimi solo per il calcio
+  draws?: number;
+  losses?: number;
+  goalDifference?: number;
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };

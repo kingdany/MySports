@@ -7,11 +7,11 @@ on:
   workflow_dispatch:          # avvio manuale dalla scheda Actions
     inputs:
       seasons:
-        description: "Stagioni passate da importare (es. 1950-2025 oppure 2019,2021). Vuoto = aggiornamento normale"
+        description: "Stagioni passate da importare (es. 1950-2025, 2019,2021 oppure 2024-25 per il calcio). Vuoto = aggiornamento normale"
         required: false
         default: ""
       competition:
-        description: "Competizione delle stagioni passate"
+        description: "Competizione delle stagioni passate (f1, serie-a)"
         required: false
         default: "f1"
       standings_only:
@@ -56,6 +56,7 @@ jobs:
           COMPETITION: ${{ inputs.competition }}
           STANDINGS_ONLY: ${{ inputs.standings_only && '--standings-only' || '' }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: |
           if [ -n "$SEASONS" ]; then
             dotnet run --project src/MySports.Importer -c Release -- --out site --competition "$COMPETITION" --seasons "$SEASONS" $STANDINGS_ONLY

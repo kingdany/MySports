@@ -6,7 +6,7 @@ import { Text, View, useThemeColor } from '@/components/Themed';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
-import { competitionLabel, formatEventDate, sessionLabel } from '@/lib/format';
+import { competitionLabel, formatEventDate, roundLabel, sessionLabel } from '@/lib/format';
 import type { ClassificationRow, SportEvent } from '@/lib/types';
 
 export default function EventScreen() {
@@ -32,7 +32,7 @@ export default function EventScreen() {
       <Stack.Screen options={{ title: sessionLabel(event.session) }} />
       <View style={styles.header}>
         <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-          {competitionLabel(event.competition)}{event.round ? ` · Round ${event.round}` : ''}
+          {competitionLabel(event.competition)}{event.round ? ` · ${roundLabel(event)}` : ''}
         </Text>
         <Text style={styles.title}>{event.title}</Text>
         <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>

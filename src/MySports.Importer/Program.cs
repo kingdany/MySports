@@ -6,6 +6,8 @@
 //       importa stagioni passate (una tantum: non cambiano più) e aggiorna meta.json
 //   ... --competition f1 --seasons 1950-2025 --standings-only
 //       aggiunge solo le classifiche a stagioni già importate, senza riscaricare gli eventi
+//   ... --competition serie-a --seasons 2023-24,2024-25
+//       le stagioni del calcio si elencano per nome
 using System.Globalization;
 using MySports.Importer.Models;
 using MySports.Importer.Output;
@@ -22,7 +24,14 @@ var window = TimeSpan.FromDays(14); // orizzonte di upcoming.json e results.json
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
 http.DefaultRequestHeaders.UserAgent.ParseAdd("MySports/0.1");
 
-IEventSource[] sources = [new JolpicaF1Source(http)];
+var footballKey = Environment.GetEnvironmentVariable("FOOTBALL_DATA_API_KEY") ?? ReadDotEnv("FOOTBALL_DATA_API_KEY");
+
+// La F1 resta prima: è la competizione mostrata all'apertura delle classifiche.
+IEventSource[] sources =
+[
+    new JolpicaF1Source(http),
+    new FootballDataSource(Competition.SerieA, "SA", footballKey),
+];
 
 // Highlights YouTube per competizione, nell'ordine in cui l'app li mostra (italiano per primo).
 // Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
@@ -166,10 +175,10 @@ static string? ReadDotEnv(string name) =>
             .FirstOrDefault()
         : null;
 
-// "1950-2025" oppure "2019,2021,2023".
+// "1950-2025" oppure "2019,2021,2023". "2025-26" è una stagione sola, non un intervallo di anni.
 static IEnumerable<string> ParseSeasons(string value) =>
     value.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
-        .SelectMany(part => part.Split('-') is [var from, var to]
+        .SelectMany(part => part.Split('-') is [var from, var to] && from.Length == to.Length
             ? Enumerable.Range(int.Parse(from, CultureInfo.InvariantCulture),
                     int.Parse(to, CultureInfo.InvariantCulture) - int.Parse(from, CultureInfo.InvariantCulture) + 1)
                 .Select(y => y.ToString(CultureInfo.InvariantCulture))

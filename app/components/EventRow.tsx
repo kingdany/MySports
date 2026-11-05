@@ -3,7 +3,7 @@ import { Pressable, StyleSheet } from 'react-native';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors, LiveColor } from '@/constants/Colors';
-import { competitionLabel, formatTime, sessionLabel } from '@/lib/format';
+import { competitionLabel, formatTime, roundLabel, sessionLabel } from '@/lib/format';
 import type { SportEvent } from '@/lib/types';
 
 export function EventRow({ event }: { event: SportEvent }) {
@@ -28,7 +28,7 @@ export function EventRow({ event }: { event: SportEvent }) {
             <View style={styles.body}>
               <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
               <Text style={[styles.subtitle, { color: muted }]} numberOfLines={1}>
-                {sessionLabel(event.session)}{event.city ? ` · ${event.city}` : ''}
+                {event.session === 'match' ? roundLabel(event) : sessionLabel(event.session)}{event.city ? ` · ${event.city}` : ''}
               </Text>
               <Outcome event={event} />
             </View>

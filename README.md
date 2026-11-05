@@ -20,7 +20,7 @@ app/                 app mobile Expo (React Native + TypeScript)
   lib/               tipi, formattazione, caricamento dei JSON
 src/MySports.Importer/
   Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
-  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, YouTubeHighlights, ...)
+  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, FootballDataSource, YouTubeHighlights, ...)
   Output/        scrittura dei file JSON
 .github/workflows/update-data.yml   esecuzione programmata e pubblicazione
 ```
@@ -32,7 +32,7 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`; anche le stagioni passate (F1 dal 1950) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
@@ -47,7 +47,10 @@ Richiede .NET 10 SDK.
 dotnet run --project src/MySports.Importer -- --out out
 ```
 
-Per gli highlights serve `YOUTUBE_API_KEY` nell'ambiente oppure in un file `.env` nella radice del repository (escluso da Git); senza chiave questo passaggio viene saltato.
+Le chiavi vanno nell'ambiente oppure in un file `.env` nella radice del repository (escluso da Git):
+
+- `FOOTBALL_DATA_API_KEY` per il calcio; senza chiave la Serie A non si aggiorna e l'importatore termina con errore, ma la F1 viene comunque salvata.
+- `YOUTUBE_API_KEY` per gli highlights; senza chiave questo passaggio viene saltato.
 
 ## Importare le stagioni passate
 
@@ -63,6 +66,12 @@ Per aggiungere solo le classifiche a stagioni già importate: opzione "Solo clas
 
 Jolpica consente ~500 richieste l'ora: con molte stagioni l'importatore attende da solo lo sblocco.
 Per le stagioni vecchie mancano orari (`dateOnly`) e, prima del 1994 circa, le qualifiche.
+
+Per il calcio le stagioni si elencano per nome (il piano gratuito di football-data.org arriva fino al 2023-24):
+
+```
+dotnet run --project src/MySports.Importer -- --competition serie-a --seasons 2023-24,2024-25,2025-26 --out out
+```
 
 ## Provare l'app sul telefono
 
@@ -87,5 +96,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [x] F1: calendario, risultati, classifiche, storico dal 1950
 - [x] F1: highlights YouTube (Sky Sport F1 in italiano, Formula 1 in inglese), stagione corrente
 - [ ] F1: highlights delle stagioni passate
-- [ ] Calcio: Serie A, Champions League e altre competizioni (football-data.org, serve la chiave API)
+- [x] Calcio: Serie A, calendario, risultati, classifica (football-data.org)
+- [ ] Calcio: Champions League e altre competizioni
 - [ ] MotoGP (video: canale Sky Sport MotoGP)

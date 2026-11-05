@@ -24,6 +24,10 @@ export const isPractice = (session: string) => session === 'fp1' || session === 
 
 export const competitionLabel = (competition: string) => COMPETITION_LABELS[competition] ?? competition;
 
+// "Giornata 11" per il calcio, "Round 19" per i motori.
+export const roundLabel = (event: SportEvent) =>
+  event.round ? `${event.session === 'match' ? 'Giornata' : 'Round'} ${event.round}` : null;
+
 export const formatTime = (iso: string) =>
   new Date(iso).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
 

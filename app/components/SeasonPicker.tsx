@@ -13,10 +13,11 @@ type Props = {
   competitions: CompetitionInfo[];
   selected: SeasonSelection;
   onSelect: (selection: SeasonSelection) => void;
+  showAll?: boolean; // offre la voce "Stagione corrente", cioè tutte le competizioni insieme
 };
 
 // Barra "Stagione: ..." che apre l'elenco delle stagioni disponibili per ogni competizione.
-export function SeasonPicker({ competitions, selected, onSelect }: Props) {
+export function SeasonPicker({ competitions, selected, onSelect, showAll = true }: Props) {
   const [open, setOpen] = useState(false);
   const muted = useThemeColor({}, 'muted');
   const card = useThemeColor({}, 'card');
@@ -48,7 +49,7 @@ export function SeasonPicker({ competitions, selected, onSelect }: Props) {
               </Pressable>
             </View>
             <ScrollView contentContainerStyle={styles.content}>
-              <Chip label="Stagione corrente" active={selected === null} wide onPress={() => choose(null)} />
+              {showAll && <Chip label="Stagione corrente" active={selected === null} wide onPress={() => choose(null)} />}
               {competitions.map((c) => (
                 <View key={c.id} style={styles.section}>
                   <Text style={[styles.sectionTitle, { color: CompetitionColors[c.id] ?? muted }]}>{c.name}</Text>
@@ -58,7 +59,7 @@ export function SeasonPicker({ competitions, selected, onSelect }: Props) {
                         key={season}
                         label={season}
                         active={selected?.competition === c.id && selected.season === season}
-                        onPress={() => choose(season === c.currentSeason ? null : { competition: c.id, season })}
+                        onPress={() => choose({ competition: c.id, season })}
                         background={card}
                       />
                     ))}
