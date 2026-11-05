@@ -36,7 +36,7 @@ src/MySports.Importer/
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (solo F1, stagione corrente).
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1 e Serie A, stagione corrente).
 I video già trovati vengono conservati tra un'esecuzione e l'altra.
 
 ## Eseguire in locale
@@ -97,5 +97,9 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [x] F1: highlights YouTube (Sky Sport F1 in italiano, Formula 1 in inglese), stagione corrente
 - [ ] F1: highlights delle stagioni passate
 - [x] Calcio: Serie A, calendario, risultati, classifica (football-data.org)
+- [x] Calcio: highlights YouTube della Serie A (Sky Sport e DAZN), stagione corrente
 - [ ] Calcio: Champions League e altre competizioni
+- [ ] Calcio: classifica marcatori (`/competitions/SA/scorers`, disponibile nel piano gratuito)
+- [ ] Calcio: zone della classifica (Champions, Europa, Conference, retrocessione): regole nostre per posizione, l'API non le fornisce
+- [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
 - [ ] MotoGP (video: canale Sky Sport MotoGP)

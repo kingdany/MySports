@@ -6,39 +6,71 @@ using MySports.Importer.Models;
 namespace MySports.Importer.Sources;
 
 // Aggiunge agli eventi gli highlights pubblicati da un canale YouTube ufficiale (YouTube Data API v3).
-// I video si abbinano per tipo di sessione (dal titolo, con una regola diversa per ogni canale) e per data
-// di pubblicazione, perché i nomi dei GP nei titoli non sono regolari (es. "Bahrain Grand Prix in Malaysia").
-// classify: titolo -> sessione ("race", "qualifying", "sprint", "sprint_qualifying") oppure null se il video non interessa.
+// I video si abbinano con una regola sul titolo, diversa per ogni canale, e per data di pubblicazione.
+// F1: per tipo di sessione, perché i nomi dei GP nei titoli non sono regolari (es. "Bahrain Grand Prix in Malaysia").
+// Calcio: per squadre di casa e trasferta.
+// matcher: titolo -> condizione sull'evento, oppure null se il video non interessa.
 public sealed partial class YouTubeHighlights(
-    HttpClient http, string apiKey, string channelId, string sourceName, Func<string, string?> classify)
+    HttpClient http, string apiKey, string channelId, string sourceName, Func<string, Func<SportEvent, bool>?> matcher)
 {
     private const string BaseUrl = "https://www.googleapis.com/youtube/v3";
-    private const int MaxPages = 40;                              // 50 video per pagina, 1 unità di quota ciascuna
+    // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese.
+    private const int MaxPages = 200;
     private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
-    private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying"];
+    private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
 
     public string SourceName => sourceName;
+
+    // classify: titolo -> sessione ("race", "qualifying", "sprint", "sprint_qualifying") oppure null.
+    private static Func<string, Func<SportEvent, bool>?> BySession(Func<string, string?> classify) =>
+        title => classify(title) is { } session ? e => e.Session == session : null;
+
+    // La regola deve catturare le due squadre, nell'ordine casa-trasferta.
+    private static Func<string, Func<SportEvent, bool>?> ByTeams(Regex rule) =>
+        title => rule.Match(title) is { Success: true } m
+            ? e => IsTeam(e.HomeTeam, m.Groups[1].Value) && IsTeam(e.AwayTeam, m.Groups[2].Value)
+            : null;
+
+    private static bool IsTeam(Team? team, string name) =>
+        string.Equals(team?.ShortName, name.Trim(), StringComparison.OrdinalIgnoreCase);
+
+    // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio o con
+    // "gli highlights". Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
+    public static YouTubeHighlights SkySportSerieA(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkySerieATitle()));
+
+    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?:\s*(?:gol e |gli )?highlights\s*\|\s*Serie A\s*$", RegexOptions.IgnoreCase)]
+    private static partial Regex SkySerieATitle();
+
+    // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
+    // La parte finale varia molto ("| DAZN", "| DAZN | Highlights", "| Highlights DAZN"). Le partite di stagioni
+    // passate ripubblicate riportano l'anno dopo "Serie A" ("Serie A 2025-26") e così restano escluse.
+    public static YouTubeHighlights DaznSerieA(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", ByTeams(DaznSerieATitle()));
+
+    [GeneratedRegex(@"(?:^|[:|])\s*([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?\s*\|\s*Serie A(?: Enilive)?\s*\|\s*(?:DAZN|Highlights)", RegexOptions.IgnoreCase)]
+    private static partial Regex DaznSerieATitle();
 
     // Canale ufficiale Formula 1, in inglese: "Race Highlights | 2026 Mexico City Grand Prix" -> race.
     // Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
     public static YouTubeHighlights FormulaOne(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", title =>
+        new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", BySession(title =>
             title.StartsWith("Sprint Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint_qualifying"
             : title.StartsWith("Sprint Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint"
             : title.StartsWith("Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "qualifying"
             : title.StartsWith("Race Highlights", StringComparison.OrdinalIgnoreCase) ? "race"
-            : null);
+            : null));
 
     // Sky Sport F1 (Italia), in italiano. I titoli variano molto ("gli highlights della gara",
     // "gli highlights del GP di Singapore", "qualifica Sprint", "qualifiche shootout per la Sprint"):
     // si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre categorie (F1 Academy, F2, F3).
     public static YouTubeHighlights SkySportF1(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", title =>
+        new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", BySession(title =>
             !Contains(title, "highlights") || SkyExcluded().IsMatch(title) ? null
             : Contains(title, "qualific") && Contains(title, "sprint") ? "sprint_qualifying"
             : Contains(title, "sprint") ? "sprint"
             : Contains(title, "qualific") ? "qualifying"
-            : "race");
+            : "race"));
 
     [GeneratedRegex(@"sintesi|libere|\bFP\d|academy|\bF2\b|\bF3\b", RegexOptions.IgnoreCase)]
     private static partial Regex SkyExcluded();
@@ -66,12 +98,13 @@ public sealed partial class YouTubeHighlights(
         var found = new Dictionary<string, Upload>();
         foreach (var upload in uploads.OrderBy(u => u.PublishedAt))
         {
-            var session = classify(upload.Title);
-            if (session is null) continue;
+            var isEvent = matcher(upload.Title);
+            if (isEvent is null) continue;
 
+            // StartsWith: la stagione può essere "2026" o "2026-27".
             var match = waiting
-                .Where(e => e.Session == session && e.StartsAt <= upload.PublishedAt && upload.PublishedAt - e.StartsAt <= MaxDelay)
-                .Where(e => YearPattern().Match(upload.Title) is not { Success: true } year || year.Value == e.Season)
+                .Where(e => isEvent(e) && e.StartsAt <= upload.PublishedAt && upload.PublishedAt - e.StartsAt <= MaxDelay)
+                .Where(e => YearPattern().Match(upload.Title) is not { Success: true } year || e.Season.StartsWith(year.Value, StringComparison.Ordinal))
                 .MaxBy(e => e.StartsAt);
             if (match is not null) found.TryAdd(match.Id, upload);
         }
@@ -84,7 +117,7 @@ public sealed partial class YouTubeHighlights(
         {
             if (!found.TryGetValue(e.Id, out var u) || !details.TryGetValue(u.VideoId, out var d) || d.BlockedInItaly) return e;
             attached++;
-            return e with { Videos = [.. e.Videos, new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration)] };
+            return e with { Videos = [.. e.Videos, new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration, d.Embeddable ? null : false)] };
         }).ToList();
 
         Console.WriteLine($"Video {sourceName}: {attached} highlights abbinati");
@@ -120,7 +153,7 @@ public sealed partial class YouTubeHighlights(
         return uploads;
     }
 
-    private sealed record Details(string Duration, bool BlockedInItaly);
+    private sealed record Details(string Duration, bool BlockedInItaly, bool Embeddable);
 
     private async Task<Dictionary<string, Details>> GetDetailsAsync(List<string> ids, CancellationToken ct)
     {
@@ -128,14 +161,15 @@ public sealed partial class YouTubeHighlights(
         foreach (var chunk in ids.Chunk(50))
         {
             var data = await HttpJson.GetAsync(http,
-                $"{BaseUrl}/videos?part=contentDetails&id={string.Join(',', chunk)}&key={apiKey}", "YouTube", 0, ct);
+                $"{BaseUrl}/videos?part=contentDetails,status&id={string.Join(',', chunk)}&key={apiKey}", "YouTube", 0, ct);
             foreach (var v in data["items"]!.AsArray())
             {
                 var content = v!["contentDetails"]!;
                 var restriction = content["regionRestriction"];
                 var blocked = restriction?["blocked"]?.AsArray().Any(c => c?.GetValue<string>() == "IT") == true
                               || restriction?["allowed"] is { } allowed && allowed.AsArray().All(c => c?.GetValue<string>() != "IT");
-                details[v["id"]!.GetValue<string>()] = new Details(FormatDuration(content["duration"]!.GetValue<string>()), blocked);
+                var embeddable = v["status"]?["embeddable"]?.GetValue<bool>() ?? true;
+                details[v["id"]!.GetValue<string>()] = new Details(FormatDuration(content["duration"]!.GetValue<string>()), blocked, embeddable);
             }
         }
         return details;

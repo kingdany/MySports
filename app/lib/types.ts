@@ -24,6 +24,7 @@ export type Video = {
   publishedAt: string;
   source?: string; // canale, es. "Formula 1"
   duration?: string; // "8:08"
+  embeddable?: boolean; // false se il video si può vedere solo su YouTube
 };
 
 export type SportEvent = {

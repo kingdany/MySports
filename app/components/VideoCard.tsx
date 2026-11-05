@@ -18,7 +18,7 @@ export function VideoCard({ video }: { video: Video }) {
   const sourceKey = video.source ?? video.videoId;
 
   const play = () => {
-    if (embedBlockedSources.has(sourceKey)) openInYouTube(video);
+    if (video.embeddable === false || embedBlockedSources.has(sourceKey)) openInYouTube(video);
     else setPlaying(true);
   };
 

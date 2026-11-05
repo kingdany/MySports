@@ -38,7 +38,10 @@ IEventSource[] sources =
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
 var videoSources = new Dictionary<string, YouTubeHighlights[]>();
 if (!string.IsNullOrWhiteSpace(youtubeKey))
+{
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
+    videoSources[Competition.SerieA.Id] = [YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.DaznSerieA(http, youtubeKey)];
+}
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");
 

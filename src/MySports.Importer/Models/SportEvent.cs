@@ -42,4 +42,5 @@ public sealed record ClassificationRow
 }
 
 // Source: nome del canale (es. "Formula 1"); Duration: "8:08". Entrambi assenti nei video salvati prima di averli.
-public sealed record Video(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt, string? Source = null, string? Duration = null);
+// Embeddable: false se il video si può vedere solo su YouTube; assente negli altri casi.
+public sealed record Video(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt, string? Source = null, string? Duration = null, bool? Embeddable = null);
