@@ -60,6 +60,7 @@ export type StandingRow = {
   draws?: number;
   losses?: number;
   goalDifference?: number;
+  assists?: number; // solo marcatori; points contiene i gol
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };

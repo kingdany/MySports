@@ -1,6 +1,6 @@
 namespace MySports.Importer.Models;
 
-// Una classifica della stagione (es. "Piloti", "Costruttori"; per il calcio "Classifica").
+// Una classifica della stagione (es. "Piloti", "Costruttori"; per il calcio "Classifica", "Marcatori").
 public sealed record StandingsTable(string Id, string Title, IReadOnlyList<StandingRow> Rows);
 
 public sealed record StandingRow
@@ -16,4 +16,5 @@ public sealed record StandingRow
     public int? Draws { get; init; }
     public int? Losses { get; init; }
     public int? GoalDifference { get; init; }
+    public int? Assists { get; init; }        // solo marcatori; Points contiene i gol
 }

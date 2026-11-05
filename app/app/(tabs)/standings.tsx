@@ -11,14 +11,26 @@ const formatPoints = (points: number) => points.toLocaleString('it-IT');
 
 const signed = (value: number | undefined) => (value != null && value > 0 ? `+${value}` : value ?? '');
 
+type Column = { label: string; width: number; value: (r: StandingRow) => number | string | undefined };
+
 // Colonne del calcio: partite giocate, vittorie, pareggi, sconfitte, differenza reti.
-const FOOTBALL_COLUMNS: { label: string; width: number; value: (r: StandingRow) => number | string | undefined }[] = [
+const FOOTBALL_COLUMNS: Column[] = [
   { label: 'G', width: 20, value: (r) => r.played },
   { label: 'V', width: 20, value: (r) => r.wins },
   { label: 'N', width: 20, value: (r) => r.draws },
   { label: 'P', width: 20, value: (r) => r.losses },
   { label: 'DR', width: 34, value: (r) => signed(r.goalDifference) }, // più larga: ha anche il segno, es. "+16"
 ];
+
+// Colonne dei marcatori: partite giocate e assist. I gol stanno nella colonna principale.
+const SCORER_COLUMNS: Column[] = [
+  { label: 'G', width: 24, value: (r) => r.played },
+  { label: 'A', width: 24, value: (r) => r.assists },
+];
+
+// Colonne specifiche del calcio; null per le classifiche F1, che mostrano le vittorie.
+const columnsOf = (tableId: string | undefined) =>
+  tableId === 'table' ? FOOTBALL_COLUMNS : tableId === 'scorers' ? SCORER_COLUMNS : null;
 
 export default function StandingsScreen() {
   const {
@@ -32,7 +44,7 @@ export default function StandingsScreen() {
 
   const tables = file?.standings ?? [];
   const table = tables.find((t) => t.id === tableId) ?? tables[0];
-  const isFootball = table?.rows[0]?.played != null;
+  const columns = columnsOf(table?.id);
 
   return (
     <View style={{ flex: 1 }}>
@@ -63,17 +75,21 @@ export default function StandingsScreen() {
         <FlatList
           data={table?.rows ?? []}
           keyExtractor={(r, i) => `${r.posText}-${r.name}-${i}`}
-          renderItem={({ item }) => <Row row={item} showTeam={table?.id === 'drivers'} isFootball={isFootball} />}
+          renderItem={({ item }) => (
+            <Row row={item} showTeam={table?.id === 'drivers' || table?.id === 'scorers'} columns={columns} />
+          )}
           ListHeaderComponent={
             table ? (
-              <View style={[styles.headerRow, isFootball && styles.compact]}>
+              <View style={[styles.headerRow, columns && styles.compact]}>
                 <Text style={[styles.headerText, { color: muted, flex: 1 }]}>{table.title}</Text>
-                {isFootball ? (
+                {columns ? (
                   <>
-                    {FOOTBALL_COLUMNS.map((c) => (
+                    {columns.map((c) => (
                       <Text key={c.label} numberOfLines={1} style={[styles.headerText, styles.stat, { color: muted, width: c.width }]}>{c.label}</Text>
                     ))}
-                    <Text style={[styles.headerText, styles.footballPoints, { color: muted }]}>Pt</Text>
+                    <Text numberOfLines={1} style={[styles.footballPoints, styles.headerText, { color: muted }]}>
+                      {table.id === 'scorers' ? 'Gol' : 'Pt'}
+                    </Text>
                   </>
                 ) : (
                   <>
@@ -96,11 +112,11 @@ export default function StandingsScreen() {
   );
 }
 
-function Row({ row, showTeam, isFootball }: { row: StandingRow; showTeam: boolean; isFootball: boolean }) {
+function Row({ row, showTeam, columns }: { row: StandingRow; showTeam: boolean; columns: Column[] | null }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
   return (
-    <View style={[styles.row, isFootball && styles.compact, { borderBottomColor: border }]}>
+    <View style={[styles.row, columns && styles.compact, { borderBottomColor: border }]}>
       <Text style={[styles.pos, row.pos == null && { color: muted }]}>{row.posText}</Text>
       <View style={styles.name}>
         <Text style={styles.nameText} numberOfLines={1}>{row.name}</Text>
@@ -108,9 +124,9 @@ function Row({ row, showTeam, isFootball }: { row: StandingRow; showTeam: boolea
           <Text style={[styles.team, { color: muted }]} numberOfLines={1}>{row.team}</Text>
         ) : null}
       </View>
-      {isFootball ? (
+      {columns ? (
         <>
-          {FOOTBALL_COLUMNS.map((c) => (
+          {columns.map((c) => (
             <Text key={c.label} numberOfLines={1} style={[styles.stat, { color: muted, width: c.width }]}>{c.value(row)}</Text>
           ))}
           <Text style={styles.footballPoints}>{formatPoints(row.points)}</Text>

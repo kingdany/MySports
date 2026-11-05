@@ -92,14 +92,9 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [x] App Expo: Prossimi, Risultati, Classifiche, dettaglio evento
-- [x] F1: calendario, risultati, classifiche, storico dal 1950
-- [x] F1: highlights YouTube (Sky Sport F1 in italiano, Formula 1 in inglese), stagione corrente
 - [ ] F1: highlights delle stagioni passate
-- [x] Calcio: Serie A, calendario, risultati, classifica (football-data.org)
-- [x] Calcio: highlights YouTube della Serie A (Sky Sport e DAZN), stagione corrente
+- [ ] Calcio: highlights delle stagioni passate
 - [ ] Calcio: Champions League e altre competizioni
-- [ ] Calcio: classifica marcatori (`/competitions/SA/scorers`, disponibile nel piano gratuito)
 - [ ] Calcio: zone della classifica (Champions, Europa, Conference, retrocessione): regole nostre per posizione, l'API non le fornisce
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
 - [ ] MotoGP (video: canale Sky Sport MotoGP)
