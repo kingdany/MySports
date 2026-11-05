@@ -12,6 +12,14 @@ public sealed class FootballDataSource(Competition competition, string competiti
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
 
+    // Squadre il cui nome breve sulla fonte non è quello d'uso comune (id football-data.org -> nome).
+    private static readonly Dictionary<int, string> ShortNames = new()
+    {
+        [7397] = "Como",    // "Como 1907"
+        [454] = "Venezia",  // "Venezia FC"
+        [487] = "Pisa",     // "AC Pisa"
+    };
+
     // Client riservato a questa fonte: la chiave non deve arrivare alle altre API.
     private readonly HttpClient http = CreateClient(apiKey);
 
@@ -71,8 +79,11 @@ public sealed class FootballDataSource(Competition competition, string competiti
     private static Team ToTeam(JsonNode team) => new(
         team["id"]!.GetValue<int>().ToString(CultureInfo.InvariantCulture),
         Str(team["name"])!,
-        Str(team["shortName"]),
+        ShortName(team),
         Str(team["crest"]));
+
+    private static string? ShortName(JsonNode team) =>
+        ShortNames.GetValueOrDefault(team["id"]!.GetValue<int>()) ?? Str(team["shortName"]);
 
     private static StandingRow ToStandingRow(JsonNode row)
     {
@@ -81,7 +92,7 @@ public sealed class FootballDataSource(Competition competition, string competiti
         {
             Pos = pos,
             PosText = pos.ToString(CultureInfo.InvariantCulture),
-            Name = Str(row["team"]!["shortName"]) ?? Str(row["team"]!["name"])!,
+            Name = ShortName(row["team"]!) ?? Str(row["team"]!["name"])!,
             Code = Str(row["team"]!["tla"]),
             Points = row["points"]!.GetValue<int>(),
             Played = row["playedGames"]!.GetValue<int>(),

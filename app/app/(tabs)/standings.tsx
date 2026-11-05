@@ -12,12 +12,12 @@ const formatPoints = (points: number) => points.toLocaleString('it-IT');
 const signed = (value: number | undefined) => (value != null && value > 0 ? `+${value}` : value ?? '');
 
 // Colonne del calcio: partite giocate, vittorie, pareggi, sconfitte, differenza reti.
-const FOOTBALL_COLUMNS: { label: string; value: (r: StandingRow) => number | string | undefined }[] = [
-  { label: 'G', value: (r) => r.played },
-  { label: 'V', value: (r) => r.wins },
-  { label: 'N', value: (r) => r.draws },
-  { label: 'P', value: (r) => r.losses },
-  { label: 'DR', value: (r) => signed(r.goalDifference) },
+const FOOTBALL_COLUMNS: { label: string; width: number; value: (r: StandingRow) => number | string | undefined }[] = [
+  { label: 'G', width: 20, value: (r) => r.played },
+  { label: 'V', width: 20, value: (r) => r.wins },
+  { label: 'N', width: 20, value: (r) => r.draws },
+  { label: 'P', width: 20, value: (r) => r.losses },
+  { label: 'DR', width: 34, value: (r) => signed(r.goalDifference) }, // più larga: ha anche il segno, es. "+16"
 ];
 
 export default function StandingsScreen() {
@@ -71,7 +71,7 @@ export default function StandingsScreen() {
                 {isFootball ? (
                   <>
                     {FOOTBALL_COLUMNS.map((c) => (
-                      <Text key={c.label} style={[styles.headerText, styles.stat, { color: muted }]}>{c.label}</Text>
+                      <Text key={c.label} numberOfLines={1} style={[styles.headerText, styles.stat, { color: muted, width: c.width }]}>{c.label}</Text>
                     ))}
                     <Text style={[styles.headerText, styles.footballPoints, { color: muted }]}>Pt</Text>
                   </>
@@ -111,7 +111,7 @@ function Row({ row, showTeam, isFootball }: { row: StandingRow; showTeam: boolea
       {isFootball ? (
         <>
           {FOOTBALL_COLUMNS.map((c) => (
-            <Text key={c.label} style={[styles.stat, { color: muted }]}>{c.value(row)}</Text>
+            <Text key={c.label} numberOfLines={1} style={[styles.stat, { color: muted, width: c.width }]}>{c.value(row)}</Text>
           ))}
           <Text style={styles.footballPoints}>{formatPoints(row.points)}</Text>
         </>
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   wins: { width: 40, fontSize: 14, textAlign: 'right', fontVariant: ['tabular-nums'] },
   points: { width: 56, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   compact: { gap: 6 }, // la classifica del calcio ha più colonne
-  stat: { width: 24, fontSize: 13, textAlign: 'right', fontVariant: ['tabular-nums'] },
+  stat: { fontSize: 13, textAlign: 'right', fontVariant: ['tabular-nums'] },
   footballPoints: { width: 30, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   message: { textAlign: 'center', padding: 24, fontSize: 15 },
 });
