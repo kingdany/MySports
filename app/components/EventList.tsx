@@ -12,10 +12,16 @@ type Props = {
   refreshing: boolean;
   onRefresh: () => void;
   emptyMessage: string;
+  linked?: boolean; // il tocco su una riga apre il dettaglio dell'evento
 };
 
+// Schermate tenute montate attorno a quella visibile (predefinito 21). Con le intestazioni fisse, quando
+// la lista smonta le prime righe lo scorrimento salta su e giù in loop: dopo circa 10 schermate, quindi
+// con la Serie A. Così le righe di una stagione restano montate e quel punto non si raggiunge.
+const WINDOW_SIZE = 121;
+
 // Lista di eventi divisa per giorno, con aggiornamento trascinando verso il basso.
-export function EventList({ events, loading, error, refreshing, onRefresh, emptyMessage }: Props) {
+export function EventList({ events, loading, error, refreshing, onRefresh, emptyMessage, linked = true }: Props) {
   const muted = useThemeColor({}, 'muted');
   const card = useThemeColor({}, 'card');
 
@@ -31,7 +37,8 @@ export function EventList({ events, loading, error, refreshing, onRefresh, empty
     <SectionList
       sections={groupByDay(events ?? [])}
       keyExtractor={(e) => e.id}
-      renderItem={({ item }) => <EventRow event={item} />}
+      renderItem={({ item }) => <EventRow event={item} linked={linked} />}
+      windowSize={WINDOW_SIZE}
       renderSectionHeader={({ section }) => (
         <Text style={[styles.header, { backgroundColor: card }]}>{section.title}</Text>
       )}

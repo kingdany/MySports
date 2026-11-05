@@ -6,36 +6,39 @@ import { CompetitionColors, LiveColor } from '@/constants/Colors';
 import { competitionLabel, formatTime, roundLabel, sessionLabel } from '@/lib/format';
 import type { SportEvent } from '@/lib/types';
 
-export function EventRow({ event }: { event: SportEvent }) {
+// Con linked = false la riga è solo informativa: il tocco non apre il dettaglio.
+export function EventRow({ event, linked = true }: { event: SportEvent; linked?: boolean }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
 
+  const row = (pressed: boolean) => (
+    <View style={[styles.row, { borderBottomColor: border, opacity: pressed ? 0.6 : 1 }]}>
+      <View style={styles.left}>
+        {event.status === 'live' ? (
+          <Text style={[styles.live, { backgroundColor: LiveColor }]}>LIVE</Text>
+        ) : (
+          <Text style={styles.time}>{event.dateOnly ? '–' : formatTime(event.startsAt)}</Text>
+        )}
+        <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+          {competitionLabel(event.competition)}
+        </Text>
+      </View>
+      <View style={styles.body}>
+        <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
+        <Text style={[styles.subtitle, { color: muted }]} numberOfLines={1}>
+          {event.session === 'match' ? roundLabel(event) : sessionLabel(event.session)}{event.city ? ` · ${event.city}` : ''}
+        </Text>
+        <Outcome event={event} />
+      </View>
+      {event.videos.length > 0 && <Text style={[styles.videoMark, { color: muted }]}>▶</Text>}
+    </View>
+  );
+
+  if (!linked) return row(false);
+
   return (
     <Link href={{ pathname: '/event/[id]', params: { id: event.id } }} asChild>
-      <Pressable>
-        {({ pressed }) => (
-          <View style={[styles.row, { borderBottomColor: border, opacity: pressed ? 0.6 : 1 }]}>
-            <View style={styles.left}>
-              {event.status === 'live' ? (
-                <Text style={[styles.live, { backgroundColor: LiveColor }]}>LIVE</Text>
-              ) : (
-                <Text style={styles.time}>{event.dateOnly ? '–' : formatTime(event.startsAt)}</Text>
-              )}
-              <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-                {competitionLabel(event.competition)}
-              </Text>
-            </View>
-            <View style={styles.body}>
-              <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
-              <Text style={[styles.subtitle, { color: muted }]} numberOfLines={1}>
-                {event.session === 'match' ? roundLabel(event) : sessionLabel(event.session)}{event.city ? ` · ${event.city}` : ''}
-              </Text>
-              <Outcome event={event} />
-            </View>
-            {event.videos.length > 0 && <Text style={[styles.videoMark, { color: muted }]}>▶</Text>}
-          </View>
-        )}
-      </Pressable>
+      <Pressable>{({ pressed }) => row(pressed)}</Pressable>
     </Link>
   );
 }

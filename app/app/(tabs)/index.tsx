@@ -18,6 +18,7 @@ export default function UpcomingScreen() {
       refreshing={refreshing}
       onRefresh={refresh}
       emptyMessage="Nessun evento in programma per questa stagione"
+      linked={false}
     />
   );
 }

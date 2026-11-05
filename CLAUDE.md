@@ -66,6 +66,8 @@ Old F1 seasons have no session times and football matches may not have a kickoff
 - `lib/data.tsx` (`EventsProvider`/`useEvents`) is the single data layer. It loads `meta.json` and every competition's current season at startup; past seasons download on demand and stay in memory. `getEvent` only searches seasons already loaded, so a past-season event route shows "Evento non trovato" until that season has been loaded.
 - The app does not read `upcoming.json` or `results.json`, even though the importer publishes them. Screens filter the current-season events themselves, so the Prossimi tab shows the rest of the season rather than 14 days.
 - `SeasonPicker` returns an explicit competition and season; `null` ("Stagione corrente") means every competition together. Risultati offers it, Classifiche doesn't (`showAll={false}`) because standings can't be mixed, and opens on the first competition in `meta.json`.
+- Prossimi is a plain list: its rows don't open the event detail (`linked={false}`). Risultati's do.
+- `EventList` sets a very large `windowSize` so rows stay mounted, as a fix for scrolling that jumps up and down once the list starts unmounting its first rows (about 10 screens down, with sticky headers).
 - Practice sessions are in the data but hidden in the app. Prossimi filters them with `isPractice` (`lib/format.ts`); Risultati only lists events that have a result, which practice sessions never do.
 - `DATA_URL` in `lib/data.tsx` always points at the published GitHub Pages data, so the app does not see local importer output in `out/`.
 - `YouTubePlayer` also derives its WebView origin from `DATA_URL`, because YouTube rejects embeds without a web origin. Changing `DATA_URL` therefore changes the player's origin too.
