@@ -2,10 +2,12 @@ import { useDeferredValue, useMemo } from 'react';
 
 import { CompetitionBar } from '@/components/CompetitionBar';
 import { EventList } from '@/components/EventList';
+import { TeamPicker } from '@/components/TeamPicker';
 import { View } from '@/components/Themed';
 import { useEvents } from '@/lib/data';
 import { isPractice } from '@/lib/format';
 import { usePreferences } from '@/lib/preferences';
+import { useTeamFilter } from '@/lib/useTeamFilter';
 
 export default function UpcomingScreen() {
   const { competitions, events, loading, error, refreshing, refresh } = useEvents();
@@ -29,12 +31,16 @@ export default function UpcomingScreen() {
     [events, shown],
   );
 
+  // Il filtro per squadra vale dentro una competizione: con "Tutti" non compare e non si applica.
+  const team = useTeamFilter(shown === null ? undefined : upcoming);
+
   return (
     <View style={{ flex: 1 }}>
       <CompetitionBar competitions={competitions} selected={selected} onSelect={setUpcomingCompetition} showAll />
+      <TeamPicker teams={team.teams} teamId={team.teamId} onSelect={team.selectTeam} />
       <EventList
-        events={upcoming}
-        loading={loading || shown !== selected}
+        events={shown === null ? upcoming : team.events}
+        loading={loading || shown !== selected || team.switching}
         error={error}
         refreshing={refreshing}
         onRefresh={refresh}
