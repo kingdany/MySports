@@ -69,7 +69,7 @@ function Chip({ label, active, onPress }: { label: string; active: boolean; onPr
 const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
-    paddingHorizontal: 16, paddingVertical: 10, borderBottomWidth: StyleSheet.hairlineWidth,
+    paddingHorizontal: 16, paddingVertical: 10, borderBottomWidth: 1,
   },
   barLabel: { fontSize: 14 },
   barValue: { fontSize: 15, fontWeight: '600' },

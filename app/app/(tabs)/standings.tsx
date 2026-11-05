@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
   headerText: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase' },
   row: {
     flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 10,
-    borderBottomWidth: StyleSheet.hairlineWidth, gap: 12,
+    borderBottomWidth: 1, gap: 12,
   },
   pos: { width: 28, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   name: { flex: 1, backgroundColor: 'transparent' },
@@ -172,7 +172,8 @@ const styles = StyleSheet.create({
   compact: { gap: 6 }, // la classifica del calcio ha più colonne; i marcatori no, e tengono lo spazio normale
   stat: { fontSize: 13, textAlign: 'right', fontVariant: ['tabular-nums'] },
   footballPoints: { width: 30, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
-  zone: { position: 'absolute', left: 0, top: 0, bottom: 0, width: 4 }, // striscia sul bordo: non sposta il contenuto
+  // Striscia sul bordo: non sposta il contenuto. Scende sopra la linea della riga, così è continua tra una riga e l'altra.
+  zone: { position: 'absolute', left: 0, top: 0, bottom: -1, width: 4 },
   legend: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, paddingHorizontal: 16, paddingVertical: 14 },
   legendItem: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
   legendMark: { width: 4, height: 14 },

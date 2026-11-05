@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   sectionTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', paddingHorizontal: 16, paddingTop: 8, paddingBottom: 4 },
   resultRow: {
     flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 10,
-    borderBottomWidth: StyleSheet.hairlineWidth, gap: 12,
+    borderBottomWidth: 1, gap: 12,
   },
   pos: { width: 24, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   driver: { flex: 1, backgroundColor: 'transparent' },

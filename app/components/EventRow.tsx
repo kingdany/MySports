@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: 16,
     paddingVertical: 12,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
     gap: 12,
   },
   left: { width: 64, alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
