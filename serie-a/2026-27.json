@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-05T16:31:10.6446663+00:00",
+  "generatedAt": "2026-11-05T16:46:49.8163932+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -10870,7 +10870,8 @@
           "played": 10,
           "draws": 1,
           "losses": 0,
-          "goalDifference": 16
+          "goalDifference": 16,
+          "zone": "champions"
         },
         {
           "pos": 2,
@@ -10882,7 +10883,8 @@
           "played": 10,
           "draws": 1,
           "losses": 1,
-          "goalDifference": 13
+          "goalDifference": 13,
+          "zone": "champions"
         },
         {
           "pos": 3,
@@ -10894,7 +10896,8 @@
           "played": 10,
           "draws": 3,
           "losses": 0,
-          "goalDifference": 18
+          "goalDifference": 18,
+          "zone": "champions"
         },
         {
           "pos": 4,
@@ -10906,7 +10909,8 @@
           "played": 10,
           "draws": 2,
           "losses": 1,
-          "goalDifference": 10
+          "goalDifference": 10,
+          "zone": "champions"
         },
         {
           "pos": 5,
@@ -10918,7 +10922,8 @@
           "played": 10,
           "draws": 3,
           "losses": 1,
-          "goalDifference": 9
+          "goalDifference": 9,
+          "zone": "europa"
         },
         {
           "pos": 6,
@@ -10930,7 +10935,8 @@
           "played": 10,
           "draws": 2,
           "losses": 2,
-          "goalDifference": 10
+          "goalDifference": 10,
+          "zone": "conference"
         },
         {
           "pos": 7,
@@ -11074,7 +11080,8 @@
           "played": 10,
           "draws": 1,
           "losses": 7,
-          "goalDifference": -7
+          "goalDifference": -7,
+          "zone": "relegation"
         },
         {
           "pos": 19,
@@ -11086,7 +11093,8 @@
           "played": 10,
           "draws": 2,
           "losses": 7,
-          "goalDifference": -12
+          "goalDifference": -12,
+          "zone": "relegation"
         },
         {
           "pos": 20,
@@ -11098,7 +11106,8 @@
           "played": 10,
           "draws": 0,
           "losses": 9,
-          "goalDifference": -14
+          "goalDifference": -14,
+          "zone": "relegation"
         }
       ]
     },
