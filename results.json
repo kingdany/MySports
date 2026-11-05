@@ -1,6 +1,56 @@
 {
-  "generatedAt": "2026-11-05T10:48:38.6226055+00:00",
+  "generatedAt": "2026-11-05T14:16:51.8266775+00:00",
   "events": [
+    {
+      "id": "serie-a-2026-27-558545",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Atalanta - Parma",
+      "session": "match",
+      "startsAt": "2026-11-02T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558541",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Sassuolo - Fiorentina",
+      "session": "match",
+      "startsAt": "2026-11-02T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "471",
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://crests.football-data.org/471.png"
+      },
+      "awayTeam": {
+        "id": "99",
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "logoUrl": "https://crests.football-data.org/99.png"
+      },
+      "homeScore": 2,
+      "awayScore": 4,
+      "videos": []
+    },
     {
       "id": "f1-2026-19-race",
       "competition": "f1",
@@ -231,6 +281,131 @@
           "duration": "8:08"
         }
       ]
+    },
+    {
+      "id": "serie-a-2026-27-558547",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Juventus - Napoli",
+      "session": "match",
+      "startsAt": "2026-11-01T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558540",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Lecce - Genoa",
+      "session": "match",
+      "startsAt": "2026-11-01T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "awayTeam": {
+        "id": "107",
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "logoUrl": "https://crests.football-data.org/107.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558544",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Frosinone - Torino",
+      "session": "match",
+      "startsAt": "2026-11-01T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
+      },
+      "awayTeam": {
+        "id": "586",
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "logoUrl": "https://crests.football-data.org/586.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558546",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Lazio - Cagliari",
+      "session": "match",
+      "startsAt": "2026-11-01T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "awayTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558543",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Como 1907 - Venezia FC",
+      "session": "match",
+      "startsAt": "2026-11-01T11:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como 1907",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "awayTeam": {
+        "id": "454",
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
     },
     {
       "id": "f1-2026-19-qualifying",
@@ -467,6 +642,31 @@
       ]
     },
     {
+      "id": "serie-a-2026-27-558548",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Milan - Inter",
+      "session": "match",
+      "startsAt": "2026-10-31T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "98",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "logoUrl": "https://crests.football-data.org/98.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
       "id": "f1-2026-19-fp3",
       "competition": "f1",
       "season": "2026",
@@ -478,6 +678,56 @@
       "city": "Mexico City",
       "country": "Mexico",
       "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558542",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Udinese - Roma",
+      "session": "match",
+      "startsAt": "2026-10-31T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "115",
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "logoUrl": "https://crests.football-data.org/115.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "homeScore": 2,
+      "awayScore": 5,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558539",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 10,
+      "title": "Bologna - Monza",
+      "session": "match",
+      "startsAt": "2026-10-31T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "awayTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
       "videos": []
     },
     {
@@ -506,6 +756,256 @@
       "city": "Mexico City",
       "country": "Mexico",
       "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558551",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Fiorentina - Atalanta",
+      "session": "match",
+      "startsAt": "2026-10-29T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "99",
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "logoUrl": "https://crests.football-data.org/99.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558558",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Frosinone - Lecce",
+      "session": "match",
+      "startsAt": "2026-10-29T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
+      },
+      "awayTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558552",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Genoa - Juventus",
+      "session": "match",
+      "startsAt": "2026-10-28T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "107",
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "logoUrl": "https://crests.football-data.org/107.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558554",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Monza - Napoli",
+      "session": "match",
+      "startsAt": "2026-10-28T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 1,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558549",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Milan - Bologna",
+      "session": "match",
+      "startsAt": "2026-10-28T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "98",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "logoUrl": "https://crests.football-data.org/98.png"
+      },
+      "awayTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "homeScore": 2,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558550",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Venezia FC - Inter",
+      "session": "match",
+      "startsAt": "2026-10-28T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "454",
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558553",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Parma - Udinese",
+      "session": "match",
+      "startsAt": "2026-10-28T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "awayTeam": {
+        "id": "115",
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "logoUrl": "https://crests.football-data.org/115.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558555",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Roma - Cagliari",
+      "session": "match",
+      "startsAt": "2026-10-27T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "awayTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "homeScore": 4,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558557",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Torino - Como 1907",
+      "session": "match",
+      "startsAt": "2026-10-27T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "586",
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "logoUrl": "https://crests.football-data.org/586.png"
+      },
+      "awayTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como 1907",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558556",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 9,
+      "title": "Sassuolo - Lazio",
+      "session": "match",
+      "startsAt": "2026-10-27T17:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "471",
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://crests.football-data.org/471.png"
+      },
+      "awayTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "homeScore": 2,
+      "awayScore": 6,
       "videos": []
     },
     {
@@ -738,6 +1238,131 @@
           "duration": "8:03"
         }
       ]
+    },
+    {
+      "id": "serie-a-2026-27-558559",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Udinese - Milan",
+      "session": "match",
+      "startsAt": "2026-10-25T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "115",
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "logoUrl": "https://crests.football-data.org/115.png"
+      },
+      "awayTeam": {
+        "id": "98",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "logoUrl": "https://crests.football-data.org/98.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558566",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Lecce - Juventus",
+      "session": "match",
+      "startsAt": "2026-10-25T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558562",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Atalanta - Frosinone",
+      "session": "match",
+      "startsAt": "2026-10-25T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
+      },
+      "homeScore": 4,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558568",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Genoa - Venezia FC",
+      "session": "match",
+      "startsAt": "2026-10-25T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "107",
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "logoUrl": "https://crests.football-data.org/107.png"
+      },
+      "awayTeam": {
+        "id": "454",
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558563",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Inter - Fiorentina",
+      "session": "match",
+      "startsAt": "2026-10-25T11:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "99",
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "logoUrl": "https://crests.football-data.org/99.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
     },
     {
       "id": "f1-2026-18-qualifying",
@@ -974,6 +1599,31 @@
       ]
     },
     {
+      "id": "serie-a-2026-27-558565",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Lazio - Parma",
+      "session": "match",
+      "startsAt": "2026-10-24T18:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "awayTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
       "id": "f1-2026-18-fp3",
       "competition": "f1",
       "season": "2026",
@@ -988,6 +1638,81 @@
       "videos": []
     },
     {
+      "id": "serie-a-2026-27-558564",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Napoli - Roma",
+      "session": "match",
+      "startsAt": "2026-10-24T16:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "homeScore": 3,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558560",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Cagliari - Bologna",
+      "session": "match",
+      "startsAt": "2026-10-24T13:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "awayTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558561",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Como 1907 - Sassuolo",
+      "session": "match",
+      "startsAt": "2026-10-24T13:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como 1907",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "awayTeam": {
+        "id": "471",
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://crests.football-data.org/471.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
       "id": "f1-2026-18-fp2",
       "competition": "f1",
       "season": "2026",
@@ -999,6 +1724,31 @@
       "city": "Austin",
       "country": "USA",
       "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558567",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 8,
+      "title": "Torino - Monza",
+      "session": "match",
+      "startsAt": "2026-10-23T18:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "586",
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "logoUrl": "https://crests.football-data.org/586.png"
+      },
+      "awayTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
       "videos": []
     },
     {
