@@ -15,12 +15,12 @@ GitHub Actions (cron) → MySports.Importer (C#) → JSON → branch gh-pages �
 
 ```
 app/                 app mobile Expo (React Native + TypeScript)
-  app/               schermate (Expo Router): (tabs)/index = Prossimi, (tabs)/results = Risultati, event/[id] = dettaglio
-  components/        liste e righe evento
+  app/               schermate (Expo Router): (tabs)/index = Prossimi, (tabs)/results = Risultati, (tabs)/standings = Classifiche, event/[id] = dettaglio
+  components/        liste e righe evento, scelta della stagione, video
   lib/               tipi, formattazione, caricamento dei JSON
 src/MySports.Importer/
-  Models/        formato comune degli eventi (SportEvent, Competition)
-  Sources/       una classe per fonte dati (JolpicaF1Source, ...)
+  Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
+  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, YouTubeHighlights, ...)
   Output/        scrittura dei file JSON
 .github/workflows/update-data.yml   esecuzione programmata e pubblicazione
 ```
@@ -34,7 +34,9 @@ src/MySports.Importer/
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
 | `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`; anche le stagioni passate (F1 dal 1950) |
 
-Ogni evento ha un campo `videos` (per ora vuoto) che verrà riempito con gli highlights YouTube.
+L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
+
+Ogni evento ha un campo `videos` con gli highlights YouTube (solo F1, stagione corrente).
 I video già trovati vengono conservati tra un'esecuzione e l'altra.
 
 ## Eseguire in locale
@@ -44,6 +46,8 @@ Richiede .NET 10 SDK.
 ```
 dotnet run --project src/MySports.Importer -- --out out
 ```
+
+Per gli highlights serve `YOUTUBE_API_KEY` nell'ambiente oppure in un file `.env` nella radice del repository (escluso da Git); senza chiave questo passaggio viene saltato.
 
 ## Importare le stagioni passate
 
@@ -79,7 +83,9 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Serie A (football-data.org, serve la chiave API)
-- [ ] Highlights YouTube dai canali ufficiali (feed RSS)
-- [x] App Expo: liste "Prossimi" e "Risultati", dettaglio evento
-- [ ] MotoGP
+- [x] App Expo: Prossimi, Risultati, Classifiche, dettaglio evento
+- [x] F1: calendario, risultati, classifiche, storico dal 1950
+- [x] F1: highlights YouTube (Sky Sport F1 in italiano, Formula 1 in inglese), stagione corrente
+- [ ] F1: highlights delle stagioni passate
+- [ ] Calcio: Serie A, Champions League e altre competizioni (football-data.org, serve la chiave API)
+- [ ] MotoGP (video: canale Sky Sport MotoGP)
