@@ -10,12 +10,12 @@ namespace MySports.Importer.Sources;
 public sealed class FootballDataSource(
     Competition competition, string competitionCode, string? apiKey,
     IReadOnlyList<FootballDataSource.ZoneRule> zones,
-    IReadOnlyDictionary<string, IReadOnlyList<FootballDataSource.ZoneRule>> pastZones) : IEventSource
+    IReadOnlyDictionary<string, IReadOnlyList<FootballDataSource.ZoneRule>> zoneExceptions) : IEventSource
 {
     // Posizioni di classifica (estremi inclusi) che danno accesso a una zona, es. "champions".
     public sealed record ZoneRule(int From, int To, string Zone);
 
-    // L'API non indica le zone, quindi si ricavano dalla posizione. Posti extra (ranking UEFA, Coppa Italia): da correggere qui.
+    // L'API non indica le zone, quindi si ricavano dalla posizione. Valgono per ogni stagione senza eccezioni.
     public static readonly IReadOnlyList<ZoneRule> SerieAZones =
     [
         new(1, 4, "champions"),
@@ -24,8 +24,8 @@ public sealed class FootballDataSource(
         new(18, 20, "relegation"),
     ];
 
-    // Stagioni concluse: i posti europei effettivi, che dipendono anche da Coppa Italia e ranking UEFA.
-    public static readonly IReadOnlyDictionary<string, IReadOnlyList<ZoneRule>> SerieAPastZones =
+    // Stagioni in cui i posti europei effettivi sono stati diversi, per Coppa Italia e ranking UEFA.
+    public static readonly IReadOnlyDictionary<string, IReadOnlyList<ZoneRule>> SerieAZoneExceptions =
         new Dictionary<string, IReadOnlyList<ZoneRule>>
         {
             ["2025-26"] = [new(1, 4, "champions"), new(5, 6, "europa"), new(7, 7, "conference"), new(18, 20, "relegation")],
@@ -68,9 +68,8 @@ public sealed class FootballDataSource(
         var total = data["standings"]?.AsArray().FirstOrDefault(t => Str(t!["type"]) == "TOTAL");
         var rows = total?["table"]?.AsArray().Select(r => ToStandingRow(r!)).ToList() ?? [];
 
-        var seasonZones = season == CurrentSeason(DateTimeOffset.UtcNow) ? zones : pastZones.GetValueOrDefault(season);
-        if (seasonZones is not null)
-            rows = rows.Select(r => r with { Zone = seasonZones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
+        var seasonZones = zoneExceptions.GetValueOrDefault(season) ?? zones;
+        rows = rows.Select(r => r with { Zone = seasonZones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
         var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersFetched}", ct);
