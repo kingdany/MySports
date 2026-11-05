@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-05T15:46:18.4572152+00:00",
+  "generatedAt": "2026-11-05T16:04:55.249733+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -11099,6 +11099,99 @@
           "draws": 0,
           "losses": 9,
           "goalDifference": -14
+        }
+      ]
+    },
+    {
+      "id": "scorers",
+      "title": "Marcatori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Gustavo Varela",
+          "team": "Monza",
+          "points": 9,
+          "played": 9,
+          "assists": 1
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Donyell Malen",
+          "team": "Roma",
+          "points": 8,
+          "played": 9,
+          "assists": 1
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Antonio Raimondo",
+          "team": "Frosinone",
+          "points": 8,
+          "played": 10
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Nikola Krstović",
+          "team": "Atalanta",
+          "points": 6,
+          "played": 10,
+          "assists": 2
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Anastasios Douvikas",
+          "team": "Como",
+          "points": 5,
+          "played": 10
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Adrien Rabiot",
+          "team": "Milan",
+          "points": 5,
+          "played": 8,
+          "assists": 3
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Marcus Thuram-Ulien",
+          "team": "Inter",
+          "points": 5,
+          "played": 10,
+          "assists": 2
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Daniel Maldini",
+          "team": "Cagliari",
+          "points": 5,
+          "played": 10
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Giacomo Calò",
+          "team": "Frosinone",
+          "points": 5,
+          "played": 10,
+          "assists": 1
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Kevin De Bruyne",
+          "team": "Napoli",
+          "points": 4,
+          "played": 10,
+          "assists": 1
         }
       ]
     }
