@@ -7,8 +7,21 @@ namespace MySports.Importer.Sources;
 
 // Calcio da football-data.org. Serve una chiave; il piano gratuito consente 10 richieste al minuto
 // e le stagioni dalla 2023-24 in poi. Le stagioni si chiamano "2026-27", l'API vuole l'anno d'inizio.
-public sealed class FootballDataSource(Competition competition, string competitionCode, string? apiKey) : IEventSource
+public sealed class FootballDataSource(
+    Competition competition, string competitionCode, string? apiKey, IReadOnlyList<FootballDataSource.ZoneRule> zones) : IEventSource
 {
+    // Posizioni di classifica (estremi inclusi) che danno accesso a una zona, es. "champions".
+    public sealed record ZoneRule(int From, int To, string Zone);
+
+    // L'API non indica le zone, quindi si ricavano dalla posizione. Posti extra (ranking UEFA, Coppa Italia): da correggere qui.
+    public static readonly IReadOnlyList<ZoneRule> SerieAZones =
+    [
+        new(1, 4, "champions"),
+        new(5, 5, "europa"),
+        new(6, 6, "conference"),
+        new(18, 20, "relegation"),
+    ];
+
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
     private const int ScorersShown = 10;
@@ -41,6 +54,10 @@ public sealed class FootballDataSource(Competition competition, string competiti
         var data = await GetJsonAsync($"{BaseUrl}/{competitionCode}/standings?season={StartYear(season)}", ct);
         var total = data["standings"]?.AsArray().FirstOrDefault(t => Str(t!["type"]) == "TOTAL");
         var rows = total?["table"]?.AsArray().Select(r => ToStandingRow(r!)).ToList() ?? [];
+
+        // Zone solo per la stagione in corso: i posti delle stagioni passate erano in parte diversi.
+        if (season == CurrentSeason(DateTimeOffset.UtcNow))
+            rows = rows.Select(r => r with { Zone = zones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
         var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersFetched}", ct);

@@ -4,6 +4,7 @@ import { ActivityIndicator, FlatList, Pressable, RefreshControl, StyleSheet } fr
 import { CompetitionBar } from '@/components/CompetitionBar';
 import { SeasonPicker } from '@/components/SeasonPicker';
 import { Text, View, useThemeColor } from '@/components/Themed';
+import { StandingZones } from '@/constants/Colors';
 import type { StandingRow } from '@/lib/types';
 import { useCompetitionSeason } from '@/lib/useSelectedSeason';
 
@@ -40,6 +41,7 @@ export default function StandingsScreen() {
   const tables = file?.standings ?? [];
   const table = tables.find((t) => t.id === tableId) ?? tables[0];
   const columns = columnsOf(table?.id);
+  const zones = StandingZones.filter((z) => table?.rows.some((r) => r.zone === z.id));
 
   return (
     <View style={{ flex: 1 }}>
@@ -100,6 +102,18 @@ export default function StandingsScreen() {
               {error ? `${error}. Trascina in basso per riprovare.` : 'Classifica non disponibile per questa stagione'}
             </Text>
           }
+          ListFooterComponent={
+            zones.length > 0 ? (
+              <View style={styles.legend}>
+                {zones.map((z) => (
+                  <View key={z.id} style={styles.legendItem}>
+                    <View style={[styles.legendMark, { backgroundColor: z.color }]} />
+                    <Text style={[styles.legendText, { color: muted }]}>{z.label}</Text>
+                  </View>
+                ))}
+              </View>
+            ) : undefined
+          }
           refreshControl={<RefreshControl refreshing={refreshing} onRefresh={refresh} />}
         />
       )}
@@ -110,8 +124,10 @@ export default function StandingsScreen() {
 function Row({ row, showTeam, columns }: { row: StandingRow; showTeam: boolean; columns: Column[] | null }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
+  const zoneColor = StandingZones.find((z) => z.id === row.zone)?.color;
   return (
     <View style={[styles.row, columns !== null && columns.length > 0 && styles.compact, { borderBottomColor: border }]}>
+      {zoneColor ? <View style={[styles.zone, { backgroundColor: zoneColor }]} /> : null}
       <Text style={[styles.pos, row.pos == null && { color: muted }]}>{row.posText}</Text>
       <View style={styles.name}>
         <Text style={styles.nameText} numberOfLines={1}>{row.name}</Text>
@@ -156,5 +172,10 @@ const styles = StyleSheet.create({
   compact: { gap: 6 }, // la classifica del calcio ha più colonne; i marcatori no, e tengono lo spazio normale
   stat: { fontSize: 13, textAlign: 'right', fontVariant: ['tabular-nums'] },
   footballPoints: { width: 30, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
+  zone: { position: 'absolute', left: 0, top: 0, bottom: 0, width: 4 }, // striscia sul bordo: non sposta il contenuto
+  legend: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, paddingHorizontal: 16, paddingVertical: 14 },
+  legendItem: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
+  legendMark: { width: 4, height: 14 },
+  legendText: { fontSize: 13 },
   message: { textAlign: 'center', padding: 24, fontSize: 15 },
 });

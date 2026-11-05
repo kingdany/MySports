@@ -60,6 +60,7 @@ export type StandingRow = {
   draws?: number;
   losses?: number;
   goalDifference?: number;
+  zone?: string; // "champions" | "europa" | "conference" | "relegation"
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };

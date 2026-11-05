@@ -26,6 +26,14 @@ export default {
 
 export const LiveColor = '#e11d48';
 
+// Zone della classifica del calcio, nell'ordine della legenda.
+export const StandingZones: { id: string; label: string; color: string }[] = [
+  { id: 'champions', label: 'Champions', color: '#2563eb' },
+  { id: 'europa', label: 'Europa League', color: '#f97316' },
+  { id: 'conference', label: 'Conference', color: '#16a34a' },
+  { id: 'relegation', label: 'Retrocessione', color: '#dc2626' },
+];
+
 // Colore distintivo di ogni competizione (badge nelle liste).
 export const CompetitionColors: Record<string, string> = {
   'serie-a': '#0a5cad',
