@@ -16,8 +16,8 @@ GitHub Actions (cron) → MySports.Importer (C#) → JSON → branch gh-pages �
 ```
 app/                 app mobile Expo (React Native + TypeScript)
   app/               schermate (Expo Router): (tabs)/index = Prossimi, (tabs)/results = Risultati, (tabs)/standings = Classifiche, event/[id] = dettaglio
-  components/        liste e righe evento, scelta della stagione, video
-  lib/               tipi, formattazione, caricamento dei JSON
+  components/        liste e righe evento, scelta di competizione e stagione, video
+  lib/               tipi, formattazione, caricamento dei JSON, scelte salvate
 src/MySports.Importer/
   Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
   Sources/       fonti dati (JolpicaF1Source, OpenF1Client, FootballDataSource, YouTubeHighlights, ...)

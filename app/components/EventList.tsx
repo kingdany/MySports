@@ -1,4 +1,5 @@
-import { ActivityIndicator, RefreshControl, SectionList, StyleSheet } from 'react-native';
+import { memo, useCallback, useMemo } from 'react';
+import { ActivityIndicator, RefreshControl, SectionList, StyleSheet, type ListRenderItem } from 'react-native';
 
 import { EventRow } from '@/components/EventRow';
 import { Text, View, useThemeColor } from '@/components/Themed';
@@ -21,9 +22,18 @@ type Props = {
 const WINDOW_SIZE = 121;
 
 // Lista di eventi divisa per giorno, con aggiornamento trascinando verso il basso.
-export function EventList({ events, loading, error, refreshing, onRefresh, emptyMessage, linked = true }: Props) {
+// Le righe restano tutte montate: memo evita di ridisegnarle quando cambia qualcosa che non le riguarda
+// (le schede restano montate anche quando non sono visibili).
+export const EventList = memo(function EventList({
+  events, loading, error, refreshing, onRefresh, emptyMessage, linked = true,
+}: Props) {
   const muted = useThemeColor({}, 'muted');
   const card = useThemeColor({}, 'card');
+  const sections = useMemo(() => groupByDay(events ?? []), [events]);
+  const renderItem = useCallback<ListRenderItem<SportEvent>>(
+    ({ item }) => <EventRow event={item} linked={linked} />,
+    [linked],
+  );
 
   if (loading) {
     return (
@@ -35,9 +45,9 @@ export function EventList({ events, loading, error, refreshing, onRefresh, empty
 
   return (
     <SectionList
-      sections={groupByDay(events ?? [])}
-      keyExtractor={(e) => e.id}
-      renderItem={({ item }) => <EventRow event={item} linked={linked} />}
+      sections={sections}
+      keyExtractor={keyExtractor}
+      renderItem={renderItem}
       windowSize={WINDOW_SIZE}
       renderSectionHeader={({ section }) => (
         <Text style={[styles.header, { backgroundColor: card }]}>{section.title}</Text>
@@ -52,7 +62,9 @@ export function EventList({ events, loading, error, refreshing, onRefresh, empty
       stickySectionHeadersEnabled
     />
   );
-}
+});
+
+const keyExtractor = (e: SportEvent) => e.id;
 
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },

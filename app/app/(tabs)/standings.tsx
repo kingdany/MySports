@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { ActivityIndicator, FlatList, Pressable, RefreshControl, StyleSheet } from 'react-native';
 
-import { SeasonPicker, type SeasonSelection } from '@/components/SeasonPicker';
+import { CompetitionBar } from '@/components/CompetitionBar';
+import { SeasonPicker } from '@/components/SeasonPicker';
 import { Text, View, useThemeColor } from '@/components/Themed';
-import { useEvents } from '@/lib/data';
 import type { StandingRow } from '@/lib/types';
-import { useSelectedSeason } from '@/lib/useSelectedSeason';
+import { useCompetitionSeason } from '@/lib/useSelectedSeason';
 
 const formatPoints = (points: number) => points.toLocaleString('it-IT');
 
@@ -21,27 +21,23 @@ const FOOTBALL_COLUMNS: { label: string; value: (r: StandingRow) => number | str
 ];
 
 export default function StandingsScreen() {
-  const { competitions, error: currentError } = useEvents();
-  const [selected, setSelected] = useState<SeasonSelection>(null);
+  const {
+    competitions, competition, season, selectCompetition, selectSeason, file, error, refreshing, refresh,
+  } = useCompetitionSeason();
   const [tableId, setTableId] = useState('drivers');
   const muted = useThemeColor({}, 'muted');
   const card = useThemeColor({}, 'card');
   const tint = useThemeColor({}, 'tint');
   const background = useThemeColor({}, 'background');
 
-  // Le classifiche non si mescolano: all'apertura si vede la stagione in corso della prima competizione.
-  const first = competitions[0];
-  const effective = selected ?? (first ? { competition: first.id, season: first.currentSeason } : null);
-  const { file, error, refreshing, refresh } = useSelectedSeason(effective);
-
   const tables = file?.standings ?? [];
   const table = tables.find((t) => t.id === tableId) ?? tables[0];
-  const shownError = error ?? (first ? null : currentError);
   const isFootball = table?.rows[0]?.played != null;
 
   return (
     <View style={{ flex: 1 }}>
-      <SeasonPicker competitions={competitions} selected={effective} onSelect={setSelected} showAll={false} />
+      <CompetitionBar competitions={competitions} selected={competition?.id ?? null} onSelect={selectCompetition} />
+      <SeasonPicker competition={competition} season={season} onSelect={selectSeason} />
 
       {tables.length > 1 && (
         <View style={styles.segments}>
@@ -59,7 +55,7 @@ export default function StandingsScreen() {
         </View>
       )}
 
-      {!file && !shownError ? (
+      {!file && !error ? (
         <View style={styles.center}>
           <ActivityIndicator />
         </View>
@@ -90,7 +86,7 @@ export default function StandingsScreen() {
           }
           ListEmptyComponent={
             <Text style={[styles.message, { color: muted }]}>
-              {shownError ? `${shownError}. Trascina in basso per riprovare.` : 'Classifica non disponibile per questa stagione'}
+              {error ? `${error}. Trascina in basso per riprovare.` : 'Classifica non disponibile per questa stagione'}
             </Text>
           }
           refreshControl={<RefreshControl refreshing={refreshing} onRefresh={refresh} />}

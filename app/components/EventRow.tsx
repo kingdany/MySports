@@ -1,4 +1,5 @@
 import { Link } from 'expo-router';
+import { memo } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
@@ -7,7 +8,7 @@ import { competitionLabel, formatTime, roundLabel, sessionLabel } from '@/lib/fo
 import type { SportEvent } from '@/lib/types';
 
 // Con linked = false la riga è solo informativa: il tocco non apre il dettaglio.
-export function EventRow({ event, linked = true }: { event: SportEvent; linked?: boolean }) {
+export const EventRow = memo(function EventRow({ event, linked = true }: { event: SportEvent; linked?: boolean }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
 
@@ -41,7 +42,7 @@ export function EventRow({ event, linked = true }: { event: SportEvent; linked?:
       <Pressable>{({ pressed }) => row(pressed)}</Pressable>
     </Link>
   );
-}
+});
 
 // Risultato sintetico: punteggio per il calcio, podio per i motori.
 function Outcome({ event }: { event: SportEvent }) {
