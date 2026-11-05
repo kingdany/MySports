@@ -75,7 +75,7 @@ export default function StandingsScreen() {
           )}
           ListHeaderComponent={
             table ? (
-              <View style={[styles.headerRow, columns && styles.compact]}>
+              <View style={[styles.headerRow, table.id === 'table' && styles.compact]}>
                 <Text style={[styles.headerText, { color: muted, flex: 1 }]}>{table.title}</Text>
                 {columns ? (
                   <>
@@ -111,7 +111,7 @@ function Row({ row, showTeam, columns }: { row: StandingRow; showTeam: boolean; 
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
   return (
-    <View style={[styles.row, columns && styles.compact, { borderBottomColor: border }]}>
+    <View style={[styles.row, columns !== null && columns.length > 0 && styles.compact, { borderBottomColor: border }]}>
       <Text style={[styles.pos, row.pos == null && { color: muted }]}>{row.posText}</Text>
       <View style={styles.name}>
         <Text style={styles.nameText} numberOfLines={1}>{row.name}</Text>
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   team: { fontSize: 13 },
   wins: { width: 40, fontSize: 14, textAlign: 'right', fontVariant: ['tabular-nums'] },
   points: { width: 56, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
-  compact: { gap: 6 }, // la classifica del calcio ha più colonne
+  compact: { gap: 6 }, // la classifica del calcio ha più colonne; i marcatori no, e tengono lo spazio normale
   stat: { fontSize: 13, textAlign: 'right', fontVariant: ['tabular-nums'] },
   footballPoints: { width: 30, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   message: { textAlign: 'center', padding: 24, fontSize: 15 },
