@@ -22,15 +22,10 @@ const FOOTBALL_COLUMNS: Column[] = [
   { label: 'DR', width: 34, value: (r) => signed(r.goalDifference) }, // più larga: ha anche il segno, es. "+16"
 ];
 
-// Colonne dei marcatori: partite giocate e assist. I gol stanno nella colonna principale.
-const SCORER_COLUMNS: Column[] = [
-  { label: 'G', width: 24, value: (r) => r.played },
-  { label: 'A', width: 24, value: (r) => r.assists },
-];
-
-// Colonne specifiche del calcio; null per le classifiche F1, che mostrano le vittorie.
+// Colonne specifiche del calcio: i marcatori hanno solo i gol, nella colonna principale.
+// null per le classifiche F1, che mostrano le vittorie.
 const columnsOf = (tableId: string | undefined) =>
-  tableId === 'table' ? FOOTBALL_COLUMNS : tableId === 'scorers' ? SCORER_COLUMNS : null;
+  tableId === 'table' ? FOOTBALL_COLUMNS : tableId === 'scorers' ? [] : null;
 
 export default function StandingsScreen() {
   const {

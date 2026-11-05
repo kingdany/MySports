@@ -11,7 +11,8 @@ public sealed class FootballDataSource(Competition competition, string competiti
 {
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
-    private const int ScorersShown = 10;
+    private const int ScorersLastPosition = 10;
+    private const int ScorersFetched = 100; // di più di quelli mostrati, per non tagliare i pari merito
 
     // Squadre il cui nome breve sulla fonte non è quello d'uso comune (id football-data.org -> nome).
     private static readonly Dictionary<int, string> ShortNames = new()
@@ -42,7 +43,7 @@ public sealed class FootballDataSource(Competition competition, string competiti
         var rows = total?["table"]?.AsArray().Select(r => ToStandingRow(r!)).ToList() ?? [];
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
-        var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersShown}", ct);
+        var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersFetched}", ct);
         var scorers = ToScorerRows(scorersData["scorers"]?.AsArray().Select(s => s!).ToList() ?? []);
 
         var tables = new List<StandingsTable>();
@@ -52,6 +53,7 @@ public sealed class FootballDataSource(Competition competition, string competiti
     }
 
     // L'API non indica la posizione: chi ha gli stessi gol ha la stessa posizione (1, 2, 2, 4).
+    // Si arriva fino alla 10ª posizione con tutti i suoi pari merito, quindi i nomi possono essere più di 10.
     // Points contiene i gol, così la colonna principale è la stessa delle altre classifiche.
     private static List<StandingRow> ToScorerRows(List<JsonNode> scorers)
     {
@@ -60,6 +62,7 @@ public sealed class FootballDataSource(Competition competition, string competiti
         {
             var goals = scorer["goals"]!.GetValue<int>();
             var pos = rows.Count > 0 && rows[^1].Points == goals ? rows[^1].Pos!.Value : rows.Count + 1;
+            if (pos > ScorersLastPosition) break;
             rows.Add(new StandingRow
             {
                 Pos = pos,
@@ -67,8 +70,6 @@ public sealed class FootballDataSource(Competition competition, string competiti
                 Name = Str(scorer["player"]!["name"])!,
                 Team = ShortName(scorer["team"]!) ?? Str(scorer["team"]!["name"]),
                 Points = goals,
-                Played = scorer["playedMatches"]?.GetValue<int>(),
-                Assists = scorer["assists"]?.GetValue<int>(),
             });
         }
         return rows;

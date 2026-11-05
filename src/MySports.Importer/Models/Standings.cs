@@ -10,11 +10,10 @@ public sealed record StandingRow
     public required string Name { get; init; }
     public string? Code { get; init; }
     public string? Team { get; init; }        // scuderia del pilota (più di una se ha cambiato durante l'anno)
-    public required double Points { get; init; }
+    public required double Points { get; init; }   // gol nella classifica marcatori
     public int? Wins { get; init; }
     public int? Played { get; init; }         // questi ultimi solo per il calcio
     public int? Draws { get; init; }
     public int? Losses { get; init; }
     public int? GoalDifference { get; init; }
-    public int? Assists { get; init; }        // solo marcatori; Points contiene i gol
 }

@@ -54,13 +54,12 @@ export type StandingRow = {
   name: string;
   code?: string;
   team?: string;
-  points: number;
+  points: number; // gol nella classifica marcatori
   wins?: number;
   played?: number; // questi ultimi solo per il calcio
   draws?: number;
   losses?: number;
   goalDifference?: number;
-  assists?: number; // solo marcatori; points contiene i gol
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };
