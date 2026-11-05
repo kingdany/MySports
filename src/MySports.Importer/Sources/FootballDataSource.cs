@@ -11,7 +11,7 @@ public sealed class FootballDataSource(Competition competition, string competiti
 {
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
-    private const int ScorersLastPosition = 10;
+    private const int ScorersShown = 10;
     private const int ScorersFetched = 100; // di più di quelli mostrati, per non tagliare i pari merito
 
     // Squadre il cui nome breve sulla fonte non è quello d'uso comune (id football-data.org -> nome).
@@ -52,17 +52,22 @@ public sealed class FootballDataSource(Competition competition, string competiti
         return tables;
     }
 
-    // L'API non indica la posizione: chi ha gli stessi gol ha la stessa posizione (1, 2, 2, 4).
-    // Si arriva fino alla 10ª posizione con tutti i suoi pari merito, quindi i nomi possono essere più di 10.
+    // L'API non indica la posizione: chi ha gli stessi gol ha lo stesso numero, senza salti (1, 2, 2, 3).
+    // L'elenco si chiude quando i nomi sono almeno 10, completando il gruppo di pari merito in corso,
+    // quindi l'ultimo numero può essere basso e i nomi più di 10.
     // Points contiene i gol, così la colonna principale è la stessa delle altre classifiche.
     private static List<StandingRow> ToScorerRows(List<JsonNode> scorers)
     {
         var rows = new List<StandingRow>();
+        var pos = 0;
         foreach (var scorer in scorers)
         {
             var goals = scorer["goals"]!.GetValue<int>();
-            var pos = rows.Count > 0 && rows[^1].Points == goals ? rows[^1].Pos!.Value : rows.Count + 1;
-            if (pos > ScorersLastPosition) break;
+            if (rows.Count == 0 || rows[^1].Points != goals)
+            {
+                if (rows.Count >= ScorersShown) break;
+                pos++;
+            }
             rows.Add(new StandingRow
             {
                 Pos = pos,
