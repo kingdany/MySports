@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2023-24",
-  "generatedAt": "2026-11-05T15:28:30.7307512+00:00",
+  "generatedAt": "2026-11-05T16:15:50.9385221+00:00",
   "events": [
     {
       "id": "serie-a-2023-24-444255",
@@ -9748,6 +9748,82 @@
           "draws": 11,
           "losses": 25,
           "goalDifference": -49
+        }
+      ]
+    },
+    {
+      "id": "scorers",
+      "title": "Marcatori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Lautaro Martínez",
+          "team": "Inter",
+          "points": 24
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Dušan Vlahović",
+          "team": "Juventus",
+          "points": 16
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Victor Osimhen",
+          "team": "Napoli",
+          "points": 15
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Olivier Giroud",
+          "team": "Milan",
+          "points": 15
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Albert Guðmundsson",
+          "team": "Genoa",
+          "points": 14
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Duván Zapata",
+          "team": "Torino",
+          "points": 13
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Marcus Thuram-Ulien",
+          "team": "Inter",
+          "points": 13
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Hakan Çalhanoğlu",
+          "team": "Inter",
+          "points": 13
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Paulo Dybala",
+          "team": "Roma",
+          "points": 13
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Romelu Lukaku",
+          "team": "Roma",
+          "points": 13
         }
       ]
     }

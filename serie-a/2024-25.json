@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2024-25",
-  "generatedAt": "2026-11-05T15:24:45.952415+00:00",
+  "generatedAt": "2026-11-05T16:15:50.9385221+00:00",
   "events": [
     {
       "id": "serie-a-2024-25-503046",
@@ -9748,6 +9748,82 @@
           "draws": 9,
           "losses": 26,
           "goalDifference": -41
+        }
+      ]
+    },
+    {
+      "id": "scorers",
+      "title": "Marcatori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Mateo Retegui",
+          "team": "Atalanta",
+          "points": 25
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Moise Kean",
+          "team": "Fiorentina",
+          "points": 19
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Riccardo Orsolini",
+          "team": "Bologna",
+          "points": 15
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Ademola Lookman",
+          "team": "Atalanta",
+          "points": 15
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Marcus Thuram-Ulien",
+          "team": "Inter",
+          "points": 14
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Romelu Lukaku",
+          "team": "Napoli",
+          "points": 14
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Lorenzo Lucca",
+          "team": "Udinese",
+          "points": 12
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Artem Dovbyk",
+          "team": "Roma",
+          "points": 12
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Lautaro Martínez",
+          "team": "Inter",
+          "points": 12
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Scott McTominay",
+          "team": "Napoli",
+          "points": 12
         }
       ]
     }
