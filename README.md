@@ -95,6 +95,5 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [ ] F1: highlights delle stagioni passate
 - [ ] Calcio: highlights delle stagioni passate
 - [ ] Calcio: Champions League e altre competizioni
-- [ ] Calcio: zone della classifica anche nelle stagioni passate
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
 - [ ] MotoGP (video: canale Sky Sport MotoGP)

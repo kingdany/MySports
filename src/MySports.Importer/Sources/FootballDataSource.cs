@@ -8,7 +8,9 @@ namespace MySports.Importer.Sources;
 // Calcio da football-data.org. Serve una chiave; il piano gratuito consente 10 richieste al minuto
 // e le stagioni dalla 2023-24 in poi. Le stagioni si chiamano "2026-27", l'API vuole l'anno d'inizio.
 public sealed class FootballDataSource(
-    Competition competition, string competitionCode, string? apiKey, IReadOnlyList<FootballDataSource.ZoneRule> zones) : IEventSource
+    Competition competition, string competitionCode, string? apiKey,
+    IReadOnlyList<FootballDataSource.ZoneRule> zones,
+    IReadOnlyDictionary<string, IReadOnlyList<FootballDataSource.ZoneRule>> pastZones) : IEventSource
 {
     // Posizioni di classifica (estremi inclusi) che danno accesso a una zona, es. "champions".
     public sealed record ZoneRule(int From, int To, string Zone);
@@ -21,6 +23,17 @@ public sealed class FootballDataSource(
         new(6, 6, "conference"),
         new(18, 20, "relegation"),
     ];
+
+    // Stagioni concluse: i posti europei effettivi, che dipendono anche da Coppa Italia e ranking UEFA.
+    public static readonly IReadOnlyDictionary<string, IReadOnlyList<ZoneRule>> SerieAPastZones =
+        new Dictionary<string, IReadOnlyList<ZoneRule>>
+        {
+            ["2025-26"] = [new(1, 4, "champions"), new(5, 6, "europa"), new(7, 7, "conference"), new(18, 20, "relegation")],
+            // Bologna nono in Europa League da vincitore della Coppa Italia.
+            ["2024-25"] = [new(1, 4, "champions"), new(5, 5, "europa"), new(6, 6, "conference"), new(9, 9, "europa"), new(18, 20, "relegation")],
+            // Quinto posto in Champions dal ranking UEFA.
+            ["2023-24"] = [new(1, 5, "champions"), new(6, 7, "europa"), new(8, 8, "conference"), new(18, 20, "relegation")],
+        };
 
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
@@ -55,9 +68,9 @@ public sealed class FootballDataSource(
         var total = data["standings"]?.AsArray().FirstOrDefault(t => Str(t!["type"]) == "TOTAL");
         var rows = total?["table"]?.AsArray().Select(r => ToStandingRow(r!)).ToList() ?? [];
 
-        // Zone solo per la stagione in corso: i posti delle stagioni passate erano in parte diversi.
-        if (season == CurrentSeason(DateTimeOffset.UtcNow))
-            rows = rows.Select(r => r with { Zone = zones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
+        var seasonZones = season == CurrentSeason(DateTimeOffset.UtcNow) ? zones : pastZones.GetValueOrDefault(season);
+        if (seasonZones is not null)
+            rows = rows.Select(r => r with { Zone = seasonZones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
         var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersFetched}", ct);

@@ -30,7 +30,7 @@ var footballKey = Environment.GetEnvironmentVariable("FOOTBALL_DATA_API_KEY") ??
 IEventSource[] sources =
 [
     new JolpicaF1Source(http),
-    new FootballDataSource(Competition.SerieA, "SA", footballKey, FootballDataSource.SerieAZones),
+    new FootballDataSource(Competition.SerieA, "SA", footballKey, FootballDataSource.SerieAZones, FootballDataSource.SerieAPastZones),
 ];
 
 // Highlights YouTube per competizione, nell'ordine in cui l'app li mostra (italiano per primo).
