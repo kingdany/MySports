@@ -1,0 +1,5360 @@
+{
+  "competition": "champions-league",
+  "season": "2025-26",
+  "generatedAt": "2026-11-06T13:14:14.8417564+00:00",
+  "events": [
+    {
+      "id": "champions-league-2025-26-551981",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Athletic - Arsenal",
+      "session": "match",
+      "startsAt": "2025-09-16T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552049",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "PSV - Union SG",
+      "session": "match",
+      "startsAt": "2025-09-16T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551941",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Juventus - Dortmund",
+      "session": "match",
+      "startsAt": "2025-09-16T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "homeScore": 4,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551991",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Benfica - Qarabağ Ağdam",
+      "session": "match",
+      "startsAt": "2025-09-16T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552012",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Tottenham - Villarreal",
+      "session": "match",
+      "startsAt": "2025-09-16T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551927",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Real Madrid - Marseille",
+      "session": "match",
+      "startsAt": "2025-09-16T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552023",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Slavia Praga - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2025-09-17T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552031",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Olympiakos - Paphos FC",
+      "session": "match",
+      "startsAt": "2025-09-17T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "awayTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551936",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Ajax - Inter",
+      "session": "match",
+      "startsAt": "2025-09-17T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551946",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Liverpool - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2025-09-17T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551959",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "PSG - Atalanta",
+      "session": "match",
+      "startsAt": "2025-09-17T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551908",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Bayern - Chelsea",
+      "session": "match",
+      "startsAt": "2025-09-17T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551975",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "København - Leverkusen",
+      "session": "match",
+      "startsAt": "2025-09-18T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551995",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Club Brugge - Monaco",
+      "session": "match",
+      "startsAt": "2025-09-18T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551958",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Newcastle - Barcellona",
+      "session": "match",
+      "startsAt": "2025-09-18T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551965",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Man City - Napoli",
+      "session": "match",
+      "startsAt": "2025-09-18T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552000",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Frankfurt - Galatasaray",
+      "session": "match",
+      "startsAt": "2025-09-18T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552027",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "title": "Sporting - FK Kairat",
+      "session": "match",
+      "startsAt": "2025-09-18T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551982",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Atalanta - Club Brugge",
+      "session": "match",
+      "startsAt": "2025-09-30T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551930",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "FK Kairat - Real Madrid",
+      "session": "match",
+      "startsAt": "2025-09-30T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 0,
+      "awayScore": 5,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551951",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Galatasaray - Liverpool",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551997",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Atletico Madrid - Frankfurt",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552015",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Marseille - Ajax",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "awayTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552020",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Bodø/Glimt - Tottenham",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551915",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Paphos FC - Bayern",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 1,
+      "awayScore": 5,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551917",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Chelsea - Benfica",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551935",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Inter - Slavia Praga",
+      "session": "match",
+      "startsAt": "2025-09-30T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552039",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Qarabağ Ağdam - København",
+      "session": "match",
+      "startsAt": "2025-10-01T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "awayTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552044",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Union SG - Newcastle",
+      "session": "match",
+      "startsAt": "2025-10-01T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 0,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551944",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Dortmund - Athletic",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551952",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Barcellona - PSG",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551968",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Monaco - Man City",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551972",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Leverkusen - PSV",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551978",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Arsenal - Olympiakos",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552002",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Villarreal - Juventus",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552026",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "title": "Napoli - Sporting",
+      "session": "match",
+      "startsAt": "2025-10-01T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551955",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Barcellona - Olympiakos",
+      "session": "match",
+      "startsAt": "2025-10-21T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "homeScore": 6,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552045",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "FK Kairat - Paphos FC",
+      "session": "match",
+      "startsAt": "2025-10-21T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "awayTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551938",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Union SG - Inter",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 0,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551945",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "København - Dortmund",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "homeScore": 2,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551960",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Leverkusen - PSG",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 2,
+      "awayScore": 7,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551964",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Villarreal - Man City",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551976",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Arsenal - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551992",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Newcastle - Benfica",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552048",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "PSV - Napoli",
+      "session": "match",
+      "startsAt": "2025-10-21T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 6,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552025",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Galatasaray - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2025-10-22T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552040",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Athletic - Qarabağ Ağdam",
+      "session": "match",
+      "startsAt": "2025-10-22T16:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "awayTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551947",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Frankfurt - Liverpool",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 1,
+      "awayScore": 5,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551984",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Atalanta - Slavia Praga",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552016",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Sporting - Marseille",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552022",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Monaco - Tottenham",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "awayTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551910",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Bayern - Club Brugge",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551919",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Chelsea - Ajax",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551925",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 3,
+      "title": "Real Madrid - Juventus",
+      "session": "match",
+      "startsAt": "2025-10-22T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551979",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Slavia Praga - Arsenal",
+      "session": "match",
+      "startsAt": "2025-11-04T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551999",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Napoli - Frankfurt",
+      "session": "match",
+      "startsAt": "2025-11-04T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552003",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Juventus - Sporting",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552009",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Atletico Madrid - Union SG",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552021",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Tottenham - København",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552024",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Bodø/Glimt - Monaco",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552029",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Olympiakos - PSV",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "awayTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551909",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "PSG - Bayern",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551924",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Liverpool - Real Madrid",
+      "session": "match",
+      "startsAt": "2025-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552014",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Paphos FC - Villarreal",
+      "session": "match",
+      "startsAt": "2025-11-05T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "awayTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551922",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Qarabağ Ağdam - Chelsea",
+      "session": "match",
+      "startsAt": "2025-11-05T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "awayTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551937",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Inter - FK Kairat",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551939",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Man City - Dortmund",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551954",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Club Brugge - Barcellona",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 3,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551971",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Benfica - Leverkusen",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551985",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Marseille - Atalanta",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552033",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Ajax - Galatasaray",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552047",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 4,
+      "title": "Newcastle - Athletic",
+      "session": "match",
+      "startsAt": "2025-11-05T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551990",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Ajax - Benfica",
+      "session": "match",
+      "startsAt": "2025-11-25T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "awayTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552043",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Galatasaray - Union SG",
+      "session": "match",
+      "startsAt": "2025-11-25T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551940",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Dortmund - Villarreal",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551963",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Man City - Leverkusen",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552004",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Bodø/Glimt - Juventus",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552017",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Marseille - Newcastle",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552035",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Slavia Praga - Athletic",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "awayTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552037",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Napoli - Qarabağ Ağdam",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551916",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Chelsea - Barcellona",
+      "session": "match",
+      "startsAt": "2025-11-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552042",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Paphos FC - Monaco",
+      "session": "match",
+      "startsAt": "2025-11-26T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "awayTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552046",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "København - FK Kairat",
+      "session": "match",
+      "startsAt": "2025-11-26T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "awayTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551948",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Liverpool - PSV",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "homeScore": 1,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551961",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "PSG - Tottenham",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "homeScore": 5,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551983",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Frankfurt - Atalanta",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551994",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Sporting - Club Brugge",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551911",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Arsenal - Bayern",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551928",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Olympiakos - Real Madrid",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 3,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551934",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 5,
+      "title": "Atletico Madrid - Inter",
+      "session": "match",
+      "startsAt": "2025-11-26T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552032",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "FK Kairat - Olympiakos",
+      "session": "match",
+      "startsAt": "2025-12-09T15:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "awayTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551912",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Bayern - Sporting",
+      "session": "match",
+      "startsAt": "2025-12-09T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551953",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Barcellona - Frankfurt",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552008",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "PSV - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552018",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Union SG - Marseille",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "awayTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552019",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Tottenham - Slavia Praga",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552041",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Monaco - Galatasaray",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551918",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Atalanta - Chelsea",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551931",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Inter - Liverpool",
+      "session": "match",
+      "startsAt": "2025-12-09T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552013",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Villarreal - København",
+      "session": "match",
+      "startsAt": "2025-12-10T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "awayTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552034",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Qarabağ Ağdam - Ajax",
+      "session": "match",
+      "startsAt": "2025-12-10T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "awayTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "homeScore": 2,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551942",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Dortmund - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551969",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Athletic - PSG",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551974",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Leverkusen - Newcastle",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551977",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Club Brugge - Arsenal",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551989",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Benfica - Napoli",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552005",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Juventus - Paphos FC",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551923",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 6,
+      "title": "Real Madrid - Man City",
+      "session": "match",
+      "startsAt": "2025-12-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551996",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "FK Kairat - Club Brugge",
+      "session": "match",
+      "startsAt": "2026-01-20T15:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 1,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551966",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Bodø/Glimt - Man City",
+      "session": "match",
+      "startsAt": "2026-01-20T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551943",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Tottenham - Dortmund",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551962",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Sporting - PSG",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551973",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Olympiakos - Leverkusen",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552011",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Villarreal - Ajax",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "awayTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552038",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "København - Napoli",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551929",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Real Madrid - Monaco",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "homeScore": 6,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551933",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Inter - Arsenal",
+      "session": "match",
+      "startsAt": "2026-01-20T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552001",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Qarabağ Ağdam - Frankfurt",
+      "session": "match",
+      "startsAt": "2026-01-21T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552010",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Galatasaray - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2026-01-21T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551949",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Marseille - Liverpool",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551956",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Slavia Praga - Barcellona",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 2,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551986",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Atalanta - Athletic",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551988",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Juventus - Benfica",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552036",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Newcastle - PSV",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551914",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Bayern - Union SG",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551921",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 7,
+      "title": "Chelsea - Paphos FC",
+      "session": "match",
+      "startsAt": "2026-01-21T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551950",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Liverpool - Qarabağ Ağdam",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "homeScore": 6,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551957",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Barcellona - København",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "1876",
+        "name": "FC København",
+        "shortName": "København",
+        "logoUrl": "https://crests.football-data.org/1876.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551967",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Man City - Galatasaray",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551970",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Leverkusen - Villarreal",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551980",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Arsenal - FK Kairat",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "10601",
+        "name": "FK Kairat",
+        "shortName": "FK Kairat",
+        "logoUrl": "https://crests.football-data.org/10601.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551987",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Union SG - Atalanta",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3929",
+        "name": "Royale Union Saint-Gilloise",
+        "shortName": "Union SG",
+        "logoUrl": "https://crests.football-data.org/3929.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551993",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Club Brugge - Marseille",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": "516",
+        "name": "Olympique de Marseille",
+        "shortName": "Marseille",
+        "logoUrl": "https://crests.football-data.org/516.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551998",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Frankfurt - Tottenham",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "19",
+        "name": "Eintracht Frankfurt",
+        "shortName": "Frankfurt",
+        "logoUrl": "https://crests.football-data.org/19.png"
+      },
+      "awayTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552006",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Monaco - Juventus",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552007",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Atletico Madrid - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552028",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Athletic - Sporting",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "77",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "logoUrl": "https://crests.football-data.org/77.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552030",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Ajax - Olympiakos",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "678",
+        "name": "AFC Ajax",
+        "shortName": "Ajax",
+        "logoUrl": "https://crests.football-data.org/678.png"
+      },
+      "awayTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552050",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "PSG - Newcastle",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552051",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Paphos FC - Slavia Praga",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "11034",
+        "name": "Paphos FC",
+        "shortName": "Paphos FC",
+        "logoUrl": "https://crests.football-data.org/11034.png"
+      },
+      "awayTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551913",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "PSV - Bayern",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551920",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Napoli - Chelsea",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551926",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Benfica - Real Madrid",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 4,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-551932",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 8,
+      "title": "Dortmund - Inter",
+      "session": "match",
+      "startsAt": "2026-01-28T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552055",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Galatasaray - Juventus",
+      "session": "match",
+      "startsAt": "2026-02-17T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 5,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552052",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Benfica - Real Madrid",
+      "session": "match",
+      "startsAt": "2026-02-17T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552053",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Monaco - PSG",
+      "session": "match",
+      "startsAt": "2026-02-17T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552057",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Dortmund - Atalanta",
+      "session": "match",
+      "startsAt": "2026-02-17T20:15:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552054",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Qarabağ Ağdam - Newcastle",
+      "session": "match",
+      "startsAt": "2026-02-18T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 1,
+      "awayScore": 6,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552056",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Club Brugge - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2026-02-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 3,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552058",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Olympiakos - Leverkusen",
+      "session": "match",
+      "startsAt": "2026-02-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552059",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "playoffs",
+      "title": "Bodø/Glimt - Inter",
+      "session": "match",
+      "startsAt": "2026-02-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552064",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Atletico Madrid - Club Brugge",
+      "session": "match",
+      "startsAt": "2026-02-24T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552062",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Newcastle - Qarabağ Ağdam",
+      "session": "match",
+      "startsAt": "2026-02-24T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "611",
+        "name": "Qarabağ Ağdam FK",
+        "shortName": "Qarabağ Ağdam",
+        "logoUrl": "https://crests.football-data.org/611.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552066",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Leverkusen - Olympiakos",
+      "session": "match",
+      "startsAt": "2026-02-24T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "654",
+        "name": "PAE Olympiakos SFP",
+        "shortName": "Olympiakos",
+        "logoUrl": "https://crests.football-data.org/654.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552067",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Inter - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2026-02-24T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552065",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Atalanta - Dortmund",
+      "session": "match",
+      "startsAt": "2026-02-25T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552060",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Real Madrid - Benfica",
+      "session": "match",
+      "startsAt": "2026-02-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "1903",
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "Benfica",
+        "logoUrl": "https://crests.football-data.org/1903.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552061",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "PSG - Monaco",
+      "session": "match",
+      "startsAt": "2026-02-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "548",
+        "name": "AS Monaco FC",
+        "shortName": "Monaco",
+        "logoUrl": "https://crests.football-data.org/548.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552063",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "playoffs",
+      "title": "Juventus - Galatasaray",
+      "session": "match",
+      "startsAt": "2026-02-25T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552069",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Galatasaray - Liverpool",
+      "session": "match",
+      "startsAt": "2026-03-10T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552071",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Atalanta - Bayern",
+      "session": "match",
+      "startsAt": "2026-03-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 1,
+      "awayScore": 6,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552072",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Newcastle - Barcellona",
+      "session": "match",
+      "startsAt": "2026-03-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552073",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Atletico Madrid - Tottenham",
+      "session": "match",
+      "startsAt": "2026-03-10T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "homeScore": 5,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552075",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Leverkusen - Arsenal",
+      "session": "match",
+      "startsAt": "2026-03-11T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552068",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "PSG - Chelsea",
+      "session": "match",
+      "startsAt": "2026-03-11T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "homeScore": 5,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552070",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Real Madrid - Man City",
+      "session": "match",
+      "startsAt": "2026-03-11T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552074",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "last_16",
+      "title": "Bodø/Glimt - Sporting",
+      "session": "match",
+      "startsAt": "2026-03-11T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552082",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Sporting - Bodø/Glimt",
+      "session": "match",
+      "startsAt": "2026-03-17T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "homeScore": 5,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552076",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Chelsea - PSG",
+      "session": "match",
+      "startsAt": "2026-03-17T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "61",
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "logoUrl": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552078",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Man City - Real Madrid",
+      "session": "match",
+      "startsAt": "2026-03-17T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552083",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Arsenal - Leverkusen",
+      "session": "match",
+      "startsAt": "2026-03-17T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Bayer 04 Leverkusen",
+        "shortName": "Leverkusen",
+        "logoUrl": "https://crests.football-data.org/3.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552080",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Barcellona - Newcastle",
+      "session": "match",
+      "startsAt": "2026-03-18T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "67",
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "logoUrl": "https://crests.football-data.org/67.png"
+      },
+      "homeScore": 7,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552077",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Liverpool - Galatasaray",
+      "session": "match",
+      "startsAt": "2026-03-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552079",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Bayern - Atalanta",
+      "session": "match",
+      "startsAt": "2026-03-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552081",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "last_16",
+      "title": "Tottenham - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2026-03-18T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "73",
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "logoUrl": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556719",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "quarter_finals",
+      "title": "Real Madrid - Bayern",
+      "session": "match",
+      "startsAt": "2026-04-07T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556721",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "quarter_finals",
+      "title": "Sporting - Arsenal",
+      "session": "match",
+      "startsAt": "2026-04-07T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556718",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "quarter_finals",
+      "title": "PSG - Liverpool",
+      "session": "match",
+      "startsAt": "2026-04-08T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556720",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "quarter_finals",
+      "title": "Barcellona - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2026-04-08T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556722",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "quarter_finals",
+      "title": "Liverpool - PSG",
+      "session": "match",
+      "startsAt": "2026-04-14T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556724",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "quarter_finals",
+      "title": "Atletico Madrid - Barcellona",
+      "session": "match",
+      "startsAt": "2026-04-14T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556723",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "quarter_finals",
+      "title": "Bayern - Real Madrid",
+      "session": "match",
+      "startsAt": "2026-04-15T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 4,
+      "awayScore": 3,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-556725",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "quarter_finals",
+      "title": "Arsenal - Sporting",
+      "session": "match",
+      "startsAt": "2026-04-15T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552092",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "semi_finals",
+      "title": "PSG - Bayern",
+      "session": "match",
+      "startsAt": "2026-04-28T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 5,
+      "awayScore": 4,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552093",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 1,
+      "stage": "semi_finals",
+      "title": "Atletico Madrid - Arsenal",
+      "session": "match",
+      "startsAt": "2026-04-29T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552095",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "semi_finals",
+      "title": "Arsenal - Atletico Madrid",
+      "session": "match",
+      "startsAt": "2026-05-05T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552094",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "round": 2,
+      "stage": "semi_finals",
+      "title": "Bayern - PSG",
+      "session": "match",
+      "startsAt": "2026-05-06T19:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "champions-league-2025-26-552096",
+      "competition": "champions-league",
+      "season": "2025-26",
+      "stage": "final",
+      "title": "PSG - Arsenal",
+      "session": "match",
+      "startsAt": "2026-05-30T16:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenalties": 4,
+      "awayPenalties": 3,
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "table",
+      "title": "Classifica",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Arsenal",
+          "code": "ARS",
+          "points": 24,
+          "wins": 8,
+          "played": 8,
+          "draws": 0,
+          "losses": 0,
+          "goalDifference": 19,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Bayern",
+          "code": "FCB",
+          "points": 21,
+          "wins": 7,
+          "played": 8,
+          "draws": 0,
+          "losses": 1,
+          "goalDifference": 14,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Liverpool",
+          "code": "LIV",
+          "points": 18,
+          "wins": 6,
+          "played": 8,
+          "draws": 0,
+          "losses": 2,
+          "goalDifference": 12,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Tottenham",
+          "code": "TOT",
+          "points": 17,
+          "wins": 5,
+          "played": 8,
+          "draws": 2,
+          "losses": 1,
+          "goalDifference": 10,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Barcellona",
+          "code": "FCB",
+          "points": 16,
+          "wins": 5,
+          "played": 8,
+          "draws": 1,
+          "losses": 2,
+          "goalDifference": 8,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Chelsea",
+          "code": "CHE",
+          "points": 16,
+          "wins": 5,
+          "played": 8,
+          "draws": 1,
+          "losses": 2,
+          "goalDifference": 7,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Sporting",
+          "code": "SPO",
+          "points": 16,
+          "wins": 5,
+          "played": 8,
+          "draws": 1,
+          "losses": 2,
+          "goalDifference": 6,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Man City",
+          "code": "MCI",
+          "points": 16,
+          "wins": 5,
+          "played": 8,
+          "draws": 1,
+          "losses": 2,
+          "goalDifference": 6,
+          "zone": "round_of_16"
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Real Madrid",
+          "code": "RMA",
+          "points": 15,
+          "wins": 5,
+          "played": 8,
+          "draws": 0,
+          "losses": 3,
+          "goalDifference": 9,
+          "zone": "playoff"
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Inter",
+          "code": "INT",
+          "points": 15,
+          "wins": 5,
+          "played": 8,
+          "draws": 0,
+          "losses": 3,
+          "goalDifference": 8,
+          "zone": "playoff"
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "PSG",
+          "code": "PSG",
+          "points": 14,
+          "wins": 4,
+          "played": 8,
+          "draws": 2,
+          "losses": 2,
+          "goalDifference": 10,
+          "zone": "playoff"
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Newcastle",
+          "code": "NEW",
+          "points": 14,
+          "wins": 4,
+          "played": 8,
+          "draws": 2,
+          "losses": 2,
+          "goalDifference": 10,
+          "zone": "playoff"
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Juventus",
+          "code": "JUV",
+          "points": 13,
+          "wins": 3,
+          "played": 8,
+          "draws": 4,
+          "losses": 1,
+          "goalDifference": 4,
+          "zone": "playoff"
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Atletico Madrid",
+          "code": "ATL",
+          "points": 13,
+          "wins": 4,
+          "played": 8,
+          "draws": 1,
+          "losses": 3,
+          "goalDifference": 2,
+          "zone": "playoff"
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Atalanta",
+          "code": "ATA",
+          "points": 13,
+          "wins": 4,
+          "played": 8,
+          "draws": 1,
+          "losses": 3,
+          "goalDifference": 0,
+          "zone": "playoff"
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Leverkusen",
+          "code": "B04",
+          "points": 12,
+          "wins": 3,
+          "played": 8,
+          "draws": 3,
+          "losses": 2,
+          "goalDifference": -1,
+          "zone": "playoff"
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Dortmund",
+          "code": "BVB",
+          "points": 11,
+          "wins": 3,
+          "played": 8,
+          "draws": 2,
+          "losses": 3,
+          "goalDifference": 2,
+          "zone": "playoff"
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Olympiakos",
+          "code": "OLY",
+          "points": 11,
+          "wins": 3,
+          "played": 8,
+          "draws": 2,
+          "losses": 3,
+          "goalDifference": -4,
+          "zone": "playoff"
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Club Brugge",
+          "code": "BRU",
+          "points": 10,
+          "wins": 3,
+          "played": 8,
+          "draws": 1,
+          "losses": 4,
+          "goalDifference": -2,
+          "zone": "playoff"
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Galatasaray",
+          "code": "GAL",
+          "points": 10,
+          "wins": 3,
+          "played": 8,
+          "draws": 1,
+          "losses": 4,
+          "goalDifference": -2,
+          "zone": "playoff"
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Monaco",
+          "code": "ASM",
+          "points": 10,
+          "wins": 2,
+          "played": 8,
+          "draws": 4,
+          "losses": 2,
+          "goalDifference": -6,
+          "zone": "playoff"
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Qarabağ Ağdam",
+          "code": "QAR",
+          "points": 10,
+          "wins": 3,
+          "played": 8,
+          "draws": 1,
+          "losses": 4,
+          "goalDifference": -8,
+          "zone": "playoff"
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Bodø/Glimt",
+          "code": "FK",
+          "points": 9,
+          "wins": 2,
+          "played": 8,
+          "draws": 3,
+          "losses": 3,
+          "goalDifference": -1,
+          "zone": "playoff"
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Benfica",
+          "code": "BEN",
+          "points": 9,
+          "wins": 3,
+          "played": 8,
+          "draws": 0,
+          "losses": 5,
+          "goalDifference": -2,
+          "zone": "playoff"
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Marseille",
+          "code": "MAR",
+          "points": 9,
+          "wins": 3,
+          "played": 8,
+          "draws": 0,
+          "losses": 5,
+          "goalDifference": -3
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Paphos FC",
+          "code": "AEP",
+          "points": 9,
+          "wins": 2,
+          "played": 8,
+          "draws": 3,
+          "losses": 3,
+          "goalDifference": -3
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Union SG",
+          "code": "USG",
+          "points": 9,
+          "wins": 3,
+          "played": 8,
+          "draws": 0,
+          "losses": 5,
+          "goalDifference": -9
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "PSV",
+          "code": "PSV",
+          "points": 8,
+          "wins": 2,
+          "played": 8,
+          "draws": 2,
+          "losses": 4,
+          "goalDifference": 0
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Athletic",
+          "code": "ATH",
+          "points": 8,
+          "wins": 2,
+          "played": 8,
+          "draws": 2,
+          "losses": 4,
+          "goalDifference": -5
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Napoli",
+          "code": "NAP",
+          "points": 8,
+          "wins": 2,
+          "played": 8,
+          "draws": 2,
+          "losses": 4,
+          "goalDifference": -6
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "København",
+          "code": "KOB",
+          "points": 8,
+          "wins": 2,
+          "played": 8,
+          "draws": 2,
+          "losses": 4,
+          "goalDifference": -9
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Ajax",
+          "code": "AJA",
+          "points": 6,
+          "wins": 2,
+          "played": 8,
+          "draws": 0,
+          "losses": 6,
+          "goalDifference": -13
+        },
+        {
+          "pos": 33,
+          "posText": "33",
+          "name": "Frankfurt",
+          "code": "SGE",
+          "points": 4,
+          "wins": 1,
+          "played": 8,
+          "draws": 1,
+          "losses": 6,
+          "goalDifference": -11
+        },
+        {
+          "pos": 34,
+          "posText": "34",
+          "name": "Slavia Praga",
+          "code": "SLP",
+          "points": 3,
+          "wins": 0,
+          "played": 8,
+          "draws": 3,
+          "losses": 5,
+          "goalDifference": -14
+        },
+        {
+          "pos": 35,
+          "posText": "35",
+          "name": "Villarreal",
+          "code": "VIL",
+          "points": 1,
+          "wins": 0,
+          "played": 8,
+          "draws": 1,
+          "losses": 7,
+          "goalDifference": -13
+        },
+        {
+          "pos": 36,
+          "posText": "36",
+          "name": "FK Kairat",
+          "code": "KAI",
+          "points": 1,
+          "wins": 0,
+          "played": 8,
+          "draws": 1,
+          "losses": 7,
+          "goalDifference": -15
+        }
+      ]
+    },
+    {
+      "id": "scorers",
+      "title": "Marcatori",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Kylian Mbappé",
+          "team": "Real Madrid",
+          "points": 15
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Harry Kane",
+          "team": "Bayern",
+          "points": 14
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Khvicha Kvaratskhelia",
+          "team": "PSG",
+          "points": 10
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Anthony Gordon",
+          "team": "Newcastle",
+          "points": 10
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Julián Álvarez",
+          "team": "Atletico Madrid",
+          "points": 10
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Erling Haaland",
+          "team": "Man City",
+          "points": 8
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Ousmane Dembélé",
+          "team": "PSG",
+          "points": 8
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Victor Osimhen",
+          "team": "Galatasaray",
+          "points": 7
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Luis Díaz",
+          "team": "Bayern",
+          "points": 7
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Martinelli",
+          "team": "Arsenal",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Jens Hauge",
+          "team": "Bodø/Glimt",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Harvey Barnes",
+          "team": "Newcastle",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Fermín López",
+          "team": "Barcellona",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Lamine Yamal",
+          "team": "Barcellona",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Vitinha",
+          "team": "PSG",
+          "points": 6
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Alexander Sørloth",
+          "team": "Atletico Madrid",
+          "points": 6
+        }
+      ]
+    }
+  ]
+}
