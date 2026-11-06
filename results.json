@@ -1,6 +1,618 @@
 {
-  "generatedAt": "2026-11-06T10:48:00.6788775+00:00",
+  "generatedAt": "2026-11-06T11:40:02.6622737+00:00",
   "events": [
+    {
+      "id": "champions-league-2026-27-575388",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Lipsia - Man City",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "721",
+        "name": "RB Leipzig",
+        "shortName": "Lipsia",
+        "logoUrl": "https://crests.football-data.org/721.png"
+      },
+      "awayTeam": {
+        "id": "65",
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "logoUrl": "https://crests.football-data.org/65.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": [
+        {
+          "videoId": "5a4N-ePzNYM",
+          "title": "Lipsia-Manchester City 2-3: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/5a4N-ePzNYM/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:37:37+00:00",
+          "source": "Sky Sport",
+          "duration": "3:58"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575389",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Slavia Praga - Arsenal",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "930",
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praga",
+        "logoUrl": "https://crests.football-data.org/930.png"
+      },
+      "awayTeam": {
+        "id": "57",
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "logoUrl": "https://crests.football-data.org/57.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "S3eHMv_ASa4",
+          "title": "Slavia Praga-Arsenal 1-2: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/S3eHMv_ASa4/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:42:46+00:00",
+          "source": "Sky Sport",
+          "duration": "4:04"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575390",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "PSV - Club Brugge",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "674",
+        "name": "PSV",
+        "shortName": "PSV",
+        "logoUrl": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": "851",
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "logoUrl": "https://crests.football-data.org/851.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "avFOltVbdoc",
+          "title": "PSV-Club Brugge 1-2: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/avFOltVbdoc/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:58:52+00:00",
+          "source": "Sky Sport",
+          "duration": "1:49"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575391",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Dortmund - Real Betis",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "4",
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "logoUrl": "https://crests.football-data.org/4.png"
+      },
+      "awayTeam": {
+        "id": "90",
+        "name": "Real Betis Balompié",
+        "shortName": "Real Betis",
+        "logoUrl": "https://crests.football-data.org/90.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "lrPV7U_ZmUM",
+          "title": "B. Dortmund-Betis 2-1: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/lrPV7U_ZmUM/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:51:22+00:00",
+          "source": "Sky Sport",
+          "duration": "3:34"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575392",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Porto - Napoli",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "503",
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "logoUrl": "https://crests.football-data.org/503.png"
+      },
+      "awayTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "dwfDv9x5VcI",
+          "title": "Porto-Napoli: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/dwfDv9x5VcI/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:17:22+00:00",
+          "source": "Sky Sport",
+          "duration": "3:34"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575393",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Lens - Como",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "546",
+        "name": "Racing Club de Lens",
+        "shortName": "Lens",
+        "logoUrl": "https://crests.football-data.org/546.png"
+      },
+      "awayTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "homeScore": 1,
+      "awayScore": 9,
+      "videos": [
+        {
+          "videoId": "0rBJ78rtiMI",
+          "title": "Lens-Como 1-9: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/0rBJ78rtiMI/hqdefault.jpg",
+          "publishedAt": "2026-11-04T22:40:08+00:00",
+          "source": "Sky Sport",
+          "duration": "5:01"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575394",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Viking - Sabah",
+      "session": "match",
+      "startsAt": "2026-11-04T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5720",
+        "name": "Viking FK",
+        "shortName": "Viking",
+        "logoUrl": "https://crests.football-data.org/5720.png"
+      },
+      "awayTeam": {
+        "id": "10233",
+        "name": "Sabah FK",
+        "shortName": "Sabah",
+        "logoUrl": "https://crests.football-data.org/10233.png"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "1GV_TMrnI-M",
+          "title": "Viking-Sabah 4-1: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/1GV_TMrnI-M/hqdefault.jpg",
+          "publishedAt": "2026-11-04T23:05:43+00:00",
+          "source": "Sky Sport",
+          "duration": "3:58"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575386",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "AEK Atene - Real Madrid",
+      "session": "match",
+      "startsAt": "2026-11-04T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1899",
+        "name": "PAE AEK",
+        "shortName": "AEK Atene",
+        "logoUrl": "https://crests.football-data.org/1899.png"
+      },
+      "awayTeam": {
+        "id": "86",
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "logoUrl": "https://crests.football-data.org/86.png"
+      },
+      "homeScore": 2,
+      "awayScore": 3,
+      "videos": [
+        {
+          "videoId": "jXyOkU8llPw",
+          "title": "AEK Atene-Real Madrid: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/jXyOkU8llPw/hqdefault.jpg",
+          "publishedAt": "2026-11-04T21:24:55+00:00",
+          "source": "Sky Sport",
+          "duration": "3:36"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575387",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Fenerbahçe - Liverpool",
+      "session": "match",
+      "startsAt": "2026-11-04T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "613",
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "logoUrl": "https://crests.football-data.org/613.png"
+      },
+      "awayTeam": {
+        "id": "64",
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "logoUrl": "https://crests.football-data.org/64.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "xupf62536kU",
+          "title": "Fenerbahce-Liverpool: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/xupf62536kU/hqdefault.jpg",
+          "publishedAt": "2026-11-04T21:27:13+00:00",
+          "source": "Sky Sport",
+          "duration": "3:35"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575379",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Feyenoord - Inter",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "675",
+        "name": "Feyenoord Rotterdam",
+        "shortName": "Feyenoord",
+        "logoUrl": "https://crests.football-data.org/675.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "homeScore": 0,
+      "awayScore": 3,
+      "videos": [
+        {
+          "videoId": "TPr_lyokdvw",
+          "title": "Feyenoord-Inter 0-3: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/TPr_lyokdvw/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:40:10+00:00",
+          "source": "Sky Sport",
+          "duration": "3:21"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575380",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Barcellona - Aston Villa",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "81",
+        "name": "FC Barcelona",
+        "shortName": "Barcellona",
+        "logoUrl": "https://crests.football-data.org/81.png"
+      },
+      "awayTeam": {
+        "id": "58",
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "logoUrl": "https://crests.football-data.org/58.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "V8bEyEk7y7E",
+          "title": "Barcellona-Aston Villa: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/V8bEyEk7y7E/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:19:56+00:00",
+          "source": "Sky Sport",
+          "duration": "3:55"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575381",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Atletico Madrid - Bayern",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "78",
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atletico Madrid",
+        "logoUrl": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "logoUrl": "https://crests.football-data.org/5.png"
+      },
+      "homeScore": 0,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "1zu4oBt98mQ",
+          "title": "Atlético Madrid-Bayern Monaco 0-2: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/1zu4oBt98mQ/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:44:09+00:00",
+          "source": "Sky Sport",
+          "duration": "3:35"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575382",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Villarreal - PSG",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "94",
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "logoUrl": "https://crests.football-data.org/94.png"
+      },
+      "awayTeam": {
+        "id": "524",
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "logoUrl": "https://crests.football-data.org/524.png"
+      },
+      "homeScore": 0,
+      "awayScore": 6,
+      "videos": [
+        {
+          "videoId": "rkR4I5gm-YE",
+          "title": "Villarreal-PSG: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/rkR4I5gm-YE/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:33:27+00:00",
+          "source": "Sky Sport",
+          "duration": "3:42"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575383",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Man United - Roma",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "66",
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "logoUrl": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "cAXdfINDaUI",
+          "title": "Manchester United-Roma 3-2: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/cAXdfINDaUI/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:40:19+00:00",
+          "source": "Sky Sport",
+          "duration": "4:30"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575384",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Bodø/Glimt - Lille",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5721",
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "logoUrl": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": "521",
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "logoUrl": "https://crests.football-data.org/521.png"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "0G3FeNN0QWc",
+          "title": "Bodo/Glimt-Lille: gli highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/0G3FeNN0QWc/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:56:24+00:00",
+          "source": "Sky Sport",
+          "duration": "2:12"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575385",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "LASK - Slovan Bratislava",
+      "session": "match",
+      "startsAt": "2026-11-03T20:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "2016",
+        "name": "LASK Linz",
+        "shortName": "LASK",
+        "logoUrl": "https://crests.football-data.org/2016.png"
+      },
+      "awayTeam": {
+        "id": "7509",
+        "name": "ŠK Slovan Bratislava",
+        "shortName": "Slovan Bratislava",
+        "logoUrl": "https://crests.football-data.org/7509.png"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "jH4TKOZB488",
+          "title": "Lask-Slovan Bratislava 4-0: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/jH4TKOZB488/hqdefault.jpg",
+          "publishedAt": "2026-11-03T22:49:20+00:00",
+          "source": "Sky Sport",
+          "duration": "3:03"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575377",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Shakhtar - Sporting CP",
+      "session": "match",
+      "startsAt": "2026-11-03T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "1887",
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shakhtar",
+        "logoUrl": "https://crests.football-data.org/1887.png"
+      },
+      "awayTeam": {
+        "id": "498",
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "logoUrl": "https://crests.football-data.org/498.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "FH917WyBCHo",
+          "title": "Shakhtar-Sporting: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/FH917WyBCHo/hqdefault.jpg",
+          "publishedAt": "2026-11-03T20:08:36+00:00",
+          "source": "Sky Sport",
+          "duration": "3:07"
+        }
+      ]
+    },
+    {
+      "id": "champions-league-2026-27-575378",
+      "competition": "champions-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Galatasaray - Stoccarda",
+      "session": "match",
+      "startsAt": "2026-11-03T17:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "610",
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "logoUrl": "https://crests.football-data.org/610.png"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "VfB Stuttgart",
+        "shortName": "Stoccarda",
+        "logoUrl": "https://crests.football-data.org/10.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "YG52GrNfbkc",
+          "title": "Galatasaray-Stoccarda: gol e highlights | Champions League",
+          "thumbnailUrl": "https://i.ytimg.com/vi/YG52GrNfbkc/hqdefault.jpg",
+          "publishedAt": "2026-11-03T20:27:26+00:00",
+          "source": "Sky Sport",
+          "duration": "3:20"
+        }
+      ]
+    },
     {
       "id": "serie-a-2026-27-558545",
       "competition": "serie-a",
