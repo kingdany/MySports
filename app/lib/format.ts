@@ -26,6 +26,11 @@ const STAGE_LABELS: Record<string, string> = {
   final: 'Finale',
 };
 
+// Fasi dell'eliminazione diretta, nell'ordine del torneo.
+export const STAGES = Object.keys(STAGE_LABELS);
+
+export const stageLabel = (stage: string) => STAGE_LABELS[stage] ?? stage;
+
 export const sessionLabel = (session: string) => SESSION_LABELS[session] ?? session;
 
 // Prove libere: presenti nei dati ma non mostrate nell'app.

@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { ActivityIndicator, FlatList, Pressable, RefreshControl, StyleSheet } from 'react-native';
 
+import { Bracket } from '@/components/Bracket';
 import { CompetitionBar } from '@/components/CompetitionBar';
 import { SeasonPicker } from '@/components/SeasonPicker';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { StandingZones } from '@/constants/Colors';
+import { buildBracket } from '@/lib/bracket';
 import type { StandingRow } from '@/lib/types';
 import { useCompetitionSeason } from '@/lib/useSelectedSeason';
+
+const BRACKET_ID = 'bracket';
 
 const formatPoints = (points: number) => points.toLocaleString('it-IT');
 
@@ -43,15 +47,23 @@ export default function StandingsScreen() {
   const columns = columnsOf(table?.id);
   const zones = StandingZones.filter((z) => table?.rows.some((r) => r.zone === z.id));
 
+  // Il tabellone non è nei dati delle classifiche: si ricava dalle partite, e c'è solo con l'eliminazione diretta.
+  const rounds = useMemo(() => buildBracket(file?.events), [file]);
+  const showBracket = tableId === BRACKET_ID && rounds.length > 0;
+  const segments = [
+    ...tables.map((t) => ({ id: t.id, title: t.title })),
+    ...(rounds.length > 0 ? [{ id: BRACKET_ID, title: 'Tabellone' }] : []),
+  ];
+
   return (
     <View style={{ flex: 1 }}>
       <CompetitionBar competitions={competitions} selected={competition?.id ?? null} onSelect={selectCompetition} />
       <SeasonPicker competition={competition} season={season} onSelect={selectSeason} />
 
-      {tables.length > 1 && (
+      {segments.length > 1 && (
         <View style={styles.segments}>
-          {tables.map((t) => {
-            const active = t.id === table?.id;
+          {segments.map((t) => {
+            const active = showBracket ? t.id === BRACKET_ID : t.id === table?.id;
             return (
               <Pressable
                 key={t.id}
@@ -68,6 +80,8 @@ export default function StandingsScreen() {
         <View style={styles.center}>
           <ActivityIndicator />
         </View>
+      ) : showBracket ? (
+        <Bracket rounds={rounds} refreshing={refreshing} onRefresh={refresh} />
       ) : (
         <FlatList
           data={table?.rows ?? []}
