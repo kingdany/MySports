@@ -52,7 +52,7 @@ public sealed partial class YouTubeHighlights(
         ["Borussia Dortmund"] = "Dortmund",
         ["Bayern Monaco"] = "Bayern",
         ["Betis"] = "Real Betis",
-        ["Sporting"] = "Sporting CP",
+        ["Sporting CP"] = "Sporting",
         ["Bodo/Glimt"] = "Bodø/Glimt",
     };
 

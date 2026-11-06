@@ -34,7 +34,6 @@ export const StandingZones: { id: string; label: string; color: string }[] = [
   { id: 'relegation', label: 'Retrocessione', color: '#dc2626' },
   { id: 'round_of_16', label: 'Ottavi', color: '#2563eb' },
   { id: 'playoff', label: 'Spareggi', color: '#f97316' },
-  { id: 'eliminated', label: 'Eliminata', color: '#dc2626' },
 ];
 
 // Colore distintivo di ogni competizione (badge nelle liste).

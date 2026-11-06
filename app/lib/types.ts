@@ -63,7 +63,7 @@ export type StandingRow = {
   draws?: number;
   losses?: number;
   goalDifference?: number;
-  zone?: string; // "champions" | "europa" | "conference" | "relegation" | "round_of_16" | "playoff" | "eliminated"
+  zone?: string; // "champions" | "europa" | "conference" | "relegation" | "round_of_16" | "playoff"
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };

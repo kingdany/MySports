@@ -40,7 +40,6 @@ public sealed class FootballDataSource(
     [
         new(1, 8, "round_of_16"),
         new(9, 24, "playoff"),
-        new(25, 36, "eliminated"),
     ];
 
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
@@ -64,6 +63,8 @@ public sealed class FootballDataSource(
         [1887] = "Shakhtar",           // "Shaktar"
         [546] = "Lens",                // "RC Lens"
         [10233] = "Sabah",             // "Sabah FK"
+        [498] = "Sporting",            // "Sporting CP"
+        [1903] = "Benfica",            // "SL Benfica"
     };
 
     // Client riservato a questa fonte: la chiave non deve arrivare alle altre API.

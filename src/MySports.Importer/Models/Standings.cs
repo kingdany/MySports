@@ -16,5 +16,5 @@ public sealed record StandingRow
     public int? Draws { get; init; }
     public int? Losses { get; init; }
     public int? GoalDifference { get; init; }
-    public string? Zone { get; init; }        // "champions" | "europa" | "conference" | "relegation" | "round_of_16" | "playoff" | "eliminated"
+    public string? Zone { get; init; }        // "champions" | "europa" | "conference" | "relegation" | "round_of_16" | "playoff"
 }
