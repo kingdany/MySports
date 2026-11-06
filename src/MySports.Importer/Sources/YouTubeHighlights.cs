@@ -76,6 +76,8 @@ public sealed partial class YouTubeHighlights(
         ["PSV Eindhoven"] = "PSV",
         ["Atletico"] = "Atletico Madrid",
         ["Hellas Verona"] = "Verona",
+        ["Lask Linz"] = "LASK",
+        ["Sabah Baku"] = "Sabah",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
