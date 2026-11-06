@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 using MySports.Importer.Models;
@@ -31,8 +32,29 @@ public sealed partial class YouTubeHighlights(
             ? e => IsTeam(e.HomeTeam, m.Groups[1].Value) && IsTeam(e.AwayTeam, m.Groups[2].Value)
             : null;
 
-    private static bool IsTeam(Team? team, string name) =>
-        string.Equals(team?.ShortName, name.Trim(), StringComparison.OrdinalIgnoreCase);
+    private static bool IsTeam(Team? team, string name)
+    {
+        name = name.Trim();
+        return team?.ShortName is { } shortName
+            && string.Equals(Plain(shortName), Plain(TeamAliases.GetValueOrDefault(name, name)), StringComparison.OrdinalIgnoreCase);
+    }
+
+    // Senza accenti: i canali scrivono sia "Atlético" sia "Atletico", e "Fenerbahce" per "Fenerbahçe".
+    private static string Plain(string text) =>
+        new(text.Normalize(NormalizationForm.FormD).Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray());
+
+    // Nomi usati nei titoli dei canali -> nome breve della squadra nei dati.
+    private static readonly Dictionary<string, string> TeamAliases = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["Manchester City"] = "Man City",
+        ["Manchester United"] = "Man United",
+        ["B. Dortmund"] = "Dortmund",
+        ["Borussia Dortmund"] = "Dortmund",
+        ["Bayern Monaco"] = "Bayern",
+        ["Betis"] = "Real Betis",
+        ["Sporting"] = "Sporting CP",
+        ["Bodo/Glimt"] = "Bodø/Glimt",
+    };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio o con
     // "gli highlights". Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
@@ -41,6 +63,14 @@ public sealed partial class YouTubeHighlights(
 
     [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?:\s*(?:gol e |gli )?highlights\s*\|\s*Serie A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
+
+    // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Esclusi gli "extended highlights",
+    // pubblicati solo per alcune partite, che doppierebbero il video dello stesso canale.
+    public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
+
+    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?:\s*(?:gol e |gli )?highlights\s*\|\s*Champions League\s*$", RegexOptions.IgnoreCase)]
+    private static partial Regex SkyChampionsLeagueTitle();
 
     // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
     // La parte finale varia molto ("| DAZN", "| DAZN | Highlights", "| Highlights DAZN"). Le partite di stagioni

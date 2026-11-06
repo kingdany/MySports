@@ -1,6 +1,6 @@
 # MySports
 
-Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Formula 1 e MotoGP.
+Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Champions League, Formula 1 e MotoGP.
 
 ## Architettura
 
@@ -32,11 +32,11 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (F1 e Serie A, stagione corrente).
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1, Serie A e Champions League, stagione corrente).
 I video già trovati vengono conservati tra un'esecuzione e l'altra.
 
 ## Eseguire in locale
@@ -49,7 +49,7 @@ dotnet run --project src/MySports.Importer -- --out out
 
 Le chiavi vanno nell'ambiente oppure in un file `.env` nella radice del repository (escluso da Git):
 
-- `FOOTBALL_DATA_API_KEY` per il calcio; senza chiave la Serie A non si aggiorna e l'importatore termina con errore, ma la F1 viene comunque salvata.
+- `FOOTBALL_DATA_API_KEY` per il calcio; senza chiave Serie A e Champions League non si aggiornano e l'importatore termina con errore, ma la F1 viene comunque salvata.
 - `YOUTUBE_API_KEY` per gli highlights; senza chiave questo passaggio viene saltato.
 
 ## Importare le stagioni passate
@@ -71,7 +71,10 @@ Per il calcio le stagioni si elencano per nome (il piano gratuito di football-da
 
 ```
 dotnet run --project src/MySports.Importer -- --competition serie-a --seasons 2023-24,2024-25,2025-26 --out out
+dotnet run --project src/MySports.Importer -- --competition champions-league --seasons 2024-25,2025-26 --out out
 ```
+
+Per la Champions League si parte dal 2024-25: per il 2023-24 l'API non separa i gironi e dà un'unica classifica di 32 squadre.
 
 ## Provare l'app sul telefono
 
@@ -93,6 +96,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Highlights delle stagioni passate, per tutti gli sport (per ora solo la stagione corrente)
-- [ ] Calcio: Champions League e altre competizioni
+- [ ] Calcio: altre competizioni
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
 - [ ] MotoGP (video: canale Sky Sport MotoGP)

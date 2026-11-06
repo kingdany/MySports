@@ -31,7 +31,8 @@ export type SportEvent = {
   id: string;
   competition: string;
   season: string;
-  round?: number;
+  round?: number; // nell'eliminazione diretta 1 = andata, 2 = ritorno
+  stage?: string; // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final"
   title: string;
   session: string;
   startsAt: string;
@@ -44,6 +45,8 @@ export type SportEvent = {
   awayTeam?: Team;
   homeScore?: number;
   awayScore?: number;
+  homePenalties?: number; // rigori, non compresi nel punteggio
+  awayPenalties?: number;
   result?: ClassificationRow[];
   videos: Video[];
 };
@@ -60,7 +63,7 @@ export type StandingRow = {
   draws?: number;
   losses?: number;
   goalDifference?: number;
-  zone?: string; // "champions" | "europa" | "conference" | "relegation"
+  zone?: string; // "champions" | "europa" | "conference" | "relegation" | "round_of_16" | "playoff" | "eliminated"
 };
 
 export type StandingsTable = { id: string; title: string; rows: StandingRow[] };

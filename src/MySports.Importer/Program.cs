@@ -31,6 +31,7 @@ IEventSource[] sources =
 [
     new JolpicaF1Source(http),
     new FootballDataSource(Competition.SerieA, "SA", footballKey, FootballDataSource.SerieAZones, FootballDataSource.SerieAZoneExceptions),
+    new FootballDataSource(Competition.ChampionsLeague, "CL", footballKey, FootballDataSource.ChampionsLeagueZones),
 ];
 
 // Highlights YouTube per competizione, nell'ordine in cui l'app li mostra (italiano per primo).
@@ -41,6 +42,7 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
 {
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
     videoSources[Competition.SerieA.Id] = [YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.DaznSerieA(http, youtubeKey)];
+    videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey)];
 }
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");

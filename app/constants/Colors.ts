@@ -32,11 +32,15 @@ export const StandingZones: { id: string; label: string; color: string }[] = [
   { id: 'europa', label: 'Europa League', color: '#f97316' },
   { id: 'conference', label: 'Conference', color: '#16a34a' },
   { id: 'relegation', label: 'Retrocessione', color: '#dc2626' },
+  { id: 'round_of_16', label: 'Ottavi', color: '#2563eb' },
+  { id: 'playoff', label: 'Spareggi', color: '#f97316' },
+  { id: 'eliminated', label: 'Eliminata', color: '#dc2626' },
 ];
 
 // Colore distintivo di ogni competizione (badge nelle liste).
 export const CompetitionColors: Record<string, string> = {
   'serie-a': '#0a5cad',
+  'champions-league': '#1a237e',
   f1: '#e10600',
   motogp: '#3d3d3d',
 };

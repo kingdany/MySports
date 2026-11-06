@@ -10,7 +10,7 @@ namespace MySports.Importer.Sources;
 public sealed class FootballDataSource(
     Competition competition, string competitionCode, string? apiKey,
     IReadOnlyList<FootballDataSource.ZoneRule> zones,
-    IReadOnlyDictionary<string, IReadOnlyList<FootballDataSource.ZoneRule>> zoneExceptions) : IEventSource
+    IReadOnlyDictionary<string, IReadOnlyList<FootballDataSource.ZoneRule>>? zoneExceptions = null) : IEventSource
 {
     // Posizioni di classifica (estremi inclusi) che danno accesso a una zona, es. "champions".
     public sealed record ZoneRule(int From, int To, string Zone);
@@ -35,6 +35,14 @@ public sealed class FootballDataSource(
             ["2023-24"] = [new(1, 5, "champions"), new(6, 7, "europa"), new(8, 8, "conference"), new(18, 20, "relegation")],
         };
 
+    // Fase campionato della Champions (dal 2024-25): le prime 8 agli ottavi, dalla 9ª alla 24ª agli spareggi.
+    public static readonly IReadOnlyList<ZoneRule> ChampionsLeagueZones =
+    [
+        new(1, 8, "round_of_16"),
+        new(9, 24, "playoff"),
+        new(25, 36, "eliminated"),
+    ];
+
     private const string BaseUrl = "https://api.football-data.org/v4/competitions";
     private const int MaxRateLimitRetries = 5;
     private const int ScorersShown = 10;
@@ -46,6 +54,16 @@ public sealed class FootballDataSource(
         [7397] = "Como",    // "Como 1907"
         [454] = "Venezia",  // "Venezia FC"
         [487] = "Pisa",     // "AC Pisa"
+        [1899] = "AEK Atene",          // "PAE AEK"
+        [81] = "Barcellona",           // "Barça"
+        [78] = "Atletico Madrid",      // "Atleti"
+        [721] = "Lipsia",              // "RB Leipzig"
+        [10] = "Stoccarda",            // "Stuttgart"
+        [930] = "Slavia Praga",        // "Slavia Praha"
+        [7509] = "Slovan Bratislava",  // "Sl. Bratislava"
+        [1887] = "Shakhtar",           // "Shaktar"
+        [546] = "Lens",                // "RC Lens"
+        [10233] = "Sabah",             // "Sabah FK"
     };
 
     // Client riservato a questa fonte: la chiave non deve arrivare alle altre API.
@@ -68,7 +86,7 @@ public sealed class FootballDataSource(
         var total = data["standings"]?.AsArray().FirstOrDefault(t => Str(t!["type"]) == "TOTAL");
         var rows = total?["table"]?.AsArray().Select(r => ToStandingRow(r!)).ToList() ?? [];
 
-        var seasonZones = zoneExceptions.GetValueOrDefault(season) ?? zones;
+        var seasonZones = zoneExceptions?.GetValueOrDefault(season) ?? zones;
         rows = rows.Select(r => r with { Zone = seasonZones.FirstOrDefault(z => r.Pos >= z.From && r.Pos <= z.To)?.Zone }).ToList();
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
@@ -122,7 +140,11 @@ public sealed class FootballDataSource(
         if (dateOnly) startsAt = startsAt.AddHours(12);
 
         // Punteggio solo a fine partita: tra un aggiornamento e l'altro quello parziale sarebbe già vecchio.
-        var score = status == EventStatus.Finished ? match["score"]?["fullTime"] : null;
+        var score = status == EventStatus.Finished ? match["score"] : null;
+        var fullTime = score?["fullTime"];
+        var penalties = score?["penalties"];
+        var homePenalties = penalties?["home"]?.GetValue<int>();
+        var awayPenalties = penalties?["away"]?.GetValue<int>();
 
         return new SportEvent
         {
@@ -131,19 +153,30 @@ public sealed class FootballDataSource(
             Competition = competition.Id,
             Season = season,
             Round = match["matchday"]?.GetValue<int>(),
-            Title = $"{home.ShortName ?? home.Name} - {away.ShortName ?? away.Name}",
+            Stage = ToStage(Str(match["stage"])),
+            Title = $"{TeamLabel(home)} - {TeamLabel(away)}",
             Session = "match",
             StartsAt = startsAt,
             DateOnly = dateOnly ? true : null,
             Status = status,
             HomeTeam = home,
             AwayTeam = away,
-            HomeScore = score?["home"]?.GetValue<int>(),
-            AwayScore = score?["away"]?.GetValue<int>(),
+            // Il fullTime della fonte comprende i rigori (un 1-1 finito 4-3 ai rigori vale 5-4).
+            HomeScore = fullTime?["home"]?.GetValue<int>() - (homePenalties ?? 0),
+            AwayScore = fullTime?["away"]?.GetValue<int>() - (awayPenalties ?? 0),
+            HomePenalties = homePenalties,
+            AwayPenalties = awayPenalties,
         };
     }
 
-    private static Team ToTeam(JsonNode team) => new(
+    // Solo per l'eliminazione diretta: campionato e gironi si mostrano come semplici giornate.
+    private static string? ToStage(string? stage) =>
+        stage is null or "REGULAR_SEASON" or "LEAGUE_STAGE" or "GROUP_STAGE" ? null : stage.ToLowerInvariant();
+
+    private static string TeamLabel(Team? team) => team?.ShortName ?? team?.Name ?? "Da definire";
+
+    // null se la squadra non è ancora nota (eliminazione diretta prima del sorteggio).
+    private static Team? ToTeam(JsonNode team) => team["id"] is null ? null : new(
         team["id"]!.GetValue<int>().ToString(CultureInfo.InvariantCulture),
         Str(team["name"])!,
         ShortName(team),

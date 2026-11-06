@@ -13,8 +13,17 @@ const SESSION_LABELS: Record<string, string> = {
 
 const COMPETITION_LABELS: Record<string, string> = {
   'serie-a': 'Serie A',
+  'champions-league': 'UCL', // il badge è stretto: "Champions" andrebbe a capo
   f1: 'F1',
   motogp: 'MotoGP',
+};
+
+const STAGE_LABELS: Record<string, string> = {
+  playoffs: 'Spareggi',
+  last_16: 'Ottavi',
+  quarter_finals: 'Quarti',
+  semi_finals: 'Semifinali',
+  final: 'Finale',
 };
 
 export const sessionLabel = (session: string) => SESSION_LABELS[session] ?? session;
@@ -24,9 +33,18 @@ export const isPractice = (session: string) => session === 'fp1' || session === 
 
 export const competitionLabel = (competition: string) => COMPETITION_LABELS[competition] ?? competition;
 
-// "Giornata 11" per il calcio, "Round 19" per i motori.
-export const roundLabel = (event: SportEvent) =>
-  event.round ? `${event.session === 'match' ? 'Giornata' : 'Round'} ${event.round}` : null;
+// "Giornata 11" per il calcio, "Ottavi · andata" o "Finale" per l'eliminazione diretta, "Round 19" per i motori.
+export function roundLabel(event: SportEvent): string | null {
+  const stage = event.stage ? STAGE_LABELS[event.stage] : undefined;
+  if (stage) return event.round === 1 ? `${stage} · andata` : event.round === 2 ? `${stage} · ritorno` : stage;
+  return event.round ? `${event.session === 'match' ? 'Giornata' : 'Round'} ${event.round}` : null;
+}
+
+// "4-3 ai rigori", oppure null se la partita non è finita ai rigori.
+export const penaltiesLabel = (event: SportEvent) =>
+  event.homePenalties != null && event.awayPenalties != null
+    ? `${event.homePenalties}-${event.awayPenalties} ai rigori`
+    : null;
 
 export const formatTime = (iso: string) =>
   new Date(iso).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });

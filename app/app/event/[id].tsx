@@ -6,7 +6,7 @@ import { Text, View, useThemeColor } from '@/components/Themed';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
-import { competitionLabel, formatEventDate, roundLabel, sessionLabel } from '@/lib/format';
+import { competitionLabel, formatEventDate, penaltiesLabel, roundLabel, sessionLabel } from '@/lib/format';
 import type { ClassificationRow, SportEvent } from '@/lib/types';
 
 export default function EventScreen() {
@@ -25,6 +25,8 @@ export default function EventScreen() {
   }
 
   const place = [event.venue, event.city, event.country].filter(Boolean).join(', ');
+  const round = roundLabel(event);
+  const penalties = penaltiesLabel(event);
 
   // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
   return (
@@ -32,7 +34,7 @@ export default function EventScreen() {
       <Stack.Screen options={{ title: sessionLabel(event.session) }} />
       <View style={styles.header}>
         <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-          {competitionLabel(event.competition)}{event.round ? ` · ${roundLabel(event)}` : ''}
+          {competitionLabel(event.competition)}{round ? ` · ${round}` : ''}
         </Text>
         <Text style={styles.title}>{event.title}</Text>
         <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
@@ -40,6 +42,7 @@ export default function EventScreen() {
         {event.homeScore != null && event.awayScore != null && (
           <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>
         )}
+        {penalties ? <Text style={[styles.info, { color: muted }]}>{penalties}</Text> : null}
       </View>
       {event.videos.length > 0 && (
         <View style={styles.videos}>

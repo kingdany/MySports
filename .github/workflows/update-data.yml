@@ -11,7 +11,7 @@ on:
         required: false
         default: ""
       competition:
-        description: "Competizione delle stagioni passate (f1, serie-a)"
+        description: "Competizione delle stagioni passate (f1, serie-a, champions-league)"
         required: false
         default: "f1"
       standings_only:

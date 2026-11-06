@@ -4,7 +4,7 @@ import { Pressable, StyleSheet } from 'react-native';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors, LiveColor } from '@/constants/Colors';
-import { competitionLabel, formatTime, roundLabel, sessionLabel } from '@/lib/format';
+import { competitionLabel, formatTime, penaltiesLabel, roundLabel, sessionLabel } from '@/lib/format';
 import type { SportEvent } from '@/lib/types';
 
 // Con linked = false la riga è solo informativa: il tocco non apre il dettaglio.
@@ -50,7 +50,8 @@ function Outcome({ event }: { event: SportEvent }) {
   if (event.status !== 'finished') return null;
 
   if (event.homeScore != null && event.awayScore != null) {
-    return <Text style={styles.outcome}>{event.homeScore} - {event.awayScore}</Text>;
+    const penalties = penaltiesLabel(event);
+    return <Text style={styles.outcome}>{event.homeScore} - {event.awayScore}{penalties ? ` (${penalties})` : ''}</Text>;
   }
   if (event.result?.length) {
     const podium = event.result.slice(0, 3).map((r) => `${r.pos}. ${r.code ?? r.driver}`).join('   ');

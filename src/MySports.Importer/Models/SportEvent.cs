@@ -4,9 +4,10 @@ namespace MySports.Importer.Models;
 public sealed record SportEvent
 {
     public required string Id { get; init; }              // es. "f1-2026-19-race", "serie-a-2026-27-558629"
-    public required string Competition { get; init; }     // "serie-a" | "f1" | "motogp"
+    public required string Competition { get; init; }     // "serie-a" | "champions-league" | "f1" | "motogp"
     public required string Season { get; init; }          // "2026" oppure "2026-27" per il calcio
-    public int? Round { get; init; }                      // giornata / numero del GP
+    public int? Round { get; init; }                      // giornata / numero del GP; nell'eliminazione diretta 1 = andata, 2 = ritorno
+    public string? Stage { get; init; }                   // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final"
     public required string Title { get; init; }           // "Mexico City Grand Prix", "Inter - Milan"
     public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"
     public required DateTimeOffset StartsAt { get; init; }
@@ -19,6 +20,8 @@ public sealed record SportEvent
     public Team? AwayTeam { get; init; }
     public int? HomeScore { get; init; }
     public int? AwayScore { get; init; }
+    public int? HomePenalties { get; init; }              // rigori, non compresi nel punteggio
+    public int? AwayPenalties { get; init; }
     public IReadOnlyList<ClassificationRow>? Result { get; init; }  // classifica delle sessioni motoristiche
     public IReadOnlyList<Video> Videos { get; init; } = [];
 }
