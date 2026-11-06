@@ -36,8 +36,9 @@ src/MySports.Importer/
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (F1, Serie A e Champions League, stagione corrente).
-I video già trovati vengono conservati tra un'esecuzione e l'altra.
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1, Serie A e Champions League).
+I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
+finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
 ## Eseguire in locale
 
@@ -76,6 +77,19 @@ dotnet run --project src/MySports.Importer -- --competition champions-league --s
 
 Per la Champions League si parte dal 2024-25: per il 2023-24 l'API non separa i gironi e dà un'unica classifica di 32 squadre.
 
+## Recuperare i video vecchi
+
+Serve una volta sola, per una competizione nuova o per le stagioni passate.
+Da GitHub: **Actions → Aggiorna dati → Run workflow**, casella "Recupera i video". Con il campo "Stagioni passate" vale
+per quelle stagioni della competizione indicata, altrimenti per le stagioni correnti di tutte le competizioni.
+In locale:
+
+```
+dotnet run --project src/MySports.Importer -- --competition serie-a --seasons 2025-26 --recover-videos --out out
+```
+
+Ogni canale viene riletto fino alla stagione richiesta (circa 20 unità di quota YouTube al mese da risalire).
+
 ## Provare l'app sul telefono
 
 1. Installa **Expo Go** dallo store (Android/iOS).
@@ -95,7 +109,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Highlights delle stagioni passate, per tutti gli sport (per ora solo la stagione corrente)
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
 - [ ] MotoGP (video: canale Sky Sport MotoGP)

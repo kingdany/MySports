@@ -8,6 +8,8 @@
 //       aggiunge solo le classifiche a stagioni già importate, senza riscaricare gli eventi
 //   ... --competition serie-a --seasons 2023-24,2024-25
 //       le stagioni del calcio si elencano per nome
+//   ... --recover-videos
+//       cerca anche i video delle partite vecchie: nelle stagioni correnti, oppure in quelle indicate con --seasons
 using System.Globalization;
 using MySports.Importer.Models;
 using MySports.Importer.Output;
@@ -19,6 +21,7 @@ var outputDir = Arg("--out") ?? "out";
 var seasonsArg = Arg("--seasons");
 var competitionArg = Arg("--competition");
 var standingsOnly = args.Contains("--standings-only");
+var recoverVideos = args.Contains("--recover-videos");
 var window = TimeSpan.FromDays(14); // orizzonte di upcoming.json e results.json
 
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
@@ -124,14 +127,14 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 .ToList();
         }
 
-        // Highlights solo per la stagione corrente: lo storico dei video si valuterà a parte.
-        if (seasonsArg is null && videoSources.TryGetValue(competition.Id, out var channels))
+        // Highlights della stagione corrente; quelli delle stagioni passate solo su richiesta.
+        if ((seasonsArg is null || recoverVideos) && videoSources.TryGetValue(competition.Id, out var channels))
         {
             foreach (var channel in channels)
             {
                 try
                 {
-                    events = await channel.AttachAsync(events, ct);
+                    events = await channel.AttachAsync(events, recoverVideos, ct);
                 }
                 catch (Exception ex)
                 {

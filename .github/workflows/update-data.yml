@@ -19,6 +19,11 @@ on:
         type: boolean
         required: false
         default: false
+      recover_videos:
+        description: "Recupera i video delle partite vecchie (stagioni correnti, oppure le stagioni passate indicate sopra)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -55,13 +60,14 @@ jobs:
           SEASONS: ${{ inputs.seasons }}
           COMPETITION: ${{ inputs.competition }}
           STANDINGS_ONLY: ${{ inputs.standings_only && '--standings-only' || '' }}
+          RECOVER_VIDEOS: ${{ inputs.recover_videos && '--recover-videos' || '' }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: |
           if [ -n "$SEASONS" ]; then
-            dotnet run --project src/MySports.Importer -c Release -- --out site --competition "$COMPETITION" --seasons "$SEASONS" $STANDINGS_ONLY
+            dotnet run --project src/MySports.Importer -c Release -- --out site --competition "$COMPETITION" --seasons "$SEASONS" $STANDINGS_ONLY $RECOVER_VIDEOS
           else
-            dotnet run --project src/MySports.Importer -c Release -- --out site
+            dotnet run --project src/MySports.Importer -c Release -- --out site $RECOVER_VIDEOS
           fi
 
       # Si pubblica anche se una fonte o una stagione ha dato errore: le altre sono state salvate.

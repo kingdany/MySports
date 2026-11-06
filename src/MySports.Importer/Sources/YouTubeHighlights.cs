@@ -15,8 +15,9 @@ public sealed partial class YouTubeHighlights(
     HttpClient http, string apiKey, string channelId, string sourceName, Func<string, Func<SportEvent, bool>?> matcher)
 {
     private const string BaseUrl = "https://www.googleapis.com/youtube/v3";
-    // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese.
-    private const int MaxPages = 200;
+    // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese:
+    // il limite serve solo al recupero delle stagioni passate, i giri normali leggono pochi giorni.
+    private const int MaxPages = 1000;
     private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
     private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
 
@@ -53,15 +54,37 @@ public sealed partial class YouTubeHighlights(
         ["Bayern Monaco"] = "Bayern",
         ["Betis"] = "Real Betis",
         ["Sporting CP"] = "Sporting",
+        ["Sporting Lisbona"] = "Sporting",
         ["Bodo/Glimt"] = "Bodø/Glimt",
+        ["Bodo Glimt"] = "Bodø/Glimt",
+        ["Bayer Leverkusen"] = "Leverkusen",
+        ["Qarabag"] = "Qarabağ Ağdam",
+        ["Olympiacos"] = "Olympiakos",
+        ["Marsiglia"] = "Marseille",
+        ["Pafos"] = "Paphos FC",
+        ["Copenhagen"] = "København",
+        ["Copenaghen"] = "København",
+        ["Kairat"] = "FK Kairat",
+        ["Kairat Almaty"] = "FK Kairat",
+        ["Eintracht"] = "Frankfurt",
+        ["Eintracht Francoforte"] = "Frankfurt",
+        ["Athletic Club"] = "Athletic",
+        ["Athletic Bilbao"] = "Athletic",
+        ["Union ST Gilloise"] = "Union SG",
+        ["Bruges"] = "Club Brugge",
+        ["Brugge"] = "Club Brugge",
+        ["PSV Eindhoven"] = "PSV",
+        ["Atletico"] = "Atletico Madrid",
+        ["Hellas Verona"] = "Verona",
     };
 
-    // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio o con
-    // "gli highlights". Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
+    // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
+    // "gli highlights", con la virgola al posto dei due punti o con il punteggio dopo ("Inter-Juventus: 3-2 gol e highlights").
+    // Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
     public static YouTubeHighlights SkySportSerieA(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkySerieATitle()));
 
-    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?:\s*(?:gol e |gli )?highlights\s*\|\s*Serie A\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights\s*\|\s*Serie A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Esclusi gli "extended highlights",
@@ -69,7 +92,7 @@ public sealed partial class YouTubeHighlights(
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
 
-    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?:\s*(?:gol e |gli )?highlights\s*\|\s*Champions League\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights\s*\|\s*Champions League\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkyChampionsLeagueTitle();
 
     // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
@@ -112,11 +135,16 @@ public sealed partial class YouTubeHighlights(
 
     private sealed record Upload(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt);
 
-    public async Task<IReadOnlyList<SportEvent>> AttachAsync(IReadOnlyList<SportEvent> events, CancellationToken ct)
+    // recoverOld: cerca anche le sessioni vecchie, per una competizione nuova o una stagione passata.
+    public async Task<IReadOnlyList<SportEvent>> AttachAsync(IReadOnlyList<SportEvent> events, bool recoverOld, CancellationToken ct)
     {
         // Ogni canale aggiunge al massimo un video per sessione, accanto a quelli degli altri canali.
+        // Solo sessioni recenti: per un video si accetta al massimo MaxDelay, e una sola sessione vecchia
+        // rimasta senza video costringerebbe a rileggere a ogni giro tutti i caricamenti fino alla sua data.
+        var now = DateTimeOffset.UtcNow;
         bool Needs(SportEvent e) =>
-            e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && e.Videos.All(v => v.Source != sourceName);
+            e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && e.Videos.All(v => v.Source != sourceName)
+            && (recoverOld || now - e.StartsAt <= MaxDelay);
 
         var waiting = events.Where(Needs).ToList();
         if (waiting.Count == 0) return events;
