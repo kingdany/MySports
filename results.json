@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-06T16:12:35.7194904+00:00",
+  "generatedAt": "2026-11-06T19:21:18.6368795+00:00",
   "events": [
+    {
+      "id": "f1-2026-20-fp1",
+      "competition": "f1",
+      "season": "2026",
+      "round": 20,
+      "title": "Brazilian Grand Prix",
+      "session": "fp1",
+      "startsAt": "2026-11-06T15:30:00+00:00",
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "videos": []
+    },
     {
       "id": "champions-league-2026-27-575388",
       "competition": "champions-league",
@@ -2830,62 +2844,6 @@
       "title": "United States Grand Prix",
       "session": "fp2",
       "startsAt": "2026-10-23T21:00:00+00:00",
-      "venue": "Circuit of the Americas",
-      "city": "Austin",
-      "country": "USA",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558567",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Torino - Monza",
-      "session": "match",
-      "startsAt": "2026-10-23T18:45:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "586",
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "logoUrl": "https://crests.football-data.org/586.png"
-      },
-      "awayTeam": {
-        "id": "5911",
-        "name": "AC Monza",
-        "shortName": "Monza",
-        "logoUrl": "https://crests.football-data.org/5911.png"
-      },
-      "homeScore": 3,
-      "awayScore": 2,
-      "videos": [
-        {
-          "videoId": "tojsR345t74",
-          "title": "Torino-Monza 3-2: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/tojsR345t74/hqdefault.jpg",
-          "publishedAt": "2026-10-23T23:40:07+00:00",
-          "source": "Sky Sport",
-          "duration": "2:55"
-        },
-        {
-          "videoId": "JtAR1bnbQ6A",
-          "title": "BELGHALI e VLAŠIĆ la decidono con due perle: Torino-Monza 3-2 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/JtAR1bnbQ6A/hqdefault.jpg",
-          "publishedAt": "2026-10-23T23:42:08+00:00",
-          "source": "DAZN",
-          "duration": "2:56"
-        }
-      ]
-    },
-    {
-      "id": "f1-2026-18-fp1",
-      "competition": "f1",
-      "season": "2026",
-      "round": 18,
-      "title": "United States Grand Prix",
-      "session": "fp1",
-      "startsAt": "2026-10-23T17:30:00+00:00",
       "venue": "Circuit of the Americas",
       "city": "Austin",
       "country": "USA",
