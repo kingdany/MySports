@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
+  "generatedAt": "2026-11-07T21:46:09.8979463+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -4324,7 +4324,7 @@
       "title": "Parma - Bologna",
       "session": "match",
       "startsAt": "2026-11-07T17:00:00+00:00",
-      "status": "live",
+      "status": "finished",
       "homeTeam": {
         "id": "112",
         "name": "Parma Calcio 1913",
@@ -4337,6 +4337,8 @@
         "shortName": "Bologna",
         "logoUrl": "https://crests.football-data.org/103.png"
       },
+      "homeScore": 1,
+      "awayScore": 2,
       "videos": []
     },
     {
@@ -4347,7 +4349,7 @@
       "title": "Roma - Sassuolo",
       "session": "match",
       "startsAt": "2026-11-07T19:45:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "100",
         "name": "AS Roma",
@@ -4360,6 +4362,8 @@
         "shortName": "Sassuolo",
         "logoUrl": "https://crests.football-data.org/471.png"
       },
+      "homeScore": 3,
+      "awayScore": 0,
       "videos": []
     },
     {
@@ -10899,6 +10903,19 @@
         {
           "pos": 2,
           "posText": "2",
+          "name": "Roma",
+          "code": "ROM",
+          "points": 27,
+          "wins": 8,
+          "played": 11,
+          "draws": 3,
+          "losses": 0,
+          "goalDifference": 21,
+          "zone": "champions"
+        },
+        {
+          "pos": 3,
+          "posText": "3",
           "name": "Inter",
           "code": "INT",
           "points": 25,
@@ -10907,19 +10924,6 @@
           "draws": 1,
           "losses": 1,
           "goalDifference": 13,
-          "zone": "champions"
-        },
-        {
-          "pos": 3,
-          "posText": "3",
-          "name": "Roma",
-          "code": "ROM",
-          "points": 24,
-          "wins": 7,
-          "played": 10,
-          "draws": 3,
-          "losses": 0,
-          "goalDifference": 18,
           "zone": "champions"
         },
         {
@@ -10976,6 +10980,18 @@
         {
           "pos": 8,
           "posText": "8",
+          "name": "Bologna",
+          "code": "BOL",
+          "points": 17,
+          "wins": 5,
+          "played": 11,
+          "draws": 2,
+          "losses": 4,
+          "goalDifference": 2
+        },
+        {
+          "pos": 9,
+          "posText": "9",
           "name": "Cagliari",
           "code": "CAG",
           "points": 16,
@@ -10986,8 +11002,8 @@
           "goalDifference": -5
         },
         {
-          "pos": 9,
-          "posText": "9",
+          "pos": 10,
+          "posText": "10",
           "name": "Napoli",
           "code": "NAP",
           "points": 14,
@@ -10996,18 +11012,6 @@
           "draws": 2,
           "losses": 4,
           "goalDifference": 4
-        },
-        {
-          "pos": 10,
-          "posText": "10",
-          "name": "Bologna",
-          "code": "BOL",
-          "points": 14,
-          "wins": 4,
-          "played": 10,
-          "draws": 2,
-          "losses": 4,
-          "goalDifference": 1
         },
         {
           "pos": 11,
@@ -11060,18 +11064,6 @@
         {
           "pos": 15,
           "posText": "15",
-          "name": "Parma",
-          "code": "PAR",
-          "points": 8,
-          "wins": 2,
-          "played": 10,
-          "draws": 2,
-          "losses": 6,
-          "goalDifference": -7
-        },
-        {
-          "pos": 16,
-          "posText": "16",
           "name": "Fiorentina",
           "code": "FIO",
           "points": 8,
@@ -11082,16 +11074,28 @@
           "goalDifference": -8
         },
         {
+          "pos": 16,
+          "posText": "16",
+          "name": "Parma",
+          "code": "PAR",
+          "points": 8,
+          "wins": 2,
+          "played": 11,
+          "draws": 2,
+          "losses": 7,
+          "goalDifference": -8
+        },
+        {
           "pos": 17,
           "posText": "17",
           "name": "Sassuolo",
           "code": "SAS",
           "points": 8,
           "wins": 2,
-          "played": 10,
+          "played": 11,
           "draws": 2,
-          "losses": 6,
-          "goalDifference": -10
+          "losses": 7,
+          "goalDifference": -13
         },
         {
           "pos": 18,
@@ -11220,6 +11224,13 @@
           "posText": "5",
           "name": "Che Adams",
           "team": "Torino",
+          "points": 4
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Rodrigo Mora",
+          "team": "Roma",
           "points": 4
         },
         {

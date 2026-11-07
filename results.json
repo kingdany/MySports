@@ -1,6 +1,79 @@
 {
-  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
+  "generatedAt": "2026-11-07T21:46:09.8979463+00:00",
   "events": [
+    {
+      "id": "serie-a-2026-27-558531",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Roma - Sassuolo",
+      "session": "match",
+      "startsAt": "2026-11-07T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "awayTeam": {
+        "id": "471",
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://crests.football-data.org/471.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "f1-2026-20-qualifying",
+      "competition": "f1",
+      "season": "2026",
+      "round": 20,
+      "title": "Brazilian Grand Prix",
+      "session": "qualifying",
+      "startsAt": "2026-11-07T18:00:00+00:00",
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "videos": [
+        {
+          "videoId": "Cn4C153hCLk",
+          "title": "Qualifying Highlights | 2026 Sao Paulo Grand Prix",
+          "thumbnailUrl": "https://i.ytimg.com/vi/Cn4C153hCLk/hqdefault.jpg",
+          "publishedAt": "2026-11-07T21:16:28+00:00",
+          "source": "Formula 1",
+          "duration": "8:02"
+        }
+      ]
+    },
+    {
+      "id": "serie-a-2026-27-558535",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Parma - Bologna",
+      "session": "match",
+      "startsAt": "2026-11-07T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "awayTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
     {
       "id": "f1-2026-20-fp3",
       "competition": "f1",
@@ -2537,282 +2610,6 @@
           "source": "DAZN",
           "duration": "4:08",
           "embeddable": false
-        }
-      ]
-    },
-    {
-      "id": "f1-2026-18-qualifying",
-      "competition": "f1",
-      "season": "2026",
-      "round": 18,
-      "title": "United States Grand Prix",
-      "session": "qualifying",
-      "startsAt": "2026-10-24T21:00:00+00:00",
-      "venue": "Circuit of the Americas",
-      "city": "Austin",
-      "country": "USA",
-      "status": "finished",
-      "result": [
-        {
-          "pos": 1,
-          "number": "12",
-          "driver": "Andrea Kimi Antonelli",
-          "code": "ANT",
-          "team": "Mercedes",
-          "q1": "1:35.390",
-          "q2": "1:34.278",
-          "q3": "1:34.035"
-        },
-        {
-          "pos": 2,
-          "number": "3",
-          "driver": "Max Verstappen",
-          "code": "VER",
-          "team": "Red Bull",
-          "q1": "1:35.215",
-          "q2": "1:34.471",
-          "q3": "1:34.214"
-        },
-        {
-          "pos": 3,
-          "number": "6",
-          "driver": "Isack Hadjar",
-          "code": "HAD",
-          "team": "Red Bull",
-          "q1": "1:35.286",
-          "q2": "1:34.887",
-          "q3": "1:34.250"
-        },
-        {
-          "pos": 4,
-          "number": "16",
-          "driver": "Charles Leclerc",
-          "code": "LEC",
-          "team": "Ferrari",
-          "q1": "1:35.200",
-          "q2": "1:34.198",
-          "q3": "1:34.267"
-        },
-        {
-          "pos": 5,
-          "number": "44",
-          "driver": "Lewis Hamilton",
-          "code": "HAM",
-          "team": "Ferrari",
-          "q1": "1:35.355",
-          "q2": "1:34.833",
-          "q3": "1:34.311"
-        },
-        {
-          "pos": 6,
-          "number": "63",
-          "driver": "George Russell",
-          "code": "RUS",
-          "team": "Mercedes",
-          "q1": "1:35.730",
-          "q2": "1:34.305",
-          "q3": "1:34.476"
-        },
-        {
-          "pos": 7,
-          "number": "81",
-          "driver": "Oscar Piastri",
-          "code": "PIA",
-          "team": "McLaren",
-          "q1": "1:35.842",
-          "q2": "1:34.818",
-          "q3": "1:34.803"
-        },
-        {
-          "pos": 8,
-          "number": "1",
-          "driver": "Lando Norris",
-          "code": "NOR",
-          "team": "McLaren",
-          "q1": "1:35.029",
-          "q2": "1:34.539",
-          "q3": "1:35.049"
-        },
-        {
-          "pos": 9,
-          "number": "41",
-          "driver": "Arvid Lindblad",
-          "code": "LIN",
-          "team": "RB F1 Team",
-          "q1": "1:35.755",
-          "q2": "1:34.950",
-          "q3": "1:36.049"
-        },
-        {
-          "pos": 10,
-          "number": "30",
-          "driver": "Liam Lawson",
-          "code": "LAW",
-          "team": "RB F1 Team",
-          "q1": "1:35.662",
-          "q2": "1:35.058"
-        },
-        {
-          "pos": 11,
-          "number": "10",
-          "driver": "Pierre Gasly",
-          "code": "GAS",
-          "team": "Alpine F1 Team",
-          "q1": "1:35.969",
-          "q2": "1:35.080"
-        },
-        {
-          "pos": 12,
-          "number": "27",
-          "driver": "Nico Hülkenberg",
-          "code": "HUL",
-          "team": "Audi",
-          "q1": "1:35.704",
-          "q2": "1:35.158"
-        },
-        {
-          "pos": 13,
-          "number": "5",
-          "driver": "Gabriel Bortoleto",
-          "code": "BOR",
-          "team": "Audi",
-          "q1": "1:35.632",
-          "q2": "1:35.691"
-        },
-        {
-          "pos": 14,
-          "number": "43",
-          "driver": "Franco Colapinto",
-          "code": "COL",
-          "team": "Alpine F1 Team",
-          "q1": "1:35.898",
-          "q2": "1:35.722"
-        },
-        {
-          "pos": 15,
-          "number": "14",
-          "driver": "Fernando Alonso",
-          "code": "ALO",
-          "team": "Aston Martin",
-          "q1": "1:36.240",
-          "q2": "1:35.818"
-        },
-        {
-          "pos": 16,
-          "number": "87",
-          "driver": "Oliver Bearman",
-          "code": "BEA",
-          "team": "Haas F1 Team",
-          "q1": "1:36.175",
-          "q2": "1:36.031"
-        },
-        {
-          "pos": 17,
-          "number": "31",
-          "driver": "Esteban Ocon",
-          "code": "OCO",
-          "team": "Haas F1 Team",
-          "q1": "1:36.531"
-        },
-        {
-          "pos": 18,
-          "number": "18",
-          "driver": "Lance Stroll",
-          "code": "STR",
-          "team": "Aston Martin",
-          "q1": "1:36.677"
-        },
-        {
-          "pos": 19,
-          "number": "55",
-          "driver": "Carlos Sainz",
-          "code": "SAI",
-          "team": "Williams",
-          "q1": "1:36.770"
-        },
-        {
-          "pos": 20,
-          "number": "23",
-          "driver": "Alexander Albon",
-          "code": "ALB",
-          "team": "Williams",
-          "q1": "1:36.967"
-        },
-        {
-          "pos": 21,
-          "number": "11",
-          "driver": "Sergio Pérez",
-          "code": "PER",
-          "team": "Cadillac F1 Team",
-          "q1": "1:37.433"
-        },
-        {
-          "pos": 22,
-          "number": "77",
-          "driver": "Valtteri Bottas",
-          "code": "BOT",
-          "team": "Cadillac F1 Team",
-          "q1": "1:37.523"
-        }
-      ],
-      "videos": [
-        {
-          "videoId": "jj1bvsUBueg",
-          "title": "F1, gli highlights delle qualifiche del GP degli USA, in Texas ad Austin",
-          "thumbnailUrl": "https://i.ytimg.com/vi/jj1bvsUBueg/hqdefault.jpg",
-          "publishedAt": "2026-10-24T22:40:34+00:00",
-          "source": "Sky Sport F1",
-          "duration": "2:40"
-        },
-        {
-          "videoId": "EQ74or790IM",
-          "title": "Qualifying Highlights | 2026 United States Grand Prix",
-          "thumbnailUrl": "https://i.ytimg.com/vi/EQ74or790IM/hqdefault.jpg",
-          "publishedAt": "2026-10-24T22:33:51+00:00",
-          "source": "Formula 1",
-          "duration": "8:01"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558565",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Lazio - Parma",
-      "session": "match",
-      "startsAt": "2026-10-24T18:45:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "110",
-        "name": "SS Lazio",
-        "shortName": "Lazio",
-        "logoUrl": "https://crests.football-data.org/110.png"
-      },
-      "awayTeam": {
-        "id": "112",
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "logoUrl": "https://crests.football-data.org/112.png"
-      },
-      "homeScore": 2,
-      "awayScore": 1,
-      "videos": [
-        {
-          "videoId": "St9EORM7F0o",
-          "title": "Lazio-Parma 2-1: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/St9EORM7F0o/hqdefault.jpg",
-          "publishedAt": "2026-10-24T23:41:09+00:00",
-          "source": "Sky Sport",
-          "duration": "3:16"
-        },
-        {
-          "videoId": "VEAazaiBVd0",
-          "title": "TAYLOR per i 3 PUNTI, LAZIO ancora CAPOLISTA: Lazio-Parma 2-1 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/VEAazaiBVd0/hqdefault.jpg",
-          "publishedAt": "2026-10-24T23:45:09+00:00",
-          "source": "DAZN",
-          "duration": "3:33"
         }
       ]
     }

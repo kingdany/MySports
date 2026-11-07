@@ -1,66 +1,6 @@
 {
-  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
+  "generatedAt": "2026-11-07T21:46:09.8979463+00:00",
   "events": [
-    {
-      "id": "serie-a-2026-27-558535",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Parma - Bologna",
-      "session": "match",
-      "startsAt": "2026-11-07T17:00:00+00:00",
-      "status": "live",
-      "homeTeam": {
-        "id": "112",
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "logoUrl": "https://crests.football-data.org/112.png"
-      },
-      "awayTeam": {
-        "id": "103",
-        "name": "Bologna FC 1909",
-        "shortName": "Bologna",
-        "logoUrl": "https://crests.football-data.org/103.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "f1-2026-20-qualifying",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "qualifying",
-      "startsAt": "2026-11-07T18:00:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "scheduled",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558531",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Roma - Sassuolo",
-      "session": "match",
-      "startsAt": "2026-11-07T19:45:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "100",
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "logoUrl": "https://crests.football-data.org/100.png"
-      },
-      "awayTeam": {
-        "id": "471",
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "logoUrl": "https://crests.football-data.org/471.png"
-      },
-      "videos": []
-    },
     {
       "id": "serie-a-2026-27-558533",
       "competition": "serie-a",
@@ -312,6 +252,29 @@
         "name": "AS Roma",
         "shortName": "Roma",
         "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558527",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Napoli - Torino",
+      "session": "match",
+      "startsAt": "2026-11-21T19:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "586",
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "logoUrl": "https://crests.football-data.org/586.png"
       },
       "videos": []
     }
