@@ -1,66 +1,6 @@
 {
-  "generatedAt": "2026-11-07T10:00:14.7930821+00:00",
+  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
   "events": [
-    {
-      "id": "serie-a-2026-27-558532",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Torino - Lecce",
-      "session": "match",
-      "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "586",
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "logoUrl": "https://crests.football-data.org/586.png"
-      },
-      "awayTeam": {
-        "id": "5890",
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "logoUrl": "https://crests.football-data.org/5890.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558534",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Cagliari - Frosinone",
-      "session": "match",
-      "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "104",
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "logoUrl": "https://crests.football-data.org/104.png"
-      },
-      "awayTeam": {
-        "id": "470",
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "logoUrl": "https://crests.football-data.org/470.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "f1-2026-20-fp3",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "fp3",
-      "startsAt": "2026-11-07T14:30:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "scheduled",
-      "videos": []
-    },
     {
       "id": "serie-a-2026-27-558535",
       "competition": "serie-a",
@@ -69,7 +9,7 @@
       "title": "Parma - Bologna",
       "session": "match",
       "startsAt": "2026-11-07T17:00:00+00:00",
-      "status": "scheduled",
+      "status": "live",
       "homeTeam": {
         "id": "112",
         "name": "Parma Calcio 1913",
@@ -304,6 +244,75 @@
       "city": "Las Vegas",
       "country": "USA",
       "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558525",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Como - Cagliari",
+      "session": "match",
+      "startsAt": "2026-11-21T14:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "awayTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558528",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Lazio - Lecce",
+      "session": "match",
+      "startsAt": "2026-11-21T14:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "awayTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558526",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Parma - Roma",
+      "session": "match",
+      "startsAt": "2026-11-21T17:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
       "videos": []
     }
   ]

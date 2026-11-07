@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-07T10:00:14.7930821+00:00",
+  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -4274,7 +4274,7 @@
       "title": "Torino - Lecce",
       "session": "match",
       "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "586",
         "name": "Torino FC",
@@ -4287,6 +4287,8 @@
         "shortName": "Lecce",
         "logoUrl": "https://crests.football-data.org/5890.png"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "videos": []
     },
     {
@@ -4297,7 +4299,7 @@
       "title": "Cagliari - Frosinone",
       "session": "match",
       "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "104",
         "name": "Cagliari Calcio",
@@ -4310,6 +4312,8 @@
         "shortName": "Frosinone",
         "logoUrl": "https://crests.football-data.org/470.png"
       },
+      "homeScore": 1,
+      "awayScore": 0,
       "videos": []
     },
     {
@@ -4320,7 +4324,7 @@
       "title": "Parma - Bologna",
       "session": "match",
       "startsAt": "2026-11-07T17:00:00+00:00",
-      "status": "scheduled",
+      "status": "live",
       "homeTeam": {
         "id": "112",
         "name": "Parma Calcio 1913",
@@ -10951,10 +10955,10 @@
           "code": "FRO",
           "points": 20,
           "wins": 6,
-          "played": 10,
+          "played": 11,
           "draws": 2,
-          "losses": 2,
-          "goalDifference": 10,
+          "losses": 3,
+          "goalDifference": 9,
           "zone": "conference"
         },
         {
@@ -10972,6 +10976,18 @@
         {
           "pos": 8,
           "posText": "8",
+          "name": "Cagliari",
+          "code": "CAG",
+          "points": 16,
+          "wins": 5,
+          "played": 11,
+          "draws": 1,
+          "losses": 5,
+          "goalDifference": -5
+        },
+        {
+          "pos": 9,
+          "posText": "9",
           "name": "Napoli",
           "code": "NAP",
           "points": 14,
@@ -10982,8 +10998,8 @@
           "goalDifference": 4
         },
         {
-          "pos": 9,
-          "posText": "9",
+          "pos": 10,
+          "posText": "10",
           "name": "Bologna",
           "code": "BOL",
           "points": 14,
@@ -10994,20 +11010,20 @@
           "goalDifference": 1
         },
         {
-          "pos": 10,
-          "posText": "10",
+          "pos": 11,
+          "posText": "11",
           "name": "Torino",
           "code": "TOR",
-          "points": 13,
+          "points": 14,
           "wins": 4,
-          "played": 10,
-          "draws": 1,
+          "played": 11,
+          "draws": 2,
           "losses": 5,
           "goalDifference": -2
         },
         {
-          "pos": 11,
-          "posText": "11",
+          "pos": 12,
+          "posText": "12",
           "name": "Genoa",
           "code": "GEN",
           "points": 13,
@@ -11016,18 +11032,6 @@
           "draws": 1,
           "losses": 5,
           "goalDifference": -4
-        },
-        {
-          "pos": 12,
-          "posText": "12",
-          "name": "Cagliari",
-          "code": "CAG",
-          "points": 13,
-          "wins": 4,
-          "played": 10,
-          "draws": 1,
-          "losses": 5,
-          "goalDifference": -6
         },
         {
           "pos": 13,
@@ -11046,10 +11050,10 @@
           "posText": "14",
           "name": "Lecce",
           "code": "USL",
-          "points": 9,
+          "points": 10,
           "wins": 3,
-          "played": 10,
-          "draws": 0,
+          "played": 11,
+          "draws": 1,
           "losses": 7,
           "goalDifference": -10
         },

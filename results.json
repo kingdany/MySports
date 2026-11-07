@@ -1,6 +1,70 @@
 {
-  "generatedAt": "2026-11-07T10:00:14.7930821+00:00",
+  "generatedAt": "2026-11-07T17:45:01.2353496+00:00",
   "events": [
+    {
+      "id": "f1-2026-20-fp3",
+      "competition": "f1",
+      "season": "2026",
+      "round": 20,
+      "title": "Brazilian Grand Prix",
+      "session": "fp3",
+      "startsAt": "2026-11-07T14:30:00+00:00",
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558532",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Torino - Lecce",
+      "session": "match",
+      "startsAt": "2026-11-07T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "586",
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "logoUrl": "https://crests.football-data.org/586.png"
+      },
+      "awayTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558534",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Cagliari - Frosinone",
+      "session": "match",
+      "startsAt": "2026-11-07T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "awayTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "videos": []
+    },
     {
       "id": "serie-a-2026-27-558537",
       "competition": "serie-a",
@@ -2749,146 +2813,6 @@
           "publishedAt": "2026-10-24T23:45:09+00:00",
           "source": "DAZN",
           "duration": "3:33"
-        }
-      ]
-    },
-    {
-      "id": "f1-2026-18-fp3",
-      "competition": "f1",
-      "season": "2026",
-      "round": 18,
-      "title": "United States Grand Prix",
-      "session": "fp3",
-      "startsAt": "2026-10-24T17:30:00+00:00",
-      "venue": "Circuit of the Americas",
-      "city": "Austin",
-      "country": "USA",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558564",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Napoli - Roma",
-      "session": "match",
-      "startsAt": "2026-10-24T16:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "113",
-        "name": "SSC Napoli",
-        "shortName": "Napoli",
-        "logoUrl": "https://crests.football-data.org/113.png"
-      },
-      "awayTeam": {
-        "id": "100",
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "logoUrl": "https://crests.football-data.org/100.png"
-      },
-      "homeScore": 3,
-      "awayScore": 3,
-      "videos": [
-        {
-          "videoId": "7vM8CPK1XXE",
-          "title": "Napoli-Roma 3-3: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/7vM8CPK1XXE/hqdefault.jpg",
-          "publishedAt": "2026-10-24T20:59:11+00:00",
-          "source": "Sky Sport",
-          "duration": "3:30"
-        },
-        {
-          "videoId": "dLMRZScxQb0",
-          "title": "Doppio McTominay-BALERDI nel match più bello: Napoli-Roma 3-3 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/dLMRZScxQb0/hqdefault.jpg",
-          "publishedAt": "2026-10-24T20:57:10+00:00",
-          "source": "DAZN",
-          "duration": "4:37"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558560",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Cagliari - Bologna",
-      "session": "match",
-      "startsAt": "2026-10-24T13:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "104",
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "logoUrl": "https://crests.football-data.org/104.png"
-      },
-      "awayTeam": {
-        "id": "103",
-        "name": "Bologna FC 1909",
-        "shortName": "Bologna",
-        "logoUrl": "https://crests.football-data.org/103.png"
-      },
-      "homeScore": 0,
-      "awayScore": 2,
-      "videos": [
-        {
-          "videoId": "wjwEe7-K_QU",
-          "title": "Cagliari-Bologna 0-2: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/wjwEe7-K_QU/hqdefault.jpg",
-          "publishedAt": "2026-10-24T17:54:11+00:00",
-          "source": "Sky Sport",
-          "duration": "2:31"
-        },
-        {
-          "videoId": "8HoX0xVoTGg",
-          "title": "CASALE e BERNA fanno volare il BOLOGNA: Cagliari-Bologna 0-2 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/8HoX0xVoTGg/hqdefault.jpg",
-          "publishedAt": "2026-10-24T18:00:09+00:00",
-          "source": "DAZN",
-          "duration": "2:53"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558561",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Como - Sassuolo",
-      "session": "match",
-      "startsAt": "2026-10-24T13:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "7397",
-        "name": "Como 1907",
-        "shortName": "Como",
-        "logoUrl": "https://crests.football-data.org/7397.png"
-      },
-      "awayTeam": {
-        "id": "471",
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "logoUrl": "https://crests.football-data.org/471.png"
-      },
-      "homeScore": 2,
-      "awayScore": 0,
-      "videos": [
-        {
-          "videoId": "P0MwMgw6K1k",
-          "title": "Como-Sassuolo 2-0: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/P0MwMgw6K1k/hqdefault.jpg",
-          "publishedAt": "2026-10-24T17:54:09+00:00",
-          "source": "Sky Sport",
-          "duration": "2:50"
-        },
-        {
-          "videoId": "pLv0MLO600E",
-          "title": "Un super DOUVIKAS trascina il COMO: Como-Sassuolo 2-0 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/pLv0MLO600E/hqdefault.jpg",
-          "publishedAt": "2026-10-24T18:00:09+00:00",
-          "source": "DAZN",
-          "duration": "3:19"
         }
       ]
     }
