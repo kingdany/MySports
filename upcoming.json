@@ -1,43 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:21:18.6368795+00:00",
+  "generatedAt": "2026-11-07T00:53:59.9016726+00:00",
   "events": [
-    {
-      "id": "f1-2026-20-fp2",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "fp2",
-      "startsAt": "2026-11-06T19:00:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "live",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558537",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Venezia - Udinese",
-      "session": "match",
-      "startsAt": "2026-11-06T19:45:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "454",
-        "name": "Venezia FC",
-        "shortName": "Venezia",
-        "logoUrl": "https://crests.football-data.org/454.png"
-      },
-      "awayTeam": {
-        "id": "115",
-        "name": "Udinese Calcio",
-        "shortName": "Udinese",
-        "logoUrl": "https://crests.football-data.org/115.png"
-      },
-      "videos": []
-    },
     {
       "id": "serie-a-2026-27-558532",
       "competition": "serie-a",
@@ -309,6 +272,20 @@
       "title": "Las Vegas Grand Prix",
       "session": "fp2",
       "startsAt": "2026-11-20T04:00:00+00:00",
+      "venue": "Las Vegas Strip Street Circuit",
+      "city": "Las Vegas",
+      "country": "USA",
+      "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "f1-2026-21-fp3",
+      "competition": "f1",
+      "season": "2026",
+      "round": 21,
+      "title": "Las Vegas Grand Prix",
+      "session": "fp3",
+      "startsAt": "2026-11-21T00:30:00+00:00",
       "venue": "Las Vegas Strip Street Circuit",
       "city": "Las Vegas",
       "country": "USA",

@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-11-06T19:21:18.6368795+00:00",
+  "generatedAt": "2026-11-07T00:53:59.9016726+00:00",
   "events": [
+    {
+      "id": "serie-a-2026-27-558537",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Venezia - Udinese",
+      "session": "match",
+      "startsAt": "2026-11-06T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "454",
+        "name": "Venezia FC",
+        "shortName": "Venezia",
+        "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "awayTeam": {
+        "id": "115",
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "logoUrl": "https://crests.football-data.org/115.png"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "aANz9bzu_PE",
+          "title": "Venezia-Udinese 2-1: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/aANz9bzu_PE/hqdefault.jpg",
+          "publishedAt": "2026-11-07T00:41:11+00:00",
+          "source": "Sky Sport",
+          "duration": "2:25"
+        },
+        {
+          "videoId": "CMdE_LzAHWA",
+          "title": "KIKE PEREZ la svolta con una magia vera: Venezia-Udinese 2-1 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/CMdE_LzAHWA/hqdefault.jpg",
+          "publishedAt": "2026-11-07T00:42:08+00:00",
+          "source": "DAZN",
+          "duration": "4:07"
+        }
+      ]
+    },
+    {
+      "id": "f1-2026-20-fp2",
+      "competition": "f1",
+      "season": "2026",
+      "round": 20,
+      "title": "Brazilian Grand Prix",
+      "session": "fp2",
+      "startsAt": "2026-11-06T19:00:00+00:00",
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "videos": []
+    },
     {
       "id": "f1-2026-20-fp1",
       "competition": "f1",
@@ -2835,20 +2891,6 @@
           "duration": "3:19"
         }
       ]
-    },
-    {
-      "id": "f1-2026-18-fp2",
-      "competition": "f1",
-      "season": "2026",
-      "round": 18,
-      "title": "United States Grand Prix",
-      "session": "fp2",
-      "startsAt": "2026-10-23T21:00:00+00:00",
-      "venue": "Circuit of the Americas",
-      "city": "Austin",
-      "country": "USA",
-      "status": "finished",
-      "videos": []
     }
   ]
 }

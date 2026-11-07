@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-06T19:21:18.6368795+00:00",
+  "generatedAt": "2026-11-07T00:53:59.9016726+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -4232,7 +4232,7 @@
       "title": "Venezia - Udinese",
       "session": "match",
       "startsAt": "2026-11-06T19:45:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "454",
         "name": "Venezia FC",
@@ -4245,7 +4245,26 @@
         "shortName": "Udinese",
         "logoUrl": "https://crests.football-data.org/115.png"
       },
-      "videos": []
+      "homeScore": 2,
+      "awayScore": 1,
+      "videos": [
+        {
+          "videoId": "aANz9bzu_PE",
+          "title": "Venezia-Udinese 2-1: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/aANz9bzu_PE/hqdefault.jpg",
+          "publishedAt": "2026-11-07T00:41:11+00:00",
+          "source": "Sky Sport",
+          "duration": "2:25"
+        },
+        {
+          "videoId": "CMdE_LzAHWA",
+          "title": "KIKE PEREZ la svolta con una magia vera: Venezia-Udinese 2-1 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/CMdE_LzAHWA/hqdefault.jpg",
+          "publishedAt": "2026-11-07T00:42:08+00:00",
+          "source": "DAZN",
+          "duration": "4:07"
+        }
+      ]
     },
     {
       "id": "serie-a-2026-27-558532",
@@ -11086,27 +11105,27 @@
         {
           "pos": 19,
           "posText": "19",
-          "name": "Udinese",
-          "code": "UDI",
-          "points": 5,
-          "wins": 1,
-          "played": 10,
-          "draws": 2,
-          "losses": 7,
-          "goalDifference": -12,
+          "name": "Venezia",
+          "code": "VEN",
+          "points": 6,
+          "wins": 2,
+          "played": 11,
+          "draws": 0,
+          "losses": 9,
+          "goalDifference": -13,
           "zone": "relegation"
         },
         {
           "pos": 20,
           "posText": "20",
-          "name": "Venezia",
-          "code": "VEN",
-          "points": 3,
+          "name": "Udinese",
+          "code": "UDI",
+          "points": 5,
           "wins": 1,
-          "played": 10,
-          "draws": 0,
-          "losses": 9,
-          "goalDifference": -14,
+          "played": 11,
+          "draws": 2,
+          "losses": 8,
+          "goalDifference": -13,
           "zone": "relegation"
         }
       ]
