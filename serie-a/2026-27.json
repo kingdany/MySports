@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-08T05:56:38.4520594+00:00",
+  "generatedAt": "2026-11-08T13:17:30.995281+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -4442,7 +4442,7 @@
       "title": "Napoli - Lazio",
       "session": "match",
       "startsAt": "2026-11-08T11:30:00+00:00",
-      "status": "scheduled",
+      "status": "live",
       "homeTeam": {
         "id": "113",
         "name": "SSC Napoli",
@@ -11292,6 +11292,13 @@
           "posText": "5",
           "name": "Che Adams",
           "team": "Torino",
+          "points": 4
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Davide Frattesi",
+          "team": "Lazio",
           "points": 4
         },
         {
