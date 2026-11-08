@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2026",
-  "generatedAt": "2026-11-08T13:17:30.995281+00:00",
+  "generatedAt": "2026-11-08T19:39:26.2522588+00:00",
   "events": [
     {
       "id": "f1-2026-1-fp1",
@@ -12418,8 +12418,216 @@
       "venue": "Autódromo José Carlos Pace",
       "city": "São Paulo",
       "country": "Brazil",
-      "status": "scheduled",
-      "videos": []
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Lando Norris",
+          "code": "NOR",
+          "team": "McLaren",
+          "time": "1:35:23.504",
+          "points": 25
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Max Verstappen",
+          "code": "VER",
+          "team": "Red Bull",
+          "time": "+14.602",
+          "points": 18
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Isack Hadjar",
+          "code": "HAD",
+          "team": "Red Bull",
+          "time": "+24.485",
+          "points": 15
+        },
+        {
+          "pos": 4,
+          "number": "63",
+          "driver": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "time": "+33.991",
+          "points": 12
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Andrea Kimi Antonelli",
+          "code": "ANT",
+          "team": "Mercedes",
+          "time": "+36.017",
+          "points": 10
+        },
+        {
+          "pos": 6,
+          "number": "81",
+          "driver": "Oscar Piastri",
+          "code": "PIA",
+          "team": "McLaren",
+          "time": "+56.475",
+          "points": 8
+        },
+        {
+          "pos": 7,
+          "number": "16",
+          "driver": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "time": "+1:13.586",
+          "points": 6
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Liam Lawson",
+          "code": "LAW",
+          "team": "RB F1 Team",
+          "time": "+1:15.402",
+          "points": 4
+        },
+        {
+          "pos": 9,
+          "number": "44",
+          "driver": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Ferrari",
+          "time": "+4.427",
+          "points": 2
+        },
+        {
+          "pos": 10,
+          "number": "27",
+          "driver": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Audi",
+          "time": "+17.105",
+          "points": 1
+        },
+        {
+          "pos": 11,
+          "number": "41",
+          "driver": "Arvid Lindblad",
+          "code": "LIN",
+          "team": "RB F1 Team",
+          "time": "+19.130",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Aston Martin",
+          "time": "+36.856",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "43",
+          "driver": "Franco Colapinto",
+          "code": "COL",
+          "team": "Alpine F1 Team",
+          "time": "+50.488",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Pierre Gasly",
+          "code": "GAS",
+          "team": "Alpine F1 Team",
+          "time": "+58.677",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "23",
+          "driver": "Alexander Albon",
+          "code": "ALB",
+          "team": "Williams",
+          "time": "+1:04.101",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Gabriel Bortoleto",
+          "code": "BOR",
+          "team": "Audi",
+          "time": "+1:16.420",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "87",
+          "driver": "Oliver Bearman",
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "time": "+1:26.711",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Sergio Pérez",
+          "code": "PER",
+          "team": "Cadillac F1 Team",
+          "time": "+27.120",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "55",
+          "driver": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Williams",
+          "time": "+32.463",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "51",
+          "driver": "Rafael Camara",
+          "team": "Haas F1 Team",
+          "time": "+51.715",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "18",
+          "driver": "Lance Stroll",
+          "code": "STR",
+          "team": "Aston Martin",
+          "time": "Retired",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "77",
+          "driver": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Cadillac F1 Team",
+          "time": "Did not start",
+          "points": 0
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "NTZAcJnw9YU",
+          "title": "F1, gli highlights del GP del Brasile",
+          "thumbnailUrl": "https://i.ytimg.com/vi/NTZAcJnw9YU/hqdefault.jpg",
+          "publishedAt": "2026-11-08T19:23:53+00:00",
+          "source": "Sky Sport F1",
+          "duration": "3:11"
+        }
+      ]
     },
     {
       "id": "f1-2026-21-fp1",
@@ -12643,7 +12851,7 @@
           "name": "Andrea Kimi Antonelli",
           "code": "ANT",
           "team": "Mercedes",
-          "points": 380,
+          "points": 390,
           "wins": 9
         },
         {
@@ -12652,26 +12860,26 @@
           "name": "Max Verstappen",
           "code": "VER",
           "team": "Red Bull",
-          "points": 261,
+          "points": 279,
           "wins": 3
         },
         {
           "pos": 3,
           "posText": "3",
-          "name": "Lewis Hamilton",
-          "code": "HAM",
-          "team": "Ferrari",
-          "points": 259,
-          "wins": 1
+          "name": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "points": 262,
+          "wins": 3
         },
         {
           "pos": 4,
           "posText": "4",
-          "name": "George Russell",
-          "code": "RUS",
-          "team": "Mercedes",
-          "points": 250,
-          "wins": 3
+          "name": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Ferrari",
+          "points": 261,
+          "wins": 1
         },
         {
           "pos": 5,
@@ -12679,7 +12887,7 @@
           "name": "Charles Leclerc",
           "code": "LEC",
           "team": "Ferrari",
-          "points": 245,
+          "points": 251,
           "wins": 1
         },
         {
@@ -12688,8 +12896,8 @@
           "name": "Lando Norris",
           "code": "NOR",
           "team": "McLaren",
-          "points": 221,
-          "wins": 2
+          "points": 246,
+          "wins": 3
         },
         {
           "pos": 7,
@@ -12697,7 +12905,7 @@
           "name": "Oscar Piastri",
           "code": "PIA",
           "team": "McLaren",
-          "points": 144,
+          "points": 152,
           "wins": 0
         },
         {
@@ -12706,7 +12914,7 @@
           "name": "Isack Hadjar",
           "code": "HAD",
           "team": "Red Bull",
-          "points": 107,
+          "points": 122,
           "wins": 0
         },
         {
@@ -12715,7 +12923,7 @@
           "name": "Liam Lawson",
           "code": "LAW",
           "team": "RB F1 Team / Red Bull",
-          "points": 83,
+          "points": 87,
           "wins": 0
         },
         {
@@ -12769,7 +12977,7 @@
           "name": "Nico Hülkenberg",
           "code": "HUL",
           "team": "Audi",
-          "points": 13,
+          "points": 14,
           "wins": 0
         },
         {
@@ -12871,35 +13079,35 @@
           "pos": 1,
           "posText": "1",
           "name": "Mercedes",
-          "points": 630,
+          "points": 652,
           "wins": 12
         },
         {
           "pos": 2,
           "posText": "2",
           "name": "Ferrari",
-          "points": 504,
+          "points": 512,
           "wins": 2
         },
         {
           "pos": 3,
           "posText": "3",
           "name": "Red Bull",
-          "points": 382,
+          "points": 415,
           "wins": 3
         },
         {
           "pos": 4,
           "posText": "4",
           "name": "McLaren",
-          "points": 365,
-          "wins": 2
+          "points": 398,
+          "wins": 3
         },
         {
           "pos": 5,
           "posText": "5",
           "name": "RB F1 Team",
-          "points": 108,
+          "points": 112,
           "wins": 0
         },
         {
@@ -12920,7 +13128,7 @@
           "pos": 8,
           "posText": "8",
           "name": "Audi",
-          "points": 27,
+          "points": 28,
           "wins": 0
         },
         {

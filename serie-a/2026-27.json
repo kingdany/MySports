@@ -1,7 +1,7 @@
 {
   "competition": "serie-a",
   "season": "2026-27",
-  "generatedAt": "2026-11-08T13:17:30.995281+00:00",
+  "generatedAt": "2026-11-08T19:39:26.2522588+00:00",
   "events": [
     {
       "id": "serie-a-2026-27-558629",
@@ -4442,7 +4442,7 @@
       "title": "Napoli - Lazio",
       "session": "match",
       "startsAt": "2026-11-08T11:30:00+00:00",
-      "status": "live",
+      "status": "finished",
       "homeTeam": {
         "id": "113",
         "name": "SSC Napoli",
@@ -4455,6 +4455,8 @@
         "shortName": "Lazio",
         "logoUrl": "https://crests.football-data.org/110.png"
       },
+      "homeScore": 1,
+      "awayScore": 1,
       "videos": []
     },
     {
@@ -4465,7 +4467,7 @@
       "title": "Genoa - Milan",
       "session": "match",
       "startsAt": "2026-11-08T14:00:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "107",
         "name": "Genoa CFC",
@@ -4478,6 +4480,8 @@
         "shortName": "Milan",
         "logoUrl": "https://crests.football-data.org/98.png"
       },
+      "homeScore": 1,
+      "awayScore": 2,
       "videos": []
     },
     {
@@ -4488,7 +4492,7 @@
       "title": "Monza - Atalanta",
       "session": "match",
       "startsAt": "2026-11-08T14:00:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "5911",
         "name": "AC Monza",
@@ -4501,6 +4505,8 @@
         "shortName": "Atalanta",
         "logoUrl": "https://crests.football-data.org/102.png"
       },
+      "homeScore": 0,
+      "awayScore": 1,
       "videos": []
     },
     {
@@ -4511,7 +4517,7 @@
       "title": "Inter - Como",
       "session": "match",
       "startsAt": "2026-11-08T17:00:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeam": {
         "id": "108",
         "name": "FC Internazionale Milano",
@@ -4524,6 +4530,8 @@
         "shortName": "Como",
         "logoUrl": "https://crests.football-data.org/7397.png"
       },
+      "homeScore": 2,
+      "awayScore": 0,
       "videos": []
     },
     {
@@ -10960,10 +10968,10 @@
           "posText": "1",
           "name": "Lazio",
           "code": "LAZ",
-          "points": 28,
+          "points": 29,
           "wins": 9,
-          "played": 10,
-          "draws": 1,
+          "played": 11,
+          "draws": 2,
           "losses": 0,
           "goalDifference": 16,
           "zone": "champions"
@@ -10971,6 +10979,19 @@
         {
           "pos": 2,
           "posText": "2",
+          "name": "Inter",
+          "code": "INT",
+          "points": 28,
+          "wins": 9,
+          "played": 11,
+          "draws": 1,
+          "losses": 1,
+          "goalDifference": 15,
+          "zone": "champions"
+        },
+        {
+          "pos": 3,
+          "posText": "3",
           "name": "Roma",
           "code": "ROM",
           "points": 27,
@@ -10982,27 +11003,14 @@
           "zone": "champions"
         },
         {
-          "pos": 3,
-          "posText": "3",
-          "name": "Inter",
-          "code": "INT",
-          "points": 25,
-          "wins": 8,
-          "played": 10,
-          "draws": 1,
-          "losses": 1,
-          "goalDifference": 13,
-          "zone": "champions"
-        },
-        {
           "pos": 4,
           "posText": "4",
-          "name": "Como",
-          "code": "COM",
-          "points": 23,
+          "name": "Milan",
+          "code": "MIL",
+          "points": 24,
           "wins": 7,
-          "played": 10,
-          "draws": 2,
+          "played": 11,
+          "draws": 3,
           "losses": 1,
           "goalDifference": 10,
           "zone": "champions"
@@ -11010,14 +11018,14 @@
         {
           "pos": 5,
           "posText": "5",
-          "name": "Milan",
-          "code": "MIL",
-          "points": 21,
-          "wins": 6,
-          "played": 10,
-          "draws": 3,
-          "losses": 1,
-          "goalDifference": 9,
+          "name": "Como",
+          "code": "COM",
+          "points": 23,
+          "wins": 7,
+          "played": 11,
+          "draws": 2,
+          "losses": 2,
+          "goalDifference": 8,
           "zone": "europa"
         },
         {
@@ -11074,10 +11082,10 @@
           "posText": "10",
           "name": "Napoli",
           "code": "NAP",
-          "points": 14,
+          "points": 15,
           "wins": 4,
-          "played": 10,
-          "draws": 2,
+          "played": 11,
+          "draws": 3,
           "losses": 4,
           "goalDifference": 4
         },
@@ -11096,26 +11104,26 @@
         {
           "pos": 12,
           "posText": "12",
-          "name": "Genoa",
-          "code": "GEN",
-          "points": 13,
+          "name": "Atalanta",
+          "code": "ATA",
+          "points": 14,
           "wins": 4,
-          "played": 10,
-          "draws": 1,
+          "played": 11,
+          "draws": 2,
           "losses": 5,
-          "goalDifference": -4
+          "goalDifference": -3
         },
         {
           "pos": 13,
           "posText": "13",
-          "name": "Atalanta",
-          "code": "ATA",
-          "points": 11,
-          "wins": 3,
-          "played": 10,
-          "draws": 2,
-          "losses": 5,
-          "goalDifference": -4
+          "name": "Genoa",
+          "code": "GEN",
+          "points": 13,
+          "wins": 4,
+          "played": 11,
+          "draws": 1,
+          "losses": 6,
+          "goalDifference": -5
         },
         {
           "pos": 14,
@@ -11172,10 +11180,10 @@
           "code": "MON",
           "points": 7,
           "wins": 2,
-          "played": 10,
+          "played": 11,
           "draws": 1,
-          "losses": 7,
-          "goalDifference": -7,
+          "losses": 8,
+          "goalDifference": -8,
           "zone": "relegation"
         },
         {
@@ -11236,119 +11244,49 @@
           "posText": "3",
           "name": "Nikola Krstović",
           "team": "Atalanta",
-          "points": 6
-        },
-        {
-          "pos": 4,
-          "posText": "4",
-          "name": "Anastasios Douvikas",
-          "team": "Como",
-          "points": 5
-        },
-        {
-          "pos": 4,
-          "posText": "4",
-          "name": "Adrien Rabiot",
-          "team": "Milan",
-          "points": 5
+          "points": 7
         },
         {
           "pos": 4,
           "posText": "4",
           "name": "Marcus Thuram-Ulien",
           "team": "Inter",
-          "points": 5
-        },
-        {
-          "pos": 4,
-          "posText": "4",
-          "name": "Daniel Maldini",
-          "team": "Cagliari",
-          "points": 5
-        },
-        {
-          "pos": 4,
-          "posText": "4",
-          "name": "Giacomo Calò",
-          "team": "Frosinone",
-          "points": 5
+          "points": 6
         },
         {
           "pos": 5,
           "posText": "5",
-          "name": "Kevin De Bruyne",
-          "team": "Napoli",
-          "points": 4
+          "name": "Anastasios Douvikas",
+          "team": "Como",
+          "points": 5
         },
         {
           "pos": 5,
           "posText": "5",
           "name": "Alphadjo Cisse",
           "team": "Milan",
-          "points": 4
+          "points": 5
         },
         {
           "pos": 5,
           "posText": "5",
-          "name": "Che Adams",
-          "team": "Torino",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Davide Frattesi",
-          "team": "Lazio",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Rodrigo Mora",
-          "team": "Roma",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Milutin Osmajić",
-          "team": "Genoa",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Lautaro Martínez",
-          "team": "Inter",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Franco Mastantuono",
-          "team": "Fiorentina",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Tijjani Noslin",
-          "team": "Lazio",
-          "points": 4
-        },
-        {
-          "pos": 5,
-          "posText": "5",
-          "name": "Diego Moreira",
+          "name": "Adrien Rabiot",
           "team": "Milan",
-          "points": 4
+          "points": 5
         },
         {
           "pos": 5,
           "posText": "5",
-          "name": "Gustav Isaksen",
-          "team": "Lazio",
-          "points": 4
+          "name": "Daniel Maldini",
+          "team": "Cagliari",
+          "points": 5
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Giacomo Calò",
+          "team": "Frosinone",
+          "points": 5
         }
       ]
     }

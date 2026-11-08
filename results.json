@@ -1,6 +1,328 @@
 {
-  "generatedAt": "2026-11-08T13:17:30.995281+00:00",
+  "generatedAt": "2026-11-08T19:39:26.2522588+00:00",
   "events": [
+    {
+      "id": "f1-2026-20-race",
+      "competition": "f1",
+      "season": "2026",
+      "round": 20,
+      "title": "Brazilian Grand Prix",
+      "session": "race",
+      "startsAt": "2026-11-08T17:00:00+00:00",
+      "venue": "Autódromo José Carlos Pace",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "1",
+          "driver": "Lando Norris",
+          "code": "NOR",
+          "team": "McLaren",
+          "time": "1:35:23.504",
+          "points": 25
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Max Verstappen",
+          "code": "VER",
+          "team": "Red Bull",
+          "time": "+14.602",
+          "points": 18
+        },
+        {
+          "pos": 3,
+          "number": "6",
+          "driver": "Isack Hadjar",
+          "code": "HAD",
+          "team": "Red Bull",
+          "time": "+24.485",
+          "points": 15
+        },
+        {
+          "pos": 4,
+          "number": "63",
+          "driver": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "time": "+33.991",
+          "points": 12
+        },
+        {
+          "pos": 5,
+          "number": "12",
+          "driver": "Andrea Kimi Antonelli",
+          "code": "ANT",
+          "team": "Mercedes",
+          "time": "+36.017",
+          "points": 10
+        },
+        {
+          "pos": 6,
+          "number": "81",
+          "driver": "Oscar Piastri",
+          "code": "PIA",
+          "team": "McLaren",
+          "time": "+56.475",
+          "points": 8
+        },
+        {
+          "pos": 7,
+          "number": "16",
+          "driver": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "time": "+1:13.586",
+          "points": 6
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Liam Lawson",
+          "code": "LAW",
+          "team": "RB F1 Team",
+          "time": "+1:15.402",
+          "points": 4
+        },
+        {
+          "pos": 9,
+          "number": "44",
+          "driver": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Ferrari",
+          "time": "+4.427",
+          "points": 2
+        },
+        {
+          "pos": 10,
+          "number": "27",
+          "driver": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Audi",
+          "time": "+17.105",
+          "points": 1
+        },
+        {
+          "pos": 11,
+          "number": "41",
+          "driver": "Arvid Lindblad",
+          "code": "LIN",
+          "team": "RB F1 Team",
+          "time": "+19.130",
+          "points": 0
+        },
+        {
+          "pos": 12,
+          "number": "14",
+          "driver": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Aston Martin",
+          "time": "+36.856",
+          "points": 0
+        },
+        {
+          "pos": 13,
+          "number": "43",
+          "driver": "Franco Colapinto",
+          "code": "COL",
+          "team": "Alpine F1 Team",
+          "time": "+50.488",
+          "points": 0
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Pierre Gasly",
+          "code": "GAS",
+          "team": "Alpine F1 Team",
+          "time": "+58.677",
+          "points": 0
+        },
+        {
+          "pos": 15,
+          "number": "23",
+          "driver": "Alexander Albon",
+          "code": "ALB",
+          "team": "Williams",
+          "time": "+1:04.101",
+          "points": 0
+        },
+        {
+          "pos": 16,
+          "number": "5",
+          "driver": "Gabriel Bortoleto",
+          "code": "BOR",
+          "team": "Audi",
+          "time": "+1:16.420",
+          "points": 0
+        },
+        {
+          "pos": 17,
+          "number": "87",
+          "driver": "Oliver Bearman",
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "time": "+1:26.711",
+          "points": 0
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Sergio Pérez",
+          "code": "PER",
+          "team": "Cadillac F1 Team",
+          "time": "+27.120",
+          "points": 0
+        },
+        {
+          "pos": 19,
+          "number": "55",
+          "driver": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Williams",
+          "time": "+32.463",
+          "points": 0
+        },
+        {
+          "pos": 20,
+          "number": "51",
+          "driver": "Rafael Camara",
+          "team": "Haas F1 Team",
+          "time": "+51.715",
+          "points": 0
+        },
+        {
+          "pos": 21,
+          "number": "18",
+          "driver": "Lance Stroll",
+          "code": "STR",
+          "team": "Aston Martin",
+          "time": "Retired",
+          "points": 0
+        },
+        {
+          "pos": 22,
+          "number": "77",
+          "driver": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Cadillac F1 Team",
+          "time": "Did not start",
+          "points": 0
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "NTZAcJnw9YU",
+          "title": "F1, gli highlights del GP del Brasile",
+          "thumbnailUrl": "https://i.ytimg.com/vi/NTZAcJnw9YU/hqdefault.jpg",
+          "publishedAt": "2026-11-08T19:23:53+00:00",
+          "source": "Sky Sport F1",
+          "duration": "3:11"
+        }
+      ]
+    },
+    {
+      "id": "serie-a-2026-27-558530",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Inter - Como",
+      "session": "match",
+      "startsAt": "2026-11-08T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "awayTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558536",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Genoa - Milan",
+      "session": "match",
+      "startsAt": "2026-11-08T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "107",
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "logoUrl": "https://crests.football-data.org/107.png"
+      },
+      "awayTeam": {
+        "id": "98",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "logoUrl": "https://crests.football-data.org/98.png"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558538",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Monza - Atalanta",
+      "session": "match",
+      "startsAt": "2026-11-08T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "awayTeam": {
+        "id": "102",
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "logoUrl": "https://crests.football-data.org/102.png"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558533",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Napoli - Lazio",
+      "session": "match",
+      "startsAt": "2026-11-08T11:30:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "113",
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "logoUrl": "https://crests.football-data.org/113.png"
+      },
+      "awayTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "videos": []
+    },
     {
       "id": "serie-a-2026-27-558531",
       "competition": "serie-a",
@@ -2664,132 +2986,6 @@
           "publishedAt": "2026-10-26T00:43:19+00:00",
           "source": "DAZN",
           "duration": "3:46"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558566",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Lecce - Juventus",
-      "session": "match",
-      "startsAt": "2026-10-25T17:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "5890",
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "logoUrl": "https://crests.football-data.org/5890.png"
-      },
-      "awayTeam": {
-        "id": "109",
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "logoUrl": "https://crests.football-data.org/109.png"
-      },
-      "homeScore": 0,
-      "awayScore": 2,
-      "videos": [
-        {
-          "videoId": "1vzCdIe1T7w",
-          "title": "Lecce-Juventus 0-2: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/1vzCdIe1T7w/hqdefault.jpg",
-          "publishedAt": "2026-10-25T22:00:07+00:00",
-          "source": "Sky Sport",
-          "duration": "2:31"
-        },
-        {
-          "videoId": "Cys0f67Z6DU",
-          "title": "La JUVE RIPARTE con MCKENNIE e DOUGLAS LUIZ: Lecce-Juventus 0-2 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/Cys0f67Z6DU/hqdefault.jpg",
-          "publishedAt": "2026-10-25T22:00:08+00:00",
-          "source": "DAZN",
-          "duration": "3:48"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558562",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Atalanta - Frosinone",
-      "session": "match",
-      "startsAt": "2026-10-25T14:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "102",
-        "name": "Atalanta BC",
-        "shortName": "Atalanta",
-        "logoUrl": "https://crests.football-data.org/102.png"
-      },
-      "awayTeam": {
-        "id": "470",
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "logoUrl": "https://crests.football-data.org/470.png"
-      },
-      "homeScore": 4,
-      "awayScore": 4,
-      "videos": [
-        {
-          "videoId": "L2Q1TlwKjUU",
-          "title": "Atalanta-Frosinone 4-4: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/L2Q1TlwKjUU/hqdefault.jpg",
-          "publishedAt": "2026-10-25T19:00:10+00:00",
-          "source": "Sky Sport",
-          "duration": "4:08"
-        },
-        {
-          "videoId": "554i10oMWY8",
-          "title": "8 GOL in un botta e risposta FOLLE a Bergamo: Atalanta-Frosinone 4-4 | Serie A Enilive | DAZN",
-          "thumbnailUrl": "https://i.ytimg.com/vi/554i10oMWY8/hqdefault.jpg",
-          "publishedAt": "2026-10-25T18:57:08+00:00",
-          "source": "DAZN",
-          "duration": "4:00"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558568",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Genoa - Venezia",
-      "session": "match",
-      "startsAt": "2026-10-25T14:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "107",
-        "name": "Genoa CFC",
-        "shortName": "Genoa",
-        "logoUrl": "https://crests.football-data.org/107.png"
-      },
-      "awayTeam": {
-        "id": "454",
-        "name": "Venezia FC",
-        "shortName": "Venezia",
-        "logoUrl": "https://crests.football-data.org/454.png"
-      },
-      "homeScore": 1,
-      "awayScore": 0,
-      "videos": [
-        {
-          "videoId": "4C4gboYgPyM",
-          "title": "Genoa-Venezia 1-0: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/4C4gboYgPyM/hqdefault.jpg",
-          "publishedAt": "2026-10-25T19:00:06+00:00",
-          "source": "Sky Sport",
-          "duration": "2:52"
-        },
-        {
-          "videoId": "L940iZ3Ripw",
-          "title": "ELLERTSSON regala 3 punti al GENOA: Genoa-Venezia 1-0 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/L940iZ3Ripw/hqdefault.jpg",
-          "publishedAt": "2026-10-25T18:00:10+00:00",
-          "source": "DAZN",
-          "duration": "3:42"
         }
       ]
     }

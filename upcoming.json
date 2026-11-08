@@ -1,112 +1,6 @@
 {
-  "generatedAt": "2026-11-08T13:17:30.995281+00:00",
+  "generatedAt": "2026-11-08T19:39:26.2522588+00:00",
   "events": [
-    {
-      "id": "serie-a-2026-27-558533",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Napoli - Lazio",
-      "session": "match",
-      "startsAt": "2026-11-08T11:30:00+00:00",
-      "status": "live",
-      "homeTeam": {
-        "id": "113",
-        "name": "SSC Napoli",
-        "shortName": "Napoli",
-        "logoUrl": "https://crests.football-data.org/113.png"
-      },
-      "awayTeam": {
-        "id": "110",
-        "name": "SS Lazio",
-        "shortName": "Lazio",
-        "logoUrl": "https://crests.football-data.org/110.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558536",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Genoa - Milan",
-      "session": "match",
-      "startsAt": "2026-11-08T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "107",
-        "name": "Genoa CFC",
-        "shortName": "Genoa",
-        "logoUrl": "https://crests.football-data.org/107.png"
-      },
-      "awayTeam": {
-        "id": "98",
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "logoUrl": "https://crests.football-data.org/98.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558538",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Monza - Atalanta",
-      "session": "match",
-      "startsAt": "2026-11-08T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "5911",
-        "name": "AC Monza",
-        "shortName": "Monza",
-        "logoUrl": "https://crests.football-data.org/5911.png"
-      },
-      "awayTeam": {
-        "id": "102",
-        "name": "Atalanta BC",
-        "shortName": "Atalanta",
-        "logoUrl": "https://crests.football-data.org/102.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "f1-2026-20-race",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "race",
-      "startsAt": "2026-11-08T17:00:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "scheduled",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558530",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Inter - Como",
-      "session": "match",
-      "startsAt": "2026-11-08T17:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "108",
-        "name": "FC Internazionale Milano",
-        "shortName": "Inter",
-        "logoUrl": "https://crests.football-data.org/108.png"
-      },
-      "awayTeam": {
-        "id": "7397",
-        "name": "Como 1907",
-        "shortName": "Como",
-        "logoUrl": "https://crests.football-data.org/7397.png"
-      },
-      "videos": []
-    },
     {
       "id": "serie-a-2026-27-558529",
       "competition": "serie-a",
@@ -312,6 +206,75 @@
         "name": "Venezia FC",
         "shortName": "Venezia",
         "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558522",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Bologna - Udinese",
+      "session": "match",
+      "startsAt": "2026-11-22T14:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "awayTeam": {
+        "id": "115",
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "logoUrl": "https://crests.football-data.org/115.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558524",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Sassuolo - Genoa",
+      "session": "match",
+      "startsAt": "2026-11-22T14:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "471",
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://crests.football-data.org/471.png"
+      },
+      "awayTeam": {
+        "id": "107",
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "logoUrl": "https://crests.football-data.org/107.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558523",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Milan - Frosinone",
+      "session": "match",
+      "startsAt": "2026-11-22T17:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "98",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "logoUrl": "https://crests.football-data.org/98.png"
+      },
+      "awayTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
       },
       "videos": []
     }
