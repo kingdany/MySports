@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2026",
-  "generatedAt": "2026-11-09T15:25:25.1681396+00:00",
+  "generatedAt": "2026-11-09T22:17:21.1891692+00:00",
   "events": [
     {
       "id": "f1-2026-1-fp1",
@@ -11855,153 +11855,200 @@
           "number": "1",
           "driver": "Lando Norris",
           "code": "NOR",
-          "team": "McLaren"
+          "team": "McLaren",
+          "q1": "1:30.939",
+          "q2": "1:29.207",
+          "q3": "1:27.470"
         },
         {
           "pos": 2,
           "number": "63",
           "driver": "George Russell",
           "code": "RUS",
-          "team": "Mercedes"
+          "team": "Mercedes",
+          "q1": "1:31.206",
+          "q2": "1:26.745",
+          "q3": "1:27.674"
         },
         {
           "pos": 3,
           "number": "12",
           "driver": "Andrea Kimi Antonelli",
           "code": "ANT",
-          "team": "Mercedes"
+          "team": "Mercedes",
+          "q1": "1:32.229",
+          "q2": "1:29.302",
+          "q3": "1:28.095"
         },
         {
           "pos": 4,
           "number": "16",
           "driver": "Charles Leclerc",
           "code": "LEC",
-          "team": "Ferrari"
+          "team": "Ferrari",
+          "q1": "1:32.121",
+          "q2": "1:28.082",
+          "q3": "1:28.289"
         },
         {
           "pos": 5,
           "number": "30",
           "driver": "Liam Lawson",
           "code": "LAW",
-          "team": "RB F1 Team"
+          "team": "RB F1 Team",
+          "q1": "1:32.085",
+          "q2": "1:27.049",
+          "q3": "1:28.321"
         },
         {
           "pos": 6,
           "number": "27",
           "driver": "Nico Hülkenberg",
           "code": "HUL",
-          "team": "Audi"
+          "team": "Audi",
+          "q1": "1:31.693",
+          "q2": "1:28.361",
+          "q3": "1:28.668"
         },
         {
           "pos": 7,
           "number": "6",
           "driver": "Isack Hadjar",
           "code": "HAD",
-          "team": "Red Bull"
+          "team": "Red Bull",
+          "q1": "1:32.059",
+          "q2": "1:27.218",
+          "q3": "1:28.763"
         },
         {
           "pos": 8,
           "number": "87",
           "driver": "Oliver Bearman",
           "code": "BEA",
-          "team": "Haas F1 Team"
+          "team": "Haas F1 Team",
+          "q1": "1:33.030",
+          "q2": "1:29.130",
+          "q3": "1:29.831"
         },
         {
           "pos": 9,
           "number": "14",
           "driver": "Fernando Alonso",
           "code": "ALO",
-          "team": "Aston Martin"
+          "team": "Aston Martin",
+          "q1": "1:32.092",
+          "q2": "1:29.072",
+          "q3": "1:30.311"
         },
         {
           "pos": 10,
           "number": "23",
           "driver": "Alexander Albon",
           "code": "ALB",
-          "team": "Williams"
+          "team": "Williams",
+          "q1": "1:33.150",
+          "q2": "1:28.918",
+          "q3": "1:30.456"
         },
         {
           "pos": 11,
           "number": "44",
           "driver": "Lewis Hamilton",
           "code": "HAM",
-          "team": "Ferrari"
+          "team": "Ferrari",
+          "q1": "1:31.666",
+          "q2": "1:30.001"
         },
         {
           "pos": 12,
           "number": "81",
           "driver": "Oscar Piastri",
           "code": "PIA",
-          "team": "McLaren"
+          "team": "McLaren",
+          "q1": "1:32.251",
+          "q2": "1:30.369"
         },
         {
           "pos": 13,
           "number": "51",
           "driver": "Rafael Camara",
-          "team": "Haas F1 Team"
+          "team": "Haas F1 Team",
+          "q1": "1:32.809",
+          "q2": "1:31.515"
         },
         {
           "pos": 14,
           "number": "41",
           "driver": "Arvid Lindblad",
           "code": "LIN",
-          "team": "RB F1 Team"
+          "team": "RB F1 Team",
+          "q1": "1:32.306",
+          "q2": "1:31.687"
         },
         {
           "pos": 15,
           "number": "55",
           "driver": "Carlos Sainz",
           "code": "SAI",
-          "team": "Williams"
+          "team": "Williams",
+          "q1": "1:32.959",
+          "q2": "1:31.785"
         },
         {
           "pos": 16,
           "number": "3",
           "driver": "Max Verstappen",
           "code": "VER",
-          "team": "Red Bull"
+          "team": "Red Bull",
+          "q1": "1:31.238"
         },
         {
           "pos": 17,
           "number": "43",
           "driver": "Franco Colapinto",
           "code": "COL",
-          "team": "Alpine F1 Team"
+          "team": "Alpine F1 Team",
+          "q1": "1:33.327"
         },
         {
           "pos": 18,
           "number": "10",
           "driver": "Pierre Gasly",
           "code": "GAS",
-          "team": "Alpine F1 Team"
+          "team": "Alpine F1 Team",
+          "q1": "1:33.449"
         },
         {
           "pos": 19,
           "number": "18",
           "driver": "Lance Stroll",
           "code": "STR",
-          "team": "Aston Martin"
+          "team": "Aston Martin",
+          "q1": "1:33.653"
         },
         {
           "pos": 20,
           "number": "77",
           "driver": "Valtteri Bottas",
           "code": "BOT",
-          "team": "Cadillac F1 Team"
+          "team": "Cadillac F1 Team",
+          "q1": "1:33.774"
         },
         {
           "pos": 21,
           "number": "11",
           "driver": "Sergio Pérez",
           "code": "PER",
-          "team": "Cadillac F1 Team"
+          "team": "Cadillac F1 Team",
+          "q1": "1:34.509"
         },
         {
           "pos": 22,
           "number": "5",
           "driver": "Gabriel Bortoleto",
           "code": "BOR",
-          "team": "Audi"
+          "team": "Audi",
+          "q1": "1:41.564"
         }
       ],
       "videos": [

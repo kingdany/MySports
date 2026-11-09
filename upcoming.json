@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:25:25.1681396+00:00",
+  "generatedAt": "2026-11-09T22:17:21.1891692+00:00",
   "events": [
     {
       "id": "f1-2026-21-fp1",
@@ -373,6 +373,29 @@
         "name": "FC Internazionale Milano",
         "shortName": "Inter",
         "logoUrl": "https://crests.football-data.org/108.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558519",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Monza - Fiorentina",
+      "session": "match",
+      "startsAt": "2026-11-23T19:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "awayTeam": {
+        "id": "99",
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "logoUrl": "https://crests.football-data.org/99.png"
       },
       "videos": []
     }
