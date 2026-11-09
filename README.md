@@ -20,7 +20,7 @@ app/                 app mobile Expo (React Native + TypeScript)
   lib/               tipi, formattazione, caricamento dei JSON, scelte salvate
 src/MySports.Importer/
   Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
-  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, FootballDataSource, YouTubeHighlights, ...)
+  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, MotoGpSource, FootballDataSource, YouTubeHighlights, ...)
   Output/        scrittura dei file JSON
 .github/workflows/update-data.yml   esecuzione programmata e pubblicazione
 ```
@@ -32,11 +32,11 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25; MotoGP dal 2026) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (F1, Serie A e Champions League).
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A e Champions League).
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
@@ -112,4 +112,4 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
-- [ ] MotoGP (video: canale Sky Sport MotoGP)
+- [ ] Moto2 e Moto3 (stessa fonte della MotoGP; video: titoli Sky Sport MotoGP che iniziano con "Moto2"/"Moto3")

@@ -130,6 +130,21 @@ public sealed partial class YouTubeHighlights(
     [GeneratedRegex(@"sintesi|libere|\bFP\d|academy|\bF2\b|\bF3\b", RegexOptions.IgnoreCase)]
     private static partial Regex SkyExcluded();
 
+    // Sky Sport MotoGP (Italia), in italiano. I titoli variano ("MotoGP, GP del Qatar: gli highlights della gara a Lusail",
+    // "MotoGP, gli highlights delle qualifiche del GP di Spagna", "MotoGP a Misano, gli highlights del GP di San Marino"):
+    // si cercano parole chiave, e il GP senza altro è la gara. Esclusi sintesi lunga, pre-qualifiche, libere e le altre
+    // classi, che a inizio stagione erano nei titoli "MotoGP, ..." ("gli highlights del GP della Thailandia della Moto2").
+    public static YouTubeHighlights SkySportMotoGP(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCGlmF5tM5DeT5Dl1BQVItYg", "Sky Sport MotoGP", BySession(title =>
+            !title.StartsWith("MotoGP", StringComparison.OrdinalIgnoreCase) || !Contains(title, "highlights")
+                || SkyMotoGPExcluded().IsMatch(title) ? null
+            : Contains(title, "qualific") ? "qualifying"
+            : Contains(title, "sprint") ? "sprint"
+            : "race"));
+
+    [GeneratedRegex(@"sintesi|pre[- ]?qualific|libere|warm[- ]?up|\bMoto[23E]\b|superbike", RegexOptions.IgnoreCase)]
+    private static partial Regex SkyMotoGPExcluded();
+
     private static bool Contains(string text, string value) => text.Contains(value, StringComparison.OrdinalIgnoreCase);
 
     [GeneratedRegex(@"\b(19|20)\d{2}\b")]
