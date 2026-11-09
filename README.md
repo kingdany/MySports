@@ -32,7 +32,7 @@ src/MySports.Importer/
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25; MotoGP dal 2026) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25, MotoGP dal 1949) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
@@ -76,6 +76,15 @@ dotnet run --project src/MySports.Importer -- --competition champions-league --s
 ```
 
 Per la Champions League si parte dal 2024-25: per il 2023-24 l'API non separa i gironi e dà un'unica classifica di 32 squadre.
+
+Per la MotoGP (classe 500cc fino al 2001) l'archivio parte dal 1949:
+
+```
+dotnet run --project src/MySports.Importer -- --competition motogp --seasons 1949-2025 --out out
+```
+
+Fino al 2000 mancano gli orari (`dateOnly`) e le qualifiche, nelle stagioni vecchie manca la squadra (si mostra la moto)
+e alcune gare non hanno la classifica nemmeno nell'archivio ufficiale.
 
 ## Recuperare i video vecchi
 

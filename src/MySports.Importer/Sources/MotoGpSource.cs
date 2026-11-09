@@ -6,19 +6,25 @@ using MySports.Importer.Models;
 namespace MySports.Importer.Sources;
 
 // MotoGP dalle API pubbliche del sito motogp.com (Pulselive): gratuite, senza chiave, ma non documentate.
-// Il calendario (/events) dà il numero del round e gli orari ufficiali delle sessioni; l'archivio dei risultati
-// (/results) dà le classifiche delle sessioni e del campionato. Nell'archivio gli orari delle sessioni future
-// sono provvisori (a novembre 2026 sbagliati di una settimana), quindi gli orari vengono sempre dal calendario.
+// Il calendario (/events) dà gli orari ufficiali delle sessioni; l'archivio dei risultati (/results) dà le classifiche
+// delle sessioni e del campionato. Nell'archivio gli orari delle sessioni future sono provvisori (a novembre 2026
+// sbagliati di una settimana) e le ore sono locali scritte come UTC, quindi gli orari vengono sempre dal calendario.
+// Le stagioni vanno dal 1949: fino al 2001 la classe regina era la 500cc, che nel calendario ha la stessa sigla.
 public sealed partial class MotoGpSource(HttpClient http) : IEventSource
 {
     private const string BaseUrl = "https://api.motogp.pulselive.com/motogp/v1";
-    private const string CalendarCategory = "MGP"; // sigla della classe MotoGP nel calendario (le altre: MT2, MT3)
+    private const string CalendarCategory = "MGP"; // sigla della classe regina nel calendario (le altre: MT2, MT3, 250, 125, ...)
     private const int MaxRateLimitRetries = 10;
 
-    // Sessioni del calendario -> nostre. Q1 e Q2 diventano una sola qualifica, con i tempi di entrambe come in F1.
+    // Prima del 2001 il calendario ha orari finti (tutte le gare alle 14:30:27 o a mezzanotte): si salva solo la data.
+    private const int FirstSeasonWithTimes = 2001;
+
+    // Sessioni del calendario -> nostre. Le qualifiche diventano una sola sessione: Q1 e Q2 dal 2013, con i tempi
+    // di entrambe come in F1; prima una sessione unica (QP) o due giornate (QP1 e QP2, senza classifiche nell'archivio).
     private static readonly Dictionary<string, string> Sessions = new()
     {
-        ["FP1"] = "fp1", ["PR"] = "practice", ["FP2"] = "fp2", ["Q1"] = "qualifying", ["Q2"] = "qualifying",
+        ["FP1"] = "fp1", ["PR"] = "practice", ["FP2"] = "fp2", ["FP3"] = "fp3", ["FP4"] = "fp4",
+        ["Q1"] = "qualifying", ["Q2"] = "qualifying", ["QP"] = "qualifying", ["QP1"] = "qualifying", ["QP2"] = "qualifying",
         ["SPR"] = "sprint", ["WUP"] = "warm_up", ["RAC"] = "race",
     };
 
@@ -31,6 +37,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
     // Dati dell'archivio risultati che servono sia agli eventi sia alle classifiche: si leggono una volta per stagione.
     private sealed record Archive(string SeasonId, string CategoryId, Dictionary<string, JsonNode> EventsByCalendarId, Dictionary<string, JsonNode> EventsByShortName);
     private readonly Dictionary<string, Archive> archives = [];
+    private JsonArray? seasonList; // elenco delle stagioni dell'archivio, uguale per tutte: si legge una volta
 
     public Competition Competition => Competition.MotoGP;
 
@@ -40,13 +47,23 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
     {
         var archive = await GetArchiveAsync(season, ct);
         var calendar = (await GetJsonAsync($"{BaseUrl}/events?seasonYear={season}", ct)).AsArray();
+        var hasTimes = int.Parse(season, CultureInfo.InvariantCulture) >= FirstSeasonWithTimes;
         var now = DateTimeOffset.UtcNow;
         var events = new List<SportEvent>();
 
-        // Il calendario comprende anche test ed eventi promozionali: si tengono solo i GP.
-        foreach (var gp in calendar.Select(g => g!).Where(g => Str(g["kind"]) == "GP").OrderBy(g => Int(g["sequence"])))
+        // Il calendario comprende anche test ed eventi promozionali: si tengono solo i GP, e tra questi quelli corsi dalla
+        // classe regina (nelle stagioni vecchie alcuni GP erano solo per le classi minori). Un GP ancora senza orari resta.
+        // Il round si conta in ordine di data: il numero del calendario ("sequence") nelle stagioni passate ha doppioni e buchi.
+        var gps = calendar
+            .Select(g => g!)
+            .Where(g => Str(g["kind"]) == "GP")
+            .Where(g => !SessionBroadcasts(g).Any() || SessionBroadcasts(g).Any(b => Str(b["category"]?["acronym"]) == CalendarCategory))
+            .OrderBy(g => ParseDate(Str(g["date_start"])!))
+            .ToList();
+
+        foreach (var (gp, index) in gps.Select((g, i) => (g, i)))
         {
-            var round = Int(gp["sequence"]) ?? throw new InvalidOperationException($"GP senza numero di round: {Str(gp["name"])}");
+            var round = index + 1;
             var results = archive.EventsByCalendarId.GetValueOrDefault(Str(gp["id"]) ?? "")
                           ?? archive.EventsByShortName.GetValueOrDefault(Str(gp["shortname"]) ?? "");
             var circuit = gp["circuit"];
@@ -72,7 +89,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
                 Competition = Competition.Id,
                 Season = season,
                 Round = round,
-                Title = GpTitle(Str(results?["name"]) ?? Str(gp["name"]) ?? ""),
+                Title = GpTitle(Str(results?["name"]), Str(gp["name"])),
                 Session = session,
                 StartsAt = startsAt,
                 DateOnly = dateOnly ? true : null,
@@ -83,40 +100,46 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
                 Result = result,
             };
 
-            var sessions = (gp["broadcasts"]?.AsArray() ?? [])
-                .Select(b => b!)
-                .Where(b => Str(b["type"]) == "SESSION" && Str(b["category"]?["acronym"]) == CalendarCategory
-                            && SessionName(Str(b["shortname"])) is not null)
+            var sessions = SessionBroadcasts(gp)
+                .Where(b => Str(b["category"]?["acronym"]) == CalendarCategory && SessionName(Str(b["shortname"])) is not null)
                 .GroupBy(b => SessionName(Str(b["shortname"]))!)
                 .ToList();
 
             // Senza orari (calendario non ancora completo) il GP compare solo con la gara, alla data dell'ultimo giorno.
             if (sessions.Count == 0)
             {
-                var day = ParseDate(Str(gp["date_end"])!).UtcDateTime.Date;
-                events.Add(Create("race", new DateTimeOffset(day.AddHours(12), TimeSpan.Zero), true, false, null));
+                events.Add(Create("race", DateOnlyStart(Str(gp["date_end"])!), true, false, null));
                 continue;
             }
 
             foreach (var group in sessions)
             {
-                var startsAt = group.Min(b => ParseDate(Str(b["date_start"])!));
+                var first = group.MinBy(b => ParseDate(Str(b["date_start"])!))!;
+                var startsAt = hasTimes ? ParseDate(Str(first["date_start"])!) : DateOnlyStart(Str(first["date_start"])!);
                 IReadOnlyList<ClassificationRow>? result = group.Key switch
                 {
                     "race" when LastStart(classifications, "RAC") is { } rows => RaceClassification(rows),
                     "sprint" when LastStart(classifications, "SPR") is { } rows => RaceClassification(rows),
-                    // La qualifica è conclusa solo con il Q2.
+                    // Dal 2013 la qualifica è conclusa solo con il Q2.
                     "qualifying" when classifications.TryGetValue("Q2", out var q2) =>
                         QualifyingClassification(classifications.GetValueOrDefault("Q1"), q2),
+                    "qualifying" when classifications.TryGetValue("QP", out var qp) => QualifyingClassification(qp, null),
                     _ => null,
                 };
                 var cancelled = group.All(b => Str(b["status"]) == "CANCELLED");
-                events.Add(Create(group.Key, startsAt, false, cancelled, result));
+                events.Add(Create(group.Key, startsAt, !hasTimes, cancelled, result));
             }
         }
 
         return events;
     }
+
+    private static IEnumerable<JsonNode> SessionBroadcasts(JsonNode gp) =>
+        (gp["broadcasts"]?.AsArray() ?? []).Select(b => b!).Where(b => Str(b["type"]) == "SESSION");
+
+    // Senza orario si usa mezzogiorno UTC del giorno locale, così la data resta la stessa in qualsiasi fuso orario.
+    private static DateTimeOffset DateOnlyStart(string value) =>
+        new(ParseLocalDate(value).Date.AddHours(12), TimeSpan.Zero);
 
     // Sigla del calendario -> nostra sessione. Una gara interrotta e ripartita ha anche "RAC2" (o "SPR2").
     private static string? SessionName(string? shortName) =>
@@ -144,6 +167,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         if (rows.Count == 0) return [];
 
         // L'API ha solo la classifica piloti (squadre e costruttori non sono disponibili).
+        // Nelle stagioni vecchie manca la squadra: si mostra la moto.
         return
         [
             new StandingsTable("drivers", "Piloti", rows.Select(r =>
@@ -154,7 +178,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
                     Pos = pos,
                     PosText = pos?.ToString(CultureInfo.InvariantCulture) ?? "-",
                     Name = Str(r["rider"]?["full_name"]) ?? "",
-                    Team = Str(r["team"]?["name"]),
+                    Team = TeamName(r),
                     Points = Double(r["points"]) ?? 0,
                     Wins = Int(r["race_wins"]),
                 };
@@ -167,14 +191,15 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         if (archives.TryGetValue(season, out var cached)) return cached;
 
         var year = int.Parse(season, CultureInfo.InvariantCulture);
-        var seasons = (await GetJsonAsync($"{BaseUrl}/results/seasons", ct)).AsArray();
-        var seasonId = Str(seasons.FirstOrDefault(s => Int(s!["year"]) == year)?["id"])
+        seasonList ??= (await GetJsonAsync($"{BaseUrl}/results/seasons", ct)).AsArray();
+        var seasonId = Str(seasonList.FirstOrDefault(s => Int(s!["year"]) == year)?["id"])
                        ?? throw new InvalidOperationException($"stagione {season} non presente nell'archivio MotoGP");
 
-        // Il nome della classe è "MotoGP™": basta l'inizio.
+        // La classe regina si chiama "MotoGP™" dal 2002 e "500cc" prima.
         var categories = (await GetJsonAsync($"{BaseUrl}/results/categories?seasonUuid={seasonId}", ct)).AsArray();
-        var categoryId = Str(categories.FirstOrDefault(c => Str(c!["name"])?.StartsWith("MotoGP", StringComparison.OrdinalIgnoreCase) == true)?["id"])
-                         ?? throw new InvalidOperationException($"classe MotoGP non presente nella stagione {season}");
+        var categoryId = Str(categories.FirstOrDefault(c => Str(c!["name"]) is { } name
+                             && (name.StartsWith("MotoGP", StringComparison.OrdinalIgnoreCase) || name.StartsWith("500cc", StringComparison.OrdinalIgnoreCase)))?["id"])
+                         ?? throw new InvalidOperationException($"classe MotoGP/500cc non presente nella stagione {season}");
 
         // Gli eventi dell'archivio si collegano al calendario con toad_api_uuid (= id nel calendario), altrimenti con la sigla.
         var gps = (await GetJsonAsync($"{BaseUrl}/results/events?seasonUuid={seasonId}", ct)).AsArray()
@@ -190,7 +215,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         return archive;
     }
 
-    // Classifiche delle sessioni concluse che servono (qualifiche, sprint e gara), per sigla: "Q1", "Q2", "SPR", "RAC".
+    // Classifiche delle sessioni concluse che servono (qualifiche, sprint e gara), per sigla: "Q1", "Q2", "QP", "SPR", "RAC".
     private async Task<Dictionary<string, JsonArray>> FetchClassificationsAsync(string eventId, string categoryId, CancellationToken ct)
     {
         var sessions = (await GetJsonAsync($"{BaseUrl}/results/sessions?eventUuid={eventId}&categoryUuid={categoryId}", ct)).AsArray();
@@ -198,7 +223,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         foreach (var s in sessions.Select(s => s!))
         {
             var name = $"{Str(s["type"])}{Int(s["number"])}";
-            if (name is not ("Q1" or "Q2") && SessionName(name) is not ("race" or "sprint") || Str(s["status"]) != "FINISHED") continue;
+            if (name is not ("Q1" or "Q2" or "QP") && SessionName(name) is not ("race" or "sprint") || Str(s["status"]) != "FINISHED") continue;
             var data = await GetJsonAsync($"{BaseUrl}/results/session/{Str(s["id"])}/classification?test=false", ct);
             if (data["classification"] is JsonArray { Count: > 0 } rows) byName[name] = rows;
         }
@@ -216,28 +241,36 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
             Number = Int(r["rider"]?["number"])?.ToString(CultureInfo.InvariantCulture),
             Driver = Str(r["rider"]?["full_name"]) ?? "",
             Code = codes[i],
-            Team = Str(r["team"]?["name"]) ?? "",
+            Team = TeamName(r) ?? "",
             Time = RaceTime(r),
-            Points = Double(r["points"]),
+            // Nelle stagioni vecchie l'archivio ha 0 punti per tutti: senza punti non si mostra niente.
+            Points = Double(r["points"]) is > 0 and var points ? points : null,
         }).ToList();
     }
 
     // "41:29.173" per il vincitore, "+3.083" per gli altri, "+1 giro" per i doppiati, "Ritirato" per chi non ha finito.
+    // Nelle stagioni vecchie spesso mancano tempi e distacchi (distacco "0.000" anche per il secondo): niente.
     private static string? RaceTime(JsonNode r)
     {
         var status = Str(r["status"]);
-        if (status == "OUTSTND") return "Ritirato";
+        if (status is "OUTSTND" or "NOTFINISHFIRST") return "Ritirato";
         if (status != "INSTND") return "Non classificato";
         var laps = Int(r["gap"]?["lap"]) ?? 0;
         if (laps > 0) return laps == 1 ? "+1 giro" : $"+{laps} giri";
-        return Int(r["position"]) == 1 ? Str(r["time"]) : Str(r["gap"]?["first"]) is { } gap ? $"+{gap}" : null;
+        if (Int(r["position"]) == 1) return LapTime(r["time"]);
+        return Str(r["gap"]?["first"]) is { } gap && gap.Trim('0', '.', ':').Length > 0 ? $"+{gap}" : null;
     }
 
-    // Griglia come la ufficiale: prima i 12 del Q2, poi gli altri nell'ordine del Q1 (i primi due del Q1 sono passati al Q2).
-    private static List<ClassificationRow> QualifyingClassification(JsonArray? q1, JsonArray q2)
+    // Nelle stagioni vecchie la squadra manca: si usa la moto ("Yamaha").
+    private static string? TeamName(JsonNode r) =>
+        Str(r["team"]?["name"]) is { Length: > 0 } team ? team : Str(r["constructor"]?["name"]);
+
+    // Dal 2013 griglia come la ufficiale: prima i 12 del Q2, poi gli altri nell'ordine del Q1 (i primi due del Q1
+    // sono passati al Q2). Prima c'era una sessione sola, che arriva qui come q1 senza q2.
+    private static List<ClassificationRow> QualifyingClassification(JsonArray? q1, JsonArray? q2)
     {
         var q1Rows = q1?.Select(r => r!).ToList() ?? [];
-        var q2Rows = q2.Select(r => r!).ToList();
+        var q2Rows = q2?.Select(r => r!).ToList() ?? [];
         string Rider(JsonNode r) => Str(r["rider"]?["id"]) ?? Str(r["rider"]?["full_name"]) ?? "";
         var inQ2 = q2Rows.Select(Rider).ToHashSet();
         var q1Times = q1Rows.DistinctBy(Rider).ToDictionary(Rider, r => LapTime(r["best_lap"]?["time"]));
@@ -250,8 +283,8 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
             Number = Int(r["rider"]?["number"])?.ToString(CultureInfo.InvariantCulture),
             Driver = Str(r["rider"]?["full_name"]) ?? "",
             Code = codes[i],
-            Team = Str(r["team"]?["name"]) ?? "",
-            Q1 = q1Times.GetValueOrDefault(Rider(r)),
+            Team = TeamName(r) ?? "",
+            Q1 =q1Times.GetValueOrDefault(Rider(r)),
             Q2 = inQ2.Contains(Rider(r)) ? LapTime(r["best_lap"]?["time"]) : null,
         }).ToList();
     }
@@ -275,17 +308,33 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
             : Surname(n)).ToList();
     }
 
-    // "GRAND PRIX OF THE UNITED STATES" -> "Grand Prix of the United States". Il calendario ha anche lo sponsor
-    // ("QATAR AIRWAYS GRAND PRIX OF QATAR"): si usa il nome dell'archivio e, se manca, si parte da "Grand Prix".
-    private static string GpTitle(string name)
+    // Nome del GP dall'archivio, senza sponsor e scritto in modi diversi negli anni: "GRAND PRIX OF THE UNITED STATES",
+    // "JAPANESE GRAND PRIX", "DUTCH TT", "GRAN PREMIO DE ESPAÑA". Se manca si usa il calendario, che ha anche lo sponsor
+    // ("QATAR AIRWAYS GRAND PRIX OF QATAR"): lì si parte da "Grand Prix of".
+    private static string GpTitle(string? archiveName, string? calendarName)
     {
-        var start = name.IndexOf("GRAND PRIX", StringComparison.OrdinalIgnoreCase);
-        var plain = (start > 0 ? name[start..] : name).Trim();
-        var words = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(plain.ToLowerInvariant()).Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        return string.Join(' ', words.Select((w, i) => i > 0 && SmallWords.Contains(w) ? w.ToLowerInvariant() : w));
+        var name = archiveName;
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            name = calendarName ?? "";
+            var start = name.IndexOf("GRAND PRIX OF", StringComparison.OrdinalIgnoreCase);
+            if (start > 0) name = name[start..];
+        }
+        var words = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(name.Trim().ToLowerInvariant()).Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        return string.Join(' ', words.Select((w, i) =>
+            Acronyms.Contains(w) ? w.ToUpperInvariant()
+            // "D'italia" -> "d'Italia", "Dell'emilia" -> "dell'Emilia"
+            : w.IndexOf('\'') is var a and > 0 && a < w.Length - 1 && SmallWords.Contains(w[..a])
+                ? $"{w[..(a + 1)].ToLowerInvariant()}{char.ToUpperInvariant(w[a + 1])}{w[(a + 2)..]}"
+            : i > 0 && SmallWords.Contains(w) ? w.ToLowerInvariant()
+            : w));
     }
 
-    private static readonly HashSet<string> SmallWords = new(StringComparer.OrdinalIgnoreCase) { "of", "the", "and", "de" };
+    private static readonly HashSet<string> SmallWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "of", "the", "and", "de", "la", "di", "d", "del", "dell", "della", "e", "do", "du", "von",
+    };
+    private static readonly HashSet<string> Acronyms = new(StringComparer.OrdinalIgnoreCase) { "TT", "GP", "U.S." };
 
     private static EventStatus StatusFor(string session, DateTimeOffset startsAt, bool hasResult, DateTimeOffset now)
     {
@@ -299,8 +348,11 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         HttpJson.GetAsync(http, url, "MotoGP", MaxRateLimitRetries, ct);
 
     // Gli orari arrivano sia come "2026-11-20T10:45:00+00:00" sia come "2026-11-20T10:45:00+0000".
-    private static DateTimeOffset ParseDate(string value) =>
-        DateTimeOffset.Parse(OffsetWithoutColon().Replace(value, "$1:$2"), CultureInfo.InvariantCulture).ToUniversalTime();
+    private static DateTimeOffset ParseDate(string value) => ParseLocalDate(value).ToUniversalTime();
+
+    // Data e ora del luogo della gara, con il suo fuso.
+    private static DateTimeOffset ParseLocalDate(string value) =>
+        DateTimeOffset.Parse(OffsetWithoutColon().Replace(value, "$1:$2"), CultureInfo.InvariantCulture);
 
     [GeneratedRegex(@"([+-]\d{2})(\d{2})$")]
     private static partial Regex OffsetWithoutColon();

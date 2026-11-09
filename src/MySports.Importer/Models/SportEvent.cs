@@ -9,7 +9,7 @@ public sealed record SportEvent
     public int? Round { get; init; }                      // giornata / numero del GP; nell'eliminazione diretta 1 = andata, 2 = ritorno
     public string? Stage { get; init; }                   // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final"
     public required string Title { get; init; }           // "Mexico City Grand Prix", "Inter - Milan"
-    public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"; MotoGP anche "practice" (pre-qualifiche) e "warm_up"
+    public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"; MotoGP anche "fp4", "practice" (pre-qualifiche) e "warm_up"
     public required DateTimeOffset StartsAt { get; init; }
     public bool? DateOnly { get; init; }                  // true se la fonte non ha l'orario (stagioni vecchie, partite ancora da fissare)
     public string? Venue { get; init; }

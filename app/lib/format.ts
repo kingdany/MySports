@@ -4,6 +4,7 @@ const SESSION_LABELS: Record<string, string> = {
   fp1: 'Prove libere 1',
   fp2: 'Prove libere 2',
   fp3: 'Prove libere 3',
+  fp4: 'Prove libere 4', // MotoGP dal 2015 al 2022
   practice: 'Pre-qualifiche', // MotoGP
   warm_up: 'Warm Up',
   sprint_qualifying: 'Qualifiche Sprint',
@@ -36,7 +37,7 @@ export const stageLabel = (stage: string) => STAGE_LABELS[stage] ?? stage;
 export const sessionLabel = (session: string) => SESSION_LABELS[session] ?? session;
 
 // Prove libere, pre-qualifiche e warm up della MotoGP: presenti nei dati ma non mostrate nell'app.
-const PRACTICE_SESSIONS = new Set(['fp1', 'fp2', 'fp3', 'practice', 'warm_up']);
+const PRACTICE_SESSIONS = new Set(['fp1', 'fp2', 'fp3', 'fp4', 'practice', 'warm_up']);
 export const isPractice = (session: string) => PRACTICE_SESSIONS.has(session);
 
 export const competitionLabel = (competition: string) => COMPETITION_LABELS[competition] ?? competition;
