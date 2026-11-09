@@ -8,7 +8,7 @@ namespace MySports.Importer.Sources;
 
 // Aggiunge agli eventi gli highlights pubblicati da un canale YouTube ufficiale (YouTube Data API v3).
 // I video si abbinano con una regola sul titolo, diversa per ogni canale, e per data di pubblicazione.
-// F1: per tipo di sessione, perché i nomi dei GP nei titoli non sono regolari (es. "Bahrain Grand Prix in Malaysia").
+// F1 e MotoGP: per tipo di sessione, perché i nomi dei GP nei titoli non sono regolari (es. "GP Usa", "GP d' Ungheria").
 // Calcio: per squadre di casa e trasferta.
 // matcher: titolo -> condizione sull'evento, oppure null se il video non interessa.
 public sealed partial class YouTubeHighlights(
@@ -78,15 +78,18 @@ public sealed partial class YouTubeHighlights(
         ["Hellas Verona"] = "Verona",
         ["Lask Linz"] = "LASK",
         ["Sabah Baku"] = "Sabah",
+        ["Juve"] = "Juventus",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
-    // "gli highlights", con la virgola al posto dei due punti o con il punteggio dopo ("Inter-Juventus: 3-2 gol e highlights").
+    // "gli highlights", con la virgola al posto dei due punti o con il punteggio dopo ("Inter-Juventus: 3-2 gol e highlights"),
+    // con "Serie A" ripetuto ("gol e highlights Serie A | Serie A") o scritto "SerieA".
     // Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
+    // Di riserva a DAZN, per le partite senza il suo video.
     public static YouTubeHighlights SkySportSerieA(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkySerieATitle()));
 
-    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights\s*\|\s*Serie A\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s+Serie\s?A)?\s*\|\s*Serie\s?A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Esclusi gli "extended highlights",
@@ -98,16 +101,57 @@ public sealed partial class YouTubeHighlights(
     private static partial Regex SkyChampionsLeagueTitle();
 
     // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
-    // La parte finale varia molto ("| DAZN", "| DAZN | Highlights", "| Highlights DAZN"). Le partite di stagioni
-    // passate ripubblicate riportano l'anno dopo "Serie A" ("Serie A 2025-26") e così restano escluse.
+    // Prima delle squadre c'è un testo libero, separato in tanti modi ("È tornato RAFA LEAO! Cagliari-Milan 0-1",
+    // "vince ITALIANO Cremonese-Bologna 1-2"), e anche la parte finale varia ("| DAZN", "Serie A Enilive ! DAZN",
+    // "3-0 Serie A Enilive | DAZN Highlights"): invece di ricavare i nomi dal titolo si cerca "Casa-Trasferta"
+    // seguito da "|", "!" o "Serie A", con il punteggio in mezzo oppure "Highlights" nel titolo ("Udinese-Inter | Serie A
+    // Enilive | DAZN Highlights"): così restano escluse analisi e interviste ("Chivu parla... | Inter-Como | Serie A Enilive | DAZN").
+    // Le partite di stagioni passate ripubblicate riportano l'anno dopo "Serie A" ("Serie A 2025-26") e restano escluse.
+    // "Serie A" a volte è attaccato ("SerieAEnilive") e la Juventus a volte è "Juve" (in TeamAliases).
     public static YouTubeHighlights DaznSerieA(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", ByTeams(DaznSerieATitle()));
+        new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", title =>
+        {
+            if (!SerieAMention().IsMatch(title) || !Contains(title, "DAZN") || DaznRerun().IsMatch(title)) return null;
+            var plain = Plain(title).ToLowerInvariant().Replace('–', '-'); // a volte con il trattino lungo
+            var highlights = Contains(title, "highlights");
+            return e => TeamNames(e.HomeTeam).Any(home => TeamNames(e.AwayTeam).Any(away => HasMatch(plain, home, away, highlights)));
+        });
 
-    [GeneratedRegex(@"(?:^|[:|])\s*([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?\s*\|\s*Serie A(?: Enilive)?\s*\|\s*(?:DAZN|Highlights)", RegexOptions.IgnoreCase)]
-    private static partial Regex DaznSerieATitle();
+    [GeneratedRegex(@"\bSerie\s?A", RegexOptions.IgnoreCase)]
+    private static partial Regex SerieAMention();
 
-    // Canale ufficiale Formula 1, in inglese: "Race Highlights | 2026 Mexico City Grand Prix" -> race.
-    // Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
+    [GeneratedRegex(@"\bSerie\s?A\s+(?:19|20)\d{2}", RegexOptions.IgnoreCase)]
+    private static partial Regex DaznRerun();
+    // Dopo "Casa-Trasferta": punteggio (facoltativo) e poi "|", "!" o "Serie A".
+    [GeneratedRegex(@"^\s*(\d+\s*-\s*\d+\s*)?(?:[|!]|serie\s?a)")]
+    private static partial Regex AfterTeams();
+
+    // Nome breve della squadra e nomi che i canali usano al suo posto ("Hellas Verona" per "Verona"), senza accenti.
+    private static IEnumerable<string> TeamNames(Team? team) =>
+        team?.ShortName is not { } shortName ? []
+        : TeamAliases.Where(a => string.Equals(Plain(a.Value), Plain(shortName), StringComparison.OrdinalIgnoreCase))
+            .Select(a => a.Key).Prepend(shortName).Select(n => Plain(n).ToLowerInvariant()).Distinct();
+
+    // "...! cagliari-milan 0-1 | serie a ..." contiene la partita cagliari-milan, a inizio parola; senza punteggio
+    // vale solo se il titolo dice "highlights".
+    private static bool HasMatch(string title, string home, string away, bool highlights)
+    {
+        var pair = $"{home}-{away}";
+        for (var i = title.IndexOf(pair, StringComparison.Ordinal); i >= 0; i = title.IndexOf(pair, i + 1, StringComparison.Ordinal))
+        {
+            if (i > 0 && char.IsLetter(title[i - 1])) continue;
+            var after = AfterTeams().Match(title[(i + pair.Length)..]);
+            if (after.Success && (after.Groups[1].Success || highlights)) return true;
+        }
+        return false;
+    }
+
+    // Un video già salvato resta solo se rispetta ancora la regola del canale: quando una regola cambia,
+    // i video presi per sbaglio spariscono anche dalle stagioni già pubblicate.
+    public bool Matches(SportEvent e, Video video) => matcher(video.Title)?.Invoke(e) == true;
+
+    // Canale ufficiale Formula 1, in inglese, di riserva per le sessioni senza video Sky:
+    // "Race Highlights | 2026 Mexico City Grand Prix" -> race. Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
     public static YouTubeHighlights FormulaOne(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", BySession(title =>
             title.StartsWith("Sprint Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint_qualifying"
@@ -153,14 +197,17 @@ public sealed partial class YouTubeHighlights(
     private sealed record Upload(string VideoId, string Title, string ThumbnailUrl, DateTimeOffset PublishedAt);
 
     // recoverOld: cerca anche le sessioni vecchie, per una competizione nuova o una stagione passata.
-    public async Task<IReadOnlyList<SportEvent>> AttachAsync(IReadOnlyList<SportEvent> events, bool recoverOld, CancellationToken ct)
+    // preferred: canali che vengono prima di questo; una sessione che ha già un loro video non si cerca.
+    public async Task<IReadOnlyList<SportEvent>> AttachAsync(
+        IReadOnlyList<SportEvent> events, bool recoverOld, IReadOnlySet<string> preferred, CancellationToken ct)
     {
-        // Ogni canale aggiunge al massimo un video per sessione, accanto a quelli degli altri canali.
+        // Ogni canale aggiunge al massimo un video per sessione.
         // Solo sessioni recenti: per un video si accetta al massimo MaxDelay, e una sola sessione vecchia
         // rimasta senza video costringerebbe a rileggere a ogni giro tutti i caricamenti fino alla sua data.
         var now = DateTimeOffset.UtcNow;
         bool Needs(SportEvent e) =>
-            e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && e.Videos.All(v => v.Source != sourceName)
+            e.Status == EventStatus.Finished && Sessions.Contains(e.Session)
+            && e.Videos.All(v => v.Source != sourceName && !preferred.Contains(v.Source ?? ""))
             && (recoverOld || now - e.StartsAt <= MaxDelay);
 
         var waiting = events.Where(Needs).ToList();

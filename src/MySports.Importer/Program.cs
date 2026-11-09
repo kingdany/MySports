@@ -38,7 +38,8 @@ IEventSource[] sources =
     new FootballDataSource(Competition.ChampionsLeague, "CL", footballKey, FootballDataSource.ChampionsLeagueZones),
 ];
 
-// Highlights YouTube per competizione, nell'ordine in cui l'app li mostra (italiano per primo).
+// Highlights YouTube per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
+// ce l'ha. Serie A: DAZN, poi Sky. F1: Sky, poi il canale ufficiale in inglese. Champions League e MotoGP: Sky.
 // Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
 var videoSources = new Dictionary<string, YouTubeHighlights[]>();
@@ -46,7 +47,7 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
 {
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
     videoSources[Competition.MotoGP.Id] = [YouTubeHighlights.SkySportMotoGP(http, youtubeKey)];
-    videoSources[Competition.SerieA.Id] = [YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.DaznSerieA(http, youtubeKey)];
+    videoSources[Competition.SerieA.Id] = [YouTubeHighlights.DaznSerieA(http, youtubeKey), YouTubeHighlights.SkySportSerieA(http, youtubeKey)];
     videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey)];
 }
 else
@@ -129,25 +130,40 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 .ToList();
         }
 
-        // Highlights della stagione corrente; quelli delle stagioni passate solo su richiesta.
-        if ((seasonsArg is null || recoverVideos) && videoSources.TryGetValue(competition.Id, out var channels))
+        // Si tengono solo i video dei canali in uso che rispettano ancora la regola sul titolo del canale: quelli di un
+        // canale tolto, o presi per sbaglio da una regola poi corretta, spariscono anche dalle stagioni già salvate.
+        if (videoSources.TryGetValue(competition.Id, out var channels))
         {
-            foreach (var channel in channels)
+            bool Keep(SportEvent e, Video v) => channels.Any(c => c.SourceName == v.Source && c.Matches(e, v));
+            events = events
+                .Select(e => e.Videos.All(v => Keep(e, v)) ? e : e with { Videos = e.Videos.Where(v => Keep(e, v)).ToList() })
+                .ToList();
+        }
+
+        // Highlights della stagione corrente; quelli delle stagioni passate solo su richiesta.
+        if ((seasonsArg is null || recoverVideos) && channels is not null)
+        {
+            // I canali sono in ordine di preferenza: ognuno cerca solo le sessioni ancora senza video di uno precedente.
+            for (var i = 0; i < channels.Length; i++)
             {
                 try
                 {
-                    events = await channel.AttachAsync(events, recoverVideos, ct);
+                    var preferred = channels[..i].Select(c => c.SourceName).ToHashSet();
+                    events = await channels[i].AttachAsync(events, recoverVideos, preferred, ct);
                 }
                 catch (Exception ex)
                 {
-                    Console.Error.WriteLine($"AVVISO video {channel.SourceName} {season}: {ex.Message}");
+                    Console.Error.WriteLine($"AVVISO video {channels[i].SourceName} {season}: {ex.Message}");
                 }
             }
+        }
 
-            // Ordine fisso dei video in ogni evento, anche quando un canale li pubblica dopo l'altro.
+        // Un solo video per sessione, del canale preferito: se Sky pubblica dopo il canale di riserva, il suo prende il posto.
+        if (channels is not null)
+        {
             var order = channels.Select(c => c.SourceName).ToList();
             events = events
-                .Select(e => e.Videos.Count < 2 ? e : e with { Videos = e.Videos.OrderBy(v => order.IndexOf(v.Source ?? "")).ToList() })
+                .Select(e => e.Videos.Count < 2 ? e : e with { Videos = [e.Videos.MinBy(v => order.IndexOf(v.Source ?? ""))!] })
                 .ToList();
         }
 
