@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-11-08T19:39:26.2522588+00:00",
+  "generatedAt": "2026-11-09T00:50:23.6195433+00:00",
   "events": [
+    {
+      "id": "serie-a-2026-27-558529",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 11,
+      "title": "Fiorentina - Juventus",
+      "session": "match",
+      "startsAt": "2026-11-08T19:45:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "99",
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "logoUrl": "https://crests.football-data.org/99.png"
+      },
+      "awayTeam": {
+        "id": "109",
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "logoUrl": "https://crests.football-data.org/109.png"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "videos": [
+        {
+          "videoId": "6E1pNcBbumg",
+          "title": "Fiorentina-Juventus 2-2: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/6E1pNcBbumg/hqdefault.jpg",
+          "publishedAt": "2026-11-09T00:44:10+00:00",
+          "source": "Sky Sport",
+          "duration": "3:27"
+        },
+        {
+          "videoId": "exNBKMm5xv4",
+          "title": "PELLEGRINO esulta alla Bati, il primo di WOLTEMADE: Fiorentina-Juventus 2-2 | Serie A Enilive | DAZN",
+          "thumbnailUrl": "https://i.ytimg.com/vi/exNBKMm5xv4/hqdefault.jpg",
+          "publishedAt": "2026-11-09T00:42:06+00:00",
+          "source": "DAZN",
+          "duration": "4:18"
+        }
+      ]
+    },
     {
       "id": "f1-2026-20-race",
       "competition": "f1",
@@ -56,7 +98,7 @@
           "driver": "Andrea Kimi Antonelli",
           "code": "ANT",
           "team": "Mercedes",
-          "time": "+36.017",
+          "time": "+41.017",
           "points": 10
         },
         {
@@ -70,20 +112,20 @@
         },
         {
           "pos": 7,
-          "number": "16",
-          "driver": "Charles Leclerc",
-          "code": "LEC",
-          "team": "Ferrari",
-          "time": "+1:13.586",
-          "points": 6
-        },
-        {
-          "pos": 8,
           "number": "30",
           "driver": "Liam Lawson",
           "code": "LAW",
           "team": "RB F1 Team",
           "time": "+1:15.402",
+          "points": 6
+        },
+        {
+          "pos": 8,
+          "number": "16",
+          "driver": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "time": "+1:18.586",
           "points": 4
         },
         {
@@ -164,7 +206,7 @@
           "driver": "Oliver Bearman",
           "code": "BEA",
           "team": "Haas F1 Team",
-          "time": "+1:26.711",
+          "time": "+1:31.711",
           "points": 0
         },
         {
@@ -220,6 +262,14 @@
           "publishedAt": "2026-11-08T19:23:53+00:00",
           "source": "Sky Sport F1",
           "duration": "3:11"
+        },
+        {
+          "videoId": "lkb5kqDJYXk",
+          "title": "Race Highlights | 2026 Sao Paulo Grand Prix",
+          "thumbnailUrl": "https://i.ytimg.com/vi/lkb5kqDJYXk/hqdefault.jpg",
+          "publishedAt": "2026-11-08T19:57:16+00:00",
+          "source": "Formula 1",
+          "duration": "8:12"
         }
       ]
     },
@@ -246,7 +296,24 @@
       },
       "homeScore": 2,
       "awayScore": 0,
-      "videos": []
+      "videos": [
+        {
+          "videoId": "QEm2eKMLw_s",
+          "title": "Inter-Como 2-0: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/QEm2eKMLw_s/hqdefault.jpg",
+          "publishedAt": "2026-11-08T21:58:07+00:00",
+          "source": "Sky Sport",
+          "duration": "3:23"
+        },
+        {
+          "videoId": "skIvKWko_C4",
+          "title": "PIO ESPOSITO + THURAM, CHIVU travolge FABREGAS: Inter-Como 2-0 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/skIvKWko_C4/hqdefault.jpg",
+          "publishedAt": "2026-11-08T22:00:08+00:00",
+          "source": "DAZN",
+          "duration": "4:23"
+        }
+      ]
     },
     {
       "id": "serie-a-2026-27-558536",
@@ -271,7 +338,24 @@
       },
       "homeScore": 1,
       "awayScore": 2,
-      "videos": []
+      "videos": [
+        {
+          "videoId": "CviAKXRaSDk",
+          "title": "Genoa-Milan 1-2: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/CviAKXRaSDk/hqdefault.jpg",
+          "publishedAt": "2026-11-08T18:57:10+00:00",
+          "source": "Sky Sport",
+          "duration": "3:29"
+        },
+        {
+          "videoId": "kn8jyx2cBsM",
+          "title": "Uno-due CISSE e PULISIC, ELLERTSSON non basta: Genoa-Milan 1-2 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/kn8jyx2cBsM/hqdefault.jpg",
+          "publishedAt": "2026-11-08T18:58:10+00:00",
+          "source": "DAZN",
+          "duration": "4:10"
+        }
+      ]
     },
     {
       "id": "serie-a-2026-27-558538",
@@ -296,7 +380,24 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "videos": []
+      "videos": [
+        {
+          "videoId": "t_7b7Pd7wvw",
+          "title": "Monza-Atalanta 0-1: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/t_7b7Pd7wvw/hqdefault.jpg",
+          "publishedAt": "2026-11-08T18:56:10+00:00",
+          "source": "Sky Sport",
+          "duration": "3:16"
+        },
+        {
+          "videoId": "Lzno224n7rA",
+          "title": "SARRI torna a vincere grazie a KRSTOVIC: Monza-Atalanta 0-1 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/Lzno224n7rA/hqdefault.jpg",
+          "publishedAt": "2026-11-08T18:58:08+00:00",
+          "source": "DAZN",
+          "duration": "4:17"
+        }
+      ]
     },
     {
       "id": "serie-a-2026-27-558533",
@@ -321,7 +422,25 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "videos": []
+      "videos": [
+        {
+          "videoId": "gQGm38KnGTk",
+          "title": "Napoli-Lazio 1-1: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/gQGm38KnGTk/hqdefault.jpg",
+          "publishedAt": "2026-11-08T16:25:07+00:00",
+          "source": "Sky Sport",
+          "duration": "3:03"
+        },
+        {
+          "videoId": "9LYiUai3a-s",
+          "title": "FRATTESI e autogol PEDRAZA, Gattuso resta capolista: Napoli-Lazio 1-1 | Serie A | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/9LYiUai3a-s/hqdefault.jpg",
+          "publishedAt": "2026-11-08T16:25:09+00:00",
+          "source": "DAZN",
+          "duration": "4:45",
+          "embeddable": false
+        }
+      ]
     },
     {
       "id": "serie-a-2026-27-558531",
@@ -2713,279 +2832,6 @@
           "publishedAt": "2026-10-27T22:28:11+00:00",
           "source": "DAZN",
           "duration": "4:04"
-        }
-      ]
-    },
-    {
-      "id": "f1-2026-18-race",
-      "competition": "f1",
-      "season": "2026",
-      "round": 18,
-      "title": "United States Grand Prix",
-      "session": "race",
-      "startsAt": "2026-10-25T20:00:00+00:00",
-      "venue": "Circuit of the Americas",
-      "city": "Austin",
-      "country": "USA",
-      "status": "finished",
-      "result": [
-        {
-          "pos": 1,
-          "number": "12",
-          "driver": "Andrea Kimi Antonelli",
-          "code": "ANT",
-          "team": "Mercedes",
-          "time": "1:35:16.650",
-          "points": 25
-        },
-        {
-          "pos": 2,
-          "number": "16",
-          "driver": "Charles Leclerc",
-          "code": "LEC",
-          "team": "Ferrari",
-          "time": "+13.078",
-          "points": 18
-        },
-        {
-          "pos": 3,
-          "number": "3",
-          "driver": "Max Verstappen",
-          "code": "VER",
-          "team": "Red Bull",
-          "time": "+17.485",
-          "points": 15
-        },
-        {
-          "pos": 4,
-          "number": "44",
-          "driver": "Lewis Hamilton",
-          "code": "HAM",
-          "team": "Ferrari",
-          "time": "+18.515",
-          "points": 12
-        },
-        {
-          "pos": 5,
-          "number": "1",
-          "driver": "Lando Norris",
-          "code": "NOR",
-          "team": "McLaren",
-          "time": "+30.521",
-          "points": 10
-        },
-        {
-          "pos": 6,
-          "number": "6",
-          "driver": "Isack Hadjar",
-          "code": "HAD",
-          "team": "Red Bull",
-          "time": "+34.373",
-          "points": 8
-        },
-        {
-          "pos": 7,
-          "number": "81",
-          "driver": "Oscar Piastri",
-          "code": "PIA",
-          "team": "McLaren",
-          "time": "+52.674",
-          "points": 6
-        },
-        {
-          "pos": 8,
-          "number": "63",
-          "driver": "George Russell",
-          "code": "RUS",
-          "team": "Mercedes",
-          "time": "+54.303",
-          "points": 4
-        },
-        {
-          "pos": 9,
-          "number": "30",
-          "driver": "Liam Lawson",
-          "code": "LAW",
-          "team": "RB F1 Team",
-          "time": "+1:19.183",
-          "points": 2
-        },
-        {
-          "pos": 10,
-          "number": "10",
-          "driver": "Pierre Gasly",
-          "code": "GAS",
-          "team": "Alpine F1 Team",
-          "time": "+1:27.516",
-          "points": 1
-        },
-        {
-          "pos": 11,
-          "number": "27",
-          "driver": "Nico Hülkenberg",
-          "code": "HUL",
-          "team": "Audi",
-          "time": "+1:34.945",
-          "points": 0
-        },
-        {
-          "pos": 12,
-          "number": "41",
-          "driver": "Arvid Lindblad",
-          "code": "LIN",
-          "team": "RB F1 Team",
-          "time": "+6.344",
-          "points": 0
-        },
-        {
-          "pos": 13,
-          "number": "5",
-          "driver": "Gabriel Bortoleto",
-          "code": "BOR",
-          "team": "Audi",
-          "time": "+14.197",
-          "points": 0
-        },
-        {
-          "pos": 14,
-          "number": "31",
-          "driver": "Esteban Ocon",
-          "code": "OCO",
-          "team": "Haas F1 Team",
-          "time": "+21.042",
-          "points": 0
-        },
-        {
-          "pos": 15,
-          "number": "18",
-          "driver": "Lance Stroll",
-          "code": "STR",
-          "team": "Aston Martin",
-          "time": "+49.418",
-          "points": 0
-        },
-        {
-          "pos": 16,
-          "number": "14",
-          "driver": "Fernando Alonso",
-          "code": "ALO",
-          "team": "Aston Martin",
-          "time": "+1:00.668",
-          "points": 0
-        },
-        {
-          "pos": 17,
-          "number": "23",
-          "driver": "Alexander Albon",
-          "code": "ALB",
-          "team": "Williams",
-          "time": "+1:02.176",
-          "points": 0
-        },
-        {
-          "pos": 18,
-          "number": "55",
-          "driver": "Carlos Sainz",
-          "code": "SAI",
-          "team": "Williams",
-          "time": "+1:02.835",
-          "points": 0
-        },
-        {
-          "pos": 19,
-          "number": "11",
-          "driver": "Sergio Pérez",
-          "code": "PER",
-          "team": "Cadillac F1 Team",
-          "time": "+1:22.809",
-          "points": 0
-        },
-        {
-          "pos": 20,
-          "number": "77",
-          "driver": "Valtteri Bottas",
-          "code": "BOT",
-          "team": "Cadillac F1 Team",
-          "time": "Retired",
-          "points": 0
-        },
-        {
-          "pos": 21,
-          "number": "43",
-          "driver": "Franco Colapinto",
-          "code": "COL",
-          "team": "Alpine F1 Team",
-          "time": "Retired",
-          "points": 0
-        },
-        {
-          "pos": 22,
-          "number": "87",
-          "driver": "Oliver Bearman",
-          "code": "BEA",
-          "team": "Haas F1 Team",
-          "time": "Retired",
-          "points": 0
-        }
-      ],
-      "videos": [
-        {
-          "videoId": "Z1s1HSnGtx4",
-          "title": "F1, GP degli USA, gli highlights della gara ad Austin",
-          "thumbnailUrl": "https://i.ytimg.com/vi/Z1s1HSnGtx4/hqdefault.jpg",
-          "publishedAt": "2026-10-25T22:21:10+00:00",
-          "source": "Sky Sport F1",
-          "duration": "2:50"
-        },
-        {
-          "videoId": "srLm23RUAH0",
-          "title": "Race Highlights | 2026 United States Grand Prix",
-          "thumbnailUrl": "https://i.ytimg.com/vi/srLm23RUAH0/hqdefault.jpg",
-          "publishedAt": "2026-10-25T22:33:34+00:00",
-          "source": "Formula 1",
-          "duration": "8:03"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558559",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 8,
-      "title": "Udinese - Milan",
-      "session": "match",
-      "startsAt": "2026-10-25T19:45:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "115",
-        "name": "Udinese Calcio",
-        "shortName": "Udinese",
-        "logoUrl": "https://crests.football-data.org/115.png"
-      },
-      "awayTeam": {
-        "id": "98",
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "logoUrl": "https://crests.football-data.org/98.png"
-      },
-      "homeScore": 0,
-      "awayScore": 2,
-      "videos": [
-        {
-          "videoId": "k_pvrvdiOxU",
-          "title": "Udinese-Milan: gol e highlights | Serie A",
-          "thumbnailUrl": "https://i.ytimg.com/vi/k_pvrvdiOxU/hqdefault.jpg",
-          "publishedAt": "2026-10-26T00:45:08+00:00",
-          "source": "Sky Sport",
-          "duration": "3:23"
-        },
-        {
-          "videoId": "69dyy55qBcc",
-          "title": "PULISIC+HUTCHINSON, AMORIM riparte dal Friuli: Udinese-Milan 0-2 | Serie A | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/69dyy55qBcc/hqdefault.jpg",
-          "publishedAt": "2026-10-26T00:43:19+00:00",
-          "source": "DAZN",
-          "duration": "3:46"
         }
       ]
     }
