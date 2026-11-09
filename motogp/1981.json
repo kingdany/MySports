@@ -1,0 +1,1084 @@
+{
+  "competition": "motogp",
+  "season": "1981",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1981-1-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 1,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1981-04-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Salzburgring",
+      "city": "Plainfeld",
+      "country": "Austria",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-2-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 2,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1981-05-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "42:04.700"
+        },
+        {
+          "pos": 2,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+0.440"
+        },
+        {
+          "pos": 3,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+0.690"
+        },
+        {
+          "pos": 4,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+16.970"
+        },
+        {
+          "pos": 5,
+          "driver": "Michel Frutschi",
+          "code": "Frutschi",
+          "team": "Yamaha",
+          "time": "+31.610"
+        },
+        {
+          "pos": 6,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+32.560"
+        },
+        {
+          "pos": 7,
+          "driver": "Hiroyuki Kawasaki",
+          "code": "Kawasaki",
+          "team": "Suzuki",
+          "time": "+35.390"
+        },
+        {
+          "pos": 8,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+39.760"
+        },
+        {
+          "pos": 9,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+50.940"
+        },
+        {
+          "pos": 10,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "+53.230"
+        },
+        {
+          "pos": 11,
+          "driver": "Sadao Asami",
+          "code": "Asami",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Wil Hartog",
+          "code": "Hartog",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Raymond Roche",
+          "code": "Roche",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 16,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-3-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 3,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1981-05-10T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "52:02.100"
+        },
+        {
+          "pos": 2,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Suzuki",
+          "time": "+4.650"
+        },
+        {
+          "pos": 3,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+8.150"
+        },
+        {
+          "pos": 4,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+33.480"
+        },
+        {
+          "pos": 5,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+36.170"
+        },
+        {
+          "pos": 6,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+37.120"
+        },
+        {
+          "pos": 7,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+81.650"
+        },
+        {
+          "pos": 8,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "+86.220"
+        },
+        {
+          "pos": 9,
+          "driver": "Christian Sarron",
+          "code": "Sarron",
+          "team": "Yamaha",
+          "time": "+96.480"
+        },
+        {
+          "pos": 10,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Suzuki",
+          "time": "+112.070"
+        },
+        {
+          "pos": 11,
+          "driver": "Leandro Becheroni",
+          "code": "Becheroni",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Gianni Rolando",
+          "code": "Rolando",
+          "team": "Rieju"
+        },
+        {
+          "pos": 14,
+          "driver": "Sadao Asami",
+          "code": "Asami",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 15,
+          "driver": "Raymond Roche",
+          "code": "Roche",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 15,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 16,
+          "driver": "Hiroyuki Kawasaki",
+          "code": "Kawasaki",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 17,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-4-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 4,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1981-05-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Paul Ricard Circuit",
+      "city": "Le Castellet",
+      "country": "France",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-5-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 5,
+      "title": "Yugoslavian Grand Prix",
+      "session": "race",
+      "startsAt": "1981-05-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Rijeka",
+      "city": "Rijeka",
+      "country": "Croatia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "51:07.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+0.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+7.800"
+        },
+        {
+          "pos": 4,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Suzuki",
+          "time": "+12.700"
+        },
+        {
+          "pos": 5,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+22.500"
+        },
+        {
+          "pos": 6,
+          "driver": "Gianni Pelletier",
+          "code": "Pelletier",
+          "team": "Suzuki",
+          "time": "+73.500"
+        },
+        {
+          "pos": 7,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+85.200"
+        },
+        {
+          "pos": 8,
+          "driver": "Seppo Rossi",
+          "code": "Rossi",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 9,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 10,
+          "driver": "Kimmo Kopra",
+          "code": "Kopra",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 12,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Willem Zoet",
+          "code": "Zoet",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Frank Gross",
+          "code": "Gross",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 15,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-6-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 6,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1981-06-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "50:16.050"
+        },
+        {
+          "pos": 2,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+32.890"
+        },
+        {
+          "pos": 3,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+37.950"
+        },
+        {
+          "pos": 4,
+          "driver": "Willem Zoet",
+          "code": "Zoet",
+          "team": "Suzuki",
+          "time": "+42.330"
+        },
+        {
+          "pos": 5,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+74.620"
+        },
+        {
+          "pos": 6,
+          "driver": "Dave Potter",
+          "code": "Potter",
+          "team": "Yamaha",
+          "time": "+81.340"
+        },
+        {
+          "pos": 7,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Suzuki",
+          "time": "+98.280"
+        },
+        {
+          "pos": 8,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Suzuki",
+          "time": "+101.620"
+        },
+        {
+          "pos": 9,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+134.340"
+        },
+        {
+          "pos": 10,
+          "driver": "Sadao Asami",
+          "code": "Asami",
+          "team": "Yamaha",
+          "time": "+148.620"
+        },
+        {
+          "pos": 11,
+          "driver": "Seppo Rossi",
+          "code": "Rossi",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Dick Alblas",
+          "code": "Alblas",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 14,
+          "driver": "Greg Hansford",
+          "code": "Hansford",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 15,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 16,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 17,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 18,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "Non classificato"
+        },
+        {
+          "pos": 19,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 20,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-7-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 7,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1981-07-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "54:29.370"
+        },
+        {
+          "pos": 2,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 3,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+16.930"
+        },
+        {
+          "pos": 4,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+18.170"
+        },
+        {
+          "pos": 5,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+41.490"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 7,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 8,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Willem Zoet",
+          "code": "Zoet",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 10,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 11,
+          "driver": "Sadao Asami",
+          "code": "Asami",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Keith Huewen",
+          "code": "Huewen",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Yamaha"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-8-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 8,
+      "title": "San Marino Grand Prix",
+      "session": "race",
+      "startsAt": "1981-07-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-9-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 9,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1981-08-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "43:24.340"
+        },
+        {
+          "pos": 2,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+18.300"
+        },
+        {
+          "pos": 3,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+13.040"
+        },
+        {
+          "pos": 4,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Suzuki",
+          "time": "+36.220"
+        },
+        {
+          "pos": 5,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+36.560"
+        },
+        {
+          "pos": 6,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+37.790"
+        },
+        {
+          "pos": 7,
+          "driver": "Stuart Avant",
+          "code": "Avant",
+          "team": "Suzuki",
+          "time": "+44.950"
+        },
+        {
+          "pos": 8,
+          "driver": "Ikujiro Takai",
+          "code": "Takai",
+          "team": "Yamaha",
+          "time": "+45.410"
+        },
+        {
+          "pos": 9,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Yamaha",
+          "time": "+45.790"
+        },
+        {
+          "pos": 10,
+          "driver": "Chris Guy",
+          "code": "Guy",
+          "team": "Suzuki",
+          "time": "+53.360"
+        },
+        {
+          "pos": 11,
+          "driver": "Graziano Rossi",
+          "code": "Rossi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Peter Sjostrom",
+          "code": "Sjostrom",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 14,
+          "driver": "Roberto Pietri",
+          "code": "Pietri",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Andreas Hofmann",
+          "code": "Hofmann",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 16,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 18,
+          "driver": "Christian Sarron",
+          "code": "Sarron",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 19,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 20,
+          "driver": "Jodef Hage",
+          "code": "Hage",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 21,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 22,
+          "driver": "Barry Woodland",
+          "code": "Woodland",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-10-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 10,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1981-08-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1981-11-race",
+      "competition": "motogp",
+      "season": "1981",
+      "round": 11,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1981-08-16T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Anderstorp",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Marco Lucchinelli",
+          "team": "Suzuki",
+          "points": 105
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Randy Mamola",
+          "team": "Suzuki",
+          "points": 94
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Kenny Roberts",
+          "team": "Yamaha",
+          "points": 74
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Barry Sheene",
+          "team": "Yamaha",
+          "points": 72
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Graeme Crosby",
+          "team": "Suzuki",
+          "points": 68
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Boet Van Dulmen",
+          "team": "Yamaha",
+          "points": 64
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Jack Middelburg",
+          "team": "Suzuki",
+          "points": 60
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Kork Ballington",
+          "team": "Kawasaki",
+          "points": 43
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Marc Fontan",
+          "team": "Yamaha",
+          "points": 25
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Hiroyuki Kawasaki",
+          "team": "Suzuki",
+          "points": 19
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Bernard Fau",
+          "team": "Suzuki",
+          "points": 14
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Guido Paci",
+          "team": "Yamaha",
+          "points": 14
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Franco Uncini",
+          "team": "Suzuki",
+          "points": 12
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Willem Zoet",
+          "team": "Suzuki",
+          "points": 10
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Seppo Rossi",
+          "team": "Suzuki",
+          "points": 9
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Gianni Pelletier",
+          "team": "Suzuki",
+          "points": 8
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Michel Frutschi",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Dave Potter",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Stuart Avant",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Sergio Pellandini",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Ikujiro Takai",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Steve Parrish",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Frank Gross",
+          "team": "Suzuki",
+          "points": 2
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Wil Hartog",
+          "team": "Suzuki",
+          "points": 2
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Christian Sarron",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Sadao Asami",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Chris Guy",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Keith Huewen",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Kimmo Kopra",
+          "team": "Suzuki",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

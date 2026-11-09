@@ -1,0 +1,453 @@
+{
+  "competition": "motogp",
+  "season": "1958",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1958-1-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 1,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1958-06-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-2-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 2,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1958-06-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "32:29.100"
+        },
+        {
+          "pos": 2,
+          "driver": "John Hartle",
+          "code": "Hartle",
+          "team": "MV Agusta",
+          "time": "+106.000"
+        },
+        {
+          "pos": 3,
+          "driver": "Derek Minter",
+          "code": "Minter",
+          "team": "Norton",
+          "time": "+122.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Ernst Hiller",
+          "code": "Hiller",
+          "team": "BMW",
+          "time": "+149.400"
+        },
+        {
+          "pos": 5,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "BMW"
+        },
+        {
+          "pos": 6,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-3-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 3,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1958-07-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "8:22.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Keith Campbell",
+          "code": "Campbell",
+          "team": "Norton",
+          "time": "+45.900"
+        },
+        {
+          "pos": 3,
+          "driver": "John Hartle",
+          "code": "Hartle",
+          "team": "MV Agusta",
+          "time": "+61.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "BMW",
+          "time": "+62.700"
+        },
+        {
+          "pos": 5,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "BMW",
+          "time": "+63.600"
+        },
+        {
+          "pos": 6,
+          "driver": "Bob Anderson",
+          "code": "Anderson",
+          "team": "Norton",
+          "time": "+63.800"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-4-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 4,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1958-07-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nurburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-5-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 5,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1958-07-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hedemora",
+      "city": "Hedemora",
+      "country": "Sweden",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Norton",
+          "time": "19:04.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "BMW",
+          "time": "+0.400"
+        },
+        {
+          "pos": 3,
+          "driver": "Terry Shepherd",
+          "code": "Shepherd",
+          "team": "Norton",
+          "time": "+63.700"
+        },
+        {
+          "pos": 4,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "Norton",
+          "time": "+66.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Ernst Hiller",
+          "code": "Hiller",
+          "team": "BMW",
+          "time": "+88.700"
+        },
+        {
+          "pos": 6,
+          "driver": "Bob Brown",
+          "code": "Brown",
+          "team": "Norton",
+          "time": "+150.300"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-6-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 6,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1958-08-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "42:36.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Bob Mcintyre",
+          "code": "Mcintyre",
+          "team": "Norton",
+          "time": "+104.400"
+        },
+        {
+          "pos": 3,
+          "driver": "John Hartle",
+          "code": "Hartle",
+          "team": "MV Agusta",
+          "time": "+161.000"
+        },
+        {
+          "pos": 4,
+          "driver": "Derek Minter",
+          "code": "Minter",
+          "team": "Norton",
+          "time": "+201.800"
+        },
+        {
+          "pos": 5,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Norton",
+          "time": "+223.600"
+        },
+        {
+          "pos": 6,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "BMW"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1958-7-race",
+      "competition": "motogp",
+      "season": "1958",
+      "round": 7,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1958-09-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "5:31.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Remo Venturi",
+          "code": "Venturi",
+          "team": "MV Agusta",
+          "time": "+79.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Umberto Masetti",
+          "code": "Masetti",
+          "team": "MV Agusta",
+          "time": "+111.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "BMW"
+        },
+        {
+          "pos": 5,
+          "driver": "Carlo Bandirola",
+          "code": "Bandirola",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 6,
+          "driver": "Dave Chadwick",
+          "code": "Chadwick",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "John Surtees",
+          "team": "MV Agusta",
+          "points": 32
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "John Hartle",
+          "team": "MV Agusta",
+          "points": 20
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Geoff Duke",
+          "team": "Norton",
+          "points": 13
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Dickie Dale",
+          "team": "BMW",
+          "points": 13
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Derek Minter",
+          "team": "Norton",
+          "points": 10
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Gary Hocking",
+          "team": "Norton",
+          "points": 8
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Ernst Hiller",
+          "team": "BMW",
+          "points": 8
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Bob Anderson",
+          "team": "Norton",
+          "points": 7
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Bob Mcintyre",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Remo Venturi",
+          "team": "MV Agusta",
+          "points": 6
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Keith Campbell",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Clive Brown",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Umberto Masetti",
+          "team": "MV Agusta",
+          "points": 4
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Terry Shepherd",
+          "team": "Norton",
+          "points": 4
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Dave Chadwick",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Carlo Bandirola",
+          "team": "MV Agusta",
+          "points": 2
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "J.D. Anderson",
+          "team": "Norton",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "competition": "motogp",
+  "season": "1949",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1949-1-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 1,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1949-06-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Harold Daniell",
+          "code": "Daniell",
+          "team": "Norton",
+          "time": "2:18.600"
+        },
+        {
+          "pos": 2,
+          "driver": "John Lockett",
+          "code": "Lockett",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Ernie Lyons",
+          "code": "Lyons",
+          "team": "Velocette"
+        },
+        {
+          "pos": 4,
+          "driver": "Artie Bell",
+          "code": "Bell",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "Sid Jensen",
+          "code": "Jensen",
+          "team": "Triumph"
+        },
+        {
+          "pos": 6,
+          "driver": "Fred Stevens",
+          "code": "Stevens",
+          "team": "Triumph"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1949-2-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 2,
+      "title": "Switzerland Grand Prix",
+      "session": "race",
+      "startsAt": "1949-07-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Berne",
+      "city": "Bern",
+      "country": "Switzerland",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Leslie Graham",
+          "code": "Graham",
+          "team": "AJS",
+          "time": "26:14.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Arciso Artesiani",
+          "code": "Artesiani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Harold Daniell",
+          "code": "Daniell",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "Nello Pagani",
+          "code": "Pagani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Freddie Frith",
+          "code": "Frith",
+          "team": "Velocette"
+        },
+        {
+          "pos": 6,
+          "driver": "Guido Leoni",
+          "code": "Leoni",
+          "team": "Moto Guzzi"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1949-3-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 3,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1949-07-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Nello Pagani",
+          "code": "Pagani",
+          "team": "Gilera",
+          "time": "47:32.700"
+        },
+        {
+          "pos": 2,
+          "driver": "Leslie Graham",
+          "code": "Graham",
+          "team": "AJS"
+        },
+        {
+          "pos": 3,
+          "driver": "Arciso Artesiani",
+          "code": "Artesiani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Artie Bell",
+          "code": "Bell",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "John Lockett",
+          "code": "Lockett",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Harold Daniell",
+          "code": "Daniell",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1949-4-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 4,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1949-07-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1949-5-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 5,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1949-08-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Leslie Graham",
+          "code": "Graham",
+          "team": "AJS",
+          "time": "16:03.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Artie Bell",
+          "code": "Bell",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Nello Pagani",
+          "code": "Pagani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "William Doran",
+          "code": "Doran",
+          "team": "AJS"
+        },
+        {
+          "pos": 5,
+          "driver": "Jock West",
+          "code": "West",
+          "team": "AJS"
+        },
+        {
+          "pos": 6,
+          "driver": "Cromie Mccandless",
+          "code": "Mccandless",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1949-6-race",
+      "competition": "motogp",
+      "season": "1949",
+      "round": 6,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1949-09-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Nello Pagani",
+          "code": "Pagani",
+          "team": "Gilera",
+          "time": "16:36.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Arciso Artesiani",
+          "code": "Artesiani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "William Doran",
+          "code": "Doran",
+          "team": "AJS"
+        },
+        {
+          "pos": 4,
+          "driver": "Gianni Leoni",
+          "code": "Leoni",
+          "team": "Moto Guzzi"
+        },
+        {
+          "pos": 5,
+          "driver": "Bruno Bertacchini",
+          "code": "Bertacchini",
+          "team": "Moto Guzzi"
+        },
+        {
+          "pos": 6,
+          "driver": "Leslie Graham",
+          "code": "Graham",
+          "team": "AJS"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Leslie Graham",
+          "team": "AJS",
+          "points": 30
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Nello Pagani",
+          "team": "Gilera",
+          "points": 28
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Arciso Artesiani",
+          "team": "Gilera",
+          "points": 25
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "William Doran",
+          "team": "AJS",
+          "points": 23
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Artie Bell",
+          "team": "Norton",
+          "points": 20
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Harold Daniell",
+          "team": "Norton",
+          "points": 17
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "John Lockett",
+          "team": "Norton",
+          "points": 13
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Ernie Lyons",
+          "team": "Velocette",
+          "points": 7
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Enrico Lorenzetti",
+          "team": "Moto Guzzi",
+          "points": 7
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Gianni Leoni",
+          "team": "Moto Guzzi",
+          "points": 6
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Jock West",
+          "team": "AJS",
+          "points": 5
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Sid Jensen",
+          "team": "Triumph",
+          "points": 5
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Bruno Bertacchini",
+          "team": "Moto Guzzi",
+          "points": 5
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Freddie Frith",
+          "team": "Velocette",
+          "points": 5
+        }
+      ]
+    }
+  ]
+}

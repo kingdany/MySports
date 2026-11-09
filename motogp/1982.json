@@ -1,0 +1,1475 @@
+{
+  "competition": "motogp",
+  "season": "1982",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1982-1-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 1,
+      "title": "Argentinian Grand Prix",
+      "session": "race",
+      "startsAt": "1982-03-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Oscar y Juan Gálvez",
+      "city": "CABA",
+      "country": "Argentina",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "50:44.820"
+        },
+        {
+          "pos": 2,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+0.670"
+        },
+        {
+          "pos": 3,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "+1.370"
+        },
+        {
+          "pos": 4,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "+5.660"
+        },
+        {
+          "pos": 5,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "+12.630"
+        },
+        {
+          "pos": 6,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "+45.560"
+        },
+        {
+          "pos": 7,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+48.590"
+        },
+        {
+          "pos": 8,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+55.800"
+        },
+        {
+          "pos": 9,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+81.060"
+        },
+        {
+          "pos": 10,
+          "driver": "Loris Reggiani",
+          "code": "Reggiani",
+          "team": "Suzuki",
+          "time": "+125.610"
+        },
+        {
+          "pos": 11,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Graziano Rossi",
+          "code": "Rossi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 14,
+          "driver": "Roberto Pietri",
+          "code": "Pietri",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 16,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 17,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-2-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 2,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1982-05-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Salzburgring",
+      "city": "Plainfeld",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "39:47.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+4.930"
+        },
+        {
+          "pos": 3,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+18.620"
+        },
+        {
+          "pos": 4,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+21.210"
+        },
+        {
+          "pos": 5,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+40.220"
+        },
+        {
+          "pos": 6,
+          "driver": "Seppo Rossi",
+          "code": "S. Rossi",
+          "team": "Suzuki",
+          "time": "+70.860"
+        },
+        {
+          "pos": 7,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+90.560"
+        },
+        {
+          "pos": 8,
+          "driver": "Leandro Becheroni",
+          "code": "Becheroni",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 9,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 10,
+          "driver": "Andreas Hofmann",
+          "code": "Hofmann",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 11,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Jonnie Ekerold",
+          "code": "Ekerold",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Graziano Rossi",
+          "code": "G. Rossi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 15,
+          "driver": "Reinhold Roth",
+          "code": "Roth",
+          "team": "Rieju"
+        },
+        {
+          "pos": 16,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 17,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 18,
+          "driver": "Gustav Reiner",
+          "code": "Reiner",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 19,
+          "driver": "Loris Reggiani",
+          "code": "Reggiani",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 20,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-3-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 3,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1982-05-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nogaro",
+      "city": "Nogaro",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Michel Frutschi",
+          "code": "Frutschi",
+          "team": "Sanvenero",
+          "time": "57:22.410"
+        },
+        {
+          "pos": 2,
+          "driver": "Frank Gross",
+          "code": "Gross",
+          "team": "Suzuki",
+          "time": "+9.130"
+        },
+        {
+          "pos": 3,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Yamaha",
+          "time": "+14.640"
+        },
+        {
+          "pos": 4,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Suzuki",
+          "time": "+17.810"
+        },
+        {
+          "pos": 5,
+          "driver": "Stuart Avant",
+          "code": "Avant",
+          "team": "Suzuki",
+          "time": "+18.120"
+        },
+        {
+          "pos": 6,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+27.580"
+        },
+        {
+          "pos": 7,
+          "driver": "Philippe Robinet",
+          "code": "Robinet",
+          "team": "Suzuki",
+          "time": "+33.930"
+        },
+        {
+          "pos": 8,
+          "driver": "Chris Guy",
+          "code": "Guy",
+          "team": "Suzuki",
+          "time": "+37.620"
+        },
+        {
+          "pos": 9,
+          "driver": "Andreas Hofmann",
+          "code": "Hofmann",
+          "team": "Suzuki",
+          "time": "+51.600"
+        },
+        {
+          "pos": 10,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki",
+          "time": "+53.730"
+        },
+        {
+          "pos": 11,
+          "driver": "Wolfgang Von Muralt",
+          "code": "Von Muralt",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Lorenzo Ghiselli",
+          "code": "Ghiselli",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Peter Sjostrom",
+          "code": "Sjostrom",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Borge W. Nielsen",
+          "code": "W. Nielsen",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Gianni Pelletier",
+          "code": "Pelletier",
+          "team": "Morbidelli"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-4-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 4,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1982-05-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Jarama Circuit",
+      "city": "San Sebastián de los Reyes",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "57:08.040"
+        },
+        {
+          "pos": 2,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 3,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 4,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 5,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda"
+        },
+        {
+          "pos": 6,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda"
+        },
+        {
+          "pos": 7,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 8,
+          "driver": "Victor Palomo",
+          "code": "Palomo",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 9,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 10,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 11,
+          "driver": "Lorenzo Ghiselli",
+          "code": "Ghiselli",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 14,
+          "driver": "Peter Sjostrom",
+          "code": "Sjostrom",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-5-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 5,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1982-05-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Misano World Circuit Marco Simoncelli",
+      "city": "Santa Monica-Cella",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "55:29.620"
+        },
+        {
+          "pos": 2,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "+12.720"
+        },
+        {
+          "pos": 3,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+28.870"
+        },
+        {
+          "pos": 4,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+35.400"
+        },
+        {
+          "pos": 5,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "+48.560"
+        },
+        {
+          "pos": 6,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+67.040"
+        },
+        {
+          "pos": 7,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "+72.320"
+        },
+        {
+          "pos": 8,
+          "driver": "Leandro Becheroni",
+          "code": "Becheroni",
+          "team": "Suzuki",
+          "time": "+73.410"
+        },
+        {
+          "pos": 9,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 10,
+          "driver": "Peter Sjostrom",
+          "code": "Sjostrom",
+          "team": "Suzuki",
+          "time": "+1 giro"
+        },
+        {
+          "pos": 11,
+          "driver": "Raymond Roche",
+          "code": "Roche",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Frank Gross",
+          "code": "Gross",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Fabio Biliotti",
+          "code": "Biliotti",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Lorenzo Ghiselli",
+          "code": "Ghiselli",
+          "team": "Suzuki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-6-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 6,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1982-06-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "46:38.100"
+        },
+        {
+          "pos": 2,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+5.550"
+        },
+        {
+          "pos": 3,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+13.570"
+        },
+        {
+          "pos": 4,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+17.940"
+        },
+        {
+          "pos": 5,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+31.900"
+        },
+        {
+          "pos": 6,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+32.610"
+        },
+        {
+          "pos": 7,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 8,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda"
+        },
+        {
+          "pos": 9,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Raymond Roche",
+          "code": "Roche",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 11,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 12,
+          "driver": "Ron Haslam",
+          "code": "Haslam",
+          "team": "Honda"
+        },
+        {
+          "pos": 13,
+          "driver": "Graziano Rossi",
+          "code": "Rossi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 14,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 15,
+          "driver": "Stuart Avant",
+          "code": "Avant",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 16,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-7-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 7,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1982-07-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "52:59.670"
+        },
+        {
+          "pos": 2,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+3.800"
+        },
+        {
+          "pos": 3,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "+6.270"
+        },
+        {
+          "pos": 4,
+          "driver": "Kenny Roberts",
+          "code": "Roberts",
+          "team": "Yamaha",
+          "time": "+23.080"
+        },
+        {
+          "pos": 5,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+35.090"
+        },
+        {
+          "pos": 6,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "+36.470"
+        },
+        {
+          "pos": 7,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha",
+          "time": "+39.540"
+        },
+        {
+          "pos": 8,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+40.110"
+        },
+        {
+          "pos": 9,
+          "driver": "Michel Frutschi",
+          "code": "Frutschi",
+          "team": "Sanvenero",
+          "time": "+60.440"
+        },
+        {
+          "pos": 10,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+62.770"
+        },
+        {
+          "pos": 11,
+          "driver": "Ron Haslam",
+          "code": "Haslam",
+          "team": "Honda"
+        },
+        {
+          "pos": 12,
+          "driver": "Stuart Avant",
+          "code": "Avant",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Seppo Rossi",
+          "code": "Rossi",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Guy Bertin",
+          "code": "Bertin",
+          "team": "Sanvenero"
+        },
+        {
+          "pos": 15,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-8-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 8,
+      "title": "Yugoslavian Grand Prix",
+      "session": "race",
+      "startsAt": "1982-07-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Rijeka",
+      "city": "Rijeka",
+      "country": "Croatia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "50:32.240"
+        },
+        {
+          "pos": 2,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+9.770"
+        },
+        {
+          "pos": 3,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Yamaha",
+          "time": "+12.900"
+        },
+        {
+          "pos": 4,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "+19.270"
+        },
+        {
+          "pos": 5,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "+32.680"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+54.410"
+        },
+        {
+          "pos": 7,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+65.760"
+        },
+        {
+          "pos": 8,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "+72.060"
+        },
+        {
+          "pos": 9,
+          "driver": "Loris Reggiani",
+          "code": "Reggiani",
+          "team": "Suzuki",
+          "time": "+78.880"
+        },
+        {
+          "pos": 10,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+79.030"
+        },
+        {
+          "pos": 11,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Hiroyuki Kawasaki",
+          "code": "Kawasaki",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Reinhold Roth",
+          "code": "Roth",
+          "team": "Rieju"
+        },
+        {
+          "pos": 14,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Seppo Rossi",
+          "code": "Rossi",
+          "team": "Suzuki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-9-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 9,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1982-08-01T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Franco Uncini",
+          "code": "Uncini",
+          "team": "Suzuki",
+          "time": "42:49.640"
+        },
+        {
+          "pos": 2,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "+6.430"
+        },
+        {
+          "pos": 3,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+13.740"
+        },
+        {
+          "pos": 4,
+          "driver": "Loris Reggiani",
+          "code": "Reggiani",
+          "team": "Suzuki",
+          "time": "+15.180"
+        },
+        {
+          "pos": 5,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+15.400"
+        },
+        {
+          "pos": 6,
+          "driver": "Virginio Ferrari",
+          "code": "Ferrari",
+          "team": "Suzuki",
+          "time": "+17.730"
+        },
+        {
+          "pos": 7,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+17.930"
+        },
+        {
+          "pos": 8,
+          "driver": "Marc Fontan",
+          "code": "Fontan",
+          "team": "Yamaha",
+          "time": "+30.810"
+        },
+        {
+          "pos": 9,
+          "driver": "Leandro Becheroni",
+          "code": "Becheroni",
+          "team": "Suzuki",
+          "time": "+55.730"
+        },
+        {
+          "pos": 10,
+          "driver": "Chris Guy",
+          "code": "Guy",
+          "team": "Suzuki",
+          "time": "+64.190"
+        },
+        {
+          "pos": 11,
+          "driver": "Andreas Hofmann",
+          "code": "Hofmann",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Jonnie Ekerold",
+          "code": "Ekerold",
+          "team": "Cagiva"
+        },
+        {
+          "pos": 14,
+          "driver": "Gary Lingham",
+          "code": "Lingham",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Ron Haslam",
+          "code": "Haslam",
+          "team": "Honda"
+        },
+        {
+          "pos": 15,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-10-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 10,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1982-08-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Anderstorp",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-11-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 11,
+      "title": "San Marino Grand Prix",
+      "session": "race",
+      "startsAt": "1982-09-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Internazionale del Mugello",
+      "city": "Scarperia e San Piero",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Freddie Spencer",
+          "code": "Spencer",
+          "team": "Honda",
+          "time": "52:21.780"
+        },
+        {
+          "pos": 2,
+          "driver": "Randy Mamola",
+          "code": "Mamola",
+          "team": "Suzuki",
+          "time": "+17.700"
+        },
+        {
+          "pos": 3,
+          "driver": "Graeme Crosby",
+          "code": "Crosby",
+          "team": "Yamaha",
+          "time": "+24.650"
+        },
+        {
+          "pos": 4,
+          "driver": "Virginio Ferrari",
+          "code": "Ferrari",
+          "team": "Suzuki",
+          "time": "+36.840"
+        },
+        {
+          "pos": 5,
+          "driver": "Jack Middelburg",
+          "code": "Middelburg",
+          "team": "Suzuki",
+          "time": "+39.590"
+        },
+        {
+          "pos": 6,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Honda",
+          "time": "+50.540"
+        },
+        {
+          "pos": 7,
+          "driver": "Kork Ballington",
+          "code": "Ballington",
+          "team": "Kawasaki",
+          "time": "+60.730"
+        },
+        {
+          "pos": 8,
+          "driver": "Leandro Becheroni",
+          "code": "Becheroni",
+          "team": "Suzuki",
+          "time": "+66.800"
+        },
+        {
+          "pos": 9,
+          "driver": "Sergio Pellandini",
+          "code": "Pellandini",
+          "team": "Suzuki",
+          "time": "+94.410"
+        },
+        {
+          "pos": 10,
+          "driver": "Guido Paci",
+          "code": "Paci",
+          "team": "Yamaha",
+          "time": "+102.960"
+        },
+        {
+          "pos": 11,
+          "driver": "Graziano Rossi",
+          "code": "Rossi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 12,
+          "driver": "Lorenzo Ghiselli",
+          "code": "Ghiselli",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 13,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 14,
+          "driver": "Andreas Hofmann",
+          "code": "Hofmann",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 15,
+          "driver": "Takazumi Katayama",
+          "code": "Katayama",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1982-12-race",
+      "competition": "motogp",
+      "season": "1982",
+      "round": 12,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1982-09-26T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Franco Uncini",
+          "team": "Suzuki",
+          "points": 103
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Graeme Crosby",
+          "team": "Yamaha",
+          "points": 76
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Freddie Spencer",
+          "team": "Honda",
+          "points": 72
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Kenny Roberts",
+          "team": "Yamaha",
+          "points": 68
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Barry Sheene",
+          "team": "Yamaha",
+          "points": 68
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Randy Mamola",
+          "team": "Suzuki",
+          "points": 65
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Takazumi Katayama",
+          "team": "Honda",
+          "points": 48
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Marco Lucchinelli",
+          "team": "Honda",
+          "points": 43
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Kork Ballington",
+          "team": "Kawasaki",
+          "points": 31
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Marc Fontan",
+          "team": "Yamaha",
+          "points": 29
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Virginio Ferrari",
+          "team": "Suzuki",
+          "points": 25
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Boet Van Dulmen",
+          "team": "Yamaha",
+          "points": 23
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Loris Reggiani",
+          "team": "Suzuki",
+          "points": 21
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Michel Frutschi",
+          "team": "Sanvenero",
+          "points": 17
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Sergio Pellandini",
+          "team": "Suzuki",
+          "points": 15
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jack Middelburg",
+          "team": "Suzuki",
+          "points": 13
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Frank Gross",
+          "team": "Suzuki",
+          "points": 12
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Steve Parrish",
+          "team": "Yamaha",
+          "points": 11
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Leandro Becheroni",
+          "team": "Suzuki",
+          "points": 11
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Guido Paci",
+          "team": "Yamaha",
+          "points": 7
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Stuart Avant",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Philippe Coulon",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Seppo Rossi",
+          "team": "Suzuki",
+          "points": 5
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Philippe Robinet",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Chris Guy",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Victor Palomo",
+          "team": "Suzuki",
+          "points": 3
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Andreas Hofmann",
+          "team": "Suzuki",
+          "points": 3
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Peter Sjostrom",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Jonnie Ekerold",
+          "team": "Cagiva",
+          "points": 1
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Raymond Roche",
+          "team": "Suzuki",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

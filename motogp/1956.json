@@ -1,0 +1,422 @@
+{
+  "competition": "motogp",
+  "season": "1956",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1956-1-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 1,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1956-06-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "44:05.800"
+        },
+        {
+          "pos": 2,
+          "driver": "John Hartle",
+          "code": "Hartle",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Jack Brett",
+          "code": "Brett",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "Walter Zeller",
+          "code": "Zeller",
+          "team": "BMW"
+        },
+        {
+          "pos": 5,
+          "driver": "Bill Lomas",
+          "code": "Lomas",
+          "team": "Moto Guzzi"
+        },
+        {
+          "pos": 6,
+          "driver": "Derek Ennett",
+          "code": "Ennett",
+          "team": "Matchless"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1956-2-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 2,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1956-06-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1956-3-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 3,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1956-07-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Surtees",
+          "code": "Surtees",
+          "team": "MV Agusta",
+          "time": "9:02.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Walter Zeller",
+          "code": "Zeller",
+          "team": "BMW"
+        },
+        {
+          "pos": 3,
+          "driver": "Pierre Monneret",
+          "code": "Monneret",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Umberto Masetti",
+          "code": "Masetti",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 5,
+          "driver": "Alfredo Milani",
+          "code": "Milani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 6,
+          "driver": "Auguste Goffin",
+          "code": "Goffin",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1956-4-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 4,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1956-07-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Solitude",
+      "city": "Solitude",
+      "country": "United States",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1956-5-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 5,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1956-08-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "John Hartle",
+          "code": "Hartle",
+          "team": "Norton",
+          "time": "20:14.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Bob Brown",
+          "code": "Brown",
+          "team": "Matchless"
+        },
+        {
+          "pos": 3,
+          "driver": "George Murphy",
+          "code": "Murphy",
+          "team": "Matchless"
+        },
+        {
+          "pos": 4,
+          "driver": "Geoffrey Tanner",
+          "code": "Tanner",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "R.W. Herron",
+          "code": "Herron",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Brett",
+          "code": "Brett",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1956-6-race",
+      "competition": "motogp",
+      "season": "1956",
+      "round": 6,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1956-09-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Gilera",
+          "time": "5:59.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Libero Liberati",
+          "code": "Liberati",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Pierre Monneret",
+          "code": "Monneret",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Carlo Bandirola",
+          "code": "Bandirola",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 6,
+          "driver": "Walter Zeller",
+          "code": "Zeller",
+          "team": "BMW"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "John Surtees",
+          "team": "MV Agusta",
+          "points": 24
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Walter Zeller",
+          "team": "BMW",
+          "points": 16
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "John Hartle",
+          "team": "Norton",
+          "points": 14
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Pierre Monneret",
+          "team": "Gilera",
+          "points": 12
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Reg Armstrong",
+          "team": "Gilera",
+          "points": 11
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Umberto Masetti",
+          "team": "MV Agusta",
+          "points": 9
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Geoff Duke",
+          "team": "Gilera",
+          "points": 8
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Bob Brown",
+          "team": "Matchless",
+          "points": 6
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Libero Liberati",
+          "team": "Gilera",
+          "points": 6
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Eddie Grant",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Jack Brett",
+          "team": "Norton",
+          "points": 5
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "George Murphy",
+          "team": "Matchless",
+          "points": 4
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Keith Bryen",
+          "team": "Norton",
+          "points": 4
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Gerold Klinger",
+          "team": "BMW",
+          "points": 3
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Geoffrey Tanner",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "R.W. Herron",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "P.B. Fahey",
+          "team": "Matchless",
+          "points": 2
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Bill Lomas",
+          "team": "Moto Guzzi",
+          "points": 2
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Alfredo Milani",
+          "team": "Gilera",
+          "points": 2
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Carlo Bandirola",
+          "team": "MV Agusta",
+          "points": 2
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Auguste Goffin",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Ernst Hiller",
+          "team": "BMW",
+          "points": 1
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Derek Ennett",
+          "team": "Matchless",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

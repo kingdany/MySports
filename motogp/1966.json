@@ -1,0 +1,470 @@
+{
+  "competition": "motogp",
+  "season": "1966",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1966-1-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 1,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1966-05-22T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-2-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 2,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1966-06-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Jim Redman",
+          "code": "Redman",
+          "team": "Honda",
+          "time": "4:28.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "+2.200"
+        },
+        {
+          "pos": 3,
+          "driver": "Franta Stastny",
+          "code": "Stastny",
+          "team": "Jawa-CZ"
+        },
+        {
+          "pos": 4,
+          "driver": "John Cooper",
+          "code": "Cooper",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "Stuart Graham",
+          "code": "Graham",
+          "team": "Matchless"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Matchless"
+        },
+        {
+          "pos": 7,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-3-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 3,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-4-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 4,
+      "title": "East Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sachsenring",
+      "city": "Oberlungwitz",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-5-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 5,
+      "title": "Czechoslovakian Grand Prix",
+      "session": "race",
+      "startsAt": "1966-07-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "CREDITAS Autodrom Brno",
+      "city": "",
+      "country": "Czechia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Honda",
+          "time": "16:05.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "+76.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Gyula Marsovszky",
+          "code": "Marsovszky",
+          "team": "Matchless"
+        },
+        {
+          "pos": 4,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Matchless"
+        },
+        {
+          "pos": 5,
+          "driver": "Jack Ahearn",
+          "code": "Ahearn",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Eric Hinton",
+          "code": "Hinton",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-6-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 6,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1966-08-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-7-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 7,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1966-08-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Honda",
+          "time": "5:00.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "+89.400"
+        },
+        {
+          "pos": 3,
+          "driver": "Franta Stastny",
+          "code": "Stastny",
+          "team": "Jawa-CZ"
+        },
+        {
+          "pos": 4,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Matchless"
+        },
+        {
+          "pos": 5,
+          "driver": "Chris Conn",
+          "code": "Conn",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Peter Williams",
+          "code": "Williams",
+          "team": "AJS"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-8-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 8,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1966-09-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1966-9-race",
+      "competition": "motogp",
+      "season": "1966",
+      "round": 9,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1966-09-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "3:04.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Peter Williams",
+          "code": "Williams",
+          "team": "Matchless"
+        },
+        {
+          "pos": 3,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Matchless"
+        },
+        {
+          "pos": 4,
+          "driver": "Fred Stevens",
+          "code": "Stevens",
+          "team": "Paton"
+        },
+        {
+          "pos": 5,
+          "driver": "Walter Scheimann",
+          "code": "Scheimann",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Edy Lenz",
+          "code": "Lenz",
+          "team": "Matchless"
+        },
+        {
+          "pos": 7,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Honda",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Giacomo Agostini",
+          "team": "MV Agusta",
+          "points": 36
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Mike Hailwood",
+          "team": "Honda",
+          "points": 30
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Jack Findlay",
+          "team": "Matchless",
+          "points": 20
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Franta Stastny",
+          "team": "Jawa-CZ",
+          "points": 17
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Jim Redman",
+          "team": "Honda",
+          "points": 16
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Jack Ahearn",
+          "team": "Norton",
+          "points": 13
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Gyula Marsovszky",
+          "team": "Matchless",
+          "points": 13
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Stuart Graham",
+          "team": "Matchless",
+          "points": 11
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Peter Williams",
+          "team": "AJS",
+          "points": 7
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Chris Conn",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Ron Chandler",
+          "team": "Matchless",
+          "points": 6
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Fred Stevens",
+          "team": "Paton",
+          "points": 3
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "John Cooper",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "John Blanchard",
+          "team": "Matchless",
+          "points": 3
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Lewis Young",
+          "team": "Matchless",
+          "points": 3
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jeff Mawby",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Malcom Stanton",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Walter Scheimann",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Edy Lenz",
+          "team": "Matchless",
+          "points": 2
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Eric Hinton",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "John Dodds",
+          "team": "Norton",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

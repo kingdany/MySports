@@ -1,0 +1,989 @@
+{
+  "competition": "motogp",
+  "season": "1975",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1975-1-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 1,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1975-03-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Paul Ricard Circuit",
+      "city": "Le Castellet",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "50:09.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Hideo Kanaya",
+          "code": "Kanaya",
+          "team": "Yamaha",
+          "time": "+0.500"
+        },
+        {
+          "pos": 3,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "+29.200"
+        },
+        {
+          "pos": 4,
+          "driver": "Armando Toracca",
+          "code": "Toracca",
+          "team": "MV Agusta",
+          "time": "+30.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Patrick Pons",
+          "code": "Pons",
+          "team": "Yamaha",
+          "time": "+96.300"
+        },
+        {
+          "pos": 6,
+          "driver": "Pete Mckinley",
+          "code": "Mckinley",
+          "team": "Yamaha",
+          "time": "+109.800"
+        },
+        {
+          "pos": 7,
+          "driver": "Michel Rougerie",
+          "code": "Rougerie",
+          "team": "Harley Davidson",
+          "time": "+114.100"
+        },
+        {
+          "pos": 8,
+          "driver": "Karl Auer",
+          "code": "Auer",
+          "team": "Yamaha",
+          "time": "+115.200"
+        },
+        {
+          "pos": 9,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Yamaha",
+          "time": "+115.400"
+        },
+        {
+          "pos": 10,
+          "driver": "Kjell Solberg",
+          "code": "Solberg",
+          "team": "Yamaha",
+          "time": "+122.800"
+        },
+        {
+          "pos": 11,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-2-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 2,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1975-05-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Salzburgring",
+      "city": "Plainfeld",
+      "country": "Austria",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-3-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 3,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1975-05-11T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "46:32.100"
+        },
+        {
+          "pos": 2,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "+3.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki",
+          "time": "+28.300"
+        },
+        {
+          "pos": 4,
+          "driver": "Hideo Kanaya",
+          "code": "Kanaya",
+          "team": "Yamaha",
+          "time": "+54.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Stan Woods",
+          "code": "Woods",
+          "team": "Suzuki",
+          "time": "+93.200"
+        },
+        {
+          "pos": 6,
+          "driver": "Dieter Braun",
+          "code": "Braun",
+          "team": "Yamaha",
+          "time": "+128.200"
+        },
+        {
+          "pos": 7,
+          "driver": "Christian Leon",
+          "code": "Leon",
+          "team": "Koenig"
+        },
+        {
+          "pos": 8,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Adu Celso-santos",
+          "code": "Celso-santos",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Yamaha"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-4-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 4,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1975-05-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "59:28.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "+60.800"
+        },
+        {
+          "pos": 3,
+          "driver": "Hideo Kanaya",
+          "code": "Kanaya",
+          "team": "Yamaha",
+          "time": "+83.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Armando Toracca",
+          "code": "Toracca",
+          "team": "MV Agusta",
+          "time": "+108.400"
+        },
+        {
+          "pos": 5,
+          "driver": "Stan Woods",
+          "code": "Woods",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 6,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 7,
+          "driver": "John Newbold",
+          "code": "Newbold",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 8,
+          "driver": "Tierry Tchernine",
+          "code": "Tchernine",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Bernard Fau",
+          "code": "Fau",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Rudolph Keller",
+          "code": "Keller",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-5-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 5,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1975-06-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-6-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 6,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1975-06-28T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "48:01.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 3,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "+48.700"
+        },
+        {
+          "pos": 4,
+          "driver": "John Newbold",
+          "code": "Newbold",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 5,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 6,
+          "driver": "Gianfranco Bonera",
+          "code": "Bonera",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 7,
+          "driver": "John Williams",
+          "code": "Williams",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 8,
+          "driver": "Hans Stadelmann",
+          "code": "Stadelmann",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Karl Auer",
+          "code": "Auer",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Peter Van Der Wal",
+          "code": "Van Der Wal",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-7-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 7,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1975-07-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "47:21.100"
+        },
+        {
+          "pos": 2,
+          "driver": "John Newbold",
+          "code": "Newbold",
+          "team": "Suzuki",
+          "time": "+68.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Yamaha",
+          "time": "+115.000"
+        },
+        {
+          "pos": 4,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Yamaha",
+          "time": "+141.900"
+        },
+        {
+          "pos": 5,
+          "driver": "John Williams",
+          "code": "Williams",
+          "team": "Yamaha",
+          "time": "+144.000"
+        },
+        {
+          "pos": 6,
+          "driver": "Christian Leon",
+          "code": "Leon",
+          "team": "Koenig",
+          "time": "+192.600"
+        },
+        {
+          "pos": 7,
+          "driver": "Alan North",
+          "code": "North",
+          "team": "Harley Davidson",
+          "time": "+205.200"
+        },
+        {
+          "pos": 8,
+          "driver": "Francis Holleberg",
+          "code": "Holleberg",
+          "team": "Yamaha",
+          "time": "+215.800"
+        },
+        {
+          "pos": 9,
+          "driver": "Tierry Tchernine",
+          "code": "Tchernine",
+          "team": "Yamaha",
+          "time": "+229.400"
+        },
+        {
+          "pos": 10,
+          "driver": "Jean Francois Baldé",
+          "code": "Francois Baldé",
+          "team": "Yamaha",
+          "time": "+230.500"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 12,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-8-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 8,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1975-07-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Anderstorp",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "48:30.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "MV Agusta",
+          "time": "+51.160"
+        },
+        {
+          "pos": 3,
+          "driver": "John Williams",
+          "code": "Williams",
+          "team": "Yamaha",
+          "time": "+62.560"
+        },
+        {
+          "pos": 4,
+          "driver": "Gianfranco Bonera",
+          "code": "Bonera",
+          "team": "MV Agusta",
+          "time": "+72.200"
+        },
+        {
+          "pos": 5,
+          "driver": "Dieter Braun",
+          "code": "Braun",
+          "team": "Yamaha",
+          "time": "+72.560"
+        },
+        {
+          "pos": 6,
+          "driver": "Pentti Korhonen",
+          "code": "Korhonen",
+          "team": "Yamaha",
+          "time": "+78.660"
+        },
+        {
+          "pos": 7,
+          "driver": "Gerard Choukroun",
+          "code": "Choukroun",
+          "team": "Yamaha",
+          "time": "+92.710"
+        },
+        {
+          "pos": 8,
+          "driver": "Edmar Ferreira",
+          "code": "Ferreira",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Pekka Nurmi",
+          "code": "Nurmi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-9-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 9,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1975-07-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1975-10-race",
+      "competition": "motogp",
+      "season": "1975",
+      "round": 10,
+      "title": "Czechoslovakian Grand Prix",
+      "session": "race",
+      "startsAt": "1975-08-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "CREDITAS Autodrom Brno",
+      "city": "",
+      "country": "Czechia",
+      "status": "finished",
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Giacomo Agostini",
+          "team": "Yamaha",
+          "points": 84
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Phil Read",
+          "team": "MV Agusta",
+          "points": 76
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Hideo Kanaya",
+          "team": "Yamaha",
+          "points": 45
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Teuvo Lansivuori",
+          "team": "Suzuki",
+          "points": 40
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "John Williams",
+          "team": "Yamaha",
+          "points": 32
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Barry Sheene",
+          "team": "Suzuki",
+          "points": 30
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Alex George",
+          "team": "Yamaha",
+          "points": 30
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "John Newbold",
+          "team": "Suzuki",
+          "points": 24
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Armando Toracca",
+          "team": "MV Agusta",
+          "points": 24
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Jack Findlay",
+          "team": "Yamaha",
+          "points": 23
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Chas Mortimer",
+          "team": "Yamaha",
+          "points": 23
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Karl Auer",
+          "team": "Yamaha",
+          "points": 17
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Dieter Braun",
+          "team": "Yamaha",
+          "points": 16
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Mike Grant",
+          "team": "Kawasaki",
+          "points": 15
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Gianfranco Bonera",
+          "team": "MV Agusta",
+          "points": 13
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Stan Woods",
+          "team": "Suzuki",
+          "points": 12
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Horst Lahfeld",
+          "team": "Koenig",
+          "points": 11
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Christian Leon",
+          "team": "Koenig",
+          "points": 9
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Billie Guthrie",
+          "team": "Yamaha",
+          "points": 8
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Olivier Chevallier",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Patrick Pons",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Steve Tonkin",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Steve Ellis",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Tierry Tchernine",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Pentti Korhonen",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Pete Mckinley",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Geoff Barry",
+          "team": "Yamsel",
+          "points": 5
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Thierry Van Der Veken",
+          "team": "Yamaha",
+          "points": 4
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Charlie Williams",
+          "team": "Yamaha",
+          "points": 4
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Michel Rougerie",
+          "team": "Harley Davidson",
+          "points": 4
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "Gerard Choukroun",
+          "team": "Yamaha",
+          "points": 4
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Marcel Ankone",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 33,
+          "posText": "33",
+          "name": "Alan North",
+          "team": "Harley Davidson",
+          "points": 4
+        },
+        {
+          "pos": 34,
+          "posText": "34",
+          "name": "Edmar Ferreira",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 35,
+          "posText": "35",
+          "name": "Tom Herron",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 36,
+          "posText": "36",
+          "name": "Tony Rutter",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 37,
+          "posText": "37",
+          "name": "Francis Holleberg",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 38,
+          "posText": "38",
+          "name": "Hans Stadelmann",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 39,
+          "posText": "39",
+          "name": "Johnny Bengtsson",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 40,
+          "posText": "40",
+          "name": "Hans Braumandl",
+          "team": "Yamaha",
+          "points": 3
+        },
+        {
+          "pos": 41,
+          "posText": "41",
+          "name": "Bjorn Hasli",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 42,
+          "posText": "42",
+          "name": "Helmut Kassner",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 43,
+          "posText": "43",
+          "name": "Borge W. Nielsen",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 44,
+          "posText": "44",
+          "name": "Bernard Fau",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 45,
+          "posText": "45",
+          "name": "Adu Celso-santos",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 46,
+          "posText": "46",
+          "name": "Seppo Kangasniemi",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 47,
+          "posText": "47",
+          "name": "Pekka Nurmi",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 48,
+          "posText": "48",
+          "name": "Kjell Solberg",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 49,
+          "posText": "49",
+          "name": "Jean Francois Baldé",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 50,
+          "posText": "50",
+          "name": "Anssi Resko",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 51,
+          "posText": "51",
+          "name": "Peter Van Der Wal",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 52,
+          "posText": "52",
+          "name": "Rudolph Keller",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 53,
+          "posText": "53",
+          "name": "Les Kenny",
+          "team": "Yamaha",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

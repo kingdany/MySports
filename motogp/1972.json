@@ -1,0 +1,1249 @@
+{
+  "competition": "motogp",
+  "season": "1972",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1972-1-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 1,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1972-04-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nurburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-2-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 2,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1972-05-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Clermont-Ferrand",
+      "city": "Clermont-Ferrand",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "5:47.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Christian Bourgeois",
+          "code": "Bourgeois",
+          "team": "Yamaha",
+          "time": "+109.200"
+        },
+        {
+          "pos": 3,
+          "driver": "Rob Bron",
+          "code": "Bron",
+          "team": "Suzuki",
+          "time": "+148.200"
+        },
+        {
+          "pos": 4,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha",
+          "time": "+148.400"
+        },
+        {
+          "pos": 5,
+          "driver": "Andre Pogolotti",
+          "code": "Pogolotti",
+          "team": "Suzuki",
+          "time": "+163.000"
+        },
+        {
+          "pos": 6,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna",
+          "time": "+172.200"
+        },
+        {
+          "pos": 7,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Yamaha",
+          "time": "+173.200"
+        },
+        {
+          "pos": 8,
+          "driver": "Guido Mandracci",
+          "code": "Mandracci",
+          "team": "Suzuki",
+          "time": "+181.100"
+        },
+        {
+          "pos": 9,
+          "driver": "Ivan Carlsson",
+          "code": "Carlsson",
+          "team": "Yamaha",
+          "time": "+187.300"
+        },
+        {
+          "pos": 10,
+          "driver": "Kim Newcombe",
+          "code": "Newcombe",
+          "team": "Koenig",
+          "time": "+200.300"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-3-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 3,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1972-05-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Salzburgring",
+      "city": "Plainfeld",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "6:24.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Guido Mandracci",
+          "code": "Mandracci",
+          "team": "Suzuki",
+          "time": "+59.100"
+        },
+        {
+          "pos": 3,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna"
+        },
+        {
+          "pos": 4,
+          "driver": "Rob Bron",
+          "code": "Bron",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 5,
+          "driver": "Christian Bourgeois",
+          "code": "Bourgeois",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 6,
+          "driver": "Giampiero Zubani",
+          "code": "Zubani",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Silvano Bertarelli",
+          "code": "Bertarelli",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 8,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Sergio Baroncini",
+          "code": "Baroncini",
+          "team": "Ducati"
+        },
+        {
+          "pos": 10,
+          "driver": "Carlo Marelli",
+          "code": "Marelli",
+          "team": "Paton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-4-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 4,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1972-05-21T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "8:48.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "MV Agusta",
+          "time": "+95.800"
+        },
+        {
+          "pos": 3,
+          "driver": "Bruno Spaggiari",
+          "code": "Spaggiari",
+          "team": "Ducati"
+        },
+        {
+          "pos": 4,
+          "driver": "Paul Smart",
+          "code": "Smart",
+          "team": "Ducati"
+        },
+        {
+          "pos": 5,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 6,
+          "driver": "Klaus Huber",
+          "code": "Huber",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Sergio Baroncini",
+          "code": "Baroncini",
+          "team": "Ducati"
+        },
+        {
+          "pos": 8,
+          "driver": "Lothar John",
+          "code": "John",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Carlo Marelli",
+          "code": "Marelli",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 10,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-5-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 5,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1972-06-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-6-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 6,
+      "title": "Yugoslavian Grand Prix",
+      "session": "race",
+      "startsAt": "1972-06-18T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Opatija",
+      "city": "Opatija",
+      "country": "Croatia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "MV Agusta",
+          "time": "14:21.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Chas Mortimer",
+          "code": "Mortimer",
+          "team": "Yamaha",
+          "time": "+102.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Paul Eickelberg",
+          "code": "Eickelberg",
+          "team": "Koenig",
+          "time": "+109.700"
+        },
+        {
+          "pos": 4,
+          "driver": "Guido Mandracci",
+          "code": "Mandracci",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 5,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna"
+        },
+        {
+          "pos": 6,
+          "driver": "Charlie Dobson",
+          "code": "Dobson",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Giampiero Zubani",
+          "code": "Zubani",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 8,
+          "driver": "Sergio Baroncini",
+          "code": "Baroncini",
+          "team": "Ducati"
+        },
+        {
+          "pos": 9,
+          "driver": "Jerry Lancaster",
+          "code": "Lancaster",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 10,
+          "driver": "Roberto Gallina",
+          "code": "Gallina",
+          "team": "Paton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-7-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 7,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1972-06-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "3:33.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "MV Agusta",
+          "time": "+117.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha",
+          "time": "+127.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 5,
+          "driver": "Chas Mortimer",
+          "code": "Mortimer",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada"
+        },
+        {
+          "pos": 7,
+          "driver": "Jerry Lancaster",
+          "code": "Lancaster",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 8,
+          "driver": "Paul Eickelberg",
+          "code": "Eickelberg",
+          "team": "Koenig"
+        },
+        {
+          "pos": 9,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Guido Mandracci",
+          "code": "Mandracci",
+          "team": "Suzuki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-8-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 8,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1972-07-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "56:04.700"
+        },
+        {
+          "pos": 2,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "MV Agusta",
+          "time": "+32.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Rodney Gould",
+          "code": "Gould",
+          "team": "Yamaha",
+          "time": "+78.700"
+        },
+        {
+          "pos": 4,
+          "driver": "Hideo Kanaya",
+          "code": "Kanaya",
+          "team": "Yamaha",
+          "time": "+79.000"
+        },
+        {
+          "pos": 5,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna",
+          "time": "+208.700"
+        },
+        {
+          "pos": 6,
+          "driver": "Erick Offenstadt",
+          "code": "Offenstadt",
+          "team": "Kawasaki",
+          "time": "+208.900"
+        },
+        {
+          "pos": 7,
+          "driver": "Jerry Lancaster",
+          "code": "Lancaster",
+          "team": "Yamaha",
+          "time": "+238.500"
+        },
+        {
+          "pos": 8,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Yamaha",
+          "time": "+243.400"
+        },
+        {
+          "pos": 9,
+          "driver": "Christian Bourgeois",
+          "code": "Bourgeois",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Lothar John",
+          "code": "John",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-9-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 9,
+      "title": "East Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1972-07-09T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sachsenring",
+      "city": "Oberlungwitz",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-10-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 10,
+      "title": "Czechoslovakian Grand Prix",
+      "session": "race",
+      "startsAt": "1972-07-16T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "CREDITAS Autodrom Brno",
+      "city": "",
+      "country": "Czechia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "7:47.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada",
+          "time": "+152.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha",
+          "time": "+182.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Rodney Gould",
+          "code": "Gould",
+          "team": "Yamaha",
+          "time": "+238.300"
+        },
+        {
+          "pos": 5,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Paton",
+          "time": "+292.000"
+        },
+        {
+          "pos": 6,
+          "driver": "Sven Gunnarsson",
+          "code": "Gunnarsson",
+          "team": "Kawasaki",
+          "time": "+317.000"
+        },
+        {
+          "pos": 7,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna",
+          "time": "+318.600"
+        },
+        {
+          "pos": 8,
+          "driver": "Lothar John",
+          "code": "John",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 9,
+          "driver": "Seppo Kangasniemi",
+          "code": "Kangasniemi",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Ivan Carlsson",
+          "code": "Carlsson",
+          "team": "Yamaha"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-11-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 11,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1972-07-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Anderstorp",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "4:19.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Rodney Gould",
+          "code": "Gould",
+          "team": "Yamaha",
+          "time": "+16.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Bo Granath",
+          "code": "Granath",
+          "team": "Husqvarna",
+          "time": "+98.300"
+        },
+        {
+          "pos": 4,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 5,
+          "driver": "Kim Newcombe",
+          "code": "Newcombe",
+          "team": "Koenig"
+        },
+        {
+          "pos": 6,
+          "driver": "Sven Gunnarsson",
+          "code": "Gunnarsson",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 8,
+          "driver": "Chas Mortimer",
+          "code": "Mortimer",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Ulf Nilsson",
+          "code": "Nilsson",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-12-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 12,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1972-07-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "56:24.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "MV Agusta",
+          "time": "+99.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Rodney Gould",
+          "code": "Gould",
+          "team": "Yamaha",
+          "time": "+156.400"
+        },
+        {
+          "pos": 4,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 5,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 6,
+          "driver": "Pentti Korhonen",
+          "code": "Korhonen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 7,
+          "driver": "Jerry Lancaster",
+          "code": "Lancaster",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 8,
+          "driver": "Derek Lee",
+          "code": "Lee",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 9,
+          "driver": "Johnny Bengtsson",
+          "code": "Bengtsson",
+          "team": "Husqvarna"
+        },
+        {
+          "pos": 10,
+          "driver": "Lothar John",
+          "code": "John",
+          "team": "Suzuki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1972-13-race",
+      "competition": "motogp",
+      "season": "1972",
+      "round": 13,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1972-09-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Montjuïc",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Chas Mortimer",
+          "code": "Mortimer",
+          "team": "Yamaha",
+          "time": "6:47.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki",
+          "time": "+6.400"
+        },
+        {
+          "pos": 3,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Jada",
+          "time": "+51.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Bruno Kneubühler",
+          "code": "Kneubühler",
+          "team": "Yamaha",
+          "time": "+90.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Sven Gunnarsson",
+          "code": "Gunnarsson",
+          "team": "Kawasaki",
+          "time": "+108.000"
+        },
+        {
+          "pos": 6,
+          "driver": "Billie Nelson",
+          "code": "Nelson",
+          "team": "Paton",
+          "time": "+108.900"
+        },
+        {
+          "pos": 7,
+          "driver": "Peter Van Der Wal",
+          "code": "Van Der Wal",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 8,
+          "driver": "Getulio Marcasini",
+          "code": "Marcasini",
+          "team": "Aermacchi"
+        },
+        {
+          "pos": 9,
+          "driver": "Ivan Carlsson",
+          "code": "Carlsson",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 10,
+          "driver": "Maurice Hawthorne",
+          "code": "Hawthorne",
+          "team": "Kawasaki"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Giacomo Agostini",
+          "team": "MV Agusta",
+          "points": 105
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Alberto Pagani",
+          "team": "MV Agusta",
+          "points": 87
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Bruno Kneubühler",
+          "team": "Yamaha",
+          "points": 54
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Rodney Gould",
+          "team": "Yamaha",
+          "points": 52
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Bo Granath",
+          "team": "Husqvarna",
+          "points": 47
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Chas Mortimer",
+          "team": "Yamaha",
+          "points": 42
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Dave Simmonds",
+          "team": "Kawasaki",
+          "points": 42
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Jack Findlay",
+          "team": "Jada",
+          "points": 31
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Billie Nelson",
+          "team": "Honda",
+          "points": 310
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Kim Newcombe",
+          "team": "Koenig",
+          "points": 27
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Guido Mandracci",
+          "team": "Suzuki",
+          "points": 24
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Christian Bourgeois",
+          "team": "Yamaha",
+          "points": 20
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Rob Bron",
+          "team": "Suzuki",
+          "points": 18
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Sven Gunnarsson",
+          "team": "Kawasaki",
+          "points": 16
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Jerry Lancaster",
+          "team": "Suzuki",
+          "points": 14
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Paul Eickelberg",
+          "team": "Koenig",
+          "points": 13
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Bruno Spaggiari",
+          "team": "Ducados",
+          "points": 10
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Mike Grant",
+          "team": "Kawasaki",
+          "points": 10
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Giampiero Zubani",
+          "team": "Kawasaki",
+          "points": 9
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Sergio Baroncini",
+          "team": "Ducados",
+          "points": 9
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Lothar John",
+          "team": "Yamaha",
+          "points": 9
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Hideo Kanaya",
+          "team": "Yamaha",
+          "points": 8
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Paul Smart",
+          "team": "Ducati",
+          "points": 8
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Kevin Cowley",
+          "team": "Seeley",
+          "points": 8
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Peter Van Der Wal",
+          "team": "Kawasaki",
+          "points": 7
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Andre Pogolotti",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Derek Chatterton",
+          "team": "Yamaha",
+          "points": 6
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Ernst Hiller",
+          "team": "Koenig",
+          "points": 6
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Erick Offenstadt",
+          "team": "Kawasaki",
+          "points": 5
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Karl Huber",
+          "team": "Kawasaki",
+          "points": 5
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "Pentti Korhonen",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Charlie Williams",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 33,
+          "posText": "33",
+          "name": "Charlie Dobson",
+          "team": "Kawasaki",
+          "points": 5
+        },
+        {
+          "pos": 34,
+          "posText": "34",
+          "name": "Ivan Carlsson",
+          "team": "Yamaha",
+          "points": 5
+        },
+        {
+          "pos": 35,
+          "posText": "35",
+          "name": "Selwyn Griffiths",
+          "team": "Matchless",
+          "points": 4
+        },
+        {
+          "pos": 36,
+          "posText": "36",
+          "name": "Hans Maxwald",
+          "team": "Rotax",
+          "points": 4
+        },
+        {
+          "pos": 37,
+          "posText": "37",
+          "name": "Silvano Bertarelli",
+          "team": "Kawasaki",
+          "points": 4
+        },
+        {
+          "pos": 38,
+          "posText": "38",
+          "name": "Paul Cott",
+          "team": "Seeley",
+          "points": 3
+        },
+        {
+          "pos": 39,
+          "posText": "39",
+          "name": "Derek Lee",
+          "team": "Suzuki",
+          "points": 3
+        },
+        {
+          "pos": 40,
+          "posText": "40",
+          "name": "Getulio Marcasini",
+          "team": "Aermacchi",
+          "points": 3
+        },
+        {
+          "pos": 41,
+          "posText": "41",
+          "name": "Clive Brown",
+          "team": "Suzuki",
+          "points": 3
+        },
+        {
+          "pos": 42,
+          "posText": "42",
+          "name": "Carlo Marelli",
+          "team": "Paton",
+          "points": 3
+        },
+        {
+          "pos": 43,
+          "posText": "43",
+          "name": "Johnny Bengtsson",
+          "team": "Husqvarna",
+          "points": 2
+        },
+        {
+          "pos": 44,
+          "posText": "44",
+          "name": "Ken Araoka",
+          "team": "Kawasaki",
+          "points": 2
+        },
+        {
+          "pos": 45,
+          "posText": "45",
+          "name": "Arpad Juhos",
+          "team": "Metisse",
+          "points": 2
+        },
+        {
+          "pos": 46,
+          "posText": "46",
+          "name": "Seppo Kangasniemi",
+          "team": "Yamaha",
+          "points": 2
+        },
+        {
+          "pos": 47,
+          "posText": "47",
+          "name": "Maurice Hawthorne",
+          "team": "Kawasaki",
+          "points": 1
+        },
+        {
+          "pos": 48,
+          "posText": "48",
+          "name": "Charlie Sanby",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 49,
+          "posText": "49",
+          "name": "Roberto Gallina",
+          "team": "Paton",
+          "points": 1
+        },
+        {
+          "pos": 50,
+          "posText": "50",
+          "name": "Roland Nilsson",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 51,
+          "posText": "51",
+          "name": "Josef Ozelt",
+          "team": "Matchless",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

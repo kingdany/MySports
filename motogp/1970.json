@@ -1,0 +1,1089 @@
+{
+  "competition": "motogp",
+  "season": "1970",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1970-1-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 1,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1970-05-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Nurburgring",
+      "city": "Nürburg",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-2-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 2,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1970-05-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Le Mans",
+      "city": "Le Mans",
+      "country": "France",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "9:11.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Kawasaki",
+          "time": "+48.200"
+        },
+        {
+          "pos": 3,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "Librenti",
+          "time": "+60.300"
+        },
+        {
+          "pos": 4,
+          "driver": "Angelo Bergamonti",
+          "code": "Bergamonti",
+          "team": "Aermacchi",
+          "time": "+73.800"
+        },
+        {
+          "pos": 5,
+          "driver": "Brian Steenson",
+          "code": "Steenson",
+          "team": "Seeley",
+          "time": "+97.200"
+        },
+        {
+          "pos": 6,
+          "driver": "Gyula Marsovszky",
+          "code": "Marsovszky",
+          "team": "Linto"
+        },
+        {
+          "pos": 7,
+          "driver": "Alan Barnett",
+          "code": "Barnett",
+          "team": "Seeley"
+        },
+        {
+          "pos": 8,
+          "driver": "Christian Ravel",
+          "code": "Ravel",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 9,
+          "driver": "Erick Offenstadt",
+          "code": "Offenstadt",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 10,
+          "driver": "Andre Luc Appietto",
+          "code": "Luc Appietto",
+          "team": "Paton"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Seeley",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-3-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 3,
+      "title": "Yugoslavian Grand Prix",
+      "session": "race",
+      "startsAt": "1970-05-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Opatija",
+      "city": "Opatija",
+      "country": "Croatia",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "12:49.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Angelo Bergamonti",
+          "code": "Bergamonti",
+          "team": "Aermacchi"
+        },
+        {
+          "pos": 3,
+          "driver": "Roberto Gallina",
+          "code": "Gallina",
+          "team": "Paton"
+        },
+        {
+          "pos": 4,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Seeley"
+        },
+        {
+          "pos": 5,
+          "driver": "Martti Pesonen",
+          "code": "Pesonen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 6,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Bultaco"
+        },
+        {
+          "pos": 8,
+          "driver": "Gyula Marsovszky",
+          "code": "Marsovszky",
+          "team": "Linto"
+        },
+        {
+          "pos": 9,
+          "driver": "Giampiero Zubani",
+          "code": "Zubani",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 10,
+          "driver": "Jean Campiche",
+          "code": "Campiche",
+          "team": "Honda"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-4-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 4,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1970-06-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "13:47.600"
+        },
+        {
+          "pos": 2,
+          "driver": "Peter Williams",
+          "code": "P. Williams",
+          "team": "Matchless",
+          "time": "+309.400"
+        },
+        {
+          "pos": 3,
+          "driver": "William-A Smith",
+          "code": "Smith",
+          "team": "Kawasaki",
+          "time": "+440.000"
+        },
+        {
+          "pos": 4,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Seeley",
+          "time": "+463.800"
+        },
+        {
+          "pos": 5,
+          "driver": "John Williams",
+          "code": "J. Williams",
+          "team": "Matchless",
+          "time": "+626.000"
+        },
+        {
+          "pos": 6,
+          "driver": "Tony Jefferies",
+          "code": "Jefferies",
+          "team": "Matchless",
+          "time": "+661.600"
+        },
+        {
+          "pos": 7,
+          "driver": "Selwyn Griffiths",
+          "code": "Griffiths",
+          "team": "Matchless",
+          "time": "+686.000"
+        },
+        {
+          "pos": 8,
+          "driver": "Brian Adams",
+          "code": "Adams",
+          "team": "Norton",
+          "time": "+686.400"
+        },
+        {
+          "pos": 9,
+          "driver": "Vincent Duckett",
+          "code": "Duckett",
+          "team": "Seeley",
+          "time": "+756.000"
+        },
+        {
+          "pos": 10,
+          "driver": "Steve Spencer",
+          "code": "Spencer",
+          "team": "Norton",
+          "time": "+773.600"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-5-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 5,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1970-06-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "4:34.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Angelo Bergamonti",
+          "code": "Bergamonti",
+          "team": "Aermacchi",
+          "time": "+110.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "Librenti",
+          "time": "+129.100"
+        },
+        {
+          "pos": 4,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Kawasaki",
+          "time": "+130.300"
+        },
+        {
+          "pos": 5,
+          "driver": "Paul Smart",
+          "code": "Smart",
+          "team": "Seeley",
+          "time": "+167.200"
+        },
+        {
+          "pos": 6,
+          "driver": "Rob Bron",
+          "code": "Bron",
+          "team": "Suzuki",
+          "time": "+167.300"
+        },
+        {
+          "pos": 7,
+          "driver": "Peter Williams",
+          "code": "Williams",
+          "team": "Matchless",
+          "time": "+177.400"
+        },
+        {
+          "pos": 8,
+          "driver": "Ron Chandler",
+          "code": "Chandler",
+          "team": "Seeley",
+          "time": "+182.100"
+        },
+        {
+          "pos": 9,
+          "driver": "Gyula Marsovszky",
+          "code": "Marsovszky",
+          "team": "Linto",
+          "time": "+202.900"
+        },
+        {
+          "pos": 10,
+          "driver": "Tommy Robb",
+          "code": "Robb",
+          "team": "Seeley"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Seeley",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-6-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 6,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1970-07-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "1:31.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Christian Ravel",
+          "code": "Ravel",
+          "team": "Kawasaki",
+          "time": "+184.200"
+        },
+        {
+          "pos": 3,
+          "driver": "Tommy Robb",
+          "code": "Robb",
+          "team": "Seeley",
+          "time": "+222.300"
+        },
+        {
+          "pos": 4,
+          "driver": "Karl Auer",
+          "code": "Auer",
+          "team": "Matchless",
+          "time": "+226.300"
+        },
+        {
+          "pos": 5,
+          "driver": "Lewis Young",
+          "code": "Young",
+          "team": "Honda",
+          "time": "+251.600"
+        },
+        {
+          "pos": 6,
+          "driver": "Terry Dennehy",
+          "code": "Dennehy",
+          "team": "Honda",
+          "time": "+262.600"
+        },
+        {
+          "pos": 7,
+          "driver": "Ernst Hiller",
+          "code": "Hiller",
+          "team": "Kawasaki",
+          "time": "+272.100"
+        },
+        {
+          "pos": 8,
+          "driver": "Martti Pesonen",
+          "code": "Pesonen",
+          "team": "Yamaha",
+          "time": "+272.900"
+        },
+        {
+          "pos": 9,
+          "driver": "Ron Chandler",
+          "code": "Chandler",
+          "team": "Seeley",
+          "time": "+278.100"
+        },
+        {
+          "pos": 10,
+          "driver": "Steve Ellis",
+          "code": "Ellis",
+          "team": "Linto"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Seeley",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-7-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 7,
+      "title": "East Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1970-07-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sachsenring",
+      "city": "Oberlungwitz",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-8-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 8,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1970-08-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "57:28.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Kawasaki",
+          "time": "+97.600"
+        },
+        {
+          "pos": 3,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "Linto",
+          "time": "+145.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Erick Offenstadt",
+          "code": "Offenstadt",
+          "team": "Kawasaki",
+          "time": "+145.900"
+        },
+        {
+          "pos": 5,
+          "driver": "Tommy Robb",
+          "code": "Robb",
+          "team": "Seeley"
+        },
+        {
+          "pos": 6,
+          "driver": "Godfrey Nash",
+          "code": "Nash",
+          "team": "Manx"
+        },
+        {
+          "pos": 7,
+          "driver": "Steve Ellis",
+          "code": "Ellis",
+          "team": "Matchless"
+        },
+        {
+          "pos": 8,
+          "driver": "Martti Pesonen",
+          "code": "Pesonen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 9,
+          "driver": "Hans Otto Butenuth",
+          "code": "Otto Butenuth",
+          "team": "BMW"
+        },
+        {
+          "pos": 10,
+          "driver": "Jean Campiche",
+          "code": "Campiche",
+          "team": "Honda"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-9-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 9,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1970-08-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-10-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 10,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1970-09-13T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "55:17.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Angelo Bergamonti",
+          "code": "Bergamonti",
+          "team": "MV Agusta",
+          "time": "+43.700"
+        },
+        {
+          "pos": 3,
+          "driver": "Silvano Bertarelli",
+          "code": "Bertarelli",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 4,
+          "driver": "Gyula Marsovszky",
+          "code": "Marsovszky",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 5,
+          "driver": "Giampiero Zubani",
+          "code": "Zubani",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 6,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Roberto Gallina",
+          "code": "Gallina",
+          "team": "Paton"
+        },
+        {
+          "pos": 8,
+          "driver": "Giovanni Perrone",
+          "code": "Perrone",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 9,
+          "driver": "Paolo Campanelli",
+          "code": "Campanelli",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 10,
+          "driver": "Vasco Loro",
+          "code": "Loro",
+          "team": "Kawasaki"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1970-11-race",
+      "competition": "motogp",
+      "season": "1970",
+      "round": 11,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1970-09-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Montjuïc",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Angelo Bergamonti",
+          "code": "Bergamonti",
+          "team": "MV Agusta",
+          "time": "15:14.100"
+        },
+        {
+          "pos": 2,
+          "driver": "Ginger Molloy",
+          "code": "Molloy",
+          "team": "Kawasaki",
+          "time": "+114.800"
+        },
+        {
+          "pos": 3,
+          "driver": "Giuseppe Mandolini",
+          "code": "Mandolini",
+          "team": "Moto Guzzi"
+        },
+        {
+          "pos": 4,
+          "driver": "Tommy Robb",
+          "code": "Robb",
+          "team": "Seeley"
+        },
+        {
+          "pos": 5,
+          "driver": "Roberto Gallina",
+          "code": "Gallina",
+          "team": "Paton"
+        },
+        {
+          "pos": 6,
+          "driver": "Martin Carney",
+          "code": "Carney",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 7,
+          "driver": "Martti Pesonen",
+          "code": "Pesonen",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 8,
+          "driver": "Christian Ravel",
+          "code": "Ravel",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 9,
+          "driver": "Dave Simmonds",
+          "code": "Simmonds",
+          "team": "Kawasaki"
+        },
+        {
+          "pos": 10,
+          "driver": "Gordon Keith",
+          "code": "Keith",
+          "team": "Velocette"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "MV Agusta",
+          "time": "Non classificato"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Giacomo Agostini",
+          "team": "MV Agusta",
+          "points": 90
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Ginger Molloy",
+          "team": "Bultaco",
+          "points": 62
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Angelo Bergamonti",
+          "team": "Aermacchi",
+          "points": 59
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Tommy Robb",
+          "team": "Seeley",
+          "points": 36
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Alberto Pagani",
+          "team": "Linto",
+          "points": 30
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Alan Barnett",
+          "team": "Seeley",
+          "points": 24
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Christian Ravel",
+          "team": "Kawasaki",
+          "points": 24
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Jack Findlay",
+          "team": "Seeley",
+          "points": 24
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Martti Pesonen",
+          "team": "Yamaha",
+          "points": 24
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Peter Williams",
+          "team": "Matchless",
+          "points": 22
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Roberto Gallina",
+          "team": "Paton",
+          "points": 20
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Martin Carney",
+          "team": "Kawasaki",
+          "points": 20
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Gyula Marsovszky",
+          "team": "Linto",
+          "points": 18
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Erick Offenstadt",
+          "team": "Kawasaki",
+          "points": 14
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "John Dodds",
+          "team": "Linto",
+          "points": 12
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "William-A Smith",
+          "team": "Kawasaki",
+          "points": 10
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Percy Tait",
+          "team": "Seeley",
+          "points": 10
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Silvano Bertarelli",
+          "team": "Kawasaki",
+          "points": 10
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Giuseppe Mandolini",
+          "team": "Moto Guzzi",
+          "points": 10
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Dave Simmonds",
+          "team": "Kawasaki",
+          "points": 10
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Karl Hoppe",
+          "team": "Muench",
+          "points": 8
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Karl Auer",
+          "team": "Matchless",
+          "points": 8
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Giampiero Zubani",
+          "team": "Kawasaki",
+          "points": 8
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "John Williams",
+          "team": "Matchless",
+          "points": 8
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Billie Nelson",
+          "team": "Paton",
+          "points": 7
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Godfrey Nash",
+          "team": "Norton",
+          "points": 7
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Ernst Hiller",
+          "team": "Kawasaki",
+          "points": 7
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Paul Smart",
+          "team": "Seeley",
+          "points": 6
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Brian Steenson",
+          "team": "Seeley",
+          "points": 6
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Lewis Young",
+          "team": "Honda",
+          "points": 6
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "Terry Dennehy",
+          "team": "Honda",
+          "points": 6
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Tony Jefferies",
+          "team": "Matchless",
+          "points": 5
+        },
+        {
+          "pos": 33,
+          "posText": "33",
+          "name": "Walter Rüngg",
+          "team": "Aermacchi",
+          "points": 5
+        },
+        {
+          "pos": 34,
+          "posText": "34",
+          "name": "Rob Bron",
+          "team": "Suzuki",
+          "points": 5
+        },
+        {
+          "pos": 35,
+          "posText": "35",
+          "name": "Steve Ellis",
+          "team": "Linto",
+          "points": 5
+        },
+        {
+          "pos": 36,
+          "posText": "36",
+          "name": "Ron Chandler",
+          "team": "Seeley",
+          "points": 5
+        },
+        {
+          "pos": 37,
+          "posText": "37",
+          "name": "Selwyn Griffiths",
+          "team": "Matchless",
+          "points": 4
+        },
+        {
+          "pos": 38,
+          "posText": "38",
+          "name": "Gerry Mateer",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 39,
+          "posText": "39",
+          "name": "Giovanni Perrone",
+          "team": "Kawasaki",
+          "points": 3
+        },
+        {
+          "pos": 40,
+          "posText": "40",
+          "name": "Brian Adams",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 41,
+          "posText": "41",
+          "name": "Hans Otto Butenuth",
+          "team": "BMW",
+          "points": 2
+        },
+        {
+          "pos": 42,
+          "posText": "42",
+          "name": "Vincent Duckett",
+          "team": "Seeley",
+          "points": 2
+        },
+        {
+          "pos": 43,
+          "posText": "43",
+          "name": "Paolo Campanelli",
+          "team": "Kawasaki",
+          "points": 2
+        },
+        {
+          "pos": 44,
+          "posText": "44",
+          "name": "Jean Campiche",
+          "team": "Honda",
+          "points": 2
+        },
+        {
+          "pos": 45,
+          "posText": "45",
+          "name": "Gordon Keith",
+          "team": "Velocette",
+          "points": 1
+        },
+        {
+          "pos": 46,
+          "posText": "46",
+          "name": "Andre Luc Appietto",
+          "team": "Paton",
+          "points": 1
+        },
+        {
+          "pos": 47,
+          "posText": "47",
+          "name": "Steve Spencer",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 48,
+          "posText": "48",
+          "name": "Vasco Loro",
+          "team": "Kawasaki",
+          "points": 1
+        },
+        {
+          "pos": 49,
+          "posText": "49",
+          "name": "Charlie Dobson",
+          "team": "Seeley",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

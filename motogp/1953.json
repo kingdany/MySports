@@ -1,0 +1,509 @@
+{
+  "competition": "motogp",
+  "season": "1953",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1953-1-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 1,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1953-06-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Ray Amm",
+          "code": "Amm",
+          "team": "Norton",
+          "time": "48:51.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Jack Brett",
+          "code": "Brett",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Rod Coleman",
+          "code": "Coleman",
+          "team": "AJS"
+        },
+        {
+          "pos": 5,
+          "driver": "William Doran",
+          "code": "Doran",
+          "team": "AJS"
+        },
+        {
+          "pos": 6,
+          "driver": "Peter Davey",
+          "code": "Davey",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-2-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 2,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1953-06-27T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Gilera",
+          "time": "36:38.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Ken Kavanagh",
+          "code": "Kavanagh",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "Giuseppe Colnago",
+          "code": "Colnago",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Jack Brett",
+          "code": "Brett",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "William Doran",
+          "code": "Doran",
+          "team": "AJS"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-3-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 3,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1953-07-05T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-4-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 4,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1953-08-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Rouen",
+      "city": "Rouen",
+      "country": "France",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-5-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 5,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1953-08-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Ken Kavanagh",
+          "code": "Kavanagh",
+          "team": "Norton",
+          "time": "28:38.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Jack Brett",
+          "code": "Brett",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Derek Farrant",
+          "code": "Farrant",
+          "team": "AJS"
+        },
+        {
+          "pos": 6,
+          "driver": "Ken Mudford",
+          "code": "Mudford",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-6-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 6,
+      "title": "Switzerland Grand Prix",
+      "session": "race",
+      "startsAt": "1953-08-23T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Berne",
+      "city": "Bern",
+      "country": "Switzerland",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Gilera",
+          "time": "17:24.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Alfredo Milani",
+          "code": "Milani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Giuseppe Colnago",
+          "code": "Colnago",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Rod Coleman",
+          "code": "Coleman",
+          "team": "AJS"
+        },
+        {
+          "pos": 6,
+          "driver": "Derek Farrant",
+          "code": "Farrant",
+          "team": "AJS"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-7-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 7,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1953-09-06T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Geoff Duke",
+          "code": "Duke",
+          "team": "Gilera",
+          "time": "10:18.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "Gilera"
+        },
+        {
+          "pos": 3,
+          "driver": "Libero Liberati",
+          "code": "Liberati",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Reg Armstrong",
+          "code": "Armstrong",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Cecyl Sandford",
+          "code": "Sandford",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 6,
+          "driver": "Hermann Paul Müller",
+          "code": "Paul Müller",
+          "team": "MV Agusta"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1953-8-race",
+      "competition": "motogp",
+      "season": "1953",
+      "round": 8,
+      "title": "Spanish Grand Prix",
+      "session": "race",
+      "startsAt": "1953-10-04T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Montjuïc",
+      "city": "Barcelona",
+      "country": "Spain",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Fergus Anderson",
+          "code": "Anderson",
+          "team": "Moto Guzzi",
+          "time": "4:46.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Carlo Bandirola",
+          "code": "Bandirola",
+          "team": "MV Agusta"
+        },
+        {
+          "pos": 3,
+          "driver": "Dickie Dale",
+          "code": "Dale",
+          "team": "Gilera"
+        },
+        {
+          "pos": 4,
+          "driver": "Giuseppe Colnago",
+          "code": "Colnago",
+          "team": "Gilera"
+        },
+        {
+          "pos": 5,
+          "driver": "Nello Pagani",
+          "code": "Pagani",
+          "team": "Gilera"
+        },
+        {
+          "pos": 6,
+          "driver": "Tommy Wood",
+          "code": "Wood",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Geoff Duke",
+          "team": "Gilera",
+          "points": 38
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Reg Armstrong",
+          "team": "Gilera",
+          "points": 24
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Alfredo Milani",
+          "team": "Gilera",
+          "points": 18
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Ken Kavanagh",
+          "team": "Norton",
+          "points": 18
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Ray Amm",
+          "team": "Norton",
+          "points": 14
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Jack Brett",
+          "team": "Norton",
+          "points": 13
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Dickie Dale",
+          "team": "Gilera",
+          "points": 11
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Giuseppe Colnago",
+          "team": "Gilera",
+          "points": 11
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Fergus Anderson",
+          "team": "Moto Guzzi",
+          "points": 8
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Rod Coleman",
+          "team": "AJS",
+          "points": 7
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Carlo Bandirola",
+          "team": "MV Agusta",
+          "points": 6
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Libero Liberati",
+          "team": "Gilera",
+          "points": 4
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "William Doran",
+          "team": "AJS",
+          "points": 3
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Derek Farrant",
+          "team": "AJS",
+          "points": 3
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Nello Pagani",
+          "team": "Gilera",
+          "points": 2
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Cecyl Sandford",
+          "team": "MV Agusta",
+          "points": 2
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Peter Davey",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Tommy Wood",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Ken Mudford",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Hans Müller",
+          "team": "MV Agusta",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

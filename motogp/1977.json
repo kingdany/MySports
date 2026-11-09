@@ -1,0 +1,835 @@
+{
+  "competition": "motogp",
+  "season": "1977",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1977-1-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 1,
+      "title": "Venezuela Grand Prix",
+      "session": "race",
+      "startsAt": "1977-03-20T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "San Carlos",
+      "city": "San Carlos",
+      "country": "United States",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "48:56.900"
+        },
+        {
+          "pos": 2,
+          "driver": "Steve Baker",
+          "code": "Baker",
+          "team": "Yamaha",
+          "time": "+3.300"
+        },
+        {
+          "pos": 3,
+          "driver": "Pat Hennen",
+          "code": "Hennen",
+          "team": "Suzuki",
+          "time": "+39.000"
+        },
+        {
+          "pos": 4,
+          "driver": "Johnny Cecotto",
+          "code": "Cecotto",
+          "team": "Yamaha",
+          "time": "+42.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki",
+          "time": "+58.100"
+        },
+        {
+          "pos": 6,
+          "driver": "Virginio Ferrari",
+          "code": "Ferrari",
+          "team": "Suzuki",
+          "time": "+85.000"
+        },
+        {
+          "pos": 7,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+91.300"
+        },
+        {
+          "pos": 8,
+          "driver": "Christian Estrosi",
+          "code": "Estrosi",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 9,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 10,
+          "driver": "Alan North",
+          "code": "North",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Non classificato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-2-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 2,
+      "title": "Austrian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-01T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Salzburgring",
+      "city": "Plainfeld",
+      "country": "Austria",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Suzuki",
+          "time": "51:19.260"
+        },
+        {
+          "pos": 2,
+          "driver": "Max Wiener",
+          "code": "Wiener",
+          "team": "Suzuki",
+          "time": "+15.400"
+        },
+        {
+          "pos": 3,
+          "driver": "Alex George",
+          "code": "George",
+          "team": "Suzuki",
+          "time": "+15.910"
+        },
+        {
+          "pos": 4,
+          "driver": "Helmut Kassner",
+          "code": "Kassner",
+          "team": "Suzuki",
+          "time": "+25.360"
+        },
+        {
+          "pos": 5,
+          "driver": "Franz Heller",
+          "code": "Heller",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 6,
+          "driver": "Michael Schmid",
+          "code": "Schmid",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 7,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Non classificato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-3-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 3,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-08T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-4-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 4,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autodromo Enzo e Dino Ferrari",
+      "city": "Imola",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "59:52.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Virginio Ferrari",
+          "code": "Ferrari",
+          "team": "Suzuki",
+          "time": "+1.300"
+        },
+        {
+          "pos": 3,
+          "driver": "Armando Toracca",
+          "code": "Toracca",
+          "team": "Suzuki",
+          "time": "+2.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Steve Baker",
+          "code": "Baker",
+          "team": "Yamaha",
+          "time": "+28.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "+35.800"
+        },
+        {
+          "pos": 6,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki",
+          "time": "+36.900"
+        },
+        {
+          "pos": 7,
+          "driver": "John Newbold",
+          "code": "Newbold",
+          "team": "Suzuki",
+          "time": "+70.500"
+        },
+        {
+          "pos": 8,
+          "driver": "Christian Estrosi",
+          "code": "Estrosi",
+          "team": "Suzuki",
+          "time": "+74.500"
+        },
+        {
+          "pos": 9,
+          "driver": "Boet Van Dulmen",
+          "code": "Van Dulmen",
+          "team": "Suzuki",
+          "time": "+76.400"
+        },
+        {
+          "pos": 10,
+          "driver": "Anton Mang",
+          "code": "Mang",
+          "team": "Suzuki",
+          "time": "+82.300"
+        },
+        {
+          "pos": 11,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Suzuki",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-5-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 5,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1977-05-29T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Paul Ricard Circuit",
+      "city": "Le Castellet",
+      "country": "France",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-6-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 6,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1977-06-25T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Wil Hartog",
+          "code": "Hartog",
+          "team": "Suzuki",
+          "time": "52:35.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "+5.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Pat Hennen",
+          "code": "Hennen",
+          "team": "Suzuki",
+          "time": "+10.500"
+        },
+        {
+          "pos": 4,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki",
+          "time": "+10.900"
+        },
+        {
+          "pos": 5,
+          "driver": "Steve Baker",
+          "code": "Baker",
+          "team": "Yamaha",
+          "time": "+11.600"
+        },
+        {
+          "pos": 6,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+12.100"
+        },
+        {
+          "pos": 7,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki",
+          "time": "+18.200"
+        },
+        {
+          "pos": 8,
+          "driver": "Michel Rougerie",
+          "code": "Rougerie",
+          "team": "Suzuki",
+          "time": "+20.300"
+        },
+        {
+          "pos": 9,
+          "driver": "Armando Toracca",
+          "code": "Toracca",
+          "team": "Suzuki",
+          "time": "+21.700"
+        },
+        {
+          "pos": 10,
+          "driver": "Virginio Ferrari",
+          "code": "Ferrari",
+          "team": "Suzuki",
+          "time": "+36.200"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-7-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 7,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "38:58.500"
+        },
+        {
+          "pos": 2,
+          "driver": "Steve Baker",
+          "code": "Baker",
+          "team": "Yamaha",
+          "time": "+11.300"
+        },
+        {
+          "pos": 3,
+          "driver": "Pat Hennen",
+          "code": "Hennen",
+          "team": "Suzuki",
+          "time": "+14.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki",
+          "time": "+15.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Suzuki",
+          "time": "+17.500"
+        },
+        {
+          "pos": 6,
+          "driver": "Philippe Coulon",
+          "code": "Coulon",
+          "team": "Suzuki",
+          "time": "+25.800"
+        },
+        {
+          "pos": 7,
+          "driver": "Wil Hartog",
+          "code": "Hartog",
+          "team": "Suzuki",
+          "time": "+33.000"
+        },
+        {
+          "pos": 8,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "+36.800"
+        },
+        {
+          "pos": 9,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Suzuki",
+          "time": "+83.500"
+        },
+        {
+          "pos": 10,
+          "driver": "John Williams",
+          "code": "Williams",
+          "team": "Suzuki",
+          "time": "+83.700"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-8-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 8,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Anderstorp",
+      "city": "Anderstorp",
+      "country": "Sweden",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-9-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 9,
+      "title": "Finland Grand Prix",
+      "session": "race",
+      "startsAt": "1977-07-31T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Imatra",
+      "city": "Imatra",
+      "country": "Finland",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Johnny Cecotto",
+          "code": "Cecotto",
+          "team": "Yamaha",
+          "time": "46:50.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Marco Lucchinelli",
+          "code": "Lucchinelli",
+          "team": "Suzuki",
+          "time": "+43.000"
+        },
+        {
+          "pos": 3,
+          "driver": "Gianfranco Bonera",
+          "code": "Bonera",
+          "team": "Suzuki",
+          "time": "+51.600"
+        },
+        {
+          "pos": 4,
+          "driver": "Michel Rougerie",
+          "code": "Rougerie",
+          "team": "Suzuki",
+          "time": "+64.700"
+        },
+        {
+          "pos": 5,
+          "driver": "Steve Parrish",
+          "code": "Parrish",
+          "team": "Suzuki",
+          "time": "+77.200"
+        },
+        {
+          "pos": 6,
+          "driver": "Barry Sheene",
+          "code": "Sheene",
+          "team": "Suzuki",
+          "time": "+78.700"
+        },
+        {
+          "pos": 7,
+          "driver": "Teuvo Lansivuori",
+          "code": "Lansivuori",
+          "team": "Suzuki",
+          "time": "+116.500"
+        },
+        {
+          "pos": 8,
+          "driver": "Armando Toracca",
+          "code": "Toracca",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 9,
+          "driver": "Jean Philippe Orban",
+          "code": "Philippe Orban",
+          "team": "Suzuki"
+        },
+        {
+          "pos": 10,
+          "driver": "Karl Auer",
+          "code": "Auer",
+          "team": "Yamaha"
+        },
+        {
+          "pos": 11,
+          "driver": "Giacomo Agostini",
+          "code": "Agostini",
+          "team": "Yamaha",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-10-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 10,
+      "title": "Czechoslovakian Grand Prix",
+      "session": "race",
+      "startsAt": "1977-08-07T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "CREDITAS Autodrom Brno",
+      "city": "",
+      "country": "Czechia",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1977-11-race",
+      "competition": "motogp",
+      "season": "1977",
+      "round": 11,
+      "title": "British Grand Prix",
+      "session": "race",
+      "startsAt": "1977-08-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Silverstone Circuit",
+      "city": "",
+      "country": "United Kingdom",
+      "status": "finished",
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Barry Sheene",
+          "team": "Suzuki",
+          "points": 107
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Steve Baker",
+          "team": "Yamaha",
+          "points": 80
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Pat Hennen",
+          "team": "Suzuki",
+          "points": 67
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Johnny Cecotto",
+          "team": "Yamaha",
+          "points": 50
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Steve Parrish",
+          "team": "Suzuki",
+          "points": 39
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Giacomo Agostini",
+          "team": "Yamaha",
+          "points": 37
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Gianfranco Bonera",
+          "team": "Suzuki",
+          "points": 37
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Philippe Coulon",
+          "team": "Suzuki",
+          "points": 36
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Teuvo Lansivuori",
+          "team": "Suzuki",
+          "points": 35
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Wil Hartog",
+          "team": "Suzuki",
+          "points": 30
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Marco Lucchinelli",
+          "team": "Suzuki",
+          "points": 25
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Virginio Ferrari",
+          "team": "Suzuki",
+          "points": 21
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Michel Rougerie",
+          "team": "Suzuki",
+          "points": 21
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Armando Toracca",
+          "team": "Suzuki",
+          "points": 21
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Max Wiener",
+          "team": "Suzuki",
+          "points": 20
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Jack Findlay",
+          "team": "Suzuki",
+          "points": 17
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Alex George",
+          "team": "Suzuki",
+          "points": 15
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Helmut Kassner",
+          "team": "Suzuki",
+          "points": 9
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "Steve Wright",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "Franz Heller",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Christian Estrosi",
+          "team": "Suzuki",
+          "points": 6
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Michael Schmid",
+          "team": "Suzuki",
+          "points": 5
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "John Newbold",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Derek Chatterton",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "Anton Mang",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Charlie Williams",
+          "team": "Suzuki",
+          "points": 4
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Boet Van Dulmen",
+          "team": "Suzuki",
+          "points": 3
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "Jean Philippe Orban",
+          "team": "Suzuki",
+          "points": 2
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Franz Rau",
+          "team": "Suzuki",
+          "points": 2
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Kevin Wrettom",
+          "team": "Suzuki",
+          "points": 1
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "Alan North",
+          "team": "Yamaha",
+          "points": 1
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Karl Auer",
+          "team": "Yamaha",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

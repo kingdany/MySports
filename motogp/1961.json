@@ -1,0 +1,707 @@
+{
+  "competition": "motogp",
+  "season": "1961",
+  "generatedAt": "2026-11-09T13:42:04.5767266+00:00",
+  "events": [
+    {
+      "id": "motogp-1961-1-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 1,
+      "title": "West Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1961-05-14T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Hockenheim",
+      "city": "Hockenheim",
+      "country": "Germany",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-2-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 2,
+      "title": "French Grand Prix",
+      "session": "race",
+      "startsAt": "1961-05-21T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Clermont-Ferrand",
+      "city": "Clermont-Ferrand",
+      "country": "France",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-3-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 3,
+      "title": "Tourist Trophy",
+      "session": "race",
+      "startsAt": "1961-06-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Isle of Man",
+      "city": "",
+      "country": "Isle of Man",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Norton",
+          "time": "15:02.000"
+        },
+        {
+          "pos": 2,
+          "driver": "Bob Mcintyre",
+          "code": "Mcintyre",
+          "team": "Norton",
+          "time": "+114.400"
+        },
+        {
+          "pos": 3,
+          "driver": "Tom Phillis",
+          "code": "Phillis",
+          "team": "Norton",
+          "time": "+149.200"
+        },
+        {
+          "pos": 4,
+          "driver": "Alistair King",
+          "code": "King",
+          "team": "Norton",
+          "time": "+255.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Ron Langston",
+          "code": "Langston",
+          "team": "Matchless",
+          "time": "+299.200"
+        },
+        {
+          "pos": 6,
+          "driver": "Tony Godfrey",
+          "code": "Godfrey",
+          "team": "Norton",
+          "time": "+316.000"
+        },
+        {
+          "pos": 7,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton",
+          "time": "Non classificato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-4-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 4,
+      "title": "Dutch TT",
+      "session": "race",
+      "startsAt": "1961-06-24T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "TT Circuit Assen",
+      "city": "Assen",
+      "country": "Netherlands",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "MV Agusta",
+          "time": "5:37.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Norton",
+          "time": "+26.000"
+        },
+        {
+          "pos": 3,
+          "driver": "Bob Mcintyre",
+          "code": "Mcintyre",
+          "team": "Norton",
+          "time": "+103.300"
+        },
+        {
+          "pos": 4,
+          "driver": "Phil Read",
+          "code": "Read",
+          "team": "Norton",
+          "time": "+138.900"
+        },
+        {
+          "pos": 5,
+          "driver": "Frank Perris",
+          "code": "Perris",
+          "team": "Norton",
+          "time": "+144.900"
+        },
+        {
+          "pos": 6,
+          "driver": "Ron Miles",
+          "code": "Miles",
+          "team": "Norton"
+        },
+        {
+          "pos": 7,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton",
+          "time": "Non classificato"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-5-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 5,
+      "title": "Belgium Grand Prix",
+      "session": "race",
+      "startsAt": "1961-07-02T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "MV Agusta",
+          "time": "5:52.300"
+        },
+        {
+          "pos": 2,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Norton",
+          "time": "+99.000"
+        },
+        {
+          "pos": 3,
+          "driver": "Bob Mcintyre",
+          "code": "Mcintyre",
+          "team": "Norton",
+          "time": "+109.800"
+        },
+        {
+          "pos": 4,
+          "driver": "Mike Duff",
+          "code": "Duff",
+          "team": "Matchless",
+          "time": "+210.000"
+        },
+        {
+          "pos": 5,
+          "driver": "Ron Langston",
+          "code": "Langston",
+          "team": "Matchless",
+          "time": "+212.100"
+        },
+        {
+          "pos": 6,
+          "driver": "Paddy Driver",
+          "code": "Driver",
+          "team": "Norton",
+          "time": "+257.200"
+        },
+        {
+          "pos": 8,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-6-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 6,
+      "title": "East Germany Grand Prix",
+      "session": "race",
+      "startsAt": "1961-07-30T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Sachsenring",
+      "city": "Oberlungwitz",
+      "country": "Germany",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "MV Agusta",
+          "time": "5:08.800"
+        },
+        {
+          "pos": 2,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Norton",
+          "time": "+128.900"
+        },
+        {
+          "pos": 3,
+          "driver": "Bert Schneider",
+          "code": "Schneider",
+          "team": "Norton",
+          "time": "+203.400"
+        },
+        {
+          "pos": 4,
+          "driver": "Trevor Farnsworth",
+          "code": "Farnsworth",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Anssi Resko",
+          "code": "Resko",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-7-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 7,
+      "title": "Ulster Grand Prix",
+      "session": "race",
+      "startsAt": "1961-08-12T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Belfast",
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Gary Hocking",
+          "code": "Hocking",
+          "team": "MV Agusta",
+          "time": "38:20.400"
+        },
+        {
+          "pos": 2,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "Norton",
+          "time": "+114.000"
+        },
+        {
+          "pos": 3,
+          "driver": "Alistair King",
+          "code": "King",
+          "team": "Norton",
+          "time": "+115.200"
+        },
+        {
+          "pos": 4,
+          "driver": "Ron Langston",
+          "code": "Langston",
+          "team": "Matchless",
+          "time": "+269.600"
+        },
+        {
+          "pos": 5,
+          "driver": "Peter Chatterton",
+          "code": "Chatterton",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Tom Thorp",
+          "code": "Thorp",
+          "team": "Norton"
+        },
+        {
+          "pos": 8,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-8-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 8,
+      "title": "Nations Grand Prix",
+      "session": "race",
+      "startsAt": "1961-09-03T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Mike Hailwood",
+          "code": "Hailwood",
+          "team": "MV Agusta",
+          "time": "4:24.200"
+        },
+        {
+          "pos": 2,
+          "driver": "Alistair King",
+          "code": "King",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Paddy Driver",
+          "code": "Driver",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "Alberto Pagani",
+          "code": "Pagani",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "Bert Schneider",
+          "code": "Schneider",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "Jack Findlay",
+          "code": "Findlay",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-9-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 9,
+      "title": "Swedish Grand Prix",
+      "session": "race",
+      "startsAt": "1961-09-17T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Kristianstad",
+      "city": "Kristianstad",
+      "country": "Sweden",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-1961-10-race",
+      "competition": "motogp",
+      "season": "1961",
+      "round": 10,
+      "title": "Argentinian Grand Prix",
+      "session": "race",
+      "startsAt": "1961-10-15T12:00:00+00:00",
+      "dateOnly": true,
+      "venue": "Autódromo Oscar y Juan Gálvez",
+      "city": "CABA",
+      "country": "Argentina",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "driver": "Jorge Kissling",
+          "code": "Kissling",
+          "team": "Matchless",
+          "time": "39:06.500"
+        },
+        {
+          "pos": 2,
+          "driver": "Juan Salatino",
+          "code": "J. Salatino",
+          "team": "Norton"
+        },
+        {
+          "pos": 3,
+          "driver": "Frank Perris",
+          "code": "Perris",
+          "team": "Norton"
+        },
+        {
+          "pos": 4,
+          "driver": "S. Perkins",
+          "code": "Perkins",
+          "team": "Norton"
+        },
+        {
+          "pos": 5,
+          "driver": "Eduardo Salatino",
+          "code": "E. Salatino",
+          "team": "Norton"
+        },
+        {
+          "pos": 6,
+          "driver": "G. Costa",
+          "code": "Costa",
+          "team": "Norton"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "drivers",
+      "title": "Piloti",
+      "rows": [
+        {
+          "pos": 1,
+          "posText": "1",
+          "name": "Gary Hocking",
+          "team": "MV Agusta",
+          "points": 48
+        },
+        {
+          "pos": 2,
+          "posText": "2",
+          "name": "Mike Hailwood",
+          "team": "MV Agusta",
+          "points": 40
+        },
+        {
+          "pos": 3,
+          "posText": "3",
+          "name": "Frank Perris",
+          "team": "Norton",
+          "points": 16
+        },
+        {
+          "pos": 4,
+          "posText": "4",
+          "name": "Bob Mcintyre",
+          "team": "Norton",
+          "points": 14
+        },
+        {
+          "pos": 5,
+          "posText": "5",
+          "name": "Alistair King",
+          "team": "Norton",
+          "points": 13
+        },
+        {
+          "pos": 6,
+          "posText": "6",
+          "name": "Bert Schneider",
+          "team": "Norton",
+          "points": 9
+        },
+        {
+          "pos": 7,
+          "posText": "7",
+          "name": "Jorge Kissling",
+          "team": "Matchless",
+          "points": 8
+        },
+        {
+          "pos": 8,
+          "posText": "8",
+          "name": "Ron Langston",
+          "team": "Matchless",
+          "points": 7
+        },
+        {
+          "pos": 9,
+          "posText": "9",
+          "name": "Juan Salatino",
+          "team": "Norton",
+          "points": 6
+        },
+        {
+          "pos": 10,
+          "posText": "10",
+          "name": "Paddy Driver",
+          "team": "Norton",
+          "points": 5
+        },
+        {
+          "pos": 11,
+          "posText": "11",
+          "name": "Mike Duff",
+          "team": "Matchless",
+          "points": 5
+        },
+        {
+          "pos": 12,
+          "posText": "12",
+          "name": "Tom Phillis",
+          "team": "Norton",
+          "points": 4
+        },
+        {
+          "pos": 13,
+          "posText": "13",
+          "name": "Hans Gunter Jaeger",
+          "team": "BMW",
+          "points": 4
+        },
+        {
+          "pos": 14,
+          "posText": "14",
+          "name": "Antonie Paba",
+          "team": "Norton",
+          "points": 4
+        },
+        {
+          "pos": 15,
+          "posText": "15",
+          "name": "Alberto Pagani",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 16,
+          "posText": "16",
+          "name": "Phil Read",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 17,
+          "posText": "17",
+          "name": "Gyula Marsovszky",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 18,
+          "posText": "18",
+          "name": "Trevor Farnsworth",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 19,
+          "posText": "19",
+          "name": "S. Perkins",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 20,
+          "posText": "20",
+          "name": "J.T. Findlay",
+          "team": "Norton",
+          "points": 3
+        },
+        {
+          "pos": 21,
+          "posText": "21",
+          "name": "Eduardo Salatino",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 22,
+          "posText": "22",
+          "name": "Fritz Messerli",
+          "team": "Matchless",
+          "points": 2
+        },
+        {
+          "pos": 23,
+          "posText": "23",
+          "name": "Peter Chatterton",
+          "team": "Norton",
+          "points": 2
+        },
+        {
+          "pos": 24,
+          "posText": "24",
+          "name": "Ernst Hiller",
+          "team": "BMW",
+          "points": 2
+        },
+        {
+          "pos": 25,
+          "posText": "25",
+          "name": "G. Costa",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 26,
+          "posText": "26",
+          "name": "Tony Godfrey",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 27,
+          "posText": "27",
+          "name": "Ron Miles",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 28,
+          "posText": "28",
+          "name": "John Lothar",
+          "team": "BMW",
+          "points": 1
+        },
+        {
+          "pos": 29,
+          "posText": "29",
+          "name": "Roland Föll",
+          "team": "Matchless",
+          "points": 1
+        },
+        {
+          "pos": 30,
+          "posText": "30",
+          "name": "Anssi Resko",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 31,
+          "posText": "31",
+          "name": "Tom Thorp",
+          "team": "Norton",
+          "points": 1
+        },
+        {
+          "pos": 32,
+          "posText": "32",
+          "name": "Peter Pawson",
+          "team": "Norton",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}
