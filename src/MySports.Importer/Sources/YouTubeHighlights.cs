@@ -161,12 +161,13 @@ public sealed partial class YouTubeHighlights(
             : null));
 
     // Sky Sport F1 (Italia), in italiano. I titoli variano molto ("gli highlights della gara",
-    // "gli highlights del GP di Singapore", "qualifica Sprint", "qualifiche shootout per la Sprint"):
-    // si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre categorie (F1 Academy, F2, F3).
+    // "gli highlights del GP di Singapore", "qualifica Sprint", "qualifiche shootout per la Sprint", a volte "shootout"
+    // senza "Sprint" e scritto male, "shootuot"): si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre
+    // categorie (F1 Academy, F2, F3).
     public static YouTubeHighlights SkySportF1(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", BySession(title =>
             !Contains(title, "highlights") || SkyExcluded().IsMatch(title) ? null
-            : Contains(title, "qualific") && Contains(title, "sprint") ? "sprint_qualifying"
+            : Contains(title, "qualific") && (Contains(title, "sprint") || Contains(title, "shoot")) ? "sprint_qualifying"
             : Contains(title, "sprint") ? "sprint"
             : Contains(title, "qualific") ? "qualifying"
             : "race"));
