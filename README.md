@@ -122,4 +122,12 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2024, Serie A 2023-24/2024-25, Champions League 2024-25. Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
 - [ ] Video: a volte un video che rispetta la regola non viene abbinato e lo si trova solo rilanciando (F1 2025 Bahrain, MotoGP 2025 Argentina). Forse la lettura della playlist dei caricamenti restituisce pagine incomplete: da verificare, e nel caso rileggere le sessioni rimaste senza video
 - [ ] Calcio: altre competizioni
-- [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
+- [ ] Calcio: dettaglio partita con gol (minuto, marcatore, assist, rigore/autogol), espulsioni e, se possibile, formazioni (modulo, titolari, panchina, sostituzioni). football-data.org li ha solo a pagamento; usare l'API pubblica non documentata di ESPN, senza chiave, verificata su Serie A e Champions League dal 2023-24:
+  - `https://site.api.espn.com/apis/site/v2/sports/soccer/{ita.1|uefa.champions}/scoreboard?dates=AAAAMMGG` per gli id delle partite, `.../summary?event={id}` per il dettaglio: `keyEvents` (tipi "Goal", "Goal - Header", "Penalty - Scored", "Own Goal", "Red Card", "Yellow Card", "Substitution"...), `rosters` (modulo, titolari, entrate e uscite), `boxscore` (statistiche di squadra)
+  - Abbinare le partite a quelle di football-data per data e squadre, con una tabella dei nomi ESPN ("Internazionale", "AS Roma")
+  - Leggere il dettaglio una volta sola per partita finita e tenerlo dall'esecuzione precedente, come i video; testi ESPN in inglese, usare solo i campi strutturati e scrivere le etichette in italiano nell'app
+  - Campi nuovi facoltativi nei record C# e in `types.ts`; nell'app la cronologia sotto il risultato, le formazioni in una sezione a parte
+- [ ] App: migliorare la grafica con immagini: loghi delle squadre e loghi delle competizioni (F1, MotoGP, Serie A, Champions League)
+- [ ] App: migliorare la scelta della stagione (`SeasonPicker`):
+  - tra le stagioni si fatica a riconoscere quella corrente: evidenziarla (es. in rosso o in un altro modo)
+  - F1 e MotoGP hanno molte stagioni (dal 1950 e dal 1949) e scorrerle tutte è lungo: forse scegliere prima il decennio, da decidere
