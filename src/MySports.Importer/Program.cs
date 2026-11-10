@@ -39,7 +39,8 @@ IEventSource[] sources =
 ];
 
 // Highlights YouTube per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
-// ce l'ha. Serie A: DAZN, poi Sky. F1: Sky, poi il canale ufficiale in inglese. Champions League e MotoGP: Sky.
+// ce l'ha. Serie A: DAZN, poi Sky. F1: Sky, poi il canale ufficiale in inglese. Champions League: Sky, poi Prime Video
+// (solo la partita del mercoledì che trasmette). MotoGP: Sky.
 // Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
 var videoSources = new Dictionary<string, YouTubeHighlights[]>();
@@ -48,7 +49,7 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
     videoSources[Competition.MotoGP.Id] = [YouTubeHighlights.SkySportMotoGP(http, youtubeKey)];
     videoSources[Competition.SerieA.Id] = [YouTubeHighlights.DaznSerieA(http, youtubeKey), YouTubeHighlights.SkySportSerieA(http, youtubeKey)];
-    videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey)];
+    videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey), YouTubeHighlights.PrimeVideoChampionsLeague(http, youtubeKey)];
 }
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");

@@ -27,11 +27,18 @@ public sealed partial class YouTubeHighlights(
     private static Func<string, Func<SportEvent, bool>?> BySession(Func<string, string?> classify) =>
         title => classify(title) is { } session ? e => e.Session == session : null;
 
-    // La regola deve catturare le due squadre, nell'ordine casa-trasferta.
+    // La regola deve catturare "Casa-Trasferta" in un solo gruppo. Si prova ogni trattino, perché alcuni nomi
+    // ne contengono uno ("Union Saint-Gilloise-Marsiglia").
     private static Func<string, Func<SportEvent, bool>?> ByTeams(Regex rule) =>
         title => rule.Match(title) is { Success: true } m
-            ? e => IsTeam(e.HomeTeam, m.Groups[1].Value) && IsTeam(e.AwayTeam, m.Groups[2].Value)
+            ? e => TeamSplits(m.Groups[1].Value).Any(p => IsTeam(e.HomeTeam, p.Home) && IsTeam(e.AwayTeam, p.Away))
             : null;
+
+    private static IEnumerable<(string Home, string Away)> TeamSplits(string teams)
+    {
+        for (var i = teams.IndexOf('-'); i >= 0; i = teams.IndexOf('-', i + 1))
+            yield return (teams[..i], teams[(i + 1)..]);
+    }
 
     private static bool IsTeam(Team? team, string name)
     {
@@ -57,6 +64,8 @@ public sealed partial class YouTubeHighlights(
         ["Sporting Lisbona"] = "Sporting",
         ["Bodo/Glimt"] = "Bodø/Glimt",
         ["Bodo Glimt"] = "Bodø/Glimt",
+        ["Bodo"] = "Bodø/Glimt",
+        ["Shakhtar Donetsk"] = "Shakhtar",
         ["Bayer Leverkusen"] = "Leverkusen",
         ["Qarabag"] = "Qarabağ Ağdam",
         ["Olympiacos"] = "Olympiakos",
@@ -71,6 +80,7 @@ public sealed partial class YouTubeHighlights(
         ["Athletic Club"] = "Athletic",
         ["Athletic Bilbao"] = "Athletic",
         ["Union ST Gilloise"] = "Union SG",
+        ["Union Saint-Gilloise"] = "Union SG",
         ["Bruges"] = "Club Brugge",
         ["Brugge"] = "Club Brugge",
         ["PSV Eindhoven"] = "PSV",
@@ -89,16 +99,36 @@ public sealed partial class YouTubeHighlights(
     public static YouTubeHighlights SkySportSerieA(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkySerieATitle()));
 
-    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s+Serie\s?A)?\s*\|\s*Serie\s?A\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s+Serie\s?A)?\s*\|\s*Serie\s?A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
 
-    // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Esclusi gli "extended highlights",
-    // pubblicati solo per alcune partite, che doppierebbero il video dello stesso canale.
+    // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
+    // il punteggio è seguito da "dts" o "dcr" ("Sporting-Bodø/Glimt 5-0 dts: ..."), e a volte manca "| Champions League"
+    // ("Atalanta-Bayern Monaco 1-6: gol e highlights"): il titolo deve comunque finire lì, quindi le partite
+    // "| Serie A" restano escluse. Esclusi gli "extended highlights", pubblicati solo per alcune partite, che
+    // doppierebbero il video dello stesso canale.
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
 
-    [GeneratedRegex(@"^([^:|]+?)-([^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights\s*\|\s*Champions League\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?)?)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*Champions League)?\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkyChampionsLeagueTitle();
+
+    // Prime Video Sport (Italia), di riserva a Sky: trasmette una partita il mercoledì. "PORTO - NAPOLI gol e highlights |
+    // UEFA Champions League", a volte con il trattino lungo e senza spazi ("NAPOLI–CHELSEA"), con il punteggio
+    // ("Ajax - Inter 0-2 Gol e Highlights | ..."), con "| Gol e Highlights" ("VILLARREAL – JUVENTUS | Gol e Highlights | ...")
+    // o con "v" ("Benfica v Fenerbahce 1-0 Highlights | UEFA Champions League Playoff"). Il canale ha anche l'NBA
+    // ("NBA, Chicago Bulls-Philadelphia 76ers | Highlights"), esclusa perché dopo deve esserci "Champions League".
+    public static YouTubeHighlights PrimeVideoChampionsLeague(HttpClient http, string apiKey)
+    {
+        var byTeams = ByTeams(PrimeChampionsLeagueTitle());
+        return new(http, apiKey, "UCc-ZZMy22fhnmfSgPb80-1w", "Prime Video", title => byTeams(PrimeDash().Replace(title, "-")));
+    }
+
+    [GeneratedRegex(@"\s*–\s*|\s+v\s+")]
+    private static partial Regex PrimeDash();
+
+    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?\s*(?:\|\s*)?(?:gol e )?highlights\s*\|[^|]*Champions League", RegexOptions.IgnoreCase)]
+    private static partial Regex PrimeChampionsLeagueTitle();
 
     // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
     // Prima delle squadre c'è un testo libero, separato in tanti modi ("È tornato RAFA LEAO! Cagliari-Milan 0-1",

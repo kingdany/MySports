@@ -37,7 +37,7 @@ src/MySports.Importer/
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
 Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A e Champions League), un solo video per
-sessione, in italiano: DAZN per la Serie A (Sky se manca), Sky Sport per le altre (per la F1, se manca, il canale ufficiale in inglese).
+sessione, in italiano: DAZN per la Serie A (Sky se manca), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video).
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
@@ -119,6 +119,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 fino al 2024, MotoGP fino al 2025, Serie A 2023-24/2024-25, Champions League 2024-25/2025-26
+- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2024, Serie A 2023-24/2024-25, Champions League 2024-25
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
