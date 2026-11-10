@@ -177,15 +177,20 @@ public sealed partial class YouTubeHighlights(
 
     // Sky Sport MotoGP (Italia), in italiano. I titoli variano ("MotoGP, GP del Qatar: gli highlights della gara a Lusail",
     // "MotoGP, gli highlights delle qualifiche del GP di Spagna", "MotoGP a Misano, gli highlights del GP di San Marino"):
-    // si cercano parole chiave, e il GP senza altro è la gara. Esclusi sintesi lunga, pre-qualifiche, libere e le altre
-    // classi, che a inizio stagione erano nei titoli "MotoGP, ..." ("gli highlights del GP della Thailandia della Moto2").
+    // si cercano parole chiave, e il GP senza altro è la gara. "MotoGP" può stare anche in fondo ("Marquez (Ducati) vince
+    // GP Argentina MotoGP: gli highlights"). Esclusi sintesi lunga, pre-qualifiche, libere e le altre classi, che a inizio
+    // stagione erano nei titoli "MotoGP, ..." ("gli highlights del GP della Thailandia della Moto2").
+    // A volte la Sprint è chiamata "gara" ("MotoGP, GP di Aragon: gli highlights della gara in Spagna", il sabato): un video
+    // da gara vale anche per la Sprint, e tra le sessioni già iniziate si prende la più recente, quindi il sabato la Sprint.
     public static YouTubeHighlights SkySportMotoGP(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCGlmF5tM5DeT5Dl1BQVItYg", "Sky Sport MotoGP", BySession(title =>
-            !title.StartsWith("MotoGP", StringComparison.OrdinalIgnoreCase) || !Contains(title, "highlights")
-                || SkyMotoGPExcluded().IsMatch(title) ? null
-            : Contains(title, "qualific") ? "qualifying"
-            : Contains(title, "sprint") ? "sprint"
-            : "race"));
+        new(http, apiKey, "UCGlmF5tM5DeT5Dl1BQVItYg", "Sky Sport MotoGP", title =>
+            !MotoGPMention().IsMatch(title) || !Contains(title, "highlights") || SkyMotoGPExcluded().IsMatch(title) ? null
+            : Contains(title, "qualific") ? e => e.Session == "qualifying"
+            : Contains(title, "sprint") ? e => e.Session == "sprint"
+            : e => e.Session is "race" or "sprint");
+
+    [GeneratedRegex(@"\bMotoGP\b", RegexOptions.IgnoreCase)]
+    private static partial Regex MotoGPMention();
 
     [GeneratedRegex(@"sintesi|pre[- ]?qualific|libere|warm[- ]?up|\bMoto[23E]\b|superbike", RegexOptions.IgnoreCase)]
     private static partial Regex SkyMotoGPExcluded();
