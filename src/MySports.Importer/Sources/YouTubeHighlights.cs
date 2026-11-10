@@ -193,7 +193,7 @@ public sealed partial class YouTubeHighlights(
     // Sky Sport F1 (Italia), in italiano. I titoli variano molto ("gli highlights della gara",
     // "gli highlights del GP di Singapore", "qualifica Sprint", "qualifiche shootout per la Sprint", a volte "shootout"
     // senza "Sprint" e scritto male, "shootuot"): si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre
-    // categorie (F1 Academy, F2, F3).
+    // categorie (F1 Academy, F2, F3, i rally: "WRC Estonia, gli highlights del sabato", "Rally Messico, gli highlights ...").
     public static YouTubeHighlights SkySportF1(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", BySession(title =>
             !Contains(title, "highlights") || SkyExcluded().IsMatch(title) ? null
@@ -202,7 +202,7 @@ public sealed partial class YouTubeHighlights(
             : Contains(title, "qualific") ? "qualifying"
             : "race"));
 
-    [GeneratedRegex(@"sintesi|libere|\bFP\d|academy|\bF2\b|\bF3\b", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"sintesi|libere|\bFP\d|academy|\bF2\b|\bF3\b|\bWRC\b|\bRally", RegexOptions.IgnoreCase)]
     private static partial Regex SkyExcluded();
 
     // Sky Sport MotoGP (Italia), in italiano. I titoli variano ("MotoGP, GP del Qatar: gli highlights della gara a Lusail",

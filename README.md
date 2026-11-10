@@ -119,6 +119,7 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2024, Serie A 2023-24/2024-25, Champions League 2024-25
+- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2024, Serie A 2023-24/2024-25, Champions League 2024-25. Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
+- [ ] Video: a volte un video che rispetta la regola non viene abbinato e lo si trova solo rilanciando (F1 2025 Bahrain, MotoGP 2025 Argentina). Forse la lettura della playlist dei caricamenti restituisce pagine incomplete: da verificare, e nel caso rileggere le sessioni rimaste senza video
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: marcatori nel dettaglio partita: non disponibili nel piano gratuito (piano "Free + Deep Data" a 29 €/mese, oppure un'altra fonte da valutare)
