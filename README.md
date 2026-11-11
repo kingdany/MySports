@@ -99,6 +99,11 @@ dotnet run --project src/MySports.Importer -- --competition serie-a --seasons 20
 ```
 
 Ogni canale viene riletto fino alla stagione richiesta (circa 20 unità di quota YouTube al mese da risalire).
+YouTube però dà solo gli ultimi 20.000 video di un canale: DAZN arriva così a novembre 2024, Sky Sport a settembre 2024.
+Le partite più vecchie si cercano con la ricerca di YouTube, che costa circa 200 unità ogni 3 giorni da coprire. Per non
+consumare tutta la quota giornaliera (10.000 unità), un'esecuzione fa al massimo 50 pagine di ricerca (5.000 unità): per
+una stagione intera, come la Serie A 2023-24, il recupero va rilanciato in giorni diversi finché il log non dice più
+"ricerca fermata".
 
 ## Provare l'app sul telefono
 
@@ -119,9 +124,8 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2023, Serie A 2023-24. Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
+- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2023, Serie A 2023-24 (più recuperi in giorni diversi, vedi sopra). La Serie A 2024-25 va recuperata di nuovo per i video DAZN di agosto-ottobre 2024. Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
 - [ ] Video: a volte un video che rispetta la regola non viene abbinato e lo si trova solo rilanciando (F1 2025 Bahrain, MotoGP 2025 Argentina). Forse la lettura della playlist dei caricamenti restituisce pagine incomplete: da verificare, e nel caso rileggere le sessioni rimaste senza video
-- [ ] Video: la playlist dei caricamenti di un canale arriva al massimo a 20.000 video (`itemCount` 20000), quindi `ReadUploadsSinceAsync` non vede quelli più vecchi. DAZN Italia ne ha circa 31.700 e arriva solo ai primi di novembre 2024: per questo la Serie A 2024-25 non ha video DAZN da agosto a ottobre (99 partite, coperte da Sky tranne Udinese-Lazio e Genoa-Juventus). Sky Sport (circa 36.900) per ora arriva a inizio settembre 2024, ma non basterà per le stagioni più vecchie; Sky Sport F1, Sky Sport MotoGP e Formula 1 sono sotto i 12.000. Possibile soluzione: per le sessioni più vecchie dell'ultimo video letto usare `search.list` (canale e 3 giorni dopo la sessione), che costa 100 unità a ricerca, quindi solo con `--recover-videos`
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: dettaglio partita con gol (minuto, marcatore, assist, rigore/autogol), espulsioni e, se possibile, formazioni (modulo, titolari, panchina, sostituzioni). football-data.org li ha solo a pagamento; usare l'API pubblica non documentata di ESPN, senza chiave, verificata su Serie A e Champions League dal 2023-24:
   - `https://site.api.espn.com/apis/site/v2/sports/soccer/{ita.1|uefa.champions}/scoreboard?dates=AAAAMMGG` per gli id delle partite, `.../summary?event={id}` per il dettaglio: `keyEvents` (tipi "Goal", "Goal - Header", "Penalty - Scored", "Own Goal", "Red Card", "Yellow Card", "Substitution"...), `rosters` (modulo, titolari, entrate e uscite), `boxscore` (statistiche di squadra)
