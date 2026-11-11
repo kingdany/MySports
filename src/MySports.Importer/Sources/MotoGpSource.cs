@@ -28,6 +28,13 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
         ["SPR"] = "sprint", ["WUP"] = "warm_up", ["RAC"] = "race",
     };
 
+    // GP con gli orari del calendario sbagliati: (stagione, sigla del GP) -> correzione da sommare a ogni sessione.
+    // Jerez 2024: tutto 2 ore più tardi del vero (Q1 alle 12:50 invece delle 10:50, gara alle 16:00 invece delle 14:00).
+    private static readonly Dictionary<(string Season, string Gp), TimeSpan> TimeCorrections = new()
+    {
+        [("2024", "SPA")] = TimeSpan.FromHours(-2),
+    };
+
     // Durata indicativa, per capire se una sessione senza risultati è in corso o finita (la qualifica va da Q1 a fine Q2).
     private static readonly Dictionary<string, double> DurationHours = new()
     {
@@ -112,10 +119,11 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
                 continue;
             }
 
+            var correction = TimeCorrections.GetValueOrDefault((season, Str(gp["shortname"]) ?? ""));
             foreach (var group in sessions)
             {
                 var first = group.MinBy(b => ParseDate(Str(b["date_start"])!))!;
-                var startsAt = hasTimes ? ParseDate(Str(first["date_start"])!) : DateOnlyStart(Str(first["date_start"])!);
+                var startsAt = hasTimes ? ParseDate(Str(first["date_start"])!) + correction : DateOnlyStart(Str(first["date_start"])!);
                 IReadOnlyList<ClassificationRow>? result = group.Key switch
                 {
                     "race" when LastStart(classifications, "RAC") is { } rows => RaceClassification(rows),

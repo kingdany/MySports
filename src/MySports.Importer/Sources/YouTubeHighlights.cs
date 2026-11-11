@@ -187,9 +187,23 @@ public sealed partial class YouTubeHighlights(
         return false;
     }
 
-    // Un video già salvato resta solo se rispetta ancora la regola del canale: quando una regola cambia,
-    // i video presi per sbaglio spariscono anche dalle stagioni già pubblicate.
-    public bool Matches(SportEvent e, Video video) => matcher(video.Title)?.Invoke(e) == true;
+    // Un video già salvato resta solo se spetta ancora a quella sessione: deve rispettare la regola del canale ed essere
+    // la sessione che gli si darebbe oggi tra quelle della stagione. Quando una regola o un orario cambiano (es. un video
+    // della gara finito sulla Sprint perché la gara risultava non ancora iniziata), i video presi per sbaglio spariscono
+    // anche dalle stagioni già pubblicate.
+    public bool Matches(SportEvent e, Video video, IReadOnlyList<SportEvent> events) =>
+        SessionFor(events, video.Title, video.PublishedAt)?.Id == e.Id;
+
+    // Sessione a cui spetta un video: tra quelle concluse che il titolo indica e iniziate al massimo MaxDelay prima della
+    // pubblicazione, la più recente (un video da gara MotoGP vale anche per la Sprint del giorno prima).
+    // StartsWith: la stagione può essere "2026" o "2026-27".
+    private SportEvent? SessionFor(IEnumerable<SportEvent> events, string title, DateTimeOffset publishedAt) =>
+        matcher(title) is not { } isEvent ? null
+        : events
+            .Where(e => e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && isEvent(e))
+            .Where(e => e.StartsAt <= publishedAt && publishedAt - e.StartsAt <= MaxDelay)
+            .Where(e => YearPattern().Match(title) is not { Success: true } year || e.Season.StartsWith(year.Value, StringComparison.Ordinal))
+            .MaxBy(e => e.StartsAt);
 
     // Canale ufficiale Formula 1, in inglese, di riserva per le sessioni senza video Sky:
     // "Race Highlights | 2026 Mexico City Grand Prix" -> race. Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
@@ -219,8 +233,11 @@ public sealed partial class YouTubeHighlights(
     // Sky Sport MotoGP (Italia), in italiano. I titoli variano ("MotoGP, GP del Qatar: gli highlights della gara a Lusail",
     // "MotoGP, gli highlights delle qualifiche del GP di Spagna", "MotoGP a Misano, gli highlights del GP di San Marino"):
     // si cercano parole chiave, e il GP senza altro è la gara. "MotoGP" può stare anche in fondo ("Marquez (Ducati) vince
-    // GP Argentina MotoGP: gli highlights"). Esclusi sintesi lunga, pre-qualifiche, libere e le altre classi, che a inizio
-    // stagione erano nei titoli "MotoGP, ..." ("gli highlights del GP della Thailandia della Moto2").
+    // GP Argentina MotoGP: gli highlights") o mancare ("Bastianini (Ducati) vince il GP Gran Bretagna: gli highlights",
+    // "Highlights Sprint Misano: ..."): allora serve "GP" o "Sprint", e senza "MotoGP" passano anche le altre serie del
+    // canale (Superbike, motocross: "SBK, GP del Portogallo: gli highlights di Gara 1", "MXGP, GP Fiandre: ..."), escluse
+    // per nome. Esclusi anche sintesi e highlights lunghi, pre-qualifiche, libere, retropodio, conferenze stampa e le altre
+    // classi, che a inizio stagione erano nei titoli "MotoGP, ..." ("gli highlights del GP della Thailandia della Moto2").
     // A volte la Sprint è chiamata "gara" ("MotoGP, GP di Aragon: gli highlights della gara in Spagna", il sabato): un video
     // da gara vale anche per la Sprint, e tra le sessioni già iniziate si prende la più recente, quindi il sabato la Sprint.
     public static YouTubeHighlights SkySportMotoGP(HttpClient http, string apiKey) =>
@@ -230,10 +247,10 @@ public sealed partial class YouTubeHighlights(
             : Contains(title, "sprint") ? e => e.Session == "sprint"
             : e => e.Session is "race" or "sprint");
 
-    [GeneratedRegex(@"\bMotoGP\b", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"\bMotoGP\b|\bGP\b|\bSprint\b", RegexOptions.IgnoreCase)]
     private static partial Regex MotoGPMention();
 
-    [GeneratedRegex(@"sintesi|pre[- ]?qualific|libere|warm[- ]?up|\bMoto[23E]\b|superbike", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"sintesi|lunghi|pre[- ]?qualific|libere|warm[- ]?up|retropodio|conferenza|\bMoto\s?[23E]\b|superbike|SBK\b|MXGP|motocross", RegexOptions.IgnoreCase)]
     private static partial Regex SkyMotoGPExcluded();
 
     private static bool Contains(string text, string value) => text.Contains(value, StringComparison.OrdinalIgnoreCase);
@@ -267,15 +284,7 @@ public sealed partial class YouTubeHighlights(
         var found = new Dictionary<string, Upload>();
         foreach (var upload in uploads.OrderBy(u => u.PublishedAt))
         {
-            var isEvent = matcher(upload.Title);
-            if (isEvent is null) continue;
-
-            // StartsWith: la stagione può essere "2026" o "2026-27".
-            var match = waiting
-                .Where(e => isEvent(e) && e.StartsAt <= upload.PublishedAt && upload.PublishedAt - e.StartsAt <= MaxDelay)
-                .Where(e => YearPattern().Match(upload.Title) is not { Success: true } year || e.Season.StartsWith(year.Value, StringComparison.Ordinal))
-                .MaxBy(e => e.StartsAt);
-            if (match is not null) found.TryAdd(match.Id, upload);
+            if (SessionFor(waiting, upload.Title, upload.PublishedAt) is { } match) found.TryAdd(match.Id, upload);
         }
         if (found.Count == 0) return events;
 

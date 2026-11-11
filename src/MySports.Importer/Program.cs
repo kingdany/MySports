@@ -131,11 +131,12 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 .ToList();
         }
 
-        // Si tengono solo i video dei canali in uso che rispettano ancora la regola sul titolo del canale: quelli di un
-        // canale tolto, o presi per sbaglio da una regola poi corretta, spariscono anche dalle stagioni già salvate.
+        // Si tengono solo i video dei canali in uso che spettano ancora alla loro sessione: quelli di un canale tolto, o presi
+        // per sbaglio da una regola o con un orario poi corretti, spariscono anche dalle stagioni già salvate.
         if (videoSources.TryGetValue(competition.Id, out var channels))
         {
-            bool Keep(SportEvent e, Video v) => channels.Any(c => c.SourceName == v.Source && c.Matches(e, v));
+            var all = events;
+            bool Keep(SportEvent e, Video v) => channels.Any(c => c.SourceName == v.Source && c.Matches(e, v, all));
             events = events
                 .Select(e => e.Videos.All(v => Keep(e, v)) ? e : e with { Videos = e.Videos.Where(v => Keep(e, v)).ToList() })
                 .ToList();
