@@ -394,8 +394,10 @@ public sealed partial class YouTubeHighlights(
             for (var page = 0; page < MaxSearchPages && searchPagesUsed < SearchBudget; page++)
             {
                 searchPagesUsed++;
+                // regionCode=IT: senza, la ricerca esclude i video non visibili nel paese da cui parte la richiesta, e i
+                // runner di GitHub Actions sono negli Stati Uniti (DAZN Italia pubblica i video solo per l'Italia).
                 var data = await HttpJson.GetAsync(http,
-                    $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&channelId={channelId}" +
+                    $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&regionCode=IT&channelId={channelId}" +
                     $"&q={Uri.EscapeDataString(searchQuery)}&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
                     (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
                 pages++;
