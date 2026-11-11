@@ -89,6 +89,11 @@ public sealed partial class YouTubeHighlights(
         ["Lask Linz"] = "LASK",
         ["Sabah Baku"] = "Sabah",
         ["Juve"] = "Juventus",
+        ["Dinamo Zagabria"] = "Dinamo Zagreb",
+        ["Stella Rossa"] = "Crvena Zvedza", // la fonte scrive "Zvedza"
+        ["Salisburgo"] = "RB Salzburg",
+        ["Sparta Praga"] = "Sparta Praha",
+        ["Real"] = "Real Madrid",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
@@ -103,20 +108,26 @@ public sealed partial class YouTubeHighlights(
     private static partial Regex SkySerieATitle();
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
-    // il punteggio è seguito da "dts" o "dcr" ("Sporting-Bodø/Glimt 5-0 dts: ..."), e a volte manca "| Champions League"
-    // ("Atalanta-Bayern Monaco 1-6: gol e highlights"): il titolo deve comunque finire lì, quindi le partite
-    // "| Serie A" restano escluse. Esclusi gli "extended highlights", pubblicati solo per alcune partite, che
+    // il punteggio è seguito da "dts" o "dcr", anche tra parentesi ("Sporting-Bodø/Glimt 5-0 dts: ...",
+    // "Liverpool-PSG 0-1 (1-5 d.c.r): ..."), e a volte manca "| Champions League" ("Atalanta-Bayern Monaco 1-6: gol e
+    // highlights"), è attaccato ("| ChampionsLeague") o è "| Finale Champions League": il titolo deve comunque finire lì,
+    // quindi le partite "| Serie A" restano escluse. Tra il punteggio e "highlights" può esserci una frase chiusa da punto
+    // o virgola ("Arsenal-Psg 0-1, gol di Dembelé. Gli HIGHLIGHTS | ..."), e a volte "highlights" manca del tutto
+    // ("Celtic-Slovan Bratislava 5-1 | Champions League"): allora servono il punteggio e "Champions League".
+    // Esclusi gli "extended highlights" e gli "highlights lunghi", pubblicati solo per alcune partite, che
     // doppierebbero il video dello stesso canale.
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
 
-    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?)?)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*Champions League)?\s*$", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?Champions\s?League)?|(?<=\d)\s*\|\s*(?:Finale\s+)?Champions\s?League)\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkyChampionsLeagueTitle();
 
     // Prime Video Sport (Italia), di riserva a Sky: trasmette una partita il mercoledì. "PORTO - NAPOLI gol e highlights |
     // UEFA Champions League", a volte con il trattino lungo e senza spazi ("NAPOLI–CHELSEA"), con il punteggio
     // ("Ajax - Inter 0-2 Gol e Highlights | ..."), con "| Gol e Highlights" ("VILLARREAL – JUVENTUS | Gol e Highlights | ...")
-    // o con "v" ("Benfica v Fenerbahce 1-0 Highlights | UEFA Champions League Playoff"). Il canale ha anche l'NBA
+    // o con "v" ("Benfica v Fenerbahce 1-0 Highlights | UEFA Champions League Playoff"). Nel 2024-25 scriveva
+    // "Gol & Highlights" e a volte l'andata o i rigori tra parentesi ("PSG - Arsenal  2-1 (3-1) Gol & Highlights | ...",
+    // "Atletico Madrid-Real Madrid 1-0 (2-4 d.c.r.) Gol & Highlights | ..."). Il canale ha anche l'NBA
     // ("NBA, Chicago Bulls-Philadelphia 76ers | Highlights"), esclusa perché dopo deve esserci "Champions League".
     public static YouTubeHighlights PrimeVideoChampionsLeague(HttpClient http, string apiKey)
     {
@@ -127,7 +138,7 @@ public sealed partial class YouTubeHighlights(
     [GeneratedRegex(@"\s*–\s*|\s+v\s+")]
     private static partial Regex PrimeDash();
 
-    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?\s*(?:\|\s*)?(?:gol e )?highlights\s*\|[^|]*Champions League", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?(?:\s*\([^)]*\))?\s*(?:\|\s*)?(?:gol (?:e|&) )?highlights\s*\|[^|]*Champions League", RegexOptions.IgnoreCase)]
     private static partial Regex PrimeChampionsLeagueTitle();
 
     // DAZN Italia: "TRIS Parma, SPROFONDA la DEA : Atalanta-Parma 0-3 | Serie A Enilive | DAZN Highlights".
