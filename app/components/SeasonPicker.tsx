@@ -7,7 +7,7 @@ type Props = {
   onSelect: (season: string) => void;
 };
 
-// Scelta tra le stagioni disponibili per la competizione.
+// Scelta tra le stagioni disponibili per la competizione; la stagione corrente è evidenziata.
 export function SeasonPicker({ competition, season, onSelect }: Props) {
   if (!competition) return null;
 
@@ -16,7 +16,11 @@ export function SeasonPicker({ competition, season, onSelect }: Props) {
       label="Stagione"
       value={season ?? ''}
       title={`${competition.name}: scegli la stagione`}
-      options={(competition.seasons ?? [competition.currentSeason]).map((s) => ({ key: s, label: s }))}
+      options={(competition.seasons ?? [competition.currentSeason]).map((s) => ({
+        key: s,
+        label: s,
+        highlighted: s === competition.currentSeason,
+      }))}
       selectedKey={season}
       onSelect={onSelect}
     />
