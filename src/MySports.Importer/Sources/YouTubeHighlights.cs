@@ -321,24 +321,61 @@ public sealed partial class YouTubeHighlights(
         }
 
         var found = new Dictionary<string, Upload>();
+        var nearMisses = new List<string>();
         foreach (var upload in uploads.OrderBy(u => u.PublishedAt))
         {
             if (SessionFor(waiting, upload.Title, upload.PublishedAt) is { } match) found.TryAdd(match.Id, upload);
+            else if (NearMiss(waiting, upload) is { } reason) nearMisses.Add(reason);
         }
-        if (found.Count == 0) return events;
+        LogSome("titolo valido ma video scartato", nearMisses);
 
         // Durata e disponibilità in Italia: i video bloccati non si mostrano.
-        var details = await GetDetailsAsync(found.Values.Select(u => u.VideoId).ToList(), ct);
+        var details = found.Count == 0 ? [] : await GetDetailsAsync(found.Values.Select(u => u.VideoId).ToList(), ct);
         var attached = 0;
+        var unavailable = new List<string>();
         var result = events.Select(e =>
         {
-            if (!found.TryGetValue(e.Id, out var u) || !details.TryGetValue(u.VideoId, out var d) || d.BlockedInItaly) return e;
+            if (!found.TryGetValue(e.Id, out var u)) return e;
+            if (!details.TryGetValue(u.VideoId, out var d) || d.BlockedInItaly)
+            {
+                unavailable.Add($"{u.Title} ({(d is null ? "non più disponibile" : "bloccato in Italia")})");
+                return e;
+            }
             attached++;
             return e with { Videos = [.. e.Videos, new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration, d.Embeddable ? null : false)] };
         }).ToList();
 
         Console.WriteLine($"Video {sourceName}: {attached} highlights abbinati");
+        LogSome("video non mostrabile", unavailable);
+        LogSome("ancora senza video", waiting.Where(e => !found.ContainsKey(e.Id))
+            .Select(e => $"{e.StartsAt:yyyy-MM-dd HH:mm} {e.Title} [{e.Session}]").ToList());
         return result;
+    }
+
+    // Per capire perché una sessione resta senza video: un video il cui titolo indica una sessione in attesa, ma pubblicato
+    // poco prima dell'inizio, poco oltre MaxDelay o con un altro anno nel titolo (es. un orario sbagliato nei dati).
+    // Solo i casi vicini: per F1 e MotoGP il titolo indica tutte le gare della stagione, e gli altri sono video di altri GP.
+    private string? NearMiss(List<SportEvent> waiting, Upload upload)
+    {
+        if (matcher(upload.Title) is not { } isEvent) return null;
+        var near = waiting
+            .Where(e => isEvent(e) && upload.PublishedAt >= e.StartsAt - TimeSpan.FromDays(1)
+                        && upload.PublishedAt <= e.StartsAt + MaxDelay + TimeSpan.FromDays(2))
+            .MinBy(e => (upload.PublishedAt - e.StartsAt).Duration());
+        if (near is null) return null;
+        var reason = upload.PublishedAt < near.StartsAt ? "pubblicato prima dell'inizio"
+            : upload.PublishedAt - near.StartsAt > MaxDelay ? "pubblicato oltre 3 giorni dopo"
+            : "anno nel titolo diverso dalla stagione";
+        return $"{upload.Title} ({upload.PublishedAt:yyyy-MM-dd HH:mm}) per {near.Title} [{near.Session}] del {near.StartsAt:yyyy-MM-dd HH:mm}: {reason}";
+    }
+
+    // Al massimo 10 righe per elenco, per non riempire il log di un recupero.
+    private void LogSome(string what, List<string> items)
+    {
+        if (items.Count == 0) return;
+        Console.WriteLine($"Video {sourceName}, {what}: {items.Count}");
+        foreach (var item in items.Take(10)) Console.WriteLine($"  {item}");
+        if (items.Count > 10) Console.WriteLine($"  ... e altri {items.Count - 10}");
     }
 
     private async Task<List<Upload>> ReadUploadsSinceAsync(DateTimeOffset since, CancellationToken ct)
@@ -347,8 +384,10 @@ public sealed partial class YouTubeHighlights(
         var playlistId = "UU" + channelId[2..];
         var uploads = new List<Upload>();
         string? pageToken = null;
+        var pages = 0;
         for (var page = 0; page < MaxPages; page++)
         {
+            pages++;
             var data = await HttpJson.GetAsync(http,
                 $"{BaseUrl}/playlistItems?part=snippet&maxResults=50&playlistId={playlistId}&key={apiKey}" +
                 (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
@@ -365,8 +404,24 @@ public sealed partial class YouTubeHighlights(
             }
 
             pageToken = data["nextPageToken"]?.GetValue<string>();
-            if (pageToken is null || uploads[^1].PublishedAt < since) break;
+            if (pageToken is null || uploads.Count == 0 || uploads[^1].PublishedAt < since) break;
         }
+
+        // Quanto si è letto e perché ci si è fermati: se un video manca, si vede se la lettura era arrivata alla sua data.
+        var stop = uploads.Count > 0 && uploads[^1].PublishedAt < since ? "arrivata alla sessione più vecchia"
+            : pageToken is null ? $"fine della playlist ({uploads.Count} video)"
+            : $"limite di {MaxPages} pagine";
+        Console.WriteLine($"Video {sourceName}: letti {uploads.Count} caricamenti in {pages} pagine" +
+                          (uploads.Count == 0 ? "" : $", dal {uploads[0].PublishedAt:yyyy-MM-dd HH:mm} al {uploads[^1].PublishedAt:yyyy-MM-dd HH:mm}") +
+                          $", lettura fermata: {stop}");
+
+        // La lettura si ferma al primo video più vecchio della sessione cercata, quindi conta che la playlist sia in ordine
+        // di pubblicazione. Un video fuori ordine (es. programmato: YouTube potrebbe ordinarlo per data di caricamento)
+        // può restare oltre il punto di arresto.
+        var outOfOrder = uploads.Zip(uploads.Skip(1)).Where(p => p.Second.PublishedAt > p.First.PublishedAt)
+            .Select(p => $"{p.Second.Title} ({p.Second.PublishedAt:yyyy-MM-dd HH:mm}) dopo uno del {p.First.PublishedAt:yyyy-MM-dd HH:mm}")
+            .ToList();
+        LogSome("caricamenti fuori ordine di data", outOfOrder);
         return uploads;
     }
 
