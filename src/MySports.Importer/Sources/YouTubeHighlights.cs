@@ -11,10 +11,9 @@ namespace MySports.Importer.Sources;
 // I video si abbinano con una regola sul titolo, diversa per ogni canale, e per data di pubblicazione.
 // F1 e MotoGP: per tipo di sessione, perché i nomi dei GP nei titoli non sono regolari (es. "GP Usa", "GP d' Ungheria").
 // Calcio: per squadre di casa e trasferta.
-// searchQuery: parole per cercare gli highlights del canale con search.list, quando la playlist dei caricamenti non arriva
-// abbastanza indietro. matcher: titolo -> condizione sull'evento, oppure null se il video non interessa.
+// matcher: titolo -> condizione sull'evento, oppure null se il video non interessa.
 public sealed partial class YouTubeHighlights(
-    HttpClient http, string apiKey, string channelId, string sourceName, string searchQuery, Func<string, Func<SportEvent, bool>?> matcher)
+    HttpClient http, string apiKey, string channelId, string sourceName, Func<string, Func<SportEvent, bool>?> matcher)
 {
     private const string BaseUrl = "https://www.googleapis.com/youtube/v3";
     // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese:
@@ -23,14 +22,16 @@ public sealed partial class YouTubeHighlights(
     // La playlist dei caricamenti dà al massimo gli ultimi 20.000 video del canale: DAZN Italia (circa 31.700) arriva così
     // solo a novembre 2024, Sky Sport (circa 36.900) a settembre 2024.
     private const int UploadsLimit = 20_000;
-    // Ricerca: 100 unità a pagina invece di 1, e al massimo circa 500 risultati per richiesta, quindi si cerca a periodi
-    // di MaxDelay (un turno di Serie A su DAZN sono circa 85 risultati, 2 pagine).
+    // Ricerca: al massimo circa 500 risultati per richiesta, quindi si cerca a periodi di MaxDelay (un turno di Serie A su
+    // DAZN sono circa 85 video, 2 pagine). Senza parole chiave: con "Serie A highlights" la ricerca perdeva video
+    // ("... | Serie A Enilive | DAZN Higlights") senza restituirne meno.
     private const int MaxSearchPages = 10;
-    // Pagine di ricerca per esecuzione, per tutti i canali insieme: 5000 unità, metà della quota giornaliera, così restano
-    // le letture delle playlist, i dettagli dei video e i giri del cron. Una stagione intera oltre il limite (es. la Serie A
-    // 2023-24 su DAZN) ne richiede di più: il recupero si ferma, salva quello che ha trovato e al giro dopo riprende dalle
-    // sessioni ancora senza video.
-    private const int SearchBudget = 50;
+    // Le ricerche hanno una quota giornaliera a parte ("Search Queries per day", 100 richieste) che non tocca quella delle
+    // altre chiamate: questo è il massimo di pagine per esecuzione, per tutti i canali insieme. Se la quota finisce prima,
+    // la ricerca fallisce ma i dettagli dei video funzionano ancora. Una stagione intera oltre il limite (es. la Serie A
+    // 2023-24 su DAZN, circa 140 pagine) ne richiede di più: il recupero si ferma, salva quello che ha trovato e al giro
+    // dopo (il giorno seguente) riprende dalle sessioni ancora senza video.
+    private const int SearchBudget = 100;
     private static int searchPagesUsed;
     private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
     private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
@@ -116,7 +117,7 @@ public sealed partial class YouTubeHighlights(
     // Il canale ha anche altri sport ("Basket Serie A, ...") e clip delle singole azioni.
     // Di riserva a DAZN, per le partite senza il suo video.
     public static YouTubeHighlights SkySportSerieA(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", "Serie A highlights", ByTeams(SkySerieATitle()));
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkySerieATitle()));
 
     [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s+Serie\s?A)?\s*\|\s*Serie\s?A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
@@ -131,7 +132,7 @@ public sealed partial class YouTubeHighlights(
     // Esclusi gli "extended highlights" e gli "highlights lunghi", pubblicati solo per alcune partite, che
     // doppierebbero il video dello stesso canale.
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", "Champions League highlights", ByTeams(SkyChampionsLeagueTitle()));
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
 
     [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?Champions\s?League)?|(?<=\d)\s*\|\s*(?:Finale\s+)?Champions\s?League)\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkyChampionsLeagueTitle();
@@ -146,7 +147,7 @@ public sealed partial class YouTubeHighlights(
     public static YouTubeHighlights PrimeVideoChampionsLeague(HttpClient http, string apiKey)
     {
         var byTeams = ByTeams(PrimeChampionsLeagueTitle());
-        return new(http, apiKey, "UCc-ZZMy22fhnmfSgPb80-1w", "Prime Video", "Champions League highlights", title => byTeams(PrimeDash().Replace(title, "-")));
+        return new(http, apiKey, "UCc-ZZMy22fhnmfSgPb80-1w", "Prime Video", title => byTeams(PrimeDash().Replace(title, "-")));
     }
 
     [GeneratedRegex(@"\s*–\s*|\s+v\s+")]
@@ -163,10 +164,13 @@ public sealed partial class YouTubeHighlights(
     // Enilive | DAZN Highlights"): così restano escluse analisi e interviste ("Chivu parla... | Inter-Como | Serie A Enilive | DAZN").
     // Le partite di stagioni passate ripubblicate riportano l'anno dopo "Serie A" ("Serie A 2025-26") e restano escluse.
     // "Serie A" a volte è attaccato ("SerieAEnilive") e la Juventus a volte è "Juve" (in TeamAliases).
+    // A volte "Serie A" manca ("... Milan-Torino 2-2 | DAZN Highlights"): allora non deve esserci un'altra competizione del
+    // canale ("Mantova-Cosenza 3-2 | Serie BKT", "| LaLiga |"). Esclusi sempre Serie A Femminile e Primavera.
     public static YouTubeHighlights DaznSerieA(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", "Serie A highlights", title =>
+        new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", title =>
         {
-            if (!SerieAMention().IsMatch(title) || !Contains(title, "DAZN") || DaznRerun().IsMatch(title)) return null;
+            if (!Contains(title, "DAZN") || DaznRerun().IsMatch(title) || DaznExcluded().IsMatch(title)
+                || !SerieAMention().IsMatch(title) && DaznOtherCompetition().IsMatch(title)) return null;
             var plain = Plain(title).ToLowerInvariant().Replace('–', '-'); // a volte con il trattino lungo
             var highlights = Contains(title, "highlights");
             return e => TeamNames(e.HomeTeam).Any(home => TeamNames(e.AwayTeam).Any(away => HasMatch(plain, home, away, highlights)));
@@ -177,6 +181,12 @@ public sealed partial class YouTubeHighlights(
 
     [GeneratedRegex(@"\bSerie\s?A\s+(?:19|20)\d{2}", RegexOptions.IgnoreCase)]
     private static partial Regex DaznRerun();
+
+    [GeneratedRegex(@"femminile|women|primavera", RegexOptions.IgnoreCase)]
+    private static partial Regex DaznExcluded();
+
+    [GeneratedRegex(@"\bSerie\s?[BC]|\bLa\s?Liga\b|\bLiga\b|\bCoppa\b|Supercoppa|Champions|Europa League|Conference|Bundesliga|Premier|Ligue|\bUEFA\b|\bFIFA\b", RegexOptions.IgnoreCase)]
+    private static partial Regex DaznOtherCompetition();
     // Dopo "Casa-Trasferta": punteggio (facoltativo) e poi "|", "!" o "Serie A".
     [GeneratedRegex(@"^\s*(\d+\s*-\s*\d+\s*)?(?:[|!]|serie\s?a)")]
     private static partial Regex AfterTeams();
@@ -222,7 +232,7 @@ public sealed partial class YouTubeHighlights(
     // Canale ufficiale Formula 1, in inglese, di riserva per le sessioni senza video Sky:
     // "Race Highlights | 2026 Mexico City Grand Prix" -> race. Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
     public static YouTubeHighlights FormulaOne(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", "highlights", BySession(title =>
+        new(http, apiKey, "UCB_qr75-ydFVKSF9Dmo6izg", "Formula 1", BySession(title =>
             title.StartsWith("Sprint Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint_qualifying"
             : title.StartsWith("Sprint Highlights", StringComparison.OrdinalIgnoreCase) ? "sprint"
             : title.StartsWith("Qualifying Highlights", StringComparison.OrdinalIgnoreCase) ? "qualifying"
@@ -234,7 +244,7 @@ public sealed partial class YouTubeHighlights(
     // senza "Sprint" e scritto male, "shootuot"): si cercano parole chiave. Esclusi prove libere, sintesi lunga e altre
     // categorie (F1 Academy, F2, F3, i rally: "WRC Estonia, gli highlights del sabato", "Rally Messico, gli highlights ...").
     public static YouTubeHighlights SkySportF1(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", "F1 highlights", BySession(title =>
+        new(http, apiKey, "UCMQ7Gx6v-pQy_gsRoMJYzOA", "Sky Sport F1", BySession(title =>
             !Contains(title, "highlights") || SkyExcluded().IsMatch(title) ? null
             : Contains(title, "qualific") && (Contains(title, "sprint") || Contains(title, "shoot")) ? "sprint_qualifying"
             : Contains(title, "sprint") ? "sprint"
@@ -255,7 +265,7 @@ public sealed partial class YouTubeHighlights(
     // A volte la Sprint è chiamata "gara" ("MotoGP, GP di Aragon: gli highlights della gara in Spagna", il sabato): un video
     // da gara vale anche per la Sprint, e tra le sessioni già iniziate si prende la più recente, quindi il sabato la Sprint.
     public static YouTubeHighlights SkySportMotoGP(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCGlmF5tM5DeT5Dl1BQVItYg", "Sky Sport MotoGP", "MotoGP highlights", title =>
+        new(http, apiKey, "UCGlmF5tM5DeT5Dl1BQVItYg", "Sky Sport MotoGP", title =>
             !MotoGPMention().IsMatch(title) || !Contains(title, "highlights") || SkyMotoGPExcluded().IsMatch(title) ? null
             : Contains(title, "qualific") ? e => e.Session == "qualifying"
             : Contains(title, "sprint") ? e => e.Session == "sprint"
@@ -398,7 +408,7 @@ public sealed partial class YouTubeHighlights(
                 // runner di GitHub Actions sono negli Stati Uniti (DAZN Italia pubblica i video solo per l'Italia).
                 var data = await HttpJson.GetAsync(http,
                     $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&regionCode=IT&channelId={channelId}" +
-                    $"&q={Uri.EscapeDataString(searchQuery)}&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
+                    $"&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
                     (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
                 pages++;
 
