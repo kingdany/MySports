@@ -58,6 +58,7 @@ else
 var matchDetails = new Dictionary<string, EspnMatchDetails>
 {
     [Competition.SerieA.Id] = EspnMatchDetails.SerieA(),
+    [Competition.ChampionsLeague.Id] = EspnMatchDetails.ChampionsLeague(),
 };
 
 var publisher = new JsonPublisher(outputDir);
@@ -176,8 +177,9 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 .ToList();
         }
 
-        // Dettaglio delle partite finite (marcatori, cartellini, formazioni), per ora solo nella stagione corrente.
-        if (seasonsArg is null && matchDetails.TryGetValue(competition.Id, out var details))
+        // Dettaglio delle partite finite (marcatori, cartellini, formazioni), anche nelle stagioni passate importate con
+        // --seasons (ESPN le ha dal 2023-24): ESPN non ha quote e ogni partita si legge una volta. Non con --standings-only.
+        if (!standingsOnly && matchDetails.TryGetValue(competition.Id, out var details))
         {
             try
             {

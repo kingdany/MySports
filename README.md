@@ -22,6 +22,8 @@ src/MySports.Importer/
   Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
   Sources/       fonti dati (JolpicaF1Source, OpenF1Client, MotoGpSource, FootballDataSource, YouTubeHighlights, EspnMatchDetails, ...)
   Output/        scrittura dei file JSON
+docs/STATO-IMPORTAZIONI.md          cosa manca da importare (video per canale, dettaglio partite) e note
+tools/stato-importazioni.mjs        aggiorna i conteggi di quel documento dai dati pubblicati (node tools/stato-importazioni.mjs)
 .github/workflows/update-data.yml   esecuzione programmata e pubblicazione
 ```
 
@@ -41,10 +43,11 @@ sessione, in italiano: DAZN per la Serie A (Sky se manca), Sky Sport per le altr
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
-Le partite finite della Serie A (stagione corrente) hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
+Le partite finite di Serie A e Champions League hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
 (con rigore o autogol), rigori sbagliati, cartellini (giallo, doppio giallo, rosso) e formazioni (titolari con numero di
 maglia, sostituzioni). Si legge una volta per partita e si conserva come i video; se i gol di ESPN non tornano con il
-risultato, la partita si riprova al giro dopo.
+risultato, la partita si riprova al giro dopo. Arriva con il giro normale per la stagione corrente e importando una stagione
+passata (ESPN le ha dal 2023-24), tranne con "Solo classifiche".
 
 ## Eseguire in locale
 
@@ -129,7 +132,7 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2023. Serie A 2023-24 a metà: il 12/11/2026 la quota giornaliera delle ricerche è finita al 29/01/2024, con 200 video su 380, tutti corretti; da rilanciare il giorno dopo per il resto; poi controllare anche le partite rimaste senza video prima del 23/01/2024 (19, es. Lecce-Lazio, Torino-Cagliari, Empoli-Inter, Cagliari-Frosinone): forse titoli DAZN che la regola non riconosce, ma la ricerca di YouTube non dà sempre gli stessi risultati (Bologna-Napoli e Roma-Lecce sono arrivate solo alla seconda ricerca). Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
+- [ ] Importare video e dettaglio partite delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: nazionali, solo le partite che contano e con tutte le nazionali, una competizione per torneo: Nations League (intera, tutte le leghe e i gruppi, altrimenti la competizione resterebbe a metà), Europei e Mondiali. Amichevoli escluse: non essendo un torneo non vengono importate. Da decidere le qualificazioni a Europei e Mondiali
   - Europei e Mondiali: football-data.org li ha nel piano gratuito (`EC`, `WC`), quindi bastano `FootballDataSource` e la sua gestione di fasi, rigori e classifiche dei gironi
@@ -139,9 +142,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [ ] NBA: l'API pubblica di ESPN ha il calendario con orari e risultati (`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=AAAAMMGG`, verificato a novembre 2026), da verificare classifiche e stagioni passate. Una stagione regolare sono 1230 partite più i playoff: nell'app servono il filtro per squadra (già presente) e forse un limite in "Tutti". Highlights: Prime Video Sport IT pubblica le partite NBA che trasmette ("NBA, Chicago Bulls-Philadelphia 76ers | Highlights"), da verificare anche Sky Sport e il canale ufficiale NBA
 - [ ] Tennis: l'API di ESPN ha i tornei in corso con gli incontri (`.../sports/tennis/atp/scoreboard`, `.../tennis/wta/scoreboard`: a novembre 2026 Stoccolma con 54 incontri, WTA Finals con 30). Da decidere quali tornei (Slam, Masters 1000, Finals...), se ATP e WTA, e quali incontri (tutti, solo dagli ottavi, solo gli italiani), perché uno Slam da solo sono 127 incontri per tabellone. Classifica: il ranking. Da verificare le stagioni passate e gli highlights (Sky Sport, SuperTennis)
 - [ ] WWE: ESPN non la segue. TheSportsDB ha la lega WWE (id 4444) con show settimanali (RAW, SmackDown, NXT...) e grandi eventi, ma con la chiave gratuita dà solo 15 eventi per stagione e il prossimo; quella completa è a pagamento. Da decidere se tenere solo i Premium Live Event (WrestleMania, SummerSlam, Royal Rumble...), pochi all'anno, e in quel caso valutare altre fonti o un elenco tenuto a mano. Senza classifiche; i risultati degli incontri sono anticipazioni, da decidere se mostrarli. Highlights: canale ufficiale WWE (in inglese)
-- [ ] Calcio: dettaglio partita (`EspnMatchDetails`) oltre alla Serie A della stagione corrente:
-  - Champions League: lega ESPN `uefa.champions`, controllare i nomi delle squadre (`TeamAliases`) e che i rigori della lotteria finale restino esclusi (`shootout`)
-  - stagioni passate (ESPN le ha dal 2023-24): oggi il dettaglio si scarica solo nel giro normale, serve un'opzione come "Recupera i video"
-  - se il file della stagione diventa troppo pesante per l'avvio dell'app (Serie A: circa 300 KB compressi a fine stagione), spostare il dettaglio in un file a parte, scaricato quando si apre la partita
+- [ ] Calcio: se il file della stagione diventa troppo pesante per l'avvio dell'app (Serie A: circa 300 KB compressi a fine stagione con il dettaglio partite), spostare il dettaglio in un file a parte, scaricato quando si apre la partita
 - [ ] App: migliorare la grafica con immagini: loghi delle squadre e loghi delle competizioni (F1, MotoGP, Serie A, Champions League)
 - [ ] App: migliorare la scelta della stagione (`SeasonPicker`) quando una competizione ha molte stagioni: scorrerle tutte è lungo (oggi succede con F1 e MotoGP, che arrivano al 1950 e al 1949, ma vale per qualsiasi competizione con un archivio lungo). Forse scegliere prima il decennio, da decidere

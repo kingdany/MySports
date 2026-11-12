@@ -8,9 +8,12 @@ namespace MySports.Importer.Sources;
 
 // Dettaglio delle partite finite (marcatori, rigori sbagliati, cartellini, formazioni) dall'API pubblica non documentata
 // di ESPN, senza chiave. football-data.org li ha solo a pagamento.
-// Le partite si abbinano a quelle di football-data per giorno, squadre e risultato: una chiamata "scoreboard" per giorno
+// Le partite si abbinano a quelle di football-data per giorno, risultato e squadre: una chiamata "scoreboard" per giorno
 // dà gli id ESPN, poi una chiamata "summary" per partita. Ogni partita si legge una volta: il dettaglio resta
-// dall'esecuzione precedente, come i video. Verificato sulla Serie A 2026-27 (110 partite su 110 abbinate).
+// dall'esecuzione precedente, come i video.
+// Le squadre si confrontano per parole in comune tra i nomi (ESPN "RB Leipzig", football-data "RasenBallsport Leipzig" e
+// "Lipsia"), perché i nomi diversi sono tanti: in Champions League 37 su 3 stagioni. Verificato il 12/11/2026 su tutte le
+// stagioni pubblicate: Champions League 2024-25, 2025-26, 2026-27 e Serie A 2026-27, tutte le partite abbinate.
 public sealed partial class EspnMatchDetails(string league)
 {
     private const string BaseUrl = "https://site.api.espn.com/apis/site/v2/sports/soccer";
@@ -21,13 +24,17 @@ public sealed partial class EspnMatchDetails(string league)
     // Client proprio: ESPN a volte risponde compresso con gzip anche senza chiederlo.
     private static readonly HttpClient Http = CreateClient();
 
-    // Nomi ESPN -> nome breve di football-data, dove sono diversi.
+    // Nomi ESPN senza parole in comune con quelli di football-data.
     private static readonly Dictionary<string, string> TeamAliases = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["AC Milan"] = "Milan",
-        ["AS Roma"] = "Roma",
-        ["Internazionale"] = "Inter",
+        ["Red Star Belgrade"] = "Crvena Zvezda",
+        ["Pafos"] = "Paphos",
+        ["Olympiacos"] = "Olympiakos",
     };
+
+    // Parole dei nomi che non distinguono una squadra ("FC", "Club"...). "Sporting" no: è il nome dello Sporting.
+    private static readonly HashSet<string> CommonWords =
+        ["fc", "cf", "ac", "as", "sc", "sk", "fk", "afc", "ssc", "club", "calcio", "de", "of", "the", "sport"];
 
     // Tipi di evento ESPN che contano come gol. Il tiro (testa, punizione, al volo) non interessa.
     private static readonly Dictionary<string, string> GoalTypes = new()
@@ -40,8 +47,9 @@ public sealed partial class EspnMatchDetails(string league)
         ["own-goal"] = "ownGoal",
     };
 
-    // Lega ESPN: "ita.1" per la Serie A ("uefa.champions" per la Champions League, non ancora usata).
+    // Leghe ESPN.
     public static EspnMatchDetails SerieA() => new("ita.1");
+    public static EspnMatchDetails ChampionsLeague() => new("uefa.champions");
 
     // Aggiunge il dettaglio alle partite finite che non lo hanno ancora o lo hanno in un formato vecchio. Se non si riesce
     // a riscaricarlo, il dettaglio vecchio resta.
@@ -55,6 +63,7 @@ public sealed partial class EspnMatchDetails(string league)
 
         var found = new Dictionary<string, MatchDetails>();
         var missing = new List<string>();
+        var used = new HashSet<string>(); // una partita ESPN non deve finire su due partite
         foreach (var day in waiting.GroupBy(e => e.StartsAt.UtcDateTime.Date))
         {
             JsonArray espnEvents;
@@ -72,9 +81,10 @@ public sealed partial class EspnMatchDetails(string league)
             foreach (var match in day)
             {
                 var espnId = FindEspnId(espnEvents, match);
-                if (espnId is null)
+                if (espnId is null || !used.Add(espnId))
                 {
-                    missing.Add($"{match.Title} del {match.StartsAt:yyyy-MM-dd}: partita non trovata su ESPN");
+                    missing.Add($"{match.Title} del {match.StartsAt:yyyy-MM-dd}: " +
+                                (espnId is null ? "partita non trovata su ESPN" : $"partita ESPN {espnId} già abbinata a un'altra"));
                     continue;
                 }
                 try
@@ -108,9 +118,11 @@ public sealed partial class EspnMatchDetails(string league)
 
     private static bool IsGoal(MatchIncident i) => i.Type is "goal" or "penalty" or "ownGoal";
 
-    // La partita ESPN dello stesso giorno con le stesse squadre in casa e in trasferta e lo stesso risultato, già conclusa.
+    // Tra le partite ESPN concluse dello stesso giorno con lo stesso risultato, quella con entrambe le squadre uguali; se
+    // non c'è, l'unica con almeno una squadra uguale (un nome non riconosciuto non basta a perdere la partita).
     private static string? FindEspnId(JsonArray espnEvents, SportEvent match)
     {
+        var candidates = new List<(string Id, bool Home, bool Away)>();
         foreach (var e in espnEvents)
         {
             var competition = e?["competitions"]?[0];
@@ -118,20 +130,32 @@ public sealed partial class EspnMatchDetails(string league)
             var competitors = competition["competitors"]?.AsArray() ?? [];
             var home = competitors.FirstOrDefault(c => Str(c?["homeAway"]) == "home");
             var away = competitors.FirstOrDefault(c => Str(c?["homeAway"]) == "away");
-            if (home is null || away is null) continue;
-            if (SameTeam(home, match.HomeTeam!) && SameTeam(away, match.AwayTeam!)
-                && Score(home) == match.HomeScore && Score(away) == match.AwayScore)
-                return Str(e!["id"]);
+            if (home is null || away is null || Str(e!["id"]) is not { } id) continue;
+            if (Score(home) != match.HomeScore || Score(away) != match.AwayScore) continue;
+            candidates.Add((id, SameTeam(home, match.HomeTeam!), SameTeam(away, match.AwayTeam!)));
         }
-        return null;
+        var both = candidates.Where(c => c.Home && c.Away).ToList();
+        if (both.Count > 0) return both.Count == 1 ? both[0].Id : null;
+        var one = candidates.Where(c => c.Home || c.Away).ToList();
+        return one.Count == 1 ? one[0].Id : null;
     }
 
+    // Stessa squadra se i nomi hanno una parola in comune (senza accenti e senza parole come "FC").
     private static bool SameTeam(JsonNode competitor, Team team)
     {
         var name = Str(competitor["team"]?["displayName"]) ?? "";
-        if (TeamAliases.TryGetValue(name, out var alias)) name = alias;
-        return string.Equals(Plain(name), Plain(team.ShortName ?? team.Name), StringComparison.OrdinalIgnoreCase);
+        var espn = Words(TeamAliases.GetValueOrDefault(name, name), Str(competitor["team"]?["shortDisplayName"]));
+        return Words(team.Name, team.ShortName).Overlaps(espn);
     }
+
+    private static HashSet<string> Words(params string?[] names) =>
+        names.Where(n => !string.IsNullOrWhiteSpace(n))
+            .SelectMany(n => WordSeparator().Split(Plain(n!).ToLowerInvariant()))
+            .Where(w => w.Length >= 3 && !CommonWords.Contains(w))
+            .ToHashSet();
+
+    [GeneratedRegex(@"[^a-z0-9]+")]
+    private static partial Regex WordSeparator();
 
     private static int? Score(JsonNode competitor) =>
         int.TryParse(Str(competitor["score"]), NumberStyles.None, CultureInfo.InvariantCulture, out var s) ? s : null;
