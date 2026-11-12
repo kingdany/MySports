@@ -1,7 +1,7 @@
-import { SymbolView } from 'expo-symbols';
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { Pressable, StyleSheet, type StyleProp, type TextStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Svg, { Path } from 'react-native-svg';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { minuteLabel } from '@/lib/format';
@@ -15,7 +15,7 @@ const TOAST_MS = 2000;
 const FLAGS: Partial<Record<IncidentType, string>> = {
   penalty: '(R)',
   ownGoal: '(A)',
-  missedPenalty: '(rigore sbagliato)',
+  missedPenalty: '(R)', // il pallone barrato dice che è sbagliato
   secondYellow: '(2G)',
 };
 
@@ -130,9 +130,18 @@ function IncidentRow({ incident }: { incident: MatchIncident }) {
   );
 }
 
+// Ogni icona sta in uno spazio largo quanto il pallone, centrata: il cartellino, più stretto, ha lo stesso centro del
+// pallone, così nella cronologia le icone stanno in colonna.
 function IncidentIcon({ type, size = 16 }: { type: IncidentType; size?: number }) {
+  return (
+    <View style={[styles.iconSlot, { width: size, height: size }]}>
+      <IncidentGlyph type={type} size={size} />
+    </View>
+  );
+}
+
+function IncidentGlyph({ type, size }: { type: IncidentType; size: number }) {
   const text = useThemeColor({}, 'text');
-  const muted = useThemeColor({}, 'muted');
   switch (type) {
     case 'yellow':
     case 'red':
@@ -141,19 +150,37 @@ function IncidentIcon({ type, size = 16 }: { type: IncidentType; size?: number }
     case 'ownGoal':
       return <Ball color={RED} size={size} />;
     case 'missedPenalty':
-      return <Ball color={muted} size={size} />;
+      return <MissedBall color={text} size={size} />;
     default:
       return <Ball color={text} size={size} />;
   }
 }
 
+// Icone disegnate in SVG con i tracciati di Material Symbols (Outlined, peso 400; Google, licenza Apache 2.0), gli stessi
+// di expo-symbols su Android. Con expo-symbols su Android il simbolo è un carattere di font: il margine che Android mette
+// sopra il testo lo tagliava sotto e a destra e lo spostava in basso rispetto ai cartellini. L'SVG ha un riquadro esatto.
+const BALL_PATH = 'M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm200-500 54-18 16-54q-32-48-77-82.5T574-786l-54 38v56l160 112Zm-400 0 160-112v-56l-54-38q-54 17-99 51.5T210-652l16 54 54 18Zm-42 308 46-4 30-54-58-174-56-20-40 30q0 65 18 118.5T238-272Zm242 112q26 0 51-4t49-12l28-60-26-44H378l-26 44 28 60q24 8 49 12t51 4Zm-90-200h180l56-160-146-102-144 102 54 160Zm332 88q42-50 60-103.5T800-494l-40-28-56 18-58 174 30 54 46 4Z';
+const ARROW_UP_PATH = 'M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z';
+const ARROW_DOWN_PATH = 'M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z';
+
+// Il pallone occupa 80-880 del riquadro 0-960: il viewBox ritagliato lo fa alto quanto `size`, come i cartellini.
 function Ball({ color, size }: { color: string; size: number }) {
   return (
-    <SymbolView
-      name={{ ios: 'soccerball', android: 'sports_soccer', web: 'sports_soccer' }}
-      tintColor={color}
-      size={size}
-    />
+    <Svg width={size} height={size} viewBox="80 -880 800 800">
+      <Path d={BALL_PATH} fill={color} />
+    </Svg>
+  );
+}
+
+// Rigore sbagliato: pallone barrato da una X rossa.
+function MissedBall({ color, size }: { color: string; size: number }) {
+  const strike = { width: size, top: size / 2 - 1 };
+  return (
+    <View style={{ width: size, height: size, backgroundColor: 'transparent' }}>
+      <Ball color={color} size={size} />
+      <View style={[styles.strike, strike, { transform: [{ rotate: '-45deg' }] }]} />
+      <View style={[styles.strike, strike, { transform: [{ rotate: '45deg' }] }]} />
+    </View>
   );
 }
 
@@ -176,13 +203,9 @@ function CardIcon({ type, height }: { type: 'yellow' | 'red' | 'secondYellow'; h
 
 function Arrow({ up }: { up: boolean }) {
   return (
-    <SymbolView
-      name={up
-        ? { ios: 'arrow.up', android: 'arrow_upward', web: 'arrow_upward' }
-        : { ios: 'arrow.down', android: 'arrow_downward', web: 'arrow_downward' }}
-      tintColor={up ? GREEN : RED}
-      size={12}
-    />
+    <Svg width={12} height={12} viewBox="0 -960 960 960">
+      <Path d={up ? ARROW_UP_PATH : ARROW_DOWN_PATH} fill={up ? GREEN : RED} />
+    </Svg>
   );
 }
 
@@ -231,7 +254,7 @@ function PlayerRow({ player, cameIn, wentOut, incidents }: {
       <Text style={[styles.number, { color: muted }]}>{player.number ?? ''}</Text>
       <PlayerName name={player.name} short={player.short} style={styles.playerName} />
       {goals.map((g, n) => <IncidentIcon key={n} type={g.type} size={12} />)}
-      {card && <CardIcon type={card} height={12} />}
+      {card && <IncidentIcon type={card} size={12} />}
       {wentOut && (
         <>
           <Arrow up={false} />
@@ -258,6 +281,9 @@ const styles = StyleSheet.create({
   incidentText: { fontSize: 14, flexShrink: 1 },
   minute: { width: 56, textAlign: 'center', fontSize: 13, fontVariant: ['tabular-nums'] },
   card: { position: 'absolute', borderRadius: 2 },
+  // overflow visibile: il doppio giallo, con il rosso spostato di 4 punti, è più alto dello spazio.
+  iconSlot: { alignItems: 'center', justifyContent: 'center', overflow: 'visible', backgroundColor: 'transparent' },
+  strike: { position: 'absolute', left: 0, height: 2, backgroundColor: RED },
   columns: { flexDirection: 'row', paddingHorizontal: 16, gap: 16 },
   column: { flex: 1, gap: 4 },
   teamName: { fontSize: 15, fontWeight: '700', marginBottom: 4 },
