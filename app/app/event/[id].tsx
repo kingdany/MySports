@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
-import { MatchLineups, MatchTimeline } from '@/components/MatchDetails';
+import { FullNameToast, MatchLineups, MatchTimeline } from '@/components/MatchDetails';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
@@ -29,31 +29,54 @@ export default function EventScreen() {
   const round = roundLabel(event);
   const penalties = penaltiesLabel(event);
 
+  // Partita di calcio: tabellone centrato con le squadre ai lati del risultato, al posto del titolo.
+  const match = event.homeTeam != null && event.awayTeam != null;
+  const centered = match && { textAlign: 'center' as const };
+
   // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
   return (
-    <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
-      <Stack.Screen options={{ title: sessionLabel(event.session) }} />
-      <View style={styles.header}>
-        <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-          {competitionLabel(event.competition)}{round ? ` · ${round}` : ''}
-        </Text>
-        <Text style={styles.title}>{event.title}</Text>
-        <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
-        {place ? <Text style={[styles.info, { color: muted }]}>{place}</Text> : null}
-        {event.homeScore != null && event.awayScore != null && (
-          <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>
-        )}
-        {penalties ? <Text style={[styles.info, { color: muted }]}>{penalties}</Text> : null}
-      </View>
-      <MatchTimeline event={event} />
-      {event.videos.length > 0 && (
-        <View style={styles.videos}>
-          {event.videos.map((v) => <VideoCard key={v.videoId} video={v} />)}
+    <FullNameToast>
+      <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
+        <Stack.Screen options={{ title: sessionLabel(event.session) }} />
+        <View style={[styles.header, match && styles.headerCentered]}>
+          <Text style={[styles.badge, match && styles.badgeCentered, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+            {competitionLabel(event.competition)}{round ? ` · ${round}` : ''}
+          </Text>
+          {match ? <Scoreboard event={event} /> : <Text style={styles.title}>{event.title}</Text>}
+          <Text style={[styles.info, centered, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
+          {place ? <Text style={[styles.info, centered, { color: muted }]}>{place}</Text> : null}
+          {!match && event.homeScore != null && event.awayScore != null && (
+            <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>
+          )}
+          {penalties ? <Text style={[styles.info, centered, { color: muted }]}>{penalties}</Text> : null}
         </View>
-      )}
-      <MatchLineups event={event} />
-      {event.result?.length ? <Classification event={event} /> : null}
-    </ScrollView>
+        <MatchTimeline event={event} />
+        {event.videos.length > 0 && (
+          <View style={styles.videos}>
+            {event.videos.map((v) => <VideoCard key={v.videoId} video={v} />)}
+          </View>
+        )}
+        <MatchLineups event={event} />
+        {event.result?.length ? <Classification event={event} /> : null}
+      </ScrollView>
+    </FullNameToast>
+  );
+}
+
+// Casa a sinistra, risultato grande al centro, trasferta a destra; prima della partita "-" al posto del risultato.
+function Scoreboard({ event }: { event: SportEvent }) {
+  const muted = useThemeColor({}, 'muted');
+  const played = event.homeScore != null && event.awayScore != null;
+  const name = (team: SportEvent['homeTeam']) => team?.shortName ?? team?.name ?? '';
+
+  return (
+    <View style={styles.scoreboard}>
+      <Text style={[styles.scoreTeam, styles.scoreTeamHome]} numberOfLines={2}>{name(event.homeTeam)}</Text>
+      <Text style={[styles.scoreboardScore, !played && { color: muted }]}>
+        {played ? `${event.homeScore} - ${event.awayScore}` : '-'}
+      </Text>
+      <Text style={styles.scoreTeam} numberOfLines={2}>{name(event.awayTeam)}</Text>
+    </View>
   );
 }
 
@@ -89,6 +112,12 @@ function Classification({ event }: { event: SportEvent }) {
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   header: { padding: 16, gap: 6 },
+  headerCentered: { alignItems: 'center' },
+  badgeCentered: { alignSelf: 'center' },
+  scoreboard: { flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch', marginVertical: 8, backgroundColor: 'transparent' },
+  scoreTeam: { flex: 1, fontSize: 18, fontWeight: '700' },
+  scoreTeamHome: { textAlign: 'right' },
+  scoreboardScore: { fontSize: 40, fontWeight: '800', paddingHorizontal: 16, fontVariant: ['tabular-nums'] },
   badge: {
     alignSelf: 'flex-start', color: '#fff', fontSize: 12, fontWeight: '700',
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4, overflow: 'hidden',

@@ -15,6 +15,9 @@ public sealed partial class EspnMatchDetails(string league)
 {
     private const string BaseUrl = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 
+    // Formato del dettaglio salvato: un dettaglio di una versione diversa si riscarica. 2: cognome dei giocatori (Short).
+    private const int CurrentVersion = 2;
+
     // Client proprio: ESPN a volte risponde compresso con gzip anche senza chiederlo.
     private static readonly HttpClient Http = CreateClient();
 
@@ -40,11 +43,12 @@ public sealed partial class EspnMatchDetails(string league)
     // Lega ESPN: "ita.1" per la Serie A ("uefa.champions" per la Champions League, non ancora usata).
     public static EspnMatchDetails SerieA() => new("ita.1");
 
-    // Aggiunge il dettaglio alle partite finite che non lo hanno ancora.
+    // Aggiunge il dettaglio alle partite finite che non lo hanno ancora o lo hanno in un formato vecchio. Se non si riesce
+    // a riscaricarlo, il dettaglio vecchio resta.
     public async Task<IReadOnlyList<SportEvent>> AttachAsync(IReadOnlyList<SportEvent> events, CancellationToken ct)
     {
         var waiting = events
-            .Where(e => e.Session == "match" && e.Status == EventStatus.Finished && e.Details is null
+            .Where(e => e.Session == "match" && e.Status == EventStatus.Finished && (e.Details?.Version ?? 1) != CurrentVersion
                         && e.HomeScore is not null && e.AwayScore is not null && e.HomeTeam is not null && e.AwayTeam is not null)
             .ToList();
         if (waiting.Count == 0) return events;
@@ -144,6 +148,14 @@ public sealed partial class EspnMatchDetails(string league)
             .Select(e => e!)
             .ToList();
 
+        // Giocatori delle formazioni per id: hanno numero di maglia e cognome, che negli eventi mancano.
+        var rosters = (summary["rosters"]?.AsArray() ?? []).Where(r => r is not null).Select(r => r!).ToList();
+        var athletes = rosters
+            .SelectMany(r => r["roster"]?.AsArray() ?? [])
+            .Where(p => p is not null)
+            .GroupBy(p => Str(p!["athlete"]?["id"]) ?? "")
+            .ToDictionary(g => g.Key, g => Player(g.First()!));
+
         var incidents = new List<MatchIncident>();
         foreach (var e in keyEvents)
         {
@@ -157,19 +169,16 @@ public sealed partial class EspnMatchDetails(string league)
                     "red-card" => (Str(e["text"]) ?? "").StartsWith("Second yellow", StringComparison.OrdinalIgnoreCase) ? "secondYellow" : "red",
                     _ => null,
                 };
-            var player = Str(e["participants"]?[0]?["athlete"]?["displayName"]);
-            if (type is null || player is null) continue;
+            if (type is null || PlayerOf(e["participants"]?[0], athletes) is not { } player) continue;
             var (minute, added) = Minute(e);
-            incidents.Add(new MatchIncident(minute, added, type, SideOf(e["team"]), player));
+            incidents.Add(new MatchIncident(minute, added, type, SideOf(e["team"]), player.Name, player.Short));
         }
 
         var lineups = new Dictionary<string, Lineup>();
-        foreach (var roster in summary["rosters"]?.AsArray() ?? [])
+        foreach (var roster in rosters)
         {
-            if (roster is null) continue;
             var side = SideOf(roster["team"]);
             var players = (roster["roster"]?.AsArray() ?? []).Where(p => p is not null).Select(p => p!).ToList();
-            var byId = players.GroupBy(p => Str(p["athlete"]?["id"]) ?? "").ToDictionary(g => g.Key, g => Player(g.First()));
             var starters = players.Where(p => p["starter"]?.GetValue<bool>() == true).Select(Player).ToList();
             if (starters.Count == 0) continue;
 
@@ -179,8 +188,8 @@ public sealed partial class EspnMatchDetails(string league)
                 .Select(e =>
                 {
                     var (minute, added) = Minute(e);
-                    var playerIn = PlayerOf(e["participants"]?[0], byId);
-                    var playerOut = PlayerOf(e["participants"]?[1], byId);
+                    var playerIn = PlayerOf(e["participants"]?[0], athletes);
+                    var playerOut = PlayerOf(e["participants"]?[1], athletes);
                     return playerIn is null || playerOut is null ? null : new Substitution(minute, added, playerIn, playerOut);
                 })
                 .OfType<Substitution>()
@@ -190,15 +199,24 @@ public sealed partial class EspnMatchDetails(string league)
 
         return new MatchDetails
         {
+            Version = CurrentVersion,
             Incidents = incidents,
             Home = lineups.GetValueOrDefault("home"),
             Away = lineups.GetValueOrDefault("away"),
         };
     }
 
-    private static LineupPlayer Player(JsonNode p) => new(
-        int.TryParse(Str(p["jersey"]), NumberStyles.None, CultureInfo.InvariantCulture, out var n) ? n : null,
-        Str(p["athlete"]?["displayName"]) ?? "");
+    // Il cognome è "lastName" di ESPN, che include quelli composti ("De Bruyne", "Inao Oulaï"); i giocatori noti con un
+    // nome solo ("Bremer", "Vitinha") non lo hanno e restano con quello.
+    private static LineupPlayer Player(JsonNode p)
+    {
+        var name = Str(p["athlete"]?["displayName"]) ?? "";
+        var lastName = Str(p["athlete"]?["lastName"]);
+        return new LineupPlayer(
+            int.TryParse(Str(p["jersey"]), NumberStyles.None, CultureInfo.InvariantCulture, out var n) ? n : null,
+            name,
+            string.IsNullOrWhiteSpace(lastName) || lastName == name ? null : lastName);
+    }
 
     // Il giocatore dalla formazione, che ha il numero di maglia; altrimenti solo il nome dell'evento.
     private static LineupPlayer? PlayerOf(JsonNode? participant, Dictionary<string, LineupPlayer> byId)

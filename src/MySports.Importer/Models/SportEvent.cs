@@ -28,8 +28,10 @@ public sealed record SportEvent
 }
 
 // Dettaglio di una partita finita (da ESPN). Incidents in ordine di tempo; Home/Away assenti se la fonte non ha le formazioni.
+// Version: formato del dettaglio; uno salvato con un formato più vecchio si riscarica (assente = 1, senza Short).
 public sealed record MatchDetails
 {
+    public int? Version { get; init; }
     public IReadOnlyList<MatchIncident> Incidents { get; init; } = [];
     public Lineup? Home { get; init; }
     public Lineup? Away { get; init; }
@@ -37,12 +39,13 @@ public sealed record MatchDetails
 
 // Type: "goal" | "penalty" | "ownGoal" | "missedPenalty" | "yellow" | "secondYellow" | "red".
 // Side: "home" | "away", la squadra a cui va l'evento: per l'autogol quella che segna, non quella del giocatore.
-// Minute e AddedTime: 45 e 2 per "45'+2'".
-public sealed record MatchIncident(int Minute, int? AddedTime, string Type, string Side, string Player);
+// Minute e AddedTime: 45 e 2 per "45'+2'". Player: nome completo; Short: cognome, assente se uguale al nome completo.
+public sealed record MatchIncident(int Minute, int? AddedTime, string Type, string Side, string Player, string? Short = null);
 
 public sealed record Lineup(IReadOnlyList<LineupPlayer> Starters, IReadOnlyList<Substitution> Substitutions);
 
-public sealed record LineupPlayer(int? Number, string Name);
+// Name: nome completo; Short: cognome, assente se uguale al nome completo (giocatori noti con un nome solo, es. "Bremer").
+public sealed record LineupPlayer(int? Number, string Name, string? Short = null);
 
 public sealed record Substitution(int Minute, int? AddedTime, LineupPlayer In, LineupPlayer Out);
 

@@ -54,6 +54,7 @@ export type SportEvent = {
 
 // Dettaglio di una partita finita (MatchDetails in SportEvent.cs).
 export type MatchDetails = {
+  version?: number; // formato, per l'importatore
   incidents: MatchIncident[]; // in ordine di tempo
   home?: Lineup;
   away?: Lineup;
@@ -66,10 +67,11 @@ export type MatchIncident = {
   addedTime?: number; // 2 in "45'+2'"
   type: IncidentType;
   side: 'home' | 'away'; // per l'autogol la squadra che segna, non quella del giocatore
-  player: string;
+  player: string; // nome completo
+  short?: string; // cognome, assente se uguale al nome completo
 };
 
-export type LineupPlayer = { number?: number; name: string };
+export type LineupPlayer = { number?: number; name: string; short?: string };
 
 export type Substitution = { minute: number; addedTime?: number; in: LineupPlayer; out: LineupPlayer };
 

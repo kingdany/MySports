@@ -1,5 +1,7 @@
 import { SymbolView } from 'expo-symbols';
-import { StyleSheet } from 'react-native';
+import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+import { Pressable, StyleSheet, type StyleProp, type TextStyle } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { minuteLabel } from '@/lib/format';
@@ -8,6 +10,7 @@ import type { IncidentType, Lineup, LineupPlayer, MatchIncident, SportEvent, Sub
 const YELLOW = '#facc15';
 const RED = '#dc2626';
 const GREEN = '#16a34a';
+const TOAST_MS = 2000;
 
 const FLAGS: Partial<Record<IncidentType, string>> = {
   penalty: '(R)',
@@ -15,6 +18,53 @@ const FLAGS: Partial<Record<IncidentType, string>> = {
   missedPenalty: '(rigore sbagliato)',
   secondYellow: '(2G)',
 };
+
+// Si mostra il cognome; toccandolo compare per qualche secondo il nome completo in un fumetto in fondo allo schermo.
+const ShowFullName = createContext<(name: string) => void>(() => {});
+
+// Va intorno alla pagina (fuori dallo ScrollView), perché il fumetto resti fermo mentre si scorre.
+export function FullNameToast({ children }: { children: ReactNode }) {
+  const [name, setName] = useState<string | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const insets = useSafeAreaInsets();
+  // Colori del tema invertiti, perché il fumetto si stacchi dalla pagina sia in chiaro sia in scuro.
+  const background = useThemeColor({}, 'text');
+  const color = useThemeColor({}, 'background');
+
+  const show = useCallback((full: string) => {
+    clearTimeout(timer.current);
+    setName(full);
+    timer.current = setTimeout(() => setName(null), TOAST_MS);
+  }, []);
+  useEffect(() => () => clearTimeout(timer.current), []);
+
+  return (
+    <ShowFullName.Provider value={show}>
+      <View style={styles.fill}>
+        {children}
+        {name && (
+          <View pointerEvents="none" style={[styles.toastWrap, { bottom: insets.bottom + 24 }]}>
+            <Text style={[styles.toast, { backgroundColor: background, color }]}>{name}</Text>
+          </View>
+        )}
+      </View>
+    </ShowFullName.Provider>
+  );
+}
+
+// Cognome del giocatore (più eventuale testo dopo, es. il flag), toccabile se il nome completo è diverso.
+function PlayerName({ name, short, style, children }: {
+  name: string; short?: string; style?: StyleProp<TextStyle>; children?: ReactNode;
+}) {
+  const show = useContext(ShowFullName);
+  const text = <Text style={style} numberOfLines={1}>{short ?? name}{children}</Text>;
+  if (!short) return text;
+  return (
+    <Pressable onPress={() => show(name)} hitSlop={6} style={styles.pressable}>
+      {text}
+    </Pressable>
+  );
+}
 
 // Cronologia di una partita finita: gol, rigori sbagliati, cartellini.
 export function MatchTimeline({ event }: { event: SportEvent }) {
@@ -64,10 +114,9 @@ function IncidentRow({ incident }: { incident: MatchIncident }) {
   const muted = useThemeColor({}, 'muted');
   const flag = FLAGS[incident.type];
   const label = (
-    <Text style={styles.incidentText} numberOfLines={1}>
-      {incident.player}
+    <PlayerName name={incident.player} short={incident.short} style={styles.incidentText}>
       {flag ? <Text style={{ color: muted }}> {flag}</Text> : null}
-    </Text>
+    </PlayerName>
   );
   const icon = <IncidentIcon type={incident.type} />;
   const home = incident.side === 'home';
@@ -180,7 +229,7 @@ function PlayerRow({ player, cameIn, wentOut, incidents }: {
     <View style={[styles.playerRow, cameIn && styles.substitute]}>
       {cameIn && <Arrow up />}
       <Text style={[styles.number, { color: muted }]}>{player.number ?? ''}</Text>
-      <Text style={styles.playerName} numberOfLines={1}>{player.name}</Text>
+      <PlayerName name={player.name} short={player.short} style={styles.playerName} />
       {goals.map((g, n) => <IncidentIcon key={n} type={g.type} size={12} />)}
       {card && <CardIcon type={card} height={12} />}
       {wentOut && (
@@ -194,6 +243,13 @@ function PlayerRow({ player, cameIn, wentOut, incidents }: {
 }
 
 const styles = StyleSheet.create({
+  fill: { flex: 1 },
+  toastWrap: { position: 'absolute', left: 16, right: 16, alignItems: 'center', backgroundColor: 'transparent' },
+  toast: {
+    fontSize: 15, fontWeight: '600',
+    paddingHorizontal: 16, paddingVertical: 10, borderRadius: 20, overflow: 'hidden',
+  },
+  pressable: { flexShrink: 1 },
   section: { paddingBottom: 16 },
   sectionTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', paddingHorizontal: 16, paddingTop: 8, paddingBottom: 8 },
   incidentRow: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 5 },
