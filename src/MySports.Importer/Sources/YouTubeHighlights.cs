@@ -32,6 +32,10 @@ public sealed partial class YouTubeHighlights(
     // 2023-24 su DAZN, circa 140 pagine) ne richiede di più: il recupero si ferma, salva quello che ha trovato e al giro
     // dopo (il giorno seguente) riprende dalle sessioni ancora senza video.
     private const int SearchBudget = 100;
+    // Le ricerche fatte di seguito possono avere un 429 anche con la quota giornaliera quasi intera (il 12/11/2026 dopo
+    // circa 15 secondi di ricerche DAZN, con la quota al 15%): è un limite al minuto, quindi si attende un minuto e si riprova.
+    // Se è la quota giornaliera, dopo questi tentativi la ricerca si ferma come prima.
+    private const int SearchRateLimitRetries = 3;
     private static int searchPagesUsed;
     private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
     private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
@@ -472,7 +476,7 @@ public sealed partial class YouTubeHighlights(
                 var data = await HttpJson.GetAsync(http,
                     $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&regionCode=IT&channelId={channelId}" +
                     $"&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
-                    (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
+                    (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", SearchRateLimitRetries, ct);
                 pages++;
 
                 foreach (var item in data["items"]!.AsArray())

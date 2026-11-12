@@ -46,9 +46,36 @@ public static class HttpJson
                     continue;
                 }
                 if (!res.IsSuccessStatusCode)
-                    throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {HideKey(url)}");
+                    throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {HideKey(url)}" +
+                                                   (await ErrorReasonAsync(res, ct) is { } reason ? $" ({reason})" : ""));
                 return JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
             }
+        }
+    }
+
+    // Il motivo dell'errore scritto dalla fonte, per il log: per YouTube distingue il limite al minuto
+    // ("rateLimitExceeded") dalla quota giornaliera finita ("quotaExceeded"). Testo libero accorciato se non è JSON.
+    private static async Task<string?> ErrorReasonAsync(HttpResponseMessage res, CancellationToken ct)
+    {
+        try
+        {
+            var body = await res.Content.ReadAsStringAsync(ct);
+            if (string.IsNullOrWhiteSpace(body)) return null;
+            try
+            {
+                var error = JsonNode.Parse(body)?["error"];
+                var reason = error?["errors"]?[0]?["reason"]?.GetValue<string>();
+                var message = error?["message"]?.GetValue<string>() ?? error?.ToString();
+                if (reason is not null || message is not null)
+                    return HideKey(string.Join(": ", new[] { reason, message }.Where(s => !string.IsNullOrEmpty(s))));
+            }
+            catch (Exception) { } // non è JSON o non ha "error"
+            var text = body.Trim().ReplaceLineEndings(" ");
+            return HideKey(text.Length > 200 ? text[..200] + "..." : text);
+        }
+        catch (Exception)
+        {
+            return null;
         }
     }
 
