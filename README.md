@@ -124,9 +124,9 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 
 ## Prossimi passi
 
-- [ ] Rilanciare "Recupera i video" con la regola DAZN allargata (titoli senza "Serie A") e la ricerca senza parole chiave, poi verificare:
-  - Serie A 2024-25: circa 32 ricerche, va fatto in un giorno con la quota delle ricerche libera. Devono arrivare i video DAZN di Lazio-Verona (`UMxdL7DAlQU`, titolo con "Higlights"), Milan-Torino (`OFWC1Fd4GnI`, senza "Serie A"), Fiorentina-Verona, Como-Empoli, Verona-Como e delle altre partite di agosto-ottobre 2024 ancora con Sky
-  - Serie A 2025-26: nessuna ricerca, deve arrivare il video DAZN di Genoa-Sassuolo
+- [ ] Rilanciare "Recupera i video" per la Serie A, poi verificare:
+  - 2024-25: devono arrivare i video DAZN di Bologna-Genoa ("show del classe 2006", scartato perché il controllo sull'anno nel titolo valeva anche per il calcio), Verona-Empoli (`sbA-1Jiifhk`, "Hellas-Empoli 1-4") e Torino-Roma (`p8dG24cRbaU`, "Europa League" nel testo libero). Torino-Lecce resta con Sky: DAZN non ha gli highlights
+  - 2025-26: nessuna ricerca, deve arrivare il video DAZN di Genoa-Sassuolo
 - [ ] Importare i video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi"), poche stagioni per volta per la quota YouTube. Mancano in tutte: F1 e MotoGP fino al 2023, Serie A 2023-24 (circa 140 ricerche, quindi due giorni, vedi sopra). Dopo ogni recupero verificare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale (da correggere), oppure il video non è su YouTube (Champions 2025-26: Kairat-Paphos e Newcastle-Benfica solo su sport.sky.it)
 - [ ] Calcio: altre competizioni
 - [ ] Calcio: nazionali, solo le partite che contano e con tutte le nazionali, una competizione per torneo: Nations League (intera, tutte le leghe e i gruppi, altrimenti la competizione resterebbe a metà), Europei e Mondiali. Amichevoli escluse: non essendo un torneo non vengono importate. Da decidere le qualificazioni a Europei e Mondiali

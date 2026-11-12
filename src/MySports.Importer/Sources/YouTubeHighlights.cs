@@ -101,6 +101,7 @@ public sealed partial class YouTubeHighlights(
         ["PSV Eindhoven"] = "PSV",
         ["Atletico"] = "Atletico Madrid",
         ["Hellas Verona"] = "Verona",
+        ["Hellas"] = "Verona", // DAZN: "Hellas-Empoli 1-4"
         ["Lask Linz"] = "LASK",
         ["Sabah Baku"] = "Sabah",
         ["Juve"] = "Juventus",
@@ -165,12 +166,14 @@ public sealed partial class YouTubeHighlights(
     // Le partite di stagioni passate ripubblicate riportano l'anno dopo "Serie A" ("Serie A 2025-26") e restano escluse.
     // "Serie A" a volte è attaccato ("SerieAEnilive") e la Juventus a volte è "Juve" (in TeamAliases).
     // A volte "Serie A" manca ("... Milan-Torino 2-2 | DAZN Highlights"): allora non deve esserci un'altra competizione del
-    // canale ("Mantova-Cosenza 3-2 | Serie BKT", "| LaLiga |"). Esclusi sempre Serie A Femminile e Primavera.
+    // canale ("Mantova-Cosenza 3-2 | Serie BKT", "| LaLiga |"), cercata solo dopo il primo "|": prima c'è testo libero, che
+    // può nominarne una ("la Roma chiude con l'Europa League: Torino-Roma 0-2 | DAZN"). Esclusi sempre Serie A Femminile e Primavera.
     public static YouTubeHighlights DaznSerieA(HttpClient http, string apiKey) =>
         new(http, apiKey, "UC7N8IuYFhU8Hs1ruCTsXTbg", "DAZN", title =>
         {
+            var labels = title.IndexOf('|') is var bar and >= 0 ? title[bar..] : "";
             if (!Contains(title, "DAZN") || DaznRerun().IsMatch(title) || DaznExcluded().IsMatch(title)
-                || !SerieAMention().IsMatch(title) && DaznOtherCompetition().IsMatch(title)) return null;
+                || !SerieAMention().IsMatch(title) && DaznOtherCompetition().IsMatch(labels)) return null;
             var plain = Plain(title).ToLowerInvariant().Replace('–', '-'); // a volte con il trattino lungo
             var highlights = Contains(title, "highlights");
             return e => TeamNames(e.HomeTeam).Any(home => TeamNames(e.AwayTeam).Any(away => HasMatch(plain, home, away, highlights)));
@@ -220,14 +223,19 @@ public sealed partial class YouTubeHighlights(
 
     // Sessione a cui spetta un video: tra quelle concluse che il titolo indica e iniziate al massimo MaxDelay prima della
     // pubblicazione, la più recente (un video da gara MotoGP vale anche per la Sprint del giorno prima).
-    // StartsWith: la stagione può essere "2026" o "2026-27".
     private SportEvent? SessionFor(IEnumerable<SportEvent> events, string title, DateTimeOffset publishedAt) =>
         matcher(title) is not { } isEvent ? null
         : events
             .Where(e => e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && isEvent(e))
             .Where(e => e.StartsAt <= publishedAt && publishedAt - e.StartsAt <= MaxDelay)
-            .Where(e => YearPattern().Match(title) is not { Success: true } year || e.Season.StartsWith(year.Value, StringComparison.Ordinal))
+            .Where(e => YearMatches(e, title))
             .MaxBy(e => e.StartsAt);
+
+    // Solo per le stagioni di un anno (F1, MotoGP), dove l'anno nel titolo è quello del campionato e scarta le gare storiche
+    // ripubblicate ("2019 ... Grand Prix"). Nel calcio ("2026-27") squadre, risultato e data bastano, e un anno nel testo
+    // libero può essere altro ("show del classe 2006") o l'anno solare, diverso da quello d'inizio della stagione.
+    private static bool YearMatches(SportEvent e, string title) =>
+        e.Season.Contains('-') || YearPattern().Match(title) is not { Success: true } year || e.Season == year.Value;
 
     // Canale ufficiale Formula 1, in inglese, di riserva per le sessioni senza video Sky:
     // "Race Highlights | 2026 Mexico City Grand Prix" -> race. Esclusi FP ed "Extended Highlights" (gare storiche ripubblicate).
