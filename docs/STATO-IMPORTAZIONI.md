@@ -11,8 +11,9 @@ si scrivono a mano.
   9 italiane. Una stagione intera di Serie A ne richiede circa 140, quindi due giorni.
 - Dopo ogni recupero controllare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale
   (da correggere), oppure il video non è su YouTube.
-- Dettaglio partite (Serie A e Champions League): arriva importando la stagione con "Stagioni passate" e "Competizione",
-  senza altre opzioni; ESPN ha le stagioni dal 2023-24 e nessuna quota.
+- Dettaglio partite (Serie A e Champions League): completo in tutte le stagioni pubblicate dal 12/11/2026; le partite
+  nuove arrivano da sole con il giro normale. Per una stagione aggiunta in futuro arriva importandola con "Stagioni
+  passate" e "Competizione", senza altre opzioni (ESPN ha le stagioni dal 2023-24 e nessuna quota).
 
 ## Note
 
@@ -30,7 +31,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 12/11/2026, 16:47:41 (ora italiana).
+Dati del 12/11/2026, 17:45:17 (ora italiana).
 
 ## Formula 1
 
@@ -57,17 +58,17 @@ Dati del 12/11/2026, 16:47:41 (ora italiana).
 | Stagione | Sessioni concluse | DAZN | Sky Sport | Senza video | Dettaglio partite |
 |---|---|---|---|---|---|
 | 2026-27 | 110 | 110 | 0 | 0 | 110 su 110 |
-| 2025-26 | 380 | 378 | 2 | 0 | 0 su 380 |
-| 2024-25 | 380 | 376 | 4 | 0 | 0 su 380 |
-| 2023-24 | 380 | 194 | 6 | 180 | 0 su 380 |
+| 2025-26 | 380 | 378 | 2 | 0 | 380 su 380 |
+| 2024-25 | 380 | 376 | 4 | 0 | 380 su 380 |
+| 2023-24 | 380 | 194 | 6 | 180 | 380 su 380 |
 
 ## Champions League
 
 | Stagione | Sessioni concluse | Sky Sport | Prime Video | Senza video | Dettaglio partite |
 |---|---|---|---|---|---|
-| 2026-27 | 72 | 72 | 0 | 0 | 0 su 72 |
-| 2025-26 | 189 | 187 | 0 | 2 | 0 su 189 |
-| 2024-25 | 189 | 189 | 0 | 0 | 0 su 189 |
+| 2026-27 | 72 | 72 | 0 | 0 | 72 su 72 |
+| 2025-26 | 189 | 187 | 0 | 2 | 189 su 189 |
+| 2024-25 | 189 | 189 | 0 | 0 | 189 su 189 |
 
 - 2025-26, senza video: FK Kairat - Paphos FC del 2025-10-21; Newcastle - Benfica del 2025-10-21
 
