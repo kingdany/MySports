@@ -24,7 +24,27 @@ public sealed record SportEvent
     public int? AwayPenalties { get; init; }
     public IReadOnlyList<ClassificationRow>? Result { get; init; }  // classifica delle sessioni motoristiche
     public IReadOnlyList<Video> Videos { get; init; } = [];
+    public MatchDetails? Details { get; init; }           // calcio, solo partite finite: cronologia e formazioni
 }
+
+// Dettaglio di una partita finita (da ESPN). Incidents in ordine di tempo; Home/Away assenti se la fonte non ha le formazioni.
+public sealed record MatchDetails
+{
+    public IReadOnlyList<MatchIncident> Incidents { get; init; } = [];
+    public Lineup? Home { get; init; }
+    public Lineup? Away { get; init; }
+}
+
+// Type: "goal" | "penalty" | "ownGoal" | "missedPenalty" | "yellow" | "secondYellow" | "red".
+// Side: "home" | "away", la squadra a cui va l'evento: per l'autogol quella che segna, non quella del giocatore.
+// Minute e AddedTime: 45 e 2 per "45'+2'".
+public sealed record MatchIncident(int Minute, int? AddedTime, string Type, string Side, string Player);
+
+public sealed record Lineup(IReadOnlyList<LineupPlayer> Starters, IReadOnlyList<Substitution> Substitutions);
+
+public sealed record LineupPlayer(int? Number, string Name);
+
+public sealed record Substitution(int Minute, int? AddedTime, LineupPlayer In, LineupPlayer Out);
 
 public enum EventStatus { Scheduled, Live, Finished, Postponed, Cancelled }
 

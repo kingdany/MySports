@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
+import { MatchLineups, MatchTimeline } from '@/components/MatchDetails';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
@@ -44,11 +45,13 @@ export default function EventScreen() {
         )}
         {penalties ? <Text style={[styles.info, { color: muted }]}>{penalties}</Text> : null}
       </View>
+      <MatchTimeline event={event} />
       {event.videos.length > 0 && (
         <View style={styles.videos}>
           {event.videos.map((v) => <VideoCard key={v.videoId} video={v} />)}
         </View>
       )}
+      <MatchLineups event={event} />
       {event.result?.length ? <Classification event={event} /> : null}
     </ScrollView>
   );

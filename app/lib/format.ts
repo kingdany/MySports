@@ -55,6 +55,10 @@ export const penaltiesLabel = (event: SportEvent) =>
     ? `${event.homePenalties}-${event.awayPenalties} ai rigori`
     : null;
 
+// Minuto di un evento della partita: "54'", "45'+2'".
+export const minuteLabel = (minute: number, addedTime?: number) =>
+  addedTime ? `${minute}'+${addedTime}'` : `${minute}'`;
+
 export const formatTime = (iso: string) =>
   new Date(iso).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
 

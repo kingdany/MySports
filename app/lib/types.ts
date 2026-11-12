@@ -49,7 +49,31 @@ export type SportEvent = {
   awayPenalties?: number;
   result?: ClassificationRow[];
   videos: Video[];
+  details?: MatchDetails; // calcio, solo partite finite
 };
+
+// Dettaglio di una partita finita (MatchDetails in SportEvent.cs).
+export type MatchDetails = {
+  incidents: MatchIncident[]; // in ordine di tempo
+  home?: Lineup;
+  away?: Lineup;
+};
+
+export type IncidentType = 'goal' | 'penalty' | 'ownGoal' | 'missedPenalty' | 'yellow' | 'secondYellow' | 'red';
+
+export type MatchIncident = {
+  minute: number;
+  addedTime?: number; // 2 in "45'+2'"
+  type: IncidentType;
+  side: 'home' | 'away'; // per l'autogol la squadra che segna, non quella del giocatore
+  player: string;
+};
+
+export type LineupPlayer = { number?: number; name: string };
+
+export type Substitution = { minute: number; addedTime?: number; in: LineupPlayer; out: LineupPlayer };
+
+export type Lineup = { starters: LineupPlayer[]; substitutions: Substitution[] };
 
 export type StandingRow = {
   pos?: number; // assente se non classificato (es. squalifica dal campionato)

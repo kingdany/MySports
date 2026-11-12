@@ -54,6 +54,12 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");
 
+// Dettaglio delle partite finite da ESPN, per competizione.
+var matchDetails = new Dictionary<string, EspnMatchDetails>
+{
+    [Competition.SerieA.Id] = EspnMatchDetails.SerieA(),
+};
+
 var publisher = new JsonPublisher(outputDir);
 var now = DateTimeOffset.UtcNow;
 var ct = CancellationToken.None;
@@ -117,14 +123,15 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
                 return events;
             }
 
-            // Dalle esecuzioni precedenti si conservano i video (le fonti non li forniscono) e i risultati
-            // che questa volta mancano (es. una fonte secondaria come OpenF1 temporaneamente giù).
+            // Dalle esecuzioni precedenti si conservano i video e il dettaglio delle partite (le fonti non li forniscono)
+            // e i risultati che questa volta mancano (es. una fonte secondaria come OpenF1 temporaneamente giù).
             var previousById = (previous?.Events ?? []).ToDictionary(e => e.Id);
             events = events
                 .Select(e =>
                 {
                     if (!previousById.TryGetValue(e.Id, out var old)) return e;
                     if (old.Videos.Count > 0) e = e with { Videos = old.Videos };
+                    if (old.Details is not null) e = e with { Details = old.Details };
                     if (e.Result is null && old.Result is not null) e = e with { Result = old.Result, Status = old.Status };
                     return e;
                 })
@@ -167,6 +174,19 @@ async Task<IReadOnlyList<SportEvent>?> ImportSeasonAsync(IEventSource source, st
             events = events
                 .Select(e => e.Videos.Count < 2 ? e : e with { Videos = [e.Videos.MinBy(v => order.IndexOf(v.Source ?? ""))!] })
                 .ToList();
+        }
+
+        // Dettaglio delle partite finite (marcatori, cartellini, formazioni), per ora solo nella stagione corrente.
+        if (seasonsArg is null && matchDetails.TryGetValue(competition.Id, out var details))
+        {
+            try
+            {
+                events = await details.AttachAsync(events, ct);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"AVVISO dettaglio partite {competition.Name} {season}: {ex.Message}");
+            }
         }
 
         // Se le classifiche non arrivano si tengono quelle dell'esecuzione precedente.

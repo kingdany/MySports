@@ -20,7 +20,7 @@ app/                 app mobile Expo (React Native + TypeScript)
   lib/               tipi, formattazione, caricamento dei JSON, scelte salvate
 src/MySports.Importer/
   Models/        formato comune di eventi e classifiche (SportEvent, Competition, Standings)
-  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, MotoGpSource, FootballDataSource, YouTubeHighlights, ...)
+  Sources/       fonti dati (JolpicaF1Source, OpenF1Client, MotoGpSource, FootballDataSource, YouTubeHighlights, EspnMatchDetails, ...)
   Output/        scrittura dei file JSON
 .github/workflows/update-data.yml   esecuzione programmata e pubblicazione
 ```
@@ -40,6 +40,11 @@ Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A
 sessione, in italiano: DAZN per la Serie A (Sky se manca), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video).
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
+
+Le partite finite della Serie A (stagione corrente) hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
+(con rigore o autogol), rigori sbagliati, cartellini (giallo, doppio giallo, rosso) e formazioni (titolari con numero di
+maglia, sostituzioni). Si legge una volta per partita e si conserva come i video; se i gol di ESPN non tornano con il
+risultato, la partita si riprova al giro dopo.
 
 ## Eseguire in locale
 
@@ -134,10 +139,9 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 - [ ] NBA: l'API pubblica di ESPN ha il calendario con orari e risultati (`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=AAAAMMGG`, verificato a novembre 2026), da verificare classifiche e stagioni passate. Una stagione regolare sono 1230 partite più i playoff: nell'app servono il filtro per squadra (già presente) e forse un limite in "Tutti". Highlights: Prime Video Sport IT pubblica le partite NBA che trasmette ("NBA, Chicago Bulls-Philadelphia 76ers | Highlights"), da verificare anche Sky Sport e il canale ufficiale NBA
 - [ ] Tennis: l'API di ESPN ha i tornei in corso con gli incontri (`.../sports/tennis/atp/scoreboard`, `.../tennis/wta/scoreboard`: a novembre 2026 Stoccolma con 54 incontri, WTA Finals con 30). Da decidere quali tornei (Slam, Masters 1000, Finals...), se ATP e WTA, e quali incontri (tutti, solo dagli ottavi, solo gli italiani), perché uno Slam da solo sono 127 incontri per tabellone. Classifica: il ranking. Da verificare le stagioni passate e gli highlights (Sky Sport, SuperTennis)
 - [ ] WWE: ESPN non la segue. TheSportsDB ha la lega WWE (id 4444) con show settimanali (RAW, SmackDown, NXT...) e grandi eventi, ma con la chiave gratuita dà solo 15 eventi per stagione e il prossimo; quella completa è a pagamento. Da decidere se tenere solo i Premium Live Event (WrestleMania, SummerSlam, Royal Rumble...), pochi all'anno, e in quel caso valutare altre fonti o un elenco tenuto a mano. Senza classifiche; i risultati degli incontri sono anticipazioni, da decidere se mostrarli. Highlights: canale ufficiale WWE (in inglese)
-- [ ] Calcio: dettaglio partita con gol (minuto, marcatore, assist, rigore/autogol), espulsioni e, se possibile, formazioni (modulo, titolari, panchina, sostituzioni). football-data.org li ha solo a pagamento; usare l'API pubblica non documentata di ESPN, senza chiave, verificata su Serie A e Champions League dal 2023-24:
-  - `https://site.api.espn.com/apis/site/v2/sports/soccer/{ita.1|uefa.champions}/scoreboard?dates=AAAAMMGG` per gli id delle partite, `.../summary?event={id}` per il dettaglio: `keyEvents` (tipi "Goal", "Goal - Header", "Penalty - Scored", "Own Goal", "Red Card", "Yellow Card", "Substitution"...), `rosters` (modulo, titolari, entrate e uscite), `boxscore` (statistiche di squadra)
-  - Abbinare le partite a quelle di football-data per data e squadre, con una tabella dei nomi ESPN ("Internazionale", "AS Roma")
-  - Leggere il dettaglio una volta sola per partita finita e tenerlo dall'esecuzione precedente, come i video; testi ESPN in inglese, usare solo i campi strutturati e scrivere le etichette in italiano nell'app
-  - Campi nuovi facoltativi nei record C# e in `types.ts`; nell'app la cronologia sotto il risultato, le formazioni in una sezione a parte
+- [ ] Calcio: dettaglio partita (`EspnMatchDetails`) oltre alla Serie A della stagione corrente:
+  - Champions League: lega ESPN `uefa.champions`, controllare i nomi delle squadre (`TeamAliases`) e che i rigori della lotteria finale restino esclusi (`shootout`)
+  - stagioni passate (ESPN le ha dal 2023-24): oggi il dettaglio si scarica solo nel giro normale, serve un'opzione come "Recupera i video"
+  - se il file della stagione diventa troppo pesante per l'avvio dell'app (Serie A: circa 300 KB compressi a fine stagione), spostare il dettaglio in un file a parte, scaricato quando si apre la partita
 - [ ] App: migliorare la grafica con immagini: loghi delle squadre e loghi delle competizioni (F1, MotoGP, Serie A, Champions League)
 - [ ] App: migliorare la scelta della stagione (`SeasonPicker`) quando una competizione ha molte stagioni: scorrerle tutte è lungo (oggi succede con F1 e MotoGP, che arrivano al 1950 e al 1949, ma vale per qualsiasi competizione con un archivio lungo). Forse scegliere prima il decennio, da decidere
