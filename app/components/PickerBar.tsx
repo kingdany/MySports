@@ -8,7 +8,9 @@ type Props = {
   label: string; // es. "Stagione"
   value: string; // voce scelta, mostrata nella barra
   title: string; // titolo della finestra di scelta
-  options: { key: string; label: string; highlighted?: boolean }[]; // highlighted: es. la stagione corrente
+  // highlighted: es. la stagione corrente. group: titolo della sezione (es. "Anni 2020"); le voci consecutive con lo
+  // stesso gruppo stanno sotto un titolo solo. Senza gruppi le voci sono un elenco unico.
+  options: { key: string; label: string; highlighted?: boolean; group?: string }[];
   selectedKey: string | null;
   onSelect: (key: string) => void;
 };
@@ -42,23 +44,39 @@ export function PickerBar({ label, value, title, options, selectedKey, onSelect 
               </Pressable>
             </View>
             <ScrollView contentContainerStyle={styles.content}>
-              <View style={styles.chips}>
-                {options.map((o) => (
-                  <Chip
-                    key={o.key}
-                    label={o.label}
-                    active={o.key === selectedKey}
-                    highlighted={o.highlighted ?? false}
-                    onPress={() => choose(o.key)}
-                  />
-                ))}
-              </View>
+              {groupOptions(options).map((g, i) => (
+                <View key={g.title ?? i} style={styles.group}>
+                  {g.title ? <Text style={[styles.groupTitle, { color: muted }]}>{g.title}</Text> : null}
+                  <View style={styles.chips}>
+                    {g.options.map((o) => (
+                      <Chip
+                        key={o.key}
+                        label={o.label}
+                        active={o.key === selectedKey}
+                        highlighted={o.highlighted ?? false}
+                        onPress={() => choose(o.key)}
+                      />
+                    ))}
+                  </View>
+                </View>
+              ))}
             </ScrollView>
           </View>
         </SafeAreaView>
       </Modal>
     </>
   );
+}
+
+// Voci consecutive con lo stesso gruppo insieme, nell'ordine in cui arrivano.
+function groupOptions(options: Props['options']) {
+  const groups: { title?: string; options: Props['options'] }[] = [];
+  for (const o of options) {
+    const last = groups[groups.length - 1];
+    if (last && last.title === o.group) last.options.push(o);
+    else groups.push({ title: o.group, options: [o] });
+  }
+  return groups;
 }
 
 // Voce scelta: piena del colore principale. Voce evidenziata: bordo dello stesso colore e testo in grassetto, così si
@@ -90,6 +108,8 @@ const styles = StyleSheet.create({
   },
   modalTitle: { flex: 1, fontSize: 20, fontWeight: '700' },
   content: { paddingHorizontal: 16, paddingBottom: 32 },
+  group: { marginBottom: 16 },
+  groupTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', marginBottom: 8 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chip: { paddingHorizontal: 12, paddingVertical: 8, borderRadius: 8, borderWidth: 2, minWidth: 64, alignItems: 'center' },
   chipText: { fontSize: 15, fontVariant: ['tabular-nums'] },
