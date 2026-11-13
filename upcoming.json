@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:10:34.915684+00:00",
+  "generatedAt": "2026-11-13T23:30:21.6865762+00:00",
   "events": [
     {
       "id": "f1-2026-21-fp1",
@@ -867,6 +867,29 @@
       "city": "Lusail",
       "country": "Qatar",
       "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558515",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 13,
+      "title": "Venezia - Bologna",
+      "session": "match",
+      "startsAt": "2026-11-27T19:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "454",
+        "name": "Venezia FC",
+        "shortName": "Venezia",
+        "logoUrl": "https://crests.football-data.org/454.png"
+      },
+      "awayTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
       "videos": []
     }
   ]
