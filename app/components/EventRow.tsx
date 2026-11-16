@@ -2,6 +2,7 @@ import { Link } from 'expo-router';
 import { memo } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 
+import { CompetitionLogo, hasLogo } from '@/components/CompetitionLogo';
 import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors, LiveColor } from '@/constants/Colors';
@@ -22,9 +23,16 @@ export const EventRow = memo(function EventRow({ event, linked = true }: { event
         ) : (
           <Text style={styles.time}>{event.dateOnly ? '–' : formatTime(event.startsAt)}</Text>
         )}
-        <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-          {competitionLabel(event.competition)}
-        </Text>
+        {hasLogo(event.competition) ? (
+          // Logo bianco sul colore della competizione; i loghi larghi (MotoGP) si rimpiccioliscono per stare nella colonna.
+          <View style={[styles.logoBadge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+            <CompetitionLogo id={event.competition} height={13} maxWidth={48} mono="#fff" label={competitionLabel(event.competition)} />
+          </View>
+        ) : (
+          <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+            {competitionLabel(event.competition)}
+          </Text>
+        )}
       </View>
       <View style={styles.body}>
         {event.homeTeam && event.awayTeam ? (
@@ -89,6 +97,8 @@ const styles = StyleSheet.create({
     color: '#fff', fontSize: 11, fontWeight: '700', paddingHorizontal: 6, paddingVertical: 2,
     borderRadius: 4, overflow: 'hidden',
   },
+  // Alta come il riquadro con la sigla (testo 11 più i margini), così le righe non cambiano altezza.
+  logoBadge: { height: 18, paddingHorizontal: 6, borderRadius: 4, alignItems: 'center', justifyContent: 'center' },
   body: { flex: 1, gap: 2, backgroundColor: 'transparent' },
   title: { fontSize: 16, fontWeight: '600' },
   match: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },

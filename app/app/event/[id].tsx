@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
+import { CompetitionLogo, hasWordmark } from '@/components/CompetitionLogo';
 import { FullNameToast } from '@/components/FullNameToast';
 import { MatchLineups, MatchTimeline } from '@/components/MatchDetails';
 import { TeamLogo } from '@/components/TeamLogo';
@@ -42,9 +43,7 @@ export default function EventScreen() {
       <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
         <Stack.Screen options={{ title: sessionLabel(event.session) }} />
         <View style={[styles.header, match && styles.headerCentered]}>
-          <Text style={[styles.badge, match && styles.badgeCentered, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-            {competitionLabel(event.competition)}{round ? ` · ${round}` : ''}
-          </Text>
+          <CompetitionBadge event={event} round={round} centered={match} />
           {match ? <Scoreboard event={event} /> : <Text style={styles.title}>{event.title}</Text>}
           <Text style={[styles.info, centered, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
           {place ? <Text style={[styles.info, centered, { color: muted }]}>{place}</Text> : null}
@@ -63,6 +62,20 @@ export default function EventScreen() {
         {event.result?.length ? <Classification event={event} /> : null}
       </ScrollView>
     </FullNameToast>
+  );
+}
+
+// Competizione e giornata su sfondo del colore della competizione: logo bianco, poi il nome (non per F1 e MotoGP, il cui
+// logo è già il nome) e la giornata o il round.
+function CompetitionBadge({ event, round, centered }: { event: SportEvent; round: string | null; centered: boolean }) {
+  const muted = useThemeColor({}, 'muted');
+  const name = competitionLabel(event.competition);
+  const text = [hasWordmark(event.competition) ? null : name, round].filter(Boolean).join(' · ');
+  return (
+    <View style={[styles.badge, centered && styles.badgeCentered, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+      <CompetitionLogo id={event.competition} height={14} maxWidth={64} mono="#fff" label={name} />
+      {text ? <Text style={styles.badgeText}>{text}</Text> : null}
+    </View>
   );
 }
 
@@ -133,9 +146,10 @@ const styles = StyleSheet.create({
   scoreTeamName: { fontSize: 18, fontWeight: '700', textAlign: 'center' },
   scoreboardScore: { fontSize: 40, lineHeight: 56, fontWeight: '800', paddingHorizontal: 16, fontVariant: ['tabular-nums'] },
   badge: {
-    alignSelf: 'flex-start', color: '#fff', fontSize: 12, fontWeight: '700',
-    paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4, overflow: 'hidden',
+    alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center', gap: 6,
+    paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4,
   },
+  badgeText: { color: '#fff', fontSize: 12, fontWeight: '700' },
   title: { fontSize: 24, fontWeight: '700' },
   info: { fontSize: 15 },
   score: { fontSize: 32, fontWeight: '700', marginTop: 8 },
