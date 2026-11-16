@@ -2,7 +2,7 @@ import { Link } from 'expo-router';
 import { memo } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { CompetitionLogo, hasLogo } from '@/components/CompetitionLogo';
+import { CompetitionLogo, hasLogo, hasPlate, rowLabel } from '@/components/CompetitionLogo';
 import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors, LiveColor } from '@/constants/Colors';
@@ -25,8 +25,24 @@ export const EventRow = memo(function EventRow({ event, linked = true }: { event
         )}
         {hasLogo(event.competition) ? (
           // Logo bianco sul colore della competizione; i loghi larghi (MotoGP) si rimpiccioliscono per stare nella colonna.
-          <View style={[styles.logoBadge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
-            <CompetitionLogo id={event.competition} height={13} maxWidth={48} mono="#fff" label={competitionLabel(event.competition)} />
+          // Dove il logo da solo non basta (la piastrina della Serie A, il pallone della Champions) accanto c'è il nome.
+          <View
+            style={[
+              styles.logoBadge,
+              rowLabel(event.competition) != null && styles.labelBadge,
+              hasPlate(event.competition) && styles.plateBadge,
+              { backgroundColor: CompetitionColors[event.competition] ?? muted },
+            ]}>
+            <CompetitionLogo
+              id={event.competition}
+              height={hasPlate(event.competition) ? 14 : 13}
+              maxWidth={48}
+              mono="#fff"
+              label={competitionLabel(event.competition)}
+            />
+            {rowLabel(event.competition) != null && (
+              <Text style={styles.labelText} numberOfLines={1}>{rowLabel(event.competition)}</Text>
+            )}
           </View>
         ) : (
           <Text style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
@@ -87,7 +103,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     gap: 12,
   },
-  left: { width: 64, alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
+  left: { width: 72, alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
   time: { fontSize: 16, fontWeight: '600', fontVariant: ['tabular-nums'] },
   live: {
     color: '#fff', fontSize: 12, fontWeight: '700', paddingHorizontal: 6, paddingVertical: 2,
@@ -99,6 +115,9 @@ const styles = StyleSheet.create({
   },
   // Alta come il riquadro con la sigla (testo 11 più i margini), così le righe non cambiano altezza.
   logoBadge: { height: 18, paddingHorizontal: 6, borderRadius: 4, alignItems: 'center', justifyContent: 'center' },
+  labelBadge: { flexDirection: 'row', gap: 4 },
+  plateBadge: { gap: 3, paddingLeft: 2, paddingRight: 4 }, // la piastrina bianca fa già da margine
+  labelText: { color: '#fff', fontSize: 11, fontWeight: '700' },
   body: { flex: 1, gap: 2, backgroundColor: 'transparent' },
   title: { fontSize: 16, fontWeight: '600' },
   match: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },

@@ -33,24 +33,24 @@ export default function EventScreen() {
   const round = roundLabel(event);
   const penalties = penaltiesLabel(event);
 
-  // Partita di calcio: tabellone centrato con le squadre ai lati del risultato, al posto del titolo.
+  // Partita di calcio: tabellone con le squadre ai lati del risultato, al posto del titolo. L'intestazione è centrata per
+  // tutti gli eventi; la classifica di F1 e MotoGP, sotto, resta un elenco allineato a sinistra.
   const match = event.homeTeam != null && event.awayTeam != null;
-  const centered = match && { textAlign: 'center' as const };
 
   // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
   return (
     <FullNameToast overSystemBar>
       <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
         <Stack.Screen options={{ title: sessionLabel(event.session) }} />
-        <View style={[styles.header, match && styles.headerCentered]}>
-          <CompetitionBadge event={event} round={round} centered={match} />
+        <View style={styles.header}>
+          <CompetitionBadge event={event} round={round} />
           {match ? <Scoreboard event={event} /> : <Text style={styles.title}>{event.title}</Text>}
-          <Text style={[styles.info, centered, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
-          {place ? <Text style={[styles.info, centered, { color: muted }]}>{place}</Text> : null}
+          <Text style={[styles.info, { color: muted }]}>{sessionLabel(event.session)} · {formatEventDate(event)}</Text>
+          {place ? <Text style={[styles.info, { color: muted }]}>{place}</Text> : null}
           {!match && event.homeScore != null && event.awayScore != null && (
             <Text style={styles.score}>{event.homeScore} - {event.awayScore}</Text>
           )}
-          {penalties ? <Text style={[styles.info, centered, { color: muted }]}>{penalties}</Text> : null}
+          {penalties ? <Text style={[styles.info, { color: muted }]}>{penalties}</Text> : null}
         </View>
         <MatchTimeline event={event} />
         {event.videos.length > 0 && (
@@ -67,12 +67,12 @@ export default function EventScreen() {
 
 // Competizione e giornata su sfondo del colore della competizione: logo bianco, poi il nome (non per F1 e MotoGP, il cui
 // logo è già il nome) e la giornata o il round.
-function CompetitionBadge({ event, round, centered }: { event: SportEvent; round: string | null; centered: boolean }) {
+function CompetitionBadge({ event, round }: { event: SportEvent; round: string | null }) {
   const muted = useThemeColor({}, 'muted');
   const name = competitionLabel(event.competition);
   const text = [hasWordmark(event.competition) ? null : name, round].filter(Boolean).join(' · ');
   return (
-    <View style={[styles.badge, centered && styles.badgeCentered, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
+    <View style={[styles.badge, { backgroundColor: CompetitionColors[event.competition] ?? muted }]}>
       <CompetitionLogo id={event.competition} height={14} maxWidth={64} mono="#fff" label={name} />
       {text ? <Text style={styles.badgeText}>{text}</Text> : null}
     </View>
@@ -137,21 +137,19 @@ function Classification({ event }: { event: SportEvent }) {
 
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  header: { padding: 16, gap: 6 },
-  headerCentered: { alignItems: 'center' },
-  badgeCentered: { alignSelf: 'center' },
+  header: { padding: 16, gap: 6, alignItems: 'center' },
   // In alto, con il risultato alto quanto gli stemmi: resta alla loro altezza anche se un nome va su due righe.
   scoreboard: { flexDirection: 'row', alignItems: 'flex-start', alignSelf: 'stretch', marginVertical: 8, backgroundColor: 'transparent' },
   scoreTeam: { flex: 1, alignItems: 'center', gap: 8, backgroundColor: 'transparent' },
   scoreTeamName: { fontSize: 18, fontWeight: '700', textAlign: 'center' },
   scoreboardScore: { fontSize: 40, lineHeight: 56, fontWeight: '800', paddingHorizontal: 16, fontVariant: ['tabular-nums'] },
   badge: {
-    alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center', gap: 6,
+    flexDirection: 'row', alignItems: 'center', gap: 6,
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4,
   },
   badgeText: { color: '#fff', fontSize: 12, fontWeight: '700' },
-  title: { fontSize: 24, fontWeight: '700' },
-  info: { fontSize: 15 },
+  title: { fontSize: 24, fontWeight: '700', textAlign: 'center' },
+  info: { fontSize: 15, textAlign: 'center' },
   score: { fontSize: 32, fontWeight: '700', marginTop: 8 },
   videos: { paddingHorizontal: 16, paddingBottom: 16, gap: 16 },
   sectionTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', paddingHorizontal: 16, paddingTop: 8, paddingBottom: 4 },
