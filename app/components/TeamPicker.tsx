@@ -1,4 +1,5 @@
 import { PickerBar } from '@/components/PickerBar';
+import { TeamLogo } from '@/components/TeamLogo';
 import { teamLabel } from '@/lib/useTeamFilter';
 import type { Team } from '@/lib/types';
 
@@ -22,7 +23,14 @@ export function TeamPicker({ teams, teamId, onSelect }: Props) {
       label="Squadra"
       value={selected ? teamLabel(selected) : 'Tutte'}
       title="Scegli la squadra"
-      options={[{ key: ALL, label: 'Tutte', highlighted: true }, ...teams.map((t) => ({ key: t.id, label: teamLabel(t) }))]}
+      options={[
+        { key: ALL, label: 'Tutte', highlighted: true },
+        ...teams.map((t) => ({
+          key: t.id,
+          label: teamLabel(t),
+          icon: <TeamLogo uri={t.logoUrl} name={teamLabel(t)} size={18} />,
+        })),
+      ]}
       selectedKey={teamId ?? ALL}
       onSelect={(key) => onSelect(key === ALL ? null : key)}
     />

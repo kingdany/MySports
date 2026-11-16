@@ -4,6 +4,16 @@ import type { SportEvent, Team } from './types';
 
 export const teamLabel = (team: Team) => team.shortName ?? team.name;
 
+// Stemmi per nome della squadra (teamLabel), ricavati dalle partite: le classifiche hanno solo il nome, che l'importatore
+// scrive allo stesso modo (nome breve, altrimenti completo).
+export function teamLogos(events: SportEvent[] | undefined) {
+  const logos = new Map<string, string>();
+  for (const e of events ?? [])
+    for (const team of [e.homeTeam, e.awayTeam])
+      if (team?.logoUrl) logos.set(teamLabel(team), team.logoUrl);
+  return logos;
+}
+
 // Filtro per squadra su un elenco di eventi. Le squadre sono quelle presenti nell'elenco, in ordine alfabetico.
 // Se la squadra scelta non c'è (es. una stagione in cui non era in Serie A) vale come "tutte".
 export function useTeamFilter(events: SportEvent[] | undefined) {

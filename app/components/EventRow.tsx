@@ -2,10 +2,12 @@ import { Link } from 'expo-router';
 import { memo } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 
+import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionColors, LiveColor } from '@/constants/Colors';
 import { competitionLabel, formatTime, penaltiesLabel, roundLabel, sessionLabel } from '@/lib/format';
 import type { SportEvent } from '@/lib/types';
+import { teamLabel } from '@/lib/useTeamFilter';
 
 // Con linked = false la riga è solo informativa: il tocco non apre il dettaglio.
 export const EventRow = memo(function EventRow({ event, linked = true }: { event: SportEvent; linked?: boolean }) {
@@ -25,7 +27,16 @@ export const EventRow = memo(function EventRow({ event, linked = true }: { event
         </Text>
       </View>
       <View style={styles.body}>
-        <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
+        {event.homeTeam && event.awayTeam ? (
+          // Partita: stemma di casa, titolo, stemma della trasferta, come nel tabellone del dettaglio.
+          <View style={styles.match}>
+            <TeamLogo uri={event.homeTeam.logoUrl} name={teamLabel(event.homeTeam)} size={18} />
+            <Text style={[styles.title, styles.matchTitle]} numberOfLines={1}>{event.title}</Text>
+            <TeamLogo uri={event.awayTeam.logoUrl} name={teamLabel(event.awayTeam)} size={18} />
+          </View>
+        ) : (
+          <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
+        )}
         <Text style={[styles.subtitle, { color: muted }]} numberOfLines={1}>
           {event.session === 'match' ? roundLabel(event) : sessionLabel(event.session)}{event.city ? ` · ${event.city}` : ''}
         </Text>
@@ -80,6 +91,8 @@ const styles = StyleSheet.create({
   },
   body: { flex: 1, gap: 2, backgroundColor: 'transparent' },
   title: { fontSize: 16, fontWeight: '600' },
+  match: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
+  matchTitle: { flexShrink: 1 },
   subtitle: { fontSize: 14 },
   outcome: { fontSize: 14, fontWeight: '600', marginTop: 2, fontVariant: ['tabular-nums'] },
   videoMark: { alignSelf: 'center', fontSize: 16 }, // l'evento ha un video

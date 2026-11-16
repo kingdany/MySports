@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
-import { RefreshControl, ScrollView, StyleSheet } from 'react-native';
+import { Pressable, RefreshControl, ScrollView, StyleSheet } from 'react-native';
 
+import { useShowFullName } from '@/components/FullNameToast';
+import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { buildTree, type BracketRound, type Tie, type TreeNode } from '@/lib/bracket';
 import { teamLabel } from '@/lib/useTeamFilter';
@@ -78,12 +80,18 @@ function TieBox({ node }: { node: TreeNode }) {
 }
 
 function TeamLine({ tie, index }: { tie: Tie; index: 0 | 1 }) {
-  const muted = useThemeColor({}, 'muted');
+  const showFullName = useShowFullName();
   const eliminated = tie.winner !== null && tie.winner !== index;
+  const team = tie.teams[index];
+  // Il riquadro è stretto: toccando la squadra compare il nome per intero, come in classifica (nome breve, non quello
+  // ufficiale della fonte: "Inter", non "FC Internazionale Milano").
   return (
-    <Text numberOfLines={1} style={[styles.team, tie.winner === index && styles.winner, eliminated && { color: muted }]}>
-      {teamLabel(tie.teams[index])}
-    </Text>
+    <Pressable onPress={() => showFullName(teamLabel(team))} hitSlop={4} style={[styles.teamLine, eliminated && styles.eliminated]}>
+      <TeamLogo uri={team.logoUrl} name={teamLabel(team)} size={16} />
+      <Text numberOfLines={1} style={[styles.team, tie.winner === index && styles.winner]}>
+        {teamLabel(team)}
+      </Text>
+    </Pressable>
   );
 }
 
@@ -96,6 +104,8 @@ const styles = StyleSheet.create({
     position: 'absolute', width: BOX_WIDTH, height: BOX_HEIGHT, borderRadius: 8,
     paddingHorizontal: 10, justifyContent: 'center', gap: 2,
   },
-  team: { fontSize: 14 },
+  teamLine: { flexDirection: 'row', alignItems: 'center', gap: 6, backgroundColor: 'transparent' },
+  eliminated: { opacity: 0.45 }, // chi è eliminato è più chiaro, stemma compreso
+  team: { flexShrink: 1, fontSize: 14 },
   winner: { fontWeight: '700' },
 });

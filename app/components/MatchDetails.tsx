@@ -1,8 +1,9 @@
-import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+import { type ReactNode } from 'react';
 import { Pressable, StyleSheet, type StyleProp, type TextStyle } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
+import { useShowFullName } from '@/components/FullNameToast';
+import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { minuteLabel } from '@/lib/format';
 import type { IncidentType, Lineup, LineupPlayer, MatchIncident, SportEvent, Substitution } from '@/lib/types';
@@ -10,7 +11,6 @@ import type { IncidentType, Lineup, LineupPlayer, MatchIncident, SportEvent, Sub
 const YELLOW = '#facc15';
 const RED = '#dc2626';
 const GREEN = '#16a34a';
-const TOAST_MS = 2000;
 
 const FLAGS: Partial<Record<IncidentType, string>> = {
   penalty: '(R)',
@@ -19,44 +19,12 @@ const FLAGS: Partial<Record<IncidentType, string>> = {
   secondYellow: '(2G)',
 };
 
-// Si mostra il cognome; toccandolo compare per qualche secondo il nome completo in un fumetto in fondo allo schermo.
-const ShowFullName = createContext<(name: string) => void>(() => {});
-
-// Va intorno alla pagina (fuori dallo ScrollView), perché il fumetto resti fermo mentre si scorre.
-export function FullNameToast({ children }: { children: ReactNode }) {
-  const [name, setName] = useState<string | null>(null);
-  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const insets = useSafeAreaInsets();
-  // Colori del tema invertiti, perché il fumetto si stacchi dalla pagina sia in chiaro sia in scuro.
-  const background = useThemeColor({}, 'text');
-  const color = useThemeColor({}, 'background');
-
-  const show = useCallback((full: string) => {
-    clearTimeout(timer.current);
-    setName(full);
-    timer.current = setTimeout(() => setName(null), TOAST_MS);
-  }, []);
-  useEffect(() => () => clearTimeout(timer.current), []);
-
-  return (
-    <ShowFullName.Provider value={show}>
-      <View style={styles.fill}>
-        {children}
-        {name && (
-          <View pointerEvents="none" style={[styles.toastWrap, { bottom: insets.bottom + 24 }]}>
-            <Text style={[styles.toast, { backgroundColor: background, color }]}>{name}</Text>
-          </View>
-        )}
-      </View>
-    </ShowFullName.Provider>
-  );
-}
-
-// Cognome del giocatore (più eventuale testo dopo, es. il flag), toccabile se il nome completo è diverso.
+// Cognome del giocatore (più eventuale testo dopo, es. il flag), toccabile se il nome completo è diverso: compare il
+// nome completo nel fumetto di FullNameToast.
 function PlayerName({ name, short, style, children }: {
   name: string; short?: string; style?: StyleProp<TextStyle>; children?: ReactNode;
 }) {
-  const show = useContext(ShowFullName);
+  const show = useShowFullName();
   const text = <Text style={style} numberOfLines={1}>{short ?? name}{children}</Text>;
   if (!short) return text;
   return (
@@ -92,11 +60,13 @@ export function MatchLineups({ event }: { event: SportEvent }) {
       <View style={styles.columns}>
         <LineupColumn
           team={event.homeTeam?.shortName ?? event.homeTeam?.name ?? 'Casa'}
+          logoUrl={event.homeTeam?.logoUrl}
           lineup={details.home}
           incidents={details.incidents.filter((i) => playerSide(i) === 'home')}
         />
         <LineupColumn
           team={event.awayTeam?.shortName ?? event.awayTeam?.name ?? 'Trasferta'}
+          logoUrl={event.awayTeam?.logoUrl}
           lineup={details.away}
           incidents={details.incidents.filter((i) => playerSide(i) === 'away')}
         />
@@ -210,7 +180,12 @@ function Arrow({ up }: { up: boolean }) {
 }
 
 // Titolari in ordine, ognuno seguito da chi è entrato al suo posto (anche a catena).
-function LineupColumn({ team, lineup, incidents }: { team: string; lineup?: Lineup; incidents: MatchIncident[] }) {
+function LineupColumn({ team, logoUrl, lineup, incidents }: {
+  team: string;
+  logoUrl?: string;
+  lineup?: Lineup;
+  incidents: MatchIncident[];
+}) {
   if (!lineup) return <View style={styles.column} />;
   const replacedBy = new Map(lineup.substitutions.map((s) => [s.out.name, s]));
 
@@ -226,7 +201,10 @@ function LineupColumn({ team, lineup, incidents }: { team: string; lineup?: Line
 
   return (
     <View style={styles.column}>
-      <Text style={styles.teamName} numberOfLines={1}>{team}</Text>
+      <View style={styles.teamHeader}>
+        <TeamLogo uri={logoUrl} name={team} size={20} />
+        <Text style={styles.teamName} numberOfLines={1}>{team}</Text>
+      </View>
       {rows.map(({ player, cameIn, wentOut }) => (
         <PlayerRow
           key={player.name}
@@ -266,12 +244,6 @@ function PlayerRow({ player, cameIn, wentOut, incidents }: {
 }
 
 const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  toastWrap: { position: 'absolute', left: 16, right: 16, alignItems: 'center', backgroundColor: 'transparent' },
-  toast: {
-    fontSize: 15, fontWeight: '600',
-    paddingHorizontal: 16, paddingVertical: 10, borderRadius: 20, overflow: 'hidden',
-  },
   pressable: { flexShrink: 1 },
   section: { paddingBottom: 16 },
   sectionTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', paddingHorizontal: 16, paddingTop: 8, paddingBottom: 8 },
@@ -286,7 +258,8 @@ const styles = StyleSheet.create({
   strike: { position: 'absolute', left: 0, height: 2, backgroundColor: RED },
   columns: { flexDirection: 'row', paddingHorizontal: 16, gap: 16 },
   column: { flex: 1, gap: 4 },
-  teamName: { fontSize: 15, fontWeight: '700', marginBottom: 4 },
+  teamHeader: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 4 },
+  teamName: { flexShrink: 1, fontSize: 15, fontWeight: '700' },
   playerRow: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   substitute: { paddingLeft: 8 },
   number: { width: 22, fontSize: 13, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },

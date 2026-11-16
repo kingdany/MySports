@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { Modal, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -10,7 +10,8 @@ type Props = {
   title: string; // titolo della finestra di scelta
   // highlighted: es. la stagione corrente. group: titolo della sezione (es. "Anni 2020"); le voci consecutive con lo
   // stesso gruppo stanno sotto un titolo solo. Senza gruppi le voci sono un elenco unico.
-  options: { key: string; label: string; highlighted?: boolean; group?: string }[];
+  // icon: immagine prima dell'etichetta (es. lo stemma della squadra).
+  options: { key: string; label: string; highlighted?: boolean; group?: string; icon?: ReactNode }[];
   selectedKey: string | null;
   onSelect: (key: string) => void;
 };
@@ -54,6 +55,7 @@ export function PickerBar({ label, value, title, options, selectedKey, onSelect 
                         label={o.label}
                         active={o.key === selectedKey}
                         highlighted={o.highlighted ?? false}
+                        icon={o.icon}
                         onPress={() => choose(o.key)}
                       />
                     ))}
@@ -81,7 +83,13 @@ function groupOptions(options: Props['options']) {
 
 // Voce scelta: piena del colore principale. Voce evidenziata: bordo dello stesso colore e testo in grassetto, così si
 // riconosce anche quando è scelta un'altra voce. Le altre hanno un bordo trasparente, per avere tutte la stessa misura.
-function Chip({ label, active, highlighted, onPress }: { label: string; active: boolean; highlighted: boolean; onPress: () => void }) {
+function Chip({ label, active, highlighted, icon, onPress }: {
+  label: string;
+  active: boolean;
+  highlighted: boolean;
+  icon?: ReactNode;
+  onPress: () => void;
+}) {
   const card = useThemeColor({}, 'card');
   const tint = useThemeColor({}, 'tint');
   const background = useThemeColor({}, 'background');
@@ -90,6 +98,7 @@ function Chip({ label, active, highlighted, onPress }: { label: string; active: 
       onPress={onPress}
       style={[styles.chip, { backgroundColor: active ? tint : card, borderColor: highlighted ? tint : 'transparent' }]}
     >
+      {icon}
       <Text style={[styles.chipText, highlighted && styles.chipTextHighlighted, active && { color: background }]}>{label}</Text>
     </Pressable>
   );
@@ -111,7 +120,10 @@ const styles = StyleSheet.create({
   group: { marginBottom: 16 },
   groupTitle: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', marginBottom: 8 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  chip: { paddingHorizontal: 12, paddingVertical: 8, borderRadius: 8, borderWidth: 2, minWidth: 64, alignItems: 'center' },
+  chip: {
+    flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 6,
+    paddingHorizontal: 12, paddingVertical: 8, borderRadius: 8, borderWidth: 2, minWidth: 64,
+  },
   chipText: { fontSize: 15, fontVariant: ['tabular-nums'] },
   chipTextHighlighted: { fontWeight: '700' },
 });

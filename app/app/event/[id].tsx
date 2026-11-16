@@ -3,12 +3,15 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
-import { FullNameToast, MatchLineups, MatchTimeline } from '@/components/MatchDetails';
+import { FullNameToast } from '@/components/FullNameToast';
+import { MatchLineups, MatchTimeline } from '@/components/MatchDetails';
+import { TeamLogo } from '@/components/TeamLogo';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
 import { useEvents } from '@/lib/data';
 import { competitionLabel, formatEventDate, penaltiesLabel, roundLabel, sessionLabel } from '@/lib/format';
 import type { ClassificationRow, SportEvent } from '@/lib/types';
+import { teamLabel } from '@/lib/useTeamFilter';
 
 export default function EventScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -35,7 +38,7 @@ export default function EventScreen() {
 
   // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
   return (
-    <FullNameToast>
+    <FullNameToast overSystemBar>
       <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
         <Stack.Screen options={{ title: sessionLabel(event.session) }} />
         <View style={[styles.header, match && styles.headerCentered]}>
@@ -64,18 +67,28 @@ export default function EventScreen() {
 }
 
 // Casa a sinistra, risultato grande al centro, trasferta a destra; prima della partita "-" al posto del risultato.
+// Ogni squadra ha lo stemma sopra il nome.
 function Scoreboard({ event }: { event: SportEvent }) {
   const muted = useThemeColor({}, 'muted');
   const played = event.homeScore != null && event.awayScore != null;
-  const name = (team: SportEvent['homeTeam']) => team?.shortName ?? team?.name ?? '';
 
   return (
     <View style={styles.scoreboard}>
-      <Text style={[styles.scoreTeam, styles.scoreTeamHome]} numberOfLines={2}>{name(event.homeTeam)}</Text>
+      <ScoreboardTeam team={event.homeTeam} />
       <Text style={[styles.scoreboardScore, !played && { color: muted }]}>
         {played ? `${event.homeScore} - ${event.awayScore}` : '-'}
       </Text>
-      <Text style={styles.scoreTeam} numberOfLines={2}>{name(event.awayTeam)}</Text>
+      <ScoreboardTeam team={event.awayTeam} />
+    </View>
+  );
+}
+
+function ScoreboardTeam({ team }: { team: SportEvent['homeTeam'] }) {
+  const name = team ? teamLabel(team) : '';
+  return (
+    <View style={styles.scoreTeam}>
+      <TeamLogo uri={team?.logoUrl} name={name} size={56} />
+      <Text style={styles.scoreTeamName} numberOfLines={2}>{name}</Text>
     </View>
   );
 }
@@ -114,10 +127,11 @@ const styles = StyleSheet.create({
   header: { padding: 16, gap: 6 },
   headerCentered: { alignItems: 'center' },
   badgeCentered: { alignSelf: 'center' },
-  scoreboard: { flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch', marginVertical: 8, backgroundColor: 'transparent' },
-  scoreTeam: { flex: 1, fontSize: 18, fontWeight: '700' },
-  scoreTeamHome: { textAlign: 'right' },
-  scoreboardScore: { fontSize: 40, fontWeight: '800', paddingHorizontal: 16, fontVariant: ['tabular-nums'] },
+  // In alto, con il risultato alto quanto gli stemmi: resta alla loro altezza anche se un nome va su due righe.
+  scoreboard: { flexDirection: 'row', alignItems: 'flex-start', alignSelf: 'stretch', marginVertical: 8, backgroundColor: 'transparent' },
+  scoreTeam: { flex: 1, alignItems: 'center', gap: 8, backgroundColor: 'transparent' },
+  scoreTeamName: { fontSize: 18, fontWeight: '700', textAlign: 'center' },
+  scoreboardScore: { fontSize: 40, lineHeight: 56, fontWeight: '800', paddingHorizontal: 16, fontVariant: ['tabular-nums'] },
   badge: {
     alignSelf: 'flex-start', color: '#fff', fontSize: 12, fontWeight: '700',
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4, overflow: 'hidden',

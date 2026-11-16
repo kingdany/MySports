@@ -3,12 +3,15 @@ import { ActivityIndicator, FlatList, Pressable, RefreshControl, StyleSheet } fr
 
 import { Bracket } from '@/components/Bracket';
 import { CompetitionBar } from '@/components/CompetitionBar';
+import { FullNameToast, useShowFullName } from '@/components/FullNameToast';
 import { SeasonPicker } from '@/components/SeasonPicker';
+import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { StandingZones } from '@/constants/Colors';
 import { buildBracket } from '@/lib/bracket';
 import type { StandingRow } from '@/lib/types';
 import { useCompetitionSeason } from '@/lib/useSelectedSeason';
+import { teamLogos } from '@/lib/useTeamFilter';
 
 const BRACKET_ID = 'bracket';
 
@@ -49,6 +52,7 @@ export default function StandingsScreen() {
 
   // Il tabellone non è nei dati delle classifiche: si ricava dalle partite, e c'è solo con l'eliminazione diretta.
   const rounds = useMemo(() => buildBracket(file?.events), [file]);
+  const logos = useMemo(() => teamLogos(file?.events), [file]);
   const showBracket = tableId === BRACKET_ID && rounds.length > 0;
   const segments = [
     ...tables.map((t) => ({ id: t.id, title: t.title })),
@@ -56,7 +60,7 @@ export default function StandingsScreen() {
   ];
 
   return (
-    <View style={{ flex: 1 }}>
+    <FullNameToast>
       <CompetitionBar competitions={competitions} selected={competition?.id ?? null} onSelect={selectCompetition} />
       <SeasonPicker competition={competition} season={season} onSelect={selectSeason} />
 
@@ -87,7 +91,12 @@ export default function StandingsScreen() {
           data={table?.rows ?? []}
           keyExtractor={(r, i) => `${r.posText}-${r.name}-${i}`}
           renderItem={({ item }) => (
-            <Row row={item} showTeam={table?.id === 'drivers' || table?.id === 'scorers'} columns={columns} />
+            <Row
+              row={item}
+              showTeam={table?.id === 'drivers' || table?.id === 'scorers'}
+              columns={columns}
+              logos={columns ? logos : null}
+            />
           )}
           ListHeaderComponent={
             table ? (
@@ -131,22 +140,39 @@ export default function StandingsScreen() {
           refreshControl={<RefreshControl refreshing={refreshing} onRefresh={refresh} />}
         />
       )}
-    </View>
+    </FullNameToast>
   );
 }
 
-function Row({ row, showTeam, columns }: { row: StandingRow; showTeam: boolean; columns: Column[] | null }) {
+// logos: stemmi per nome della squadra, null per le classifiche senza squadre di calcio (F1, MotoGP). Nella classifica
+// lo stemma sta accanto al nome della squadra, nei marcatori accanto alla squadra del giocatore.
+function Row({ row, showTeam, columns, logos }: {
+  row: StandingRow;
+  showTeam: boolean;
+  columns: Column[] | null;
+  logos: Map<string, string> | null;
+}) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
   const zoneColor = StandingZones.find((z) => z.id === row.zone)?.color;
+  const showFullName = useShowFullName();
+  const isTeam = logos !== null && !showTeam; // la riga è una squadra, non un giocatore
+  // Nomi lunghi (es. "Andrea Kimi Antonelli") e squadre possono essere troncati: toccando la riga compaiono per intero.
+  const fullName = showTeam && row.team ? `${row.name} · ${row.team}` : row.name;
   return (
-    <View style={[styles.row, columns !== null && columns.length > 0 && styles.compact, { borderBottomColor: border }]}>
+    <Pressable
+      onPress={() => showFullName(fullName)}
+      style={[styles.row, columns !== null && columns.length > 0 && styles.compact, { borderBottomColor: border }]}>
       {zoneColor ? <View style={[styles.zone, { backgroundColor: zoneColor }]} /> : null}
       <Text style={[styles.pos, row.pos == null && { color: muted }]}>{row.posText}</Text>
+      {isTeam ? <TeamLogo uri={logos.get(row.name)} name={row.name} size={22} /> : null}
       <View style={styles.name}>
         <Text style={styles.nameText} numberOfLines={1}>{row.name}</Text>
         {showTeam && row.team ? (
-          <Text style={[styles.team, { color: muted }]} numberOfLines={1}>{row.team}</Text>
+          <View style={styles.teamLine}>
+            {logos ? <TeamLogo uri={logos.get(row.team)} name={row.team} size={14} /> : null}
+            <Text style={[styles.team, { color: muted }]} numberOfLines={1}>{row.team}</Text>
+          </View>
         ) : null}
       </View>
       {columns ? (
@@ -162,7 +188,7 @@ function Row({ row, showTeam, columns }: { row: StandingRow; showTeam: boolean; 
           <Text style={styles.points}>{formatPoints(row.points)}</Text>
         </>
       )}
-    </View>
+    </Pressable>
   );
 }
 
@@ -180,7 +206,8 @@ const styles = StyleSheet.create({
   pos: { width: 28, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   name: { flex: 1, backgroundColor: 'transparent' },
   nameText: { fontSize: 16, fontWeight: '600' },
-  team: { fontSize: 13 },
+  team: { flexShrink: 1, fontSize: 13 },
+  teamLine: { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: 'transparent' },
   wins: { width: 40, fontSize: 14, textAlign: 'right', fontVariant: ['tabular-nums'] },
   points: { width: 56, fontSize: 16, fontWeight: '700', textAlign: 'right', fontVariant: ['tabular-nums'] },
   compact: { gap: 6 }, // la classifica del calcio ha più colonne; i marcatori no, e tengono lo spazio normale
