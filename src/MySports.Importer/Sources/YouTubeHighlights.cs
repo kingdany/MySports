@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Net;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using System.Xml;
 using MySports.Importer.Models;
@@ -26,6 +27,16 @@ public sealed partial class YouTubeHighlights(
     // DAZN sono circa 85 video, 2 pagine). Senza parole chiave: con "Serie A highlights" la ricerca perdeva video
     // ("... | Serie A Enilive | DAZN Higlights") senza restituirne meno.
     private const int MaxSearchPages = 10;
+    // La ricerca per periodo però non restituisce tutti i video del periodo, e non sempre gli stessi: Roma-Inter del
+    // 10/02/2024 (DAZN, alle 22:00) mancava dalla prima pagina tra un video delle 23:28 e uno delle 21:00, e due recuperi
+    // completi non l'hanno trovata. Cercando le due squadre ("Roma Inter") esce. Quindi le partite rimaste senza video si
+    // cercano una per una, con le squadre come parole chiave, quando in una finestra ne restano al massimo
+    // MaxTargetedSessions: una ricerca per partita costa meno di un periodo intero. Con più partite in attesa (una stagione
+    // recuperata per la prima volta, un turno intero) il periodo costa meno. Le ricerche mirate si fanno per prime, così la
+    // quota non finisce nei periodi, che per le partite rimaste dopo un recupero trovano ormai poco.
+    private const int MaxTargetedSessions = 3;
+    // Ricerche per partita: nomi brevi, poi un nome usato dai canali (TeamAliases, es. "Hellas" per "Verona").
+    private const int MaxTargetedQueries = 2;
     // Le ricerche hanno una quota giornaliera a parte ("Search Queries per day", 100 richieste) che non tocca quella delle
     // altre chiamate: questo è il massimo di pagine per esecuzione, per tutti i canali insieme. Se la quota finisce prima,
     // la ricerca fallisce ma i dettagli dei video funzionano ancora. Una stagione intera oltre il limite (es. la Serie A
@@ -438,66 +449,113 @@ public sealed partial class YouTubeHighlights(
     }
 
     // Cerca i video pubblicati prima di "before" nei MaxDelay dopo le sessioni ancora senza video, e li aggiunge a uploads.
-    // Le finestre che si toccano si uniscono, poi si dividono in periodi di MaxDelay.
+    // Le finestre che si toccano si uniscono. Una finestra con poche partite di calcio si cerca partita per partita
+    // (MaxTargetedSessions), le altre si dividono in periodi di MaxDelay.
     private async Task SearchBeforeAsync(List<SportEvent> waiting, DateTimeOffset before, List<Upload> uploads, CancellationToken ct)
     {
-        var windows = new List<(DateTimeOffset From, DateTimeOffset To)>();
+        var windows = new List<(DateTimeOffset From, DateTimeOffset To, List<SportEvent> Sessions)>();
         foreach (var e in waiting.Where(e => e.StartsAt < before).OrderBy(e => e.StartsAt))
         {
             var to = e.StartsAt + MaxDelay < before ? e.StartsAt + MaxDelay : before;
             if (windows.Count > 0 && e.StartsAt <= windows[^1].To)
-                windows[^1] = (windows[^1].From, to > windows[^1].To ? to : windows[^1].To);
+            {
+                windows[^1].Sessions.Add(e);
+                windows[^1] = (windows[^1].From, to > windows[^1].To ? to : windows[^1].To, windows[^1].Sessions);
+            }
             else
-                windows.Add((e.StartsAt, to));
+                windows.Add((e.StartsAt, to, [e]));
         }
 
+        var targeted = new List<SportEvent>();
         var periods = new List<(DateTimeOffset Start, DateTimeOffset End)>();
-        foreach (var (from, to) in windows)
-            for (var start = from; start < to; start += MaxDelay)
-                periods.Add((start, start + MaxDelay < to ? start + MaxDelay : to));
+        foreach (var (from, to, sessions) in windows)
+        {
+            if (sessions.Count <= MaxTargetedSessions && sessions.All(e => e.HomeTeam?.ShortName is not null && e.AwayTeam?.ShortName is not null))
+                targeted.AddRange(sessions);
+            else
+                for (var start = from; start < to; start += MaxDelay)
+                    periods.Add((start, start + MaxDelay < to ? start + MaxDelay : to));
+        }
 
         var known = uploads.Select(u => u.VideoId).ToHashSet();
-        int searched = 0, pages = 0, added = 0;
+
+        int searchedMatches = 0, foundMatches = 0, targetedPages = 0;
+        foreach (var e in targeted)
+        {
+            if (searchPagesUsed >= SearchBudget) break;
+            searchedMatches++;
+            var end = e.StartsAt + MaxDelay < before ? e.StartsAt + MaxDelay : before;
+            var queries = TeamNames(e.HomeTeam).SelectMany(home => TeamNames(e.AwayTeam).Select(away => $"{home} {away}")).Take(MaxTargetedQueries);
+            foreach (var query in queries)
+            {
+                if (searchPagesUsed >= SearchBudget) break;
+                searchPagesUsed++;
+                targetedPages++;
+                var data = await SearchAsync(e.StartsAt, end, query, null, ct);
+                var added = AddSearchResults(data, known, uploads);
+                if (added.Any(u => SessionFor(waiting, u.Title, u.PublishedAt)?.Id == e.Id))
+                {
+                    foundMatches++;
+                    break;
+                }
+            }
+        }
+        if (targeted.Count > 0)
+            Console.WriteLine($"Video {sourceName}: oltre la playlist dei caricamenti, cercate {searchedMatches} partite su {targeted.Count} " +
+                              $"una per una ({targetedPages} pagine), trovate {foundMatches}");
+
+        int searched = 0, pages = 0, addedVideos = 0;
         foreach (var (start, end) in periods)
         {
-            if (searchPagesUsed >= SearchBudget)
-            {
-                Console.WriteLine($"Video {sourceName}: ricerca fermata a {SearchBudget} pagine per esecuzione, " +
-                                  $"{periods.Count - searched} periodi su {periods.Count} da cercare con il prossimo recupero");
-                break;
-            }
+            if (searchPagesUsed >= SearchBudget) break;
             searched++;
             string? pageToken = null;
             for (var page = 0; page < MaxSearchPages && searchPagesUsed < SearchBudget; page++)
             {
                 searchPagesUsed++;
-                // regionCode=IT: senza, la ricerca esclude i video non visibili nel paese da cui parte la richiesta, e i
-                // runner di GitHub Actions sono negli Stati Uniti (DAZN Italia pubblica i video solo per l'Italia).
-                var data = await HttpJson.GetAsync(http,
-                    $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&regionCode=IT&channelId={channelId}" +
-                    $"&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
-                    (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
+                var data = await SearchAsync(start, end, null, pageToken, ct);
                 pages++;
-
-                foreach (var item in data["items"]!.AsArray())
-                {
-                    var id = item!["id"]?["videoId"]?.GetValue<string>();
-                    if (id is null || !known.Add(id)) continue;
-                    var s = item["snippet"]!;
-                    var thumbs = s["thumbnails"];
-                    uploads.Add(new Upload(
-                        id,
-                        WebUtility.HtmlDecode(s["title"]!.GetValue<string>()), // la ricerca dà i titoli con le entità HTML ("&#39;")
-                        (thumbs?["high"] ?? thumbs?["medium"] ?? thumbs?["default"])?["url"]?.GetValue<string>() ?? "",
-                        DateTimeOffset.Parse(s["publishedAt"]!.GetValue<string>(), CultureInfo.InvariantCulture)));
-                    added++;
-                }
-
+                addedVideos += AddSearchResults(data, known, uploads).Count;
                 pageToken = data["nextPageToken"]?.GetValue<string>();
                 if (pageToken is null) break;
             }
         }
-        Console.WriteLine($"Video {sourceName}: oltre la playlist dei caricamenti, cercati {searched} periodi ({pages} pagine), {added} video");
+        if (periods.Count > 0)
+            Console.WriteLine($"Video {sourceName}: oltre la playlist dei caricamenti, cercati {searched} periodi ({pages} pagine), {addedVideos} video");
+
+        if (searchPagesUsed >= SearchBudget && (searchedMatches < targeted.Count || searched < periods.Count))
+            Console.WriteLine($"Video {sourceName}: ricerca fermata a {SearchBudget} pagine per esecuzione, da cercare con il prossimo " +
+                              $"recupero {targeted.Count - searchedMatches} partite su {targeted.Count} e {periods.Count - searched} periodi su {periods.Count}");
+    }
+
+    // Una pagina di ricerca nel canale tra start ed end, ordinata per data; query: parole chiave, null per tutti i video.
+    // regionCode=IT: senza, la ricerca esclude i video non visibili nel paese da cui parte la richiesta, e i
+    // runner di GitHub Actions sono negli Stati Uniti (DAZN Italia pubblica i video solo per l'Italia).
+    private Task<JsonNode> SearchAsync(DateTimeOffset start, DateTimeOffset end, string? query, string? pageToken, CancellationToken ct) =>
+        HttpJson.GetAsync(http,
+            $"{BaseUrl}/search?part=snippet&type=video&order=date&maxResults=50&regionCode=IT&channelId={channelId}" +
+            $"&publishedAfter={Rfc3339(start)}&publishedBefore={Rfc3339(end)}&key={apiKey}" +
+            (query is null ? "" : $"&q={Uri.EscapeDataString(query)}") +
+            (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
+
+    // Aggiunge a uploads i video della pagina non ancora visti e li restituisce.
+    private static List<Upload> AddSearchResults(JsonNode data, HashSet<string> known, List<Upload> uploads)
+    {
+        var added = new List<Upload>();
+        foreach (var item in data["items"]!.AsArray())
+        {
+            var id = item!["id"]?["videoId"]?.GetValue<string>();
+            if (id is null || !known.Add(id)) continue;
+            var s = item["snippet"]!;
+            var thumbs = s["thumbnails"];
+            added.Add(new Upload(
+                id,
+                WebUtility.HtmlDecode(s["title"]!.GetValue<string>()), // la ricerca dà i titoli con le entità HTML ("&#39;")
+                (thumbs?["high"] ?? thumbs?["medium"] ?? thumbs?["default"])?["url"]?.GetValue<string>() ?? "",
+                DateTimeOffset.Parse(s["publishedAt"]!.GetValue<string>(), CultureInfo.InvariantCulture)));
+        }
+        uploads.AddRange(added);
+        return added;
     }
 
     private static string Rfc3339(DateTimeOffset value) =>
