@@ -60,6 +60,7 @@ public sealed record ClassificationRow
     public required string Driver { get; init; }
     public string? Code { get; init; }
     public required string Team { get; init; }
+    public string? TeamColor { get; init; } // "#RRGGBB"; assente se la fonte non ce l'ha (F1 prima del 2023)
     public string? Time { get; init; }      // tempo o distacco; stato ("DNF", "+1 Lap") se non classificato
     public double? Points { get; init; }
     public string? Q1 { get; init; }

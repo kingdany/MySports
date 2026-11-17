@@ -6,6 +6,7 @@ import { Text, View, useThemeColor } from '@/components/Themed';
 import { CompetitionLogo, hasWordmark } from '@/components/CompetitionLogo';
 import { FullNameToast } from '@/components/FullNameToast';
 import { MatchLineups, MatchTimeline } from '@/components/MatchDetails';
+import { TeamColorBar } from '@/components/TeamColorBar';
 import { TeamLogo } from '@/components/TeamLogo';
 import { VideoCard } from '@/components/VideoCard';
 import { CompetitionColors } from '@/constants/Colors';
@@ -110,6 +111,7 @@ function Classification({ event }: { event: SportEvent }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
   const isQualifying = event.session === 'qualifying' || event.session === 'sprint_qualifying';
+  const hasTeamColors = event.result!.some((r) => r.teamColor);
 
   // In qualifica si mostra il miglior tempo raggiunto (Q3, altrimenti Q2, altrimenti Q1).
   const detail = (r: ClassificationRow) => (isQualifying ? r.q3 ?? r.q2 ?? r.q1 : r.time) ?? '';
@@ -121,6 +123,7 @@ function Classification({ event }: { event: SportEvent }) {
         // La posizione da sola non basta come chiave: la fonte può avere posizioni duplicate.
         <View key={`${r.pos}-${r.number ?? r.driver}`} style={[styles.resultRow, { borderBottomColor: border }]}>
           <Text style={styles.pos}>{r.pos}</Text>
+          {hasTeamColors ? <TeamColorBar color={r.teamColor} /> : null}
           <View style={styles.driver}>
             <Text style={styles.driverName} numberOfLines={1}>{r.driver}</Text>
             <Text style={[styles.team, { color: muted }]} numberOfLines={1}>{r.team}</Text>

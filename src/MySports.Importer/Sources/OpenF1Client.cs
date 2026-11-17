@@ -17,7 +17,8 @@ public sealed class OpenF1Client(HttpClient http)
     // Duration contiene i tempi delle singole fasi (es. SQ1, SQ2, SQ3); null se il pilota non vi ha preso parte.
     public sealed record ResultRow(int? Position, int DriverNumber, double?[] Duration);
 
-    public sealed record Driver(int Number, string FullName, string Acronym, string Team);
+    // TeamColour: "3671C6", senza "#"; può mancare.
+    public sealed record Driver(int SessionKey, int Number, string FullName, string Acronym, string Team, string? TeamColour);
 
     // Tutte le sessioni dell'anno (non cancellate), con l'orario del cronometraggio ufficiale.
     public async Task<List<Session>> GetSessionsAsync(string year, CancellationToken ct)
@@ -43,17 +44,23 @@ public sealed class OpenF1Client(HttpClient http)
             .ToList();
     }
 
-    public async Task<List<Driver>> GetDriversAsync(int sessionKey, CancellationToken ct)
-    {
-        var data = await GetJsonAsync($"drivers?session_key={sessionKey}", ct);
-        return data.AsArray()
+    public async Task<List<Driver>> GetDriversAsync(int sessionKey, CancellationToken ct) =>
+        ParseDrivers(await GetJsonAsync($"drivers?session_key={sessionKey}", ct));
+
+    // Piloti di tutte le sessioni con session_key tra from e to compresi, con una richiesta sola.
+    public async Task<List<Driver>> GetDriversAsync(int fromSessionKey, int toSessionKey, CancellationToken ct) =>
+        ParseDrivers(await GetJsonAsync($"drivers?session_key>={fromSessionKey}&session_key<={toSessionKey}", ct));
+
+    private static List<Driver> ParseDrivers(JsonNode data) =>
+        data.AsArray()
             .Select(d => new Driver(
-                d!["driver_number"]!.GetValue<int>(),
+                d!["session_key"]!.GetValue<int>(),
+                d["driver_number"]!.GetValue<int>(),
                 $"{d["first_name"]?.GetValue<string>()} {d["last_name"]?.GetValue<string>()}".Trim(),
                 d["name_acronym"]?.GetValue<string>() ?? "",
-                d["team_name"]?.GetValue<string>() ?? ""))
+                d["team_name"]?.GetValue<string>() ?? "",
+                d["team_colour"]?.GetValue<string>()))
             .ToList();
-    }
 
     private async Task<JsonNode> GetJsonAsync(string path, CancellationToken ct)
     {

@@ -108,7 +108,72 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
                 raceResults.TryGetValue(round, out var raceRows) ? RaceClassification(raceRows) : null));
         }
 
-        return events;
+        // Il colore va per scuderia: è lo stesso in tutte le sessioni della stagione.
+        var palette = await GetPaletteAsync(season, ct, races, raceResults, officialSessions);
+        if (palette.Colors.Count == 0) return events;
+        return events
+            .Select(e => e.Result is null ? e : e with
+            {
+                Result = e.Result.Select(r => r with { TeamColor = palette.Colors.GetValueOrDefault(r.Team) }).ToList(),
+            })
+            .ToList();
+    }
+
+    // Colori delle scuderie della stagione (nome Jolpica -> "#RRGGBB") e ultima scuderia di ogni pilota (per driverId).
+    private sealed record Palette(Dictionary<string, string> Colors, Dictionary<string, string> LastConstructor);
+    private static readonly Palette NoColors = new([], []);
+    private readonly Dictionary<string, Palette> palettes = [];
+
+    // Jolpica non ha i colori: vengono da OpenF1 (dal 2023), che però scrive le scuderie in un altro modo ("Red Bull Racing",
+    // "Red Bull"). Si abbinano con il numero del pilota in ogni gara, così si tiene conto anche dei cambi di scuderia.
+    // Eventi e classifiche usano la stessa tabella; con --standings-only si scaricano qui calendario e risultati.
+    // Se OpenF1 non risponde si va avanti senza colori.
+    private async Task<Palette> GetPaletteAsync(
+        string season,
+        CancellationToken ct,
+        JsonArray? races = null,
+        Dictionary<string, List<JsonNode>>? raceResults = null,
+        List<OpenF1Client.Session>? officialSessions = null)
+    {
+        if (palettes.TryGetValue(season, out var cached)) return cached;
+        if (int.Parse(season, CultureInfo.InvariantCulture) < FirstOpenF1Season) return NoColors;
+        try
+        {
+            races ??= (await GetJsonAsync($"{BaseUrl}/{season}.json?limit={PageSize}", ct))["MRData"]!["RaceTable"]!["Races"]!.AsArray();
+            raceResults ??= await FetchByRoundAsync($"{season}/results", "Results", ct);
+            officialSessions ??= await openF1.GetSessionsAsync(season, ct);
+
+            var raceSessions = officialSessions.Where(s => OpenF1Names.GetValueOrDefault(s.Name) == "race").ToList();
+            if (raceSessions.Count == 0) return NoColors;
+            var colorsBySession = (await openF1.GetDriversAsync(raceSessions.Min(s => s.SessionKey), raceSessions.Max(s => s.SessionKey), ct))
+                .Where(d => d.TeamColour is { Length: 6 } c && c.All(Uri.IsHexDigit))
+                .GroupBy(d => d.SessionKey)
+                .ToDictionary(g => g.Key, g => g.DistinctBy(d => d.Number).ToDictionary(d => d.Number, d => $"#{d.TeamColour!.ToUpperInvariant()}"));
+
+            var palette = new Palette([], []);
+            foreach (var race in races.OrderBy(r => int.Parse(Str(r!["round"])!, CultureInfo.InvariantCulture)))
+            {
+                if (!raceResults.TryGetValue(Str(race!["round"])!, out var rows)) continue;
+                var start = ParseStart(race).At;
+                var session = raceSessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromDays(2));
+                var colors = session is null ? null : colorsBySession.GetValueOrDefault(session.SessionKey);
+                foreach (var r in rows)
+                {
+                    var team = Str(r["Constructor"]!["name"])!;
+                    if (Str(r["Driver"]!["driverId"]) is { } driverId) palette.LastConstructor[driverId] = team;
+                    if (colors is not null && int.TryParse(Str(r["number"]), CultureInfo.InvariantCulture, out var number)
+                        && colors.TryGetValue(number, out var color))
+                        palette.Colors[team] = color;
+                }
+            }
+            palettes[season] = palette;
+            return palette;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"AVVISO colori delle scuderie {season} da OpenF1: {ex.Message}");
+            return NoColors;
+        }
     }
 
     // Nomi delle sessioni OpenF1 -> nostri.
@@ -141,14 +206,24 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         var drivers = await FetchStandingsRowsAsync($"{season}/driverStandings", "DriverStandings", ct);
         var constructors = await FetchStandingsRowsAsync($"{season}/constructorStandings", "ConstructorStandings", ct);
 
+        var palette = await GetPaletteAsync(season, ct);
+        string? ColorOf(string? team) => team is null ? null : palette.Colors.GetValueOrDefault(team);
+
         var tables = new List<StandingsTable>();
         if (drivers.Count > 0)
         {
-            tables.Add(new StandingsTable("drivers", "Piloti", drivers.Select(r => StandingRow(r) with
+            tables.Add(new StandingsTable("drivers", "Piloti", drivers.Select(r =>
             {
-                Name = DriverName(r["Driver"]!),
-                Code = Str(r["Driver"]!["code"]),
-                Team = string.Join(" / ", r["Constructors"]!.AsArray().Select(c => Str(c!["name"])).Distinct()),
+                var teams = r["Constructors"]!.AsArray().Select(c => Str(c!["name"])!).Distinct().ToList();
+                // Chi ha cambiato scuderia prende il colore di quella con cui ha corso l'ultima gara.
+                var lastTeam = Str(r["Driver"]!["driverId"]) is { } id && palette.LastConstructor.TryGetValue(id, out var t) ? t : teams.LastOrDefault();
+                return StandingRow(r) with
+                {
+                    Name = DriverName(r["Driver"]!),
+                    Code = Str(r["Driver"]!["code"]),
+                    Team = string.Join(" / ", teams),
+                    TeamColor = ColorOf(lastTeam),
+                };
             }).ToList()));
         }
         // Il campionato costruttori esiste dal 1958: prima la lista è vuota.
@@ -157,6 +232,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
             tables.Add(new StandingsTable("constructors", "Costruttori", constructors.Select(r => StandingRow(r) with
             {
                 Name = Str(r["Constructor"]!["name"])!,
+                TeamColor = ColorOf(Str(r["Constructor"]!["name"])),
             }).ToList()));
         }
         return tables;

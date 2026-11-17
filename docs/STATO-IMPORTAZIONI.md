@@ -35,7 +35,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 16/11/2026, 15:53:20 (ora italiana).
+Dati del 17/11/2026, 08:51:19 (ora italiana).
 
 ## Formula 1
 
@@ -53,7 +53,7 @@ Dati del 16/11/2026, 15:53:20 (ora italiana).
 | 2026 | 59 | 59 | 0 |
 | 2025 | 66 | 66 | 0 |
 | 2024 | 60 | 58 | 2 |
-| 1949–2023 | 1424 | 0 | tutte |
+| 1949–2023 | 1437 | 0 | tutte |
 
 - 2024, senza video: TT Assen (qualifying) del 2024-06-29; Motorrad Grand Prix von Österreich (qualifying) del 2024-08-17
 

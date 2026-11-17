@@ -10,6 +10,7 @@ public sealed record StandingRow
     public required string Name { get; init; }
     public string? Code { get; init; }
     public string? Team { get; init; }        // scuderia del pilota (più di una se ha cambiato durante l'anno)
+    public string? TeamColor { get; init; }   // "#RRGGBB" della squadra (per i piloti l'ultima); solo F1 e MotoGP
     public required double Points { get; init; }   // gol nella classifica marcatori
     public int? Wins { get; init; }
     public int? Played { get; init; }         // questi ultimi solo per il calcio

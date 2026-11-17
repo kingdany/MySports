@@ -5,6 +5,7 @@ import { Bracket } from '@/components/Bracket';
 import { CompetitionBar } from '@/components/CompetitionBar';
 import { FullNameToast, useShowFullName } from '@/components/FullNameToast';
 import { SeasonPicker } from '@/components/SeasonPicker';
+import { TeamColorBar } from '@/components/TeamColorBar';
 import { TeamLogo } from '@/components/TeamLogo';
 import { Text, View, useThemeColor } from '@/components/Themed';
 import { StandingZones } from '@/constants/Colors';
@@ -48,6 +49,7 @@ export default function StandingsScreen() {
   const tables = file?.standings ?? [];
   const table = tables.find((t) => t.id === tableId) ?? tables[0];
   const columns = columnsOf(table?.id);
+  const hasTeamColors = table?.rows.some((r) => r.teamColor) ?? false;
   const zones = StandingZones.filter((z) => table?.rows.some((r) => r.zone === z.id));
 
   // Il tabellone non è nei dati delle classifiche: si ricava dalle partite, e c'è solo con l'eliminazione diretta.
@@ -96,6 +98,7 @@ export default function StandingsScreen() {
               showTeam={table?.id === 'drivers' || table?.id === 'scorers'}
               columns={columns}
               logos={columns ? logos : null}
+              teamColors={hasTeamColors}
             />
           )}
           ListHeaderComponent={
@@ -146,11 +149,13 @@ export default function StandingsScreen() {
 
 // logos: stemmi per nome della squadra, null per le classifiche senza squadre di calcio (F1, MotoGP). Nella classifica
 // lo stemma sta accanto al nome della squadra, nei marcatori accanto alla squadra del giocatore.
-function Row({ row, showTeam, columns, logos }: {
+// teamColors: la classifica ha i colori delle squadre (F1, MotoGP), con la barretta tra posizione e nome.
+function Row({ row, showTeam, columns, logos, teamColors }: {
   row: StandingRow;
   showTeam: boolean;
   columns: Column[] | null;
   logos: Map<string, string> | null;
+  teamColors: boolean;
 }) {
   const muted = useThemeColor({}, 'muted');
   const border = useThemeColor({}, 'border');
@@ -166,6 +171,7 @@ function Row({ row, showTeam, columns, logos }: {
       {zoneColor ? <View style={[styles.zone, { backgroundColor: zoneColor }]} /> : null}
       <Text style={[styles.pos, row.pos == null && { color: muted }]}>{row.posText}</Text>
       {isTeam ? <TeamLogo uri={logos.get(row.name)} name={row.name} size={22} /> : null}
+      {teamColors ? <TeamColorBar color={row.teamColor} /> : null}
       <View style={styles.name}>
         <Text style={styles.nameText} numberOfLines={1}>{row.name}</Text>
         {showTeam && row.team ? (

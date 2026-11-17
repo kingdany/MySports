@@ -10,6 +10,7 @@ export type ClassificationRow = {
   driver: string;
   code?: string;
   team: string;
+  teamColor?: string; // "#RRGGBB"; assente se la fonte non ce l'ha (F1 prima del 2023)
   time?: string;
   points?: number;
   q1?: string;
@@ -83,6 +84,7 @@ export type StandingRow = {
   name: string;
   code?: string;
   team?: string;
+  teamColor?: string; // "#RRGGBB" della squadra (per i piloti l'ultima); solo F1 e MotoGP
   points: number; // gol nella classifica marcatori
   wins?: number;
   played?: number; // questi ultimi solo per il calcio
