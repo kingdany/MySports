@@ -133,7 +133,19 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Importare i video delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
-- [ ] Calcio: altre competizioni
+- [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; l'API pubblica di ESPN sì (verificato a novembre 2026), quindi serve una fonte nuova basata su ESPN, che varrebbe anche per la Nations League
+  - Europa League (`uefa.europa`) e Conference League (`uefa.europa.conf`): stagioni come il calcio (`2026-27`); da verificare le classifiche della fase a campionato
+  - Coppa Italia (`ita.coppa_italia`)
+  - Supercoppa italiana (`ita.super_cup`) e Supercoppa europea (`uefa.super_cup`): poche partite all'anno (una sola la europea)
+  - Mondiale per club (`fifa.cwc`): ogni quattro anni, l'ultimo nel 2025
+  - highlights: da verificare canali YouTube e regole sui titoli per ognuna
+  - con più competizioni la barra delle competizioni va ripensata: oggi è una riga di pulsanti tutti larghi uguali
+- [ ] App: barra delle competizioni su due livelli, perché con il calcio che cresce la riga unica diventa lunghissima (la MotoGP finirebbe dopo tutto il calcio)
+  - sopra gli sport ("Tutti", Calcio, F1, MotoGP...), con i loghi come ora per F1 e MotoGP
+  - sotto, più piccole e scorrevoli, le competizioni dello sport scelto, solo se ne ha più di una (oggi il calcio). In Prossimi con "Tutte" all'inizio (tutto il calcio insieme); in Risultati e Classifiche, che non mischiano le competizioni, senza
+  - le competizioni con poche partite (Supercoppe, Mondiale per club) compaiono solo quando servono: in Prossimi nei giorni prima della partita, in Risultati e Classifiche nelle stagioni in cui si sono giocate; le loro partite restano comunque in "Tutte" e "Tutti"
+  - indipendente dalle competizioni nuove: si può fare anche prima
+- [ ] App, Prossimi: sport e competizioni preferiti. Un'opzione per nascondere quelli che non interessano, salvata sul telefono: spariscono da "Tutti" (e "Tutte" del calcio) e dalla barra di Prossimi. Solo in Prossimi: Risultati e Classifiche restano complete
 - [ ] Calcio: nazionali, solo le partite che contano e con tutte le nazionali, una competizione per torneo: Nations League (intera, tutte le leghe e i gruppi, altrimenti la competizione resterebbe a metà), Europei e Mondiali. Amichevoli escluse: non essendo un torneo non vengono importate. Da decidere le qualificazioni a Europei e Mondiali
   - Europei e Mondiali: football-data.org li ha nel piano gratuito (`EC`, `WC`), quindi bastano `FootballDataSource` e la sua gestione di fasi, rigori e classifiche dei gironi
   - Nations League: football-data.org non ce l'ha; usare l'API pubblica di ESPN (senza chiave, non documentata, risposte a volte compresse con gzip), lega `uefa.nations`: `https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=...` per le partite (da verificare: una prova con l'intervallo `20261101-20261130` non ha restituito eventi, forse serve una data sola o un altro formato), da verificare anche le classifiche dei gruppi. Stagioni come il calcio (`2026-27`, cambio il 1° agosto)
