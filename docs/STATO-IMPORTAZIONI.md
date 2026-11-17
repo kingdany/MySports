@@ -24,7 +24,9 @@ si scrivono a mano.
   ricerca). I 7 video scartati perché "pubblicati prima dell'inizio" sono amarcord DAZN, scartati giustamente.
   Roma-Inter (10/02/2024) ha il video DAZN "THURAM, show, POKER e controrimonta: Roma-Inter 2-4 | Serie A TIM | DAZN
   Highlights", che la regola accetta: la ricerca di YouTube non l'ha restituito (ne dà circa un terzo dei caricamenti).
-  Da rilanciare il recupero; se restano in tanti, aggiungere una ricerca mirata per squadre.
+  Il secondo recupero, del 17/11/2026 (55 pagine DAZN, 21 Sky), ne ha trovate solo 5 (Bologna-Sassuolo, Torino-Salernitana,
+  Lecce-Inter, Empoli-Napoli, Lecce-Udinese, tutte DAZN); ne restano 44, Roma-Inter compresa. Rilanciare il recupero rende
+  sempre meno: per le altre serve una ricerca mirata per squadre.
 - Serie A 2024-25: Torino-Lecce ha solo il video Sky, DAZN non ha pubblicato gli highlights. Il resto è DAZN dal
   recupero del 16/11/2026.
 - Serie A 2025-26: Parma-Como (25/10/2025) ha il video Sky perché DAZN l'ha intitolato "Como-Parma", con le squadre
@@ -35,7 +37,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 17/11/2026, 08:51:19 (ora italiana).
+Dati del 17/11/2026, 16:12:29 (ora italiana).
 
 ## Formula 1
 
@@ -64,7 +66,7 @@ Dati del 17/11/2026, 08:51:19 (ora italiana).
 | 2026-27 | 110 | 110 | 0 | 0 | 110 su 110 |
 | 2025-26 | 380 | 379 | 1 | 0 | 380 su 380 |
 | 2024-25 | 380 | 379 | 1 | 0 | 380 su 380 |
-| 2023-24 | 380 | 330 | 1 | 49 | 380 su 380 |
+| 2023-24 | 380 | 335 | 1 | 44 | 380 su 380 |
 
 ## Champions League
 

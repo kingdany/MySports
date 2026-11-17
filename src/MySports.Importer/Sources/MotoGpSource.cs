@@ -48,8 +48,23 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
     // Colori delle squadre della stagione (nome -> "#RRGGBB"), dall'elenco squadre del sito. Molte lì hanno un grigio
     // segnaposto (nel 2026 VR46, Pramac, Tech3, Trackhouse...), e i nomi di quell'elenco non sempre sono quelli dell'archivio
     // ("Repsol Honda Team"): per queste si usa il colore del costruttore. Prima del 2002 l'elenco è vuoto.
-    private readonly Dictionary<string, Dictionary<string, string>> teamColors = [];
+    private sealed record SeasonColors(int Season, Dictionary<string, string> Teams);
+    private readonly Dictionary<string, SeasonColors> teamColors = [];
     private const string PlaceholderColor = "#262626";
+
+    // Colori scritti a mano delle squadre satellite, che il sito non ha o ha sbagliati: valgono più di quelli del sito.
+    // La squadra si riconosce da una parola del nome, che cambia con gli sponsor ("Castrol Honda LCR", "Pro Honda LCR").
+    // Ogni colore vale dalla stagione indicata finché non ce n'è uno più recente per la stessa squadra; le stagioni
+    // precedenti non lo prendono. Quando una livrea cambia si aggiunge una riga con la stagione nuova.
+    private static readonly (string Keyword, int Since, string Color)[] SatelliteColors =
+    [
+        ("Gresini", 2026, "#8CB8D8"),
+        ("VR46", 2026, "#DFFF00"),
+        ("Pramac", 2026, "#5D2E8C"),
+        ("Trackhouse", 2026, "#00A3E0"),
+        ("LCR", 2026, "#00843D"),
+        ("Tech3", 2026, "#1B263B"),
+    ];
 
     // Colori dei costruttori, gli stessi delle loro squadre ufficiali nell'elenco del sito.
     private static readonly Dictionary<string, string> ConstructorColors = new(StringComparer.OrdinalIgnoreCase)
@@ -255,7 +270,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
     }
 
     // I piloti non classificati hanno la posizione vuota e stanno in fondo: prendono i numeri successivi.
-    private static List<ClassificationRow> RaceClassification(JsonArray rows, Dictionary<string, string> colors)
+    private static List<ClassificationRow> RaceClassification(JsonArray rows, SeasonColors colors)
     {
         var list = rows.Select(r => r!).ToList();
         var codes = Codes(list);
@@ -290,17 +305,28 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
     private static string? TeamName(JsonNode r) =>
         Str(r["team"]?["name"]) is { Length: > 0 } team ? team : Str(r["constructor"]?["name"]);
 
-    // Colore della squadra, altrimenti del costruttore; null per i costruttori senza colore (es. MV Agusta, Norton).
-    private static string? TeamColor(JsonNode r, Dictionary<string, string> colors) =>
-        Str(r["team"]?["name"]) is { } team && colors.TryGetValue(team, out var color) ? color
-        : Str(r["constructor"]?["name"]) is { } constructor ? ConstructorColors.GetValueOrDefault(constructor)
-        : null;
+    // Colore della squadra (scritto a mano, altrimenti del sito), altrimenti del costruttore; null per i costruttori
+    // senza colore (es. MV Agusta, Norton).
+    private static string? TeamColor(JsonNode r, SeasonColors colors)
+    {
+        if (Str(r["team"]?["name"]) is { } team)
+        {
+            var satellite = SatelliteColors
+                .Where(s => s.Since <= colors.Season && team.Contains(s.Keyword, StringComparison.OrdinalIgnoreCase))
+                .OrderByDescending(s => s.Since)
+                .Select(s => s.Color)
+                .FirstOrDefault();
+            if (satellite is not null) return satellite;
+            if (colors.Teams.TryGetValue(team, out var color)) return color;
+        }
+        return Str(r["constructor"]?["name"]) is { } constructor ? ConstructorColors.GetValueOrDefault(constructor) : null;
+    }
 
-    // Elenco squadre della classe MotoGP del sito, con i loro colori. Se non risponde restano i colori dei costruttori.
-    private async Task<Dictionary<string, string>> GetTeamColorsAsync(string season, CancellationToken ct)
+    // Elenco squadre della classe MotoGP del sito, con i loro colori. Se non risponde restano gli altri colori.
+    private async Task<SeasonColors> GetTeamColorsAsync(string season, CancellationToken ct)
     {
         if (teamColors.TryGetValue(season, out var cached)) return cached;
-        var colors = new Dictionary<string, string>();
+        var colors = new SeasonColors(int.Parse(season, CultureInfo.InvariantCulture), []);
         try
         {
             var categories = (await GetJsonAsync($"{BaseUrl}/categories?seasonYear={season}", ct)).AsArray();
@@ -310,7 +336,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
                 {
                     if (Str(team!["name"]) is { } name && Str(team["color"]) is { } color && HexColor().IsMatch(color)
                         && !color.Equals(PlaceholderColor, StringComparison.OrdinalIgnoreCase))
-                        colors.TryAdd(name, color.ToUpperInvariant());
+                        colors.Teams.TryAdd(name, color.ToUpperInvariant());
                 }
             }
         }
@@ -327,7 +353,7 @@ public sealed partial class MotoGpSource(HttpClient http) : IEventSource
 
     // Dal 2013 griglia come la ufficiale: prima i 12 del Q2, poi gli altri nell'ordine del Q1 (i primi due del Q1
     // sono passati al Q2). Prima c'era una sessione sola, che arriva qui come q1 senza q2.
-    private static List<ClassificationRow> QualifyingClassification(JsonArray? q1, JsonArray? q2, Dictionary<string, string> colors)
+    private static List<ClassificationRow> QualifyingClassification(JsonArray? q1, JsonArray? q2, SeasonColors colors)
     {
         var q1Rows = q1?.Select(r => r!).ToList() ?? [];
         var q2Rows = q2?.Select(r => r!).ToList() ?? [];
