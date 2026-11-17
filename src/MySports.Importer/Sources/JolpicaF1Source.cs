@@ -8,6 +8,7 @@ namespace MySports.Importer.Sources;
 public sealed class JolpicaF1Source(HttpClient http) : IEventSource
 {
     private readonly OpenF1Client openF1 = new(http);
+    private readonly WikipediaF1Colors wikipedia = new(http);
 
     private const string BaseUrl = "https://api.jolpi.ca/ergast/f1";
     private const int PageSize = 100;                                  // massimo consentito da Jolpica
@@ -109,7 +110,7 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
         }
 
         // Il colore va per scuderia: è lo stesso in tutte le sessioni della stagione.
-        var palette = await GetPaletteAsync(season, ct, races, raceResults, officialSessions);
+        var palette = await GetPaletteAsync(season, ct, raceResults);
         if (palette.Colors.Count == 0) return events;
         return events
             .Select(e => e.Result is null ? e : e with
@@ -124,54 +125,51 @@ public sealed class JolpicaF1Source(HttpClient http) : IEventSource
     private static readonly Palette NoColors = new([], []);
     private readonly Dictionary<string, Palette> palettes = [];
 
-    // Jolpica non ha i colori: vengono da OpenF1 (dal 2023), che però scrive le scuderie in un altro modo ("Red Bull Racing",
-    // "Red Bull"). Si abbinano con il numero del pilota in ogni gara, così si tiene conto anche dei cambi di scuderia.
-    // Eventi e classifiche usano la stessa tabella; con --standings-only si scaricano qui calendario e risultati.
-    // Se OpenF1 non risponde si va avanti senza colori.
-    private async Task<Palette> GetPaletteAsync(
-        string season,
-        CancellationToken ct,
-        JsonArray? races = null,
-        Dictionary<string, List<JsonNode>>? raceResults = null,
-        List<OpenF1Client.Session>? officialSessions = null)
+    // Jolpica non ha i colori: vengono da Wikipedia (WikipediaF1Colors, dal 1983), che li dà per pilota e scrive le scuderie
+    // in un altro modo ("Oracle Red Bull Racing", "Red Bull"). Ogni scuderia Jolpica prende il colore più frequente tra le
+    // gare dei suoi piloti: chi ha cambiato scuderia ha due colori su Wikipedia, ma pesa meno dei compagni rimasti.
+    // Eventi e classifiche usano la stessa tabella; con --standings-only si scaricano qui i risultati.
+    // Se Wikipedia non risponde si va avanti senza colori.
+    private async Task<Palette> GetPaletteAsync(string season, CancellationToken ct, Dictionary<string, List<JsonNode>>? raceResults = null)
     {
         if (palettes.TryGetValue(season, out var cached)) return cached;
-        if (int.Parse(season, CultureInfo.InvariantCulture) < FirstOpenF1Season) return NoColors;
         try
         {
-            races ??= (await GetJsonAsync($"{BaseUrl}/{season}.json?limit={PageSize}", ct))["MRData"]!["RaceTable"]!["Races"]!.AsArray();
-            raceResults ??= await FetchByRoundAsync($"{season}/results", "Results", ct);
-            officialSessions ??= await openF1.GetSessionsAsync(season, ct);
+            var wiki = await wikipedia.GetAsync(season, ct);
+            if (wiki.Count == 0) return palettes[season] = NoColors;
+            var wikiNames = wiki.Select(w => (Name: WikipediaF1Colors.NormalizeName(w.Driver), w.Color)).ToList();
 
-            var raceSessions = officialSessions.Where(s => OpenF1Names.GetValueOrDefault(s.Name) == "race").ToList();
-            if (raceSessions.Count == 0) return NoColors;
-            var colorsBySession = (await openF1.GetDriversAsync(raceSessions.Min(s => s.SessionKey), raceSessions.Max(s => s.SessionKey), ct))
-                .Where(d => d.TeamColour is { Length: 6 } c && c.All(Uri.IsHexDigit))
-                .GroupBy(d => d.SessionKey)
-                .ToDictionary(g => g.Key, g => g.DistinctBy(d => d.Number).ToDictionary(d => d.Number, d => $"#{d.TeamColour!.ToUpperInvariant()}"));
-
-            var palette = new Palette([], []);
-            foreach (var race in races.OrderBy(r => int.Parse(Str(r!["round"])!, CultureInfo.InvariantCulture)))
+            // Colori del pilota su Wikipedia: per cognome, e anche per nome se due piloti hanno lo stesso cognome (Schumacher).
+            List<string> ColorsOf(JsonNode driver)
             {
-                if (!raceResults.TryGetValue(Str(race!["round"])!, out var rows)) continue;
-                var start = ParseStart(race).At;
-                var session = raceSessions.FirstOrDefault(s => (s.Start - start).Duration() < TimeSpan.FromDays(2));
-                var colors = session is null ? null : colorsBySession.GetValueOrDefault(session.SessionKey);
+                var family = $" {WikipediaF1Colors.NormalizeName(Str(driver["familyName"]) ?? "")} ";
+                var given = $" {WikipediaF1Colors.NormalizeName(Str(driver["givenName"]) ?? "").Split(' ')[0]} ";
+                var matches = wikiNames.Where(w => $" {w.Name} ".Contains(family)).ToList();
+                if (matches.Select(w => w.Name).Distinct().Count() > 1 && matches.Where(w => $" {w.Name} ".Contains(given)).ToList() is { Count: > 0 } byGiven)
+                    matches = byGiven;
+                return matches.Select(w => w.Color).Distinct().ToList();
+            }
+
+            raceResults ??= await FetchByRoundAsync($"{season}/results", "Results", ct);
+            var palette = new Palette([], []);
+            var votes = new Dictionary<string, Dictionary<string, int>>();
+            foreach (var (_, rows) in raceResults.OrderBy(r => int.Parse(r.Key, CultureInfo.InvariantCulture)))
+            {
                 foreach (var r in rows)
                 {
                     var team = Str(r["Constructor"]!["name"])!;
                     if (Str(r["Driver"]!["driverId"]) is { } driverId) palette.LastConstructor[driverId] = team;
-                    if (colors is not null && int.TryParse(Str(r["number"]), CultureInfo.InvariantCulture, out var number)
-                        && colors.TryGetValue(number, out var color))
-                        palette.Colors[team] = color;
+                    if (!votes.TryGetValue(team, out var teamVotes)) votes[team] = teamVotes = [];
+                    foreach (var color in ColorsOf(r["Driver"]!)) teamVotes[color] = teamVotes.GetValueOrDefault(color) + 1;
                 }
             }
-            palettes[season] = palette;
-            return palette;
+            foreach (var (team, teamVotes) in votes.Where(v => v.Value.Count > 0))
+                palette.Colors[team] = teamVotes.MaxBy(v => v.Value).Key;
+            return palettes[season] = palette;
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"AVVISO colori delle scuderie {season} da OpenF1: {ex.Message}");
+            Console.Error.WriteLine($"AVVISO colori delle scuderie {season} da Wikipedia: {ex.Message}");
             return NoColors;
         }
     }
