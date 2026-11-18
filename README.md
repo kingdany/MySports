@@ -140,6 +140,7 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Importare i video delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
+- [ ] Europa League, highlights delle partite senza italiane: Sky pubblica quasi solo quelle delle italiane (83 video in tutto da settembre 2024, tutti abbinati). Valutare il canale ufficiale UEFA come riserva dopo Sky, come il canale F1 in inglese: verificare titoli, lingua e se i video si vedono dall'Italia
 - [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; c'è `EspnFootballSource`, basata sull'API pubblica di ESPN, già usata per l'Europa League (dal 2024-25), che varrebbe anche per la Nations League
   - Conference League (`uefa.europa.conf`): come l'Europa League, da verificare classifica e highlights
   - Coppa Italia (`ita.coppa_italia`)

@@ -31,13 +31,15 @@ si scrivono a mano.
 - Serie A 2025-26: Parma-Como (25/10/2025) ha il video Sky perché DAZN l'ha intitolato "Como-Parma", con le squadre
   invertite, e la regola lo scarta. Va bene così.
 - Champions League 2025-26: Kairat-Paphos e Newcastle-Benfica hanno gli highlights solo su sport.sky.it, non su YouTube.
+- Europa League: Sky pubblica gli highlights quasi solo per le partite delle italiane, che li hanno tutti; le altre
+  partite restano quasi tutte senza video, va bene così.
 - MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così.
 
 ## Conteggi
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 18/11/2026, 16:42:01 (ora italiana).
+Dati del 18/11/2026, 18:15:53 (ora italiana).
 
 ## Formula 1
 
@@ -77,5 +79,13 @@ Dati del 18/11/2026, 16:42:01 (ora italiana).
 | 2024-25 | 189 | 189 | 0 | 0 | 189 su 189 |
 
 - 2025-26, senza video: FK Kairat - Paphos FC del 2025-10-21; Newcastle - Benfica del 2025-10-21
+
+## Europa League
+
+| Stagione | Sessioni concluse | Sky Sport | Senza video | Dettaglio partite |
+|---|---|---|---|---|
+| 2026-27 | 72 | 10 | 62 | 72 su 72 |
+| 2025-26 | 189 | 19 | 170 | 189 su 189 |
+| 2024-25 | 189 | 31 | 158 | 189 su 189 |
 
 <!-- fine dati -->

@@ -19,11 +19,18 @@ public sealed partial class EspnFootballSource(Competition competition, string l
 {
     private const string BaseUrl = "https://site.api.espn.com/apis";
 
-    // Nomi brevi ESPN da cambiare (id ESPN -> nome): abbreviazioni ("Spurs", "C Palace"), "AS Roma" per il "Roma" della
-    // Serie A, e i nomi italiani già usati per la Champions League (FootballDataSource.ShortNames).
+    // Nomi brevi ESPN da cambiare (id ESPN -> nome): abbreviazioni ("Spurs", "C Palace"), prefissi che in italiano non si
+    // usano ("FC Porto"), "AS Roma" per il "Roma" della Serie A, e i nomi italiani già usati per la Champions League
+    // (FootballDataSource.ShortNames). I nomi che usano i canali YouTube ("Nizza", "Lione") sono alias in
+    // YouTubeHighlights.TeamAliases: le partite hanno il nome della fonte, come in Champions League.
     private static readonly Dictionary<string, string> ShortNames = new()
     {
         ["104"] = "Roma",                 // "AS Roma"
+        ["437"] = "Porto",                // "FC Porto"
+        ["152"] = "Twente",               // "FC Twente"
+        ["153"] = "Utrecht",              // "FC Utrecht"
+        ["989"] = "Basilea",              // "FC Basel"
+        ["620"] = "Brann",                // "SK Brann"
         ["367"] = "Tottenham",            // "Spurs"
         ["360"] = "Man United",           // "Man Utd", come football-data
         ["384"] = "Crystal Palace",       // "C Palace"
