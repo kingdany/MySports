@@ -40,6 +40,7 @@ export const StandingZones: { id: string; label: string; color: string }[] = [
 export const CompetitionColors: Record<string, string> = {
   'serie-a': '#0a5cad',
   'champions-league': '#1a237e',
+  'europa-league': '#ff6900', // l'arancione del logo
   f1: '#e10600',
   motogp: '#3d3d3d',
 };

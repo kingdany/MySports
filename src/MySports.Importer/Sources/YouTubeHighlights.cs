@@ -72,11 +72,14 @@ public sealed partial class YouTubeHighlights(
             yield return (teams[..i], teams[(i + 1)..]);
     }
 
+    // Il nome del titolo è quello della squadra, o un suo alias. Vale anche il nome come scritto: lo stesso club può avere
+    // nomi diversi nelle fonti ("Stella Rossa" in Europa League da ESPN, "Crvena Zvedza" in Champions League).
     private static bool IsTeam(Team? team, string name)
     {
         name = name.Trim();
         return team?.ShortName is { } shortName
-            && string.Equals(Plain(shortName), Plain(TeamAliases.GetValueOrDefault(name, name)), StringComparison.OrdinalIgnoreCase);
+            && (string.Equals(Plain(shortName), Plain(name), StringComparison.OrdinalIgnoreCase)
+                || string.Equals(Plain(shortName), Plain(TeamAliases.GetValueOrDefault(name, name)), StringComparison.OrdinalIgnoreCase));
     }
 
     // Senza accenti: i canali scrivono sia "Atlético" sia "Atletico", e "Fenerbahce" per "Fenerbahçe".
@@ -171,11 +174,21 @@ public sealed partial class YouTubeHighlights(
     // ("Celtic-Slovan Bratislava 5-1 | Champions League"): allora servono il punteggio e "Champions League".
     // Esclusi gli "extended highlights" e gli "highlights lunghi", pubblicati solo per alcune partite, che
     // doppierebbero il video dello stesso canale.
+    // L'Europa League ha gli stessi titoli ("AZ Alkmaar-Juventus 1-2: gol e highlights | Europa League", "Rennes-Olympiacos:
+    // gli highlights | Europa League"), ma Sky la pubblica quasi solo per le partite delle italiane. Un titolo senza il nome
+    // della competizione vale per entrambe: lo distinguono le squadre, che sono di una sola delle due.
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
-        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle()));
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyChampionsLeagueTitle));
 
-    [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?Champions\s?League)?|(?<=\d)\s*\|\s*(?:Finale\s+)?Champions\s?League)\s*$", RegexOptions.IgnoreCase)]
-    private static partial Regex SkyChampionsLeagueTitle();
+    public static YouTubeHighlights SkySportEuropaLeague(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyEuropaLeagueTitle));
+
+    private const string SkyCupPattern = @"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?COMPETITION)?|(?<=\d)\s*\|\s*(?:Finale\s+)?COMPETITION)\s*$";
+    private static readonly Regex SkyChampionsLeagueTitle = SkyCupTitle(@"Champions\s?League");
+    private static readonly Regex SkyEuropaLeagueTitle = SkyCupTitle(@"Europa\s?League");
+
+    private static Regex SkyCupTitle(string competition) =>
+        new(SkyCupPattern.Replace("COMPETITION", competition), RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     // Prime Video Sport (Italia), di riserva a Sky: trasmette una partita il mercoledì. "PORTO - NAPOLI gol e highlights |
     // UEFA Champions League", a volte con il trattino lungo e senza spazi ("NAPOLI–CHELSEA"), con il punteggio

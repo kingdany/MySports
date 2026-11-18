@@ -31,6 +31,7 @@ si scrivono a mano.
 - Serie A 2025-26: Parma-Como (25/10/2025) ha il video Sky perché DAZN l'ha intitolato "Como-Parma", con le squadre
   invertite, e la regola lo scarta. Va bene così.
 - Champions League 2025-26: Kairat-Paphos e Newcastle-Benfica hanno gli highlights solo su sport.sky.it, non su YouTube.
+- MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così.
 
 ## Conteggi
 

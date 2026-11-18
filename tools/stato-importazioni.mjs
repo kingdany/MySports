@@ -22,6 +22,7 @@ const VIDEO_SESSIONS = new Set(['race', 'qualifying', 'sprint', 'sprint_qualifyi
 const CHANNELS = {
   'serie-a': ['DAZN', 'Sky Sport', 'Serie A'],
   'champions-league': ['Sky Sport', 'Prime Video'],
+  'europa-league': ['Sky Sport'],
   f1: ['Sky Sport F1', 'Formula 1'],
   motogp: ['Sky Sport MotoGP'],
 };

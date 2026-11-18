@@ -17,6 +17,7 @@ const SESSION_LABELS: Record<string, string> = {
 const COMPETITION_LABELS: Record<string, string> = {
   'serie-a': 'Serie A',
   'champions-league': 'Champions League', // nelle righe c'è solo il pallone, nel dettaglio lo spazio c'è
+  'europa-league': 'Europa League',
   f1: 'F1',
   motogp: 'MotoGP',
 };

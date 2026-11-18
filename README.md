@@ -1,6 +1,6 @@
 # MySports
 
-Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Champions League, Formula 1 e MotoGP.
+Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Champions League, Europa League, Formula 1 e MotoGP.
 
 ## Architettura
 
@@ -34,16 +34,16 @@ tools/stato-importazioni.mjs        aggiorna i conteggi di quel documento dai da
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League dal 2024-25, MotoGP dal 1949) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League ed Europa League dal 2024-25, MotoGP dal 1949) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A e Champions League), un solo video per
-sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video).
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A, Champions League ed Europa League), un solo video per
+sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video). Per l'Europa League Sky pubblica quasi solo le partite delle italiane.
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
-Le partite finite di Serie A e Champions League hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
+Le partite finite di Serie A, Champions League ed Europa League hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
 (con rigore o autogol), rigori sbagliati, cartellini (giallo, doppio giallo, rosso) e formazioni (titolari con numero di
 maglia, sostituzioni). Si legge una volta per partita e si conserva come i video; se i gol di ESPN non tornano con il
 risultato, la partita si riprova al giro dopo. Arriva con il giro normale per la stagione corrente e importando una stagione
@@ -85,6 +85,13 @@ dotnet run --project src/MySports.Importer -- --competition champions-league --s
 ```
 
 Per la Champions League si parte dal 2024-25: per il 2023-24 l'API non separa i gironi e dà un'unica classifica di 32 squadre.
+
+L'Europa League viene da ESPN (`EspnFootballSource`, senza chiave), anche lei dal 2024-25: prima c'erano i gironi, che l'app
+non gestisce.
+
+```
+dotnet run --project src/MySports.Importer -- --competition europa-league --seasons 2024-25,2025-26 --out out
+```
 
 Per la MotoGP (classe 500cc fino al 2001) l'archivio parte dal 1949:
 
@@ -133,8 +140,8 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Importare i video delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
-- [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; l'API pubblica di ESPN sì (verificato a novembre 2026), quindi serve una fonte nuova basata su ESPN, che varrebbe anche per la Nations League
-  - Europa League (`uefa.europa`) e Conference League (`uefa.europa.conf`): stagioni come il calcio (`2026-27`); da verificare le classifiche della fase a campionato
+- [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; c'è `EspnFootballSource`, basata sull'API pubblica di ESPN, già usata per l'Europa League (dal 2024-25), che varrebbe anche per la Nations League
+  - Conference League (`uefa.europa.conf`): come l'Europa League, da verificare classifica e highlights
   - Coppa Italia (`ita.coppa_italia`)
   - Supercoppa italiana (`ita.super_cup`) e Supercoppa europea (`uefa.super_cup`): poche partite all'anno (una sola la europea)
   - Mondiale per club (`fifa.cwc`): ogni quattro anni, l'ultimo nel 2025

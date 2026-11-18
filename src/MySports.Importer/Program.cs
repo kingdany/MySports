@@ -36,11 +36,13 @@ IEventSource[] sources =
     new MotoGpSource(http),
     new FootballDataSource(Competition.SerieA, "SA", footballKey, FootballDataSource.SerieAZones, FootballDataSource.SerieAZoneExceptions),
     new FootballDataSource(Competition.ChampionsLeague, "CL", footballKey, FootballDataSource.ChampionsLeagueZones),
+    // football-data.org non ha l'Europa League nel piano gratuito; la fase campionato ha le stesse zone della Champions.
+    new EspnFootballSource(Competition.EuropaLeague, "uefa.europa", FootballDataSource.ChampionsLeagueZones),
 ];
 
 // Highlights YouTube per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
 // ce l'ha. Serie A: DAZN, poi Sky, poi il canale della Serie A. F1: Sky, poi il canale ufficiale in inglese. Champions League: Sky, poi Prime Video
-// (solo la partita del mercoledì che trasmette). MotoGP: Sky.
+// (solo la partita del mercoledì che trasmette). Europa League: Sky (quasi solo le partite delle italiane). MotoGP: Sky.
 // Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
 var videoSources = new Dictionary<string, YouTubeHighlights[]>();
@@ -50,6 +52,7 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
     videoSources[Competition.MotoGP.Id] = [YouTubeHighlights.SkySportMotoGP(http, youtubeKey)];
     videoSources[Competition.SerieA.Id] = [YouTubeHighlights.DaznSerieA(http, youtubeKey), YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.SerieAChannel(http, youtubeKey)];
     videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey), YouTubeHighlights.PrimeVideoChampionsLeague(http, youtubeKey)];
+    videoSources[Competition.EuropaLeague.Id] = [YouTubeHighlights.SkySportEuropaLeague(http, youtubeKey)];
 }
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");
@@ -59,6 +62,7 @@ var matchDetails = new Dictionary<string, EspnMatchDetails>
 {
     [Competition.SerieA.Id] = EspnMatchDetails.SerieA(),
     [Competition.ChampionsLeague.Id] = EspnMatchDetails.ChampionsLeague(),
+    [Competition.EuropaLeague.Id] = EspnMatchDetails.EuropaLeague(),
 };
 
 var publisher = new JsonPublisher(outputDir);

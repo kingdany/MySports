@@ -22,7 +22,7 @@ public sealed partial class EspnMatchDetails(string league)
     private const int CurrentVersion = 2;
 
     // Client proprio: ESPN a volte risponde compresso con gzip anche senza chiederlo.
-    private static readonly HttpClient Http = CreateClient();
+    internal static readonly HttpClient Http = CreateClient(); // anche per EspnFootballSource
 
     // Nomi ESPN senza parole in comune con quelli di football-data.
     private static readonly Dictionary<string, string> TeamAliases = new(StringComparer.OrdinalIgnoreCase)
@@ -50,6 +50,7 @@ public sealed partial class EspnMatchDetails(string league)
     // Leghe ESPN.
     public static EspnMatchDetails SerieA() => new("ita.1");
     public static EspnMatchDetails ChampionsLeague() => new("uefa.champions");
+    public static EspnMatchDetails EuropaLeague() => new("uefa.europa");
 
     // Aggiunge il dettaglio alle partite finite che non lo hanno ancora o lo hanno in un formato vecchio. Se non si riesce
     // a riscaricarlo, il dettaglio vecchio resta.

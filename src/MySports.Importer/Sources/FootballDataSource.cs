@@ -36,6 +36,7 @@ public sealed class FootballDataSource(
         };
 
     // Fase campionato della Champions (dal 2024-25): le prime 8 agli ottavi, dalla 9ª alla 24ª agli spareggi.
+    // Vale anche per l'Europa League, con lo stesso formato.
     public static readonly IReadOnlyList<ZoneRule> ChampionsLeagueZones =
     [
         new(1, 8, "round_of_16"),
@@ -92,7 +93,10 @@ public sealed class FootballDataSource(
 
         // Se i marcatori non arrivano l'errore arriva al chiamante, che tiene tutte le classifiche precedenti.
         var scorersData = await GetJsonAsync($"{BaseUrl}/{competitionCode}/scorers?season={StartYear(season)}&limit={ScorersFetched}", ct);
-        var scorers = ToScorerRows(scorersData["scorers"]?.AsArray().Select(s => s!).ToList() ?? []);
+        var scorers = ScorerRows((scorersData["scorers"]?.AsArray() ?? []).Select(s => (
+            Str(s!["player"]!["name"])!,
+            ShortName(s["team"]!) ?? Str(s["team"]!["name"]),
+            s["goals"]!.GetValue<int>())));
 
         var tables = new List<StandingsTable>();
         if (rows.Count > 0) tables.Add(new StandingsTable("table", "Classifica", rows));
@@ -100,17 +104,17 @@ public sealed class FootballDataSource(
         return tables;
     }
 
-    // L'API non indica la posizione: chi ha gli stessi gol ha lo stesso numero, senza salti (1, 2, 2, 3).
+    // Classifica marcatori da un elenco già ordinato per gol, anche per le altre fonti del calcio (EspnFootballSource).
+    // Le API non indicano la posizione: chi ha gli stessi gol ha lo stesso numero, senza salti (1, 2, 2, 3).
     // L'elenco si chiude quando i nomi sono almeno 10, completando il gruppo di pari merito in corso,
     // quindi l'ultimo numero può essere basso e i nomi più di 10.
     // Points contiene i gol, così la colonna principale è la stessa delle altre classifiche.
-    private static List<StandingRow> ToScorerRows(List<JsonNode> scorers)
+    public static List<StandingRow> ScorerRows(IEnumerable<(string Name, string? Team, int Goals)> scorers)
     {
         var rows = new List<StandingRow>();
         var pos = 0;
-        foreach (var scorer in scorers)
+        foreach (var (name, team, goals) in scorers)
         {
-            var goals = scorer["goals"]!.GetValue<int>();
             if (rows.Count == 0 || rows[^1].Points != goals)
             {
                 if (rows.Count >= ScorersShown) break;
@@ -120,8 +124,8 @@ public sealed class FootballDataSource(
             {
                 Pos = pos,
                 PosText = pos.ToString(CultureInfo.InvariantCulture),
-                Name = Str(scorer["player"]!["name"])!,
-                Team = ShortName(scorer["team"]!) ?? Str(scorer["team"]!["name"]),
+                Name = name,
+                Team = team,
                 Points = goals,
             });
         }
