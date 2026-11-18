@@ -20,6 +20,9 @@ public sealed partial class YouTubeHighlights(
     // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese:
     // il limite serve solo al recupero delle stagioni passate, i giri normali leggono pochi giorni.
     private const int MaxPages = 1000;
+    // A metà playlist YouTube a volte risponde 404 (playlistNotFound) su una pagina che poco dopo funziona: si riprova,
+    // poi ci si ferma a quello che si è letto, invece di perdere tutto il canale.
+    private const int MaxPageNotFoundRetries = 2;
     // La playlist dei caricamenti dà al massimo gli ultimi 20.000 video del canale: DAZN Italia (circa 31.700) arriva così
     // solo a novembre 2024, Sky Sport (circa 36.900) a settembre 2024.
     private const int UploadsLimit = 20_000;
@@ -33,8 +36,9 @@ public sealed partial class YouTubeHighlights(
     // cercano una per una, con le squadre come parole chiave, quando in una finestra ne restano al massimo
     // MaxTargetedSessions: una ricerca per partita costa meno di un periodo intero. Con più partite in attesa (una stagione
     // recuperata per la prima volta, un turno intero) il periodo costa meno. Le ricerche mirate si fanno per prime, così la
-    // quota non finisce nei periodi, che per le partite rimaste dopo un recupero trovano ormai poco.
-    private const int MaxTargetedSessions = 3;
+    // quota non finisce nei periodi, che per le partite rimaste dopo un recupero trovano ormai poco. Con 3 restavano ai
+    // periodi le partite ravvicinate (4 dal 2 al 5/02/2024), che i periodi non trovavano; un turno intero resta ai periodi.
+    private const int MaxTargetedSessions = 5;
     // Ricerche per partita: nomi brevi, poi un nome usato dai canali (TeamAliases, es. "Hellas" per "Verona").
     private const int MaxTargetedQueries = 2;
     // Le ricerche hanno una quota giornaliera a parte ("Search Queries per day", 100 richieste) che non tocca quella delle
@@ -408,12 +412,16 @@ public sealed partial class YouTubeHighlights(
         var uploads = new List<Upload>();
         string? pageToken = null;
         var pages = 0;
+        var failed = false;
         for (var page = 0; page < MaxPages; page++)
         {
             pages++;
-            var data = await HttpJson.GetAsync(http,
-                $"{BaseUrl}/playlistItems?part=snippet&maxResults=50&playlistId={playlistId}&key={apiKey}" +
-                (pageToken is null ? "" : $"&pageToken={pageToken}"), "YouTube", 0, ct);
+            var data = await ReadUploadsPageAsync(playlistId, pageToken, ct);
+            if (data is null)
+            {
+                failed = true;
+                break;
+            }
 
             foreach (var item in data["items"]!.AsArray())
             {
@@ -431,7 +439,8 @@ public sealed partial class YouTubeHighlights(
         }
 
         // Quanto si è letto e perché ci si è fermati: se un video manca, si vede se la lettura era arrivata alla sua data.
-        var stop = uploads.Count > 0 && uploads[^1].PublishedAt < since ? "arrivata alla sessione più vecchia"
+        var stop = failed ? "YouTube ha risposto 404 a metà playlist anche riprovando"
+            : uploads.Count > 0 && uploads[^1].PublishedAt < since ? "arrivata alla sessione più vecchia"
             : pageToken is null ? $"fine della playlist ({uploads.Count} video)"
             : $"limite di {MaxPages} pagine";
         Console.WriteLine($"Video {sourceName}: letti {uploads.Count} caricamenti in {pages} pagine" +
@@ -446,6 +455,27 @@ public sealed partial class YouTubeHighlights(
             .ToList();
         LogSome("caricamenti fuori ordine di data", outOfOrder);
         return uploads;
+    }
+
+    // Una pagina dei caricamenti; null se dopo la prima pagina YouTube continua a rispondere 404 (MaxPageNotFoundRetries).
+    // Sulla prima pagina il 404 vuol dire davvero che la playlist non esiste, e resta un errore.
+    private async Task<JsonNode?> ReadUploadsPageAsync(string playlistId, string? pageToken, CancellationToken ct)
+    {
+        var url = $"{BaseUrl}/playlistItems?part=snippet&maxResults=50&playlistId={playlistId}&key={apiKey}" +
+                  (pageToken is null ? "" : $"&pageToken={pageToken}");
+        for (var attempt = 0; ; attempt++)
+        {
+            try
+            {
+                return await HttpJson.GetAsync(http, url, "YouTube", 0, ct);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound && pageToken is not null)
+            {
+                Console.Error.WriteLine($"AVVISO video {sourceName}: {ex.Message}");
+                if (attempt >= MaxPageNotFoundRetries) return null;
+                await Task.Delay(TimeSpan.FromSeconds(10 * (attempt + 1)), ct);
+            }
+        }
     }
 
     // Cerca i video pubblicati prima di "before" nei MaxDelay dopo le sessioni ancora senza video, e li aggiunge a uploads.

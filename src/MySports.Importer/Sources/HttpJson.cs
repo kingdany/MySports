@@ -47,7 +47,8 @@ public static class HttpJson
                 }
                 if (!res.IsSuccessStatusCode)
                     throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {HideKey(url)}" +
-                                                   (await ErrorReasonAsync(res, ct) is { } reason ? $" ({reason})" : ""));
+                                                   (await ErrorReasonAsync(res, ct) is { } reason ? $" ({reason})" : ""),
+                                                   null, res.StatusCode);
                 return JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
             }
         }
