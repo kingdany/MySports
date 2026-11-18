@@ -1,59 +1,101 @@
+import { useMemo } from 'react';
 import { Pressable, ScrollView, StyleSheet } from 'react-native';
 
 import { CompetitionLogo, hasLogo, hasWordmark } from '@/components/CompetitionLogo';
+import { SportIcon, hasSportIcon } from '@/components/SportIcon';
 import { Text, useThemeColor } from '@/components/Themed';
 import { CompetitionColors } from '@/constants/Colors';
+import { groupBySport } from '@/lib/sports';
 import type { CompetitionInfo } from '@/lib/types';
 
 type Props = {
   competitions: CompetitionInfo[];
-  selected: string | null; // null = "Tutti"
-  onSelect: (id: string | null) => void;
-  showAll?: boolean; // offre la voce "Tutti"
+  sport: string | null; // null = "Tutti"
+  competition: string | null; // null = "Tutte" le competizioni dello sport (o "Tutti")
+  onSelectSport: (sport: string | null) => void;
+  onSelectCompetition: (id: string | null) => void;
+  showAll?: boolean; // offre "Tutti" sopra e "Tutte" sotto (Prossimi)
 };
 
-// Barra scorrevole per scegliere la competizione.
-export function CompetitionBar({ competitions, selected, onSelect, showAll = false }: Props) {
+// Due barre scorrevoli: sopra gli sport (Calcio, Motori), sotto le competizioni dello sport scelto, solo se ne ha più di
+// una. Così una riga sola non si allunga con ogni competizione aggiunta.
+export function CompetitionBar({ competitions, sport, competition, onSelectSport, onSelectCompetition, showAll = false }: Props) {
   const tint = useThemeColor({}, 'tint');
+  const sports = useMemo(() => groupBySport(competitions), [competitions]);
+  const current = sports.find((s) => s.id === sport);
 
-  if (competitions.length === 0) return null;
+  if (sports.length === 0) return null;
 
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.bar} contentContainerStyle={styles.content}>
-      {showAll && <Chip label="Tutti" active={selected === null} activeColor={tint} onPress={() => onSelect(null)} />}
-      {competitions.map((c) => (
-        <Chip
-          key={c.id}
-          id={c.id}
-          label={c.name} // nome completo ("Champions League"): quello breve sembrava un'abbreviazione
-          active={selected === c.id}
-          activeColor={CompetitionColors[c.id] ?? tint}
-          onPress={() => onSelect(c.id)}
-        />
-      ))}
-    </ScrollView>
+    <>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.bar} contentContainerStyle={styles.content}>
+        {showAll && <Chip size={LARGE} label="Tutti" active={sport === null} activeColor={tint} onPress={() => onSelectSport(null)} />}
+        {sports.map((s) => (
+          <Chip
+            key={s.id}
+            size={LARGE}
+            sport={s.id}
+            label={s.name}
+            active={sport === s.id}
+            activeColor={tint}
+            onPress={() => onSelectSport(s.id)}
+          />
+        ))}
+      </ScrollView>
+      {current && current.competitions.length > 1 && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.bar}
+          contentContainerStyle={[styles.content, styles.subContent]}>
+          {showAll && (
+            <Chip size={SMALL} label="Tutte" active={competition === null} activeColor={tint} onPress={() => onSelectCompetition(null)} />
+          )}
+          {current.competitions.map((c) => (
+            <Chip
+              key={c.id}
+              size={SMALL}
+              logo={c.id}
+              label={c.name} // nome completo ("Champions League"): quello breve sembrava un'abbreviazione
+              active={competition === c.id}
+              activeColor={CompetitionColors[c.id] ?? tint}
+              onPress={() => onSelectCompetition(c.id)}
+            />
+          ))}
+        </ScrollView>
+      )}
+    </>
   );
 }
 
-// Pulsanti tutti larghi uguali, così nessuna competizione sembra più importante. Quello che non ci sta si rimpicciolisce:
-// i loghi che sono già il nome (F1, MotoGP) stanno nella stessa larghezza, e la MotoGP, più lunga, viene più bassa; i
-// nomi lunghi ("Champions League" accanto al pallone) vanno su due righe.
-const CHIP_WIDTH = 132;
-const WORDMARK_WIDTH = 72;
-const LOGO_HEIGHT = 24;
+// Pulsanti tutti larghi uguali in ogni barra, così nessuna competizione sembra più importante. Quello che non ci sta si
+// rimpicciolisce: i loghi che sono già il nome (F1, MotoGP) stanno nella stessa larghezza, e la MotoGP, più lunga, viene
+// più bassa; i nomi lunghi ("Champions League" accanto al pallone) vanno su due righe. I pulsanti delle competizioni hanno
+// le misure di quando la barra era una sola: più bassi (32), "Champions League" su due righe non si leggeva bene.
+type Size = {
+  width: number; height: number; icon: number; logoHeight: number; wordmarkWidth: number;
+  fontSize: number; twoLinesFontSize: number; twoLinesLineHeight: number;
+};
+const LARGE: Size = {
+  width: 112, height: 36, icon: 20, logoHeight: 24, wordmarkWidth: 72, fontSize: 15, twoLinesFontSize: 13, twoLinesLineHeight: 15,
+};
+const SMALL: Size = {
+  width: 132, height: 36, icon: 20, logoHeight: 22, wordmarkWidth: 72, fontSize: 14, twoLinesFontSize: 13, twoLinesLineHeight: 15,
+};
 const TWO_LINES_FROM = 10; // caratteri: "Serie A" sta su una riga, "Champions League" va su due
 
-// Logo e nome della competizione; per F1 e MotoGP il logo è già il nome e sta da solo. Attiva, sullo sfondo del colore
-// della competizione, il logo diventa bianco come il testo.
-function Chip({ id, label, active, activeColor, onPress }: {
-  id?: string; label: string; active: boolean; activeColor: string; onPress: () => void;
+// Icona dello sport, oppure logo della competizione, e nome; per F1 e MotoGP il logo è già il nome e sta da solo. Attivo,
+// sullo sfondo del colore della competizione (o del tema), il disegno diventa del colore del testo.
+function Chip({ size, sport, logo: logoId, label, active, activeColor, onPress }: {
+  size: Size; sport?: string; logo?: string; label: string; active: boolean; activeColor: string; onPress: () => void;
 }) {
   const card = useThemeColor({}, 'card');
+  const text = useThemeColor({}, 'text');
   const tint = useThemeColor({}, 'tint');
   const background = useThemeColor({}, 'background');
-  // "Tutti" attivo usa il colore del tema, che in modalità scura è chiaro: il testo prende il colore dello sfondo.
+  // Il colore del tema, in modalità scura, è chiaro: sopra il testo prende il colore dello sfondo.
   const activeText = activeColor === tint ? background : '#fff';
-  const logo = id && hasLogo(id) ? id : null;
+  const logo = logoId && hasLogo(logoId) ? logoId : null;
   const wordmark = logo !== null && hasWordmark(logo);
   const twoLines = label.length > TWO_LINES_FROM;
   return (
@@ -62,12 +104,13 @@ function Chip({ id, label, active, activeColor, onPress }: {
       accessibilityRole="button"
       accessibilityLabel={label}
       accessibilityState={{ selected: active }}
-      style={[styles.chip, { backgroundColor: active ? activeColor : card }]}>
+      style={[styles.chip, { width: size.width, height: size.height, backgroundColor: active ? activeColor : card }]}>
+      {sport && hasSportIcon(sport) && <SportIcon sport={sport} size={size.icon} color={active ? activeText : text} />}
       {logo !== null && (
         <CompetitionLogo
           id={logo}
-          height={LOGO_HEIGHT}
-          maxWidth={WORDMARK_WIDTH} // vale solo per F1 e MotoGP, gli altri sono più stretti
+          height={size.logoHeight}
+          maxWidth={size.wordmarkWidth} // vale solo per F1 e MotoGP, gli altri sono più stretti
           mono={active ? activeText : undefined}
         />
       )}
@@ -78,7 +121,12 @@ function Chip({ id, label, active, activeColor, onPress }: {
           numberOfLines={twoLines ? 2 : 1}
           adjustsFontSizeToFit
           minimumFontScale={0.6}
-          style={[styles.chipText, twoLines && styles.chipTextTwoLines, active && { color: activeText }]}>
+          style={[
+            styles.chipText,
+            { fontSize: size.fontSize },
+            twoLines && { fontSize: size.twoLinesFontSize, lineHeight: size.twoLinesLineHeight, textAlign: 'center' },
+            active && { color: activeText },
+          ]}>
           {label}
         </Text>
       )}
@@ -89,11 +137,8 @@ function Chip({ id, label, active, activeColor, onPress }: {
 const styles = StyleSheet.create({
   bar: { flexGrow: 0, flexShrink: 0 }, // altrimenti la lista sottostante, più lunga dello schermo, la schiaccia
   content: { flexDirection: 'row', gap: 8, paddingHorizontal: 16, paddingVertical: 10 },
-  // Misura fissa: con o senza logo, i pulsanti sono tutti uguali.
-  chip: {
-    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6,
-    width: CHIP_WIDTH, height: 36, paddingHorizontal: 10, borderRadius: 8,
-  },
-  chipText: { flexShrink: 1, fontSize: 15, fontWeight: '600' },
-  chipTextTwoLines: { fontSize: 13, lineHeight: 15, textAlign: 'center' },
+  subContent: { paddingTop: 0 }, // attaccata alla barra degli sport, di cui fa parte
+  // Misura fissa: con o senza logo, i pulsanti di una barra sono tutti uguali.
+  chip: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6, paddingHorizontal: 10, borderRadius: 8 },
+  chipText: { flexShrink: 1, fontWeight: '600' },
 });

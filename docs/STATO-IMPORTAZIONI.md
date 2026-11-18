@@ -23,9 +23,8 @@ si scrivono a mano.
   (28/02/2024, "INTER-ATALANTA 4-0, poker a San Siro | ...") ha la virgola dopo il punteggio, ora accettata; l'altro
   Inter-Atalanta 4-0 di DAZN è la partita del 30/08/2024. Cagliari-Frosinone (29/10/2023, "... | Cagliari-Frosinone |
   Serie A TIM | DAZN") non ha né punteggio né "Highlights", come le interviste: ha il video del canale ufficiale della
-  Serie A, aggiunto come terza scelta. Il primo recupero ha preso la versione inglese (VmWKg55sFO8), pubblicata prima;
-  ora la regola tiene solo l'italiana, quindi il prossimo giro toglie l'inglese e serve un altro recupero della
-  stagione per avere fsCzv8Kik38. Un recupero può fallire per un 404 temporaneo di YouTube (`playlistNotFound`) a
+  Serie A, aggiunto come terza scelta. Il canale pubblica ogni partita in italiano e in inglese, e la regola tiene solo
+  l'italiana (fsCzv8Kik38). Un recupero può fallire per un 404 temporaneo di YouTube (`playlistNotFound`) a
   metà lettura dei caricamenti: ora la pagina si riprova.
 - Serie A 2024-25: Torino-Lecce ha solo il video Sky, DAZN non ha pubblicato gli highlights. Il resto è DAZN dal
   recupero del 16/11/2026.
@@ -37,7 +36,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 18/11/2026, 16:29:00 (ora italiana).
+Dati del 18/11/2026, 16:42:01 (ora italiana).
 
 ## Formula 1
 

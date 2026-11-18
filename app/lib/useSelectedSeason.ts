@@ -45,10 +45,25 @@ export function useSelectedSeason(selection: SeasonRef | null) {
 
 // Competizione e stagione mostrate da Risultati e Classifiche. La competizione è condivisa e resta salvata
 // (senza una scelta valida vale la prima di meta.json); la stagione riparte da quella corrente a ogni cambio.
+// Scegliendo uno sport si torna all'ultima competizione scelta in quello sport, altrimenti alla sua prima.
 export function useCompetitionSeason() {
   const events = useEvents();
-  const { competition: chosen, setCompetition } = usePreferences();
+  const { competition: chosen, setCompetition, competitionBySport, rememberCompetition } = usePreferences();
   const competition = events.competitions.find((c) => c.id === chosen) ?? events.competitions[0] ?? null;
+
+  const competitions = events.competitions;
+  const selectCompetition = useCallback((id: string | null) => {
+    const next = competitions.find((c) => c.id === id);
+    if (!next) return;
+    setCompetition(next.id);
+    rememberCompetition(next.sport, next.id);
+  }, [competitions, setCompetition, rememberCompetition]);
+
+  const selectSport = useCallback((sport: string | null) => {
+    const inSport = competitions.filter((c) => c.sport === sport);
+    const next = inSport.find((c) => c.id === competitionBySport[sport ?? '']) ?? inSport[0];
+    if (next) setCompetition(next.id);
+  }, [competitions, competitionBySport, setCompetition]);
 
   const [picked, setPicked] = useState<SeasonRef | null>(null);
   if (picked && picked.competition !== competition?.id) setPicked(null);
@@ -65,7 +80,8 @@ export function useCompetitionSeason() {
     competitions: events.competitions,
     competition,
     season,
-    selectCompetition: setCompetition,
+    selectSport,
+    selectCompetition,
     selectSeason: (next: string) => {
       if (competition) setPicked({ competition: competition.id, season: next });
     },

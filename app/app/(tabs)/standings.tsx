@@ -38,7 +38,7 @@ const columnsOf = (tableId: string | undefined) =>
 
 export default function StandingsScreen() {
   const {
-    competitions, competition, season, selectCompetition, selectSeason, file, error, refreshing, refresh,
+    competitions, competition, season, selectSport, selectCompetition, selectSeason, file, error, refreshing, refresh,
   } = useCompetitionSeason();
   const [tableId, setTableId] = useState('drivers');
   const muted = useThemeColor({}, 'muted');
@@ -63,7 +63,13 @@ export default function StandingsScreen() {
 
   return (
     <FullNameToast>
-      <CompetitionBar competitions={competitions} selected={competition?.id ?? null} onSelect={selectCompetition} />
+      <CompetitionBar
+        competitions={competitions}
+        sport={competition?.sport ?? null}
+        competition={competition?.id ?? null}
+        onSelectSport={selectSport}
+        onSelectCompetition={selectCompetition}
+      />
       <SeasonPicker competition={competition} season={season} onSelect={selectSeason} />
 
       {segments.length > 1 && (

@@ -10,7 +10,7 @@ import { useTeamFilter } from '@/lib/useTeamFilter';
 
 export default function ResultsScreen() {
   const {
-    competitions, competition, season, selectCompetition, selectSeason, file, error, refreshing, refresh,
+    competitions, competition, season, selectSport, selectCompetition, selectSeason, file, error, refreshing, refresh,
   } = useCompetitionSeason();
 
   // Dal più recente. Le prove libere non hanno risultati da mostrare: restano solo partite e sessioni con classifica.
@@ -22,7 +22,13 @@ export default function ResultsScreen() {
 
   return (
     <View style={{ flex: 1 }}>
-      <CompetitionBar competitions={competitions} selected={competition?.id ?? null} onSelect={selectCompetition} />
+      <CompetitionBar
+        competitions={competitions}
+        sport={competition?.sport ?? null}
+        competition={competition?.id ?? null}
+        onSelectSport={selectSport}
+        onSelectCompetition={selectCompetition}
+      />
       <SeasonPicker competition={competition} season={season} onSelect={selectSeason} />
       <TeamPicker teams={team.teams} teamId={team.teamId} onSelect={team.selectTeam} />
       <EventList
