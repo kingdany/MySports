@@ -145,15 +145,22 @@ public sealed partial class YouTubeHighlights(
     // HIGHLIGHTS | SERIE A ENILIVE 2026/27"): le squadre (con il punteggio facoltativo) sono a inizio titolo o tra due "|",
     // seguite da "| HIGHLIGHTS |", e poi serve "Serie A". Così restano esclusi "EXTENDED HIGHLIGHTS" e "MAXI SINTESI"
     // (giorni dopo), "CINEMATIC HIGHLIGHTS", i "CLASSIC HIGHLIGHTS" delle stagioni passate, i gol singoli, la Primavera.
+    // Ogni partita esce in italiano e in inglese ("Adopo Fires Stunning Winner | CAGLIARI-FROSINONE | HIGHLIGHTS | Serie A
+    // 2026/27", spesso prima): si tiene solo l'italiana, che ha lo sponsor dopo "Serie A" ("SERIE A TIM", "SERIE A
+    // ENILIVE"), mentre l'inglese ha subito l'anno. Si scarta l'anno subito dopo, non si cerca lo sponsor, che cambia.
     // I suoi video si possono incorporare, a differenza di quelli DAZN.
     public static YouTubeHighlights SerieAChannel(HttpClient http, string apiKey)
     {
         var byTeams = ByTeams(SerieAChannelTitle());
-        return new(http, apiKey, "UCBJeMCIeLQos7wacox4hmLQ", "Serie A", title => DaznExcluded().IsMatch(title) ? null : byTeams(title));
+        return new(http, apiKey, "UCBJeMCIeLQos7wacox4hmLQ", "Serie A", title =>
+            DaznExcluded().IsMatch(title) || SerieAChannelEnglish().IsMatch(title) ? null : byTeams(title));
     }
 
     [GeneratedRegex(@"(?:^|\|)\s*([^|]+?-[^|]+?)(?:\s+\d+-\d+)?\s*\|\s*HIGHLIGHTS\s*\|.*\bSerie\s?A\b", RegexOptions.IgnoreCase)]
     private static partial Regex SerieAChannelTitle();
+
+    [GeneratedRegex(@"\bSerie\s?A\s+(?:19|20)\d{2}", RegexOptions.IgnoreCase)]
+    private static partial Regex SerieAChannelEnglish();
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
     // il punteggio è seguito da "dts" o "dcr", anche tra parentesi ("Sporting-Bodø/Glimt 5-0 dts: ...",
