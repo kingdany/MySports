@@ -34,7 +34,16 @@ si scrivono a mano.
   cercati per periodo. Cagliari-Frosinone e Inter-Atalanta non sono uscite neanche dalla ricerca mirata. Un primo
   tentativo dello stesso giorno era fallito per un 404 temporaneo di YouTube (`playlistNotFound`) a metà lettura dei
   caricamenti DAZN, che faceva saltare tutto il canale (ora la pagina si riprova). Il limite della ricerca mirata è
-  passato da 3 a 5 partite per finestra: al prossimo recupero anche gli otto dei due gruppi si cercano una per una.
+  passato da 3 a 5 partite per finestra. Il recupero successivo, dello stesso giorno (10 pagine DAZN, 1 Sky), ha trovato
+  tutti gli otto dei due gruppi. Restano Cagliari-Frosinone (29/10/2023) e Inter-Atalanta (28/02/2024): la ricerca mirata
+  non restituisce nei 3 giorni dopo la partita nessun video che la regola accetti. Entrambi i video ci sono, ma i
+  titoli non passano la regola DAZN. Inter-Atalanta (aBiWwdjlkLM) è "Capolista a +12: INTER-ATALANTA 4-0, poker a San
+  Siro | Serie A TIM | DAZN HIghlights", con la virgola dopo il punteggio: la regola ora la accetta e il prossimo
+  recupero dovrebbe trovarla (l'altro Inter-Atalanta 4-0 di DAZN, tuFcpdMYOvA, è la partita del 30/08/2024).
+  Cagliari-Frosinone (V4XtFHTucrY) è "Da 0-3 a 4-3! PAVOLETTI risponde a SOULÉ e la ribalta | Cagliari-Frosinone |
+  Serie A TIM | DAZN", senza punteggio né "Highlights": ha la forma delle interviste, che la regola esclude. Per questa
+  si è aggiunto come terza scelta il canale ufficiale della Serie A, che ha "CAGLIARI-FROSINONE 4-3 | HIGHLIGHTS | 10ª
+  GIORNATA | SERIE A TIM 2023/24" (fsCzv8Kik38).
 - Serie A 2024-25: Torino-Lecce ha solo il video Sky, DAZN non ha pubblicato gli highlights. Il resto è DAZN dal
   recupero del 16/11/2026.
 - Serie A 2025-26: Parma-Como (25/10/2025) ha il video Sky perché DAZN l'ha intitolato "Como-Parma", con le squadre
@@ -45,7 +54,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 18/11/2026, 15:38:46 (ora italiana).
+Dati del 18/11/2026, 16:02:17 (ora italiana).
 
 ## Formula 1
 
@@ -74,9 +83,9 @@ Dati del 18/11/2026, 15:38:46 (ora italiana).
 | 2026-27 | 110 | 110 | 0 | 0 | 110 su 110 |
 | 2025-26 | 380 | 379 | 1 | 0 | 380 su 380 |
 | 2024-25 | 380 | 379 | 1 | 0 | 380 su 380 |
-| 2023-24 | 380 | 370 | 0 | 10 | 380 su 380 |
+| 2023-24 | 380 | 378 | 0 | 2 | 380 su 380 |
 
-- 2023-24, senza video: Cagliari - Frosinone del 2023-10-29; Lecce - Fiorentina del 2024-02-02; Frosinone - Milan del 2024-02-03; Napoli - Verona del 2024-02-04; Roma - Cagliari del 2024-02-05; Inter - Atalanta del 2024-02-28; Napoli - Torino del 2024-03-08; Cagliari - Salernitana del 2024-03-09; Bologna - Inter del 2024-03-09; Lecce - Verona del 2024-03-10
+- 2023-24, senza video: Cagliari - Frosinone del 2023-10-29; Inter - Atalanta del 2024-02-28
 
 ## Champions League
 

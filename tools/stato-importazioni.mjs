@@ -20,7 +20,7 @@ const VIDEO_SESSIONS = new Set(['race', 'qualifying', 'sprint', 'sprint_qualifyi
 // Canali in ordine di preferenza, per l'ordine delle colonne (videoSources in Program.cs, "source" dei video).
 // Un canale che compare nei dati ma non qui ha comunque la sua colonna, in fondo.
 const CHANNELS = {
-  'serie-a': ['DAZN', 'Sky Sport'],
+  'serie-a': ['DAZN', 'Sky Sport', 'Serie A'],
   'champions-league': ['Sky Sport', 'Prime Video'],
   f1: ['Sky Sport F1', 'Formula 1'],
   motogp: ['Sky Sport MotoGP'],

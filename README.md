@@ -39,7 +39,7 @@ tools/stato-importazioni.mjs        aggiorna i conteggi di quel documento dai da
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
 Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A e Champions League), un solo video per
-sessione, in italiano: DAZN per la Serie A (Sky se manca), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video).
+sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video).
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 

@@ -140,6 +140,21 @@ public sealed partial class YouTubeHighlights(
     [GeneratedRegex(@"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+)?[:,]\s*(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s+Serie\s?A)?\s*\|\s*Serie\s?A\s*$", RegexOptions.IgnoreCase)]
     private static partial Regex SkySerieATitle();
 
+    // Canale ufficiale della Serie A, di riserva a DAZN e Sky. "CAGLIARI-FROSINONE 4-3 | HIGHLIGHTS | 10ª GIORNATA | SERIE A
+    // TIM 2023/24"; dal 2026-27 prima c'è una frase, in italiano o in inglese ("Pisacane Torna a Vincere | CAGLIARI-FROSINONE |
+    // HIGHLIGHTS | SERIE A ENILIVE 2026/27"): le squadre (con il punteggio facoltativo) sono a inizio titolo o tra due "|",
+    // seguite da "| HIGHLIGHTS |", e poi serve "Serie A". Così restano esclusi "EXTENDED HIGHLIGHTS" e "MAXI SINTESI"
+    // (giorni dopo), "CINEMATIC HIGHLIGHTS", i "CLASSIC HIGHLIGHTS" delle stagioni passate, i gol singoli, la Primavera.
+    // I suoi video si possono incorporare, a differenza di quelli DAZN.
+    public static YouTubeHighlights SerieAChannel(HttpClient http, string apiKey)
+    {
+        var byTeams = ByTeams(SerieAChannelTitle());
+        return new(http, apiKey, "UCBJeMCIeLQos7wacox4hmLQ", "Serie A", title => DaznExcluded().IsMatch(title) ? null : byTeams(title));
+    }
+
+    [GeneratedRegex(@"(?:^|\|)\s*([^|]+?-[^|]+?)(?:\s+\d+-\d+)?\s*\|\s*HIGHLIGHTS\s*\|.*\bSerie\s?A\b", RegexOptions.IgnoreCase)]
+    private static partial Regex SerieAChannelTitle();
+
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
     // il punteggio è seguito da "dts" o "dcr", anche tra parentesi ("Sporting-Bodø/Glimt 5-0 dts: ...",
     // "Liverpool-PSG 0-1 (1-5 d.c.r): ..."), e a volte manca "| Champions League" ("Atalanta-Bayern Monaco 1-6: gol e
@@ -207,8 +222,9 @@ public sealed partial class YouTubeHighlights(
 
     [GeneratedRegex(@"\bSerie\s?[BC]|\bLa\s?Liga\b|\bLiga\b|\bCoppa\b|Supercoppa|Champions|Europa League|Conference|Bundesliga|Premier|Ligue|\bUEFA\b|\bFIFA\b", RegexOptions.IgnoreCase)]
     private static partial Regex DaznOtherCompetition();
-    // Dopo "Casa-Trasferta": punteggio (facoltativo) e poi "|", "!" o "Serie A".
-    [GeneratedRegex(@"^\s*(\d+\s*-\s*\d+\s*)?(?:[|!]|serie\s?a)")]
+    // Dopo "Casa-Trasferta": punteggio (facoltativo) e poi "|", "!" o "Serie A". Dopo il punteggio può esserci anche una
+    // virgola con altro testo libero ("INTER-ATALANTA 4-0, poker a San Siro | Serie A TIM | DAZN HIghlights").
+    [GeneratedRegex(@"^\s*(?:(?<score>\d+\s*-\s*\d+)\s*,|(?<score>\d+\s*-\s*\d+\s*)?(?:[|!]|serie\s?a))")]
     private static partial Regex AfterTeams();
 
     // Nome breve della squadra e nomi che i canali usano al suo posto ("Hellas Verona" per "Verona"), senza accenti.
@@ -226,7 +242,7 @@ public sealed partial class YouTubeHighlights(
         {
             if (i > 0 && char.IsLetter(title[i - 1])) continue;
             var after = AfterTeams().Match(title[(i + pair.Length)..]);
-            if (after.Success && (after.Groups[1].Success || highlights)) return true;
+            if (after.Success && (after.Groups["score"].Success || highlights)) return true;
         }
         return false;
     }
