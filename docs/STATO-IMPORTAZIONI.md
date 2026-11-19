@@ -6,10 +6,6 @@ si scrivono a mano.
 
 ## Da fare
 
-- Nomi italiani delle squadre (19/11/2026): ripubblicare le stagioni 2024-25,2025-26,2026-27 di champions-league,
-  europa-league e conference-league con "Aggiorna dati" ("Stagioni passate" e "Competizione", senza altre opzioni), una
-  competizione per volta. Il giro normale aggiorna da solo solo la stagione in corso. Provato in locale: nessun video e
-  nessun dettaglio perso.
 - Video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi" nel README), poche
   stagioni per volta per la quota YouTube: le ricerche hanno una quota giornaliera (circa 100 pagine) che si azzera alle
   9 italiane. Una stagione intera di Serie A ne richiede circa 140, quindi due giorni.
@@ -58,7 +54,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 19/11/2026, 16:06:24 (ora italiana).
+Dati del 19/11/2026, 17:42:49 (ora italiana).
 
 ## Formula 1
 
@@ -105,7 +101,7 @@ Dati del 19/11/2026, 16:06:24 (ora italiana).
 | 2025-26 | 189 | 28 | 154 | 7 | 189 su 189 |
 | 2024-25 | 189 | 45 | 23 | 121 | 189 su 189 |
 
-- 2025-26, senza video: PAOK - Maccabi Tel-Aviv del 2025-09-24; Genk - Betis del 2025-10-23; Sturm Graz - Nottingham Forest del 2025-11-06; Viktoria Plzen - Fenerbahce del 2025-11-06; Viktoria Plzen - Freiburg del 2025-11-27; Panathinaikos - Viktoria Plzen del 2025-12-11; Go Ahead Eagles - Braga del 2026-01-29
+- 2025-26, senza video: PAOK - Maccabi Tel Aviv del 2025-09-24; Genk - Real Betis del 2025-10-23; Sturm Graz - Nottingham Forest del 2025-11-06; Viktoria Plzeň - Fenerbahçe del 2025-11-06; Viktoria Plzeň - Friburgo del 2025-11-27; Panathinaikos - Viktoria Plzeň del 2025-12-11; Go Ahead Eagles - Braga del 2026-01-29
 
 ## Conference League
 
