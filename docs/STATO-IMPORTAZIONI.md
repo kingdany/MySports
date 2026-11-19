@@ -6,18 +6,17 @@ si scrivono a mano.
 
 ## Da fare
 
-- Conference League (aggiunta il 19/11/2026): "Aggiorna dati" con "Stagioni passate" 2024-25,2025-26,2026-27,
-  "Competizione" conference-league e "Recupera i video". In locale: video per 36 partite su 153 nella 2024-25, 79 su
-  153 nella 2025-26, 10 su 54 giocate nella 2026-27, e nessun titolo rimasto senza partita. Il sito di Sky ha gli
-  highlights partita per partita solo per le italiane e per alcune giornate; per le altre solo le raccolte dei gol.
-  Il dettaglio di Chelsea-Gent (03/10/2024) manca: ESPN ha 0-0 invece di 4-2, si riprova a ogni giro.
+- Nomi italiani delle squadre (19/11/2026): ripubblicare le stagioni 2024-25,2025-26,2026-27 di champions-league,
+  europa-league e conference-league con "Aggiorna dati" ("Stagioni passate" e "Competizione", senza altre opzioni), una
+  competizione per volta. Il giro normale aggiorna da solo solo la stagione in corso. Provato in locale: nessun video e
+  nessun dettaglio perso.
 - Video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi" nel README), poche
   stagioni per volta per la quota YouTube: le ricerche hanno una quota giornaliera (circa 100 pagine) che si azzera alle
   9 italiane. Una stagione intera di Serie A ne richiede circa 140, quindi due giorni.
 - Dopo ogni recupero controllare le sessioni rimaste senza video: di solito il titolo non rispetta la regola del canale
   (da correggere), oppure il video non è su YouTube.
-- Dettaglio partite (Serie A, Champions League ed Europa League): completo in tutte le stagioni pubblicate (Serie A e
-  Champions League dal 12/11/2026, Europa League dal 19/11/2026); le partite
+- Dettaglio partite (Serie A e coppe): completo in tutte le stagioni pubblicate (Serie A e Champions League dal
+  12/11/2026, Europa League e Conference League dal 19/11/2026, tranne una partita: vedi le note); le partite
   nuove arrivano da sole con il giro normale. Per una stagione aggiunta in futuro arriva importandola con "Stagioni
   passate" e "Competizione", senza altre opzioni (ESPN ha le stagioni dal 2023-24 e nessuna quota).
 
@@ -49,13 +48,17 @@ si scrivono a mano.
     altre sono solo in raccolte ("Europa League: tutti i gol delle sfide delle 21"), che non si abbinano a una partita.
     Restano senza video, va bene così. Frankfurt-Tottenham (17/04/2025) è sul sito con un refuso nel titolo
     ("Eintracht Francoforte Tottenham 0-1", senza trattino) e non si abbina.
+- Conference League (pubblicata il 19/11/2026, video recuperati in tutte e tre le stagioni): come l'Europa League, Sky
+  pubblica su YouTube quasi solo le italiane, e il sito ha gli highlights partita per partita solo per alcune giornate;
+  le altre sono solo nelle raccolte dei gol. Le partite rimaste restano senza video, va bene così. Il dettaglio di
+  Chelsea-Gent (03/10/2024) manca perché ESPN ha 0-0 invece di 4-2: l'importatore lo riprova a ogni giro.
 - MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così.
 
 ## Conteggi
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 19/11/2026, 14:54:11 (ora italiana).
+Dati del 19/11/2026, 16:06:24 (ora italiana).
 
 ## Formula 1
 
@@ -103,5 +106,13 @@ Dati del 19/11/2026, 14:54:11 (ora italiana).
 | 2024-25 | 189 | 45 | 23 | 121 | 189 su 189 |
 
 - 2025-26, senza video: PAOK - Maccabi Tel-Aviv del 2025-09-24; Genk - Betis del 2025-10-23; Sturm Graz - Nottingham Forest del 2025-11-06; Viktoria Plzen - Fenerbahce del 2025-11-06; Viktoria Plzen - Freiburg del 2025-11-27; Panathinaikos - Viktoria Plzen del 2025-12-11; Go Ahead Eagles - Braga del 2026-01-29
+
+## Conference League
+
+| Stagione | Sessioni concluse | Sky Sport | Sky Video | Senza video | Dettaglio partite |
+|---|---|---|---|---|---|
+| 2026-27 | 54 | 3 | 7 | 44 | 54 su 54 |
+| 2025-26 | 153 | 16 | 63 | 74 | 153 su 153 |
+| 2024-25 | 153 | 14 | 22 | 117 | 152 su 153 |
 
 <!-- fine dati -->
