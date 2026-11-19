@@ -39,7 +39,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 18/11/2026, 18:15:53 (ora italiana).
+Dati del 18/11/2026, 18:43:58 (ora italiana).
 
 ## Formula 1
 
@@ -85,7 +85,7 @@ Dati del 18/11/2026, 18:15:53 (ora italiana).
 | Stagione | Sessioni concluse | Sky Sport | Senza video | Dettaglio partite |
 |---|---|---|---|---|
 | 2026-27 | 72 | 10 | 62 | 72 su 72 |
-| 2025-26 | 189 | 19 | 170 | 189 su 189 |
-| 2024-25 | 189 | 31 | 158 | 189 su 189 |
+| 2025-26 | 189 | 28 | 161 | 189 su 189 |
+| 2024-25 | 189 | 45 | 144 | 189 su 189 |
 
 <!-- fine dati -->
