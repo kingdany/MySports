@@ -11,6 +11,11 @@ public static class HttpJson
     private const int MaxTransientRetries = 4;
 
     public static async Task<JsonNode> GetAsync(
+        HttpClient http, string url, string sourceName, int maxRateLimitRetries, CancellationToken ct) =>
+        JsonNode.Parse(await GetTextAsync(http, url, sourceName, maxRateLimitRetries, ct))!;
+
+    // Lo stesso per una pagina di testo (es. HTML), con gli stessi tentativi.
+    public static async Task<string> GetTextAsync(
         HttpClient http, string url, string sourceName, int maxRateLimitRetries, CancellationToken ct)
     {
         var rateLimited = 0;
@@ -49,7 +54,7 @@ public static class HttpJson
                     throw new HttpRequestException($"{sourceName} ha risposto {(int)res.StatusCode} su {HideKey(url)}" +
                                                    (await ErrorReasonAsync(res, ct) is { } reason ? $" ({reason})" : ""),
                                                    null, res.StatusCode);
-                return JsonNode.Parse(await res.Content.ReadAsStringAsync(ct))!;
+                return await res.Content.ReadAsStringAsync(ct);
             }
         }
     }

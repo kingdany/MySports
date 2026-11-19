@@ -39,7 +39,7 @@ tools/stato-importazioni.mjs        aggiorna i conteggi di quel documento dai da
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
 Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A, Champions League ed Europa League), un solo video per
-sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video). Per l'Europa League Sky pubblica quasi solo le partite delle italiane.
+sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video). Per l'Europa League Sky pubblica su YouTube quasi solo le partite delle italiane: per le altre partite delle coppe, ultima scelta, c'è il video del sito video.sky.it (fonte "Sky Video", con il campo `url`), che l'app apre sul sito perché non si può incorporare. Sono clip brevi, quasi solo i gol.
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
@@ -114,6 +114,8 @@ dotnet run --project src/MySports.Importer -- --competition serie-a --seasons 20
 ```
 
 Ogni canale viene riletto fino alla stagione richiesta (circa 20 unità di quota YouTube al mese da risalire).
+Sky Video (video.sky.it) non usa quota: si leggono le pagine della sezione della coppa, 16 video l'una, una al secondo
+(la Champions League da ottobre 2025 sono circa 110 pagine).
 YouTube però dà solo gli ultimi 20.000 video di un canale: DAZN arriva così a novembre 2024, Sky Sport a settembre 2024.
 Le partite più vecchie si cercano con la ricerca di YouTube, circa 1-2 pagine ogni 3 giorni da coprire, che usa una quota
 giornaliera a parte ("Search Queries per day" nella console di Google Cloud, 100 al giorno). Un'esecuzione fa al massimo
@@ -140,7 +142,6 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Importare i video delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
-- [ ] Europa League, highlights delle partite senza italiane: Sky pubblica quasi solo quelle delle italiane (83 video in tutto da settembre 2024, tutti abbinati). Valutare il canale ufficiale UEFA come riserva dopo Sky, come il canale F1 in inglese: verificare titoli, lingua e se i video si vedono dall'Italia
 - [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; c'è `EspnFootballSource`, basata sull'API pubblica di ESPN, già usata per l'Europa League (dal 2024-25), che varrebbe anche per la Nations League
   - Conference League (`uefa.europa.conf`): come l'Europa League, da verificare classifica e highlights
   - Coppa Italia (`ita.coppa_italia`)

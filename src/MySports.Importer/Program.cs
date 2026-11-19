@@ -40,19 +40,22 @@ IEventSource[] sources =
     new EspnFootballSource(Competition.EuropaLeague, "uefa.europa", FootballDataSource.ChampionsLeagueZones),
 ];
 
-// Highlights YouTube per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
+// Highlights per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
 // ce l'ha. Serie A: DAZN, poi Sky, poi il canale della Serie A. F1: Sky, poi il canale ufficiale in inglese. Champions League: Sky, poi Prime Video
 // (solo la partita del mercoledì che trasmette). Europa League: Sky (quasi solo le partite delle italiane). MotoGP: Sky.
-// Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio.
+// Per le coppe, dopo YouTube, il sito video.sky.it (Sky Video), che ha anche le partite senza italiane: i suoi video si
+// aprono sul sito, quindi vengono dopo quelli che si vedono nell'app.
+// Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio, anche per Sky Video: con solo quello tra le fonti, i video
+// YouTube già salvati delle coppe sparirebbero (si tengono solo quelli delle fonti in uso).
 var youtubeKey = Environment.GetEnvironmentVariable("YOUTUBE_API_KEY") ?? ReadDotEnv("YOUTUBE_API_KEY");
-var videoSources = new Dictionary<string, YouTubeHighlights[]>();
+var videoSources = new Dictionary<string, IHighlightsSource[]>();
 if (!string.IsNullOrWhiteSpace(youtubeKey))
 {
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
     videoSources[Competition.MotoGP.Id] = [YouTubeHighlights.SkySportMotoGP(http, youtubeKey)];
     videoSources[Competition.SerieA.Id] = [YouTubeHighlights.DaznSerieA(http, youtubeKey), YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.SerieAChannel(http, youtubeKey)];
-    videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey), YouTubeHighlights.PrimeVideoChampionsLeague(http, youtubeKey)];
-    videoSources[Competition.EuropaLeague.Id] = [YouTubeHighlights.SkySportEuropaLeague(http, youtubeKey)];
+    videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey), YouTubeHighlights.PrimeVideoChampionsLeague(http, youtubeKey), SkyVideoHighlights.ChampionsLeague(http)];
+    videoSources[Competition.EuropaLeague.Id] = [YouTubeHighlights.SkySportEuropaLeague(http, youtubeKey), SkyVideoHighlights.EuropaLeague(http)];
 }
 else
     Console.WriteLine("YOUTUBE_API_KEY non impostata: highlights non aggiornati");

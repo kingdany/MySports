@@ -15,6 +15,7 @@ namespace MySports.Importer.Sources;
 // matcher: titolo -> condizione sull'evento, oppure null se il video non interessa.
 public sealed partial class YouTubeHighlights(
     HttpClient http, string apiKey, string channelId, string sourceName, Func<string, Func<SportEvent, bool>?> matcher)
+    : IHighlightsSource
 {
     private const string BaseUrl = "https://www.googleapis.com/youtube/v3";
     // 50 video per pagina, 1 unità di quota ciascuna. I canali Sky Sport e DAZN pubblicano circa 1000 video al mese:
@@ -50,8 +51,8 @@ public sealed partial class YouTubeHighlights(
     // 12/11/2026), quindi non si riprova: attendere non serve fino al giorno dopo.
     private const int SearchBudget = 100;
     private static int searchPagesUsed;
-    private static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
-    private static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
+    internal static readonly TimeSpan MaxDelay = TimeSpan.FromDays(3); // pubblicazione entro 3 giorni dalla sessione
+    internal static readonly HashSet<string> Sessions = ["race", "qualifying", "sprint", "sprint_qualifying", "match"];
 
     public string SourceName => sourceName;
 
@@ -138,6 +139,23 @@ public sealed partial class YouTubeHighlights(
         ["Union Saint Gilloise"] = "Union SG",
         ["Maccabi Tel Aviv"] = "Maccabi Tel-Aviv",
         ["Bodø Glimt"] = "Bodø/Glimt", // "Bodø Glimt-Tottenham 0-2: gli highlights | Europa League"
+        // Europa League sul sito di Sky (SkyVideoHighlights), refusi compresi ("Celjie", "Arat Armenia").
+        ["Celje"] = "NK Celje",
+        ["Celjie"] = "NK Celje",
+        ["Ararat Armenia"] = "Ararat-Armenia",
+        ["Arat Armenia"] = "Ararat-Armenia",
+        ["Hapoel Beer Sheva"] = "Hapoel Be'er Sheva",
+        ["H.Beer Sheva"] = "Hapoel Be'er Sheva",
+        ["Ofi Creta"] = "OFI Crete",
+        ["Olympique Marsiglia"] = "Marseille",
+        ["Real Betis"] = "Betis", // ESPN scrive "Betis", football-data "Real Betis" (sopra l'alias inverso)
+        ["Betis Siviglia"] = "Betis",
+        ["Paok Salonicco"] = "PAOK",
+        ["Glasgow Rangers"] = "Rangers",
+        ["Maccabi"] = "Maccabi Tel-Aviv",
+        ["Malmoe"] = "Malmö",
+        ["Celta"] = "Celta Vigo",
+        ["Steaua Bucarest"] = "FCSB",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
@@ -196,6 +214,10 @@ public sealed partial class YouTubeHighlights(
     private const string SkyCupPattern = @"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?COMPETITION|\s+dell?a?\s[^|:]*?COMPETITION)?|(?<=\d)\s*\|\s*(?:Finale\s+)?COMPETITION)\s*$";
     private static readonly Regex SkyChampionsLeagueTitle = SkyCupTitle(@"Champions\s?League");
     private static readonly Regex SkyEuropaLeagueTitle = SkyCupTitle(@"Europa\s?League");
+
+    // Le stesse regole per i video del sito di Sky (SkyVideoHighlights), che ha gli stessi titoli.
+    internal static Func<string, Func<SportEvent, bool>?> SkyChampionsLeagueMatcher => ByTeams(SkyChampionsLeagueTitle);
+    internal static Func<string, Func<SportEvent, bool>?> SkyEuropaLeagueMatcher => ByTeams(SkyEuropaLeagueTitle);
 
     private static Regex SkyCupTitle(string competition) =>
         new(SkyCupPattern.Replace("COMPETITION", competition), RegexOptions.IgnoreCase | RegexOptions.Compiled);
@@ -287,6 +309,10 @@ public sealed partial class YouTubeHighlights(
     // Sessione a cui spetta un video: tra quelle concluse che il titolo indica e iniziate al massimo MaxDelay prima della
     // pubblicazione, la più recente (un video da gara MotoGP vale anche per la Sprint del giorno prima).
     private SportEvent? SessionFor(IEnumerable<SportEvent> events, string title, DateTimeOffset publishedAt) =>
+        SessionFor(matcher, events, title, publishedAt);
+
+    internal static SportEvent? SessionFor(
+        Func<string, Func<SportEvent, bool>?> matcher, IEnumerable<SportEvent> events, string title, DateTimeOffset publishedAt) =>
         matcher(title) is not { } isEvent ? null
         : events
             .Where(e => e.Status == EventStatus.Finished && Sessions.Contains(e.Session) && isEvent(e))

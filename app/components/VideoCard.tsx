@@ -1,3 +1,4 @@
+import * as WebBrowser from 'expo-web-browser';
 import { useState } from 'react';
 import { Image, Linking, Pressable, StyleSheet } from 'react-native';
 
@@ -11,16 +12,26 @@ const embedBlockedSources = new Set<string>();
 
 const openInYouTube = (video: Video) => Linking.openURL(`https://www.youtube.com/watch?v=${video.videoId}`);
 
+// Un video di un sito (es. video.sky.it), non di YouTube: si apre la sua pagina in una finestra sopra l'app, da cui si
+// torna indietro chiudendola.
+const openSite = (url: string) => WebBrowser.openBrowserAsync(url).catch(() => Linking.openURL(url));
+
+// "https://video.sky.it/sport/..." -> "video.sky.it".
+const siteName = (url: string) => url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+
 // Anteprima di un video: toccandola il video parte qui dentro, se il canale lo permette;
-// altrimenti si apre l'app YouTube. Il link sotto apre sempre YouTube.
+// altrimenti si apre l'app YouTube. Il link sotto apre sempre YouTube. I video di un sito si aprono sempre sul sito.
 export function VideoCard({ video }: { video: Video }) {
   const [playing, setPlaying] = useState(false);
   const sourceKey = video.source ?? video.videoId;
+  const site = video.url ? siteName(video.url) : null;
 
   const play = () => {
-    if (video.embeddable === false || embedBlockedSources.has(sourceKey)) openInYouTube(video);
+    if (video.url) openSite(video.url);
+    else if (video.embeddable === false || embedBlockedSources.has(sourceKey)) openInYouTube(video);
     else setPlaying(true);
   };
+  const open = () => (video.url ? openSite(video.url) : openInYouTube(video));
 
   const onPlayerError = () => {
     embedBlockedSources.add(sourceKey);
@@ -44,7 +55,9 @@ export function VideoCard({ video }: { video: Video }) {
                 <View style={styles.play}>
                   <Text style={styles.playIcon}>▶</Text>
                 </View>
-                {video.duration ? <Text style={styles.duration}>{video.duration}</Text> : null}
+                {/* Il video non parte qui: si vede già dall'anteprima che si apre il sito. */}
+                {site ? <Text style={[styles.badge, styles.site]}>Guarda su {site} ↗</Text> : null}
+                {video.duration ? <Text style={[styles.badge, styles.duration]}>{video.duration}</Text> : null}
               </View>
             )}
           </Pressable>
@@ -52,9 +65,13 @@ export function VideoCard({ video }: { video: Video }) {
       </View>
       <Text style={styles.title} numberOfLines={2}>{video.title}</Text>
       <View style={styles.footer}>
-        {video.source ? <Text style={[styles.source, { color: muted }]}>{video.source} · YouTube</Text> : <View />}
-        <Pressable onPress={() => openInYouTube(video)} hitSlop={8}>
-          <Text style={[styles.source, { color: tint }]}>Apri in YouTube</Text>
+        {video.source ? (
+          <Text style={[styles.source, { color: muted }]}>{video.source} · {site ?? 'YouTube'}</Text>
+        ) : (
+          <View />
+        )}
+        <Pressable onPress={open} hitSlop={8}>
+          <Text style={[styles.source, { color: tint }]}>{site ? `Apri su ${site}` : 'Apri in YouTube'}</Text>
         </Pressable>
       </View>
     </View>
@@ -70,10 +87,12 @@ const styles = StyleSheet.create({
     alignItems: 'center', justifyContent: 'center',
   },
   playIcon: { color: '#fff', fontSize: 22, marginLeft: 3 },
-  duration: {
-    position: 'absolute', right: 8, bottom: 8, color: '#fff', fontSize: 12, fontWeight: '600',
+  badge: {
+    position: 'absolute', bottom: 8, color: '#fff', fontSize: 12, fontWeight: '600',
     backgroundColor: 'rgba(0,0,0,0.75)', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 4, overflow: 'hidden',
   },
+  site: { left: 8 },
+  duration: { right: 8 },
   title: { fontSize: 15, fontWeight: '600' },
   footer: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'transparent' },
   source: { fontSize: 13 },
