@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T11:31:55.3727979+00:00",
+  "generatedAt": "2026-11-19T20:30:41.7192323+00:00",
   "events": [
     {
       "id": "f1-2026-21-fp1",
@@ -749,14 +749,14 @@
       "competition": "champions-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Lille - Bayern",
+      "title": "Lilla - Bayern",
       "session": "match",
       "startsAt": "2026-11-25T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "521",
         "name": "Lille OSC",
-        "shortName": "Lille",
+        "shortName": "Lilla",
         "logoUrl": "https://crests.football-data.org/521.png"
       },
       "awayTeam": {
@@ -772,7 +772,7 @@
       "competition": "champions-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Sporting - Man United",
+      "title": "Sporting - Manchester United",
       "session": "match",
       "startsAt": "2026-11-25T20:00:00+00:00",
       "status": "scheduled",
@@ -785,7 +785,7 @@
       "awayTeam": {
         "id": "66",
         "name": "Manchester United FC",
-        "shortName": "Man United",
+        "shortName": "Manchester United",
         "logoUrl": "https://crests.football-data.org/66.png"
       },
       "videos": []
@@ -795,14 +795,14 @@
       "competition": "champions-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Shakhtar - Fenerbahçe",
+      "title": "Shakhtar Donetsk - Fenerbahçe",
       "session": "match",
       "startsAt": "2026-11-25T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "1887",
         "name": "FK Shakhtar Donetsk",
-        "shortName": "Shakhtar",
+        "shortName": "Shakhtar Donetsk",
         "logoUrl": "https://crests.football-data.org/1887.png"
       },
       "awayTeam": {
@@ -814,18 +814,41 @@
       "videos": []
     },
     {
+      "id": "conference-league-2026-27-401915816",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Kairat Almaty - Mjällby",
+      "session": "match",
+      "startsAt": "2026-11-26T15:30:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-2528",
+        "name": "Kairat Almaty",
+        "shortName": "Kairat Almaty",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2528.png"
+      },
+      "awayTeam": {
+        "id": "espn-20301",
+        "name": "Mjällby AIF",
+        "shortName": "Mjällby",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/20301.png"
+      },
+      "videos": []
+    },
+    {
       "id": "europa-league-2026-27-401915506",
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Besiktas - Hapoel Be'er Sheva",
+      "title": "Beşiktaş - Hapoel Be'er Sheva",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-1895",
         "name": "Besiktas",
-        "shortName": "Besiktas",
+        "shortName": "Beşiktaş",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png"
       },
       "awayTeam": {
@@ -864,20 +887,20 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Dinamo Zagreb - Leverkusen",
+      "title": "Dinamo Zagabria - Bayer Leverkusen",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-597",
         "name": "Dinamo Zagreb",
-        "shortName": "Dinamo Zagreb",
+        "shortName": "Dinamo Zagabria",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png"
       },
       "awayTeam": {
         "id": "espn-131",
         "name": "Bayer Leverkusen",
-        "shortName": "Leverkusen",
+        "shortName": "Bayer Leverkusen",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
       },
       "videos": []
@@ -887,14 +910,14 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Marseille - Levski Sofia",
+      "title": "Marsiglia - Levski Sofia",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-176",
         "name": "Marseille",
-        "shortName": "Marseille",
+        "shortName": "Marsiglia",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
       },
       "awayTeam": {
@@ -933,14 +956,14 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "RB Salzburg - Ararat-Armenia",
+      "title": "Salisburgo - Ararat-Armenia",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-2790",
         "name": "RB Salzburg",
-        "shortName": "RB Salzburg",
+        "shortName": "Salisburgo",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png"
       },
       "awayTeam": {
@@ -956,20 +979,20 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Union SG - Lech Poznan",
+      "title": "Union Saint-Gilloise - Lech Poznań",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-5807",
         "name": "Union St.-Gilloise",
-        "shortName": "Union SG",
+        "shortName": "Union Saint-Gilloise",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png"
       },
       "awayTeam": {
         "id": "espn-2990",
         "name": "Lech Poznan",
-        "shortName": "Lech Poznan",
+        "shortName": "Lech Poznań",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2990.png"
       },
       "videos": []
@@ -979,14 +1002,14 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Viktoria Plzen - Benfica",
+      "title": "Viktoria Plzeň - Benfica",
       "session": "match",
       "startsAt": "2026-11-26T17:45:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-11706",
         "name": "Viktoria Plzen",
-        "shortName": "Viktoria Plzen",
+        "shortName": "Viktoria Plzeň",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png"
       },
       "awayTeam": {
@@ -994,6 +1017,213 @@
         "name": "Benfica",
         "shortName": "Benfica",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915815",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Ajax - Thun",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-139",
+        "name": "Ajax Amsterdam",
+        "shortName": "Ajax",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/139.png"
+      },
+      "awayTeam": {
+        "id": "espn-3024",
+        "name": "FC Thun",
+        "shortName": "Thun",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3024.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915814",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Brighton - Universitatea Craiova",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-331",
+        "name": "Brighton & Hove Albion",
+        "shortName": "Brighton",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+      },
+      "awayTeam": {
+        "id": "espn-8089",
+        "name": "CSU Craiova",
+        "shortName": "Universitatea Craiova",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/8089.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915810",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Egnatia - Lincoln Red Imps",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-21943",
+        "name": "Egnatia",
+        "shortName": "Egnatia",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/21943.png"
+      },
+      "awayTeam": {
+        "id": "espn-17856",
+        "name": "Lincoln Red Imps",
+        "shortName": "Lincoln Red Imps",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/17856.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915811",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Hearts - Monaco",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-262",
+        "name": "Heart of Midlothian",
+        "shortName": "Hearts",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png"
+      },
+      "awayTeam": {
+        "id": "espn-174",
+        "name": "AS Monaco",
+        "shortName": "Monaco",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915813",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Iberia 1999 - Getafe",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-20025",
+        "name": "Iberia 1999",
+        "shortName": "Iberia 1999",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/20025.png"
+      },
+      "awayTeam": {
+        "id": "espn-2922",
+        "name": "Getafe",
+        "shortName": "Getafe",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915812",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Jablonec - Lugano",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-7922",
+        "name": "Jablonec",
+        "shortName": "Jablonec",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/7922.png"
+      },
+      "awayTeam": {
+        "id": "espn-7672",
+        "name": "FC Lugano",
+        "shortName": "Lugano",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/7672.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915739",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Kauno Žalgiris - Riga FC",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-20028",
+        "name": "Kauno Zalgiris",
+        "shortName": "Kauno Žalgiris",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/20028.png"
+      },
+      "awayTeam": {
+        "id": "espn-19246",
+        "name": "Riga FC",
+        "shortName": "Riga FC",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/19246.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915809",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Pafos - Midtjylland",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-22281",
+        "name": "Pafos",
+        "shortName": "Pafos",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/22281.png"
+      },
+      "awayTeam": {
+        "id": "espn-572",
+        "name": "FC Midtjylland",
+        "shortName": "Midtjylland",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/572.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915808",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Brann - Aarhus",
+      "session": "match",
+      "startsAt": "2026-11-26T17:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-620",
+        "name": "SK Brann",
+        "shortName": "Brann",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/620.png"
+      },
+      "awayTeam": {
+        "id": "espn-7853",
+        "name": "AGF",
+        "shortName": "Aarhus",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/7853.png"
       },
       "videos": []
     },
@@ -1025,20 +1255,20 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Ferencvaros - NK Celje",
+      "title": "Ferencváros - Celje",
       "session": "match",
       "startsAt": "2026-11-26T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-622",
         "name": "Ferencvaros",
-        "shortName": "Ferencvaros",
+        "shortName": "Ferencváros",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png"
       },
       "awayTeam": {
         "id": "espn-3362",
         "name": "NK Celje",
-        "shortName": "NK Celje",
+        "shortName": "Celje",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3362.png"
       },
       "videos": []
@@ -1071,20 +1301,20 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Lyon - Lillestrom",
+      "title": "Lione - Lillestrøm",
       "session": "match",
       "startsAt": "2026-11-26T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-167",
         "name": "Lyon",
-        "shortName": "Lyon",
+        "shortName": "Lione",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
       },
       "awayTeam": {
         "id": "espn-987",
         "name": "Lillestrom",
-        "shortName": "Lillestrom",
+        "shortName": "Lillestrøm",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/987.png"
       },
       "videos": []
@@ -1094,14 +1324,14 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "NEC - Rennes",
+      "title": "NEC Nijmegen - Rennes",
       "session": "match",
       "startsAt": "2026-11-26T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-147",
         "name": "NEC Nijmegen",
-        "shortName": "NEC",
+        "shortName": "NEC Nijmegen",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png"
       },
       "awayTeam": {
@@ -1117,14 +1347,14 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "OFI Crete - Anderlecht",
+      "title": "OFI Creta - Anderlecht",
       "session": "match",
       "startsAt": "2026-11-26T20:00:00+00:00",
       "status": "scheduled",
       "homeTeam": {
         "id": "espn-1010",
         "name": "OFI Crete",
-        "shortName": "OFI Crete",
+        "shortName": "OFI Creta",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png"
       },
       "awayTeam": {
@@ -1163,7 +1393,7 @@
       "competition": "europa-league",
       "season": "2026-27",
       "round": 5,
-      "title": "Sunderland - Jagiellonia",
+      "title": "Sunderland - Jagiellonia Białystok",
       "session": "match",
       "startsAt": "2026-11-26T20:00:00+00:00",
       "status": "scheduled",
@@ -1176,7 +1406,7 @@
       "awayTeam": {
         "id": "espn-11505",
         "name": "Jagiellonia Bialystok",
-        "shortName": "Jagiellonia",
+        "shortName": "Jagiellonia Białystok",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png"
       },
       "videos": []
@@ -1224,6 +1454,190 @@
         "name": "SK Sturm Graz",
         "shortName": "Sturm Graz",
         "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915806",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Borac Banja Luka - Atalanta",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-20710",
+        "name": "Borac Banja Luka",
+        "shortName": "Borac Banja Luka",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/20710.png"
+      },
+      "awayTeam": {
+        "id": "espn-105",
+        "name": "Atalanta",
+        "shortName": "Atalanta",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915802",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Braga - KuPS",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-2994",
+        "name": "Braga",
+        "shortName": "Braga",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png"
+      },
+      "awayTeam": {
+        "id": "espn-8169",
+        "name": "KuPS Kuopio",
+        "shortName": "KuPS",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/8169.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915803",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "CSKA Sofia - Trabzonspor",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-10834",
+        "name": "CSKA Sofia",
+        "shortName": "CSKA Sofia",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/10834.png"
+      },
+      "awayTeam": {
+        "id": "espn-997",
+        "name": "Trabzonspor",
+        "shortName": "Trabzonspor",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915807",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Nordsjælland - Panathinaikos",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-3101",
+        "name": "FC Nordsjælland",
+        "shortName": "Nordsjælland",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3101.png"
+      },
+      "awayTeam": {
+        "id": "espn-443",
+        "name": "Panathinaikos",
+        "shortName": "Panathinaikos",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915805",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Hajduk Spalato - Sint-Truiden",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-489",
+        "name": "Hajduk Split",
+        "shortName": "Hajduk Spalato",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/489.png"
+      },
+      "awayTeam": {
+        "id": "espn-936",
+        "name": "Sint-Truidense",
+        "shortName": "Sint-Truiden",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915738",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Inter Club d'Escaldes - Copenaghen",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-20703",
+        "name": "Inter D'Escaldes",
+        "shortName": "Inter Club d'Escaldes",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/20703.png"
+      },
+      "awayTeam": {
+        "id": "espn-909",
+        "name": "F.C. København",
+        "shortName": "Copenaghen",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/909.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915804",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Gent - Stella Rossa",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-3611",
+        "name": "KAA Gent",
+        "shortName": "Gent",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png"
+      },
+      "awayTeam": {
+        "id": "espn-2290",
+        "name": "Red Star Belgrade",
+        "shortName": "Stella Rossa",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2290.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "conference-league-2026-27-401915801",
+      "competition": "conference-league",
+      "season": "2026-27",
+      "round": 4,
+      "title": "Friburgo - Twente",
+      "session": "match",
+      "startsAt": "2026-11-26T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-126",
+        "name": "SC Freiburg",
+        "shortName": "Friburgo",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+      },
+      "awayTeam": {
+        "id": "espn-152",
+        "name": "FC Twente",
+        "shortName": "Twente",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/152.png"
       },
       "videos": []
     },
