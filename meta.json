@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:54:11.2335835+00:00",
+  "generatedAt": "2026-11-19T15:06:24.4085041+00:00",
   "competitions": [
     {
       "id": "f1",
@@ -204,6 +204,18 @@
       "sport": "football",
       "name": "Europa League",
       "shortName": "Europa League",
+      "currentSeason": "2026-27",
+      "seasons": [
+        "2026-27",
+        "2025-26",
+        "2024-25"
+      ]
+    },
+    {
+      "id": "conference-league",
+      "sport": "football",
+      "name": "Conference League",
+      "shortName": "Conference League",
       "currentSeason": "2026-27",
       "seasons": [
         "2026-27",
