@@ -73,7 +73,7 @@ export default function UpcomingScreen() {
         onSelectCompetition={selectCompetition}
         showAll
       />
-      <TeamPicker teams={team.teams} teamId={team.teamId} onSelect={team.selectTeam} />
+      <TeamPicker teams={team.teams} teamId={team.teamId} onSelect={team.selectTeam} searchable={limited} />
       <EventList
         events={shownSport === null ? upcoming : team.events}
         loading={loading || shown !== selected || team.switching}
