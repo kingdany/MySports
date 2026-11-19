@@ -134,8 +134,11 @@ function groupOptions(options: Option[]) {
   return groups;
 }
 
-// Minuscolo e senza accenti, così "atle" trova "Atlético".
-const normalize = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+// Minuscolo e senza accenti, così "atle" trova "Atlético". Alcune lettere non sono una lettera più un accento e restano
+// dopo NFD: si cambiano a mano, così "bialystok" trova "Białystok" e "hamrun" trova "Ħamrun".
+const LETTERS: Record<string, string> = { ł: 'l', đ: 'd', ð: 'd', ħ: 'h', ø: 'o', ı: 'i', æ: 'ae', œ: 'oe', ß: 'ss', þ: 'th' };
+const normalize = (s: string) =>
+  s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[łđðħøıæœßþ]/g, (c) => LETTERS[c]);
 
 // Dove compare il testo nell'etichetta (0 = all'inizio), oppure nell'altro testo, che conta come "altrove"; -1 se manca.
 function matchPosition(option: Option, text: string) {

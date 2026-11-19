@@ -48,7 +48,17 @@ si scrivono a mano.
   pubblica su YouTube quasi solo le italiane, e il sito ha gli highlights partita per partita solo per alcune giornate;
   le altre sono solo nelle raccolte dei gol. Le partite rimaste restano senza video, va bene così. Il dettaglio di
   Chelsea-Gent (03/10/2024) manca perché ESPN ha 0-0 invece di 4-2: l'importatore lo riprova a ogni giro.
-- MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così.
+- MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così. Non
+  sono nemmeno sul sito di Sky (video.sky.it/sport/motogp): nel 2024 la sezione ha solo interviste e curiosità, e degli
+  highlights solo la Sprint di Assen (verificato il 19/11/2026).
+- F1, idea non ancora fatta (19/11/2026): Sky Video anche per la F1, tra Sky su YouTube e il canale ufficiale inglese.
+  La sezione video.sky.it/sport/formula1 ha gli highlights con titoli regolari ("F1, GP Brasile: highlights qualifiche",
+  "... highlights gara", "... highlights qualifiche Sprint"; prima del 2025 senza "F1, ") e arriva indietro di anni
+  (pagina 400 a fine ottobre 2024). Delle 6 sessioni che oggi hanno il video inglese ne ha 3 (Brasile 2026 qualifiche,
+  Gran Bretagna 2026 qualifiche Sprint, Emilia Romagna 2024 qualifiche), non Ungheria e San Paolo 2024 qualifiche né
+  Australia 2024 gara. Da decidere: le clip del sito sono in italiano ma di circa 2 minuti e si aprono sul sito, quelle
+  inglesi durano 5-8 minuti e si aprono nell'app YouTube. Servirebbe una regola per i titoli del sito (tipo di sessione e
+  data, come per i canali F1) e `SkyVideoHighlights` con la sezione `formula1`, che oggi è fissa sotto `/sport/calcio/`.
 
 ## Conteggi
 
