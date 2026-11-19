@@ -11,7 +11,7 @@ on:
         required: false
         default: ""
       competition:
-        description: "Competizione delle stagioni passate (f1, motogp, serie-a, champions-league, europa-league), obbligatoria se si indicano le stagioni"
+        description: "Competizione delle stagioni passate (f1, motogp, serie-a, champions-league, europa-league, conference-league), obbligatoria se si indicano le stagioni"
         required: false
         default: ""
       standings_only:

@@ -23,6 +23,7 @@ const CHANNELS = {
   'serie-a': ['DAZN', 'Sky Sport', 'Serie A'],
   'champions-league': ['Sky Sport', 'Prime Video', 'Sky Video'],
   'europa-league': ['Sky Sport', 'Sky Video'],
+  'conference-league': ['Sky Sport', 'Sky Video'],
   f1: ['Sky Sport F1', 'Formula 1'],
   motogp: ['Sky Sport MotoGP'],
 };

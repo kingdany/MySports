@@ -6,8 +6,11 @@ si scrivono a mano.
 
 ## Da fare
 
-- Europa League 2024-25: dopo il commit degli alias "Bodoe/Glimt", un altro "Recupera i video" su questa stagione
-  aggiunge Bodø/Glimt-Olympiacos e Olympiacos-Bodø/Glimt (provato in locale il 19/11/2026: 121 partite restano senza video).
+- Conference League (aggiunta il 19/11/2026): "Aggiorna dati" con "Stagioni passate" 2024-25,2025-26,2026-27,
+  "Competizione" conference-league e "Recupera i video". In locale: video per 36 partite su 153 nella 2024-25, 79 su
+  153 nella 2025-26, 10 su 54 giocate nella 2026-27, e nessun titolo rimasto senza partita. Il sito di Sky ha gli
+  highlights partita per partita solo per le italiane e per alcune giornate; per le altre solo le raccolte dei gol.
+  Il dettaglio di Chelsea-Gent (03/10/2024) manca: ESPN ha 0-0 invece di 4-2, si riprova a ogni giro.
 - Video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi" nel README), poche
   stagioni per volta per la quota YouTube: le ricerche hanno una quota giornaliera (circa 100 pagine) che si azzera alle
   9 italiane. Una stagione intera di Serie A ne richiede circa 140, quindi due giorni.
@@ -37,7 +40,9 @@ si scrivono a mano.
   arrivati da Sky Video con il recupero del 19/11/2026.
 - Europa League: Sky pubblica su YouTube gli highlights quasi solo per le partite delle italiane; le altre li hanno dal
   sito video.sky.it (Sky Video), recuperato il 19/11/2026. Il canale ufficiale UEFA non è un'alternativa: pubblica solo
-  raccolte e clip, non gli highlights delle partite (verificato il 19/11/2026).
+  raccolte e clip, non gli highlights delle partite (verificato il 19/11/2026). Nemmeno il sito uefa.com, che ha gli
+  highlights di tutte le partite (con registrazione gratuita): non risponde alle richieste degli script, per la protezione
+  anti-bot.
   - 2026-27: completa.
   - 2025-26: le 7 partite rimaste non sono sul sito.
   - 2024-25: il sito ha gli highlights partita per partita quasi solo per le italiane e per alcune sfide di cartello; le
@@ -50,7 +55,7 @@ si scrivono a mano.
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 19/11/2026, 13:19:32 (ora italiana).
+Dati del 19/11/2026, 14:54:11 (ora italiana).
 
 ## Formula 1
 
@@ -95,7 +100,7 @@ Dati del 19/11/2026, 13:19:32 (ora italiana).
 |---|---|---|---|---|---|
 | 2026-27 | 72 | 10 | 62 | 0 | 72 su 72 |
 | 2025-26 | 189 | 28 | 154 | 7 | 189 su 189 |
-| 2024-25 | 189 | 45 | 21 | 123 | 189 su 189 |
+| 2024-25 | 189 | 45 | 23 | 121 | 189 su 189 |
 
 - 2025-26, senza video: PAOK - Maccabi Tel-Aviv del 2025-09-24; Genk - Betis del 2025-10-23; Sturm Graz - Nottingham Forest del 2025-11-06; Viktoria Plzen - Fenerbahce del 2025-11-06; Viktoria Plzen - Freiburg del 2025-11-27; Panathinaikos - Viktoria Plzen del 2025-12-11; Go Ahead Eagles - Braga del 2026-01-29
 

@@ -51,6 +51,7 @@ public sealed partial class EspnMatchDetails(string league)
     public static EspnMatchDetails SerieA() => new("ita.1");
     public static EspnMatchDetails ChampionsLeague() => new("uefa.champions");
     public static EspnMatchDetails EuropaLeague() => new("uefa.europa");
+    public static EspnMatchDetails ConferenceLeague() => new("uefa.europa.conf");
 
     // Aggiunge il dettaglio alle partite finite che non lo hanno ancora o lo hanno in un formato vecchio. Se non si riesce
     // a riscaricarlo, il dettaglio vecchio resta.

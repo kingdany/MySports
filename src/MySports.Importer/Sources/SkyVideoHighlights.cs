@@ -33,6 +33,9 @@ public sealed partial class SkyVideoHighlights(
     public static SkyVideoHighlights ChampionsLeague(HttpClient http) =>
         new(http, "champions-league", "Sky Video", YouTubeHighlights.SkyChampionsLeagueMatcher);
 
+    public static SkyVideoHighlights ConferenceLeague(HttpClient http) =>
+        new(http, "conference-league", "Sky Video", YouTubeHighlights.SkyConferenceLeagueMatcher);
+
     public bool Matches(SportEvent e, Video video, IReadOnlyList<SportEvent> events) =>
         YouTubeHighlights.SessionFor(matcher, events, video.Title, video.PublishedAt)?.Id == e.Id;
 

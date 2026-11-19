@@ -159,6 +159,30 @@ public sealed partial class YouTubeHighlights(
         ["Bodoe/Glimt"] = "Bodø/Glimt",
         ["Bodoe Glimt"] = "Bodø/Glimt",
         ["Atletico Bilbao"] = "Athletic",
+        // Conference League (EspnFootballSource), come la scrive Sky, refusi compresi ("Sigma Olomuc").
+        ["Legia Varsavia"] = "Legia Warsaw",
+        ["Djurgaarden"] = "Djurgården",
+        ["Cercle Bruges"] = "Cercle Brugge",
+        ["Jagellonia"] = "Jagiellonia",
+        ["San Gallo"] = "St. Gallen",
+        ["Strasburgo"] = "Strasbourg",
+        ["Racing Strasburgo"] = "Strasbourg",
+        ["Az"] = "AZ Alkmaar",
+        ["Sigma Olomuc"] = "Sigma Olomouc",
+        ["Lausanne Sport"] = "Lausanne Sports",
+        ["Losanna"] = "Lausanne Sports",
+        ["Omonia Nicosia"] = "Omonia",
+        ["Lincoln"] = "Lincoln Red Imps",
+        ["Hajduk Spalato"] = "Hajduk Split",
+        ["Borac Banja Luka"] = "Borac",
+        ["Sint Truidense"] = "Sint-Truidense",
+        ["Aarhus"] = "AGF",
+        ["Aek"] = "AEK Atene", // l'AEK Larnaca Sky lo scrive per intero
+        ["Vitoria"] = "Vitória Guimarães",
+        ["U Craiova"] = "CSU Craiova",
+        ["U.Craiova"] = "CSU Craiova",
+        ["Universitatea Craiova"] = "CSU Craiova",
+        ["Samsunsport"] = "Samsunspor",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
@@ -204,9 +228,9 @@ public sealed partial class YouTubeHighlights(
     // ("Celtic-Slovan Bratislava 5-1 | Champions League"): allora servono il punteggio e "Champions League".
     // Esclusi gli "extended highlights" e gli "highlights lunghi", pubblicati solo per alcune partite, che
     // doppierebbero il video dello stesso canale.
-    // L'Europa League ha gli stessi titoli ("AZ Alkmaar-Juventus 1-2: gol e highlights | Europa League", "Rennes-Olympiacos:
-    // gli highlights | Europa League"), ma Sky la pubblica quasi solo per le partite delle italiane. Un titolo senza il nome
-    // della competizione vale per entrambe: lo distinguono le squadre, che sono di una sola delle due. Il nome della
+    // L'Europa League e la Conference League hanno gli stessi titoli ("AZ Alkmaar-Juventus 1-2: gol e highlights | Europa League", "Rennes-Olympiacos:
+    // gli highlights | Europa League"), ma Sky le pubblica quasi solo per le partite delle italiane. Un titolo senza il nome
+    // della competizione vale per tutte: lo distinguono le squadre, che sono di una sola coppa. Il nome della
     // competizione può anche chiudere una frase dopo "highlights" ("Porto-Roma 1-1: gol e highlights del playoff di andata
     // di Europa League").
     public static YouTubeHighlights SkySportChampionsLeague(HttpClient http, string apiKey) =>
@@ -215,13 +239,18 @@ public sealed partial class YouTubeHighlights(
     public static YouTubeHighlights SkySportEuropaLeague(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyEuropaLeagueTitle));
 
+    public static YouTubeHighlights SkySportConferenceLeague(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyConferenceLeagueTitle));
+
     private const string SkyCupPattern = @"^(?:COMPETITION,\s*)?([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\((?:\d+-\d+\s+)?d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?COMPETITION|\s+dell?a?\s[^|:]*?COMPETITION)?|(?<=\d)\s*\|\s*(?:Finale\s+)?COMPETITION)\s*$";
     private static readonly Regex SkyChampionsLeagueTitle = SkyCupTitle(@"Champions\s?League");
     private static readonly Regex SkyEuropaLeagueTitle = SkyCupTitle(@"Europa\s?League");
+    private static readonly Regex SkyConferenceLeagueTitle = SkyCupTitle(@"Conference\s?League");
 
     // Le stesse regole per i video del sito di Sky (SkyVideoHighlights), che ha gli stessi titoli.
     internal static Func<string, Func<SportEvent, bool>?> SkyChampionsLeagueMatcher => ByTeams(SkyChampionsLeagueTitle);
     internal static Func<string, Func<SportEvent, bool>?> SkyEuropaLeagueMatcher => ByTeams(SkyEuropaLeagueTitle);
+    internal static Func<string, Func<SportEvent, bool>?> SkyConferenceLeagueMatcher => ByTeams(SkyConferenceLeagueTitle);
 
     private static Regex SkyCupTitle(string competition) =>
         new(SkyCupPattern.Replace("COMPETITION", competition), RegexOptions.IgnoreCase | RegexOptions.Compiled);

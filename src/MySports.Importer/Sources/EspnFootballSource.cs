@@ -43,6 +43,29 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         ["2980"] = "Bodø/Glimt",          // "Bodo/Glimt", come football-data
         ["10414"] = "Qarabag",            // "FK Qarabag"
         ["13083"] = "Hapoel Be'er Sheva", // "Hapoel Be'er"
+        // Conference League. Prima i nomi di football-data in Champions League, per le squadre che hanno giocato in entrambe.
+        ["521"] = "Slovan Bratislava",    // "S Bratislava"
+        ["22281"] = "Paphos FC",          // "Pafos"
+        ["2528"] = "FK Kairat",           // "Kairat Almaty"
+        ["887"] = "AEK Atene",            // "AEK Athens"
+        ["12124"] = "Astana",             // "FC Astana"
+        ["7672"] = "Lugano",              // "FC Lugano"
+        ["20712"] = "Noah",               // "FC Noah"
+        ["3024"] = "Thun",                // "FC Thun"
+        ["20713"] = "TSC",                // "FK TSC"
+        ["3611"] = "Gent",                // "KAA Gent"
+        ["4411"] = "LASK",                // "LASK Linz", come football-data
+        ["2564"] = "Shamrock Rovers",     // "Shamrock"
+        ["101"] = "Rayo Vallecano",       // "Rayo"
+        ["17856"] = "Lincoln Red Imps",   // "Red Imps"
+        ["19243"] = "Drita",              // "Drita Gjilan"
+        ["8151"] = "Shkëndija",           // "KF Shkëndija"
+        ["8169"] = "KuPS",                // "KuPS Kuopio"
+        ["6758"] = "Mladá Boleslav",      // "M Boleslav"
+        ["5309"] = "Vitória Guimarães",   // "Vitória"
+        ["7914"] = "Basaksehir",          // "Istanbul BB"
+        ["7834"] = "Häcken",              // "BK Häcken"
+        ["7858"] = "Hamrun Spartans",     // "Hamrun"
     };
 
     // Fasi dell'eliminazione diretta ("season.slug") -> stage dell'app. Fase campionato e gironi restano giornate.
