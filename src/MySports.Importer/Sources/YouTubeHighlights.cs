@@ -156,6 +156,9 @@ public sealed partial class YouTubeHighlights(
         ["Malmoe"] = "Malmö",
         ["Celta"] = "Celta Vigo",
         ["Steaua Bucarest"] = "FCSB",
+        ["Bodoe/Glimt"] = "Bodø/Glimt",
+        ["Bodoe Glimt"] = "Bodø/Glimt",
+        ["Atletico Bilbao"] = "Athletic",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
@@ -193,7 +196,8 @@ public sealed partial class YouTubeHighlights(
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
     // il punteggio è seguito da "dts" o "dcr", anche tra parentesi ("Sporting-Bodø/Glimt 5-0 dts: ...",
-    // "Liverpool-PSG 0-1 (1-5 d.c.r): ..."), e a volte manca "| Champions League" ("Atalanta-Bayern Monaco 1-6: gol e
+    // "Liverpool-PSG 0-1 (1-5 d.c.r): ...", sul sito di Sky anche "Lazio-Bodo 5-6 (dcr): ..."), a volte il nome della
+    // competizione è all'inizio ("Champions League, Atalanta-Slavia Praga 0-0: highlights"), e a volte manca "| Champions League" ("Atalanta-Bayern Monaco 1-6: gol e
     // highlights"), è attaccato ("| ChampionsLeague") o è "| Finale Champions League": il titolo deve comunque finire lì,
     // quindi le partite "| Serie A" restano escluse. Tra il punteggio e "highlights" può esserci una frase chiusa da punto
     // o virgola ("Arsenal-Psg 0-1, gol di Dembelé. Gli HIGHLIGHTS | ..."), e a volte "highlights" manca del tutto
@@ -211,7 +215,7 @@ public sealed partial class YouTubeHighlights(
     public static YouTubeHighlights SkySportEuropaLeague(HttpClient http, string apiKey) =>
         new(http, apiKey, "UCAvNr5DMVncoJnJAotXOjOQ", "Sky Sport", ByTeams(SkyEuropaLeagueTitle));
 
-    private const string SkyCupPattern = @"^([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\(\d+-\d+\s+d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?COMPETITION|\s+dell?a?\s[^|:]*?COMPETITION)?|(?<=\d)\s*\|\s*(?:Finale\s+)?COMPETITION)\s*$";
+    private const string SkyCupPattern = @"^(?:COMPETITION,\s*)?([^:|]+?-[^:|]+?)(?:\s+\d+-\d+(?:\s+d\.?[tc]\.?[sr]\.?|\s*\((?:\d+-\d+\s+)?d\.?[tc]\.?[sr]\.?\))?)?(?:[:,]\s*(?:[^|:]*?[.,]\s*)?(?:\d+-\d+\s+)?(?:gol e |gli )?highlights(?:\s*\|\s*(?:Finale\s+)?COMPETITION|\s+dell?a?\s[^|:]*?COMPETITION)?|(?<=\d)\s*\|\s*(?:Finale\s+)?COMPETITION)\s*$";
     private static readonly Regex SkyChampionsLeagueTitle = SkyCupTitle(@"Champions\s?League");
     private static readonly Regex SkyEuropaLeagueTitle = SkyCupTitle(@"Europa\s?League");
 

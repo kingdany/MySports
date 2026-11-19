@@ -6,12 +6,8 @@ si scrivono a mano.
 
 ## Da fare
 
-- Sky Video (video.sky.it, aggiunto il 19/11/2026): "Recupera i video" sull'Europa League 2024-25, 2025-26 e 2026-27 e
-  sulla Champions League 2025-26. In locale la 2026-27 ha trovato il video di tutte le 62 partite che ne erano senza, la
-  2025-26 di 154 su 161 (le altre 7 non sono sul sito: PAOK-Maccabi Tel-Aviv, Genk-Betis, Sturm Graz-Nottingham Forest,
-  Viktoria Plzen-Fenerbahce, Viktoria Plzen-Freiburg, Panathinaikos-Viktoria Plzen, Go Ahead Eagles-Braga), la Champions
-  League le sue due. La 2024-25 dell'Europa League non è ancora provata: guardare nel log "highlights senza partita"
-  (nomi da aggiungere a `TeamAliases`).
+- Europa League 2024-25: dopo il commit degli alias "Bodoe/Glimt", un altro "Recupera i video" su questa stagione
+  aggiunge Bodø/Glimt-Olympiacos e Olympiacos-Bodø/Glimt (provato in locale il 19/11/2026: 121 partite restano senza video).
 - Video delle stagioni passate con l'opzione "Recupera i video" (vedi "Recuperare i video vecchi" nel README), poche
   stagioni per volta per la quota YouTube: le ricerche hanno una quota giornaliera (circa 100 pagine) che si azzera alle
   9 italiane. Una stagione intera di Serie A ne richiede circa 140, quindi due giorni.
@@ -38,17 +34,23 @@ si scrivono a mano.
 - Serie A 2025-26: Parma-Como (25/10/2025) ha il video Sky perché DAZN l'ha intitolato "Como-Parma", con le squadre
   invertite, e la regola lo scarta. Va bene così.
 - Champions League 2025-26: Kairat-Paphos e Newcastle-Benfica hanno gli highlights solo sul sito di Sky, non su YouTube:
-  arrivano da Sky Video con il recupero (provato in locale il 19/11/2026).
+  arrivati da Sky Video con il recupero del 19/11/2026.
 - Europa League: Sky pubblica su YouTube gli highlights quasi solo per le partite delle italiane; le altre li hanno dal
-  sito video.sky.it (Sky Video), che ha tutte le partite. Il canale ufficiale UEFA non è un'alternativa: pubblica solo
+  sito video.sky.it (Sky Video), recuperato il 19/11/2026. Il canale ufficiale UEFA non è un'alternativa: pubblica solo
   raccolte e clip, non gli highlights delle partite (verificato il 19/11/2026).
+  - 2026-27: completa.
+  - 2025-26: le 7 partite rimaste non sono sul sito.
+  - 2024-25: il sito ha gli highlights partita per partita quasi solo per le italiane e per alcune sfide di cartello; le
+    altre sono solo in raccolte ("Europa League: tutti i gol delle sfide delle 21"), che non si abbinano a una partita.
+    Restano senza video, va bene così. Frankfurt-Tottenham (17/04/2025) è sul sito con un refuso nel titolo
+    ("Eintracht Francoforte Tottenham 0-1", senza trattino) e non si abbina.
 - MotoGP 2024: le qualifiche di Assen (29/06/2024) e dell'Austria (17/08/2024) restano senza video, va bene così.
 
 ## Conteggi
 
 <!-- inizio dati: generato da tools/stato-importazioni.mjs, non modificare a mano -->
 
-Dati del 19/11/2026, 03:32:17 (ora italiana).
+Dati del 19/11/2026, 13:19:32 (ora italiana).
 
 ## Formula 1
 
@@ -81,20 +83,20 @@ Dati del 19/11/2026, 03:32:17 (ora italiana).
 
 ## Champions League
 
-| Stagione | Sessioni concluse | Sky Sport | Prime Video | Senza video | Dettaglio partite |
-|---|---|---|---|---|---|
-| 2026-27 | 72 | 72 | 0 | 0 | 72 su 72 |
-| 2025-26 | 189 | 187 | 0 | 2 | 189 su 189 |
-| 2024-25 | 189 | 189 | 0 | 0 | 189 su 189 |
-
-- 2025-26, senza video: FK Kairat - Paphos FC del 2025-10-21; Newcastle - Benfica del 2025-10-21
+| Stagione | Sessioni concluse | Sky Sport | Prime Video | Sky Video | Senza video | Dettaglio partite |
+|---|---|---|---|---|---|---|
+| 2026-27 | 72 | 72 | 0 | 0 | 0 | 72 su 72 |
+| 2025-26 | 189 | 187 | 0 | 2 | 0 | 189 su 189 |
+| 2024-25 | 189 | 189 | 0 | 0 | 0 | 189 su 189 |
 
 ## Europa League
 
-| Stagione | Sessioni concluse | Sky Sport | Senza video | Dettaglio partite |
-|---|---|---|---|---|
-| 2026-27 | 72 | 10 | 62 | 72 su 72 |
-| 2025-26 | 189 | 28 | 161 | 189 su 189 |
-| 2024-25 | 189 | 45 | 144 | 189 su 189 |
+| Stagione | Sessioni concluse | Sky Sport | Sky Video | Senza video | Dettaglio partite |
+|---|---|---|---|---|---|
+| 2026-27 | 72 | 10 | 62 | 0 | 72 su 72 |
+| 2025-26 | 189 | 28 | 154 | 7 | 189 su 189 |
+| 2024-25 | 189 | 45 | 21 | 123 | 189 su 189 |
+
+- 2025-26, senza video: PAOK - Maccabi Tel-Aviv del 2025-09-24; Genk - Betis del 2025-10-23; Sturm Graz - Nottingham Forest del 2025-11-06; Viktoria Plzen - Fenerbahce del 2025-11-06; Viktoria Plzen - Freiburg del 2025-11-27; Panathinaikos - Viktoria Plzen del 2025-12-11; Go Ahead Eagles - Braga del 2026-01-29
 
 <!-- fine dati -->
