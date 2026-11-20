@@ -1,5 +1,5 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
-import { ScrollView, StyleSheet } from 'react-native';
+import { Platform, ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text, View, useThemeColor } from '@/components/Themed';
@@ -38,10 +38,14 @@ export default function EventScreen() {
   // tutti gli eventi; la classifica di F1 e MotoGP, sotto, resta un elenco allineato a sinistra.
   const match = event.homeTeam != null && event.awayTeam != null;
 
-  // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema.
+  // La pagina è a tutto schermo: lo spazio in fondo evita che l'ultima riga finisca sotto i tasti di sistema. Su iOS
+  // l'header è trasparente e il contenuto gli passa sotto: "automatic" fa aggiungere a iOS lo spazio dell'header e anche
+  // quello in fondo, che quindi non va aggiunto di nuovo. Android lo ignora.
   return (
     <FullNameToast overSystemBar>
-      <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 16 }}>
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        contentContainerStyle={{ paddingBottom: (Platform.OS === 'ios' ? 0 : insets.bottom) + 16 }}>
         <Stack.Screen options={{ title: sessionLabel(event.session) }} />
         <View style={styles.header}>
           <CompetitionBadge event={event} round={round} />

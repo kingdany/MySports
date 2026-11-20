@@ -13,6 +13,10 @@ type Preferences = {
   setUpcomingCompetition: (id: Choice) => void;
   recentTeams: string[]; // ultime squadre scelte con la ricerca di "Tutte" (teamLabel), dalla più recente
   rememberTeam: (label: string) => void;
+  // Competizioni nascoste in tutte e tre le tab. Si salvano quelle nascoste e non quelle scelte, così una competizione
+  // nuova compare da sola.
+  hiddenCompetitions: string[];
+  setHiddenCompetitions: (ids: string[]) => void;
 };
 
 // Squadre suggerite nella ricerca di "Tutte" prima di scrivere.
@@ -96,20 +100,44 @@ function useStoredList(key: string, max: number): [string[], (item: string) => v
   return [list, add];
 }
 
+// Elenco salvato sul telefono che si sostituisce intero. Se cambia prima del caricamento, resta quello scelto.
+function useStoredArray(key: string): [string[], (items: string[]) => void] {
+  const [list, setList] = useState<string[]>([]);
+  const changed = useRef(false);
+
+  useEffect(() => {
+    AsyncStorage.getItem(key)
+      .then((stored) => {
+        const saved: unknown = stored ? JSON.parse(stored) : null;
+        if (Array.isArray(saved) && !changed.current) setList(saved.filter((x): x is string => typeof x === 'string'));
+      })
+      .catch(() => {});
+  }, [key]);
+
+  const set = useCallback((items: string[]) => {
+    changed.current = true;
+    setList(items);
+    AsyncStorage.setItem(key, JSON.stringify(items)).catch(() => {});
+  }, [key]);
+
+  return [list, set];
+}
+
 export function PreferencesProvider({ children }: { children: ReactNode }) {
   const [competition, setCompetition] = useStoredChoice('competition');
   const [competitionBySport, rememberCompetition] = useStoredMap('competitionBySport');
   const [upcomingCompetition, setUpcomingCompetition] = useStoredChoice('upcomingCompetition');
   const [recentTeams, rememberTeam] = useStoredList('recentTeams', MAX_RECENT_TEAMS);
+  const [hiddenCompetitions, setHiddenCompetitions] = useStoredArray('hiddenCompetitions');
 
   const value = useMemo(
     () => ({
       competition, setCompetition, competitionBySport, rememberCompetition, upcomingCompetition, setUpcomingCompetition,
-      recentTeams, rememberTeam,
+      recentTeams, rememberTeam, hiddenCompetitions, setHiddenCompetitions,
     }),
     [
       competition, setCompetition, competitionBySport, rememberCompetition, upcomingCompetition, setUpcomingCompetition,
-      recentTeams, rememberTeam,
+      recentTeams, rememberTeam, hiddenCompetitions, setHiddenCompetitions,
     ],
   );
 

@@ -5,11 +5,12 @@ import { CompetitionLogo, hasLogo, hasWordmark } from '@/components/CompetitionL
 import { SportIcon, hasSportIcon } from '@/components/SportIcon';
 import { Text, useThemeColor } from '@/components/Themed';
 import { CompetitionColors } from '@/constants/Colors';
-import { groupBySport } from '@/lib/sports';
+import { usePreferences } from '@/lib/preferences';
+import { groupBySport, visibleCompetitions } from '@/lib/sports';
 import type { CompetitionInfo } from '@/lib/types';
 
 type Props = {
-  competitions: CompetitionInfo[];
+  competitions: CompetitionInfo[]; // tutte, anche le nascoste, che la barra toglie da sola
   sport: string | null; // null = "Tutti"
   competition: string | null; // null = "Tutte" le competizioni dello sport (o "Tutti")
   onSelectSport: (sport: string | null) => void;
@@ -18,11 +19,18 @@ type Props = {
 };
 
 // Due barre scorrevoli: sopra gli sport (Calcio, Motori), sotto le competizioni dello sport scelto, solo se ne ha più di
-// una. Così una riga sola non si allunga con ogni competizione aggiunta.
+// una. Così una riga sola non si allunga con ogni competizione aggiunta. Le competizioni nascoste non compaiono, e
+// nemmeno uno sport che le ha nascoste tutte; uno sport con più competizioni ma una sola visibile tiene la riga di sotto,
+// con quella sola e senza "Tutte".
 export function CompetitionBar({ competitions, sport, competition, onSelectSport, onSelectCompetition, showAll = false }: Props) {
   const tint = useThemeColor({}, 'tint');
-  const sports = useMemo(() => groupBySport(competitions), [competitions]);
+  const { hiddenCompetitions } = usePreferences();
+  const sports = useMemo(
+    () => groupBySport(visibleCompetitions(competitions, hiddenCompetitions)),
+    [competitions, hiddenCompetitions],
+  );
   const current = sports.find((s) => s.id === sport);
+  const subRow = !!current && competitions.filter((c) => c.sport === current.id).length > 1;
 
   if (sports.length === 0) return null;
 
@@ -42,13 +50,13 @@ export function CompetitionBar({ competitions, sport, competition, onSelectSport
           />
         ))}
       </ScrollView>
-      {current && current.competitions.length > 1 && (
+      {current && subRow && (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
           style={styles.bar}
           contentContainerStyle={[styles.content, styles.subContent]}>
-          {showAll && (
+          {showAll && current.competitions.length > 1 && (
             <Chip size={SMALL} label="Tutte" active={competition === null} activeColor={tint} onPress={() => onSelectCompetition(null)} />
           )}
           {current.competitions.map((c) => (

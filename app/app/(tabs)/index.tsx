@@ -7,7 +7,7 @@ import { View } from '@/components/Themed';
 import { useEvents } from '@/lib/data';
 import { isPractice } from '@/lib/format';
 import { usePreferences } from '@/lib/preferences';
-import { sportChoice, upcomingChoice } from '@/lib/sports';
+import { sportChoice, upcomingChoice, useCompetitions } from '@/lib/sports';
 import { useTeamFilter } from '@/lib/useTeamFilter';
 
 // Con "Tutti" e con "Tutte" le competizioni di uno sport si mostrano solo i prossimi giorni, altrimenti la lista cresce
@@ -15,14 +15,15 @@ import { useTeamFilter } from '@/lib/useTeamFilter';
 const ALL_DAYS = 30;
 
 export default function UpcomingScreen() {
-  const { competitions, events, loading, error, refreshing, refresh } = useEvents();
+  const { events, loading, error, refreshing, refresh } = useEvents();
+  const { all, visible: competitions } = useCompetitions(); // le nascoste non compaiono, nemmeno in "Tutti" e "Tutte"
   const { upcomingCompetition, setUpcomingCompetition } = usePreferences();
 
-  // "Tutti", uno sport o una competizione; una scelta salvata che non esiste più vale come "Tutti".
-  const current = upcomingChoice(upcomingCompetition, competitions);
+  // "Tutti", uno sport o una competizione; una scelta salvata nascosta o che non esiste più vale come la più vicina.
+  const current = upcomingChoice(upcomingCompetition, competitions, all);
   const selected = current.choice;
 
-  // Uno sport con una competizione sola non ha "Tutte": si sceglie direttamente la competizione.
+  // Uno sport con una competizione visibile sola non ha "Tutte": si sceglie direttamente la competizione.
   const selectSport = useCallback((sport: string | null) => {
     const inSport = competitions.filter((c) => c.sport === sport);
     setUpcomingCompetition(sport === null ? null : inSport.length === 1 ? inSport[0].id : sportChoice(sport));
@@ -33,7 +34,7 @@ export default function UpcomingScreen() {
 
   // Il pulsante cambia subito, con la lista in caricamento; poi arriva la lista filtrata, che richiede più tempo.
   const shown = useDeferredValue(selected);
-  const shownChoice = upcomingChoice(shown, competitions);
+  const shownChoice = upcomingChoice(shown, competitions, all);
   const limited = shownChoice.competition === null; // "Tutti" o "Tutte"
 
   // Ora letta all'apertura della schermata e a ogni refresh, che sposta in avanti anche il limite dei giorni.
@@ -48,14 +49,16 @@ export default function UpcomingScreen() {
   const { sport: shownSport, competition: shownCompetition } = shownChoice;
   const upcoming = useMemo(() => {
     const limit = openedAt + ALL_DAYS * 24 * 60 * 60 * 1000;
-    const inSport = new Set(competitions.filter((c) => c.sport === shownSport).map((c) => c.id));
+    const included = new Set(
+      competitions.filter((c) => shownSport === null || c.sport === shownSport).map((c) => c.id),
+    );
     return events?.filter(
       (e) =>
         (e.status === 'scheduled' || e.status === 'live') &&
         !isPractice(e.session) &&
         (shownCompetition !== null
           ? e.competition === shownCompetition
-          : new Date(e.startsAt).getTime() <= limit && (shownSport === null || inSport.has(e.competition))),
+          : new Date(e.startsAt).getTime() <= limit && included.has(e.competition)),
     );
   }, [events, competitions, shownSport, shownCompetition, openedAt]);
 
@@ -66,7 +69,7 @@ export default function UpcomingScreen() {
   return (
     <View style={{ flex: 1 }}>
       <CompetitionBar
-        competitions={competitions}
+        competitions={all}
         sport={current.sport}
         competition={current.competition}
         onSelectSport={selectSport}

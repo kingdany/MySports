@@ -2,6 +2,7 @@ import { useCallback, useDeferredValue, useEffect, useState } from 'react';
 
 import { useEvents } from './data';
 import { usePreferences } from './preferences';
+import { resultsCompetition, useCompetitions } from './sports';
 
 export type SeasonRef = { competition: string; season: string };
 
@@ -43,15 +44,16 @@ export function useSelectedSeason(selection: SeasonRef | null) {
   };
 }
 
-// Competizione e stagione mostrate da Risultati e Classifiche. La competizione è condivisa e resta salvata
-// (senza una scelta valida vale la prima di meta.json); la stagione riparte da quella corrente a ogni cambio.
-// Scegliendo uno sport si torna all'ultima competizione scelta in quello sport, altrimenti alla sua prima.
+// Competizione e stagione mostrate da Risultati e Classifiche. La competizione è condivisa e resta salvata (se non è
+// valida o è nascosta vale un'altra dello stesso sport, o la prima visibile di meta.json); la stagione riparte da quella
+// corrente a ogni cambio. Scegliendo uno sport si torna all'ultima competizione scelta in quello sport, altrimenti alla
+// sua prima. Le competizioni nascoste non compaiono.
 export function useCompetitionSeason() {
   const events = useEvents();
   const { competition: chosen, setCompetition, competitionBySport, rememberCompetition } = usePreferences();
-  const competition = events.competitions.find((c) => c.id === chosen) ?? events.competitions[0] ?? null;
+  const { all, visible: competitions } = useCompetitions();
+  const competition = resultsCompetition(chosen, competitions, all, competitionBySport);
 
-  const competitions = events.competitions;
   const selectCompetition = useCallback((id: string | null) => {
     const next = competitions.find((c) => c.id === id);
     if (!next) return;
@@ -77,7 +79,7 @@ export function useCompetitionSeason() {
   const switching = useDeferredValue(key) !== key;
 
   return {
-    competitions: events.competitions,
+    competitions: all, // tutte: la barra toglie da sola quelle nascoste
     competition,
     season,
     selectSport,

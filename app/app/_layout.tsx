@@ -54,6 +54,8 @@ function RootLayoutNav() {
           <Stack>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="event/[id]" options={{ headerBackTitle: 'Indietro' }} />
+            {/* Schermata normale e non modale: su iOS una modale non ha la freccia indietro, e non la si può provare. */}
+            <Stack.Screen name="competizioni" options={{ title: 'Competizioni', headerBackTitle: 'Indietro' }} />
           </Stack>
         </PreferencesProvider>
       </EventsProvider>
