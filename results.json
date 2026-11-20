@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-19T20:30:41.7192323+00:00",
+  "generatedAt": "2026-11-20T02:17:50.4966891+00:00",
   "events": [
+    {
+      "id": "f1-2026-21-fp1",
+      "competition": "f1",
+      "season": "2026",
+      "round": 21,
+      "title": "Las Vegas Grand Prix",
+      "session": "fp1",
+      "startsAt": "2026-11-20T00:30:00+00:00",
+      "venue": "Las Vegas Strip Street Circuit",
+      "city": "Las Vegas",
+      "country": "USA",
+      "status": "finished",
+      "videos": []
+    },
     {
       "id": "serie-a-2026-27-558529",
       "competition": "serie-a",
@@ -458,7 +472,7 @@
           "driver": "Fernando Alonso",
           "code": "ALO",
           "team": "Aston Martin",
-          "teamColor": "#01796F",
+          "teamColor": "#FFFFFF",
           "time": "+36.856",
           "points": 0
         },
@@ -518,7 +532,7 @@
           "driver": "Sergio Pérez",
           "code": "PER",
           "team": "Cadillac F1 Team",
-          "teamColor": "#000000",
+          "teamColor": "#EFEFEF",
           "time": "+27.120",
           "points": 0
         },
@@ -548,7 +562,7 @@
           "driver": "Lance Stroll",
           "code": "STR",
           "team": "Aston Martin",
-          "teamColor": "#01796F",
+          "teamColor": "#FFFFFF",
           "time": "Retired",
           "points": 0
         },
@@ -558,7 +572,7 @@
           "driver": "Valtteri Bottas",
           "code": "BOT",
           "team": "Cadillac F1 Team",
-          "teamColor": "#000000",
+          "teamColor": "#EFEFEF",
           "time": "Did not start",
           "points": 0
         }
@@ -2474,7 +2488,7 @@
           "driver": "Fernando Alonso",
           "code": "ALO",
           "team": "Aston Martin",
-          "teamColor": "#01796F",
+          "teamColor": "#FFFFFF",
           "q1": "1:32.092",
           "q2": "1:29.072",
           "q3": "1:30.311"
@@ -2573,7 +2587,7 @@
           "driver": "Lance Stroll",
           "code": "STR",
           "team": "Aston Martin",
-          "teamColor": "#01796F",
+          "teamColor": "#FFFFFF",
           "q1": "1:33.653"
         },
         {
@@ -2582,7 +2596,7 @@
           "driver": "Valtteri Bottas",
           "code": "BOT",
           "team": "Cadillac F1 Team",
-          "teamColor": "#000000",
+          "teamColor": "#EFEFEF",
           "q1": "1:33.774"
         },
         {
@@ -2591,7 +2605,7 @@
           "driver": "Sergio Pérez",
           "code": "PER",
           "team": "Cadillac F1 Team",
-          "teamColor": "#000000",
+          "teamColor": "#EFEFEF",
           "q1": "1:34.509"
         },
         {
