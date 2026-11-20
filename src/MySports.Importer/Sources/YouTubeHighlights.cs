@@ -212,6 +212,8 @@ public sealed partial class YouTubeHighlights(
         ["Petrocub"] = "Petrocub Hîncești",
         ["Inter Escaldes"] = "Inter Club d'Escaldes",
         ["Lech Poznan"] = "Lech Poznań",
+        // Coppa Italia sul canale della Serie A (EspnFootballSource, nomi di ESPN).
+        ["Cerignola"] = "Audace Cerignola",
     };
 
     // Sky Sport (Italia): "Como-Venezia 1-0: gol e highlights | Serie A". A volte senza punteggio, con
@@ -246,6 +248,55 @@ public sealed partial class YouTubeHighlights(
 
     [GeneratedRegex(@"\bSerie\s?A\s+(?:19|20)\d{2}", RegexOptions.IgnoreCase)]
     private static partial Regex SerieAChannelEnglish();
+
+    // Coppa Italia sul canale ufficiale della Serie A, che la organizza: l'unica fonte. Mediaset, che la trasmette, non
+    // pubblica gli highlights né su YouTube né su Infinity, Sky e DAZN non hanno i diritti, prima del 2022-23 (Rai) ci sono
+    // solo i canali dei club. Il canale ha quasi tutte le partite dal 2022-23 (agosto 2022), ognuna in genere due volte,
+    // con il titolo in italiano e in inglese, e i titoli cambiano di stagione in stagione (verificato a novembre 2026):
+    // "Il Verona Passa all'Ultimo! | CAGLIARI-VERONA | HIGHLIGHTS | COPPA ITALIA FRECCIAROSSA 2026/27",
+    // "PISA-EMPOLI 1-1 (4-3) | HIGHLIGHTS | ...", "CERIGNOLA-VERONA 3-5 AP | HIGHLIGHTS | Thirty-Second Round! | ...",
+    // "EMPOLI 0-3 BOLOGNA | HIGHLIGHTS | ..." (punteggio in mezzo), "Cremonese 3-2 Ternana | Gol e Highlights: Trentaduesimi
+    // | Coppa Italia Frecciarossa 2022/23". Quindi serve "Coppa Italia", e le squadre si cercano in ogni parte tra "|":
+    // "Casa-Trasferta" (con punteggio, supplementari e rigori facoltativi) o "Casa 0-3 Trasferta". Di solito c'è anche
+    // "highlights"; senza, serve il punteggio ("FIORENTINA-EMPOLI 5-6 d.c.r. | OTTAVI | COPPA ITALIA FRECCIAROSSA 2024/25"),
+    // così restano esclusi dirette, conferenze stampa e anteprime ("🔴 LIVE | Warm up | MILAN-BOLOGNA | ..."). La finale si
+    // gioca in campo neutro e il canale può invertire le squadre rispetto a ESPN (Milan-Bologna 2025, "BOLOGNA-MILAN 1-0"):
+    // per la finale vale anche l'ordine inverso.
+    // La versione inglese è bloccata in Italia e spesso esce prima: si tiene la prima che si può vedere (AttachAsync),
+    // quindi in genere l'italiana. Esclusi extended, maxi sintesi, "data highlights", anteprime, raccolte, Primavera,
+    // femminile e Supercoppa.
+    public static YouTubeHighlights SerieAChannelCoppaItalia(HttpClient http, string apiKey) =>
+        new(http, apiKey, "UCBJeMCIeLQos7wacox4hmLQ", "Serie A", title =>
+        {
+            if (!CoppaItaliaMention().IsMatch(title) || CoppaItaliaExcluded().IsMatch(title)) return null;
+            var highlights = Contains(title, "highlights");
+            var pairs = title.Split('|').SelectMany(CoppaItaliaTeams).Where(p => highlights || p.Score).ToList();
+            return pairs.Count == 0 ? null : e => pairs.Any(p =>
+                IsTeam(e.HomeTeam, p.Home) && IsTeam(e.AwayTeam, p.Away)
+                || e.Stage == "final" && IsTeam(e.HomeTeam, p.Away) && IsTeam(e.AwayTeam, p.Home));
+        });
+
+    private static IEnumerable<(string Home, string Away, bool Score)> CoppaItaliaTeams(string part)
+    {
+        if (CoppaItaliaScoreBetween().Match(part) is { Success: true } between)
+            yield return (between.Groups["home"].Value, between.Groups["away"].Value, true);
+        if (CoppaItaliaDash().Match(part) is { Success: true } dash)
+            foreach (var (home, away) in TeamSplits(dash.Groups[1].Value)) yield return (home, away, dash.Groups["score"].Success);
+    }
+
+    [GeneratedRegex(@"\bCoppa\s?Italia\b", RegexOptions.IgnoreCase)]
+    private static partial Regex CoppaItaliaMention();
+
+    [GeneratedRegex(@"extended|maxi|data highlights|preview|anteprima|classic|best goals|top saves|every goal|(?-i:\bLIVE\b)|primavera|femminile|women|u19|supercoppa", RegexOptions.IgnoreCase)]
+    private static partial Regex CoppaItaliaExcluded();
+
+    // "CESENA-PISA 1-2 (AP)", "PISA-EMPOLI 1-1 (4-3)", "FIORENTINA-PARMA 6-3 DCR", "Inter-Parma 2-1 AET", "CAGLIARI-VERONA".
+    [GeneratedRegex(@"^\s*([^:]+?-[^:]+?)(?<score>\s+\d+\s*-\s*\d+)?(?:\s*\(?\s*(?:AP|D\.?C\.?R\.?|D\.?T\.?S\.?|AET|\d+\s*-\s*\d+)\s*\)?)*\s*$", RegexOptions.IgnoreCase)]
+    private static partial Regex CoppaItaliaDash();
+
+    // "EMPOLI 0-3 BOLOGNA", "Cremonese 3-2 Ternana".
+    [GeneratedRegex(@"^\s*(?<home>[^\d:]+?)\s+\d+\s*-\s*\d+\s+(?<away>[^\d:]+?)(?:\s*\(?\s*(?:AP|D\.?C\.?R\.?|D\.?T\.?S\.?|AET)\s*\)?)?\s*$", RegexOptions.IgnoreCase)]
+    private static partial Regex CoppaItaliaScoreBetween();
 
     // Sky Sport (Italia): "Lens-Como 1-9: gol e highlights | Champions League". Dopo i supplementari o i rigori
     // il punteggio è seguito da "dts" o "dcr", anche tra parentesi ("Sporting-Bodø/Glimt 5-0 dts: ...",
@@ -481,27 +532,34 @@ public sealed partial class YouTubeHighlights(
             }
         }
 
-        var found = new Dictionary<string, Upload>();
+        // Tutti i video validi per ogni sessione, dal primo pubblicato: si tiene il primo che si può vedere in Italia. Il canale
+        // della Serie A pubblica la Coppa Italia in italiano e in inglese, e la versione inglese, spesso la prima, è bloccata
+        // in Italia.
+        var found = new Dictionary<string, List<Upload>>();
         var nearMisses = new List<string>();
         foreach (var upload in uploads.OrderBy(u => u.PublishedAt))
         {
-            if (SessionFor(waiting, upload.Title, upload.PublishedAt) is { } match) found.TryAdd(match.Id, upload);
+            if (SessionFor(waiting, upload.Title, upload.PublishedAt) is { } match)
+                (found.TryGetValue(match.Id, out var list) ? list : found[match.Id] = []).Add(upload);
             else if (NearMiss(waiting, upload) is { } reason) nearMisses.Add(reason);
         }
         LogSome("titolo valido ma video scartato", nearMisses);
 
         // Durata e disponibilità in Italia: i video bloccati non si mostrano.
-        var details = found.Count == 0 ? [] : await GetDetailsAsync(found.Values.Select(u => u.VideoId).ToList(), ct);
+        var details = found.Count == 0 ? [] : await GetDetailsAsync(found.Values.SelectMany(l => l).Select(u => u.VideoId).ToList(), ct);
         var attached = 0;
         var unavailable = new List<string>();
         var result = events.Select(e =>
         {
-            if (!found.TryGetValue(e.Id, out var u)) return e;
-            if (!details.TryGetValue(u.VideoId, out var d) || d.BlockedInItaly)
+            if (!found.TryGetValue(e.Id, out var candidates)) return e;
+            var u = candidates.FirstOrDefault(c => details.TryGetValue(c.VideoId, out var cd) && !cd.BlockedInItaly);
+            if (u is null)
             {
-                unavailable.Add($"{u.Title} ({(d is null ? "non più disponibile" : "bloccato in Italia")})");
+                unavailable.AddRange(candidates.Select(c =>
+                    $"{c.Title} ({(details.ContainsKey(c.VideoId) ? "bloccato in Italia" : "non più disponibile")})"));
                 return e;
             }
+            var d = details[u.VideoId];
             attached++;
             return e with { Videos = [.. e.Videos, new Video(u.VideoId, u.Title, u.ThumbnailUrl, u.PublishedAt, sourceName, d.Duration, d.Embeddable ? null : false)] };
         }).ToList();

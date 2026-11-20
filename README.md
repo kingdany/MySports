@@ -1,6 +1,6 @@
 # MySports
 
-Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Champions League, Europa League, Conference League, Formula 1 e MotoGP.
+Calendario sportivo senza pubblicità: prossimi eventi e risultati di Serie A, Coppa Italia, Champions League, Europa League, Conference League, Formula 1 e MotoGP.
 
 ## Architettura
 
@@ -34,20 +34,20 @@ tools/stato-importazioni.mjs        aggiorna i conteggi di quel documento dai da
 | `meta.json` | competizioni disponibili e stagione corrente |
 | `upcoming.json` | eventi programmati o in corso nei prossimi 14 giorni |
 | `results.json` | eventi conclusi negli ultimi 14 giorni |
-| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Champions League, Europa League e Conference League dal 2024-25, MotoGP dal 1949) |
+| `{competizione}/{stagione}.json` | stagione completa (eventi e classifiche), es. `f1/2026.json`, `serie-a/2026-27.json`; anche le stagioni passate (F1 dal 1950, Serie A dal 2023-24, Coppa Italia dal 2015-16, Champions League, Europa League e Conference League dal 2024-25, MotoGP dal 1949) |
 
 L'app legge `meta.json` e i file di stagione; `upcoming.json` e `results.json` vengono pubblicati ma non sono usati dall'app.
 
-Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A, Champions League, Europa League e Conference League), un solo video per
-sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video). Per Europa League e Conference League Sky pubblica su YouTube quasi solo le partite delle italiane: per le altre partite delle coppe, ultima scelta, c'è il video del sito video.sky.it (fonte "Sky Video", con il campo `url`), che l'app apre sul sito perché non si può incorporare. Sono clip brevi, quasi solo i gol.
+Ogni evento ha un campo `videos` con gli highlights YouTube (F1, MotoGP, Serie A, Coppa Italia, Champions League, Europa League e Conference League), un solo video per
+sessione, in italiano: DAZN per la Serie A (se manca Sky, poi il canale ufficiale della Serie A), il canale ufficiale della Serie A per la Coppa Italia (dal 2022-23; Mediaset non pubblica gli highlights), Sky Sport per le altre (se manca: per la F1 il canale ufficiale in inglese, per la Champions League Prime Video). Per Europa League e Conference League Sky pubblica su YouTube quasi solo le partite delle italiane: per le altre partite delle coppe, ultima scelta, c'è il video del sito video.sky.it (fonte "Sky Video", con il campo `url`), che l'app apre sul sito perché non si può incorporare. Sono clip brevi, quasi solo i gol.
 I video già trovati vengono conservati tra un'esecuzione e l'altra. A ogni giro si cercano solo quelli delle partite
 finite negli ultimi 3 giorni; per quelle più vecchie si veda "Recuperare i video vecchi".
 
-Le partite finite di Serie A, Champions League, Europa League e Conference League hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
+Le partite finite di Serie A, Coppa Italia, Champions League, Europa League e Conference League hanno anche un campo `details`, dall'API pubblica di ESPN: marcatori
 (con rigore o autogol), rigori sbagliati, cartellini (giallo, doppio giallo, rosso) e formazioni (titolari con numero di
 maglia, sostituzioni). Si legge una volta per partita e si conserva come i video; se i gol di ESPN non tornano con il
 risultato, la partita si riprova al giro dopo. Arriva con il giro normale per la stagione corrente e importando una stagione
-passata (ESPN le ha dal 2023-24), tranne con "Solo classifiche".
+passata (ESPN le ha dal 2023-24, la Coppa Italia anche prima, con qualche buco), tranne con "Solo classifiche".
 
 ## Eseguire in locale
 
@@ -92,6 +92,15 @@ c'erano i gironi, che l'app non gestisce.
 ```
 dotnet run --project src/MySports.Importer -- --competition europa-league --seasons 2024-25,2025-26 --out out
 dotnet run --project src/MySports.Importer -- --competition conference-league --seasons 2024-25,2025-26 --out out
+```
+
+Anche la Coppa Italia viene da ESPN, dal 2015-16: prima ESPN ha stagioni incomplete (il 2014-15 non ha ottavi, quarti e
+finale) o con partite doppie. È tutta a eliminazione diretta: niente classifica a tabella, solo i marcatori (che ESPN
+non ha per alcune stagioni) e il tabellone. Fino al 2020-21 c'erano quattro turni prima degli ottavi, poi turno
+preliminare, trentaduesimi e sedicesimi.
+
+```
+dotnet run --project src/MySports.Importer -- --competition coppa-italia --seasons 2015-16,2016-17,2017-18,2018-19,2019-20,2020-21,2021-22,2022-23,2023-24,2024-25,2025-26 --out out
 ```
 
 Per la MotoGP (classe 500cc fino al 2001) l'archivio parte dal 1949:
@@ -143,8 +152,7 @@ in **Settings → Secrets and variables → Actions**, mai nel codice.
 ## Prossimi passi
 
 - [ ] Importare i video delle stagioni passate: stato, conteggi e note in [docs/STATO-IMPORTAZIONI.md](docs/STATO-IMPORTAZIONI.md)
-- [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; c'è `EspnFootballSource`, basata sull'API pubblica di ESPN, già usata per Europa League e Conference League (dal 2024-25), che varrebbe anche per la Nations League
-  - Coppa Italia (`ita.coppa_italia`)
+- [ ] Calcio: altre competizioni. football-data.org (piano gratuito) non ne ha nessuna; c'è `EspnFootballSource`, basata sull'API pubblica di ESPN, già usata per Coppa Italia, Europa League e Conference League, che varrebbe anche per la Nations League
   - Supercoppa italiana (`ita.super_cup`) e Supercoppa europea (`uefa.super_cup`): poche partite all'anno (una sola la europea)
   - Mondiale per club (`fifa.cwc`): ogni quattro anni, l'ultimo nel 2025
   - highlights: da verificare canali YouTube e regole sui titoli per ognuna

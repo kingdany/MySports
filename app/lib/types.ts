@@ -34,7 +34,9 @@ export type SportEvent = {
   competition: string;
   season: string;
   round?: number; // nell'eliminazione diretta 1 = andata, 2 = ritorno
-  stage?: string; // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final"
+  // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final", e per la Coppa Italia
+  // "round_1".."round_4" (fino al 2020-21) o "preliminary" | "last_64" | "last_32"
+  stage?: string;
   title: string;
   session: string;
   startsAt: string;

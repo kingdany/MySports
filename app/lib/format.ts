@@ -16,6 +16,7 @@ const SESSION_LABELS: Record<string, string> = {
 
 const COMPETITION_LABELS: Record<string, string> = {
   'serie-a': 'Serie A',
+  'coppa-italia': 'Coppa Italia',
   'champions-league': 'Champions League', // nelle righe c'è solo il pallone, nel dettaglio lo spazio c'è
   'europa-league': 'Europa League',
   'conference-league': 'Conference League',
@@ -23,7 +24,16 @@ const COMPETITION_LABELS: Record<string, string> = {
   motogp: 'MotoGP',
 };
 
+// Coppa Italia: fino al 2020-21 quattro turni, dal 2021-22 turno preliminare, trentaduesimi e sedicesimi. Non si
+// mescolano mai nella stessa stagione.
 const STAGE_LABELS: Record<string, string> = {
+  round_1: 'Primo turno',
+  round_2: 'Secondo turno',
+  round_3: 'Terzo turno',
+  round_4: 'Quarto turno',
+  preliminary: 'Turno preliminare',
+  last_64: 'Trentaduesimi',
+  last_32: 'Sedicesimi',
   playoffs: 'Spareggi',
   last_16: 'Ottavi',
   quarter_finals: 'Quarti',

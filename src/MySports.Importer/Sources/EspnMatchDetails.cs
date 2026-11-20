@@ -49,6 +49,7 @@ public sealed partial class EspnMatchDetails(string league)
 
     // Leghe ESPN.
     public static EspnMatchDetails SerieA() => new("ita.1");
+    public static EspnMatchDetails CoppaItalia() => new("ita.coppa_italia");
     public static EspnMatchDetails ChampionsLeague() => new("uefa.champions");
     public static EspnMatchDetails EuropaLeague() => new("uefa.europa");
     public static EspnMatchDetails ConferenceLeague() => new("uefa.europa.conf");

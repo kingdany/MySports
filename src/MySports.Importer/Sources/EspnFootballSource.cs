@@ -14,7 +14,12 @@ namespace MySports.Importer.Sources;
 // Le squadre hanno id ESPN, diversi da quelli di football-data: per questo hanno il prefisso "espn-", e l'app le
 // riconosce tra le competizioni per nome (la Roma in Serie A e in Europa League), quindi i nomi delle italiane devono
 // essere quelli di football-data.
-public sealed partial class EspnFootballSource(Competition competition, string league, IReadOnlyList<FootballDataSource.ZoneRule> zones)
+// La Coppa Italia ("ita.coppa_italia") è tutta a eliminazione diretta, senza classifica a tabella: le sue fasi cambiano con
+// il formato del torneo (stages, dall'anno d'inizio della stagione), e i nomi di ESPN non sono sempre gli stessi
+// ("semifinals" e "semi-finals", "final" e "finals").
+public sealed partial class EspnFootballSource(
+    Competition competition, string league, IReadOnlyList<FootballDataSource.ZoneRule> zones,
+    Func<int, IReadOnlyDictionary<string, string>>? stages = null)
     : IEventSource
 {
     private const string BaseUrl = "https://site.api.espn.com/apis";
@@ -112,6 +117,12 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         ["166"] = "Lilla",                      // "Lille"
         ["93"] = "Athletic Bilbao",             // "Athletic"
         ["125"] = "Eintracht Francoforte",      // "Frankfurt"
+        // Coppa Italia: l'Inter come in Serie A (football-data), e i nomi brevi che ESPN taglia a 12 lettere.
+        ["110"] = "Inter",                      // "Inter Milan"
+        ["4432"] = "Fidelis Andria",            // "Fidelis Andr"
+        ["18797"] = "Giana Erminio",            // "Giana Ermini"
+        ["17538"] = "AltoVicentino",            // "AltoVicentin"
+        ["4048"] = "Sambenedettese",            // "Sambenedette"
     };
 
     // Fasi dell'eliminazione diretta ("season.slug") -> stage dell'app. Fase campionato e gironi restano giornate.
@@ -120,9 +131,31 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         ["knockout-round-playoffs"] = "playoffs",
         ["round-of-16"] = "last_16",
         ["quarterfinals"] = "quarter_finals",
+        ["quarter-finals"] = "quarter_finals",
         ["semifinals"] = "semi_finals",
+        ["semi-finals"] = "semi_finals",
         ["final"] = "final",
+        ["finals"] = "final",
     };
+
+    // Coppa Italia dal 2021-22: turno preliminare, trentaduesimi ("first-round") e sedicesimi ("second-round"), poi ottavi.
+    // Prima (dal 2015-16, la prima stagione completa su ESPN) quattro turni, come li chiama Wikipedia: il terzo era di
+    // fatto i trentaduesimi e il quarto i sedicesimi, ma con un numero di squadre diverso, quindi restano turni.
+    public static IReadOnlyDictionary<string, string> CoppaItaliaStages(int startYear) =>
+        startYear >= 2021
+            ? new Dictionary<string, string>(Stages)
+            {
+                ["preliminary-round"] = "preliminary",
+                ["first-round"] = "last_64",
+                ["second-round"] = "last_32",
+            }
+            : new Dictionary<string, string>(Stages)
+            {
+                ["first-round"] = "round_1",
+                ["second-round"] = "round_2",
+                ["third-round"] = "round_3",
+                ["fourth-round"] = "round_4",
+            };
 
     // La fase campionato non ha il numero della giornata: si contano i gruppi di giorni di gioco, separati da più di
     // MatchdayGap (le giornate sono a settimane di distanza, una giornata dura al massimo due giorni).
@@ -146,8 +179,9 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         }
 
         var matchdays = Matchdays(matches.Values.Where(e => Str(e["season"]?["slug"]) == "league-phase").Select(StartsAt));
+        var seasonStages = stages?.Invoke(startYear) ?? Stages;
         return matches.Values
-            .Select(e => ToEvent(e, season, matchdays))
+            .Select(e => ToEvent(e, season, matchdays, seasonStages))
             .OfType<SportEvent>()
             .OrderBy(e => e.StartsAt)
             .ToList();
@@ -184,7 +218,8 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         return tables;
     }
 
-    private SportEvent? ToEvent(JsonNode match, string season, IReadOnlyList<DateTime> matchdays)
+    private SportEvent? ToEvent(
+        JsonNode match, string season, IReadOnlyList<DateTime> matchdays, IReadOnlyDictionary<string, string> seasonStages)
     {
         var competitionNode = match["competitions"]?[0];
         var competitors = competitionNode?["competitors"]?.AsArray() ?? [];
@@ -202,9 +237,9 @@ public sealed partial class EspnFootballSource(Competition competition, string l
         if (dateOnly) startsAt = new DateTimeOffset(startsAt.UtcDateTime.Date.AddHours(12), TimeSpan.Zero);
 
         var slug = Str(match["season"]?["slug"]);
-        var stage = slug is null ? null : Stages.GetValueOrDefault(slug);
+        var stage = slug is null ? null : seasonStages.GetValueOrDefault(slug);
         var round = stage is not null
-            ? competitionNode["leg"]?["value"]?.GetValue<int>() // andata e ritorno; la finale non ce l'ha
+            ? competitionNode["leg"]?["value"]?.GetValue<int>() // andata e ritorno; la finale e le partite secche non ce l'hanno
             : slug == "league-phase" ? Matchday(matchdays, startsAt) : null;
 
         // Punteggio solo a fine partita, come per football-data. I rigori sono a parte ("shootoutScore").
@@ -259,7 +294,10 @@ public sealed partial class EspnFootballSource(Competition competition, string l
 
     private static string TeamLabel(Team? team) => team?.ShortName ?? team?.Name ?? "Da definire";
 
-    private static Team? ToTeam(JsonNode team) => Str(team["id"]) is not { } id ? null : new(
+    // Le sfide non ancora decise hanno squadre segnaposto ("TBD Home", "TBD Away", visto nella Coppa Italia 2026-27): sono
+    // squadre da definire, come per football-data.
+    private static Team? ToTeam(JsonNode team) =>
+        Str(team["id"]) is not { } id || TbdTeam().IsMatch(Str(team["displayName"]) ?? "") ? null : new(
         $"espn-{id}",
         (Str(team["displayName"]) ?? "").Trim(),
         ShortName(team),
@@ -315,6 +353,9 @@ public sealed partial class EspnFootballSource(Competition competition, string l
 
     [GeneratedRegex(@"^\d{4}-\d{2}$")]
     private static partial Regex SeasonPattern();
+
+    [GeneratedRegex(@"^TBD\b", RegexOptions.IgnoreCase)]
+    private static partial Regex TbdTeam();
 
     private static string? Str(JsonNode? node) =>
         node is JsonValue v && v.TryGetValue<string>(out var s) ? s : node?.ToString();

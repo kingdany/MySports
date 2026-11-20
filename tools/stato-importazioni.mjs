@@ -21,6 +21,7 @@ const VIDEO_SESSIONS = new Set(['race', 'qualifying', 'sprint', 'sprint_qualifyi
 // Un canale che compare nei dati ma non qui ha comunque la sua colonna, in fondo.
 const CHANNELS = {
   'serie-a': ['DAZN', 'Sky Sport', 'Serie A'],
+  'coppa-italia': ['Serie A'],
   'champions-league': ['Sky Sport', 'Prime Video', 'Sky Video'],
   'europa-league': ['Sky Sport', 'Sky Video'],
   'conference-league': ['Sky Sport', 'Sky Video'],

@@ -35,6 +35,8 @@ IEventSource[] sources =
     new JolpicaF1Source(http),
     new MotoGpSource(http),
     new FootballDataSource(Competition.SerieA, "SA", footballKey, FootballDataSource.SerieAZones, FootballDataSource.SerieAZoneExceptions),
+    // Coppa Italia da ESPN (football-data.org non ce l'ha nel piano gratuito), tutta a eliminazione diretta: senza zone.
+    new EspnFootballSource(Competition.CoppaItalia, "ita.coppa_italia", [], EspnFootballSource.CoppaItaliaStages),
     new FootballDataSource(Competition.ChampionsLeague, "CL", footballKey, FootballDataSource.ChampionsLeagueZones),
     // football-data.org non ha Europa League e Conference League nel piano gratuito; la fase campionato ha le stesse zone
     // della Champions.
@@ -45,7 +47,7 @@ IEventSource[] sources =
 // Highlights per competizione, canali in ordine di preferenza: un solo video per sessione, del primo canale che
 // ce l'ha. Serie A: DAZN, poi Sky, poi il canale della Serie A. F1: Sky, poi il canale ufficiale in inglese. Champions League: Sky, poi Prime Video
 // (solo la partita del mercoledì che trasmette). Europa League e Conference League: Sky (quasi solo le partite delle
-// italiane). MotoGP: Sky.
+// italiane). Coppa Italia: il canale della Serie A (Mediaset non pubblica gli highlights). MotoGP: Sky.
 // Per le coppe, dopo YouTube, il sito video.sky.it (Sky Video), che ha anche le partite senza italiane: i suoi video si
 // aprono sul sito, quindi vengono dopo quelli che si vedono nell'app.
 // Senza chiave (YOUTUBE_API_KEY) si salta questo passaggio, anche per Sky Video: con solo quello tra le fonti, i video
@@ -57,6 +59,7 @@ if (!string.IsNullOrWhiteSpace(youtubeKey))
     videoSources[Competition.F1.Id] = [YouTubeHighlights.SkySportF1(http, youtubeKey), YouTubeHighlights.FormulaOne(http, youtubeKey)];
     videoSources[Competition.MotoGP.Id] = [YouTubeHighlights.SkySportMotoGP(http, youtubeKey)];
     videoSources[Competition.SerieA.Id] = [YouTubeHighlights.DaznSerieA(http, youtubeKey), YouTubeHighlights.SkySportSerieA(http, youtubeKey), YouTubeHighlights.SerieAChannel(http, youtubeKey)];
+    videoSources[Competition.CoppaItalia.Id] = [YouTubeHighlights.SerieAChannelCoppaItalia(http, youtubeKey)];
     videoSources[Competition.ChampionsLeague.Id] = [YouTubeHighlights.SkySportChampionsLeague(http, youtubeKey), YouTubeHighlights.PrimeVideoChampionsLeague(http, youtubeKey), SkyVideoHighlights.ChampionsLeague(http)];
     videoSources[Competition.EuropaLeague.Id] = [YouTubeHighlights.SkySportEuropaLeague(http, youtubeKey), SkyVideoHighlights.EuropaLeague(http)];
     videoSources[Competition.ConferenceLeague.Id] = [YouTubeHighlights.SkySportConferenceLeague(http, youtubeKey), SkyVideoHighlights.ConferenceLeague(http)];
@@ -68,6 +71,7 @@ else
 var matchDetails = new Dictionary<string, EspnMatchDetails>
 {
     [Competition.SerieA.Id] = EspnMatchDetails.SerieA(),
+    [Competition.CoppaItalia.Id] = EspnMatchDetails.CoppaItalia(),
     [Competition.ChampionsLeague.Id] = EspnMatchDetails.ChampionsLeague(),
     [Competition.EuropaLeague.Id] = EspnMatchDetails.EuropaLeague(),
     [Competition.ConferenceLeague.Id] = EspnMatchDetails.ConferenceLeague(),

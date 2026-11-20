@@ -7,7 +7,8 @@ public sealed record SportEvent
     public required string Competition { get; init; }     // "serie-a" | "champions-league" | "f1" | "motogp"
     public required string Season { get; init; }          // "2026" oppure "2026-27" per il calcio
     public int? Round { get; init; }                      // giornata / numero del GP; nell'eliminazione diretta 1 = andata, 2 = ritorno
-    public string? Stage { get; init; }                   // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final"
+    public string? Stage { get; init; }                   // eliminazione diretta: "playoffs" | "last_16" | "quarter_finals" | "semi_finals" | "final";
+                                                          // Coppa Italia: "round_1".."round_4" (fino al 2020-21), "preliminary" | "last_64" | "last_32"
     public required string Title { get; init; }           // "Mexico City Grand Prix", "Inter - Milan"
     public required string Session { get; init; }         // "match" | "fp1" | "fp2" | "fp3" | "sprint_qualifying" | "sprint" | "qualifying" | "race"; MotoGP anche "fp4", "practice" (pre-qualifiche) e "warm_up"
     public required DateTimeOffset StartsAt { get; init; }

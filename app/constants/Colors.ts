@@ -39,6 +39,7 @@ export const StandingZones: { id: string; label: string; color: string }[] = [
 // Colore distintivo di ogni competizione (badge nelle liste).
 export const CompetitionColors: Record<string, string> = {
   'serie-a': '#0a5cad',
+  'coppa-italia': '#222353', // il blu della scritta "COPPA ITALIA" nel logo
   'champions-league': '#1a237e',
   'europa-league': '#ff6900', // l'arancione del logo
   'conference-league': '#01b223', // il verde del logo

@@ -34,9 +34,11 @@ function buildTie(stage: string, legs: KnownEvent[]): Tie {
   const shootout = legs.find((e) => e.homePenalties != null && e.awayPenalties != null);
   const penalties = shootout ? goals(shootout, first, shootout.homePenalties, shootout.awayPenalties) : null;
 
-  // La finale è una partita sola, le altre fasi sono andata e ritorno.
+  // Andata e ritorno hanno round 1 e 2; senza è una partita secca: la finale, e in Coppa Italia tutte le fasi tranne le
+  // semifinali.
+  const twoLegs = legs.some((e) => e.round != null);
   let winner: Tie['winner'] = null;
-  if (played.length === (stage === 'final' ? 1 : 2)) {
+  if (played.length === (twoLegs ? 2 : 1)) {
     const [a, b] = played.reduce((total, s) => [total[0] + s[0], total[1] + s[1]], [0, 0]);
     if (a !== b) winner = a > b ? 0 : 1;
     else if (penalties && penalties[0] !== penalties[1]) winner = penalties[0] > penalties[1] ? 0 : 1;
