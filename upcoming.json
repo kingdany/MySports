@@ -1,20 +1,6 @@
 {
-  "generatedAt": "2026-11-20T02:17:50.4966891+00:00",
+  "generatedAt": "2026-11-20T11:29:27.7638447+00:00",
   "events": [
-    {
-      "id": "f1-2026-21-fp2",
-      "competition": "f1",
-      "season": "2026",
-      "round": 21,
-      "title": "Las Vegas Grand Prix",
-      "session": "fp2",
-      "startsAt": "2026-11-20T04:00:00+00:00",
-      "venue": "Las Vegas Strip Street Circuit",
-      "city": "Las Vegas",
-      "country": "USA",
-      "status": "scheduled",
-      "videos": []
-    },
     {
       "id": "motogp-2026-21-fp1",
       "competition": "motogp",
@@ -26,7 +12,7 @@
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "scheduled",
+      "status": "live",
       "videos": []
     },
     {
@@ -2023,6 +2009,20 @@
         "shortName": "Milan",
         "logoUrl": "https://crests.football-data.org/98.png"
       },
+      "videos": []
+    },
+    {
+      "id": "f1-2026-23-fp1",
+      "competition": "f1",
+      "season": "2026",
+      "round": 23,
+      "title": "Abu Dhabi Grand Prix",
+      "session": "fp1",
+      "startsAt": "2026-12-04T09:30:00+00:00",
+      "venue": "Yas Marina Circuit",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "status": "scheduled",
       "videos": []
     }
   ]
