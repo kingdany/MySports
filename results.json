@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-11-20T11:29:27.7638447+00:00",
+  "generatedAt": "2026-11-20T20:08:24.9084946+00:00",
   "events": [
+    {
+      "id": "motogp-2026-21-practice",
+      "competition": "motogp",
+      "season": "2026",
+      "round": 21,
+      "title": "Grand Prix of Portugal",
+      "session": "practice",
+      "startsAt": "2026-11-20T15:00:00+00:00",
+      "venue": "Autódromo Internacional do Algarve",
+      "city": "Portimão",
+      "country": "Portugal",
+      "status": "finished",
+      "videos": []
+    },
+    {
+      "id": "motogp-2026-21-fp1",
+      "competition": "motogp",
+      "season": "2026",
+      "round": 21,
+      "title": "Grand Prix of Portugal",
+      "session": "fp1",
+      "startsAt": "2026-11-20T10:45:00+00:00",
+      "venue": "Autódromo Internacional do Algarve",
+      "city": "Portimão",
+      "country": "Portugal",
+      "status": "finished",
+      "videos": []
+    },
     {
       "id": "f1-2026-21-fp2",
       "competition": "f1",
@@ -4060,363 +4088,6 @@
       "title": "Grand Prix of Qatar",
       "session": "fp2",
       "startsAt": "2026-11-07T11:00:00+00:00",
-      "venue": "Lusail International Circuit",
-      "city": "Doha",
-      "country": "Qatar",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558537",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Venezia - Udinese",
-      "session": "match",
-      "startsAt": "2026-11-06T19:45:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "454",
-        "name": "Venezia FC",
-        "shortName": "Venezia",
-        "logoUrl": "https://crests.football-data.org/454.png"
-      },
-      "awayTeam": {
-        "id": "115",
-        "name": "Udinese Calcio",
-        "shortName": "Udinese",
-        "logoUrl": "https://crests.football-data.org/115.png"
-      },
-      "homeScore": 2,
-      "awayScore": 1,
-      "videos": [
-        {
-          "videoId": "CMdE_LzAHWA",
-          "title": "KIKE PEREZ la svolta con una magia vera: Venezia-Udinese 2-1 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/CMdE_LzAHWA/hqdefault.jpg",
-          "publishedAt": "2026-11-07T00:42:08+00:00",
-          "source": "DAZN",
-          "duration": "4:07"
-        }
-      ],
-      "details": {
-        "version": 2,
-        "incidents": [
-          {
-            "minute": 51,
-            "type": "yellow",
-            "side": "home",
-            "player": "Pasquale Mazzocchi",
-            "short": "Mazzocchi"
-          },
-          {
-            "minute": 53,
-            "type": "goal",
-            "side": "home",
-            "player": "Toma Basic",
-            "short": "Basic"
-          },
-          {
-            "minute": 57,
-            "type": "ownGoal",
-            "side": "away",
-            "player": "Matías Moreno",
-            "short": "Moreno"
-          },
-          {
-            "minute": 65,
-            "type": "goal",
-            "side": "home",
-            "player": "Enrique Perez",
-            "short": "Perez"
-          },
-          {
-            "minute": 90,
-            "addedTime": 5,
-            "type": "yellow",
-            "side": "away",
-            "player": "Matteo Palma",
-            "short": "Palma"
-          }
-        ],
-        "home": {
-          "starters": [
-            {
-              "number": 1,
-              "name": "Filip Stankovic",
-              "short": "Stankovic"
-            },
-            {
-              "number": 2,
-              "name": "Matías Moreno",
-              "short": "Moreno"
-            },
-            {
-              "number": 15,
-              "name": "Juan Jesus",
-              "short": "Jesus"
-            },
-            {
-              "number": 25,
-              "name": "Redouane Halhal",
-              "short": "Halhal"
-            },
-            {
-              "number": 26,
-              "name": "Toma Basic",
-              "short": "Basic"
-            },
-            {
-              "number": 71,
-              "name": "Enrique Perez",
-              "short": "Perez"
-            },
-            {
-              "number": 19,
-              "name": "Simon Sohm",
-              "short": "Sohm"
-            },
-            {
-              "number": 70,
-              "name": "Pasquale Mazzocchi",
-              "short": "Mazzocchi"
-            },
-            {
-              "number": 18,
-              "name": "Antoine Hainaut",
-              "short": "Hainaut"
-            },
-            {
-              "number": 45,
-              "name": "Akor Adams",
-              "short": "Adams"
-            },
-            {
-              "number": 10,
-              "name": "John Yeboah",
-              "short": "Yeboah"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 70,
-              "in": {
-                "number": 5,
-                "name": "Ridgeciano Haps",
-                "short": "Haps"
-              },
-              "out": {
-                "number": 70,
-                "name": "Pasquale Mazzocchi",
-                "short": "Mazzocchi"
-              }
-            },
-            {
-              "minute": 84,
-              "in": {
-                "number": 29,
-                "name": "Lion Lauberbach",
-                "short": "Lauberbach"
-              },
-              "out": {
-                "number": 10,
-                "name": "John Yeboah",
-                "short": "Yeboah"
-              }
-            },
-            {
-              "minute": 85,
-              "in": {
-                "number": 21,
-                "name": "Thorir Johann Helgason",
-                "short": "Helgason"
-              },
-              "out": {
-                "number": 26,
-                "name": "Toma Basic",
-                "short": "Basic"
-              }
-            }
-          ]
-        },
-        "away": {
-          "starters": [
-            {
-              "number": 40,
-              "name": "Maduka Okoye",
-              "short": "Okoye"
-            },
-            {
-              "number": 16,
-              "name": "Matteo Palma",
-              "short": "Palma"
-            },
-            {
-              "number": 28,
-              "name": "Oumar Solet",
-              "short": "Solet"
-            },
-            {
-              "number": 14,
-              "name": "James Abankwah",
-              "short": "Abankwah"
-            },
-            {
-              "number": 8,
-              "name": "Jesper Karlström",
-              "short": "Karlström"
-            },
-            {
-              "number": 24,
-              "name": "Jakub Piotrowski",
-              "short": "Piotrowski"
-            },
-            {
-              "number": 11,
-              "name": "Hassane Kamara",
-              "short": "Kamara"
-            },
-            {
-              "number": 23,
-              "name": "Mërgim Vojvoda",
-              "short": "Vojvoda"
-            },
-            {
-              "number": 9,
-              "name": "Keinan Davis",
-              "short": "Davis"
-            },
-            {
-              "number": 32,
-              "name": "Jurgen Ekkelenkamp",
-              "short": "Ekkelenkamp"
-            },
-            {
-              "number": 10,
-              "name": "Nicolò Zaniolo",
-              "short": "Zaniolo"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 64,
-              "in": {
-                "number": 30,
-                "name": "Giorgi Chakvetadze",
-                "short": "Chakvetadze"
-              },
-              "out": {
-                "number": 24,
-                "name": "Jakub Piotrowski",
-                "short": "Piotrowski"
-              }
-            },
-            {
-              "minute": 74,
-              "in": {
-                "number": 27,
-                "name": "Christian Kabasele",
-                "short": "Kabasele"
-              },
-              "out": {
-                "number": 14,
-                "name": "James Abankwah",
-                "short": "Abankwah"
-              }
-            },
-            {
-              "minute": 75,
-              "in": {
-                "number": 46,
-                "name": "Unai Gómez",
-                "short": "Gómez"
-              },
-              "out": {
-                "number": 10,
-                "name": "Nicolò Zaniolo",
-                "short": "Zaniolo"
-              }
-            },
-            {
-              "minute": 88,
-              "in": {
-                "number": 38,
-                "name": "Lennon Miller",
-                "short": "Miller"
-              },
-              "out": {
-                "number": 28,
-                "name": "Oumar Solet",
-                "short": "Solet"
-              }
-            },
-            {
-              "minute": 88,
-              "in": {
-                "number": 15,
-                "name": "Bayo Youssouf",
-                "short": "Youssouf"
-              },
-              "out": {
-                "number": 32,
-                "name": "Jurgen Ekkelenkamp",
-                "short": "Ekkelenkamp"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "f1-2026-20-fp2",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "fp2",
-      "startsAt": "2026-11-06T19:00:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "motogp-2026-20-practice",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 20,
-      "title": "Grand Prix of Qatar",
-      "session": "practice",
-      "startsAt": "2026-11-06T16:00:00+00:00",
-      "venue": "Lusail International Circuit",
-      "city": "Doha",
-      "country": "Qatar",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "f1-2026-20-fp1",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "fp1",
-      "startsAt": "2026-11-06T15:30:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "motogp-2026-20-fp1",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 20,
-      "title": "Grand Prix of Qatar",
-      "session": "fp1",
-      "startsAt": "2026-11-06T11:45:00+00:00",
       "venue": "Lusail International Circuit",
       "city": "Doha",
       "country": "Qatar",

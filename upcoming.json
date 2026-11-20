@@ -1,34 +1,6 @@
 {
-  "generatedAt": "2026-11-20T11:29:27.7638447+00:00",
+  "generatedAt": "2026-11-20T20:08:24.9084946+00:00",
   "events": [
-    {
-      "id": "motogp-2026-21-fp1",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 21,
-      "title": "Grand Prix of Portugal",
-      "session": "fp1",
-      "startsAt": "2026-11-20T10:45:00+00:00",
-      "venue": "Autódromo Internacional do Algarve",
-      "city": "Portimão",
-      "country": "Portugal",
-      "status": "live",
-      "videos": []
-    },
-    {
-      "id": "motogp-2026-21-practice",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 21,
-      "title": "Grand Prix of Portugal",
-      "session": "practice",
-      "startsAt": "2026-11-20T15:00:00+00:00",
-      "venue": "Autódromo Internacional do Algarve",
-      "city": "Portimão",
-      "country": "Portugal",
-      "status": "scheduled",
-      "videos": []
-    },
     {
       "id": "f1-2026-21-fp3",
       "competition": "f1",
@@ -2012,6 +1984,75 @@
       "videos": []
     },
     {
+      "id": "coppa-italia-2026-27-401912257",
+      "competition": "coppa-italia",
+      "season": "2026-27",
+      "stage": "last_16",
+      "title": "Inter - Genoa",
+      "session": "match",
+      "startsAt": "2026-12-01T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-110",
+        "name": "Internazionale",
+        "shortName": "Inter",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+      },
+      "awayTeam": {
+        "id": "espn-3263",
+        "name": "Genoa",
+        "shortName": "Genoa",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "coppa-italia-2026-27-401912495",
+      "competition": "coppa-italia",
+      "season": "2026-27",
+      "stage": "last_16",
+      "title": "Como - Cremonese",
+      "session": "match",
+      "startsAt": "2026-12-02T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-2572",
+        "name": "Como",
+        "shortName": "Como",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+      },
+      "awayTeam": {
+        "id": "espn-4050",
+        "name": "Cremonese",
+        "shortName": "Cremonese",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/4050.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "coppa-italia-2026-27-401912261",
+      "competition": "coppa-italia",
+      "season": "2026-27",
+      "stage": "last_16",
+      "title": "Juventus - Sassuolo",
+      "session": "match",
+      "startsAt": "2026-12-03T20:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "espn-111",
+        "name": "Juventus",
+        "shortName": "Juventus",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+      },
+      "awayTeam": {
+        "id": "espn-3997",
+        "name": "Sassuolo",
+        "shortName": "Sassuolo",
+        "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+      },
+      "videos": []
+    },
+    {
       "id": "f1-2026-23-fp1",
       "competition": "f1",
       "season": "2026",
@@ -2023,6 +2064,43 @@
       "city": "Abu Dhabi",
       "country": "UAE",
       "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "f1-2026-23-fp2",
+      "competition": "f1",
+      "season": "2026",
+      "round": 23,
+      "title": "Abu Dhabi Grand Prix",
+      "session": "fp2",
+      "startsAt": "2026-12-04T13:00:00+00:00",
+      "venue": "Yas Marina Circuit",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558502",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 14,
+      "title": "Bologna - Roma",
+      "session": "match",
+      "startsAt": "2026-12-04T19:45:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "103",
+        "name": "Bologna FC 1909",
+        "shortName": "Bologna",
+        "logoUrl": "https://crests.football-data.org/103.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
       "videos": []
     }
   ]
