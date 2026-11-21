@@ -1,7 +1,7 @@
 {
   "competition": "f1",
   "season": "2026",
-  "generatedAt": "2026-11-21T10:55:58.2154036+00:00",
+  "generatedAt": "2026-11-21T19:10:31.405203+00:00",
   "events": [
     {
       "id": "f1-2026-1-fp1",
@@ -13473,6 +13473,232 @@
       "city": "Las Vegas",
       "country": "USA",
       "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Andrea Kimi Antonelli",
+          "code": "ANT",
+          "team": "Mercedes",
+          "teamColor": "#C0C0C0",
+          "q1": "1:34.684",
+          "q2": "1:35.086",
+          "q3": "1:33.893"
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Max Verstappen",
+          "code": "VER",
+          "team": "Red Bull",
+          "teamColor": "#00007D",
+          "q1": "1:35.264",
+          "q2": "1:34.394",
+          "q3": "1:34.151"
+        },
+        {
+          "pos": 3,
+          "number": "63",
+          "driver": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "teamColor": "#C0C0C0",
+          "q1": "1:34.664",
+          "q2": "1:34.617",
+          "q3": "1:34.224"
+        },
+        {
+          "pos": 4,
+          "number": "1",
+          "driver": "Lando Norris",
+          "code": "NOR",
+          "team": "McLaren",
+          "teamColor": "#FF9900",
+          "q1": "1:35.109",
+          "q2": "1:34.766",
+          "q3": "1:34.244"
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Isack Hadjar",
+          "code": "HAD",
+          "team": "Red Bull",
+          "teamColor": "#00007D",
+          "q1": "1:35.413",
+          "q2": "1:35.064",
+          "q3": "1:34.592"
+        },
+        {
+          "pos": 6,
+          "number": "41",
+          "driver": "Arvid Lindblad",
+          "code": "LIN",
+          "team": "RB F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:35.456",
+          "q2": "1:34.963",
+          "q3": "1:34.668"
+        },
+        {
+          "pos": 7,
+          "number": "81",
+          "driver": "Oscar Piastri",
+          "code": "PIA",
+          "team": "McLaren",
+          "teamColor": "#FF9900",
+          "q1": "1:35.491",
+          "q2": "1:34.763",
+          "q3": "1:34.899"
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Liam Lawson",
+          "code": "LAW",
+          "team": "RB F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:35.489",
+          "q2": "1:35.048",
+          "q3": "1:35.090"
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Pierre Gasly",
+          "code": "GAS",
+          "team": "Alpine F1 Team",
+          "teamColor": "#FF6088",
+          "q1": "1:35.718",
+          "q2": "1:34.559",
+          "q3": "1:35.105"
+        },
+        {
+          "pos": 10,
+          "number": "43",
+          "driver": "Franco Colapinto",
+          "code": "COL",
+          "team": "Alpine F1 Team",
+          "teamColor": "#FF6088",
+          "q1": "1:35.930",
+          "q2": "1:34.982",
+          "q3": "1:35.314"
+        },
+        {
+          "pos": 11,
+          "number": "16",
+          "driver": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "teamColor": "#CC0000",
+          "q1": "1:35.040",
+          "q2": "1:35.197"
+        },
+        {
+          "pos": 12,
+          "number": "44",
+          "driver": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Ferrari",
+          "teamColor": "#CC0000",
+          "q1": "1:35.743",
+          "q2": "1:35.253"
+        },
+        {
+          "pos": 13,
+          "number": "27",
+          "driver": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Audi",
+          "teamColor": "#8F8F8F",
+          "q1": "1:35.710",
+          "q2": "1:35.460"
+        },
+        {
+          "pos": 14,
+          "number": "55",
+          "driver": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Williams",
+          "teamColor": "#1C39BB",
+          "q1": "1:35.588",
+          "q2": "1:35.641"
+        },
+        {
+          "pos": 15,
+          "number": "5",
+          "driver": "Gabriel Bortoleto",
+          "code": "BOR",
+          "team": "Audi",
+          "teamColor": "#8F8F8F",
+          "q1": "1:36.149",
+          "q2": "1:35.993"
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Alexander Albon",
+          "code": "ALB",
+          "team": "Williams",
+          "teamColor": "#1C39BB",
+          "q1": "1:35.856",
+          "q2": "1:36.125"
+        },
+        {
+          "pos": 17,
+          "number": "51",
+          "driver": "Rafael Camara",
+          "code": "CAM",
+          "team": "Haas F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:36.220"
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Sergio Pérez",
+          "code": "PER",
+          "team": "Cadillac F1 Team",
+          "teamColor": "#EFEFEF",
+          "q1": "1:37.383"
+        },
+        {
+          "pos": 19,
+          "number": "14",
+          "driver": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Aston Martin",
+          "teamColor": "#FFFFFF",
+          "q1": "1:37.400"
+        },
+        {
+          "pos": 20,
+          "number": "18",
+          "driver": "Lance Stroll",
+          "code": "STR",
+          "team": "Aston Martin",
+          "teamColor": "#FFFFFF",
+          "q1": "1:37.550"
+        },
+        {
+          "pos": 21,
+          "number": "77",
+          "driver": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Cadillac F1 Team",
+          "teamColor": "#EFEFEF",
+          "q1": "1:37.601"
+        },
+        {
+          "pos": 22,
+          "number": "87",
+          "driver": "Oliver Bearman",
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:48.005"
+        }
+      ],
       "videos": [
         {
           "videoId": "QaFxG-mMVQw",

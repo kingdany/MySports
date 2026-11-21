@@ -1,117 +1,6 @@
 {
-  "generatedAt": "2026-11-21T10:55:58.2154036+00:00",
+  "generatedAt": "2026-11-21T19:10:31.405203+00:00",
   "events": [
-    {
-      "id": "motogp-2026-21-fp2",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 21,
-      "title": "Grand Prix of Portugal",
-      "session": "fp2",
-      "startsAt": "2026-11-21T10:10:00+00:00",
-      "venue": "Autódromo Internacional do Algarve",
-      "city": "Portimão",
-      "country": "Portugal",
-      "status": "live",
-      "videos": []
-    },
-    {
-      "id": "motogp-2026-21-qualifying",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 21,
-      "title": "Grand Prix of Portugal",
-      "session": "qualifying",
-      "startsAt": "2026-11-21T10:50:00+00:00",
-      "venue": "Autódromo Internacional do Algarve",
-      "city": "Portimão",
-      "country": "Portugal",
-      "status": "live",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558525",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 12,
-      "title": "Como - Cagliari",
-      "session": "match",
-      "startsAt": "2026-11-21T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "7397",
-        "name": "Como 1907",
-        "shortName": "Como",
-        "logoUrl": "https://crests.football-data.org/7397.png"
-      },
-      "awayTeam": {
-        "id": "104",
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "logoUrl": "https://crests.football-data.org/104.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558528",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 12,
-      "title": "Lazio - Lecce",
-      "session": "match",
-      "startsAt": "2026-11-21T14:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "110",
-        "name": "SS Lazio",
-        "shortName": "Lazio",
-        "logoUrl": "https://crests.football-data.org/110.png"
-      },
-      "awayTeam": {
-        "id": "5890",
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "logoUrl": "https://crests.football-data.org/5890.png"
-      },
-      "videos": []
-    },
-    {
-      "id": "motogp-2026-21-sprint",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 21,
-      "title": "Grand Prix of Portugal",
-      "session": "sprint",
-      "startsAt": "2026-11-21T15:00:00+00:00",
-      "venue": "Autódromo Internacional do Algarve",
-      "city": "Portimão",
-      "country": "Portugal",
-      "status": "scheduled",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558526",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 12,
-      "title": "Parma - Roma",
-      "session": "match",
-      "startsAt": "2026-11-21T17:00:00+00:00",
-      "status": "scheduled",
-      "homeTeam": {
-        "id": "112",
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "logoUrl": "https://crests.football-data.org/112.png"
-      },
-      "awayTeam": {
-        "id": "100",
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "logoUrl": "https://crests.football-data.org/100.png"
-      },
-      "videos": []
-    },
     {
       "id": "serie-a-2026-27-558527",
       "competition": "serie-a",
@@ -2087,6 +1976,66 @@
       "city": "Abu Dhabi",
       "country": "UAE",
       "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "f1-2026-23-qualifying",
+      "competition": "f1",
+      "season": "2026",
+      "round": 23,
+      "title": "Abu Dhabi Grand Prix",
+      "session": "qualifying",
+      "startsAt": "2026-12-05T14:00:00+00:00",
+      "venue": "Yas Marina Circuit",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "status": "scheduled",
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558507",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 14,
+      "title": "Monza - Como",
+      "session": "match",
+      "startsAt": "2026-12-05T14:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "5911",
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "logoUrl": "https://crests.football-data.org/5911.png"
+      },
+      "awayTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "videos": []
+    },
+    {
+      "id": "serie-a-2026-27-558501",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 14,
+      "title": "Frosinone - Inter",
+      "session": "match",
+      "startsAt": "2026-12-05T17:00:00+00:00",
+      "status": "scheduled",
+      "homeTeam": {
+        "id": "470",
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "logoUrl": "https://crests.football-data.org/470.png"
+      },
+      "awayTeam": {
+        "id": "108",
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "logoUrl": "https://crests.football-data.org/108.png"
+      },
       "videos": []
     }
   ]

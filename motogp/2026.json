@@ -1,7 +1,7 @@
 {
   "competition": "motogp",
   "season": "2026",
-  "generatedAt": "2026-11-21T10:55:58.2154036+00:00",
+  "generatedAt": "2026-11-21T19:10:31.405203+00:00",
   "events": [
     {
       "id": "motogp-2026-1-fp1",
@@ -14536,7 +14536,7 @@
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "live",
+      "status": "finished",
       "videos": []
     },
     {
@@ -14550,8 +14550,219 @@
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "live",
-      "videos": []
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "72",
+          "driver": "Marco Bezzecchi",
+          "code": "Bezzecchi",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "q2": "1:37.201"
+        },
+        {
+          "pos": 2,
+          "number": "93",
+          "driver": "Marc Marquez",
+          "code": "M. Marquez",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "q2": "1:37.695"
+        },
+        {
+          "pos": 3,
+          "number": "49",
+          "driver": "Fabio Di Giannantonio",
+          "code": "Di Giannantonio",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "q2": "1:37.823"
+        },
+        {
+          "pos": 4,
+          "number": "25",
+          "driver": "Raul Fernandez",
+          "code": "R. Fernandez",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "q2": "1:38.117"
+        },
+        {
+          "pos": 5,
+          "number": "73",
+          "driver": "Alex Marquez",
+          "code": "A. Marquez",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "q2": "1:38.262"
+        },
+        {
+          "pos": 6,
+          "number": "37",
+          "driver": "Pedro Acosta",
+          "code": "Acosta",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "q2": "1:38.304"
+        },
+        {
+          "pos": 7,
+          "number": "89",
+          "driver": "Jorge Martin",
+          "code": "Martin",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "q2": "1:38.314"
+        },
+        {
+          "pos": 8,
+          "number": "54",
+          "driver": "Fermin Aldeguer",
+          "code": "Aldeguer",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "q2": "1:38.515"
+        },
+        {
+          "pos": 9,
+          "number": "5",
+          "driver": "Johann Zarco",
+          "code": "Zarco",
+          "team": "Castrol Honda LCR",
+          "teamColor": "#FAFAFA",
+          "q2": "1:38.630"
+        },
+        {
+          "pos": 10,
+          "number": "33",
+          "driver": "Brad Binder",
+          "code": "Binder",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "q2": "1:38.706"
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Diogo Moreira",
+          "code": "Moreira",
+          "team": "Pro Honda LCR",
+          "teamColor": "#FAFAFA",
+          "q1": "1:40.612",
+          "q2": "1:38.867"
+        },
+        {
+          "pos": 12,
+          "number": "27",
+          "driver": "Iker Lecuona",
+          "code": "Lecuona",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "q1": "1:40.970",
+          "q2": "1:39.094"
+        },
+        {
+          "pos": 13,
+          "number": "43",
+          "driver": "Jack Miller",
+          "code": "Miller",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "q1": "1:41.850"
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Luca Marini",
+          "code": "Marini",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "q1": "1:41.886"
+        },
+        {
+          "pos": 15,
+          "number": "79",
+          "driver": "Ai Ogura",
+          "code": "Ogura",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "q1": "1:41.934"
+        },
+        {
+          "pos": 16,
+          "number": "47",
+          "driver": "Augusto Fernandez",
+          "code": "A. Fernandez",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "q1": "1:42.319"
+        },
+        {
+          "pos": 17,
+          "number": "96",
+          "driver": "Jake Dixon",
+          "code": "Dixon",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "q1": "1:42.385"
+        },
+        {
+          "pos": 18,
+          "number": "44",
+          "driver": "Pol Espargaro",
+          "code": "Espargaro",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "q1": "1:42.599"
+        },
+        {
+          "pos": 19,
+          "number": "42",
+          "driver": "Alex Rins",
+          "code": "Rins",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "q1": "1:42.796"
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Fabio Quartararo",
+          "code": "Quartararo",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "q1": "1:42.966"
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Franco Morbidelli",
+          "code": "Morbidelli",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "q1": "1:48.767"
+        },
+        {
+          "pos": 22,
+          "number": "23",
+          "driver": "Enea Bastianini",
+          "code": "Bastianini",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "q1": "1:51.233"
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "cdIo7J6RF1I",
+          "title": "MotoGP, GP del Portogallo: gli highlights delle qualifiche a Portimao",
+          "thumbnailUrl": "https://i.ytimg.com/vi/cdIo7J6RF1I/hqdefault.jpg",
+          "publishedAt": "2026-11-21T13:17:53+00:00",
+          "source": "Sky Sport MotoGP",
+          "duration": "1:48"
+        }
+      ]
     },
     {
       "id": "motogp-2026-21-sprint",
@@ -14560,12 +14771,230 @@
       "round": 21,
       "title": "Grand Prix of Portugal",
       "session": "sprint",
-      "startsAt": "2026-11-21T15:00:00+00:00",
+      "startsAt": "2026-11-21T14:30:00+00:00",
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "scheduled",
-      "videos": []
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "72",
+          "driver": "Marco Bezzecchi",
+          "code": "Bezzecchi",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "time": "19:48.999",
+          "points": 12
+        },
+        {
+          "pos": 2,
+          "number": "25",
+          "driver": "Raul Fernandez",
+          "code": "R. Fernandez",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "time": "+8.378",
+          "points": 9
+        },
+        {
+          "pos": 3,
+          "number": "73",
+          "driver": "Alex Marquez",
+          "code": "A. Marquez",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "time": "+11.568",
+          "points": 7
+        },
+        {
+          "pos": 4,
+          "number": "37",
+          "driver": "Pedro Acosta",
+          "code": "Acosta",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "time": "+11.888",
+          "points": 6
+        },
+        {
+          "pos": 5,
+          "number": "89",
+          "driver": "Jorge Martin",
+          "code": "Martin",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "time": "+12.058",
+          "points": 5
+        },
+        {
+          "pos": 6,
+          "number": "79",
+          "driver": "Ai Ogura",
+          "code": "Ogura",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "time": "+12.217",
+          "points": 4
+        },
+        {
+          "pos": 7,
+          "number": "49",
+          "driver": "Fabio Di Giannantonio",
+          "code": "Di Giannantonio",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "time": "+12.658",
+          "points": 3
+        },
+        {
+          "pos": 8,
+          "number": "20",
+          "driver": "Fabio Quartararo",
+          "code": "Quartararo",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "time": "+18.392",
+          "points": 2
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "Iker Lecuona",
+          "code": "Lecuona",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "time": "+19.077",
+          "points": 1
+        },
+        {
+          "pos": 10,
+          "number": "43",
+          "driver": "Jack Miller",
+          "code": "Miller",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "time": "+19.467"
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Enea Bastianini",
+          "code": "Bastianini",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "time": "+21.898"
+        },
+        {
+          "pos": 12,
+          "number": "96",
+          "driver": "Jake Dixon",
+          "code": "Dixon",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "time": "+22.380"
+        },
+        {
+          "pos": 13,
+          "number": "44",
+          "driver": "Pol Espargaro",
+          "code": "Espargaro",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "time": "+22.569"
+        },
+        {
+          "pos": 14,
+          "number": "42",
+          "driver": "Alex Rins",
+          "code": "Rins",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "time": "+26.136"
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Luca Marini",
+          "code": "Marini",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "time": "+27.065"
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Franco Morbidelli",
+          "code": "Morbidelli",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "time": "+99.024"
+        },
+        {
+          "pos": 17,
+          "number": "93",
+          "driver": "Marc Marquez",
+          "code": "M. Marquez",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 18,
+          "number": "33",
+          "driver": "Brad Binder",
+          "code": "Binder",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 19,
+          "number": "54",
+          "driver": "Fermin Aldeguer",
+          "code": "Aldeguer",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Johann Zarco",
+          "code": "Zarco",
+          "team": "Castrol Honda LCR",
+          "teamColor": "#FAFAFA",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 21,
+          "number": "11",
+          "driver": "Diogo Moreira",
+          "code": "Moreira",
+          "team": "Pro Honda LCR",
+          "teamColor": "#FAFAFA",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 22,
+          "number": "47",
+          "driver": "Augusto Fernandez",
+          "code": "A. Fernandez",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "akIF2-8g_Lc",
+          "title": "MotoGP, GP del Portogallo: gli highlights della Sprint a Portimao",
+          "thumbnailUrl": "https://i.ytimg.com/vi/akIF2-8g_Lc/hqdefault.jpg",
+          "publishedAt": "2026-11-21T15:45:37+00:00",
+          "source": "Sky Sport MotoGP",
+          "duration": "2:42"
+        }
+      ]
     },
     {
       "id": "motogp-2026-21-warm_up",
@@ -14714,7 +15143,7 @@
           "name": "Jorge Martin",
           "team": "Aprilia Racing",
           "teamColor": "#8A2BE2",
-          "points": 371,
+          "points": 376,
           "wins": 1
         },
         {
@@ -14723,7 +15152,7 @@
           "name": "Marco Bezzecchi",
           "team": "Aprilia Racing",
           "teamColor": "#8A2BE2",
-          "points": 357,
+          "points": 369,
           "wins": 6
         },
         {
@@ -14732,7 +15161,7 @@
           "name": "Pedro Acosta",
           "team": "Red Bull KTM Factory Racing",
           "teamColor": "#FF8C00",
-          "points": 309,
+          "points": 315,
           "wins": 1
         },
         {
@@ -14741,7 +15170,7 @@
           "name": "Ai Ogura",
           "team": "SuperFile Trackhouse MotoGP Team",
           "teamColor": "#5CACEE",
-          "points": 294,
+          "points": 298,
           "wins": 1
         },
         {
@@ -14750,7 +15179,7 @@
           "name": "Fabio Di Giannantonio",
           "team": "Pertamina Enduro VR46 Racing Team",
           "teamColor": "#EEEE00",
-          "points": 282,
+          "points": 285,
           "wins": 1
         },
         {
@@ -14759,7 +15188,7 @@
           "name": "Raul Fernandez",
           "team": "SuperFile Trackhouse MotoGP Team",
           "teamColor": "#5CACEE",
-          "points": 258,
+          "points": 267,
           "wins": 1
         },
         {
@@ -14768,7 +15197,7 @@
           "name": "Alex Marquez",
           "team": "BK8 Gresini Racing MotoGP",
           "teamColor": "#CAE1FF",
-          "points": 197,
+          "points": 204,
           "wins": 1
         },
         {
@@ -14822,7 +15251,7 @@
           "name": "Fabio Quartararo",
           "team": "Monster Energy Yamaha MotoGP Team",
           "teamColor": "#000F89",
-          "points": 79,
+          "points": 81,
           "wins": 0
         },
         {
@@ -14883,9 +15312,9 @@
           "pos": 21,
           "posText": "21",
           "name": "Iker Lecuona",
-          "team": "BK8 Gresini Racing MotoGP",
-          "teamColor": "#CAE1FF",
-          "points": 18,
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "points": 19,
           "wins": 0
         },
         {

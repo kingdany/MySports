@@ -1,6 +1,1442 @@
 {
-  "generatedAt": "2026-11-21T10:55:58.2154036+00:00",
+  "generatedAt": "2026-11-21T19:10:31.405203+00:00",
   "events": [
+    {
+      "id": "serie-a-2026-27-558526",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Parma - Roma",
+      "session": "match",
+      "startsAt": "2026-11-21T17:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "112",
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "logoUrl": "https://crests.football-data.org/112.png"
+      },
+      "awayTeam": {
+        "id": "100",
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "logoUrl": "https://crests.football-data.org/100.png"
+      },
+      "homeScore": 1,
+      "awayScore": 5,
+      "videos": [],
+      "details": {
+        "version": 2,
+        "incidents": [
+          {
+            "minute": 39,
+            "type": "goal",
+            "side": "away",
+            "player": "Donyell Malen",
+            "short": "Malen"
+          },
+          {
+            "minute": 43,
+            "type": "yellow",
+            "side": "home",
+            "player": "Emanuele Valeri",
+            "short": "Valeri"
+          },
+          {
+            "minute": 54,
+            "type": "goal",
+            "side": "home",
+            "player": "Nesta Elphege",
+            "short": "Elphege"
+          },
+          {
+            "minute": 68,
+            "type": "goal",
+            "side": "away",
+            "player": "Donyell Malen",
+            "short": "Malen"
+          },
+          {
+            "minute": 71,
+            "type": "goal",
+            "side": "away",
+            "player": "Rodrigo Mora",
+            "short": "Mora"
+          },
+          {
+            "minute": 77,
+            "type": "goal",
+            "side": "away",
+            "player": "Donyell Malen",
+            "short": "Malen"
+          },
+          {
+            "minute": 90,
+            "type": "goal",
+            "side": "away",
+            "player": "Donyell Malen",
+            "short": "Malen"
+          }
+        ],
+        "home": {
+          "starters": [
+            {
+              "number": 30,
+              "name": "Giovanni Daffara",
+              "short": "Daffara"
+            },
+            {
+              "number": 37,
+              "name": "Mariano Troilo",
+              "short": "Troilo"
+            },
+            {
+              "number": 29,
+              "name": "Franco Carboni",
+              "short": "Carboni"
+            },
+            {
+              "number": 15,
+              "name": "Enrico Del Prato",
+              "short": "Del Prato"
+            },
+            {
+              "number": 16,
+              "name": "Mandela Keita",
+              "short": "Keita"
+            },
+            {
+              "number": 4,
+              "name": "Vincent Sierro",
+              "short": "Sierro"
+            },
+            {
+              "number": 14,
+              "name": "Emanuele Valeri",
+              "short": "Valeri"
+            },
+            {
+              "number": 27,
+              "name": "Sascha Britschgi",
+              "short": "Britschgi"
+            },
+            {
+              "number": 23,
+              "name": "Nesta Elphege",
+              "short": "Elphege"
+            },
+            {
+              "number": 19,
+              "name": "El Bilal Toure",
+              "short": "Toure"
+            },
+            {
+              "number": 80,
+              "name": "Giovanni Fabbian",
+              "short": "Fabbian"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 66,
+              "in": {
+                "number": 76,
+                "name": "Simone Lontani",
+                "short": "Lontani"
+              },
+              "out": {
+                "number": 19,
+                "name": "El Bilal Toure",
+                "short": "Toure"
+              }
+            },
+            {
+              "minute": 67,
+              "in": {
+                "number": 32,
+                "name": "Christian Ordoñez",
+                "short": "Ordoñez"
+              },
+              "out": {
+                "number": 80,
+                "name": "Giovanni Fabbian",
+                "short": "Fabbian"
+              }
+            },
+            {
+              "minute": 75,
+              "in": {
+                "number": 41,
+                "name": "Hans Nicolussi Caviglia",
+                "short": "Nicolussi Caviglia"
+              },
+              "out": {
+                "number": 4,
+                "name": "Vincent Sierro",
+                "short": "Sierro"
+              }
+            },
+            {
+              "minute": 75,
+              "in": {
+                "number": 7,
+                "name": "Ousmane Diallo",
+                "short": "Diallo"
+              },
+              "out": {
+                "number": 27,
+                "name": "Sascha Britschgi",
+                "short": "Britschgi"
+              }
+            },
+            {
+              "minute": 90,
+              "in": {
+                "number": 25,
+                "name": "Thomás De Martis",
+                "short": "De Martis"
+              },
+              "out": {
+                "number": 23,
+                "name": "Nesta Elphege",
+                "short": "Elphege"
+              }
+            }
+          ]
+        },
+        "away": {
+          "starters": [
+            {
+              "number": 99,
+              "name": "Mile Svilar",
+              "short": "Svilar"
+            },
+            {
+              "number": 26,
+              "name": "Leonardo Balerdi",
+              "short": "Balerdi"
+            },
+            {
+              "number": 22,
+              "name": "Mario Hermoso",
+              "short": "Hermoso"
+            },
+            {
+              "number": 23,
+              "name": "Gianluca Mancini",
+              "short": "Mancini"
+            },
+            {
+              "number": 17,
+              "name": "Manu Koné",
+              "short": "Koné"
+            },
+            {
+              "number": 4,
+              "name": "Bryan Cristante",
+              "short": "Cristante"
+            },
+            {
+              "number": 20,
+              "name": "Nahuel Molina",
+              "short": "Molina"
+            },
+            {
+              "number": 77,
+              "name": "Emanuele Lulli",
+              "short": "Lulli"
+            },
+            {
+              "number": 14,
+              "name": "Donyell Malen",
+              "short": "Malen"
+            },
+            {
+              "number": 86,
+              "name": "Rodrigo Mora",
+              "short": "Mora"
+            },
+            {
+              "number": 21,
+              "name": "Paulo Dybala",
+              "short": "Dybala"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 56,
+              "in": {
+                "number": 43,
+                "name": "Wesley"
+              },
+              "out": {
+                "number": 77,
+                "name": "Emanuele Lulli",
+                "short": "Lulli"
+              }
+            },
+            {
+              "minute": 56,
+              "in": {
+                "number": 5,
+                "name": "Evan Ndicka",
+                "short": "Ndicka"
+              },
+              "out": {
+                "number": 26,
+                "name": "Leonardo Balerdi",
+                "short": "Balerdi"
+              }
+            },
+            {
+              "minute": 62,
+              "in": {
+                "number": 18,
+                "name": "Matìas Soulè",
+                "short": "Soulè"
+              },
+              "out": {
+                "number": 21,
+                "name": "Paulo Dybala",
+                "short": "Dybala"
+              }
+            },
+            {
+              "minute": 83,
+              "in": {
+                "number": 3,
+                "name": "Konstantinos Koulierakis",
+                "short": "Koulierakis"
+              },
+              "out": {
+                "number": 20,
+                "name": "Nahuel Molina",
+                "short": "Molina"
+              }
+            },
+            {
+              "minute": 84,
+              "in": {
+                "number": 61,
+                "name": "Niccolò Pisilli",
+                "short": "Pisilli"
+              },
+              "out": {
+                "number": 86,
+                "name": "Rodrigo Mora",
+                "short": "Mora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "motogp-2026-21-sprint",
+      "competition": "motogp",
+      "season": "2026",
+      "round": 21,
+      "title": "Grand Prix of Portugal",
+      "session": "sprint",
+      "startsAt": "2026-11-21T14:30:00+00:00",
+      "venue": "Autódromo Internacional do Algarve",
+      "city": "Portimão",
+      "country": "Portugal",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "72",
+          "driver": "Marco Bezzecchi",
+          "code": "Bezzecchi",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "time": "19:48.999",
+          "points": 12
+        },
+        {
+          "pos": 2,
+          "number": "25",
+          "driver": "Raul Fernandez",
+          "code": "R. Fernandez",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "time": "+8.378",
+          "points": 9
+        },
+        {
+          "pos": 3,
+          "number": "73",
+          "driver": "Alex Marquez",
+          "code": "A. Marquez",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "time": "+11.568",
+          "points": 7
+        },
+        {
+          "pos": 4,
+          "number": "37",
+          "driver": "Pedro Acosta",
+          "code": "Acosta",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "time": "+11.888",
+          "points": 6
+        },
+        {
+          "pos": 5,
+          "number": "89",
+          "driver": "Jorge Martin",
+          "code": "Martin",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "time": "+12.058",
+          "points": 5
+        },
+        {
+          "pos": 6,
+          "number": "79",
+          "driver": "Ai Ogura",
+          "code": "Ogura",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "time": "+12.217",
+          "points": 4
+        },
+        {
+          "pos": 7,
+          "number": "49",
+          "driver": "Fabio Di Giannantonio",
+          "code": "Di Giannantonio",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "time": "+12.658",
+          "points": 3
+        },
+        {
+          "pos": 8,
+          "number": "20",
+          "driver": "Fabio Quartararo",
+          "code": "Quartararo",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "time": "+18.392",
+          "points": 2
+        },
+        {
+          "pos": 9,
+          "number": "27",
+          "driver": "Iker Lecuona",
+          "code": "Lecuona",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "time": "+19.077",
+          "points": 1
+        },
+        {
+          "pos": 10,
+          "number": "43",
+          "driver": "Jack Miller",
+          "code": "Miller",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "time": "+19.467"
+        },
+        {
+          "pos": 11,
+          "number": "23",
+          "driver": "Enea Bastianini",
+          "code": "Bastianini",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "time": "+21.898"
+        },
+        {
+          "pos": 12,
+          "number": "96",
+          "driver": "Jake Dixon",
+          "code": "Dixon",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "time": "+22.380"
+        },
+        {
+          "pos": 13,
+          "number": "44",
+          "driver": "Pol Espargaro",
+          "code": "Espargaro",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "time": "+22.569"
+        },
+        {
+          "pos": 14,
+          "number": "42",
+          "driver": "Alex Rins",
+          "code": "Rins",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "time": "+26.136"
+        },
+        {
+          "pos": 15,
+          "number": "10",
+          "driver": "Luca Marini",
+          "code": "Marini",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "time": "+27.065"
+        },
+        {
+          "pos": 16,
+          "number": "21",
+          "driver": "Franco Morbidelli",
+          "code": "Morbidelli",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "time": "+99.024"
+        },
+        {
+          "pos": 17,
+          "number": "93",
+          "driver": "Marc Marquez",
+          "code": "M. Marquez",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 18,
+          "number": "33",
+          "driver": "Brad Binder",
+          "code": "Binder",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 19,
+          "number": "54",
+          "driver": "Fermin Aldeguer",
+          "code": "Aldeguer",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 20,
+          "number": "5",
+          "driver": "Johann Zarco",
+          "code": "Zarco",
+          "team": "Castrol Honda LCR",
+          "teamColor": "#FAFAFA",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 21,
+          "number": "11",
+          "driver": "Diogo Moreira",
+          "code": "Moreira",
+          "team": "Pro Honda LCR",
+          "teamColor": "#FAFAFA",
+          "time": "Ritirato"
+        },
+        {
+          "pos": 22,
+          "number": "47",
+          "driver": "Augusto Fernandez",
+          "code": "A. Fernandez",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "time": "Ritirato"
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "akIF2-8g_Lc",
+          "title": "MotoGP, GP del Portogallo: gli highlights della Sprint a Portimao",
+          "thumbnailUrl": "https://i.ytimg.com/vi/akIF2-8g_Lc/hqdefault.jpg",
+          "publishedAt": "2026-11-21T15:45:37+00:00",
+          "source": "Sky Sport MotoGP",
+          "duration": "2:42"
+        }
+      ]
+    },
+    {
+      "id": "serie-a-2026-27-558525",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Como - Cagliari",
+      "session": "match",
+      "startsAt": "2026-11-21T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "7397",
+        "name": "Como 1907",
+        "shortName": "Como",
+        "logoUrl": "https://crests.football-data.org/7397.png"
+      },
+      "awayTeam": {
+        "id": "104",
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "logoUrl": "https://crests.football-data.org/104.png"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "nkfMY1blwm4",
+          "title": "Como-Cagliari 2-0: gol e highlights | Serie A",
+          "thumbnailUrl": "https://i.ytimg.com/vi/nkfMY1blwm4/hqdefault.jpg",
+          "publishedAt": "2026-11-21T19:00:06+00:00",
+          "source": "Sky Sport",
+          "duration": "2:10"
+        }
+      ],
+      "details": {
+        "version": 2,
+        "incidents": [
+          {
+            "minute": 24,
+            "type": "goal",
+            "side": "home",
+            "player": "Jacobo Ramón",
+            "short": "Ramón"
+          },
+          {
+            "minute": 56,
+            "type": "goal",
+            "side": "home",
+            "player": "Lucas Da Cunha",
+            "short": "Da Cunha"
+          }
+        ],
+        "home": {
+          "starters": [
+            {
+              "number": 1,
+              "name": "Jean Butez",
+              "short": "Butez"
+            },
+            {
+              "number": 2,
+              "name": "Marc-Oliver Kempf",
+              "short": "Kempf"
+            },
+            {
+              "number": 4,
+              "name": "Jacobo Ramón",
+              "short": "Ramón"
+            },
+            {
+              "number": 16,
+              "name": "Kaiki"
+            },
+            {
+              "number": 27,
+              "name": "Yan Couto",
+              "short": "Couto"
+            },
+            {
+              "number": 7,
+              "name": "Lucas Da Cunha",
+              "short": "Da Cunha"
+            },
+            {
+              "number": 6,
+              "name": "Luis Milla",
+              "short": "Milla"
+            },
+            {
+              "number": 21,
+              "name": "Samuele Ricci",
+              "short": "Ricci"
+            },
+            {
+              "number": 9,
+              "name": "Tasos Douvikas",
+              "short": "Douvikas"
+            },
+            {
+              "number": 20,
+              "name": "Martin Baturina",
+              "short": "Baturina"
+            },
+            {
+              "number": 30,
+              "name": "Mattia Liberali",
+              "short": "Liberali"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 57,
+              "in": {
+                "number": 5,
+                "name": "Máximo Perrone",
+                "short": "Perrone"
+              },
+              "out": {
+                "number": 6,
+                "name": "Luis Milla",
+                "short": "Milla"
+              }
+            },
+            {
+              "minute": 57,
+              "in": {
+                "number": 10,
+                "name": "Nico Paz",
+                "short": "Paz"
+              },
+              "out": {
+                "number": 30,
+                "name": "Mattia Liberali",
+                "short": "Liberali"
+              }
+            },
+            {
+              "minute": 73,
+              "in": {
+                "number": 15,
+                "name": "Adrian Lahdo",
+                "short": "Lahdo"
+              },
+              "out": {
+                "number": 21,
+                "name": "Samuele Ricci",
+                "short": "Ricci"
+              }
+            },
+            {
+              "minute": 73,
+              "in": {
+                "number": 28,
+                "name": "Ivan Smolcic",
+                "short": "Smolcic"
+              },
+              "out": {
+                "number": 7,
+                "name": "Lucas Da Cunha",
+                "short": "Da Cunha"
+              }
+            },
+            {
+              "minute": 88,
+              "in": {
+                "number": 3,
+                "name": "Álex Valle",
+                "short": "Valle"
+              },
+              "out": {
+                "number": 20,
+                "name": "Martin Baturina",
+                "short": "Baturina"
+              }
+            }
+          ]
+        },
+        "away": {
+          "starters": [
+            {
+              "number": 1,
+              "name": "Elia Caprile",
+              "short": "Caprile"
+            },
+            {
+              "number": 22,
+              "name": "Raphael Kofler",
+              "short": "Kofler"
+            },
+            {
+              "number": 14,
+              "name": "Alessandro Deiola",
+              "short": "Deiola"
+            },
+            {
+              "number": 2,
+              "name": "Zé Pedro"
+            },
+            {
+              "number": 10,
+              "name": "Jacopo Fazzini",
+              "short": "Fazzini"
+            },
+            {
+              "number": 8,
+              "name": "Michel Adopo",
+              "short": "Adopo"
+            },
+            {
+              "number": 4,
+              "name": "Alessandro Romano",
+              "short": "Romano"
+            },
+            {
+              "number": 33,
+              "name": "Adam Obert",
+              "short": "Obert"
+            },
+            {
+              "number": 36,
+              "name": "Nicola Grandu",
+              "short": "Grandu"
+            },
+            {
+              "number": 70,
+              "name": "Daniel Maldini",
+              "short": "Maldini"
+            },
+            {
+              "number": 31,
+              "name": "Paul Mendy",
+              "short": "Mendy"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 45,
+              "in": {
+                "number": 18,
+                "name": "M'Bala Nzola",
+                "short": "Nzola"
+              },
+              "out": {
+                "number": 31,
+                "name": "Paul Mendy",
+                "short": "Mendy"
+              }
+            },
+            {
+              "minute": 50,
+              "in": {
+                "number": 15,
+                "name": "Juan Rodríguez",
+                "short": "Rodríguez"
+              },
+              "out": {
+                "number": 8,
+                "name": "Michel Adopo",
+                "short": "Adopo"
+              }
+            },
+            {
+              "minute": 65,
+              "in": {
+                "number": 19,
+                "name": "Yael Trepy",
+                "short": "Trepy"
+              },
+              "out": {
+                "number": 36,
+                "name": "Nicola Grandu",
+                "short": "Grandu"
+              }
+            },
+            {
+              "minute": 79,
+              "in": {
+                "number": 39,
+                "name": "Alieu Fadera",
+                "short": "Fadera"
+              },
+              "out": {
+                "number": 70,
+                "name": "Daniel Maldini",
+                "short": "Maldini"
+              }
+            },
+            {
+              "minute": 79,
+              "in": {
+                "number": 79,
+                "name": "Yanis Massolin",
+                "short": "Massolin"
+              },
+              "out": {
+                "number": 14,
+                "name": "Alessandro Deiola",
+                "short": "Deiola"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "serie-a-2026-27-558528",
+      "competition": "serie-a",
+      "season": "2026-27",
+      "round": 12,
+      "title": "Lazio - Lecce",
+      "session": "match",
+      "startsAt": "2026-11-21T14:00:00+00:00",
+      "status": "finished",
+      "homeTeam": {
+        "id": "110",
+        "name": "SS Lazio",
+        "shortName": "Lazio",
+        "logoUrl": "https://crests.football-data.org/110.png"
+      },
+      "awayTeam": {
+        "id": "5890",
+        "name": "US Lecce",
+        "shortName": "Lecce",
+        "logoUrl": "https://crests.football-data.org/5890.png"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "videos": [
+        {
+          "videoId": "f8MMoOVf7PU",
+          "title": "NOSLIN + FRATTESI, Gattuso resta al 1° POSTO: Lazio-Lecce 3-0 | Serie A Enilive | DAZN Highlights",
+          "thumbnailUrl": "https://i.ytimg.com/vi/f8MMoOVf7PU/hqdefault.jpg",
+          "publishedAt": "2026-11-21T18:57:11+00:00",
+          "source": "DAZN",
+          "duration": "3:50"
+        }
+      ],
+      "details": {
+        "version": 2,
+        "incidents": [
+          {
+            "minute": 25,
+            "type": "goal",
+            "side": "home",
+            "player": "Tijjani Noslin",
+            "short": "Noslin"
+          },
+          {
+            "minute": 50,
+            "type": "yellow",
+            "side": "away",
+            "player": "Jamil Siebert",
+            "short": "Siebert"
+          },
+          {
+            "minute": 68,
+            "type": "goal",
+            "side": "home",
+            "player": "Tijjani Noslin",
+            "short": "Noslin"
+          },
+          {
+            "minute": 77,
+            "type": "yellow",
+            "side": "away",
+            "player": "Danilo Veiga",
+            "short": "Veiga"
+          },
+          {
+            "minute": 87,
+            "type": "yellow",
+            "side": "home",
+            "player": "Luca Pellegrini",
+            "short": "Pellegrini"
+          },
+          {
+            "minute": 90,
+            "type": "goal",
+            "side": "home",
+            "player": "Davide Frattesi",
+            "short": "Frattesi"
+          }
+        ],
+        "home": {
+          "starters": [
+            {
+              "number": 35,
+              "name": "Christos Mandas",
+              "short": "Mandas"
+            },
+            {
+              "number": 2,
+              "name": "Diogo Leite",
+              "short": "Leite"
+            },
+            {
+              "number": 5,
+              "name": "Danilho Doekhi",
+              "short": "Doekhi"
+            },
+            {
+              "number": 23,
+              "name": "Alfonso Pedraza",
+              "short": "Pedraza"
+            },
+            {
+              "number": 15,
+              "name": "Romano Floriani",
+              "short": "Floriani"
+            },
+            {
+              "number": 21,
+              "name": "Reda Belahyane",
+              "short": "Belahyane"
+            },
+            {
+              "number": 24,
+              "name": "Kenneth Taylor",
+              "short": "Taylor"
+            },
+            {
+              "number": 16,
+              "name": "Davide Frattesi",
+              "short": "Frattesi"
+            },
+            {
+              "number": 9,
+              "name": "Andrea Pinamonti",
+              "short": "Pinamonti"
+            },
+            {
+              "number": 14,
+              "name": "Tijjani Noslin",
+              "short": "Noslin"
+            },
+            {
+              "number": 11,
+              "name": "Gustav Isaksen",
+              "short": "Isaksen"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 78,
+              "in": {
+                "number": 3,
+                "name": "Luca Pellegrini",
+                "short": "Pellegrini"
+              },
+              "out": {
+                "number": 23,
+                "name": "Alfonso Pedraza",
+                "short": "Pedraza"
+              }
+            },
+            {
+              "minute": 78,
+              "in": {
+                "number": 22,
+                "name": "Matteo Cancellieri",
+                "short": "Cancellieri"
+              },
+              "out": {
+                "number": 11,
+                "name": "Gustav Isaksen",
+                "short": "Isaksen"
+              }
+            },
+            {
+              "minute": 83,
+              "in": {
+                "number": 6,
+                "name": "Nicolò Rovella",
+                "short": "Rovella"
+              },
+              "out": {
+                "number": 21,
+                "name": "Reda Belahyane",
+                "short": "Belahyane"
+              }
+            },
+            {
+              "minute": 83,
+              "in": {
+                "number": 7,
+                "name": "Fisayo Dele-Bashiru",
+                "short": "Dele-Bashiru"
+              },
+              "out": {
+                "number": 14,
+                "name": "Tijjani Noslin",
+                "short": "Noslin"
+              }
+            },
+            {
+              "minute": 88,
+              "in": {
+                "number": 80,
+                "name": "Albert Gudmundsson",
+                "short": "Gudmundsson"
+              },
+              "out": {
+                "number": 9,
+                "name": "Andrea Pinamonti",
+                "short": "Pinamonti"
+              }
+            }
+          ]
+        },
+        "away": {
+          "starters": [
+            {
+              "number": 30,
+              "name": "Wladimiro Falcone",
+              "short": "Falcone"
+            },
+            {
+              "number": 44,
+              "name": "Tiago Gabriel"
+            },
+            {
+              "number": 5,
+              "name": "Jamil Siebert",
+              "short": "Siebert"
+            },
+            {
+              "number": 25,
+              "name": "Antonino Gallo",
+              "short": "Gallo"
+            },
+            {
+              "number": 17,
+              "name": "Danilo Veiga",
+              "short": "Veiga"
+            },
+            {
+              "number": 29,
+              "name": "Lassana Coulibaly",
+              "short": "Coulibaly"
+            },
+            {
+              "number": 14,
+              "name": "Youssef Maleh",
+              "short": "Maleh"
+            },
+            {
+              "number": 77,
+              "name": "Mohamed Kaba",
+              "short": "Kaba"
+            },
+            {
+              "number": 69,
+              "name": "Willem Geubbels",
+              "short": "Geubbels"
+            },
+            {
+              "number": 7,
+              "name": "Amar Ahmed",
+              "short": "Ahmed"
+            },
+            {
+              "number": 11,
+              "name": "Konan N’Dri",
+              "short": "N’Dri"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": 59,
+              "in": {
+                "number": 79,
+                "name": "Oumar Ngom",
+                "short": "Ngom"
+              },
+              "out": {
+                "number": 77,
+                "name": "Mohamed Kaba",
+                "short": "Kaba"
+              }
+            },
+            {
+              "minute": 59,
+              "in": {
+                "number": 22,
+                "name": "Francisco Esteban Sánchez",
+                "short": "Esteban Sánchez"
+              },
+              "out": {
+                "number": 69,
+                "name": "Willem Geubbels",
+                "short": "Geubbels"
+              }
+            },
+            {
+              "minute": 74,
+              "in": {
+                "number": 99,
+                "name": "Joel Monteiro",
+                "short": "Almada Monteiro"
+              },
+              "out": {
+                "number": 14,
+                "name": "Youssef Maleh",
+                "short": "Maleh"
+              }
+            },
+            {
+              "minute": 86,
+              "in": {
+                "number": 9,
+                "name": "Nikola Stulic",
+                "short": "Stulic"
+              },
+              "out": {
+                "number": 11,
+                "name": "Konan N’Dri",
+                "short": "N’Dri"
+              }
+            },
+            {
+              "minute": 86,
+              "in": {
+                "number": 8,
+                "name": "Sadik Fofana",
+                "short": "Fofana"
+              },
+              "out": {
+                "number": 29,
+                "name": "Lassana Coulibaly",
+                "short": "Coulibaly"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "motogp-2026-21-qualifying",
+      "competition": "motogp",
+      "season": "2026",
+      "round": 21,
+      "title": "Grand Prix of Portugal",
+      "session": "qualifying",
+      "startsAt": "2026-11-21T10:50:00+00:00",
+      "venue": "Autódromo Internacional do Algarve",
+      "city": "Portimão",
+      "country": "Portugal",
+      "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "72",
+          "driver": "Marco Bezzecchi",
+          "code": "Bezzecchi",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "q2": "1:37.201"
+        },
+        {
+          "pos": 2,
+          "number": "93",
+          "driver": "Marc Marquez",
+          "code": "M. Marquez",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "q2": "1:37.695"
+        },
+        {
+          "pos": 3,
+          "number": "49",
+          "driver": "Fabio Di Giannantonio",
+          "code": "Di Giannantonio",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "q2": "1:37.823"
+        },
+        {
+          "pos": 4,
+          "number": "25",
+          "driver": "Raul Fernandez",
+          "code": "R. Fernandez",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "q2": "1:38.117"
+        },
+        {
+          "pos": 5,
+          "number": "73",
+          "driver": "Alex Marquez",
+          "code": "A. Marquez",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "q2": "1:38.262"
+        },
+        {
+          "pos": 6,
+          "number": "37",
+          "driver": "Pedro Acosta",
+          "code": "Acosta",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "q2": "1:38.304"
+        },
+        {
+          "pos": 7,
+          "number": "89",
+          "driver": "Jorge Martin",
+          "code": "Martin",
+          "team": "Aprilia Racing",
+          "teamColor": "#8A2BE2",
+          "q2": "1:38.314"
+        },
+        {
+          "pos": 8,
+          "number": "54",
+          "driver": "Fermin Aldeguer",
+          "code": "Aldeguer",
+          "team": "BK8 Gresini Racing MotoGP",
+          "teamColor": "#CAE1FF",
+          "q2": "1:38.515"
+        },
+        {
+          "pos": 9,
+          "number": "5",
+          "driver": "Johann Zarco",
+          "code": "Zarco",
+          "team": "Castrol Honda LCR",
+          "teamColor": "#FAFAFA",
+          "q2": "1:38.630"
+        },
+        {
+          "pos": 10,
+          "number": "33",
+          "driver": "Brad Binder",
+          "code": "Binder",
+          "team": "Red Bull KTM Factory Racing",
+          "teamColor": "#FF8C00",
+          "q2": "1:38.706"
+        },
+        {
+          "pos": 11,
+          "number": "11",
+          "driver": "Diogo Moreira",
+          "code": "Moreira",
+          "team": "Pro Honda LCR",
+          "teamColor": "#FAFAFA",
+          "q1": "1:40.612",
+          "q2": "1:38.867"
+        },
+        {
+          "pos": 12,
+          "number": "27",
+          "driver": "Iker Lecuona",
+          "code": "Lecuona",
+          "team": "Ducati Lenovo Team",
+          "teamColor": "#CD0000",
+          "q1": "1:40.970",
+          "q2": "1:39.094"
+        },
+        {
+          "pos": 13,
+          "number": "43",
+          "driver": "Jack Miller",
+          "code": "Miller",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "q1": "1:41.850"
+        },
+        {
+          "pos": 14,
+          "number": "10",
+          "driver": "Luca Marini",
+          "code": "Marini",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "q1": "1:41.886"
+        },
+        {
+          "pos": 15,
+          "number": "79",
+          "driver": "Ai Ogura",
+          "code": "Ogura",
+          "team": "SuperFile Trackhouse MotoGP Team",
+          "teamColor": "#5CACEE",
+          "q1": "1:41.934"
+        },
+        {
+          "pos": 16,
+          "number": "47",
+          "driver": "Augusto Fernandez",
+          "code": "A. Fernandez",
+          "team": "Prima Pramac Yamaha MotoGP",
+          "teamColor": "#055BDD",
+          "q1": "1:42.319"
+        },
+        {
+          "pos": 17,
+          "number": "96",
+          "driver": "Jake Dixon",
+          "code": "Dixon",
+          "team": "Honda HRC Castrol",
+          "teamColor": "#FF0000",
+          "q1": "1:42.385"
+        },
+        {
+          "pos": 18,
+          "number": "44",
+          "driver": "Pol Espargaro",
+          "code": "Espargaro",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "q1": "1:42.599"
+        },
+        {
+          "pos": 19,
+          "number": "42",
+          "driver": "Alex Rins",
+          "code": "Rins",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "q1": "1:42.796"
+        },
+        {
+          "pos": 20,
+          "number": "20",
+          "driver": "Fabio Quartararo",
+          "code": "Quartararo",
+          "team": "Monster Energy Yamaha MotoGP Team",
+          "teamColor": "#000F89",
+          "q1": "1:42.966"
+        },
+        {
+          "pos": 21,
+          "number": "21",
+          "driver": "Franco Morbidelli",
+          "code": "Morbidelli",
+          "team": "Pertamina Enduro VR46 Racing Team",
+          "teamColor": "#EEEE00",
+          "q1": "1:48.767"
+        },
+        {
+          "pos": 22,
+          "number": "23",
+          "driver": "Enea Bastianini",
+          "code": "Bastianini",
+          "team": "Red Bull KTM Tech3",
+          "teamColor": "#EE7621",
+          "q1": "1:51.233"
+        }
+      ],
+      "videos": [
+        {
+          "videoId": "cdIo7J6RF1I",
+          "title": "MotoGP, GP del Portogallo: gli highlights delle qualifiche a Portimao",
+          "thumbnailUrl": "https://i.ytimg.com/vi/cdIo7J6RF1I/hqdefault.jpg",
+          "publishedAt": "2026-11-21T13:17:53+00:00",
+          "source": "Sky Sport MotoGP",
+          "duration": "1:48"
+        }
+      ]
+    },
+    {
+      "id": "motogp-2026-21-fp2",
+      "competition": "motogp",
+      "season": "2026",
+      "round": 21,
+      "title": "Grand Prix of Portugal",
+      "session": "fp2",
+      "startsAt": "2026-11-21T10:10:00+00:00",
+      "venue": "Autódromo Internacional do Algarve",
+      "city": "Portimão",
+      "country": "Portugal",
+      "status": "finished",
+      "videos": []
+    },
     {
       "id": "f1-2026-21-qualifying",
       "competition": "f1",
@@ -13,6 +1449,232 @@
       "city": "Las Vegas",
       "country": "USA",
       "status": "finished",
+      "result": [
+        {
+          "pos": 1,
+          "number": "12",
+          "driver": "Andrea Kimi Antonelli",
+          "code": "ANT",
+          "team": "Mercedes",
+          "teamColor": "#C0C0C0",
+          "q1": "1:34.684",
+          "q2": "1:35.086",
+          "q3": "1:33.893"
+        },
+        {
+          "pos": 2,
+          "number": "3",
+          "driver": "Max Verstappen",
+          "code": "VER",
+          "team": "Red Bull",
+          "teamColor": "#00007D",
+          "q1": "1:35.264",
+          "q2": "1:34.394",
+          "q3": "1:34.151"
+        },
+        {
+          "pos": 3,
+          "number": "63",
+          "driver": "George Russell",
+          "code": "RUS",
+          "team": "Mercedes",
+          "teamColor": "#C0C0C0",
+          "q1": "1:34.664",
+          "q2": "1:34.617",
+          "q3": "1:34.224"
+        },
+        {
+          "pos": 4,
+          "number": "1",
+          "driver": "Lando Norris",
+          "code": "NOR",
+          "team": "McLaren",
+          "teamColor": "#FF9900",
+          "q1": "1:35.109",
+          "q2": "1:34.766",
+          "q3": "1:34.244"
+        },
+        {
+          "pos": 5,
+          "number": "6",
+          "driver": "Isack Hadjar",
+          "code": "HAD",
+          "team": "Red Bull",
+          "teamColor": "#00007D",
+          "q1": "1:35.413",
+          "q2": "1:35.064",
+          "q3": "1:34.592"
+        },
+        {
+          "pos": 6,
+          "number": "41",
+          "driver": "Arvid Lindblad",
+          "code": "LIN",
+          "team": "RB F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:35.456",
+          "q2": "1:34.963",
+          "q3": "1:34.668"
+        },
+        {
+          "pos": 7,
+          "number": "81",
+          "driver": "Oscar Piastri",
+          "code": "PIA",
+          "team": "McLaren",
+          "teamColor": "#FF9900",
+          "q1": "1:35.491",
+          "q2": "1:34.763",
+          "q3": "1:34.899"
+        },
+        {
+          "pos": 8,
+          "number": "30",
+          "driver": "Liam Lawson",
+          "code": "LAW",
+          "team": "RB F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:35.489",
+          "q2": "1:35.048",
+          "q3": "1:35.090"
+        },
+        {
+          "pos": 9,
+          "number": "10",
+          "driver": "Pierre Gasly",
+          "code": "GAS",
+          "team": "Alpine F1 Team",
+          "teamColor": "#FF6088",
+          "q1": "1:35.718",
+          "q2": "1:34.559",
+          "q3": "1:35.105"
+        },
+        {
+          "pos": 10,
+          "number": "43",
+          "driver": "Franco Colapinto",
+          "code": "COL",
+          "team": "Alpine F1 Team",
+          "teamColor": "#FF6088",
+          "q1": "1:35.930",
+          "q2": "1:34.982",
+          "q3": "1:35.314"
+        },
+        {
+          "pos": 11,
+          "number": "16",
+          "driver": "Charles Leclerc",
+          "code": "LEC",
+          "team": "Ferrari",
+          "teamColor": "#CC0000",
+          "q1": "1:35.040",
+          "q2": "1:35.197"
+        },
+        {
+          "pos": 12,
+          "number": "44",
+          "driver": "Lewis Hamilton",
+          "code": "HAM",
+          "team": "Ferrari",
+          "teamColor": "#CC0000",
+          "q1": "1:35.743",
+          "q2": "1:35.253"
+        },
+        {
+          "pos": 13,
+          "number": "27",
+          "driver": "Nico Hülkenberg",
+          "code": "HUL",
+          "team": "Audi",
+          "teamColor": "#8F8F8F",
+          "q1": "1:35.710",
+          "q2": "1:35.460"
+        },
+        {
+          "pos": 14,
+          "number": "55",
+          "driver": "Carlos Sainz",
+          "code": "SAI",
+          "team": "Williams",
+          "teamColor": "#1C39BB",
+          "q1": "1:35.588",
+          "q2": "1:35.641"
+        },
+        {
+          "pos": 15,
+          "number": "5",
+          "driver": "Gabriel Bortoleto",
+          "code": "BOR",
+          "team": "Audi",
+          "teamColor": "#8F8F8F",
+          "q1": "1:36.149",
+          "q2": "1:35.993"
+        },
+        {
+          "pos": 16,
+          "number": "23",
+          "driver": "Alexander Albon",
+          "code": "ALB",
+          "team": "Williams",
+          "teamColor": "#1C39BB",
+          "q1": "1:35.856",
+          "q2": "1:36.125"
+        },
+        {
+          "pos": 17,
+          "number": "51",
+          "driver": "Rafael Camara",
+          "code": "CAM",
+          "team": "Haas F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:36.220"
+        },
+        {
+          "pos": 18,
+          "number": "11",
+          "driver": "Sergio Pérez",
+          "code": "PER",
+          "team": "Cadillac F1 Team",
+          "teamColor": "#EFEFEF",
+          "q1": "1:37.383"
+        },
+        {
+          "pos": 19,
+          "number": "14",
+          "driver": "Fernando Alonso",
+          "code": "ALO",
+          "team": "Aston Martin",
+          "teamColor": "#FFFFFF",
+          "q1": "1:37.400"
+        },
+        {
+          "pos": 20,
+          "number": "18",
+          "driver": "Lance Stroll",
+          "code": "STR",
+          "team": "Aston Martin",
+          "teamColor": "#FFFFFF",
+          "q1": "1:37.550"
+        },
+        {
+          "pos": 21,
+          "number": "77",
+          "driver": "Valtteri Bottas",
+          "code": "BOT",
+          "team": "Cadillac F1 Team",
+          "teamColor": "#EFEFEF",
+          "q1": "1:37.601"
+        },
+        {
+          "pos": 22,
+          "number": "87",
+          "driver": "Oliver Bearman",
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "teamColor": "#FFFFFF",
+          "q1": "1:48.005"
+        }
+      ],
       "videos": [
         {
           "videoId": "QaFxG-mMVQw",
@@ -2459,1677 +4121,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "f1-2026-20-qualifying",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "qualifying",
-      "startsAt": "2026-11-07T18:00:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "finished",
-      "result": [
-        {
-          "pos": 1,
-          "number": "1",
-          "driver": "Lando Norris",
-          "code": "NOR",
-          "team": "McLaren",
-          "teamColor": "#FF9900",
-          "q1": "1:30.939",
-          "q2": "1:29.207",
-          "q3": "1:27.470"
-        },
-        {
-          "pos": 2,
-          "number": "63",
-          "driver": "George Russell",
-          "code": "RUS",
-          "team": "Mercedes",
-          "teamColor": "#C0C0C0",
-          "q1": "1:31.206",
-          "q2": "1:26.745",
-          "q3": "1:27.674"
-        },
-        {
-          "pos": 3,
-          "number": "12",
-          "driver": "Andrea Kimi Antonelli",
-          "code": "ANT",
-          "team": "Mercedes",
-          "teamColor": "#C0C0C0",
-          "q1": "1:32.229",
-          "q2": "1:29.302",
-          "q3": "1:28.095"
-        },
-        {
-          "pos": 4,
-          "number": "16",
-          "driver": "Charles Leclerc",
-          "code": "LEC",
-          "team": "Ferrari",
-          "teamColor": "#CC0000",
-          "q1": "1:32.121",
-          "q2": "1:28.082",
-          "q3": "1:28.289"
-        },
-        {
-          "pos": 5,
-          "number": "30",
-          "driver": "Liam Lawson",
-          "code": "LAW",
-          "team": "RB F1 Team",
-          "teamColor": "#FFFFFF",
-          "q1": "1:32.085",
-          "q2": "1:27.049",
-          "q3": "1:28.321"
-        },
-        {
-          "pos": 6,
-          "number": "27",
-          "driver": "Nico Hülkenberg",
-          "code": "HUL",
-          "team": "Audi",
-          "teamColor": "#8F8F8F",
-          "q1": "1:31.693",
-          "q2": "1:28.361",
-          "q3": "1:28.668"
-        },
-        {
-          "pos": 7,
-          "number": "6",
-          "driver": "Isack Hadjar",
-          "code": "HAD",
-          "team": "Red Bull",
-          "teamColor": "#00007D",
-          "q1": "1:32.059",
-          "q2": "1:27.218",
-          "q3": "1:28.763"
-        },
-        {
-          "pos": 8,
-          "number": "87",
-          "driver": "Oliver Bearman",
-          "code": "BEA",
-          "team": "Haas F1 Team",
-          "teamColor": "#FFFFFF",
-          "q1": "1:33.030",
-          "q2": "1:29.130",
-          "q3": "1:29.831"
-        },
-        {
-          "pos": 9,
-          "number": "14",
-          "driver": "Fernando Alonso",
-          "code": "ALO",
-          "team": "Aston Martin",
-          "teamColor": "#FFFFFF",
-          "q1": "1:32.092",
-          "q2": "1:29.072",
-          "q3": "1:30.311"
-        },
-        {
-          "pos": 10,
-          "number": "23",
-          "driver": "Alexander Albon",
-          "code": "ALB",
-          "team": "Williams",
-          "teamColor": "#1C39BB",
-          "q1": "1:33.150",
-          "q2": "1:28.918",
-          "q3": "1:30.456"
-        },
-        {
-          "pos": 11,
-          "number": "44",
-          "driver": "Lewis Hamilton",
-          "code": "HAM",
-          "team": "Ferrari",
-          "teamColor": "#CC0000",
-          "q1": "1:31.666",
-          "q2": "1:30.001"
-        },
-        {
-          "pos": 12,
-          "number": "81",
-          "driver": "Oscar Piastri",
-          "code": "PIA",
-          "team": "McLaren",
-          "teamColor": "#FF9900",
-          "q1": "1:32.251",
-          "q2": "1:30.369"
-        },
-        {
-          "pos": 13,
-          "number": "51",
-          "driver": "Rafael Camara",
-          "code": "CAM",
-          "team": "Haas F1 Team",
-          "teamColor": "#FFFFFF",
-          "q1": "1:32.809",
-          "q2": "1:31.515"
-        },
-        {
-          "pos": 14,
-          "number": "41",
-          "driver": "Arvid Lindblad",
-          "code": "LIN",
-          "team": "RB F1 Team",
-          "teamColor": "#FFFFFF",
-          "q1": "1:32.306",
-          "q2": "1:31.687"
-        },
-        {
-          "pos": 15,
-          "number": "55",
-          "driver": "Carlos Sainz",
-          "code": "SAI",
-          "team": "Williams",
-          "teamColor": "#1C39BB",
-          "q1": "1:32.959",
-          "q2": "1:31.785"
-        },
-        {
-          "pos": 16,
-          "number": "3",
-          "driver": "Max Verstappen",
-          "code": "VER",
-          "team": "Red Bull",
-          "teamColor": "#00007D",
-          "q1": "1:31.238"
-        },
-        {
-          "pos": 17,
-          "number": "43",
-          "driver": "Franco Colapinto",
-          "code": "COL",
-          "team": "Alpine F1 Team",
-          "teamColor": "#FF6088",
-          "q1": "1:33.327"
-        },
-        {
-          "pos": 18,
-          "number": "10",
-          "driver": "Pierre Gasly",
-          "code": "GAS",
-          "team": "Alpine F1 Team",
-          "teamColor": "#FF6088",
-          "q1": "1:33.449"
-        },
-        {
-          "pos": 19,
-          "number": "18",
-          "driver": "Lance Stroll",
-          "code": "STR",
-          "team": "Aston Martin",
-          "teamColor": "#FFFFFF",
-          "q1": "1:33.653"
-        },
-        {
-          "pos": 20,
-          "number": "77",
-          "driver": "Valtteri Bottas",
-          "code": "BOT",
-          "team": "Cadillac F1 Team",
-          "teamColor": "#EFEFEF",
-          "q1": "1:33.774"
-        },
-        {
-          "pos": 21,
-          "number": "11",
-          "driver": "Sergio Pérez",
-          "code": "PER",
-          "team": "Cadillac F1 Team",
-          "teamColor": "#EFEFEF",
-          "q1": "1:34.509"
-        },
-        {
-          "pos": 22,
-          "number": "5",
-          "driver": "Gabriel Bortoleto",
-          "code": "BOR",
-          "team": "Audi",
-          "teamColor": "#8F8F8F",
-          "q1": "1:41.564"
-        }
-      ],
-      "videos": [
-        {
-          "videoId": "Cn4C153hCLk",
-          "title": "Qualifying Highlights | 2026 Sao Paulo Grand Prix",
-          "thumbnailUrl": "https://i.ytimg.com/vi/Cn4C153hCLk/hqdefault.jpg",
-          "publishedAt": "2026-11-07T21:16:28+00:00",
-          "source": "Formula 1",
-          "duration": "8:02"
-        }
-      ]
-    },
-    {
-      "id": "serie-a-2026-27-558535",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Parma - Bologna",
-      "session": "match",
-      "startsAt": "2026-11-07T17:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "112",
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "logoUrl": "https://crests.football-data.org/112.png"
-      },
-      "awayTeam": {
-        "id": "103",
-        "name": "Bologna FC 1909",
-        "shortName": "Bologna",
-        "logoUrl": "https://crests.football-data.org/103.png"
-      },
-      "homeScore": 1,
-      "awayScore": 2,
-      "videos": [
-        {
-          "videoId": "aLjrdp655Hw",
-          "title": "THEATE + ORSOLINI per vincere il DERBY: Parma-Bologna 1-2 | Serie A Enilive | DAZN",
-          "thumbnailUrl": "https://i.ytimg.com/vi/aLjrdp655Hw/hqdefault.jpg",
-          "publishedAt": "2026-11-07T21:57:06+00:00",
-          "source": "DAZN",
-          "duration": "4:34"
-        }
-      ],
-      "details": {
-        "version": 2,
-        "incidents": [
-          {
-            "minute": 9,
-            "type": "red",
-            "side": "home",
-            "player": "Abdoulaye Ndiaye",
-            "short": "Ndiaye"
-          },
-          {
-            "minute": 14,
-            "type": "yellow",
-            "side": "home",
-            "player": "José Romero",
-            "short": "Romero"
-          },
-          {
-            "minute": 20,
-            "type": "yellow",
-            "side": "away",
-            "player": "Nicoló Casale",
-            "short": "Casale"
-          },
-          {
-            "minute": 42,
-            "type": "yellow",
-            "side": "home",
-            "player": "Mariano Troilo",
-            "short": "Troilo"
-          },
-          {
-            "minute": 53,
-            "type": "goal",
-            "side": "away",
-            "player": "Arthur Theate",
-            "short": "Theate"
-          },
-          {
-            "minute": 72,
-            "type": "yellow",
-            "side": "home",
-            "player": "Enrico Del Prato",
-            "short": "Del Prato"
-          },
-          {
-            "minute": 72,
-            "type": "penalty",
-            "side": "away",
-            "player": "Riccardo Orsolini",
-            "short": "Orsolini"
-          },
-          {
-            "minute": 80,
-            "type": "yellow",
-            "side": "away",
-            "player": "Martin Vitík",
-            "short": "Vitík"
-          },
-          {
-            "minute": 81,
-            "type": "penalty",
-            "side": "home",
-            "player": "Vincent Sierro",
-            "short": "Sierro"
-          }
-        ],
-        "home": {
-          "starters": [
-            {
-              "number": 30,
-              "name": "Giovanni Daffara",
-              "short": "Daffara"
-            },
-            {
-              "number": 37,
-              "name": "Mariano Troilo",
-              "short": "Troilo"
-            },
-            {
-              "number": 3,
-              "name": "Abdoulaye Ndiaye",
-              "short": "Ndiaye"
-            },
-            {
-              "number": 15,
-              "name": "Enrico Del Prato",
-              "short": "Del Prato"
-            },
-            {
-              "number": 16,
-              "name": "Mandela Keita",
-              "short": "Keita"
-            },
-            {
-              "number": 80,
-              "name": "Giovanni Fabbian",
-              "short": "Fabbian"
-            },
-            {
-              "number": 4,
-              "name": "Vincent Sierro",
-              "short": "Sierro"
-            },
-            {
-              "number": 14,
-              "name": "Emanuele Valeri",
-              "short": "Valeri"
-            },
-            {
-              "number": 8,
-              "name": "Benjamin Cremaschi",
-              "short": "Cremaschi"
-            },
-            {
-              "number": 76,
-              "name": "Simone Lontani",
-              "short": "Lontani"
-            },
-            {
-              "number": 9,
-              "name": "José Romero",
-              "short": "Romero"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 22,
-              "in": {
-                "number": 19,
-                "name": "El Bilal Toure",
-                "short": "Toure"
-              },
-              "out": {
-                "number": 9,
-                "name": "José Romero",
-                "short": "Romero"
-              }
-            },
-            {
-              "minute": 45,
-              "in": {
-                "number": 27,
-                "name": "Sascha Britschgi",
-                "short": "Britschgi"
-              },
-              "out": {
-                "number": 8,
-                "name": "Benjamin Cremaschi",
-                "short": "Cremaschi"
-              }
-            },
-            {
-              "minute": 45,
-              "in": {
-                "number": 23,
-                "name": "Nesta Elphege",
-                "short": "Elphege"
-              },
-              "out": {
-                "number": 76,
-                "name": "Simone Lontani",
-                "short": "Lontani"
-              }
-            },
-            {
-              "minute": 82,
-              "in": {
-                "number": 11,
-                "name": "Pontus Almqvist",
-                "short": "Almqvist"
-              },
-              "out": {
-                "number": 80,
-                "name": "Giovanni Fabbian",
-                "short": "Fabbian"
-              }
-            },
-            {
-              "minute": 82,
-              "in": {
-                "number": 32,
-                "name": "Christian Ordoñez",
-                "short": "Ordoñez"
-              },
-              "out": {
-                "number": 4,
-                "name": "Vincent Sierro",
-                "short": "Sierro"
-              }
-            }
-          ]
-        },
-        "away": {
-          "starters": [
-            {
-              "number": 1,
-              "name": "Lukasz Skorupski",
-              "short": "Skorupski"
-            },
-            {
-              "number": 16,
-              "name": "Nicoló Casale",
-              "short": "Casale"
-            },
-            {
-              "number": 3,
-              "name": "Arthur Theate",
-              "short": "Theate"
-            },
-            {
-              "number": 36,
-              "name": "Matteo Darmian",
-              "short": "Darmian"
-            },
-            {
-              "number": 4,
-              "name": "Tommaso Pobega",
-              "short": "Pobega"
-            },
-            {
-              "number": 19,
-              "name": "Lewis Ferguson",
-              "short": "Ferguson"
-            },
-            {
-              "number": 33,
-              "name": "Juan Miranda",
-              "short": "Miranda"
-            },
-            {
-              "number": 20,
-              "name": "Nadir Zortea",
-              "short": "Zortea"
-            },
-            {
-              "number": 21,
-              "name": "Jens Odgaard",
-              "short": "Odgaard"
-            },
-            {
-              "number": 28,
-              "name": "Nicolò Cambiaghi",
-              "short": "Cambiaghi"
-            },
-            {
-              "number": 10,
-              "name": "Federico Bernardeschi",
-              "short": "Bernardeschi"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 26,
-              "in": {
-                "number": 11,
-                "name": "Samuel Mbangula",
-                "short": "Mbangula"
-              },
-              "out": {
-                "number": 33,
-                "name": "Juan Miranda",
-                "short": "Miranda"
-              }
-            },
-            {
-              "minute": 45,
-              "in": {
-                "number": 7,
-                "name": "Riccardo Orsolini",
-                "short": "Orsolini"
-              },
-              "out": {
-                "number": 20,
-                "name": "Nadir Zortea",
-                "short": "Zortea"
-              }
-            },
-            {
-              "minute": 59,
-              "in": {
-                "number": 5,
-                "name": "Eivind Helland",
-                "short": "Helland"
-              },
-              "out": {
-                "number": 16,
-                "name": "Nicoló Casale",
-                "short": "Casale"
-              }
-            },
-            {
-              "minute": 59,
-              "in": {
-                "number": 91,
-                "name": "Roberto Piccoli",
-                "short": "Piccoli"
-              },
-              "out": {
-                "number": 21,
-                "name": "Jens Odgaard",
-                "short": "Odgaard"
-              }
-            },
-            {
-              "minute": 75,
-              "in": {
-                "number": 41,
-                "name": "Martin Vitík",
-                "short": "Vitík"
-              },
-              "out": {
-                "number": 28,
-                "name": "Nicolò Cambiaghi",
-                "short": "Cambiaghi"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "motogp-2026-20-sprint",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 20,
-      "title": "Grand Prix of Qatar",
-      "session": "sprint",
-      "startsAt": "2026-11-07T16:00:00+00:00",
-      "venue": "Lusail International Circuit",
-      "city": "Doha",
-      "country": "Qatar",
-      "status": "finished",
-      "result": [
-        {
-          "pos": 1,
-          "number": "93",
-          "driver": "Marc Marquez",
-          "code": "Marquez",
-          "team": "Ducati Lenovo Team",
-          "teamColor": "#CD0000",
-          "time": "18:46.450",
-          "points": 12
-        },
-        {
-          "pos": 2,
-          "number": "49",
-          "driver": "Fabio Di Giannantonio",
-          "code": "Di Giannantonio",
-          "team": "Pertamina Enduro VR46 Racing Team",
-          "teamColor": "#EEEE00",
-          "time": "+0.862",
-          "points": 9
-        },
-        {
-          "pos": 3,
-          "number": "89",
-          "driver": "Jorge Martin",
-          "code": "Martin",
-          "team": "Aprilia Racing",
-          "teamColor": "#8A2BE2",
-          "time": "+1.519",
-          "points": 7
-        },
-        {
-          "pos": 4,
-          "number": "25",
-          "driver": "Raul Fernandez",
-          "code": "Fernandez",
-          "team": "SuperFile Trackhouse MotoGP Team",
-          "teamColor": "#5CACEE",
-          "time": "+2.700",
-          "points": 6
-        },
-        {
-          "pos": 5,
-          "number": "5",
-          "driver": "Johann Zarco",
-          "code": "Zarco",
-          "team": "Castrol Honda LCR",
-          "teamColor": "#FAFAFA",
-          "time": "+3.720",
-          "points": 5
-        },
-        {
-          "pos": 6,
-          "number": "37",
-          "driver": "Pedro Acosta",
-          "code": "Acosta",
-          "team": "Red Bull KTM Factory Racing",
-          "teamColor": "#FF8C00",
-          "time": "+4.664",
-          "points": 4
-        },
-        {
-          "pos": 7,
-          "number": "79",
-          "driver": "Ai Ogura",
-          "code": "Ogura",
-          "team": "SuperFile Trackhouse MotoGP Team",
-          "teamColor": "#5CACEE",
-          "time": "+4.858",
-          "points": 3
-        },
-        {
-          "pos": 8,
-          "number": "23",
-          "driver": "Enea Bastianini",
-          "code": "Bastianini",
-          "team": "Red Bull KTM Tech3",
-          "teamColor": "#EE7621",
-          "time": "+5.582",
-          "points": 2
-        },
-        {
-          "pos": 9,
-          "number": "27",
-          "driver": "Iker Lecuona",
-          "code": "Lecuona",
-          "team": "BK8 Gresini Racing MotoGP",
-          "teamColor": "#CAE1FF",
-          "time": "+8.082",
-          "points": 1
-        },
-        {
-          "pos": 10,
-          "number": "11",
-          "driver": "Diogo Moreira",
-          "code": "Moreira",
-          "team": "Pro Honda LCR",
-          "teamColor": "#FAFAFA",
-          "time": "+9.220"
-        },
-        {
-          "pos": 11,
-          "number": "54",
-          "driver": "Fermin Aldeguer",
-          "code": "Aldeguer",
-          "team": "BK8 Gresini Racing MotoGP",
-          "teamColor": "#CAE1FF",
-          "time": "+9.429"
-        },
-        {
-          "pos": 12,
-          "number": "33",
-          "driver": "Brad Binder",
-          "code": "Binder",
-          "team": "Red Bull KTM Factory Racing",
-          "teamColor": "#FF8C00",
-          "time": "+9.483"
-        },
-        {
-          "pos": 13,
-          "number": "10",
-          "driver": "Luca Marini",
-          "code": "Marini",
-          "team": "Honda HRC Castrol",
-          "teamColor": "#FF0000",
-          "time": "+12.727"
-        },
-        {
-          "pos": 14,
-          "number": "21",
-          "driver": "Franco Morbidelli",
-          "code": "Morbidelli",
-          "team": "Pertamina Enduro VR46 Racing Team",
-          "teamColor": "#EEEE00",
-          "time": "+12.874"
-        },
-        {
-          "pos": 15,
-          "number": "12",
-          "driver": "Maverick Viñales",
-          "code": "Viñales",
-          "team": "Red Bull KTM Tech3",
-          "teamColor": "#EE7621",
-          "time": "+13.483"
-        },
-        {
-          "pos": 16,
-          "number": "96",
-          "driver": "Jake Dixon",
-          "code": "Dixon",
-          "team": "Honda HRC Castrol",
-          "teamColor": "#FF0000",
-          "time": "+19.373"
-        },
-        {
-          "pos": 17,
-          "number": "72",
-          "driver": "Marco Bezzecchi",
-          "code": "Bezzecchi",
-          "team": "Aprilia Racing",
-          "teamColor": "#8A2BE2",
-          "time": "Ritirato"
-        },
-        {
-          "pos": 18,
-          "number": "63",
-          "driver": "Francesco Bagnaia",
-          "code": "Bagnaia",
-          "team": "Ducati Lenovo Team",
-          "teamColor": "#CD0000",
-          "time": "Non classificato"
-        }
-      ],
-      "videos": [
-        {
-          "videoId": "S5Fh5uuve90",
-          "title": "MotoGP, GP del Qatar: gli highlights della Sprint a Lusail",
-          "thumbnailUrl": "https://i.ytimg.com/vi/S5Fh5uuve90/hqdefault.jpg",
-          "publishedAt": "2026-11-07T17:24:10+00:00",
-          "source": "Sky Sport MotoGP",
-          "duration": "2:58"
-        }
-      ]
-    },
-    {
-      "id": "f1-2026-20-fp3",
-      "competition": "f1",
-      "season": "2026",
-      "round": 20,
-      "title": "Brazilian Grand Prix",
-      "session": "fp3",
-      "startsAt": "2026-11-07T14:30:00+00:00",
-      "venue": "Autódromo José Carlos Pace",
-      "city": "São Paulo",
-      "country": "Brazil",
-      "status": "finished",
-      "videos": []
-    },
-    {
-      "id": "serie-a-2026-27-558532",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Torino - Lecce",
-      "session": "match",
-      "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "586",
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "logoUrl": "https://crests.football-data.org/586.png"
-      },
-      "awayTeam": {
-        "id": "5890",
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "logoUrl": "https://crests.football-data.org/5890.png"
-      },
-      "homeScore": 1,
-      "awayScore": 1,
-      "videos": [
-        {
-          "videoId": "lAkKfo1zh_4",
-          "title": "DOPPIO AUTOGOL, pari tra ABATE e DI FRANCESCO: Torino-Lecce 1-1 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/lAkKfo1zh_4/hqdefault.jpg",
-          "publishedAt": "2026-11-07T19:00:10+00:00",
-          "source": "DAZN",
-          "duration": "3:35"
-        }
-      ],
-      "details": {
-        "version": 2,
-        "incidents": [
-          {
-            "minute": 45,
-            "addedTime": 2,
-            "type": "yellow",
-            "side": "away",
-            "player": "Youssef Maleh",
-            "short": "Maleh"
-          },
-          {
-            "minute": 60,
-            "type": "ownGoal",
-            "side": "home",
-            "player": "Kialonda Gaspar",
-            "short": "Gaspar"
-          },
-          {
-            "minute": 73,
-            "type": "ownGoal",
-            "side": "away",
-            "player": "Daniel Bragança",
-            "short": "Bragança"
-          },
-          {
-            "minute": 84,
-            "type": "yellow",
-            "side": "away",
-            "player": "Amar Ahmed",
-            "short": "Ahmed"
-          }
-        ],
-        "home": {
-          "starters": [
-            {
-              "number": 20,
-              "name": "Lucas Perri",
-              "short": "Perri"
-            },
-            {
-              "number": 44,
-              "name": "Adrian Ismajli",
-              "short": "Ismajli"
-            },
-            {
-              "number": 15,
-              "name": "Pietro Comuzzo",
-              "short": "Comuzzo"
-            },
-            {
-              "number": 23,
-              "name": "Saúl Coco",
-              "short": "Coco"
-            },
-            {
-              "number": 28,
-              "name": "Kian Fitz-Jim",
-              "short": "Fitz-Jim"
-            },
-            {
-              "number": 10,
-              "name": "Nikola Vlasic",
-              "short": "Vlasic"
-            },
-            {
-              "number": 21,
-              "name": "Daniel Bragança",
-              "short": "Bragança"
-            },
-            {
-              "number": 77,
-              "name": "Alessio Cacciamani",
-              "short": "Cacciamani"
-            },
-            {
-              "number": 45,
-              "name": "Rafik Belghali",
-              "short": "Belghali"
-            },
-            {
-              "number": 18,
-              "name": "Giovanni Simeone",
-              "short": "Simeone"
-            },
-            {
-              "number": 17,
-              "name": "Sandro Kulenovic",
-              "short": "Kulenovic"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 45,
-              "in": {
-                "number": 19,
-                "name": "Ché Adams",
-                "short": "Adams"
-              },
-              "out": {
-                "number": 17,
-                "name": "Sandro Kulenovic",
-                "short": "Kulenovic"
-              }
-            },
-            {
-              "minute": 61,
-              "in": {
-                "number": 66,
-                "name": "Gvidas Gineitis",
-                "short": "Gineitis"
-              },
-              "out": {
-                "number": 28,
-                "name": "Kian Fitz-Jim",
-                "short": "Fitz-Jim"
-              }
-            },
-            {
-              "minute": 78,
-              "in": {
-                "number": 7,
-                "name": "Zakaria Aboukhlal",
-                "short": "Aboukhlal"
-              },
-              "out": {
-                "number": 77,
-                "name": "Alessio Cacciamani",
-                "short": "Cacciamani"
-              }
-            },
-            {
-              "minute": 82,
-              "in": {
-                "number": 22,
-                "name": "Cesare Casadei",
-                "short": "Casadei"
-              },
-              "out": {
-                "number": 21,
-                "name": "Daniel Bragança",
-                "short": "Bragança"
-              }
-            },
-            {
-              "minute": 82,
-              "in": {
-                "number": 6,
-                "name": "Emirhan Ilkhan",
-                "short": "Ilkhan"
-              },
-              "out": {
-                "number": 10,
-                "name": "Nikola Vlasic",
-                "short": "Vlasic"
-              }
-            }
-          ]
-        },
-        "away": {
-          "starters": [
-            {
-              "number": 30,
-              "name": "Wladimiro Falcone",
-              "short": "Falcone"
-            },
-            {
-              "number": 4,
-              "name": "Kialonda Gaspar",
-              "short": "Gaspar"
-            },
-            {
-              "number": 44,
-              "name": "Tiago Gabriel"
-            },
-            {
-              "number": 17,
-              "name": "Danilo Veiga",
-              "short": "Veiga"
-            },
-            {
-              "number": 14,
-              "name": "Youssef Maleh",
-              "short": "Maleh"
-            },
-            {
-              "number": 77,
-              "name": "Mohamed Kaba",
-              "short": "Kaba"
-            },
-            {
-              "number": 79,
-              "name": "Oumar Ngom",
-              "short": "Ngom"
-            },
-            {
-              "number": 25,
-              "name": "Antonino Gallo",
-              "short": "Gallo"
-            },
-            {
-              "number": 2,
-              "name": "Ali Dembélé",
-              "short": "Dembélé"
-            },
-            {
-              "number": 7,
-              "name": "Amar Ahmed",
-              "short": "Ahmed"
-            },
-            {
-              "number": 9,
-              "name": "Nikola Stulic",
-              "short": "Stulic"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 72,
-              "in": {
-                "number": 69,
-                "name": "Willem Geubbels",
-                "short": "Geubbels"
-              },
-              "out": {
-                "number": 9,
-                "name": "Nikola Stulic",
-                "short": "Stulic"
-              }
-            },
-            {
-              "minute": 72,
-              "in": {
-                "number": 11,
-                "name": "Konan N’Dri",
-                "short": "N’Dri"
-              },
-              "out": {
-                "number": 2,
-                "name": "Ali Dembélé",
-                "short": "Dembélé"
-              }
-            },
-            {
-              "minute": 72,
-              "in": {
-                "number": 29,
-                "name": "Lassana Coulibaly",
-                "short": "Coulibaly"
-              },
-              "out": {
-                "number": 77,
-                "name": "Mohamed Kaba",
-                "short": "Kaba"
-              }
-            },
-            {
-              "minute": 87,
-              "in": {
-                "number": 8,
-                "name": "Sadik Fofana",
-                "short": "Fofana"
-              },
-              "out": {
-                "number": 7,
-                "name": "Amar Ahmed",
-                "short": "Ahmed"
-              }
-            },
-            {
-              "minute": 87,
-              "in": {
-                "number": 5,
-                "name": "Jamil Siebert",
-                "short": "Siebert"
-              },
-              "out": {
-                "number": 14,
-                "name": "Youssef Maleh",
-                "short": "Maleh"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "serie-a-2026-27-558534",
-      "competition": "serie-a",
-      "season": "2026-27",
-      "round": 11,
-      "title": "Cagliari - Frosinone",
-      "session": "match",
-      "startsAt": "2026-11-07T14:00:00+00:00",
-      "status": "finished",
-      "homeTeam": {
-        "id": "104",
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "logoUrl": "https://crests.football-data.org/104.png"
-      },
-      "awayTeam": {
-        "id": "470",
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "logoUrl": "https://crests.football-data.org/470.png"
-      },
-      "homeScore": 1,
-      "awayScore": 0,
-      "videos": [
-        {
-          "videoId": "NgSfW54iECI",
-          "title": "Capolavoro di ADOPO, CAPRILE para tutto: Cagliari-Frosinone 1-0 | Serie A Enilive | DAZN Highlights",
-          "thumbnailUrl": "https://i.ytimg.com/vi/NgSfW54iECI/hqdefault.jpg",
-          "publishedAt": "2026-11-07T19:00:11+00:00",
-          "source": "DAZN",
-          "duration": "3:52"
-        }
-      ],
-      "details": {
-        "version": 2,
-        "incidents": [
-          {
-            "minute": 13,
-            "type": "yellow",
-            "side": "away",
-            "player": "Gabriele Bracaglia",
-            "short": "Bracaglia"
-          },
-          {
-            "minute": 38,
-            "type": "goal",
-            "side": "home",
-            "player": "Michel Adopo",
-            "short": "Adopo"
-          },
-          {
-            "minute": 60,
-            "type": "yellow",
-            "side": "away",
-            "player": "Anthony Oyono",
-            "short": "Oyono"
-          },
-          {
-            "minute": 69,
-            "type": "yellow",
-            "side": "home",
-            "player": "Jacopo Fazzini",
-            "short": "Fazzini"
-          },
-          {
-            "minute": 70,
-            "type": "yellow",
-            "side": "home",
-            "player": "Nicola Grandu",
-            "short": "Grandu"
-          },
-          {
-            "minute": 85,
-            "type": "yellow",
-            "side": "away",
-            "player": "Ilario Monterisi",
-            "short": "Monterisi"
-          },
-          {
-            "minute": 87,
-            "type": "yellow",
-            "side": "home",
-            "player": "Zé Pedro"
-          }
-        ],
-        "home": {
-          "starters": [
-            {
-              "number": 1,
-              "name": "Elia Caprile",
-              "short": "Caprile"
-            },
-            {
-              "number": 15,
-              "name": "Juan Rodríguez",
-              "short": "Rodríguez"
-            },
-            {
-              "number": 22,
-              "name": "Raphael Kofler",
-              "short": "Kofler"
-            },
-            {
-              "number": 36,
-              "name": "Nicola Grandu",
-              "short": "Grandu"
-            },
-            {
-              "number": 2,
-              "name": "Zé Pedro"
-            },
-            {
-              "number": 4,
-              "name": "Alessandro Romano",
-              "short": "Romano"
-            },
-            {
-              "number": 14,
-              "name": "Alessandro Deiola",
-              "short": "Deiola"
-            },
-            {
-              "number": 8,
-              "name": "Michel Adopo",
-              "short": "Adopo"
-            },
-            {
-              "number": 31,
-              "name": "Paul Mendy",
-              "short": "Mendy"
-            },
-            {
-              "number": 70,
-              "name": "Daniel Maldini",
-              "short": "Maldini"
-            },
-            {
-              "number": 19,
-              "name": "Yael Trepy",
-              "short": "Trepy"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 28,
-              "in": {
-                "number": 35,
-                "name": "Alessandro Sugamele",
-                "short": "Sugamele"
-              },
-              "out": {
-                "number": 19,
-                "name": "Yael Trepy",
-                "short": "Trepy"
-              }
-            },
-            {
-              "minute": 65,
-              "in": {
-                "number": 9,
-                "name": "Kevin Carlos"
-              },
-              "out": {
-                "number": 31,
-                "name": "Paul Mendy",
-                "short": "Mendy"
-              }
-            },
-            {
-              "minute": 65,
-              "in": {
-                "number": 10,
-                "name": "Jacopo Fazzini",
-                "short": "Fazzini"
-              },
-              "out": {
-                "number": 70,
-                "name": "Daniel Maldini",
-                "short": "Maldini"
-              }
-            },
-            {
-              "minute": 78,
-              "in": {
-                "number": 20,
-                "name": "Riccardo Ciervo",
-                "short": "Ciervo"
-              },
-              "out": {
-                "number": 4,
-                "name": "Alessandro Romano",
-                "short": "Romano"
-              }
-            },
-            {
-              "minute": 78,
-              "in": {
-                "number": 27,
-                "name": "Joseph Liteta",
-                "short": "Liteta"
-              },
-              "out": {
-                "number": 36,
-                "name": "Nicola Grandu",
-                "short": "Grandu"
-              }
-            }
-          ]
-        },
-        "away": {
-          "starters": [
-            {
-              "number": 22,
-              "name": "Lorenzo Palmisani",
-              "short": "Palmisani"
-            },
-            {
-              "number": 30,
-              "name": "Ilario Monterisi",
-              "short": "Monterisi"
-            },
-            {
-              "number": 3,
-              "name": "Gabriele Calvani",
-              "short": "Calvani"
-            },
-            {
-              "number": 79,
-              "name": "Gabriele Bracaglia",
-              "short": "Bracaglia"
-            },
-            {
-              "number": 20,
-              "name": "Anthony Oyono",
-              "short": "Oyono"
-            },
-            {
-              "number": 10,
-              "name": "Romano Schmid",
-              "short": "Schmid"
-            },
-            {
-              "number": 14,
-              "name": "Giacomo Calo",
-              "short": "Calo"
-            },
-            {
-              "number": 16,
-              "name": "Matteo Cichella",
-              "short": "Cichella"
-            },
-            {
-              "number": 11,
-              "name": "Daniel Birligea",
-              "short": "Birligea"
-            },
-            {
-              "number": 17,
-              "name": "Giorgi Kvernadze",
-              "short": "Kvernadze"
-            },
-            {
-              "number": 7,
-              "name": "Farès Ghedjemis",
-              "short": "Ghedjemis"
-            }
-          ],
-          "substitutions": [
-            {
-              "minute": 45,
-              "in": {
-                "number": 90,
-                "name": "Enzo Tchato",
-                "short": "Tchato"
-              },
-              "out": {
-                "number": 79,
-                "name": "Gabriele Bracaglia",
-                "short": "Bracaglia"
-              }
-            },
-            {
-              "minute": 65,
-              "in": {
-                "number": 24,
-                "name": "Alessio Zerbin",
-                "short": "Zerbin"
-              },
-              "out": {
-                "number": 17,
-                "name": "Giorgi Kvernadze",
-                "short": "Kvernadze"
-              }
-            },
-            {
-              "minute": 65,
-              "in": {
-                "number": 70,
-                "name": "Luis Hasa",
-                "short": "Hasa"
-              },
-              "out": {
-                "number": 10,
-                "name": "Romano Schmid",
-                "short": "Schmid"
-              }
-            },
-            {
-              "minute": 71,
-              "in": {
-                "number": 89,
-                "name": "Tomas Bobcek",
-                "short": "Bobcek"
-              },
-              "out": {
-                "number": 20,
-                "name": "Anthony Oyono",
-                "short": "Oyono"
-              }
-            },
-            {
-              "minute": 81,
-              "in": {
-                "number": 40,
-                "name": "Seydou Fini",
-                "short": "Fini"
-              },
-              "out": {
-                "number": 16,
-                "name": "Matteo Cichella",
-                "short": "Cichella"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "motogp-2026-20-qualifying",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 20,
-      "title": "Grand Prix of Qatar",
-      "session": "qualifying",
-      "startsAt": "2026-11-07T11:40:00+00:00",
-      "venue": "Lusail International Circuit",
-      "city": "Doha",
-      "country": "Qatar",
-      "status": "finished",
-      "result": [
-        {
-          "pos": 1,
-          "number": "72",
-          "driver": "Marco Bezzecchi",
-          "code": "Bezzecchi",
-          "team": "Aprilia Racing",
-          "teamColor": "#8A2BE2",
-          "q2": "1:50.028"
-        },
-        {
-          "pos": 2,
-          "number": "93",
-          "driver": "Marc Marquez",
-          "code": "Marquez",
-          "team": "Ducati Lenovo Team",
-          "teamColor": "#CD0000",
-          "q2": "1:50.294"
-        },
-        {
-          "pos": 3,
-          "number": "49",
-          "driver": "Fabio Di Giannantonio",
-          "code": "Di Giannantonio",
-          "team": "Pertamina Enduro VR46 Racing Team",
-          "teamColor": "#EEEE00",
-          "q2": "1:50.327"
-        },
-        {
-          "pos": 4,
-          "number": "25",
-          "driver": "Raul Fernandez",
-          "code": "Fernandez",
-          "team": "SuperFile Trackhouse MotoGP Team",
-          "teamColor": "#5CACEE",
-          "q2": "1:50.457"
-        },
-        {
-          "pos": 5,
-          "number": "63",
-          "driver": "Francesco Bagnaia",
-          "code": "Bagnaia",
-          "team": "Ducati Lenovo Team",
-          "teamColor": "#CD0000",
-          "q2": "1:50.592"
-        },
-        {
-          "pos": 6,
-          "number": "79",
-          "driver": "Ai Ogura",
-          "code": "Ogura",
-          "team": "SuperFile Trackhouse MotoGP Team",
-          "teamColor": "#5CACEE",
-          "q2": "1:50.596"
-        },
-        {
-          "pos": 7,
-          "number": "5",
-          "driver": "Johann Zarco",
-          "code": "Zarco",
-          "team": "Castrol Honda LCR",
-          "teamColor": "#FAFAFA",
-          "q2": "1:50.735"
-        },
-        {
-          "pos": 8,
-          "number": "37",
-          "driver": "Pedro Acosta",
-          "code": "Acosta",
-          "team": "Red Bull KTM Factory Racing",
-          "teamColor": "#FF8C00",
-          "q1": "1:51.087",
-          "q2": "1:50.872"
-        },
-        {
-          "pos": 9,
-          "number": "54",
-          "driver": "Fermin Aldeguer",
-          "code": "Aldeguer",
-          "team": "BK8 Gresini Racing MotoGP",
-          "teamColor": "#CAE1FF",
-          "q1": "1:50.876",
-          "q2": "1:50.890"
-        },
-        {
-          "pos": 10,
-          "number": "23",
-          "driver": "Enea Bastianini",
-          "code": "Bastianini",
-          "team": "Red Bull KTM Tech3",
-          "teamColor": "#EE7621",
-          "q2": "1:51.001"
-        },
-        {
-          "pos": 11,
-          "number": "89",
-          "driver": "Jorge Martin",
-          "code": "Martin",
-          "team": "Aprilia Racing",
-          "teamColor": "#8A2BE2",
-          "q2": "1:51.064"
-        },
-        {
-          "pos": 12,
-          "number": "33",
-          "driver": "Brad Binder",
-          "code": "Binder",
-          "team": "Red Bull KTM Factory Racing",
-          "teamColor": "#FF8C00",
-          "q2": "1:51.904"
-        },
-        {
-          "pos": 13,
-          "number": "21",
-          "driver": "Franco Morbidelli",
-          "code": "Morbidelli",
-          "team": "Pertamina Enduro VR46 Racing Team",
-          "teamColor": "#EEEE00",
-          "q1": "1:51.271"
-        },
-        {
-          "pos": 14,
-          "number": "10",
-          "driver": "Luca Marini",
-          "code": "Marini",
-          "team": "Honda HRC Castrol",
-          "teamColor": "#FF0000",
-          "q1": "1:51.350"
-        },
-        {
-          "pos": 15,
-          "number": "27",
-          "driver": "Iker Lecuona",
-          "code": "Lecuona",
-          "team": "BK8 Gresini Racing MotoGP",
-          "teamColor": "#CAE1FF",
-          "q1": "1:51.387"
-        },
-        {
-          "pos": 16,
-          "number": "11",
-          "driver": "Diogo Moreira",
-          "code": "Moreira",
-          "team": "Pro Honda LCR",
-          "teamColor": "#FAFAFA",
-          "q1": "1:51.504"
-        },
-        {
-          "pos": 17,
-          "number": "96",
-          "driver": "Jake Dixon",
-          "code": "Dixon",
-          "team": "Honda HRC Castrol",
-          "teamColor": "#FF0000",
-          "q1": "1:51.621"
-        },
-        {
-          "pos": 18,
-          "number": "12",
-          "driver": "Maverick Viñales",
-          "code": "Viñales",
-          "team": "Red Bull KTM Tech3",
-          "teamColor": "#EE7621",
-          "q1": "1:51.991"
-        }
-      ],
-      "videos": [
-        {
-          "videoId": "LvC1GR85_v4",
-          "title": "MotoGP, GP del Qatar: gli highlights delle qualifiche a Lusail",
-          "thumbnailUrl": "https://i.ytimg.com/vi/LvC1GR85_v4/hqdefault.jpg",
-          "publishedAt": "2026-11-07T13:39:51+00:00",
-          "source": "Sky Sport MotoGP",
-          "duration": "1:57"
-        }
-      ]
-    },
-    {
-      "id": "motogp-2026-20-fp2",
-      "competition": "motogp",
-      "season": "2026",
-      "round": 20,
-      "title": "Grand Prix of Qatar",
-      "session": "fp2",
-      "startsAt": "2026-11-07T11:00:00+00:00",
-      "venue": "Lusail International Circuit",
-      "city": "Doha",
-      "country": "Qatar",
-      "status": "finished",
-      "videos": []
     }
   ]
 }
