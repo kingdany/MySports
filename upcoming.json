@@ -1,20 +1,6 @@
 {
-  "generatedAt": "2026-11-21T02:11:07.9705754+00:00",
+  "generatedAt": "2026-11-21T10:55:58.2154036+00:00",
   "events": [
-    {
-      "id": "f1-2026-21-qualifying",
-      "competition": "f1",
-      "season": "2026",
-      "round": 21,
-      "title": "Las Vegas Grand Prix",
-      "session": "qualifying",
-      "startsAt": "2026-11-21T04:00:00+00:00",
-      "venue": "Las Vegas Strip Street Circuit",
-      "city": "Las Vegas",
-      "country": "USA",
-      "status": "scheduled",
-      "videos": []
-    },
     {
       "id": "motogp-2026-21-fp2",
       "competition": "motogp",
@@ -26,7 +12,7 @@
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "scheduled",
+      "status": "live",
       "videos": []
     },
     {
@@ -40,7 +26,7 @@
       "venue": "Autódromo Internacional do Algarve",
       "city": "Portimão",
       "country": "Portugal",
-      "status": "scheduled",
+      "status": "live",
       "videos": []
     },
     {
@@ -2087,6 +2073,20 @@
         "shortName": "Roma",
         "logoUrl": "https://crests.football-data.org/100.png"
       },
+      "videos": []
+    },
+    {
+      "id": "f1-2026-23-fp3",
+      "competition": "f1",
+      "season": "2026",
+      "round": 23,
+      "title": "Abu Dhabi Grand Prix",
+      "session": "fp3",
+      "startsAt": "2026-12-05T10:30:00+00:00",
+      "venue": "Yas Marina Circuit",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "status": "scheduled",
       "videos": []
     }
   ]
